@@ -5,6 +5,7 @@ from collections import defaultdict
 from clldutils.misc import slug
 
 from pylexibank.providers import abvd
+from pylexibank.dataset import Unmapped
 
 from author_notes_map import MAP
 
@@ -36,8 +37,8 @@ def cldf(dataset, glottolog, concepticon, **kw):
     for wlid, (author, notes) in MAP.items():
         source_map[wlid.split('-', 1)[1]] = (slug(author), notes.strip())
 
-    unmapped = dict(languages=set(), concepts=set())
+    unmapped = Unmapped(lambda r: int(r[0]))
     for wl in wordlists:
         wl.to_cldf(concept_map, unmapped, *source_map[wl.id])
         dataset.cognates.extend(list(wl.cognates()))
-    abvd.print_unmapped(unmapped)
+    unmapped.pprint()

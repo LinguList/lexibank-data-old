@@ -3,6 +3,7 @@ from __future__ import unicode_literals, print_function
 
 from pylexibank.providers import abvd
 from pylexibank.util import get_reference
+from pylexibank.dataset import Unmapped
 
 SECTION = 'bantu'
 
@@ -31,11 +32,11 @@ def cldf(dataset, glottolog, concepticon, **kw):
         wordlists.append(wl)
 
     sources = {}
-    unmapped = dict(languages=set(), concepts=set())
+    unmapped = Unmapped(lambda r: int(r[0]))
     for wl in wordlists:
         args = [None, None]
         ref = get_reference(None, None, wl.language.notes, None, sources)
         if ref:
             args = [ref.source.id, ref.source]
         wl.to_cldf(concept_map, unmapped, *args)
-    abvd.print_unmapped(unmapped)
+    unmapped.pprint()

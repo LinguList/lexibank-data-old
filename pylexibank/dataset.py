@@ -113,3 +113,23 @@ class CldfDataset(CldfDatasetBase):
             'http://glottolog.org/resource/languoid/id/{Language_ID}'
         self.metadata['tables'].append(Cognates.table)
         super(CldfDataset, self).write(**kw)
+
+
+class Unmapped(object):
+    def __init__(self, sortkey=None):
+        if sortkey is None:
+            sortkey = lambda y: y
+        self.sortkey = sortkey
+        self.languages = set()
+        self.concepts = set()
+
+    def pprint(self):
+        if self.languages:
+            print('ID,NAME,ISO,GLOTTOCODE,GLOTTOLOG_NAME')
+            for lang in sorted(self.languages, key=self.sortkey):
+                print('%s,"%s",%s,,' % lang)
+            print('================================')
+        if self.concepts:
+            print('ID,GLOSS,CONCEPTICON_ID,CONCEPTICON_GLOSS')
+            for c in sorted(self.concepts, key=self.sortkey):
+                print('%s,"%s",,' % c)

@@ -1,0 +1,13 @@
+{
+    "@context": [
+        "http://www.w3.org/ns/csvw",
+        {
+            "@language": "en"
+        }
+    ],
+    "dc:title": "Comparative Siouan Dictionary",
+    "dc:bibliographicCitation": "Rankin, Robert L. & Carter, Richard T. & Jones, A. Wesley & Koontz, John E. & Rood, David S. & Hartmann, Iren (eds.) 2015. Comparative Siouan Dictionary. Leipzig: Max Planck Institute for Evolutionary Anthropology. (Available online at http://csd.clld.org)",
+    "dc:license": "http://creativecommons.org/licenses/by/4.0/",
+    "dc:identifier": "http://csd.clld.org",
+    "aboutUrl": "http://csd.clld.org/values/{ID}"
+}
