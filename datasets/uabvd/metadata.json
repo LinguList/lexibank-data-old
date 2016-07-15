@@ -1,0 +1,12 @@
+{
+    "@context": [
+        "http://www.w3.org/ns/csvw",
+        {
+            "@language": "en"
+        }
+    ],
+    "dc:title": "Uto-Aztecan Basic Vocabulary Database",
+    "dc:bibliographicCitation": "Simon Greenhill 2016. Uto-Aztecan Basic Vocabulary Database",
+    "dc:license": "https://creativecommons.org/licenses/by/4.0/",
+    "dc:identifier": "https://abvd.shh.mpg.de/utoaztecan/"
+}

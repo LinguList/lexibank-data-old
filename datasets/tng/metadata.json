@@ -1,0 +1,12 @@
+{
+    "@context": [
+        "http://www.w3.org/ns/csvw",
+        {
+            "@language": "en"
+        }
+    ],
+    "dc:title": "TransNewGuinea.org",
+    "dc:bibliographicCitation": "Simon Greenhill (2015) TransNewGuinea.org: An Online Database of New Guinea Languages. PLoS ONE 10(10): e0141563. doi:10.1371/journal.pone.0141563",
+    "dc:license": "https://creativecommons.org/licenses/by/4.0/",
+    "dc:identifier": "http://transnewguinea.org/"
+}
