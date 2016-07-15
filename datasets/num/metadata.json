@@ -1,0 +1,12 @@
+{
+    "@context": [
+        "http://www.w3.org/ns/csvw",
+        {
+            "@language": "en"
+        }
+    ],
+    "dc:title": "Numeral Systems of the World's Languages",
+    "dc:bibliographicCitation": "Eugene Chan 2016. Numeral Systems of the World's Languages. Jena: Max Planck Institute for the Science of Human History.",
+    "dc:license": null,
+    "dc:identifier": "https://mpi-lingweb.shh.mpg.de/numeral/"
+}
