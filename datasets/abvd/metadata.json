@@ -1,0 +1,14 @@
+{
+    "@context": [
+        "http://www.w3.org/ns/csvw",
+        {
+            "@language": "en"
+        }
+    ],
+    "rdf:type": "dcat:CatalogRecord",
+    "dc:title": "Austronesian Basic Vocabulary Database",
+    "dc:bibliographicCitation": "Greenhill, S.J., Blust. R, & Gray, R.D. (2008). The Austronesian Basic Vocabulary Database: From Bioinformatics to Lexomics. Evolutionary Bioinformatics, 4:271-283.",
+    "dc:license": "https://creativecommons.org/licenses/by/4.0/",
+    "dc:identifier": "http://language.psy.auckland.ac.nz/austronesian/",
+    "dc:conformsTo": "http://concepticon.clld.org/contributions/Blust-2008-210"
+}

@@ -1,0 +1,13 @@
+{
+    "@context": [
+        "http://www.w3.org/ns/csvw",
+        {
+            "@language": "en"
+        }
+    ],
+    "dc:title": "Hunter - Gatherer Language Database",
+    "dc:bibliographicCitation": "Bowern, Claire, Patience Epps, Jane Hill, and Patrick McConvell. Hunter - Gatherer Language Database. https://huntergatherer.la.utexas.edu/ Accessed[date].",
+    "dc:license": null,
+    "dc:identifier": "https://huntergatherer.la.utexas.edu/",
+    "dc:conformsTo": "http://concepticon.clld.org/contributions/Bowern-2011-204"
+}
