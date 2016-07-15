@@ -1,0 +1,13 @@
+{
+    "@context": [
+        "http://www.w3.org/ns/csvw",
+        {
+            "@language": "en"
+        }
+    ],
+    "dc:title": "Grollemund Bantu Database",
+    "dc:bibliographicCitation": "Grollemund et al. 2015. Bantu expansion shows that habitat alters the route and pace of human dispersals",
+    "dc:license": "none",
+    "dc:identifier": "http://www.evolution.reading.ac.uk/DataSets.html",
+    "dc:conformsTo": "http://concepticon.clld.org/contributions/Grollemund-2015-100"
+}
