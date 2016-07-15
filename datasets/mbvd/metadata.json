@@ -1,0 +1,13 @@
+{
+    "@context": [
+        "http://www.w3.org/ns/csvw",
+        {
+            "@language": "en"
+        }
+    ],
+    "dc:title": "Mayan Basic Vocabulary Database",
+    "dc:bibliographicCitation": "Simon Greenhill 2016. Mayan Basic Vocabulary Database",
+    "dc:source": "Dienhart, John M. The Mayan Languages- A Comparative Vocabulary, electronic version, Odense University, 1997.",
+    "dc:license": "https://creativecommons.org/licenses/by/4.0/",
+    "dc:identifier": "https://abvd.shh.mpg.de/mayan/"
+}

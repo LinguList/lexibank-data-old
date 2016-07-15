@@ -127,9 +127,9 @@ class Unmapped(object):
         if self.languages:
             print('ID,NAME,ISO,GLOTTOCODE,GLOTTOLOG_NAME')
             for lang in sorted(self.languages, key=self.sortkey):
-                print('%s,"%s",%s,,' % lang)
+                print('%s,"%s",%s,,' % tuple(r or '' for r in lang))
             print('================================')
         if self.concepts:
             print('ID,GLOSS,CONCEPTICON_ID,CONCEPTICON_GLOSS')
             for c in sorted(self.concepts, key=self.sortkey):
-                print('%s,"%s",,' % c)
+                print('%s,"%s",,' % tuple(r or '' for r in c))
