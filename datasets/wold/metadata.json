@@ -1,0 +1,13 @@
+{
+  "@context": [
+    "http://www.w3.org/ns/csvw",
+    {
+      "@language": "en"
+    }
+  ],
+  "dc:title": "The World Loanword Database",
+  "dc:bibliographicCitation": "Haspelmath, Martin & Tadmor, Uri (eds.) 2009. World Loanword Database. Leipzig: Max Planck Institute for Evolutionary Anthropology. (Available online at http://wold.clld.org",
+  "dc:license": "http://creativecommons.org/licenses/by/3.0/de/",
+  "dc:identifier": "http://wold.clld.org",
+  "aboutUrl": "http://wold.clld.org/word/{ID}"
+}

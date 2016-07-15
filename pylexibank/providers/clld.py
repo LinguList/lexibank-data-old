@@ -7,10 +7,14 @@ from pycldf.util import Archive, MD_SUFFIX
 from pycldf.dataset import Dataset
 
 
+def url(id_, path='/', domain=None):
+    return "http://{0}{1}".format(domain or '{0}.clld.org'.format(id_), path)
+
+
 def download(dataset, id_, domain=None):
-    domain = domain or '{0}.clld.org'.format(id_)
-    url = "http://{0}/static/download/{1}-dataset.cldf.zip".format(domain, id_)
-    urlretrieve(url, dataset.raw.joinpath('{0}.zip'.format(id_)).as_posix())
+    url_ = url(
+        id_, domain=domain, path="/static/download/{0}-dataset.cldf.zip".format(id_))
+    urlretrieve(url_, dataset.raw.joinpath('{0}.zip'.format(id_)).as_posix())
 
 
 def itercldf(dataset, id_):

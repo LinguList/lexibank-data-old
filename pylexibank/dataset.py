@@ -97,7 +97,7 @@ class CldfDataset(CldfDatasetBase):
             '%s-%s' % (dataset.id, subset) if subset else dataset.id)
         if not all(x in fields for x in REQUIRED_FIELDS):
             raise ValueError('required field is missing')
-        self.fields = fields
+        self.fields = tuple(fields)
         self.dataset = dataset
 
     def __enter__(self):

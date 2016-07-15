@@ -158,9 +158,13 @@ class Wordlist(object):
             k: getattr(self.language, k, None)
             for k in 'id name author notes problems typedby checkedby'.split()})
 
-    def to_cldf(self, concept_map, citekey=None, source=None, concept_key=None):
+    def to_cldf(self, concept_map, unmapped, citekey=None, source=None, concept_key=None):
         if concept_key is None:
             concept_key = lambda entry: entry.word_id
+
+        if not self.language.glottocode:
+            unmapped['languages'].add(
+                (self.language.id, self.language.name, self.language.iso))
 
         with CldfDataset((
                 'ID',
@@ -208,13 +212,16 @@ class Wordlist(object):
                     if src and getattr(src, 'text'):
                         ref = slug(text_type(src.text))
                         ds.sources.add(Source('misc', ref, title=src.text))
+                cid = concept_map.get(concept_key(entry))
+                if not cid:
+                    unmapped['concepts'].add((entry.word_id, entry.word))
                 ds.add_row([
                     entry.id,
                     self.language.glottocode,
                     self.language.iso,
                     self.language.name,
                     self.language.id,
-                    concept_map.get(concept_key(entry)),
+                    cid,
                     entry.word,
                     entry.word_id,
                     entry.name,
@@ -233,3 +240,13 @@ class Wordlist(object):
                     entry.name,
                     '%s-%s' % (self.section, cognate_set_id),
                     doubt)
+
+
+def print_unmapped(unmapped):
+    print('ID,NAME,ISO,GLOTTOCODE,GLOTTOLOG_NAME')
+    for lang in sorted(unmapped['languages'], key=lambda l: int(l[0])):
+        print('%s,"%s",%s,,' % lang)
+    print('================================')
+    print('ID,GLOSS,CONCEPTICON_ID,CONCEPTICON_GLOSS')
+    for c in sorted(unmapped['concepts'], key=lambda cc: int(cc[0])):
+        print('%s,"%s",,' % c)

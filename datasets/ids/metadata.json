@@ -1,0 +1,13 @@
+{
+    "@context": [
+        "http://www.w3.org/ns/csvw",
+        {
+            "@language": "en"
+        }
+    ],
+    "dc:title": "Intercontinental Dictionary Series",
+    "dc:bibliographicCitation": "Key, Mary Ritchie & Comrie, Bernard (eds.) 2015. The Intercontinental Dictionary Series. Leipzig: Max Planck Institute for Evolutionary Anthropology.",
+    "dc:license": "http://creativecommons.org/licenses/by/4.0/",
+    "dc:identifier": "http://ids.clld.org",
+    "aboutUrl": "http://ids.clld.org/values/{ID}"
+}

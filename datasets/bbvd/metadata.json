@@ -1,0 +1,14 @@
+{
+    "@context": [
+        "http://www.w3.org/ns/csvw",
+        {
+            "@language": "en"
+        }
+    ],
+    "rdf:type": "dcat:CatalogRecord",
+    "dc:title": "Bantu Basic Vocabulary Database",
+    "dc:bibliographicCitation": "Simon Greenhill and Russell Gray, 2015. Bantu Basic Vocabulary Database",
+    "dc:license": "https://creativecommons.org/licenses/by/4.0/",
+    "dc:identifier": "http://language.psy.auckland.ac.nz/bantu/",
+    "dc:conformsTo": "http://concepticon.clld.org/contributions/TeilDautrey-2008-430"
+}

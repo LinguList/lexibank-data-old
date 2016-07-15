@@ -1,14 +1,10 @@
 # coding=utf-8
 from __future__ import unicode_literals, print_function
-from collections import defaultdict
-
-from clldutils.misc import slug
 
 from pylexibank.providers import abvd
+from pylexibank.util import get_reference
 
-from author_notes_map import MAP
-
-SECTION = 'austronesian'
+SECTION = 'bantu'
 
 
 def download(dataset, **kw):
@@ -19,25 +15,27 @@ def cldf(dataset, glottolog, concepticon, **kw):
     concept_map = {
         c['URL'].split('v=')[1]: c['CONCEPTICON_ID']
         for c in concepticon.conceptlist(dataset.conceptlist)}
+    for c in dataset.concepts:
+        concept_map[c['ID']] = c['CONCEPTICON_ID'] or None
 
-    l_map = {int(l['ID']): l['GLOTTOCODE'] for l in dataset.languages if l['GLOTTOCODE']}
     gl_map = {l.iso_code: l.id for l in glottolog.languoids() if l.iso_code}
     wordlists = []
     for xml in dataset.raw.glob('*.xml'):
         wl = abvd.Wordlist(dataset, xml, SECTION)
-        if int(wl.language.id) in l_map:
-            wl.language.glottocode = l_map[int(wl.language.id)]
-        elif wl.language.iso:
+        if wl.language.iso:
             if wl.language.iso in gl_map:
                 wl.language.glottocode = gl_map[wl.language.iso]
+        if not wl.language.glottocode:
+            dataset.log.warn(
+                'no glottocode for language %s, iso-code %s' % (wl.language.name, wl.language.iso))
         wordlists.append(wl)
 
-    source_map = defaultdict(lambda: (None, None))
-    for wlid, (author, notes) in MAP.items():
-        source_map[wlid.split('-', 1)[1]] = (slug(author), notes.strip())
-
+    sources = {}
     unmapped = dict(languages=set(), concepts=set())
     for wl in wordlists:
-        wl.to_cldf(concept_map, unmapped, *source_map[wl.id])
-        dataset.cognates.extend(list(wl.cognates()))
+        args = [None, None]
+        ref = get_reference(None, None, wl.language.notes, None, sources)
+        if ref:
+            args = [ref.source.id, ref.source]
+        wl.to_cldf(concept_map, unmapped, *args)
     abvd.print_unmapped(unmapped)
