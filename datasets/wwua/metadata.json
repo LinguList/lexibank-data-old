@@ -1,0 +1,13 @@
+{
+    "@context": [
+        "http://www.w3.org/ns/csvw",
+        {
+            "@language": "en"
+        }
+    ],
+    "dc:title": "The evolution and biogeography of Uto-Aztecan languages - supporting information",
+    "dc:bibliographicCitation": "Wheeler and Whiteley 2015. Historical linguistics as a sequence optimization problem: the evolution and biogeography of Uto-Aztecan languages",
+    "dc:license": null,
+    "dc:identifier": "http://onlinelibrary.wiley.com/doi/10.1111/cla.12078/suppinfo",
+    "dc:conformsTo": "http://concepticon.clld.org/contributions/Wheeler-2015-102"
+}
