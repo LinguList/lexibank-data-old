@@ -15,10 +15,10 @@ Available online at http://language.psy.auckland.ac.nz/bantu/
 
 Name | Languages | Concepts | Lexemes | Quality
 :--- | ---:| ---:| ---:|:---:
-**total:** | 10 | 416 | 4,254 | 
+**total:** | 10 | 416 | 4,256 | 
 [bbvd-1](cldf/bbvd-1.csv) | 1 | 388 | 466 | ![Glottolog: 100%](https://img.shields.io/badge/Glottolog-100%25-brightgreen.svg "Glottolog: 100%") ![Concepticon: 98%](https://img.shields.io/badge/Concepticon-98%25-green.svg "Concepticon: 98%") ![Source: 100%](https://img.shields.io/badge/Source-100%25-brightgreen.svg "Source: 100%")
 [bbvd-10](cldf/bbvd-10.csv) | 1 | 394 | 438 | ![Glottolog: 100%](https://img.shields.io/badge/Glottolog-100%25-brightgreen.svg "Glottolog: 100%") ![Concepticon: 98%](https://img.shields.io/badge/Concepticon-98%25-green.svg "Concepticon: 98%") ![Source: 100%](https://img.shields.io/badge/Source-100%25-brightgreen.svg "Source: 100%")
-[bbvd-2](cldf/bbvd-2.csv) | 1 | 384 | 432 | ![Glottolog: 100%](https://img.shields.io/badge/Glottolog-100%25-brightgreen.svg "Glottolog: 100%") ![Concepticon: 99%](https://img.shields.io/badge/Concepticon-99%25-brightgreen.svg "Concepticon: 99%") ![Source: 100%](https://img.shields.io/badge/Source-100%25-brightgreen.svg "Source: 100%")
+[bbvd-2](cldf/bbvd-2.csv) | 1 | 384 | 434 | ![Glottolog: 100%](https://img.shields.io/badge/Glottolog-100%25-brightgreen.svg "Glottolog: 100%") ![Concepticon: 99%](https://img.shields.io/badge/Concepticon-99%25-brightgreen.svg "Concepticon: 99%") ![Source: 100%](https://img.shields.io/badge/Source-100%25-brightgreen.svg "Source: 100%")
 [bbvd-3](cldf/bbvd-3.csv) | 1 | 359 | 386 | ![Glottolog: 100%](https://img.shields.io/badge/Glottolog-100%25-brightgreen.svg "Glottolog: 100%") ![Concepticon: 99%](https://img.shields.io/badge/Concepticon-99%25-green.svg "Concepticon: 99%") ![Source: 100%](https://img.shields.io/badge/Source-100%25-brightgreen.svg "Source: 100%")
 [bbvd-4](cldf/bbvd-4.csv) | 1 | 379 | 412 | ![Glottolog: 100%](https://img.shields.io/badge/Glottolog-100%25-brightgreen.svg "Glottolog: 100%") ![Concepticon: 98%](https://img.shields.io/badge/Concepticon-98%25-green.svg "Concepticon: 98%") ![Source: 100%](https://img.shields.io/badge/Source-100%25-brightgreen.svg "Source: 100%")
 [bbvd-5](cldf/bbvd-5.csv) | 1 | 379 | 404 | ![Glottolog: 100%](https://img.shields.io/badge/Glottolog-100%25-brightgreen.svg "Glottolog: 100%") ![Concepticon: 98%](https://img.shields.io/badge/Concepticon-98%25-green.svg "Concepticon: 98%") ![Source: 100%](https://img.shields.io/badge/Source-100%25-brightgreen.svg "Source: 100%")

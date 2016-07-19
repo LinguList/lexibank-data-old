@@ -16,6 +16,8 @@ def test_split():
         ("(ba-)hi, hián [puhiu =drink water; hiáhí- drink -Lionnet]",
          [('(ba-)hi', None), ('hián', '[puhiu =drink water; hiáhí- drink -Lionnet]')]),
         ("*[ji(C)]-ha(d,l)ug", [('*[ji(C)]-ha(d,l)ug', None)]),
+        ("Láar~ábà (Niger); Làar~àbá (Standard, Nigeria)",
+         [("Láar~ábà", "(Niger)"), ("Làar~àbá", "(Standard, Nigeria)")])
     ]:
         yield check_split, string, res
 

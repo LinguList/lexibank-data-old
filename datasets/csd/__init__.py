@@ -3,6 +3,7 @@ from __future__ import unicode_literals, print_function
 
 from pylexibank.providers import clld
 from pylexibank.dataset import CldfDataset, Unmapped
+from pylexibank.util import split
 
 
 def download(dataset):
@@ -27,6 +28,7 @@ def cldf(dataset, glottolog, concepticon, **kw):
             'Parameter_name',
             'Parameter_local_ID',
             'Value',
+            'Context',
             'Source',
             'Comment',
             ), dataset) as ds:
@@ -43,17 +45,19 @@ def cldf(dataset, glottolog, concepticon, **kw):
                     ds.sources.add(ref.source)
                 if row['Parameter_name'].upper() not in concept_map:
                     unmapped.concepts.add((row['Parameter_ID'], row['Parameter_name']))
-                ds.add_row([
-                    row['ID'],
-                    row['Language_glottocode'],
-                    row['Language_iso'],
-                    row['Language_name'],
-                    row['Language_ID'],
-                    concept_map.get(row['Parameter_name'].upper()),
-                    row['Parameter_name'],
-                    row['Parameter_ID'],
-                    row['Value'],
-                    row['Source'],
-                    row['Comment'],
-                ])
+                for i, (form, context) in enumerate(split(row['Value'])):
+                    ds.add_row([
+                        '%s-%s' % (row['ID'], i + 1),
+                        row['Language_glottocode'],
+                        row['Language_iso'],
+                        row['Language_name'],
+                        row['Language_ID'],
+                        concept_map.get(row['Parameter_name'].upper()),
+                        row['Parameter_name'],
+                        row['Parameter_ID'],
+                        form,
+                        context,
+                        row['Source'],
+                        row['Comment'],
+                    ])
     unmapped.pprint()
