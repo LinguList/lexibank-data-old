@@ -1,3 +1,4 @@
+# coding=utf8
 from __future__ import unicode_literals
 import sys
 import logging
@@ -16,6 +17,38 @@ import pylexibank
 logging.basicConfig(level=logging.INFO)
 REPOS_PATH = Path(pylexibank.__file__).parent.parent
 YEAR_PATTERN = re.compile('\s+\(?(?P<year>[1-9][0-9]{3}(\-[0-9]+)?)(\)|\.)')
+
+
+def split(s, sep=',;', exclude_contexts=None):
+    exclude_contexts = dict(exclude_contexts or [('[', ']'), ('(', ')'), ('“', '”')])
+    token, context = '', ''
+    in_context = []
+    ignore_sep = False
+    for c in s:
+        if c in exclude_contexts:
+            ignore_sep = True
+            if token and token[-1] == ' ':
+                in_context.append(exclude_contexts[c])
+
+        if c in sep and not in_context and not ignore_sep:
+            if token.strip():
+                yield token.strip(), context.strip() or None
+                token, context = '', ''
+        else:
+            if in_context:
+                context += c
+            else:
+                token += c
+
+        if c in exclude_contexts.values():
+            ignore_sep = False
+            if in_context and c == in_context[-1]:
+                in_context.pop()
+                if not in_context:
+                    context += ' '
+
+    if token.strip():
+        yield token.strip(), context.strip() or None
 
 
 def formatted_number(n):

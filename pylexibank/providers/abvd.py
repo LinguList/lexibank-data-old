@@ -9,6 +9,7 @@ from clldutils.misc import xmlchars, slug
 from pycldf.sources import Source
 
 from pylexibank.dataset import CldfDataset
+from pylexibank import util
 
 URL = "http://language.psy.auckland.ac.nz/utils/save/?type=xml&section=%s&language=%d"
 INVALID_LANGUAGE_IDS = {
@@ -176,6 +177,7 @@ class Wordlist(object):
                 'Parameter_name',
                 'Parameter_local_ID',
                 'Value',
+                'Context',
                 'Source',
                 'Cognate_Set',
                 'Comment',
@@ -215,28 +217,31 @@ class Wordlist(object):
                 cid = concept_map.get(concept_key(entry))
                 if not cid:
                     unmapped.concepts.add((entry.word_id, entry.word))
-                ds.add_row([
-                    entry.id,
-                    self.language.glottocode,
-                    self.language.iso,
-                    self.language.name,
-                    self.language.id,
-                    cid,
-                    entry.word,
-                    entry.word_id,
-                    entry.name,
-                    ref,
-                    entry.cognacy,
-                    entry.comment or '',
-                    entry.loan == 'L',
-                ])
+                for i, (form, context) in enumerate(util.split(entry.name)):
+                    ds.add_row([
+                        '{0}-{1}'.format(entry.id, i + 1),
+                        self.language.glottocode,
+                        self.language.iso,
+                        self.language.name,
+                        self.language.id,
+                        cid,
+                        entry.word,
+                        entry.word_id,
+                        form,
+                        context,
+                        ref,
+                        entry.cognacy,
+                        entry.comment or '',
+                        entry.loan == 'L',
+                    ])
 
     def cognates(self):
         for entry in self.entries:
-            for cognate_set_id, doubt in entry.cognates:
-                yield (
-                    '%s-%s' % (self.section, entry.id),
-                    self.id,
-                    entry.name,
-                    '%s-%s' % (self.section, cognate_set_id),
-                    doubt)
+            for i, (form, context) in enumerate(util.split(entry.name)):
+                for cognate_set_id, doubt in entry.cognates:
+                    yield (
+                        '{0}-{1}'.format(entry.id, i + 1),
+                        self.id,
+                        form,
+                        cognate_set_id,
+                        doubt)

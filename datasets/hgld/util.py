@@ -170,3 +170,7 @@ def itersources(item, lang, sources):
     else:
         authors, year, rem = get_author_and_year(source)
         yield get_reference(authors, year, rem, None, sources)
+
+
+"kohI, kohhi7 “small intestine, waist, abdomen”"
+"ĩík [swell], pux [pot boil over]"

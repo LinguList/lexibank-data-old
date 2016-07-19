@@ -32,3 +32,6 @@ def cldf(dataset, glottolog, concepticon, **kw):
                         unmapped.add((row['Language_name'], lid))
                     row = row.to_list() + [lid, '-'.join(row['ID'].split('-')[:2])]
                     ds.add_row(row)
+                else:
+                    print(row['Value'])
+

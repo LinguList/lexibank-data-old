@@ -44,6 +44,7 @@ from collections import defaultdict, Counter
 
 from clldutils import jsonlib
 
+from pylexibank.util import split
 from pylexibank.dataset import CldfDataset
 
 from util import get, parse, path2name, VALUE_MAP, itersources
@@ -113,6 +114,7 @@ def cldf(dataset, glottolog, concepticon, **kw):
             'Parameter_local_ID',
             'Semantic_field',
             'Value',
+            'Context',
             'Loan',
             'Phonemic',
             'Source',
@@ -134,7 +136,8 @@ def cldf(dataset, glottolog, concepticon, **kw):
                 if lid in missing_languages:
                     continue
                 lang = languages[lid]
-                for i, item in enumerate(items):
+                i = 0
+                for item in items:
                     form = item['Orthographic Form'].strip()
                     if form in missing_marker:
                         continue
@@ -143,22 +146,25 @@ def cldf(dataset, glottolog, concepticon, **kw):
                     for k, v in item.items():
                         if v:
                             fields[k].update([v])
-                    ds.add_row([
-                        '%s-%s-%s' % (lid, param['id'], i + 1),
-                        lang['glottocode'],
-                        lang['ISO 639-3'],
-                        lang['name'],
-                        lang['id'],
-                        param['concepticon'],
-                        param['concept'],
-                        param['id'],
-                        param['Semantic Field'],
-                        form,
-                        bool(item['Loan Source'] or item['Wanderwort Status']),
-                        item['Phonemicized Form'] or None,
-                        ';'.join('%s' % ref for ref in refs),
-                        item.get('Created By'),
-                        item.get('General Notes'),
-                    ])
+                    for fform, context in split(form):
+                        i += 1
+                        ds.add_row([
+                            '%s-%s-%s' % (lid, param['id'], i),
+                            lang['glottocode'],
+                            lang['ISO 639-3'],
+                            lang['name'],
+                            lang['id'],
+                            param['concepticon'],
+                            param['concept'],
+                            param['id'],
+                            param['Semantic Field'],
+                            fform,
+                            context,
+                            bool(item['Loan Source'] or item['Wanderwort Status']),
+                            item['Phonemicized Form'] or None,
+                            ';'.join('%s' % ref for ref in refs),
+                            item.get('Created By'),
+                            item.get('General Notes'),
+                        ])
     #print(fields['Loan Source'].most_common(5))
     #print(fields['Wanderwort Status'].most_common(5))
