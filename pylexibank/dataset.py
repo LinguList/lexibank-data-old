@@ -57,6 +57,7 @@ class Dataset(object):
 
     def write_cognates(self):
         self.cognates.write(self.cldf_dir)
+
     def write_alignments(self):
         self.alignments.write(self.cldf_dir)
 
@@ -101,6 +102,7 @@ class Cognates(list):
         with csv.Reader(self.table, container=container) as reader:
             return list(reader)
 
+
 class Alignments(list):
     fields = ['Word_ID', 'Wordlist_ID', 'Alignment', 'Cognate_set_ID', 'doubt']
     table = {
@@ -117,6 +119,7 @@ class Alignments(list):
     def read(self, container):
         with csv.Reader(self.table, container=container) as reader:
             return list(reader)
+
 
 class CldfDataset(CldfDatasetBase):
     def __init__(self, fields, dataset, subset=None):
