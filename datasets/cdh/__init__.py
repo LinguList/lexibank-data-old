@@ -2,11 +2,8 @@
 from __future__ import unicode_literals, print_function
 
 from collections import defaultdict
-from pylexibank.dataset import CldfDataset, REQUIRED_FIELDS
-from pycldf.sources import Source
+from pylexibank.dataset import CldfDataset
 from pycldf.dataset import Dataset
-from pylexibank.util import with_temp_dir
-from six.moves.urllib.request import urlretrieve, urlopen
 from clldutils.misc import slug
 from clldutils.path import Path
 
@@ -16,12 +13,14 @@ from pylexibank.lingpy_util import getEvoBibAsSource,\
 import lingpy as lp
 
 URL = "https://gist.github.com/LinguList/7481097/archive/036610e905af4ea7fbc3de01fa443d8b08f4c684.zip"
-PATH = Path('7481097-036610e905af4ea7fbc3de01fa443d8b08f4c684').as_posix()
+PATH = Path('7481097-036610e905af4ea7fbc3de01fa443d8b08f4c684')
 DSET = 'basic.qlc'
 SOURCE = 'Hou2004'
 
+
 def download(dataset, **kw):
-    download_and_unpack_zipfiles(URL, dataset, Path(PATH, DSET).as_posix())
+    download_and_unpack_zipfiles(URL, dataset, PATH.joinpath(DSET))
+
 
 def cldf(dataset, glottolog, concepticon, **kw):
     """

@@ -11,14 +11,13 @@ from pylexibank.lingpy_util import getEvoBibAsSource,\
 import lingpy as lp
 
 URL = "https://zenodo.org/record/51328/files/partial-cognate-detection-v1.0.zip"
-PATH = Path('lingpy-partial-cognate-detection-2089b49', 'data').as_posix()
+PATH = Path('lingpy-partial-cognate-detection-2089b49', 'data')
 DSETS = ['Bai-110-9.tsv', 'Tujia-109-5.tsv', 'Chinese-180-18.tsv']
 SOURCES = ['Wang2006', 'Starostin2013b', 'Hou2004']
 
 
 def download(dataset, **kw):
-    download_and_unpack_zipfiles(URL, dataset, *[Path(PATH, dset).as_posix() for
-        dset in DSETS])
+    download_and_unpack_zipfiles(URL, dataset, *[PATH.joinpath(dset) for dset in DSETS])
 
 
 def cldf(dataset, glottolog, concepticon, **kw):
