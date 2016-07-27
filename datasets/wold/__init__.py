@@ -4,6 +4,7 @@ from __future__ import unicode_literals, print_function, division
 from pylexibank.providers import clld
 from pylexibank.dataset import CldfDataset
 from pylexibank.util import split
+from pylexibank.lingpy_util import test_sequences
 
 
 def download(dataset, **kw):
@@ -44,3 +45,8 @@ def cldf(dataset, glottolog, concepticon, **kw):
                         context])
                     ds.add_row(_row)
     assert not unmapped
+
+
+def report(dataset):
+    for ds in dataset.iter_cldf_datasets():
+        test_sequences(ds, 'Value', segmentized=False)

@@ -12,6 +12,8 @@ requires = [
     'purl',
     'pyglottolog',
     'pyconcepticon',
+    'lingpy',
+    'pyclpa',
 ]
 
 setup(

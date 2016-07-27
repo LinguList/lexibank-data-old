@@ -66,10 +66,12 @@ def download(args):
     """
     get_dataset(args).download()
 
+
 def report(args):
     """
     """
     get_dataset(args).report()
+
 
 def list(args):
     for d in data_path(repos=Path(args.lexibank_repos)).iterdir():
