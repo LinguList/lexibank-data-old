@@ -6,7 +6,7 @@
         }
     ],
     "dc:title": "Using sequence similarity networks to identify partial cognates in multilingual wordlists",
-    "dc:bibliographicCitation": "List, J.-M., P. Lopez, and E. Bapteste (forthcoming): Using sequence similarity networks to identify partial cognates in multilingual wordlists. In: Proceedings of the Association of Computational Linguistics 2016. Short Papers.",
+    "dc:bibliographicCitation": "List, J.-M., P. Lopez, and E. Bapteste (2016): Using sequence similarity networks to identify partial cognates in multilingual wordlists. In: Proceedings of the Association of Computational Linguistics 2016. Short Papers.",
     "dc:license": "https://www.gnu.org/licenses/gpl-3.0.de.html",
     "dc:identifier": "https://zenodo.org/record/51328/files/partial-cognate-detection-v1.0.zip",
     "dc:conformsTo": "http://concepticon.clld.org/contributions/Starostin-1991-110"

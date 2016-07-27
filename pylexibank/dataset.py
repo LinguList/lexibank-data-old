@@ -72,6 +72,9 @@ class Dataset(object):
     def download(self, **kw):
         self._run_command('download', **kw)
 
+    def report(self, **kw):
+        self._run_command('report', **kw)
+
 
 class Cognates(list):
     fields = ['Word_ID', 'Wordlist_ID', 'Form', 'Cognate_set_ID', 'doubt']

@@ -66,6 +66,10 @@ def download(args):
     """
     get_dataset(args).download()
 
+def report(args):
+    """
+    """
+    get_dataset(args).report()
 
 def list(args):
     for d in data_path(repos=Path(args.lexibank_repos)).iterdir():
@@ -216,7 +220,7 @@ def check(args):
 
 
 def main():
-    parser = ArgumentParser('pylexibank', readme, download, cldf, list)
+    parser = ArgumentParser('pylexibank', readme, download, cldf, list, report)
     parser.add_argument(
         '--lexibank-repos',
         help="path to lexibank data repository",
