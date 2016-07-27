@@ -120,3 +120,6 @@ def test_sequences(dataset, column, clpa=False, **keywords):
             segments=segments)
     print(text)
 
+def automatic_cognates(dataset, method='turchin', threshold=0.5):
+
+    pass
