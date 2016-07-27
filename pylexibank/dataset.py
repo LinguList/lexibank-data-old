@@ -49,6 +49,7 @@ class Dataset(object):
         if cpath.exists():
             self.concepts = list(reader(cpath, dicts=True))
         self.cognates = Cognates()
+        self.alignments = Alignments()
 
     def iter_cldf_datasets(self):
         for fname in self.cldf_dir.glob('*' + MD_SUFFIX):
@@ -56,6 +57,8 @@ class Dataset(object):
 
     def write_cognates(self):
         self.cognates.write(self.cldf_dir)
+    def write_alignments(self):
+        self.alignments.write(self.cldf_dir)
 
     def cognate_stats(self):
         cognates = self.cognates.read(self.cldf_dir)
@@ -98,6 +101,22 @@ class Cognates(list):
         with csv.Reader(self.table, container=container) as reader:
             return list(reader)
 
+class Alignments(list):
+    fields = ['Word_ID', 'Wordlist_ID', 'Alignment', 'Cognate_set_ID', 'doubt']
+    table = {
+        'url': 'alignments.csv',
+        'tableSchema': {'columns': [{'name': n, 'datatype': 'string'} for n in fields]}
+    }
+    table['tableSchema']['columns'][0]['valueUrl'] = \
+        '{Wordlist_ID}.csv#{Word_ID}'
+
+    def write(self, container):
+        with csv.Writer(self.table, container=container) as writer:
+            writer.writerows(sorted(self, key=lambda r: (r[3], r[1], r[0])))
+
+    def read(self, container):
+        with csv.Reader(self.table, container=container) as reader:
+            return list(reader)
 
 class CldfDataset(CldfDatasetBase):
     def __init__(self, fields, dataset, subset=None):
@@ -120,6 +139,7 @@ class CldfDataset(CldfDatasetBase):
         self.table.schema.columns['Language_ID'].valueUrl = \
             'http://glottolog.org/resource/languoid/id/{Language_ID}'
         self.metadata['tables'].append(Cognates.table)
+        #self.metadata['tables'].append(Alignments.table)
         super(CldfDataset, self).write(**kw)
 
 
