@@ -1,11 +1,7 @@
 # coding=utf-8
 from __future__ import unicode_literals, print_function
 
-from pylexibank.dataset import CldfDataset, REQUIRED_FIELDS
-from pycldf.sources import Source
-from pycldf.dataset import Dataset
-from pylexibank.util import with_temp_dir
-from six.moves.urllib.request import urlretrieve, urlopen
+from pylexibank.dataset import CldfDataset
 from clldutils.misc import slug
 from clldutils.path import Path
 
@@ -24,6 +20,7 @@ def download(dataset, **kw):
     download_and_unpack_zipfiles(URL, dataset, *[Path(PATH, dset).as_posix() for
         dset in DSETS])
 
+
 def cldf(dataset, glottolog, concepticon, **kw):
     """
     Implements the conversion of the raw data to CLDF dataset(s).
@@ -41,11 +38,8 @@ def cldf(dataset, glottolog, concepticon, **kw):
 
     for dset, srckey in zip(DSETS, SOURCES):
         wl = lp.Wordlist(dataset.dir.joinpath('raw', dset).as_posix())
-        
-        # language ids
-        lids = dict(zip(wl.cols, range(1, wl.width+1)))
         src = getEvoBibAsSource(srckey)
-        
+
         with CldfDataset((
             'ID',
             'Language_ID',
@@ -84,7 +78,7 @@ def cldf(dataset, glottolog, concepticon, **kw):
                     if val:
                         for k in val:
                             # get partial_cognate-index
-                            cogid = '-'.join([slug(wl[k, 'concept']), pid]) 
+                            cogid = '-'.join([slug(wl[k, 'concept']), '%s' % pid])
                             dataset.cognates.append([
                                 k,
                                 ds.name,
@@ -94,9 +88,7 @@ def cldf(dataset, glottolog, concepticon, **kw):
                                 ])
             dataset.write_cognates()
 
-def report(dataset):
-    for dset in DSETS:
-        ds = Dataset.from_file(Path(dataset.cldf_dir, 
-            dataset.id+'-'+dset.split('-')[0]+'.csv'))
-        test_sequences(ds, 'Segments', segmentized=True)
 
+def report(dataset):
+    for ds in dataset.iter_cldf_datasets():
+        test_sequences(ds, 'Segments', segmentized=True)

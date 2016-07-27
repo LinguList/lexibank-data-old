@@ -1,24 +1,23 @@
 # coding=utf-8
 from __future__ import unicode_literals, print_function
-
-from pylexibank.util import with_temp_dir
-from pybtex import database
-from collections import defaultdict, Counter
-from six.moves.urllib.request import urlretrieve, urlopen
+from collections import defaultdict
 import zipfile
 import shutil
 
-from lingpy.sequence.sound_classes import clean_string, check_tokens, ipa2tokens, \
-        tokens2class
-import pyclpa 
+from six.moves.urllib.request import urlretrieve, urlopen
+from lingpy.sequence.sound_classes import clean_string, tokens2class
+import pyclpa
+from pybtex import database
 
-# utility functions for handling references online and downloading zip-files
+from pylexibank.util import with_temp_dir
+
+
 def getEvoBibAsSource(key):
     """Download bibtex format and parse it from EvoBib"""
-    url = "http://bibliography.lingpy.org/raw.php?key="
-    bibtex = database.parse_string(urlopen(url+key).read().decode('utf-8'),
-            bib_format='bibtex')
-    return bibtex
+    return database.parse_string(
+        urlopen("http://bibliography.lingpy.org/raw.php?key="+key).read().decode('utf-8'),
+        bib_format='bibtex')
+
 
 def download_and_unpack_zipfiles(url, dataset, *paths):
     """Download zipfiles and immediately unpack the content"""
@@ -29,12 +28,11 @@ def download_and_unpack_zipfiles(url, dataset, *paths):
                 zipf.extract(path)
                 shutil.copy(path, dataset.raw.as_posix())
 
-# lingpy test
+
 def test_sequence(sequence, clpa=None, errors=None, stats=None, **keywords):
     """
     Test a sequence for compatibility with CLPA and LingPy.
     """
-    # clpa
     clpa = clpa or pyclpa.clpa
     
     # clean the string at first, we only take the first item, ignore the rest
@@ -44,7 +42,7 @@ def test_sequence(sequence, clpa=None, errors=None, stats=None, **keywords):
     stats = stats or defaultdict(int)
 
     # lingpy errors
-    lingpy_analysis = [x if y != '0' else '?' for x,y in zip(
+    lingpy_analysis = [x if y != '0' else '?' for x, y in zip(
         segments, tokens2class(segments, 'dolgo'))]
     clpa_analysis, _sounds, _errors = pyclpa.clpa.check_sequence(segments)
 
@@ -57,33 +55,28 @@ def test_sequence(sequence, clpa=None, errors=None, stats=None, **keywords):
         if b == '?':
             errors[a].add('lingpy')
         if c != a:
-            if c == '?':
-                errors[a].add('clpa')
-            else:
-                errors[a].add(c)
+            errors[a].add('clpa' if c == '?' else c)
 
     return segments, [clpa.segment2clpa(x) for x in clpa_analysis], errors, stats
+
 
 def test_sequences(dataset, column, clpa=False, **keywords):
     errors = defaultdict(list)
     stats = defaultdict(int)
-    
+
     # important to make the analysis fast: load clpa only ONCE
     clpa = clpa or pyclpa.clpa
     
     for row in dataset.rows:
-        segments = row[column]
-        segs, ids, errors, stats = test_sequence(segments, errors=errors,
-                stats=stats, **keywords)
+        segs, ids, errors, stats = test_sequence(
+            row[column], errors=errors, stats=stats, **keywords)
 
     # write report
     number_of_tokens = sum(stats.values())
     number_of_segments = len(stats)
     number_of_errors = len(errors)
-    number_of_lingpy_errors = sum([1 if 'lingpy' in errors[x]
-        else 0 for x in errors])
-    number_of_clpa_errors = sum([1 if 'clpa' in errors[x] else 0 for x in
-        errors])
+    number_of_lingpy_errors = sum([1 if 'lingpy' in errors[x] else 0 for x in errors])
+    number_of_clpa_errors = sum([1 if 'clpa' in errors[x] else 0 for x in errors])
     modified = []
     for error, values in errors.items():
         newvals = [v for v in values if v not in ['lingpy', 'clpa']]
@@ -110,16 +103,16 @@ def test_sequences(dataset, column, clpa=False, **keywords):
             c, d = '✓', '✓'
         segments += '| {0} | {1} | {2} | {3} |\n'.format(a, b, c, d)
 
-    text = text.format(dataset=dataset.name, NOT=number_of_tokens,
-            NOS=number_of_segments, NOE=number_of_errors,
-            NOL=number_of_lingpy_errors, NOC=number_of_clpa_errors, 
-            modified='\n## Automatically modified (CLPA)\n'+\
-                    '| Source | Target |\n|---|---|\n'+\
-                    ''.join(['| {0} | {1} |\n'.format(a, b) for a,b in
-                modified]) if modified else '',
-            segments=segments)
-    print(text)
+    print(text.format(
+        dataset=dataset.name,
+        NOT=number_of_tokens,
+        NOS=number_of_segments,
+        NOE=number_of_errors,
+        NOL=number_of_lingpy_errors,
+        NOC=number_of_clpa_errors,
+        modified='\n## Automatically modified (CLPA)\n' +
+        '| Source | Target |\n|---|---|\n' +
+        ''.join(['| {0} | {1} |\n'.format(a, b) for a, b in modified])
+        if modified else '',
+        segments=segments))
 
-def automatic_cognates(dataset, method='turchin', threshold=0.5):
-
-    pass

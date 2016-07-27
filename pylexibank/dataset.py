@@ -10,6 +10,7 @@ from pyglottolog.api import Glottolog
 from pyconcepticon.api import Concepticon
 from pycldf import csv
 from pycldf.dataset import Dataset as CldfDatasetBase
+from pycldf.dataset import MD_SUFFIX
 
 import pylexibank
 from pylexibank.util import with_sys_path
@@ -48,6 +49,10 @@ class Dataset(object):
         if cpath.exists():
             self.concepts = list(reader(cpath, dicts=True))
         self.cognates = Cognates()
+
+    def iter_cldf_datasets(self):
+        for fname in self.cldf_dir.glob('*' + MD_SUFFIX):
+            yield CldfDatasetBase.from_metadata(fname)
 
     def write_cognates(self):
         self.cognates.write(self.cldf_dir)
