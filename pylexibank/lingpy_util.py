@@ -2,8 +2,8 @@
 from __future__ import unicode_literals, print_function
 from collections import defaultdict
 import zipfile
-import shutil
 
+from clldutils.path import as_posix, copy
 from six.moves.urllib.request import urlretrieve, urlopen
 from lingpy.sequence.sound_classes import clean_string, tokens2class
 import pyclpa
@@ -25,8 +25,8 @@ def download_and_unpack_zipfiles(url, dataset, *paths):
         urlretrieve(url, tmpdir.joinpath('ds.zip').as_posix())
         with zipfile.ZipFile(tmpdir.joinpath('ds.zip').as_posix()) as zipf:
             for path in paths:
-                zipf.extract(path)
-                shutil.copy(path, dataset.raw.as_posix())
+                zipf.extract(as_posix(path), path=tmpdir.as_posix())
+                copy(tmpdir.joinpath(path), dataset.raw)
 
 
 def test_sequence(sequence, clpa=None, errors=None, stats=None, **keywords):
