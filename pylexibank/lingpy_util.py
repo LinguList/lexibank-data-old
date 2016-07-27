@@ -4,8 +4,10 @@ from collections import defaultdict
 import zipfile
 
 from clldutils.path import as_posix, copy
+from clldutils.misc import slug
 from six.moves.urllib.request import urlretrieve, urlopen
 from lingpy.sequence.sound_classes import clean_string, tokens2class
+import lingpy as lp
 import pyclpa
 from pybtex import database
 
@@ -66,7 +68,7 @@ def test_sequences(dataset, column, clpa=False, **keywords):
 
     # important to make the analysis fast: load clpa only ONCE
     clpa = clpa or pyclpa.clpa
-    
+
     for row in dataset.rows:
         segs, ids, errors, stats = test_sequence(
             row[column], errors=errors, stats=stats, **keywords)
@@ -94,7 +96,7 @@ def test_sequences(dataset, column, clpa=False, **keywords):
 ## Detailed listing of recognized segments
 {segments}
 """
-    segments = '| Segment | Occurrence | LingPy | CLPA | \n |---|---|---|---|\n'
+    segments = '| Segment | Occurrence | LingPy | CLPA | \n|---|---|---|---|\n'
     for a, b in sorted(stats.items(), key=lambda x: x[1], reverse=True):
         if a in errors:
             c = '✓' if 'lingpy' not in errors[a] else '?'
@@ -115,4 +117,79 @@ def test_sequences(dataset, column, clpa=False, **keywords):
         ''.join(['| {0} | {1} |\n'.format(a, b) for a, b in modified])
         if modified else '',
         segments=segments))
+
+# helper functions for lingpy reading of cldf data
+def _cldf2wld(dataset):
+    """Make lingpy-compatible dictinary out of cldf main data."""
+    D = {}
+    header =[h for h in dataset.rows[0]]
+    D[0] = ['lid'] + [h.lower() for h in header[1:]]
+    idx = 1
+    for row in dataset.rows:
+        D[idx] = [row[h] for h in header]
+        idx += 1
+    return D
+def _cldf2lexstat(dataset, segments='segments', transcription='value',
+        row='parameter_name', col='language_name'):
+    """Read LexStat object from cldf dataset."""
+    D = _cldf2wld(dataset)
+    return lp.LexStat(D, segments=segments, transcription=transcription,
+            row='parameter_name', col='language_name')
+def _cldf2wordlist(dataset, row='parameter_name', col='language_name'):
+    """Read worldist object from cldf dataset."""
+    D = _cldf2wld(dataset)
+    return lp.Wordlist(D, row='parameter_name', col='language_name')
+
+def automatic_cognates(dataset, column='Segments', method='turchin', threshold=0.5, **keywords):
+    """
+    Compute cognates automatically for a given dataset.
+    """
+    if method == 'turchin':
+        cognates = []
+        for row in dataset.rows:
+            sounds = ''.join(tokens2class(row['Segments'].split(' '), 'dolgo'))
+            if sounds.startswith('V'):
+                sounds = 'H'+sounds
+            sounds = '-'.join([s for s in sounds if s != 'V'][:2])
+            cogid = slug(row['Parameter_name'])+'-'+sounds
+            if not '0' in sounds:
+                cognates += [(row['ID'], dataset.name, row['Value'], cogid, 'turchin')]
+        return cognates
+    
+    if method in ['sca', 'lexstat']:
+        lex = _cldf2lexstat(dataset)
+        if method == 'lexstat':
+            lex.get_scorer(**keywords)
+        lex.cluster(method=method, threshold=threshold, ref='cogid')
+        cognates = []
+        for k in lex:
+            cognates += [(lex[k, 'lid'], dataset.name, lex[k, 'value'], lex[k,
+                'cogid'], method+'-t{0:.2f}'.format(threshold))]
+        return cognates
+
+def automatic_alignments(dataset, cognate_sets, column='Segments', method='library'):
+    """
+    Function computes automatic alignments and writes them to file.
+    """
+    
+    wordlist = _cldf2wordlist(dataset)
+    cognates = {}
+    for row in cognate_sets:
+        lid = row[0]
+        cogid = row[-2]
+        cognates[lid] = cogid
+    wordlist.add_entries('cogid', 'lid', lambda x: cognates[x] if x in cognates
+            else '')
+    idx = 1
+    for k in wordlist:
+        if not wordlist[k,'cogid']:
+            wordlist[k][wordlist.header['cogid']] = 'empty-'+str(idx)
+            idx += 1
+    alm = lp.Alignments(wordlist, ref='cogid', row='parameter_name',
+            col='language_name', segments='segments')
+    alm.align(method=method)
+    alignments = []
+    for k in alm:
+        alignments += [(alm[k, 'lid'], dataset.name, alm[k, 'alignment'], alm[k, 'cogid'], method)]
+    return alignments
 

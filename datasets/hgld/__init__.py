@@ -47,7 +47,7 @@ from clldutils import jsonlib
 from pylexibank.util import split
 from pylexibank.dataset import CldfDataset
 
-from util import get, parse, path2name, VALUE_MAP, itersources
+from .util import get, parse, path2name, VALUE_MAP, itersources
 
 
 def download(dataset):
