@@ -8,3 +8,5 @@ Glossary:
 - Concepticon
 - Glottolog
 - CLPA
+- `lexibank` workflow
+- `lexibank` app
