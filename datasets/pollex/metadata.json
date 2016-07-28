@@ -1,0 +1,12 @@
+{
+    "@context": [
+        "http://www.w3.org/ns/csvw",
+        {
+            "@language": "en"
+        }
+    ],
+    "dc:title": "POLLEX",
+    "dc:bibliographicCitation": "Greenhill SJ & Clark R (2011). POLLEX-Online: The Polynesian Lexicon Project Online. Oceanic Linguistics, 50(2), 551-559.",
+    "dc:license": "https://creativecommons.org/licenses/by/4.0/",
+    "dc:identifier": "http://pollex.org.nz/"
+}
