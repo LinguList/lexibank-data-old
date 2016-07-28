@@ -11,7 +11,7 @@ See also http://rspb.royalsocietypublishing.org/content/early/2009/04/27/rspb.20
 
 ### Lexemes
 
-Name | Languages | Concepts | Lexemes | Quality
-:--- | ---:| ---:| ---:|:---:
-**total:** | 23 | 95 | 2,242 | 
-[akse](cldf/akse.csv) | 23 | 95 | 2242 | ![Glottolog: 89%](https://img.shields.io/badge/Glottolog-89%25-yellowgreen.svg "Glottolog: 89%") ![Concepticon: 100%](https://img.shields.io/badge/Concepticon-100%25-brightgreen.svg "Concepticon: 100%") ![Source: 0%](https://img.shields.io/badge/Source-0%25-red.svg "Source: 0%")
+Name | Languages | Concepts | Lexemes | Synonymy | Quality
+:--- | ---:| ---:| ---:| ---:|:---:
+**total:** | 25 | 95 | 2,242 | 1.00 | 
+[akse](cldf/akse.csv) | 25 | 95 | 2242 | 1.00 | ![Glottolog: 89%](https://img.shields.io/badge/Glottolog-89%25-yellowgreen.svg "Glottolog: 89%") ![Concepticon: 100%](https://img.shields.io/badge/Concepticon-100%25-brightgreen.svg "Concepticon: 100%") ![Source: 0%](https://img.shields.io/badge/Source-0%25-red.svg "Source: 0%")

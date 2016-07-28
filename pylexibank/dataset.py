@@ -145,16 +145,19 @@ VALIDATORS = {
 
 
 class CldfDataset(CldfDatasetBase):
-    def __init__(self, fields, dataset, subset=None, validators=None):
+    def __init__(self, fields, dataset, subset=None):
         super(CldfDataset, self).__init__(
             '%s-%s' % (dataset.id, subset) if subset else dataset.id)
         if not all(x in fields for x in REQUIRED_FIELDS):
             raise ValueError('required field is missing')
         self.fields = tuple(fields)
         self.dataset = dataset
-        self.validators = validators or {}
-        for k, v in VALIDATORS.items():
-            self.validators.setdefault(k, v)
+        self.validators = {k: v for k, v in VALIDATORS.items()}
+        for name in dir(self.dataset.commands):
+            if name.startswith('valid_'):
+                if callable(getattr(self.dataset.commands, name)):
+                    self.validators[name.split('_', 1)[1]] = getattr(
+                        self.dataset.commands, name)
 
     def __enter__(self):
         return self
