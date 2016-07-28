@@ -121,20 +121,41 @@ class Alignments(list):
             return list(reader)
 
 
+def valid_Value(row):
+    return bool(row['Value']) and row['Value'] not in ['?']
+
+
+VALIDATORS = {
+    'Value': valid_Value,
+}
+
+
 class CldfDataset(CldfDatasetBase):
-    def __init__(self, fields, dataset, subset=None):
+    def __init__(self, fields, dataset, subset=None, validators=None):
         super(CldfDataset, self).__init__(
             '%s-%s' % (dataset.id, subset) if subset else dataset.id)
         if not all(x in fields for x in REQUIRED_FIELDS):
             raise ValueError('required field is missing')
         self.fields = tuple(fields)
         self.dataset = dataset
+        self.validators = validators or {}
+        for k, v in VALIDATORS.items():
+            self.validators.setdefault(k, v)
 
     def __enter__(self):
         return self
 
     def __exit__(self, exc_type, exc_val, exc_tb):
         self.write(outdir=self.dataset.cldf_dir)
+
+    def add_row(self, row):
+        row = CldfDatasetBase.add_row(self, row)
+        if row:
+            for col, validator in self.validators.items():
+                if not validator(row):
+                    del self._rows[row['ID']]
+                    return
+        return row
 
     def write(self, **kw):
         self.table.schema.columns['Parameter_ID'].valueUrl = \

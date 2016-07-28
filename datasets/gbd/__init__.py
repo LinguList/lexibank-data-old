@@ -114,9 +114,7 @@ def cldf(dataset, glottolog, concepticon, **kw):
                 if concept not in concept_map:
                     unmapped.concepts.add((slug(concept), concept))
                 wid = '%s-%s' % (slug(lang['language']), slug(concept))
-                if item[0] == '?':
-                    continue
-                ds.add_row([
+                if ds.add_row([
                     wid,
                     language_map[lang['language']],
                     lang['language'],
@@ -125,8 +123,7 @@ def cldf(dataset, glottolog, concepticon, **kw):
                     item[0],
                     ref,
                     item[1],
-                ])
-                if item[1] != '?':
+                ]) and item[1] != '?':
                     dataset.cognates.append([
                         wid,
                         ds.name,
