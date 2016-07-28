@@ -186,17 +186,17 @@ def _readme(ds, **kw):
             get_badge(cldfds.rows, 'Source'),
         ]
         stats = cldfds.stats
-        langs = len(stats['languages'])
         params = len(stats['parameters'])
-        sindex = synonymy_index(cldfds)
-        totals[1] = totals[1].union(stats['languages'])
+        sindex, langs = synonymy_index(cldfds)
+        sindex /= float(len(langs))
+        totals[1] = totals[1].union(langs)
         totals[2] = totals[2].union(stats['parameters'])
         totals[3] += len(cldfds)
         totals[4] = (totals[4][0] + sindex, totals[4][1] + 1)
 
         dslines.append(' | '.join([
             '[%s](%s)' % (cldfds.name, 'cldf/%s.csv' % cldfds.name),
-            '%s' % langs,
+            '%s' % len(langs),
             '%s' % params,
             '%s' % len(cldfds),
             '%.2f' % sindex,

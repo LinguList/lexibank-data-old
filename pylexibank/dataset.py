@@ -28,8 +28,10 @@ def synonymy_index(cldfds):
             'Language_local_ID', row.get('Language_name', row.get('Language_ID')))
         if lid and row['Parameter_ID']:
             synonyms[lid].update([row['Parameter_ID']])
-    return sum([sum(list(counts.values())) / float(len(counts))
-                for counts in synonyms.values()]) / float(len(synonyms))
+    return (
+        sum([sum(list(counts.values())) /
+             float(len(counts)) for counts in synonyms.values()]),
+        set(synonyms.keys()))
 
 
 class Dataset(object):
