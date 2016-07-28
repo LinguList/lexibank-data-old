@@ -3,6 +3,7 @@ from __future__ import unicode_literals, print_function, division
 import logging
 import re
 from importlib import import_module
+from collections import defaultdict, Counter
 
 from clldutils import jsonlib
 from clldutils.dsv import reader
@@ -18,6 +19,17 @@ from pylexibank.util import with_sys_path
 logging.basicConfig(level=logging.INFO)
 REQUIRED_FIELDS = ('ID', 'Language_ID', 'Parameter_ID', 'Value')
 GC_PATTERN = re.compile('[a-z][a-z0-9]{3}[1-9][0-9]{3}$')
+
+
+def synonymy_index(cldfds):
+    synonyms = defaultdict(Counter)
+    for row in cldfds.rows:
+        lid = row.get(
+            'Language_local_ID', row.get('Language_name', row.get('Language_ID')))
+        if lid and row['Parameter_ID']:
+            synonyms[lid].update([row['Parameter_ID']])
+    return sum([sum(list(counts.values())) / float(len(counts))
+                for counts in synonyms.values()]) / float(len(synonyms))
 
 
 class Dataset(object):
