@@ -18,12 +18,10 @@ from time import time
 
 from clldutils.clilib import ArgumentParser, ParserError
 from clldutils.path import Path
-from pycldf.dataset import Dataset as CldfDataset
-from pycldf.util import MD_SUFFIX
 
 import pylexibank
 from pylexibank.util import data_path, formatted_number
-from pylexibank.dataset import Dataset
+from pylexibank.dataset import Dataset, synonymy_index
 
 
 HOME = Path(os.path.expanduser('~'))
@@ -73,7 +71,7 @@ def report(args):
     get_dataset(args).report()
 
 
-def list(args):
+def list_(args):
     for d in data_path(repos=Path(args.lexibank_repos)).iterdir():
         if is_dataset_dir(d):
             ds = Dataset(d)
@@ -174,37 +172,39 @@ def _readme(ds, **kw):
         '',
         '### Lexemes',
         '',
-        ' | '.join(['Name', 'Languages', 'Concepts', 'Lexemes', 'Quality']),
-        '|'.join([':--- ', ' ---:', ' ---:', ' ---:', ':---:']),
+        ' | '.join(['Name', 'Languages', 'Concepts', 'Lexemes', 'Synonymy', 'Quality']),
+        '|'.join([':--- ', ' ---:', ' ---:', ' ---:', ' ---:', ':---:']),
     ])
 
-    totals = ['**total:**', set(), set(), 0, '']
+    totals = ['**total:**', set(), set(), 0, (0, 0), '']
 
     dslines = []
-    for meta in sorted(ds.cldf_dir.glob('*' + MD_SUFFIX), key=lambda m: m.name):
-        cldfds = CldfDataset.from_metadata(meta)
-
+    for cldfds in sorted(ds.iter_cldf_datasets(), key=lambda m: m.name):
         badges = [
             get_badge(cldfds.rows, 'Glottolog', 'Language_ID'),
             get_badge(cldfds.rows, 'Concepticon', 'Parameter_ID'),
             get_badge(cldfds.rows, 'Source'),
         ]
         stats = cldfds.stats
-        langs = len(stats['languages'])
         params = len(stats['parameters'])
-        totals[1] = totals[1].union(stats['languages'])
+        sindex, langs = synonymy_index(cldfds)
+        sindex /= float(len(langs))
+        totals[1] = totals[1].union(langs)
         totals[2] = totals[2].union(stats['parameters'])
         totals[3] += len(cldfds)
+        totals[4] = (totals[4][0] + sindex, totals[4][1] + 1)
 
         dslines.append(' | '.join([
-            '[%s](%s)' % (cldfds.name, 'cldf/%s' % meta.name[:-len(MD_SUFFIX)]),
-            '%s' % langs,
+            '[%s](%s)' % (cldfds.name, 'cldf/%s.csv' % cldfds.name),
+            '%s' % len(langs),
             '%s' % params,
             '%s' % len(cldfds),
+            '%.2f' % sindex,
             ' '.join(badges)]))
 
     for i in range(1, 4):
         totals[i] = formatted_number(totals[i])
+    totals[4] = '%.2f' % (totals[4][0] / totals[4][1])
 
     with ds.dir.joinpath('README.md').open('w', encoding='utf8') as fp:
         fp.write('\n'.join(lines + [' | '.join(totals)] + dslines))
@@ -222,7 +222,7 @@ def check(args):
 
 
 def main():
-    parser = ArgumentParser('pylexibank', readme, download, cldf, list, report)
+    parser = ArgumentParser('pylexibank', readme, download, cldf, list_, report)
     parser.add_argument(
         '--lexibank-repos',
         help="path to lexibank data repository",
