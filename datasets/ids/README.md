@@ -15,7 +15,7 @@ Available online at http://ids.clld.org
 
 Name | Languages | Concepts | Lexemes | Synonymy | Quality
 :--- | ---:| ---:| ---:| ---:|:---:
-**total:** | 280 | 1,305 | 450,185 | 1.27 | 
+**total:** | 329 | 1,305 | 450,185 | 1.27 | 
 [ids-107](cldf/ids-107.csv) | 1 | 1292 | 1534 | 1.19 | ![Glottolog: 100%](https://img.shields.io/badge/Glottolog-100%25-brightgreen.svg "Glottolog: 100%") ![Concepticon: 100%](https://img.shields.io/badge/Concepticon-100%25-brightgreen.svg "Concepticon: 100%") ![Source: 0%](https://img.shields.io/badge/Source-0%25-red.svg "Source: 0%")
 [ids-126](cldf/ids-126.csv) | 1 | 1273 | 1357 | 1.07 | ![Glottolog: 100%](https://img.shields.io/badge/Glottolog-100%25-brightgreen.svg "Glottolog: 100%") ![Concepticon: 100%](https://img.shields.io/badge/Concepticon-100%25-brightgreen.svg "Concepticon: 100%") ![Source: 0%](https://img.shields.io/badge/Source-0%25-red.svg "Source: 0%")
 [ids-127](cldf/ids-127.csv) | 1 | 1301 | 1658 | 1.27 | ![Glottolog: 100%](https://img.shields.io/badge/Glottolog-100%25-brightgreen.svg "Glottolog: 100%") ![Concepticon: 100%](https://img.shields.io/badge/Concepticon-100%25-brightgreen.svg "Concepticon: 100%") ![Source: 0%](https://img.shields.io/badge/Source-0%25-red.svg "Source: 0%")

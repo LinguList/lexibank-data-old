@@ -82,13 +82,14 @@ def with_dataset(args, func):
     if args.args:
         func(get_dataset(args), **vars(args))
     else:
-        for d in data_path(repos=args.lexibank_repos).iterdir():
+        for d in sorted(
+                data_path(repos=args.lexibank_repos).iterdir(), key=lambda d: d.name):
             if d.is_dir() and d.name != '_template' \
                     and d.joinpath('metadata.json').exists():
                 s = time()
                 print('processing %s ...' % d.name)
                 func(get_dataset(args, d.name), **vars(args))
-                print('... done [%.1f secs]' % (time() - s,))
+                print('... done %s [%.1f secs]' % (d.name, time() - s))
 
 
 def cldf(args):
@@ -144,6 +145,8 @@ def readme(args):
 
 
 def _readme(ds, **kw):
+    if not list(ds.cldf_dir.glob('*.csv')):
+        return
     lines = [
         '## %s' % ds.md.get('dc:title'),
         '',
@@ -204,7 +207,10 @@ def _readme(ds, **kw):
         stats = cldfds.stats
         params = len(stats['parameters'])
         sindex, langs = synonymy_index(cldfds)
-        sindex /= float(len(langs))
+        if langs:
+            sindex /= float(len(langs))
+        else:
+            sindex = 0
         totals[1] = totals[1].union(langs)
         totals[2] = totals[2].union(stats['parameters'])
         totals[3] += len(cldfds)

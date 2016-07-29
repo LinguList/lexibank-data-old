@@ -11,7 +11,7 @@ Available online at https://huntergatherer.la.utexas.edu/
 
 ### Lexemes
 
-Name | Languages | Concepts | Lexemes | Quality
-:--- | ---:| ---:| ---:|:---:
-**total:** | 228 | 185 | 75,626 | 
-[hgld](cldf/hgld.csv) | 228 | 185 | 75626 | ![Glottolog: 99%](https://img.shields.io/badge/Glottolog-99%25-brightgreen.svg "Glottolog: 99%") ![Concepticon: 52%](https://img.shields.io/badge/Concepticon-52%25-red.svg "Concepticon: 52%") ![Source: 70%](https://img.shields.io/badge/Source-70%25-orange.svg "Source: 70%")
+Name | Languages | Concepts | Lexemes | Synonymy | Quality
+:--- | ---:| ---:| ---:| ---:|:---:
+**total:** | 239 | 185 | 75,626 | 1.20 | 
+[hgld](cldf/hgld.csv) | 239 | 185 | 75626 | 1.20 | ![Glottolog: 99%](https://img.shields.io/badge/Glottolog-99%25-brightgreen.svg "Glottolog: 99%") ![Concepticon: 52%](https://img.shields.io/badge/Concepticon-52%25-red.svg "Concepticon: 52%") ![Source: 70%](https://img.shields.io/badge/Source-70%25-orange.svg "Source: 70%")
