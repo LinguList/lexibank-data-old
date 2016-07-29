@@ -3,6 +3,7 @@ from __future__ import unicode_literals, print_function, division
 import logging
 import re
 from importlib import import_module
+from collections import defaultdict, Counter
 
 from clldutils import jsonlib
 from clldutils.dsv import reader
@@ -18,6 +19,19 @@ from pylexibank.util import with_sys_path
 logging.basicConfig(level=logging.INFO)
 REQUIRED_FIELDS = ('ID', 'Language_ID', 'Parameter_ID', 'Value')
 GC_PATTERN = re.compile('[a-z][a-z0-9]{3}[1-9][0-9]{3}$')
+
+
+def synonymy_index(cldfds):
+    synonyms = defaultdict(Counter)
+    for row in cldfds.rows:
+        lid = row.get(
+            'Language_local_ID', row.get('Language_name', row.get('Language_ID')))
+        if lid and row['Parameter_ID']:
+            synonyms[lid].update([row['Parameter_ID']])
+    return (
+        sum([sum(list(counts.values())) /
+             float(len(counts)) for counts in synonyms.values()]),
+        set(synonyms.keys()))
 
 
 class Dataset(object):
@@ -57,6 +71,7 @@ class Dataset(object):
 
     def write_cognates(self):
         self.cognates.write(self.cldf_dir)
+
     def write_alignments(self):
         self.alignments.write(self.cldf_dir)
 
@@ -101,6 +116,7 @@ class Cognates(list):
         with csv.Reader(self.table, container=container) as reader:
             return list(reader)
 
+
 class Alignments(list):
     fields = ['Word_ID', 'Wordlist_ID', 'Alignment', 'Cognate_set_ID', 'doubt']
     table = {
@@ -118,6 +134,16 @@ class Alignments(list):
         with csv.Reader(self.table, container=container) as reader:
             return list(reader)
 
+
+def valid_Value(row):
+    return bool(row['Value']) and row['Value'] not in ['?']
+
+
+VALIDATORS = {
+    'Value': valid_Value,
+}
+
+
 class CldfDataset(CldfDatasetBase):
     def __init__(self, fields, dataset, subset=None):
         super(CldfDataset, self).__init__(
@@ -126,12 +152,27 @@ class CldfDataset(CldfDatasetBase):
             raise ValueError('required field is missing')
         self.fields = tuple(fields)
         self.dataset = dataset
+        self.validators = {k: v for k, v in VALIDATORS.items()}
+        for name in dir(self.dataset.commands):
+            if name.startswith('valid_'):
+                if callable(getattr(self.dataset.commands, name)):
+                    self.validators[name.split('_', 1)[1]] = getattr(
+                        self.dataset.commands, name)
 
     def __enter__(self):
         return self
 
     def __exit__(self, exc_type, exc_val, exc_tb):
         self.write(outdir=self.dataset.cldf_dir)
+
+    def add_row(self, row):
+        row = CldfDatasetBase.add_row(self, row)
+        if row:
+            for col, validator in self.validators.items():
+                if not validator(row):
+                    del self._rows[row['ID']]
+                    return
+        return row
 
     def write(self, **kw):
         self.table.schema.columns['Parameter_ID'].valueUrl = \

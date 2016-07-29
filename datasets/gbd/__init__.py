@@ -19,6 +19,11 @@ from pycldf.dataset import Dataset
 NAME = 'Grollemund-et-al_Bantu-database_2015'
 PAGES_PATTERN = re.compile('\s+p\.?\s*(?P<pages>[0-9]+)\.$')
 
+def clean_string_with_validation(string):
+    try:
+        return ' '.join(clean_string(string))
+    except IndexError:
+        return None
 
 def download(dataset):
     with with_temp_dir() as tmpdir:
@@ -91,8 +96,6 @@ def cldf(dataset, glottolog, concepticon, **kw):
             ldata['items'][gloss_map.get(concept, concept)] = (
                 ldata['items'][gloss_map.get(concept, concept)],
                 csid)
-    
-    explicit = {"-~ bilí" : "bilí"} # conversion fails otherwise
 
     unmapped = Unmapped()
     sources = {}
@@ -121,27 +124,18 @@ def cldf(dataset, glottolog, concepticon, **kw):
                 if concept not in concept_map:
                     unmapped.concepts.add((slug(concept), concept))
                 wid = '%s-%s' % (slug(lang['language']), slug(concept))
-                if item[0] == '?' or not item[0].strip():
-                    pass
-                else:
-                    ds.add_row([
-                        wid,
-                        language_map[lang['language']],
-                        lang['language'],
-                        concept_map.get(concept),
-                        concept,
-                        item[0],
-                        ' '.join(
-                            clean_string(
-                                explicit[item[0]] if item[0] in explicit \
-                                        else item[0],
-                                brackets={"[":"]"},
-                                splitters='~')
-                            ),
-                        ref,
-                        item[1],
-                    ])
-                    if item[1] != '?':
+                
+                if ds.add_row([
+                    wid,
+                    language_map[lang['language']],
+                    lang['language'],
+                    concept_map.get(concept),
+                    concept,
+                    item[0] if clean_string_with_validation(item[0]) else None,
+                    clean_string_with_validation(item[0]),
+                    ref,
+                    item[1],
+                ]) and item[1] != '?':
                         dataset.cognates.append([
                             wid,
                             ds.name,
@@ -152,24 +146,8 @@ def cldf(dataset, glottolog, concepticon, **kw):
         dataset.write_cognates()
         unmapped.pprint()
 
-        alignments = automatic_alignments(ds, dataset.cognates, method='progressive')
-        dataset.alignments.extend(alignments)
-        dataset.write_alignments()
-
 def report(dataset, **keywords):
     
     ds = Dataset.from_file(Path(dataset.cldf_dir, dataset.id+'.csv'))
     test_sequences(ds, 'Segments', segmentized=True)
-
-    # check modified sequences
-    modified = ""
-    for row in ds.rows:
-        value = row['Value']
-        segments = ''.join(row['Segments'].split(' '))
-        
-        if value != segments:
-            modified += '| {0} | {1} | {2} |\n'.format(row['ID'], value, segments)
-
-    if modified:
-        print('## Modified Segments\n| ID | Source | Target |\n'+\
-                '| --- | --- | --- |\n'+modified)
+    ds.write(dataset.cldf_dir)

@@ -72,12 +72,12 @@ def cldf(dataset, glottolog, concepticon, **kw):
                         ])
         # three methods: turchin, sca, lexstat, turchin is fast (needs not
         # threshold)
-        cognates = automatic_cognates(ds, column='Segments', method='sca',
+        cognates = automatic_cognates(ds, column='Segments', method='turchin',
                 threshold=0.55)
         dataset.cognates.extend(cognates)
         dataset.write_cognates()
-        
-        # two methods for alignments: progressive or library
+        #
+        ## two methods for alignments: progressive or library
         alignments = automatic_alignments(ds, cognates, column='Segments',
                 method='progressive')
         dataset.alignments.extend(alignments)
@@ -87,19 +87,8 @@ def report(dataset, **keywords):
     
     ds = Dataset.from_file(Path(dataset.cldf_dir, dataset.id+'.csv'))
     test_sequences(ds, 'Segments', segmentized=True)
+    ds.write(dataset.cldf_dir)
 
-    # check modified sequences
-    modified = ""
-    for row in ds.rows:
-        value = row['Value']
-        segments = ''.join(row['Segments'].split(' '))
-        
-        if value != segments:
-            modified += '| {0} | {1} | {2} |\n'.format(row['ID'], value, segments)
-
-    if modified:
-        print('## Modified Segments\n| ID | Source | Target |\n'+\
-                '| --- | --- | --- |\n'+modified)
 
 
 

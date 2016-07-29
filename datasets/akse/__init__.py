@@ -5,11 +5,15 @@ from clldutils.dsv import UnicodeReader
 from clldutils.misc import slug
 
 from pylexibank.util import xls2csv
-from pylexibank.dataset import CldfDataset
+from pylexibank.dataset import CldfDataset, valid_Value as vv_base
 
 
 def download(dataset):
     xls2csv(dataset.raw.joinpath('Semitic.Wordlists.xls'), outdir=dataset.raw)
+
+
+def valid_Value(row):
+    return vv_base(row) and row['Value'] != '---'
 
 
 def cldf(dataset, glottolog, concepticon, **kw):
@@ -20,7 +24,8 @@ def cldf(dataset, glottolog, concepticon, **kw):
     language_map = {l['NAME']: l['GLOTTOCODE'] or None for l in dataset.languages}
 
     header, rows = None, []
-    with UnicodeReader(dataset.raw.joinpath('Semitic.Wordlists.ActualWordlists.csv')) as reader:
+    with UnicodeReader(
+            dataset.raw.joinpath('Semitic.Wordlists.ActualWordlists.csv')) as reader:
         for i, row in enumerate(reader):
             row = [c.strip() for c in row]
             if i == 0:
@@ -36,12 +41,11 @@ def cldf(dataset, glottolog, concepticon, **kw):
             'Parameter_ID',
             'Parameter_name',
             'Value',
-            ), dataset) as ds:
+            ),
+            dataset) as ds:
         for row in rows:
             concept = row[0]
             for i, col in enumerate(row[1:]):
-                if not col or col == '---':
-                    continue
                 lang = langs[i]
                 ds.add_row([
                     '%s-%s' % (slug(lang), slug(concept)),
