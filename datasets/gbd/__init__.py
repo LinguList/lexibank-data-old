@@ -7,9 +7,13 @@ import re
 from six.moves.urllib.request import urlretrieve
 from clldutils.dsv import UnicodeReader
 from clldutils.misc import slug
+from clldutils.path import Path
 
 from pylexibank.util import split_by_year, get_reference, xls2csv, with_temp_dir
 from pylexibank.dataset import CldfDataset, Unmapped
+from pylexibank.lingpy_util import clean_string, test_sequences,\
+        automatic_cognates, automatic_alignments
+from pycldf.dataset import Dataset
 
 
 NAME = 'Grollemund-et-al_Bantu-database_2015'
@@ -87,6 +91,8 @@ def cldf(dataset, glottolog, concepticon, **kw):
             ldata['items'][gloss_map.get(concept, concept)] = (
                 ldata['items'][gloss_map.get(concept, concept)],
                 csid)
+    
+    explicit = {"-~ bilí" : "bilí"} # conversion fails otherwise
 
     unmapped = Unmapped()
     sources = {}
@@ -97,6 +103,7 @@ def cldf(dataset, glottolog, concepticon, **kw):
                 'Parameter_ID',
                 'Parameter_name',
                 'Value',
+                'Segments',
                 'Source',
                 'Cognacy',
             ), dataset) as ds:
@@ -114,25 +121,55 @@ def cldf(dataset, glottolog, concepticon, **kw):
                 if concept not in concept_map:
                     unmapped.concepts.add((slug(concept), concept))
                 wid = '%s-%s' % (slug(lang['language']), slug(concept))
-                if item[0] == '?':
-                    continue
-                ds.add_row([
-                    wid,
-                    language_map[lang['language']],
-                    lang['language'],
-                    concept_map.get(concept),
-                    concept,
-                    item[0],
-                    ref,
-                    item[1],
-                ])
-                if item[1] != '?':
-                    dataset.cognates.append([
+                if item[0] == '?' or not item[0].strip():
+                    pass
+                else:
+                    ds.add_row([
                         wid,
-                        ds.name,
+                        language_map[lang['language']],
+                        lang['language'],
+                        concept_map.get(concept),
+                        concept,
                         item[0],
-                        '%s-%s' % (slug(concept), item[1]),
-                        False
+                        ' '.join(
+                            clean_string(
+                                explicit[item[0]] if item[0] in explicit \
+                                        else item[0],
+                                brackets={"[":"]"},
+                                splitters='~')
+                            ),
+                        ref,
+                        item[1],
                     ])
-    dataset.write_cognates()
-    unmapped.pprint()
+                    if item[1] != '?':
+                        dataset.cognates.append([
+                            wid,
+                            ds.name,
+                            item[0],
+                            '%s-%s' % (slug(concept), item[1]),
+                            False
+                        ])
+        dataset.write_cognates()
+        unmapped.pprint()
+
+        alignments = automatic_alignments(ds, dataset.cognates, method='progressive')
+        dataset.alignments.extend(alignments)
+        dataset.write_alignments()
+
+def report(dataset, **keywords):
+    
+    ds = Dataset.from_file(Path(dataset.cldf_dir, dataset.id+'.csv'))
+    test_sequences(ds, 'Segments', segmentized=True)
+
+    # check modified sequences
+    modified = ""
+    for row in ds.rows:
+        value = row['Value']
+        segments = ''.join(row['Segments'].split(' '))
+        
+        if value != segments:
+            modified += '| {0} | {1} | {2} |\n'.format(row['ID'], value, segments)
+
+    if modified:
+        print('## Modified Segments\n| ID | Source | Target |\n'+\
+                '| --- | --- | --- |\n'+modified)
