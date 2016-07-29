@@ -13,7 +13,7 @@ Available online at http://csd.clld.org
 
 ### Lexemes
 
-Name | Languages | Concepts | Lexemes | Quality
-:--- | ---:| ---:| ---:|:---:
-**total:** | 30 | 221 | 22,085 | 
-[csd](cldf/csd.csv) | 30 | 221 | 22085 | ![Glottolog: 98%](https://img.shields.io/badge/Glottolog-98%25-green.svg "Glottolog: 98%") ![Concepticon: 20%](https://img.shields.io/badge/Concepticon-20%25-red.svg "Concepticon: 20%") ![Source: 67%](https://img.shields.io/badge/Source-67%25-orange.svg "Source: 67%")
+Name | Languages | Concepts | Lexemes | Synonymy | Quality
+:--- | ---:| ---:| ---:| ---:|:---:
+**total:** | 35 | 221 | 22,085 | 1.34 | 
+[csd](cldf/csd.csv) | 35 | 221 | 22085 | 1.34 | ![Glottolog: 98%](https://img.shields.io/badge/Glottolog-98%25-green.svg "Glottolog: 98%") ![Concepticon: 20%](https://img.shields.io/badge/Concepticon-20%25-red.svg "Concepticon: 20%") ![Source: 67%](https://img.shields.io/badge/Source-67%25-orange.svg "Source: 67%")

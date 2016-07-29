@@ -13,7 +13,7 @@ Available online at https://gist.github.com/LinguList/7481097
 
 ### Lexemes
 
-Name | Languages | Concepts | Lexemes | Quality
-:--- | ---:| ---:| ---:|:---:
-**total:** | 12 | 180 | 9,957 | 
-[cdh](cldf/cdh.csv) | 12 | 180 | 9957 | ![Glottolog: 97%](https://img.shields.io/badge/Glottolog-97%25-green.svg "Glottolog: 97%") ![Concepticon: 100%](https://img.shields.io/badge/Concepticon-100%25-brightgreen.svg "Concepticon: 100%") ![Source: 100%](https://img.shields.io/badge/Source-100%25-brightgreen.svg "Source: 100%")
+Name | Languages | Concepts | Lexemes | Synonymy | Quality
+:--- | ---:| ---:| ---:| ---:|:---:
+**total:** | 40 | 180 | 9,957 | 1.41 | 
+[cdh](cldf/cdh.csv) | 40 | 180 | 9957 | 1.41 | ![Glottolog: 97%](https://img.shields.io/badge/Glottolog-97%25-green.svg "Glottolog: 97%") ![Concepticon: 100%](https://img.shields.io/badge/Concepticon-100%25-brightgreen.svg "Concepticon: 100%") ![Source: 100%](https://img.shields.io/badge/Source-100%25-brightgreen.svg "Source: 100%")

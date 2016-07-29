@@ -74,7 +74,14 @@ missing_marker = [
     '#NAME?',
     'X',
     '[absent]',
+    '-',
+    '--',
+    '...'
 ]
+
+
+def valid_Value(row):
+    return bool(row['Value']) and row['Value'] not in missing_marker
 
 
 def cldf(dataset, glottolog, concepticon, **kw):
@@ -139,8 +146,6 @@ def cldf(dataset, glottolog, concepticon, **kw):
                 i = 0
                 for item in items:
                     form = item['Orthographic Form'].strip()
-                    if form in missing_marker:
-                        continue
                     refs = [ref for ref in itersources(item, lang, sources) if ref]
                     ds.sources.add(*[ref.source for ref in refs])
                     for k, v in item.items():

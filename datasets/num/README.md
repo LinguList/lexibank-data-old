@@ -11,7 +11,7 @@ Available online at https://mpi-lingweb.shh.mpg.de/numeral/
 
 ### Lexemes
 
-Name | Languages | Concepts | Lexemes | Quality
-:--- | ---:| ---:| ---:|:---:
-**total:** | 3,730 | 33 | 146,285 | 
-[num](cldf/num.csv) | 3730 | 33 | 146285 | ![Glottolog: 100%](https://img.shields.io/badge/Glottolog-100%25-brightgreen.svg "Glottolog: 100%") ![Concepticon: 83%](https://img.shields.io/badge/Concepticon-83%25-yellowgreen.svg "Concepticon: 83%") ![Source: 98%](https://img.shields.io/badge/Source-98%25-green.svg "Source: 98%")
+Name | Languages | Concepts | Lexemes | Synonymy | Quality
+:--- | ---:| ---:| ---:| ---:|:---:
+**total:** | 3,884 | 33 | 146,267 | 1.15 | 
+[num](cldf/num.csv) | 3884 | 33 | 146267 | 1.15 | ![Glottolog: 100%](https://img.shields.io/badge/Glottolog-100%25-brightgreen.svg "Glottolog: 100%") ![Concepticon: 83%](https://img.shields.io/badge/Concepticon-83%25-yellowgreen.svg "Concepticon: 83%") ![Source: 98%](https://img.shields.io/badge/Source-98%25-green.svg "Source: 98%")

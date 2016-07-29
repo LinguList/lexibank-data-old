@@ -38,7 +38,7 @@ def cldf(dataset, glottolog, concepticon, **kw):
     """
 
     wl = lp.Wordlist(dataset.dir.joinpath('raw', DSET).as_posix())
-    
+
     # get language identifiers
     lids, cids, coords = {}, {}, {}
     for row in dataset.languages:

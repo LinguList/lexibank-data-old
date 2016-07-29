@@ -9,7 +9,8 @@ def download(dataset, **kw):
     clld.download(dataset, __name__)
 
 
-missing_word_marker = ['\u2014', '?']
+def valid_Value(row):
+    return bool(row['Value']) and row['Value'] not in ['\u2014', '?']
 
 
 def cldf(dataset, glottolog, concepticon, **kw):
@@ -26,12 +27,7 @@ def cldf(dataset, glottolog, concepticon, **kw):
                 {k: v for k, v in ods.metadata.items() if k.startswith('dc:')})
             ds.sources.add(*ods.sources.items())
             for row in ods.rows:
-                if row['Value'] not in missing_word_marker:
-                    if row['Language_ID'] == 'None':
-                        row['Language_ID'] = None
-                        unmapped.add((row['Language_name'], lid))
-                    row = row.to_list() + [lid, '-'.join(row['ID'].split('-')[:2])]
-                    ds.add_row(row)
-                else:
-                    print(row['Value'])
-
+                if row['Language_ID'] == 'None':
+                    row['Language_ID'] = None
+                    unmapped.add((row['Language_name'], lid))
+                ds.add_row(row.to_list() + [lid, '-'.join(row['ID'].split('-')[:2])])
