@@ -74,7 +74,7 @@ def test_sequences(dataset, column, clpa=False, print_markdown=False, **keywords
     clpa = clpa or pyclpa.clpa
     
     # store also language-specific values
-    languages = { tax : dict(stats=defaultdict(int),
+    languages = { tax : dict(segments=defaultdict(int),
         errors=defaultdict(list)) for tax in set(
             [row['Language_name'] for row in dataset.rows]
             )}
@@ -86,7 +86,7 @@ def test_sequences(dataset, column, clpa=False, print_markdown=False, **keywords
             languages[row['Language_name']]['errors'][itm] += val
         for itm, val in _stats.items(): 
             stats[itm] += val
-            languages[row['Language_name']]['stats'][itm] += val
+            languages[row['Language_name']]['segments'][itm] += val
 
     # write report
     number_of_tokens = sum(stats.values())
@@ -94,13 +94,13 @@ def test_sequences(dataset, column, clpa=False, print_markdown=False, **keywords
     number_of_errors = len(errors)
     number_of_lingpy_errors = sum([1 if 'lingpy' in errors[x] else 0 for x in errors])
     number_of_clpa_errors = sum([1 if 'clpa' in errors[x] else 0 for x in errors])
-    inventory_size = sum([len(language['stats']) for language in
+    inventory_size = sum([len(language['segments']) for language in
         languages.values()]) / len(languages)
     modified = []
     for error, values in errors.items():
         newvals = [v for v in values if v not in ['lingpy', 'clpa']]
         if newvals:
-            modified += [(error, ', '.join(newvals))]
+            modified += [(error, ', '.join(sorted(set(newvals))))]
 
     # correct for problematic clpa-structure (should be changed in clpa) xxx
     for language in languages:
@@ -119,7 +119,8 @@ def test_sequences(dataset, column, clpa=False, print_markdown=False, **keywords
                 clpa = number_of_clpa_errors
                 ),
             inventory_size = inventory_size,
-            modified_for_clpa = dict(modified),
+            modified_for_clpa = { error : vals for error, vals in errors.items()
+                if [v for v in vals if v not in ['clpa', 'lingpy']]},
             segments = stats,
             errors = errors,
             varieties = languages

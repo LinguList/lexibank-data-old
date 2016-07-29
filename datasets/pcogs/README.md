@@ -24,7 +24,7 @@ Name | Languages | Concepts | Lexemes | Synonymy | Quality
 
 Name  | Sounds (total) | Sounds (unique) | Errors (LingPy) | Errors (CLPA) | Inventory (mean) | Quality 
 :---| ---: | ---:| ---:| ---:| ---:| :---:|
-**total** | 28639 | 273 | 0 | 0 | 42.94 | 
+**total** | 28639 | 147 | 0 | 0 | 14.31 | 
 [pcogs-Bai](cldf/pcogs-Bai.csv) | 4221 | 94 | 0 | 0 | 49.00 | ![LingPy: 100%](https://img.shields.io/badge/LingPy-100%25-brightgreen.svg "LingPy: 100%") ![CLPA: 100%](https://img.shields.io/badge/CLPA-100%25-brightgreen.svg "CLPA: 100%")
 [pcogs-Chinese](cldf/pcogs-Chinese.csv) | 21629 | 122 | 0 | 0 | 42.22 | ![LingPy: 100%](https://img.shields.io/badge/LingPy-100%25-brightgreen.svg "LingPy: 100%") ![CLPA: 100%](https://img.shields.io/badge/CLPA-100%25-brightgreen.svg "CLPA: 100%")
 [pcogs-Tujia](cldf/pcogs-Tujia.csv) | 2789 | 57 | 0 | 0 | 37.60 | ![LingPy: 100%](https://img.shields.io/badge/LingPy-100%25-brightgreen.svg "LingPy: 100%") ![CLPA: 100%](https://img.shields.io/badge/CLPA-100%25-brightgreen.svg "CLPA: 100%")

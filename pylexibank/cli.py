@@ -184,8 +184,7 @@ def _readme(ds, **kw):
     totals = ['**total:**', set(), set(), 0, (0, 0), '']
 
     dslines = []
-    trlines = []
-    trtotals = []
+    trlines, trtotals, trsounds, trerrorsl, trerrorsc = [], [], [], [], []
     for cldfds in sorted(ds.iter_cldf_datasets(), key=lambda m: m.name):
         badges = [
             get_badge(cldfds.rows, 'Glottolog', 'Language_ID'),
@@ -193,8 +192,14 @@ def _readme(ds, **kw):
             get_badge(cldfds.rows, 'Source'),
         ]
         if 'transcription' in cldfds.metadata:
+            _tr = cldfds.metadata['transcription']
             new_badges, new_lines = _transcription_readme(
                     cldfds.metadata['transcription'])
+            trsounds += sorted(_tr['segments'])
+            trerrorsl += [err[0] for err in _tr['errors'].items() if 'lingpy'
+                    in err[1]]
+            trerrorsc += [err[0] for err in _tr['errors'].items() if 'clpa' in
+                    err[1]]
             new_badges
             trlines.append(
                     '[%s](%s)' % (cldfds.name, 'cldf/%s.csv' % cldfds.name) \
@@ -225,8 +230,13 @@ def _readme(ds, **kw):
             ' '.join(badges)]))
 
     if trlines:
-        trtotals = [sum([line[i] for line in trtotals]) for i in
-                range(len(trtotals[0]))]
+        trtotals = [
+                sum([line[0] for line in trtotals]),
+                len(set(trsounds)),
+                len(set(trerrorsl)),
+                len(set(trerrorsc)),
+                sum([line[-1] for line in trtotals]) / len(trlines)
+                ]
         trtotals[-1] = trtotals[-1] / len(trlines)
         trlines = [
                 '', 
