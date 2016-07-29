@@ -11,10 +11,11 @@ from pylexibank.util import with_temp_dir, xls2csv
 from pylexibank.dataset import CldfDataset
 
 from pylexibank.lingpy_util import clean_string, test_sequences,\
-        automatic_cognates, automatic_alignments
+        automatic_cognates, automatic_alignments, getEvoBibAsSource
 
 URL = "http://onlinelibrary.wiley.com/store/10.1111/cla.12078/asset/supinfo/cla12078-sup-0006-supinfo6.xls?v=1&s=4c895c80efa148e7872c3c7702c5df3ed192c236"
 FILENAME = "cla12078-sup-0006-supinfo6.xls"
+SOURCE = 'Wheeler2014'
 
 
 def download(dataset):
@@ -49,9 +50,11 @@ def cldf(dataset, glottolog, concepticon, **kw):
             'Parameter_ID',
             'Parameter_name',
             'Value',
-            'Segments'
+            'Segments',
+            'Source'
             ), dataset) as ds:
         ds.table.schema.columns['Value']['dc:format'] = 'IPA'
+        ds.sources.add(getEvoBibAsSource(SOURCE))
 
         for row in rows[3:]:
             row = [col.strip() for col in row]
@@ -68,16 +71,17 @@ def cldf(dataset, glottolog, concepticon, **kw):
                             concepticon[concept],
                             concept,
                             form,
-                            ' '.join(clean_string(form))
+                            ' '.join(clean_string(form)),
+                            SOURCE
                         ])
         # three methods: turchin, sca, lexstat, turchin is fast (needs not
         # threshold)
-        cognates = automatic_cognates(ds, column='Segments', method='sca',
+        cognates = automatic_cognates(ds, column='Segments', method='turchin',
                 threshold=0.55)
         dataset.cognates.extend(cognates)
         dataset.write_cognates()
-        
-        # two methods for alignments: progressive or library
+        #
+        ## two methods for alignments: progressive or library
         alignments = automatic_alignments(ds, cognates, column='Segments',
                 method='progressive')
         dataset.alignments.extend(alignments)
@@ -87,19 +91,8 @@ def report(dataset, **keywords):
     
     ds = Dataset.from_file(Path(dataset.cldf_dir, dataset.id+'.csv'))
     test_sequences(ds, 'Segments', segmentized=True)
+    ds.write(dataset.cldf_dir)
 
-    # check modified sequences
-    modified = ""
-    for row in ds.rows:
-        value = row['Value']
-        segments = ''.join(row['Segments'].split(' '))
-        
-        if value != segments:
-            modified += '| {0} | {1} | {2} |\n'.format(row['ID'], value, segments)
-
-    if modified:
-        print('## Modified Segments\n| ID | Source | Target |\n'+\
-                '| --- | --- | --- |\n'+modified)
 
 
 

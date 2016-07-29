@@ -71,12 +71,11 @@ def cldf(dataset, glottolog, concepticon, **kw):
                         wl[k, 'cogid'],
                         ' '.join([str(x) for x in wl[k, 'partialids']])
                         ])
-            etd = wl.get_etymdict(ref='partialids')
+            etd = wl.get_etymdict(ref='cogid')
             for pid, vals in etd.items():
                 for val in vals:
                     if val:
                         for k in val:
-                            # get partial_cognate-index
                             cogid = '-'.join([slug(wl[k, 'concept']), '%s' % pid])
                             dataset.cognates.append([
                                 k,
@@ -91,3 +90,5 @@ def cldf(dataset, glottolog, concepticon, **kw):
 def report(dataset):
     for ds in dataset.iter_cldf_datasets():
         test_sequences(ds, 'Segments', segmentized=True)
+        ds.write(dataset.cldf_dir)
+

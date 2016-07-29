@@ -132,4 +132,5 @@ def report(dataset):
     ds = Dataset.from_file(Path(dataset.cldf_dir, 
         dataset.id+'.csv'))
     test_sequences(ds, 'Segments', segmentized=True)
+    ds.write(dataset.cldf_dir)
 

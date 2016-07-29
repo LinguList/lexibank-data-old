@@ -105,10 +105,12 @@ def cldf(args):
     with_dataset(args, _cldf)
 
 
-def get_badge(words, name, prop=None):
+def get_badge(words, name, prop=None, ratio=None):
     prop = prop or name
     if words:
         ratio = len([w for w in words if w.get(prop)]) / float(len(words))
+    elif ratio:
+        pass
     else:
         ratio = 1.0
     if ratio >= 0.99:
@@ -182,12 +184,26 @@ def _readme(ds, **kw):
     totals = ['**total:**', set(), set(), 0, (0, 0), '']
 
     dslines = []
+    trlines = []
+    trtotals = []
     for cldfds in sorted(ds.iter_cldf_datasets(), key=lambda m: m.name):
         badges = [
             get_badge(cldfds.rows, 'Glottolog', 'Language_ID'),
             get_badge(cldfds.rows, 'Concepticon', 'Parameter_ID'),
             get_badge(cldfds.rows, 'Source'),
         ]
+        if 'transcription' in cldfds.metadata:
+            new_badges, new_lines = _transcription_readme(
+                    cldfds.metadata['transcription'])
+            new_badges
+            trlines.append(
+                    '[%s](%s)' % (cldfds.name, 'cldf/%s.csv' % cldfds.name) \
+                            + ' | {0} | {0} | {2} | {3} | {4:.2f} | '.format(
+                                *new_lines) + \
+                                        ' '.join(new_badges)
+                            )
+            trtotals.append(new_lines)
+
         stats = cldfds.stats
         params = len(stats['parameters'])
         sindex, langs = synonymy_index(cldfds)
@@ -208,13 +224,55 @@ def _readme(ds, **kw):
             '%.2f' % sindex,
             ' '.join(badges)]))
 
+    if trlines:
+        trtotals = [sum([line[i] for line in trtotals]) for i in
+                range(len(trtotals[0]))]
+        trtotals[-1] = trtotals[-1] / len(trlines)
+        trlines = [
+                '', 
+                '### Sounds', 
+                '',
+                'Name  | Sounds (total) | Sounds (unique) | '+\
+                        'Errors (LingPy) | Errors (CLPA) | '+\
+                        'Inventory (mean) | Quality ',
+                        ':---| ---: | ---:| ---:| ---:| ---:| :---:|',
+                        '**total** | {0} | {1} | {2} | {3} | {4:.2f} | '.format(
+                            *trtotals)
+                        ]+\
+                        trlines
+
     for i in range(1, 4):
         totals[i] = formatted_number(totals[i])
     totals[4] = '%.2f' % (totals[4][0] / totals[4][1])
 
     with ds.dir.joinpath('README.md').open('w', encoding='utf8') as fp:
-        fp.write('\n'.join(lines + [' | '.join(totals)] + dslines))
+        fp.write('\n'.join(lines + [' | '.join(totals)] + dslines + trlines))
     print(ds.dir.joinpath('README.md'))
+
+def _transcription_readme(transcription):
+
+    # extend by transcription
+    lines = [
+            transcription['number_of_tokens'],
+            transcription['number_of_segments'],
+            transcription['number_of_errors']['lingpy'],
+            transcription['number_of_errors']['clpa'],
+            transcription['inventory_size']
+        ]
+    
+    badges = [get_badge(
+            None, 'LingPy', 
+            ratio=(transcription['number_of_segments']-\
+                    transcription['number_of_errors']['lingpy'])/\
+                    transcription['number_of_segments']
+        ),
+        get_badge(
+            None, 'CLPA', 
+            ratio=(transcription['number_of_segments']-\
+                    transcription['number_of_errors']['clpa'])/\
+                    transcription['number_of_segments']
+        )]
+    return badges, lines
 
 
 def check(args):
