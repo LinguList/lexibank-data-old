@@ -234,9 +234,9 @@ def _readme(ds, **kw):
                 '',
                 'Name  | Sounds (total) | Sounds (unique) | '+\
                         'Errors (LingPy) | Errors (CLPA) | '+\
-                        'Inventory (meang) |',
-                        ':---| ---: | ---:| ---:| ---:| :---:|',
-                        '**total** | {0} | {1} | {2} | {3} | {4:.2f} |'.format(
+                        'Inventory (mean) | Quality ',
+                        ':---| ---: | ---:| ---:| ---:| ---:| :---:|',
+                        '**total** | {0} | {1} | {2} | {3} | {4:.2f} | '.format(
                             *trtotals)
                         ]+\
                         trlines
