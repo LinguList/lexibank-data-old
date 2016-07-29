@@ -58,7 +58,7 @@ def cldf(dataset, glottolog, concepticon, **kw):
             ds.sources.add(src)
             for k in wl:
                 ds.add_row([
-                        k,
+                        '{0}-{1}'.format(srckey, k),
                         wl[k, 'glottolog'],
                         wl[k, 'doculect'],
                         '',
