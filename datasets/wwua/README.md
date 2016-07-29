@@ -21,4 +21,4 @@ Name | Languages | Concepts | Lexemes | Synonymy | Quality
 Name  | Sounds (total) | Sounds (unique) | Errors (LingPy) | Errors (CLPA) | Inventory (mean) | Quality 
 :---| ---: | ---:| ---:| ---:| ---:| :---:|
 **total** | 22916 | 246 | 13 | 166 | 40.92 | 
-[wwua](cldf/wwua.csv) | 22916 | 22916 | 13 | 166 | 40.92 | ![LingPy: 95%](https://img.shields.io/badge/LingPy-95%25-green.svg "LingPy: 95%") ![CLPA: 33%](https://img.shields.io/badge/CLPA-33%25-red.svg "CLPA: 33%")
+[wwua](cldf/wwua.csv) | 22916 | 246 | 13 | 166 | 40.92 | ![LingPy: 95%](https://img.shields.io/badge/LingPy-95%25-green.svg "LingPy: 95%") ![CLPA: 33%](https://img.shields.io/badge/CLPA-33%25-red.svg "CLPA: 33%")

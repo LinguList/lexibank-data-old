@@ -20,7 +20,7 @@ Name | Languages | Concepts | Lexemes | Synonymy | Quality
 
 ### Sounds
 
-Name  | Sounds (total) | Sounds (unique) | Errors (LingPy) | Errors (CLPA) | Inventory (meang) |
-:---| ---: | ---:| ---:| ---:| :---:|
-**total** | 182064 | 1016 | 86 | 702 | 45.26 |
-[gbd](cldf/gbd.csv) | 182064 | 182064 | 86 | 702 | 45.26 | ![LingPy: 92%](https://img.shields.io/badge/LingPy-92%25-green.svg "LingPy: 92%") ![CLPA: 31%](https://img.shields.io/badge/CLPA-31%25-red.svg "CLPA: 31%")
+Name  | Sounds (total) | Sounds (unique) | Errors (LingPy) | Errors (CLPA) | Inventory (mean) | Quality 
+:---| ---: | ---:| ---:| ---:| ---:| :---:|
+**total** | 182064 | 1016 | 86 | 702 | 45.26 | 
+[gbd](cldf/gbd.csv) | 182064 | 1016 | 86 | 702 | 45.26 | ![LingPy: 92%](https://img.shields.io/badge/LingPy-92%25-green.svg "LingPy: 92%") ![CLPA: 31%](https://img.shields.io/badge/CLPA-31%25-red.svg "CLPA: 31%")

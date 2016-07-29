@@ -198,7 +198,7 @@ def _readme(ds, **kw):
             new_badges
             trlines.append(
                     '[%s](%s)' % (cldfds.name, 'cldf/%s.csv' % cldfds.name) \
-                            + ' | {0} | {0} | {2} | {3} | {4:.2f} | '.format(
+                            + ' | {0} | {1} | {2} | {3} | {4:.2f} | '.format(
                                 *new_lines) + \
                                         ' '.join(new_badges)
                             )
