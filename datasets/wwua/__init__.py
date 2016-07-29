@@ -50,7 +50,8 @@ def cldf(dataset, glottolog, concepticon, **kw):
             'Parameter_ID',
             'Parameter_name',
             'Value',
-            'Segments'
+            'Segments',
+            'Source'
             ), dataset) as ds:
         ds.table.schema.columns['Value']['dc:format'] = 'IPA'
         ds.sources.add(getEvoBibAsSource(SOURCE))
@@ -70,7 +71,8 @@ def cldf(dataset, glottolog, concepticon, **kw):
                             concepticon[concept],
                             concept,
                             form,
-                            ' '.join(clean_string(form))
+                            ' '.join(clean_string(form)),
+                            SOURCE
                         ])
         # three methods: turchin, sca, lexstat, turchin is fast (needs not
         # threshold)
