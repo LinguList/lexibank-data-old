@@ -5,7 +5,8 @@ from collections import defaultdict
 import unicodedata
 from itertools import chain
 
-from pylexibank.dataset import CldfDataset, REQUIRED_FIELDS
+from pylexibank.dataset import CldfDataset
+from pylexibank.lingpy_util import test_sequences
 
 
 def download(dataset, **kw):
@@ -24,10 +25,12 @@ def parse(fname, lmap):
         if not line:
             continue
 
+        # Don't start parsing before entering Appendix 1:
         if line.startswith('APPENDIX 1:'):
             in_appendix = True
             continue
 
+        # Quit parsing once we hit Appendix 2:
         if line.startswith('APPENDIX 2:'):
             break
 
@@ -38,7 +41,7 @@ def parse(fname, lmap):
         if match:
             if concept:
                 yield concept, words, missing
-            concept, words, missing = match.group('GLOSS'), '', ''
+            concept, words, missing = (match.group('ID'), match.group('GLOSS')), '', ''
         else:
             if line.startswith('('):
                 assert line.endswith(')') and not missing
@@ -49,24 +52,18 @@ def parse(fname, lmap):
     yield concept, words, missing
 
 
-def parse_cogset(s, lmap):
+def iter_lang(s, lmap):
     def pairs(l):
         for i in range(0, len(l), 2):
             yield l[i:i + 2]
 
     lid_pattern = re.compile(
         '(?:^|(?:,?\s+|,\s*))(?P<i>%s)\s+' % '|'.join(list(lmap.keys())))
-    #s = s.replace(',\u0301', '\u0301,')
-    res = defaultdict(list)
     for language, words in pairs(lid_pattern.split(s)[1:]):
-        for word in words.split(','):
-            word = word.strip()
-            if word:
-                res[language].append(word)
-    return res
+        yield language, [w.strip() for w in words.split(',') if w.strip()]
 
 
-def parse_words(s, lmap):
+def iter_cogsets(s, lmap):
     for cogset in s.split('||'):
         cogset = cogset.strip()
         if cogset:
@@ -77,7 +74,7 @@ def parse_words(s, lmap):
                 assert match
                 yield {lid: [] for lid in cogset[1:-1].replace('?', ' ').split()}
             else:
-                yield parse_cogset(cogset, lmap)
+                yield dict(iter_lang(cogset, lmap))
 
 
 LANGUAGE_ID_FIXES = {
@@ -97,9 +94,10 @@ def cldf(dataset, glottolog, concepticon, **kw):
         c['ENGLISH']: c['CONCEPTICON_ID']
         for c in concepticon.conceptlist(dataset.conceptlist)}
     lmap = {l['ID']: l['GLOTTOCODE'] or None for l in dataset.languages}
+    lmap_name = {l['ID']: l['NAME'] or None for l in dataset.languages}
 
     cognate_sets = defaultdict(list)
-    for c, w, missing in parse(dataset.raw.joinpath('galucio-tupi.txt'), lmap):
+    for (cid, c), w, missing in parse(dataset.raw.joinpath('galucio-tupi.txt'), lmap):
         assert c in concepticon
         if c in LANGUAGE_ID_FIXES:
             f, t = LANGUAGE_ID_FIXES[c]
@@ -118,11 +116,46 @@ def cldf(dataset, glottolog, concepticon, **kw):
         assert not lids.difference(set(lmap.keys()))
 
         nlids = missing[:]
-        for cs in parse_words(w, lmap):
-            cognate_sets[c].append(cs)
+        for cs in iter_cogsets(w, lmap):
+            cognate_sets[(cid, c)].append(cs)
             nlids.extend(list(cs.keys()))
         nlids = set(nlids)
         assert nlids == lids  # make sure we found all expected language IDs
 
-    with CldfDataset(REQUIRED_FIELDS, dataset) as ds:
-        pass
+    with CldfDataset(
+            ('ID',
+             'Language_ID',
+             'Language_name',
+             'Language_local_ID',
+             'Parameter_ID',
+             'Parameter_name',
+             'Parameter_local_ID',
+             'Value'),
+            dataset) as ds:
+        for (cid, concept), cogsets in cognate_sets.items():
+            for j, cogset in enumerate(cogsets):
+                for lid, words in sorted(cogset.items(), key=lambda k: k[0]):
+                    for i, word in enumerate(words):
+                        wid = '%s-%s-%s-%s' % (lid, cid, j + 1, i + 1)
+                        ds.add_row([
+                            wid,
+                            lmap[lid],
+                            lmap_name[lid],
+                            lid,
+                            concepticon[concept],
+                            concept,
+                            cid,
+                            word,
+                        ])
+                        dataset.cognates.append([
+                            wid,
+                            ds.name,
+                            word,
+                            '%s-%s' % (cid, j + 1),
+                            False
+                        ])
+
+
+def report(dataset):
+    for ds in dataset.iter_cldf_datasets():
+        test_sequences(ds, 'Value', segmentized=False)
