@@ -11,7 +11,7 @@ from pylexibank.lingpy_util import test_sequences
 
 def download(dataset, **kw):
     # http://www.scielo.br/pdf/bgoeldi/v10n2/2178-2547-bgoeldi-10-02-00229.pdf
-    # pdftotext -raw -nopgbrk  galucio-tupi.pdf galucio-tupi.txt
+    # pdftotext -raw galucio-tupi.pdf galucio-tupi.txt
     raise NotImplemented
 
 
