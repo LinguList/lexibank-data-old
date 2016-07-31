@@ -67,14 +67,7 @@ def iter_cogsets(s, lmap):
     for cogset in s.split('||'):
         cogset = cogset.strip()
         if cogset:
-            if cogset.startswith('(') and cogset.endswith(')'):
-                match = re.match(
-                    '((?P<lid>%s)\s*\?\s*)+$' % '|'.join(list(lmap.keys())),
-                    cogset[1:-1])
-                assert match
-                yield {lid: [] for lid in cogset[1:-1].replace('?', ' ').split()}
-            else:
-                yield dict(iter_lang(cogset, lmap))
+            yield dict(iter_lang(cogset, lmap))
 
 
 LANGUAGE_ID_FIXES = {
