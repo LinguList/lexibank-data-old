@@ -40,7 +40,7 @@ Xi -aũ, -ma, Ju -aũ, -ma || Uk ɨm || Aw an || Mu ŋə́ || Ma piit || Ka iʔk
 Zo sopop, Sa sópój ||
 Pg opa || Uk johu || Pt pavẽi || Aw namãpɨte || Mw toɾania || Mu sóat || Ku póam || Wa ndeɡe || Ma ßiibmõ ||
 Tu eɾote || Me paeseet || Xi kiwi || Ju bitéhu || Gv kĩ́ɾĩ́jã́ã || Ar ßéɾep || Su baɡatéɾ || Ka iakatĩĩm ||
-(Tp ? Ak ? Kt ? Pu ?)
+(Ta ? Ak ? Kt ? Pu ?)
 
 010-MANY
 Pg h-eta, Uk h-eta || Gv ɡóló-á, Zo ɡóló-á || Xi tubɨ, Ju iʧíbɨ || Ta hɨŋa || Pt -eʔɨi || Aw ʔɨtoto || Mw kahato ||
@@ -85,12 +85,12 @@ Ka maʔwɨt || Pu abɨtʔaj || Kt ota ||
 
 018-PERSON
 Pg ava, Uk awa, Ta ãwã, Wa aote nã, Ak aoʧe, Me aose || Pu dede, Ar pãdeɾe, Gv pa-deɾè, Zo pãdeɾe, Sa pã-deet,
-Su pa-íteeɾ || Ma kiteʔ, Tu kiɾe || Pa ahe || Aw mõʔat || Mw miit || Xi tana || Ju dubiá || Ka iʔtə || Kt pɨeso ||
+Su pa-íteeɾ || Ma kiteʔ, Tu kiɾe || Pt ahe || Aw mõʔat || Mw miit || Xi tana || Ju dubiá || Ka iʔtə || Kt pɨeso ||
 (Mu ? Ku ?)
 
 019-FISH
 Ku potip, Wa ißojt, Ma potkap, Tu ipot, Ka ip, Pu ʔɨpʔaj, Ar bolíp, Gv bolíp, Zo bolíp, Sa bolíp, Su moɾíp, moɾíw-aa, Kt ʔip ||
-Pg piɾa, Uk piɾa, Ta hipiɾã, Pa piɾa, Aw piɾaʔɨt, Ma pi(i)ɾa, Ak kojtpit, Me kɨjpit, Xi ʃita, Ju piʧa || Mu aʃimá ||
+Pg piɾa, Uk piɾa, Ta hipiɾã, Pt piɾa, Aw piɾaʔɨt, Ma pi(i)ɾa, Ak kojtpit, Me kɨjpit, Xi ʃita, Ju piʧa || Mu aʃimá ||
 
 020-BIRD
 Pg ɡwɨɾa, Uk wɨɾa, Ta wɨɾãhi, Pt ɡwɨɾa, Wa ɲũkɨɾa, Ma mõkiɾa, Me õkɨɾa || Ar ĩ́dɨt, Gv ĩ́dĩ́ĩt, Su ĩ́jɨɨt || Mu wásə̃ ,
@@ -108,7 +108,7 @@ Pg kɨ, Uk kɨ, Ta kɨp, Pt -kɨv, Aw ʔakɨp, Mw ŋɨp, Mu kíp, Ku akip, Wa ã
 Ju kɨpá, Pu tɨp, Ar ɡit, Gv ɡit, Zo ɡit, Sa ɡip, Su ŋip, Kt ɡep || Ka nãp ||
 
 023-TREE
-Pg ɨßɨɾa, Uk ɨʔɨ, Ta hɨwɨɾã, Pt ʔɨv, ɨva, Aw ʔɨp, Ma aɾja-ʔɨp, Mu ʔip, Ku ʔip, Wa kɨp, Ma kɨp, Tp kɨp, Ak kɨp, Me kɨpkɨba,
+Pg ɨßɨɾa, Uk ɨʔɨ, Ta hɨwɨɾã, Pt ʔɨv, ɨva, Aw ʔɨp, Ma aɾja-ʔɨp, Mu ʔip, Ku ʔip, Wa kɨp, Ma kɨp, Tu kɨp, Ak kɨp, Me kɨpkɨba,
 Xi ipa, Ka maʔɨp, Pu waʔɨp, Ar ííp, Gv îìp, Zo iip, Sa iip, Su ííp, Kt ʔep || Ju ãhúá ||
 
 024-SEED
@@ -262,7 +262,7 @@ Ju -bɨʔá, Ka i-pía ʔaʔ, Pu bi.a, mbi.a, Ar -ʦaa, Gv -ʦaá, Zo -saa, Sa -
 (Ak ?)
 
 054-DRINK
-Pg ha-ɨʔu, Uk uʔu, Tp ɨho, Pt -ɨʔu, Aw ɨʔu, Mw aɾe-ʔɨʔu, Ku ɮe-jʔo, Wa ka, Ma kaʔ, Tu ka, Ak apeka, Me kaa, Ka ʔot,
+Pg ha-ɨʔu, Uk uʔu, Ta ɨho, Pt -ɨʔu, Aw ɨʔu, Mw aɾe-ʔɨʔu, Ku ɮe-jʔo, Wa ka, Ma kaʔ, Tu ka, Ak apeka, Me kaa, Ka ʔot,
 Pu ʔo || Ar ci-ßa, Gv ci-ßa, Zo -ßa, Sa -ßa || Xi wi, Ju awí || Mu ti-kõn || Su ɡútɡút || Ka ahɨ ||
 
 055-EAT
@@ -396,7 +396,7 @@ Su ŋáni-kít || Kt esɨɾa ||
 081-SMOKE
 Pg t-atatĩ, Uk tata takãʃĩ, Pt -atatiŋ, Aw taʐatiŋ, Mw ɨhiŋ, Mu tiŋ ~ diŋ, Ku tĩŋ, Wa ɲĩĩŋ, Ma ɲĩŋɡẽn, Tu sĩn, Ak niŋ, Me otat niik,
 Xi siã, ʃiã, Ju aʃíʃiʔã́, Ka caɾoɡĩn, Ar ɲííkʔa, ɲĩk, Gv pó-kã́j-dĩk, Zo pó-kã́j-nik, Sa ßadĩk, Su mókáj nĩŋ, Kt iso ɲĩŋɡa ||
-(Tp ? Pu ?)
+(Ta ? Pu ?)
 
 082-FIRE
 Pg t-ata, Uk tata, Ta ãtã, Pt -ata, Mw aɾja, Mu daʃá, Ku ɮáʃa, Ma ujtʃat, Ak otat, Me otat pok, Xi aʃi, Ju aʃí, Ka cán nãʔ,
@@ -428,7 +428,7 @@ Xi kapuɾuɾi || Pg pɨtã, Uk i-piɾã, Ta piɾɨŋ, Pt -piɾaŋ, Aw pilaŋ || 
 
 088-GREEN
 Pt jukɨɾɨ, Aw kɨt, Ka kɨɾɨk-tem, Zo kíɾi, Sa kíít, Su -kíɾ, Kt ket pitat || Mw i-hɨɾɨp, Pu heɾo.a || Mu -ɾẽm, Ku ɾẽm ||
-Tg hovɨ, Uk h-owɨ te || Wa kweɾep, Ma ɲẽɾẽm || Xi akɨu, Ju akéɮú || Ar -ciɾõj, Gv -cíɾôòj || Ta kahakɨɾa mahe ||
+Pg hovɨ, Uk h-owɨ te || Wa kweɾep, Ma ɲẽɾẽm || Xi akɨu, Ju akéɮú || Ar -ciɾõj, Gv -cíɾôòj || Ta kahakɨɾa mahe ||
 Tu siʔa || Me saʔɨp ||
 (Ak ?)
 
@@ -495,5 +495,5 @@ Ka aʔcaɾaŋ nãn || Kt pihop ||
 (Ak ?)
 
 100-NAME
-Pg t-eɾa, Uk h-eɾ, Tp et, Pt -eɾ, Aw et, Mw het ~ set, Mu pətét ~ bətét, Ku bítet, Wa ndet, Ma et, Tu et, Ak et,
+Pg t-eɾa, Uk h-eɾ, Ta et, Pt -eɾ, Aw et, Mw het ~ set, Mu pətét ~ bətét, Ku bítet, Wa ndet, Ma et, Tu et, Ak et,
 Me et, Xi ja, Ju zá, Ka cet, Pu tet, Ar ʣét ~ ʦét, Gv ʣét ~ ʦét, Zo zét ~ sét, Sa zét, Su ɮét ~ ɬét, Kt sat ||
