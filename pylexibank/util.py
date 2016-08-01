@@ -5,10 +5,12 @@ import logging
 import re
 from contextlib import contextmanager
 from tempfile import mkdtemp
+import zipfile
 
+from six.moves.urllib.request import urlretrieve
 import xlrd
 from clldutils.dsv import reader, UnicodeWriter
-from clldutils.path import Path, as_posix, rmtree
+from clldutils.path import Path, as_posix, rmtree, copy
 from clldutils.misc import slug
 from pycldf.sources import Source, Reference
 
@@ -124,3 +126,13 @@ def with_sys_path(d):
     yield
     if sys.path[-1] == p:
         sys.path.pop()
+
+
+def download_and_unpack_zipfiles(url, dataset, *paths):
+    """Download zipfiles and immediately unpack the content"""
+    with with_temp_dir() as tmpdir:
+        urlretrieve(url, tmpdir.joinpath('ds.zip').as_posix())
+        with zipfile.ZipFile(tmpdir.joinpath('ds.zip').as_posix()) as zipf:
+            for path in paths:
+                zipf.extract(as_posix(path), path=tmpdir.as_posix())
+                copy(tmpdir.joinpath(path), dataset.raw)
