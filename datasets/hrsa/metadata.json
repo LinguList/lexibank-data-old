@@ -1,0 +1,13 @@
+{
+    "@context": [
+        "http://www.w3.org/ns/csvw",
+        {
+            "@language": "en"
+        }
+    ],
+    "dc:title": "Using phylogenetic networks to model Chinese dialect history",
+    "dc:bibliographicCitation": "Cysouw, M. and Prokić, J. and Bouda, P. and Moran, S. (2012): Dataset of Huber and Reed's \"Comparative Vocabulary\". Marburg: Philipps-University Marburg.",
+    "dc:license": "https://www.gnu.org/licenses/gpl-3.0.de.html",
+    "dc:identifier": "https://gist.github.com/LinguList/7481097",
+    "dc:conformsTo": "http://concepticon.clld.org/contributions/Hou-2004-180"
+}

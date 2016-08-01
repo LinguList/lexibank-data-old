@@ -21,6 +21,9 @@ def getEvoBibAsSource(key):
         urlopen("http://bibliography.lingpy.org/raw.php?key="+key).read().decode('utf-8'),
         bib_format='bibtex')
 
+def getSourceFromBibTex(source):
+    "utility function to read source from bibtex"
+    return database.parse_string(source, bib_format="bibtex")
 
 def download_and_unpack_zipfiles(url, dataset, *paths):
     """Download zipfiles and immediately unpack the content"""
