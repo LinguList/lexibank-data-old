@@ -25,6 +25,12 @@ Thus, we use [Concepticon](http://concepticon.clld.org) as our hub for concepts 
   Incomplete mapping to Concepticon or Glottolog is then indicated by `""` values, and local identifiers can be supplied in additional fields of the data files.
 - **Concepticon:** To make datasets comparable we need a mapping (aka [schema crosswalk](https://en.wik  osswalk)) between the concept lists (aka [Swadesh lists](https://en.wikipedia.org/wiki/Swadesh_list)) used in each dataset. Fortunately, this has already been done for many concept lists by the [CLLD Concepticon](http://concepticon.clld.org). `lexibank` uses Concepticon [concept sets](http://concepticon.clld.org/parameters) to identify concepts across datasets.
 - **Glottolog:** [Glottolog](http://glottolog.org) is a comprehensive catalog of the world's languages and dialects. In addition to language identification, it also provides a genealogical classification and additional metadata like geographic coordinates, alternative names, etc. for each language.
-- **CLPA:**
+- **CLPA:** The cross-linguistic phonetic alphabet is an initial attempt to provide a cross-linguistic dialect of the international phonetic alphabet (IPA) that can be used as an authoritative standard of what could be called the "least of what most people would agree with". While IPA is described, it is not necessarily standardized to allow for transcriptions that are easily readable by a machine. CLPA tries to fill this gap by 
+  - referring to IPA definitions for all phonetic segments we encounter in datasets that provide phonetic transcriptions in segmented form (segmentation is needed, since non-segmented transcriptions tend to be ambiguous in IPA)
+  - linking to further resources on phonetic inventories and the like, like, e.g., [phoible](http://phoible.org) or [pbase](http://pbase.phon.chass.ncsu.edu/)
+  - adding transcription conventions on the sequence level, including secondary segmentation on the morpheme and the word level
+  - providing a software API that allows users to check to which degree their data conforms to CLPA standards, and how well a given dataset could be converted to account for it
+  
+  The current state of clpa can be found at https://github.com/glottobank/clpa. CLPA is used to check those datasets that provide IPA transcriptions in segmented form (or from which these are automatically derived) for their degree to which they conform to CLPA, and also to calculate additional statistics, like the average phoneme inventory size of a dataset.
 - **`lexibank` workflow:**
 - **`lexibank` app:**
