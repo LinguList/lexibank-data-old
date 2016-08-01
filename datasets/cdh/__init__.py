@@ -7,9 +7,8 @@ from pycldf.dataset import Dataset
 from clldutils.misc import slug
 from clldutils.path import Path
 
-from pylexibank.lingpy_util import getEvoBibAsSource,\
-        download_and_unpack_zipfiles, test_sequences
-
+from pylexibank.lingpy_util import getEvoBibAsSource, test_sequences
+from pylexibank.util import download_and_unpack_zipfiles
 import lingpy as lp
 
 URL = "https://gist.github.com/LinguList/7481097/archive/036610e905af4ea7fbc3de01fa443d8b08f4c684.zip"

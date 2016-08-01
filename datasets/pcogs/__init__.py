@@ -5,9 +5,8 @@ from pylexibank.dataset import CldfDataset
 from clldutils.misc import slug
 from clldutils.path import Path
 
-from pylexibank.lingpy_util import getEvoBibAsSource,\
-        download_and_unpack_zipfiles, test_sequences
-
+from pylexibank.lingpy_util import getEvoBibAsSource, test_sequences
+from pylexibank.util import download_and_unpack_zipfiles
 import lingpy as lp
 
 URL = "https://zenodo.org/record/51328/files/partial-cognate-detection-v1.0.zip"

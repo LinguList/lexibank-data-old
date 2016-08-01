@@ -1,18 +1,13 @@
 # coding=utf-8
 from __future__ import unicode_literals, print_function
 from collections import defaultdict
-import zipfile
-import json
 
-from clldutils.path import as_posix, copy
 from clldutils.misc import slug
-from six.moves.urllib.request import urlretrieve, urlopen
+from six.moves.urllib.request import urlopen
 from lingpy.sequence.sound_classes import clean_string, tokens2class
 import lingpy as lp
 import pyclpa
 from pybtex import database
-
-from pylexibank.util import with_temp_dir
 
 
 def getEvoBibAsSource(key):
@@ -24,15 +19,6 @@ def getEvoBibAsSource(key):
 def getSourceFromBibTex(source):
     "utility function to read source from bibtex"
     return database.parse_string(source, bib_format="bibtex")
-
-def download_and_unpack_zipfiles(url, dataset, *paths):
-    """Download zipfiles and immediately unpack the content"""
-    with with_temp_dir() as tmpdir:
-        urlretrieve(url, tmpdir.joinpath('ds.zip').as_posix())
-        with zipfile.ZipFile(tmpdir.joinpath('ds.zip').as_posix()) as zipf:
-            for path in paths:
-                zipf.extract(as_posix(path), path=tmpdir.as_posix())
-                copy(tmpdir.joinpath(path), dataset.raw)
 
 
 def test_sequence(sequence, clpa=None, errors=None, stats=None, **keywords):
