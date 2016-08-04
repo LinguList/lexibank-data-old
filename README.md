@@ -3,7 +3,7 @@
 lexibank-data is a repository intended to bring together (wordlist-like) data and tools in the field of Historical Linguistics.
 It aims at providing unified access to data published in various places and ways via
 - a unified dataset manipulation workflow,
-- a common data format based on [CLDF](http://cldf.clld.org),
+- a common data format based on [CLDF](cldf.md),
 - a set of data quality metrics, assessing the interoperability of datasets.
 
 
@@ -19,10 +19,7 @@ Thus, we use [Concepticon](http://concepticon.clld.org) as our hub for concepts 
 
 - **`lexibank` dataset:** A `lexibank` dataset is collection of lexical data (or data derived from lexical data such as cognate judgements) sharing the same provider. Dataset providers can be lexical databases like ABVD or [IDS](http://ids.clld.org) or supplemental material for publications. If the provided dataset is an aggregation of data from various sources, this can be indicated by splitting one `lexibank` dataset into multiple CLDF datasets, one for each source.
 - **data provider:** An access point to harvest lexical data, e.g. a lexical database like ABVD or [IDS](http://ids.clld.org), supplemental material for a publication or a dataset archived with [ZENODO](https://zenodo.org).
-- **`lexibank` CLDF:** `lexibank` uses [CLDF](http://cldf.clld.org) as storage format for datasets. Since interoperability of datasets is our main goal, we restrict the valid values for `Language_ID` and `Parameter_ID` in [CLDF data files](https://github.com/glottobank/cldf#the-data-file) as follows:
-  - `Language_ID` must be a valid Glottolog language identifier (aka glottocode) of the form `abcd1234` or empty.
-  - `Parameter_ID` must be a valid Concepticon concept set ID of the form `1234` or empty.
-  Incomplete mapping to Concepticon or Glottolog is then indicated by `""` values, and local identifiers can be supplied in additional fields of the data files.
+- **`lexibank` CLDF:** `lexibank` uses [CLDF](cldf.md) - the **C**ross-**L**inguistic **D**ata **F**ormat as storage format for datasets.
 - **Concepticon:** To make datasets comparable we need a mapping (aka [schema crosswalk](https://en.wik  osswalk)) between the concept lists (aka [Swadesh lists](https://en.wikipedia.org/wiki/Swadesh_list)) used in each dataset. Fortunately, this has already been done for many concept lists by the [CLLD Concepticon](http://concepticon.clld.org). `lexibank` uses Concepticon [concept sets](http://concepticon.clld.org/parameters) to identify concepts across datasets.
 - **Glottolog:** [Glottolog](http://glottolog.org) is a comprehensive catalog of the world's languages and dialects. In addition to language identification, it also provides a genealogical classification and additional metadata like geographic coordinates, alternative names, etc. for each language.
 - **CLPA:** The cross-linguistic phonetic alphabet is an initial attempt to provide a cross-linguistic dialect of the international phonetic alphabet (IPA) that can be used as an authoritative standard of what could be called the "least of what most people would agree with". While IPA is described, it is not necessarily standardized to allow for transcriptions that are easily readable by a machine. CLPA tries to fill this gap by 
