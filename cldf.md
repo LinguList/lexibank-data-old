@@ -37,6 +37,10 @@ If the data is split, the following conditions must be met:
   data by concatenating the separate CLDF data files using tools like [csvstack](http://csvkit.readthedocs.io/en/0.9.1/scripts/csvstack.html).
 - Each row of the dataset must be present in exactly one CLDF dataset.
 
+These requirements make sure that we can run tools on all data of a dataset which only have to be configured once
+per dataset; e.g. a transcription report may look for a column `Segments`, which should either be present in all
+CLDF data files or in none.
+
 
 ## Example: Data from the ABVD
 
