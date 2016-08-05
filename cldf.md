@@ -3,6 +3,9 @@
 `glottobank/lexibank-data` stores interoperable wordlist data in the `cldf` subdirectories of each
 dataset in a variant of the [CLDF](http://cldf.clld.org) format.
 
+
+## Columns in the CLDF data file
+
 Since interoperability of datasets is our main goal, we restrict the valid values for `Language_ID` and `Parameter_ID` 
 in [CLDF data files](https://github.com/glottobank/cldf#the-data-file) as follows:
 - `Language_ID` must be a valid Glottolog language identifier (aka glottocode) of the form `abcd1234` or empty.
@@ -23,6 +26,16 @@ Concepts are handled in a similar way:
 
 - `Parameter_name`: concept label as given in source
 - `Parameter_local_ID`: identifier of concept as given in source (preferably a URL)
+
+
+## Splitting `lexibank` datasets into multiple CLDF datasets
+
+`lexibank` datasets may be partitioned into multiple CLDF datasets. This is recommended when subsets of the data
+share the same metadata (e.g. source or other provenance information), distinct from other subsets.
+If the data is split, the following conditions must be met:
+- Each CLDF dataset must contain the same set and order of columns, i.e. it must be possible to get the complete
+  data by concatenating the separate CLDF data files using tools like [csvstack](http://csvkit.readthedocs.io/en/0.9.1/scripts/csvstack.html).
+- Each row of the dataset must be present in exactly one CLDF dataset.
 
 
 ## Example: Data from the ABVD
