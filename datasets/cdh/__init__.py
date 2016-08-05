@@ -3,11 +3,10 @@ from __future__ import unicode_literals, print_function
 
 from collections import defaultdict
 from pylexibank.dataset import CldfDataset
-from pycldf.dataset import Dataset
 from clldutils.misc import slug
 from clldutils.path import Path
 
-from pylexibank.lingpy_util import getEvoBibAsSource, test_sequences
+from pylexibank.lingpy_util import getEvoBibAsSource
 from pylexibank.util import download_and_unpack_zipfiles
 import lingpy as lp
 
@@ -15,6 +14,8 @@ URL = "https://gist.github.com/LinguList/7481097/archive/036610e905af4ea7fbc3de0
 PATH = Path('7481097-036610e905af4ea7fbc3de01fa443d8b08f4c684')
 DSET = 'basic.qlc'
 SOURCE = 'Hou2004'
+
+TRANSCRIPTION_REPORT_CFG = {'column': 'Segments', 'segmentized': True}
 
 
 def download(dataset, **kw):
@@ -126,10 +127,3 @@ def cldf(dataset, glottolog, concepticon, **kw):
                             False
                             ])
         dataset.write_cognates()
-
-def report(dataset):
-    ds = Dataset.from_file(Path(dataset.cldf_dir, 
-        dataset.id+'.csv'))
-    test_sequences(ds, 'Segments', segmentized=True)
-    ds.write(dataset.cldf_dir)
-

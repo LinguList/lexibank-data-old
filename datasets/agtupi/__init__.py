@@ -6,7 +6,6 @@ import unicodedata
 from itertools import chain
 
 from pylexibank.dataset import CldfDataset
-from pylexibank.lingpy_util import test_sequences
 
 
 def download(dataset, **kw):
@@ -147,8 +146,3 @@ def cldf(dataset, glottolog, concepticon, **kw):
                             '%s-%s' % (cid, j + 1),
                             False
                         ])
-
-
-def report(dataset):
-    for ds in dataset.iter_cldf_datasets():
-        test_sequences(ds, 'Value', segmentized=False)

@@ -3,6 +3,7 @@ from __future__ import unicode_literals, print_function, division
 
 from pylexibank.providers import clld
 from pylexibank.dataset import CldfDataset
+from pylexibank.util import clean_form
 
 
 def download(dataset, **kw):
@@ -17,7 +18,8 @@ def cldf(dataset, glottolog, concepticon, **kw):
     unmapped = set()
     for ods in clld.itercldf(dataset, __name__):
         lid = ods.name.split('-')[-1]
-        fields = list(ods.fields) + ['Language_local_ID', 'Parameter_local_ID']
+        fields = list(ods.fields) + [
+            'Language_local_ID', 'Parameter_local_ID', 'Value_in_source']
         with CldfDataset(fields, dataset, subset=lid) as ds:
             ds.table.schema.columns['Parameter_local_ID'].valueUrl = \
                 clld.url(__name__, path='/parameters/{Parameter_local_ID}')
@@ -30,4 +32,5 @@ def cldf(dataset, glottolog, concepticon, **kw):
                 if row['Language_ID'] == 'None':
                     row['Language_ID'] = None
                     unmapped.add((row['Language_name'], lid))
-                ds.add_row(row.to_list() + [lid, '-'.join(row['ID'].split('-')[:2])])
+                val, row['Value'] = row['Value'], clean_form(row['Value'])
+                ds.add_row(row.to_list() + [lid, '-'.join(row['ID'].split('-')[:2]), val])

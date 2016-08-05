@@ -21,6 +21,21 @@ REPOS_PATH = Path(pylexibank.__file__).parent.parent
 YEAR_PATTERN = re.compile('\s+\(?(?P<year>[1-9][0-9]{3}(\-[0-9]+)?)(\)|\.)')
 
 
+def clean_form(form):
+    form = form.replace('(?)', '').strip()
+    if form.startswith('['):
+        if form.endswith(']'):
+            form = form[1:-1].strip()
+        elif ']' not in form[1:]:
+            form = form[1:].strip()
+    if form.startswith('('):
+        if form.endswith(')'):
+            form = form[1:-1].strip()
+        elif ']' not in form[1:]:
+            form = form[1:].strip()
+    return form
+
+
 def split(s, sep=',;', exclude_contexts=None):
     exclude_contexts = dict(exclude_contexts or [('[', ']'), ('(', ')'), ('“', '”')])
     token, context = '', ''

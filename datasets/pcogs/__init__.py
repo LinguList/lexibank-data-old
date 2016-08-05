@@ -5,7 +5,7 @@ from pylexibank.dataset import CldfDataset
 from clldutils.misc import slug
 from clldutils.path import Path
 
-from pylexibank.lingpy_util import getEvoBibAsSource, test_sequences
+from pylexibank.lingpy_util import getEvoBibAsSource
 from pylexibank.util import download_and_unpack_zipfiles
 import lingpy as lp
 
@@ -13,6 +13,8 @@ URL = "https://zenodo.org/record/51328/files/partial-cognate-detection-v1.0.zip"
 PATH = Path('lingpy-partial-cognate-detection-2089b49', 'data')
 DSETS = ['Bai-110-9.tsv', 'Tujia-109-5.tsv', 'Chinese-180-18.tsv']
 SOURCES = ['Wang2006', 'Starostin2013b', 'Hou2004']
+
+TRANSCRIPTION_REPORT_CFG = {'column': 'Segments', 'segmentized': True}
 
 
 def download(dataset, **kw):
@@ -84,10 +86,3 @@ def cldf(dataset, glottolog, concepticon, **kw):
                                 False
                                 ])
             dataset.write_cognates()
-
-
-def report(dataset):
-    for ds in dataset.iter_cldf_datasets():
-        test_sequences(ds, 'Segments', segmentized=True)
-        ds.write(dataset.cldf_dir)
-
