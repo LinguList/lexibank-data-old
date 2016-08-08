@@ -11,7 +11,7 @@ The basic invocation looks like
     lexibank [OPTIONS] <command> [args]
 
 """
-from __future__ import unicode_literals
+from __future__ import unicode_literals, division
 import os
 import sys
 from time import time
@@ -21,7 +21,7 @@ from clldutils.path import Path
 
 import pylexibank
 from pylexibank.util import data_path, formatted_number
-from pylexibank.dataset import Dataset, synonymy_index
+from pylexibank.dataset import Dataset, synonymy_index, TranscriptionReport
 
 
 HOME = Path(os.path.expanduser('~'))
@@ -65,12 +65,6 @@ def download(args):
     get_dataset(args).download()
 
 
-def report(args):
-    """
-    """
-    get_dataset(args).report()
-
-
 def list_(args):
     for d in data_path(repos=Path(args.lexibank_repos)).iterdir():
         if is_dataset_dir(d):
@@ -88,8 +82,20 @@ def with_dataset(args, func):
                     and d.joinpath('metadata.json').exists():
                 s = time()
                 print('processing %s ...' % d.name)
-                func(get_dataset(args, d.name), **vars(args))
+                try:
+                    func(get_dataset(args, d.name), **vars(args))
+                except NotImplementedError:
+                    print('--not implemented--')
                 print('... done %s [%.1f secs]' % (d.name, time() - s))
+
+
+def report(args):
+    """
+    """
+    def _report(ds, **kw):
+        ds.report()
+
+    with_dataset(args, _report)
 
 
 def cldf(args):
@@ -145,10 +151,15 @@ def readme(args):
 
 
 def _readme(ds, **kw):
+    #
+    # FIXME: write only summary into README.md
+    # in case of multiple cldf datasets:
+    # - separate lexemes.md and transcriptions.md
+    #
     if not list(ds.cldf_dir.glob('*.csv')):
         return
     lines = [
-        '## %s' % ds.md.get('dc:title'),
+        '# %s' % ds.md.get('dc:title'),
         '',
         'Cite the source dataset as',
         '',
@@ -170,45 +181,23 @@ def _readme(ds, **kw):
             'See also %s' % ds.md.get('dc:related'),
             ''])
 
-    lines.extend([
-        '### Cognate sets',
-        '%s cognates in %s cognate sets' % tuple(
-            map(formatted_number, ds.cognate_stats())),
-        '',
-        '### Lexemes',
-        '',
+    lexlines = [
+        '# %s - Lexemes per CLDF dataset\n' % ds.md.get('dc:title'),
         ' | '.join(['Name', 'Languages', 'Concepts', 'Lexemes', 'Synonymy', 'Quality']),
         '|'.join([':--- ', ' ---:', ' ---:', ' ---:', ' ---:', ':---:']),
-    ])
+    ]
+    trlines = []
+    rows = []
 
-    totals = ['**total:**', set(), set(), 0, (0, 0), '']
+    totals = [set(), set(), 0, (0, 0)]
 
-    dslines = []
-    trlines, trtotals, trsounds, trerrorsl, trerrorsc = [], [], [], [], []
-    for cldfds in sorted(ds.iter_cldf_datasets(), key=lambda m: m.name):
+    for cldfds in ds.iter_cldf_datasets():
+        rows.extend(cldfds.rows)
         badges = [
             get_badge(cldfds.rows, 'Glottolog', 'Language_ID'),
             get_badge(cldfds.rows, 'Concepticon', 'Parameter_ID'),
             get_badge(cldfds.rows, 'Source'),
         ]
-        if 'transcription' in cldfds.metadata:
-            _tr = cldfds.metadata['transcription']
-            new_badges, new_lines = _transcription_readme(
-                    cldfds.metadata['transcription'])
-            trsounds += sorted(_tr['segments'])
-            trerrorsl += [err[0] for err in _tr['errors'].items() if 'lingpy'
-                    in err[1]]
-            trerrorsc += [err[0] for err in _tr['errors'].items() if 'clpa' in
-                    err[1]]
-            new_badges
-            trlines.append(
-                    '[%s](%s)' % (cldfds.name, 'cldf/%s.csv' % cldfds.name) \
-                            + ' | {0} | {1} | {2} | {3} | {4:.2f} | '.format(
-                                *new_lines) + \
-                                        ' '.join(new_badges)
-                            )
-            trtotals.append(new_lines)
-
         stats = cldfds.stats
         params = len(stats['parameters'])
         sindex, langs = synonymy_index(cldfds)
@@ -216,12 +205,12 @@ def _readme(ds, **kw):
             sindex /= float(len(langs))
         else:
             sindex = 0
-        totals[1] = totals[1].union(langs)
-        totals[2] = totals[2].union(stats['parameters'])
-        totals[3] += len(cldfds)
-        totals[4] = (totals[4][0] + sindex, totals[4][1] + 1)
+        totals[0] = totals[0].union(langs)
+        totals[1] = totals[1].union(stats['parameters'])
+        totals[2] += len(cldfds)
+        totals[3] = (totals[3][0] + sindex, totals[3][1] + 1)
 
-        dslines.append(' | '.join([
+        lexlines.append(' | '.join([
             '[%s](%s)' % (cldfds.name, 'cldf/%s.csv' % cldfds.name),
             '%s' % len(langs),
             '%s' % params,
@@ -229,60 +218,88 @@ def _readme(ds, **kw):
             '%.2f' % sindex,
             ' '.join(badges)]))
 
-    if trlines:
-        trtotals = [
-                sum([line[0] for line in trtotals]),
-                len(set(trsounds)),
-                len(set(trerrorsl)),
-                len(set(trerrorsc)),
-                sum([line[-1] for line in trtotals]) / len(trlines)
-                ]
-        trtotals[-1] = trtotals[-1] / len(trlines)
-        trlines = [
-                '', 
-                '### Sounds', 
-                '',
-                'Name  | Sounds (total) | Sounds (unique) | '+\
-                        'Errors (LingPy) | Errors (CLPA) | '+\
-                        'Inventory (mean) | Quality ',
-                        ':---| ---: | ---:| ---:| ---:| ---:| :---:|',
-                        '**total** | {0} | {1} | {2} | {3} | {4:.2f} | '.format(
-                            *trtotals)
-                        ]+\
-                        trlines
+    tr = TranscriptionReport(ds, ds.dir.joinpath('transcription.json'))
+    stats = tr.report['stats']
+    badges = [
+        get_badge(rows, 'Glottolog', 'Language_ID'),
+        get_badge(rows, 'Concepticon', 'Parameter_ID'),
+        get_badge(rows, 'Source')
+    ]
+    if stats['segments']:
+        badges.extend([
+            get_badge(
+                None,
+                'LingPy',
+                ratio=(stats['segments'] - stats['lingpy_errors']) / stats['segments']),
+            get_badge(
+                None,
+                'CLPA',
+                ratio=(stats['segments'] - stats['clpa_errors']) / stats['segments']),
+        ])
+    lines.extend(['## Statistics', ' '.join(badges), ''])
+    stats_lines = [
+        '- **Varieties:** {0:,}'.format(len(totals[0])),
+        '- **Concepts:** {0:,}'.format(len(totals[1])),
+        '- **Lexemes:** {0:,}'.format(totals[2]),
+        '- **Synonymy:** %.2f' % (totals[3][0] / totals[3][1]),
+        '- **Cognacy:** %s cognates in %s cognate sets' % tuple(
+            map(formatted_number, ds.cognate_stats())),
+        '- **Invalid lexemes:** {0:,}'.format(stats['invalid']),
+        '- **Tokens:** {0:,}'.format(stats['tokens']),
+        '- **Segments:** {0:,} ({1} LingPy errors, {2} CLPA errors, {3} CLPA modified)'
+        .format(stats['segments'],
+                stats['lingpy_errors'],
+                stats['clpa_errors'],
+                len(stats['replacements'])),
+        '- **Inventory size (avg):** %.2f' % tr.report['stats']['inventory_size'],
+    ]
+    print('\n'.join(stats_lines))
+    lines.extend(stats_lines)
 
-    for i in range(1, 4):
-        totals[i] = formatted_number(totals[i])
-    totals[4] = '%.2f' % (totals[4][0] / totals[4][1])
+    #trlines, trtotals, trsounds, trerrorsl, trerrorsc = [], [], [], [], []
+    #if 'transcription' in cldfds.metadata:
+    #    _tr = cldfds.metadata['transcription']
+    #    new_badges, new_lines = _transcription_readme(
+    #        cldfds.metadata['transcription'])
+    #    trsounds += sorted(_tr['segments'])
+    #    trerrorsl += [err[0] for err in _tr['errors'].items() if 'lingpy'
+    #                  in err[1]]
+    #    trerrorsc += [err[0] for err in _tr['errors'].items() if 'clpa' in
+    #                  err[1]]
+    #    new_badges
+    #    trlines.append(
+    #        '[%s](%s)' % (cldfds.name, 'cldf/%s.csv' % cldfds.name) \
+    #        + ' | {0} | {1} | {2} | {3} | {4:.2f} | '.format(
+    #            *new_lines) + \
+    #        ' '.join(new_badges)
+    #    )
+    #    trtotals.append(new_lines)
+
+    #if trlines:
+    #    trtotals = [
+    #            sum([line[0] for line in trtotals]),
+    #            len(set(trsounds)),
+    #            len(set(trerrorsl)),
+    #            len(set(trerrorsc)),
+    #            sum([line[-1] for line in trtotals]) / len(trlines)
+    #            ]
+    #    trtotals[-1] = trtotals[-1] / len(trlines)
+    #    trlines = [
+    #            '',
+    #            '### Sounds',
+    #            '',
+    #            'Name  | Sounds (total) | Sounds (unique) | '+\
+    #                    'Errors (LingPy) | Errors (CLPA) | '+\
+    #                    'Inventory (mean) | Quality ',
+    #                    ':---| ---: | ---:| ---:| ---:| ---:| :---:|',
+    #                    '**total** | {0} | {1} | {2} | {3} | {4:.2f} | '.format(
+    #                        *trtotals)
+    #                    ]+\
+    #                    trlines
 
     with ds.dir.joinpath('README.md').open('w', encoding='utf8') as fp:
-        fp.write('\n'.join(lines + [' | '.join(totals)] + dslines + trlines))
+        fp.write('\n'.join(lines + trlines))
     print(ds.dir.joinpath('README.md'))
-
-def _transcription_readme(transcription):
-
-    # extend by transcription
-    lines = [
-            transcription['number_of_tokens'],
-            transcription['number_of_segments'],
-            transcription['number_of_errors']['lingpy'],
-            transcription['number_of_errors']['clpa'],
-            transcription['inventory_size']
-        ]
-    
-    badges = [get_badge(
-            None, 'LingPy', 
-            ratio=(transcription['number_of_segments']-\
-                    transcription['number_of_errors']['lingpy'])/\
-                    transcription['number_of_segments']
-        ),
-        get_badge(
-            None, 'CLPA', 
-            ratio=(transcription['number_of_segments']-\
-                    transcription['number_of_errors']['clpa'])/\
-                    transcription['number_of_segments']
-        )]
-    return badges, lines
 
 
 def check(args):

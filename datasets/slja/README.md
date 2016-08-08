@@ -1,4 +1,4 @@
-## Sean Lee et al.: Japonic languages
+# Sean Lee et al.: Japonic languages
 
 Cite the source dataset as
 
@@ -6,12 +6,15 @@ Cite the source dataset as
 
 See also http://rspb.royalsocietypublishing.org/content/early/2011/05/04/rspb.2011.0518
 
-### Cognate sets
-11,367 cognates in 677 cognate sets
+## Statistics
+![Glottolog: 71%](https://img.shields.io/badge/Glottolog-71%25-yellow.svg "Glottolog: 71%") ![Concepticon: 100%](https://img.shields.io/badge/Concepticon-100%25-brightgreen.svg "Concepticon: 100%") ![Source: 0%](https://img.shields.io/badge/Source-0%25-red.svg "Source: 0%") ![LingPy: 74%](https://img.shields.io/badge/LingPy-74%25-yellow.svg "LingPy: 74%") ![CLPA: 56%](https://img.shields.io/badge/CLPA-56%25-red.svg "CLPA: 56%")
 
-### Lexemes
-
-Name | Languages | Concepts | Lexemes | Synonymy | Quality
-:--- | ---:| ---:| ---:| ---:|:---:
-**total:** | 59 | 210 | 11,364 | 1.00 | 
-[slja](cldf/slja.csv) | 59 | 210 | 11364 | 1.00 | ![Glottolog: 71%](https://img.shields.io/badge/Glottolog-71%25-yellow.svg "Glottolog: 71%") ![Concepticon: 100%](https://img.shields.io/badge/Concepticon-100%25-brightgreen.svg "Concepticon: 100%") ![Source: 0%](https://img.shields.io/badge/Source-0%25-red.svg "Source: 0%")
+- **Varieties:** 59
+- **Concepts:** 210
+- **Lexemes:** 11,364
+- **Synonymy:** 1.00
+- **Cognacy:** 11,367 cognates in 677 cognate sets
+- **Invalid lexemes:** 0
+- **Tokens:** 51,867
+- **Segments:** 91 (24 LingPy errors, 40 CLPA errors, 6 CLPA modified)
+- **Inventory size (avg):** 34.80

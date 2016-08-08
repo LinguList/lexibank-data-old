@@ -7,6 +7,7 @@ from collections import defaultdict, Counter
 
 from clldutils import jsonlib
 from clldutils.dsv import reader
+from clldutils.misc import UnicodeMixin
 from pyglottolog.api import Glottolog
 from pyconcepticon.api import Concepticon
 from pycldf import csv
@@ -15,17 +16,21 @@ from pycldf.dataset import MD_SUFFIX
 
 import pylexibank
 from pylexibank.util import with_sys_path
+from pylexibank.lingpy_util import test_sequences
 
 logging.basicConfig(level=logging.INFO)
 REQUIRED_FIELDS = ('ID', 'Language_ID', 'Parameter_ID', 'Value')
 GC_PATTERN = re.compile('[a-z][a-z0-9]{3}[1-9][0-9]{3}$')
 
 
+def get_variety_id(row):
+    return row.get('Language_local_ID', row.get('Language_name', row.get('Language_ID')))
+
+
 def synonymy_index(cldfds):
     synonyms = defaultdict(Counter)
     for row in cldfds.rows:
-        lid = row.get(
-            'Language_local_ID', row.get('Language_name', row.get('Language_ID')))
+        lid = get_variety_id(row)
         if lid and row['Parameter_ID']:
             synonyms[lid].update([row['Parameter_ID']])
     return (
@@ -66,7 +71,7 @@ class Dataset(object):
         self.alignments = Alignments()
 
     def iter_cldf_datasets(self):
-        for fname in self.cldf_dir.glob('*' + MD_SUFFIX):
+        for fname in sorted(self.cldf_dir.glob('*' + MD_SUFFIX), key=lambda f: f.name):
             yield CldfDatasetBase.from_metadata(fname)
 
     def write_cognates(self):
@@ -96,7 +101,8 @@ class Dataset(object):
         self._run_command('download', **kw)
 
     def report(self, **kw):
-        self._run_command('report', **kw)
+        rep = TranscriptionReport(self, self.dir.joinpath('transcription.json'))
+        rep.run(**getattr(self.commands, 'TRANSCRIPTION_REPORT_CFG', {}))
 
 
 class Cognates(list):
@@ -136,12 +142,119 @@ class Alignments(list):
 
 
 def valid_Value(row):
-    return bool(row['Value']) and row['Value'] not in ['?']
+    return bool(row['Value']) and row['Value'] not in ['?', '-']
 
 
 VALIDATORS = {
     'Value': valid_Value,
 }
+
+
+class TranscriptionReport(UnicodeMixin):
+    def __init__(self, dataset, fname):
+        self.dataset = dataset
+        self.fname = fname
+        if fname.exists():
+            try:
+                self.report = jsonlib.load(fname)
+            except ValueError:
+                self.report = {}
+        else:
+            self.report = {}
+
+    def run(self, **cfg):
+        cfg.setdefault('column', 'Value')
+        cfg.setdefault('segmentized', False)
+        self.report = defaultdict(lambda: dict(
+            invalid=Counter(),
+            segments=Counter(),
+            lingpy_errors=set(),
+            clpa_errors=set(),
+            replacements=defaultdict(set),
+        ))
+        for ds in self.dataset.iter_cldf_datasets():
+            test_sequences(ds, get_variety_id, self.report, **cfg)
+
+        stats = dict(
+            invalid=set(),
+            tokens=0,
+            segments=set(),
+            lingpy_errors=set(),
+            clpa_errors=set(),
+            replacements=defaultdict(set),
+            inventory_size=0)
+        for lid, report in self.report.items():
+            stats['invalid'].update(report['invalid'])
+            stats['tokens'] += sum(report['segments'].values())
+            stats['segments'].update(report['segments'].keys())
+            for attr in ['lingpy_errors', 'clpa_errors']:
+                stats[attr].update(report[attr])
+            for segment, repls in report['replacements'].items():
+                stats['replacements'][segment].update(repls)
+            stats['inventory_size'] += len(report['segments']) / len(self.report)
+            # make sure we can serialize as JSON:
+            for attr in ['lingpy_errors', 'clpa_errors']:
+                report[attr] = sorted(report[attr])
+            for segment in report['replacements']:
+                report['replacements'][segment] = sorted(report['replacements'][segment])
+        # make sure we can serialize as JSON:
+        for attr in ['invalid', 'segments', 'lingpy_errors', 'clpa_errors']:
+            stats[attr] = len(stats[attr])
+        for segment in stats['replacements']:
+            stats['replacements'][segment] = sorted(stats['replacements'][segment])
+
+        self.report['stats'] = stats
+        jsonlib.dump(self.report, self.fname, indent=4)
+
+    def __unicode__(self):
+        md = """## Transcription Report
+### General Statistics
+* Number of Tokens: {number_of_tokens}
+* Number of Segments: {number_of_segments}
+* Invalid forms: {invalid_rows}
+* Inventory Size: {inventory_size:.2f}
+""".format(**self.report['stats'])
+
+        md += """\
+* Number of Errors: {0}
+* Number of LingPy-Errors: {1}
+* Number of CLPA-Errors: {2}
+""".format(
+            0,  # FIXME
+            self.report['stats']['number_of_errors']['lingpy'],
+            self.report['stats']['number_of_errors']['clpa'],
+        )
+
+        """
+{modified}
+## Detailed listing of recognized segments
+{segments}
+"""
+
+        return md
+
+        segments = '| Segment | Occurrence | LingPy | CLPA | \n|---|---|---|---|\n'
+        for a, b in sorted(stats.items(), key=lambda x: x[1], reverse=True):
+            if a in errors:
+                c = '✓' if 'lingpy' not in errors[a] else '?'
+                d = ', '.join(errors[a]) if 'clpa' not in errors[a] else '?'
+            else:
+                c, d = '✓', '✓'
+            segments += '| {0} | {1} | {2} | {3} |\n'.format(a, b, c, d)
+
+        return text.format(
+            dataset=dataset.name,
+            NOT=number_of_tokens,
+            NOS=number_of_segments,
+            NOE=number_of_errors,
+            NOL=number_of_lingpy_errors,
+            NOC=number_of_clpa_errors,
+            IVS=inventory_size,
+            modified='\n## Automatically modified (CLPA)\n' +
+                     '| Source | Target |\n|---|---|\n' +
+                     ''.join(['| {0} | {1} |\n'.format(a, b) for a, b in modified])
+            if modified else '',
+            segments=segments)
 
 
 class CldfDataset(CldfDatasetBase):

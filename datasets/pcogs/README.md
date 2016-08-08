@@ -1,4 +1,4 @@
-## Using sequence similarity networks to identify partial cognates in multilingual wordlists
+# Using sequence similarity networks to identify partial cognates in multilingual wordlists
 
 Cite the source dataset as
 
@@ -8,23 +8,15 @@ This dataset is licensed under a https://www.gnu.org/licenses/gpl-3.0.de.html li
 
 Available online at https://zenodo.org/record/51328/files/partial-cognate-detection-v1.0.zip
 
-### Cognate sets
-8,031 cognates in 2,040 cognate sets
+## Statistics
+![Glottolog: 100%](https://img.shields.io/badge/Glottolog-100%25-brightgreen.svg "Glottolog: 100%") ![Concepticon: 100%](https://img.shields.io/badge/Concepticon-100%25-brightgreen.svg "Concepticon: 100%") ![Source: 100%](https://img.shields.io/badge/Source-100%25-brightgreen.svg "Source: 100%") ![LingPy: 100%](https://img.shields.io/badge/LingPy-100%25-brightgreen.svg "LingPy: 100%") ![CLPA: 100%](https://img.shields.io/badge/CLPA-100%25-brightgreen.svg "CLPA: 100%")
 
-### Lexemes
-
-Name | Languages | Concepts | Lexemes | Synonymy | Quality
-:--- | ---:| ---:| ---:| ---:|:---:
-**total:** | 32 | 236 | 5,194 | 1.06 | 
-[pcogs-Bai](cldf/pcogs-Bai.csv) | 9 | 110 | 1028 | 1.04 | ![Glottolog: 100%](https://img.shields.io/badge/Glottolog-100%25-brightgreen.svg "Glottolog: 100%") ![Concepticon: 100%](https://img.shields.io/badge/Concepticon-100%25-brightgreen.svg "Concepticon: 100%") ![Source: 100%](https://img.shields.io/badge/Source-100%25-brightgreen.svg "Source: 100%")
-[pcogs-Chinese](cldf/pcogs-Chinese.csv) | 18 | 179 | 3653 | 1.13 | ![Glottolog: 100%](https://img.shields.io/badge/Glottolog-100%25-brightgreen.svg "Glottolog: 100%") ![Concepticon: 100%](https://img.shields.io/badge/Concepticon-100%25-brightgreen.svg "Concepticon: 100%") ![Source: 100%](https://img.shields.io/badge/Source-100%25-brightgreen.svg "Source: 100%")
-[pcogs-Tujia](cldf/pcogs-Tujia.csv) | 5 | 109 | 513 | 1.00 | ![Glottolog: 100%](https://img.shields.io/badge/Glottolog-100%25-brightgreen.svg "Glottolog: 100%") ![Concepticon: 100%](https://img.shields.io/badge/Concepticon-100%25-brightgreen.svg "Concepticon: 100%") ![Source: 100%](https://img.shields.io/badge/Source-100%25-brightgreen.svg "Source: 100%")
-
-### Sounds
-
-Name  | Sounds (total) | Sounds (unique) | Errors (LingPy) | Errors (CLPA) | Inventory (mean) | Quality 
-:---| ---: | ---:| ---:| ---:| ---:| :---:|
-**total** | 28639 | 147 | 0 | 0 | 14.31 | 
-[pcogs-Bai](cldf/pcogs-Bai.csv) | 4221 | 94 | 0 | 0 | 49.00 | ![LingPy: 100%](https://img.shields.io/badge/LingPy-100%25-brightgreen.svg "LingPy: 100%") ![CLPA: 100%](https://img.shields.io/badge/CLPA-100%25-brightgreen.svg "CLPA: 100%")
-[pcogs-Chinese](cldf/pcogs-Chinese.csv) | 21629 | 122 | 0 | 0 | 42.22 | ![LingPy: 100%](https://img.shields.io/badge/LingPy-100%25-brightgreen.svg "LingPy: 100%") ![CLPA: 100%](https://img.shields.io/badge/CLPA-100%25-brightgreen.svg "CLPA: 100%")
-[pcogs-Tujia](cldf/pcogs-Tujia.csv) | 2789 | 57 | 0 | 0 | 37.60 | ![LingPy: 100%](https://img.shields.io/badge/LingPy-100%25-brightgreen.svg "LingPy: 100%") ![CLPA: 100%](https://img.shields.io/badge/CLPA-100%25-brightgreen.svg "CLPA: 100%")
+- **Varieties:** 32
+- **Concepts:** 236
+- **Lexemes:** 5,194
+- **Synonymy:** 1.06
+- **Cognacy:** 5,194 cognates in 1,687 cognate sets
+- **Invalid lexemes:** 0
+- **Tokens:** 28,639
+- **Segments:** 147 (0 LingPy errors, 0 CLPA errors, 0 CLPA modified)
+- **Inventory size (avg):** 43.41

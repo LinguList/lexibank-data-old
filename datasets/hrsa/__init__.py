@@ -77,8 +77,3 @@ def cldf(dataset, glottolog, concepticon, **kw):
                     citekey,
                     id_
                 ])
-
-
-def report(dataset):
-    for ds in dataset.iter_cldf_datasets():
-        pass

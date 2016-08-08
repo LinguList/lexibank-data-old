@@ -7,23 +7,24 @@ import re
 from six.moves.urllib.request import urlretrieve
 from clldutils.dsv import UnicodeReader
 from clldutils.misc import slug
-from clldutils.path import Path
 
 from pylexibank.util import split_by_year, get_reference, xls2csv, with_temp_dir
 from pylexibank.dataset import CldfDataset, Unmapped
-from pylexibank.lingpy_util import clean_string, test_sequences,\
-        automatic_cognates, automatic_alignments
-from pycldf.dataset import Dataset
+from pylexibank.lingpy_util import clean_string
 
 
 NAME = 'Grollemund-et-al_Bantu-database_2015'
 PAGES_PATTERN = re.compile('\s+p\.?\s*(?P<pages>[0-9]+)\.$')
+
+TRANSCRIPTION_REPORT_CFG = {'column': 'Segments', 'segmentized': True}
+
 
 def clean_string_with_validation(string):
     try:
         return ' '.join(clean_string(string))
     except IndexError:
         return None
+
 
 def download(dataset):
     with with_temp_dir() as tmpdir:
@@ -145,9 +146,3 @@ def cldf(dataset, glottolog, concepticon, **kw):
                         ])
         dataset.write_cognates()
         unmapped.pprint()
-
-def report(dataset, **keywords):
-    
-    ds = Dataset.from_file(Path(dataset.cldf_dir, dataset.id+'.csv'))
-    test_sequences(ds, 'Segments', segmentized=True)
-    ds.write(dataset.cldf_dir)

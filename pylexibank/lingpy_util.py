@@ -1,13 +1,16 @@
 # coding=utf-8
 from __future__ import unicode_literals, print_function
-from collections import defaultdict
+from collections import defaultdict, Counter
 
 from clldutils.misc import slug
 from six.moves.urllib.request import urlopen
 from lingpy.sequence.sound_classes import clean_string, tokens2class
 import lingpy as lp
-import pyclpa
+from pyclpa.base import get_clpa
 from pybtex import database
+
+
+clpa = get_clpa()
 
 
 def getEvoBibAsSource(key):
@@ -16,141 +19,70 @@ def getEvoBibAsSource(key):
         urlopen("http://bibliography.lingpy.org/raw.php?key="+key).read().decode('utf-8'),
         bib_format='bibtex')
 
+
 def getSourceFromBibTex(source):
     "utility function to read source from bibtex"
     return database.parse_string(source, bib_format="bibtex")
 
 
-def test_sequence(sequence, clpa=None, errors=None, stats=None, **keywords):
+def test_sequence(sequence, **keywords):
     """
     Test a sequence for compatibility with CLPA and LingPy.
     """
-    clpa = clpa or pyclpa.clpa
-    
+    invalid = Counter()
+    segment_count = Counter()
+    lingpy_errors = set()
+    clpa_errors = set()
+    clpa_repl = defaultdict(set)
+
     # clean the string at first, we only take the first item, ignore the rest
-    segments = clean_string(sequence, **keywords)[0].split(' ')
-    
-    errors = errors or defaultdict(set)
-    stats = stats or defaultdict(int)
+    try:
+        segments = clean_string(sequence, **keywords)[0].split(' ')
+        lingpy_analysis = [
+            x if y != '0' else '?' for x, y in
+            zip(segments, tokens2class(segments, 'dolgo'))]
+        clpa_analysis, _sounds, _errors = clpa.check_sequence(segments)
+    except (ValueError, IndexError):
+        invalid.update([sequence])
+        segments, clpa_analysis = [], []
 
-    # lingpy errors
-    lingpy_analysis = [x if y != '0' else '?' for x, y in zip(
-        segments, tokens2class(segments, 'dolgo'))]
-    clpa_analysis, _sounds, _errors = pyclpa.clpa.check_sequence(segments)
+    if segments:
+        for a, b, c in zip(segments, lingpy_analysis, clpa_analysis):
+            if a[0] in clpa.accents:
+                a = a[1:]
+            if c[0] in clpa.accents:
+                c = c[1:]
+            segment_count.update([a])
+            if b == '?':
+                lingpy_errors.add(a)
+            if c != a:
+                if c == '?':
+                    clpa_errors.add(a)
+                else:
+                    clpa_repl[a].add(c)
 
-    for a, b, c in zip(segments, lingpy_analysis, clpa_analysis):
-        if a[0] in clpa.accents:
-            a = a[1:]
-        if c[0] in clpa.accents:
-            c = c[1:]
-        stats[a] += 1
-        if b == '?':
-            errors[a].add('lingpy')
-        if c != a:
-            errors[a].add('clpa' if c == '?' else c)
-
-    return segments, [clpa.segment2clpa(x) for x in clpa_analysis], errors, stats
+    return (
+        segments,
+        [clpa.segment2clpa(x) for x in clpa_analysis],
+        invalid,
+        segment_count,
+        lingpy_errors,
+        clpa_errors,
+        clpa_repl)
 
 
-def test_sequences(dataset, column, clpa=False, print_markdown=False, **keywords):
+def test_sequences(dataset, lid_getter, report, column='Value', **kw):
     """
     Write a detailed transcription-report for a CLDF dataset in LexiBank.
     """
-    errors = defaultdict(list)
-    stats = defaultdict(int)
-
-    # important to make the analysis fast: load clpa only ONCE
-    clpa = clpa or pyclpa.clpa
-    
-    # store also language-specific values
-    languages = { tax : dict(segments=defaultdict(int),
-        errors=defaultdict(list)) for tax in set(
-            [row['Language_name'] for row in dataset.rows]
-            )}
     for row in dataset.rows:
-        segs, ids, _errors, _stats = test_sequence(
-            row[column], errors=defaultdict(list), stats=defaultdict(int), **keywords)
-        for itm, val in _errors.items(): 
-            errors[itm] += val
-            languages[row['Language_name']]['errors'][itm] += val
-        for itm, val in _stats.items(): 
-            stats[itm] += val
-            languages[row['Language_name']]['segments'][itm] += val
+        res = test_sequence(row[column], **kw)
+        lr = report[lid_getter(row)]
+        for i, attr in enumerate(['invalid', 'segments', 'lingpy_errors', 'clpa_errors']):
+            lr[attr].update(res[i + 2])
+        for segment, repls in res[-1].items():
+            lr['replacements'][segment].update(repls)
 
-    # write report
-    number_of_tokens = sum(stats.values())
-    number_of_segments = len(stats)
-    number_of_errors = len(errors)
-    number_of_lingpy_errors = sum([1 if 'lingpy' in errors[x] else 0 for x in errors])
-    number_of_clpa_errors = sum([1 if 'clpa' in errors[x] else 0 for x in errors])
-    inventory_size = sum([len(language['segments']) for language in
-        languages.values()]) / len(languages)
-    modified = []
-    for error, values in errors.items():
-        newvals = [v for v in values if v not in ['lingpy', 'clpa']]
-        if newvals:
-            modified += [(error, ', '.join(sorted(set(newvals))))]
-
-    # correct for problematic clpa-structure (should be changed in clpa) xxx
-    for language in languages:
-        for itm, val in languages[language]['errors'].items():
-            languages[language]['errors'] = dict([(v, val.count(v)) for v in
-                set(val)])
-    for itm, val in errors.items():
-        errors[itm] = dict([(v, val.count(v)) for v in set(val)])
-
-    # json-form for transcription report for the dataset
-    rpt = dict(
-            number_of_tokens = number_of_tokens,
-            number_of_segments = number_of_segments,
-            number_of_errors = dict(
-                lingpy = number_of_lingpy_errors,
-                clpa = number_of_clpa_errors
-                ),
-            inventory_size = inventory_size,
-            modified_for_clpa = { error : vals for error, vals in errors.items()
-                if [v for v in vals if v not in ['clpa', 'lingpy']]},
-            segments = stats,
-            errors = errors,
-            varieties = languages
-            )
-    dataset.metadata['transcription'] = rpt
-        
-    text = """# Transcription Report for {dataset}
-## General Statistics
-* Number of Tokens: {NOT}
-* Number of Segments: {NOS}
-* Number of Errors: {NOE}
-* Number of LingPy-Errors: {NOL}
-* Number of CLPA-Errors: {NOC}
-* Inventory Size: {IVS:.2f}
-{modified}
-## Detailed listing of recognized segments
-{segments}
-"""
-    segments = '| Segment | Occurrence | LingPy | CLPA | \n|---|---|---|---|\n'
-    for a, b in sorted(stats.items(), key=lambda x: x[1], reverse=True):
-        if a in errors:
-            c = '✓' if 'lingpy' not in errors[a] else '?'
-            d = ', '.join(errors[a]) if 'clpa' not in errors[a] else '?'
-        else:
-            c, d = '✓', '✓'
-        segments += '| {0} | {1} | {2} | {3} |\n'.format(a, b, c, d)
-    
-    if print_markdown:
-        print(text.format(
-            dataset=dataset.name,
-            NOT=number_of_tokens,
-            NOS=number_of_segments,
-            NOE=number_of_errors,
-            NOL=number_of_lingpy_errors,
-            NOC=number_of_clpa_errors,
-            IVS=inventory_size,
-            modified='\n## Automatically modified (CLPA)\n' +
-            '| Source | Target |\n|---|---|\n' +
-            ''.join(['| {0} | {1} |\n'.format(a, b) for a, b in modified])
-            if modified else '',
-            segments=segments))
 
 def _cldf2wld(dataset):
     """Make lingpy-compatible dictinary out of cldf main data."""

@@ -13,7 +13,7 @@ requires = [
     'pyglottolog',
     'pyconcepticon',
     'lingpy',
-    'pyclpa',
+    'pyclpa>=0.3.1',
 ]
 
 setup(

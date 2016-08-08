@@ -4,18 +4,18 @@ from __future__ import unicode_literals, print_function, division
 from six.moves.urllib.request import urlretrieve
 from clldutils.dsv import UnicodeReader
 from clldutils.misc import slug
-from clldutils.path import Path
 
-from pycldf.dataset import Dataset
 from pylexibank.util import with_temp_dir, xls2csv
 from pylexibank.dataset import CldfDataset
 
-from pylexibank.lingpy_util import clean_string, test_sequences,\
+from pylexibank.lingpy_util import clean_string, \
         automatic_cognates, automatic_alignments, getEvoBibAsSource
 
 URL = "http://onlinelibrary.wiley.com/store/10.1111/cla.12078/asset/supinfo/cla12078-sup-0006-supinfo6.xls?v=1&s=4c895c80efa148e7872c3c7702c5df3ed192c236"
 FILENAME = "cla12078-sup-0006-supinfo6.xls"
 SOURCE = 'Wheeler2014'
+
+TRANSCRIPTION_REPORT_CFG = {'column': 'Segments', 'segmentized': True}
 
 
 def download(dataset):
@@ -86,13 +86,3 @@ def cldf(dataset, glottolog, concepticon, **kw):
                 method='progressive')
         dataset.alignments.extend(alignments)
         dataset.write_alignments()
-        
-def report(dataset, **keywords):
-    
-    ds = Dataset.from_file(Path(dataset.cldf_dir, dataset.id+'.csv'))
-    test_sequences(ds, 'Segments', segmentized=True)
-    ds.write(dataset.cldf_dir)
-
-
-
-

@@ -1,4 +1,4 @@
-## Using phylogenetic networks to model Chinese dialect history
+# Using phylogenetic networks to model Chinese dialect history
 
 Cite the source dataset as
 
@@ -8,19 +8,15 @@ This dataset is licensed under a https://www.gnu.org/licenses/gpl-3.0.de.html li
 
 Available online at https://gist.github.com/LinguList/7481097
 
-### Cognate sets
-9,957 cognates in 3,061 cognate sets
+## Statistics
+![Glottolog: 97%](https://img.shields.io/badge/Glottolog-97%25-green.svg "Glottolog: 97%") ![Concepticon: 100%](https://img.shields.io/badge/Concepticon-100%25-brightgreen.svg "Concepticon: 100%") ![Source: 100%](https://img.shields.io/badge/Source-100%25-brightgreen.svg "Source: 100%") ![LingPy: 99%](https://img.shields.io/badge/LingPy-99%25-brightgreen.svg "LingPy: 99%") ![CLPA: 38%](https://img.shields.io/badge/CLPA-38%25-red.svg "CLPA: 38%")
 
-### Lexemes
-
-Name | Languages | Concepts | Lexemes | Synonymy | Quality
-:--- | ---:| ---:| ---:| ---:|:---:
-**total:** | 40 | 180 | 9,957 | 1.41 | 
-[cdh](cldf/cdh.csv) | 40 | 180 | 9957 | 1.41 | ![Glottolog: 97%](https://img.shields.io/badge/Glottolog-97%25-green.svg "Glottolog: 97%") ![Concepticon: 100%](https://img.shields.io/badge/Concepticon-100%25-brightgreen.svg "Concepticon: 100%") ![Source: 100%](https://img.shields.io/badge/Source-100%25-brightgreen.svg "Source: 100%")
-
-### Sounds
-
-Name  | Sounds (total) | Sounds (unique) | Errors (LingPy) | Errors (CLPA) | Inventory (mean) | Quality 
-:---| ---: | ---:| ---:| ---:| ---:| :---:|
-**total** | 68055 | 365 | 1 | 227 | 50.23 | 
-[cdh](cldf/cdh.csv) | 68055 | 365 | 1 | 227 | 50.23 | ![LingPy: 100%](https://img.shields.io/badge/LingPy-100%25-brightgreen.svg "LingPy: 100%") ![CLPA: 38%](https://img.shields.io/badge/CLPA-38%25-red.svg "CLPA: 38%")
+- **Varieties:** 40
+- **Concepts:** 180
+- **Lexemes:** 9,957
+- **Synonymy:** 1.41
+- **Cognacy:** 9,957 cognates in 3,061 cognate sets
+- **Invalid lexemes:** 0
+- **Tokens:** 68,055
+- **Segments:** 365 (2 LingPy errors, 227 CLPA errors, 20 CLPA modified)
+- **Inventory size (avg):** 50.22
