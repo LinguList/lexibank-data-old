@@ -72,17 +72,12 @@ def cldf(dataset, glottolog, concepticon, **kw):
                         wl[k, 'cogid'],
                         ' '.join([str(x) for x in wl[k, 'partialids']])
                         ])
-            etd = wl.get_etymdict(ref='cogid')
-            for pid, vals in etd.items():
-                for val in vals:
-                    if val:
-                        for k in val:
-                            cogid = '-'.join([slug(wl[k, 'concept']), '%s' % pid])
-                            dataset.cognates.append([
-                                k,
-                                ds.name,
-                                wl[k, 'ipa'],
-                                cogid,
-                                False
-                                ])
+            cognates = []
+            for k in wl:
+                concept = wl[k, 'concept']
+                idf = '-'.join(slug(concept, '%s', % wl[k, 'cogid']))
+                cognates += [[k, ds.name, wl[k, 'ipa'], idf, 'expert', srckey]]
+            alignments = automatic_alignments(ds, cognates, method='library')
+            dataset.cognates.extend(alignments)
+
             dataset.write_cognates()
