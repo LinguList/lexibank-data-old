@@ -78,6 +78,8 @@ def cldf(dataset, glottolog, concepticon, **kw):
                 idf = '-'.join(slug(concept, '%s', % wl[k, 'cogid']))
                 cognates += [[k, ds.name, wl[k, 'ipa'], idf, 'expert', srckey]]
             alignments = automatic_alignments(ds, cognates, method='library')
-            dataset.cognates.extend(alignments)
+            dataset.cognates.extend(iter_alignments(ds, cognates,
+                column='Segments', method='progressive'))
+
 
             dataset.write_cognates()

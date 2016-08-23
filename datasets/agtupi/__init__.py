@@ -144,5 +144,10 @@ def cldf(dataset, glottolog, concepticon, **kw):
                             ds.name,
                             word,
                             '%s-%s' % (cid, j + 1),
-                            False
+                            False,
+                            'expert',
+                            '',
+                            '',
+                            '',
+                            '',
                         ])

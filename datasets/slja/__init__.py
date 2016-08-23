@@ -89,5 +89,10 @@ def cldf(dataset, glottolog, concepticon, **kw):
                             ds.name,
                             word[index],
                             '%s-%s' % (index - 1, css),
-                            False
+                            False,
+                            'expert',
+                            '',
+                            '',
+                            '',
+                            '',
                         ])

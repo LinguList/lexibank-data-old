@@ -8,8 +8,9 @@ from clldutils.misc import slug
 from pylexibank.util import with_temp_dir, xls2csv
 from pylexibank.dataset import CldfDataset
 
-from pylexibank.lingpy_util import clean_string, \
-        automatic_cognates, automatic_alignments, getEvoBibAsSource
+from pylexibank.lingpy_util import (
+    clean_string, iter_cognates, iter_alignments, getEvoBibAsSource,
+)
 
 URL = "http://onlinelibrary.wiley.com/store/10.1111/cla.12078/asset/supinfo/cla12078-sup-0006-supinfo6.xls?v=1&s=4c895c80efa148e7872c3c7702c5df3ed192c236"
 FILENAME = "cla12078-sup-0006-supinfo6.xls"
@@ -74,15 +75,12 @@ def cldf(dataset, glottolog, concepticon, **kw):
                             ' '.join(clean_string(form)),
                             SOURCE
                         ])
-        # three methods: turchin, sca, lexstat, turchin is fast (needs not
-        # threshold)
-        cognates = automatic_cognates(ds, column='Segments', method='turchin',
-                threshold=0.55)
-        dataset.cognates.extend(cognates)
-        dataset.write_cognates()
-        #
-        ## two methods for alignments: progressive or library
-        alignments = automatic_alignments(ds, cognates, column='Segments',
-                method='progressive')
-        dataset.alignments.extend(alignments)
-        dataset.write_alignments()
+        # three methods: turchin, sca, lexstat, turchin is fast (needs not threshold)
+        cognates = iter_cognates(
+            ds, column='Segments', method='turchin', threshold=0.55)
+
+        # two methods for alignments: progressive or library
+        dataset.cognates.extend(iter_alignments(
+            ds, cognates, column='Segments', method='progressive'))
+
+    dataset.write_cognates()

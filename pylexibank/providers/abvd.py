@@ -246,4 +246,10 @@ class Wordlist(object):
                         self.id,
                         form,
                         cognate_set_id,
-                        doubt)
+                        doubt,
+                        'expert',
+                        '',
+                        '',
+                        '',
+                        '',
+                    )
