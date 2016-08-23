@@ -68,7 +68,6 @@ class Dataset(object):
         if cpath.exists():
             self.concepts = list(reader(cpath, dicts=True))
         self.cognates = Cognates()
-        self.alignments = Alignments()
 
     def iter_cldf_datasets(self):
         for fname in sorted(self.cldf_dir.glob('*' + MD_SUFFIX), key=lambda f: f.name):
@@ -76,9 +75,6 @@ class Dataset(object):
 
     def write_cognates(self):
         self.cognates.write(self.cldf_dir)
-
-    def write_alignments(self):
-        self.alignments.write(self.cldf_dir)
 
     def cognate_stats(self):
         cognates = self.cognates.read(self.cldf_dir)
@@ -106,31 +102,23 @@ class Dataset(object):
 
 
 class Cognates(list):
-    fields = ['Word_ID', 'Wordlist_ID', 'Form', 'Cognate_set_ID', 'doubt']
+    fields = [
+        'Word_ID',
+        'Wordlist_ID',
+        'Form',
+        'Cognate_set_ID',
+        'Doubt',
+        'Cognate_detection_method',
+        'Cognate_source',
+        'Alignment',
+        'Alignment_method',
+        'Alignment_source',
+    ]
     table = {
         'url': 'cognates.csv',
         'tableSchema': {'columns': [{'name': n, 'datatype': 'string'} for n in fields]}
     }
-    table['tableSchema']['columns'][0]['valueUrl'] = \
-        '{Wordlist_ID}.csv#{Word_ID}'
-
-    def write(self, container):
-        with csv.Writer(self.table, container=container) as writer:
-            writer.writerows(sorted(self, key=lambda r: (r[3], r[1], r[0])))
-
-    def read(self, container):
-        with csv.Reader(self.table, container=container) as reader:
-            return list(reader)
-
-
-class Alignments(list):
-    fields = ['Word_ID', 'Wordlist_ID', 'Alignment', 'Cognate_set_ID', 'doubt']
-    table = {
-        'url': 'alignments.csv',
-        'tableSchema': {'columns': [{'name': n, 'datatype': 'string'} for n in fields]}
-    }
-    table['tableSchema']['columns'][0]['valueUrl'] = \
-        '{Wordlist_ID}.csv#{Word_ID}'
+    table['tableSchema']['columns'][0]['valueUrl'] = '{Wordlist_ID}.csv#{Word_ID}'
 
     def write(self, container):
         with csv.Writer(self.table, container=container) as writer:

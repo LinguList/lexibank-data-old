@@ -89,7 +89,7 @@ def _cldf2wld(dataset):
     header = [h for h in dataset.rows[0].keys() if h != 'ID']
     D = {0: ['lid'] + [h.lower() for h in header]}
     for idx, row in enumerate(dataset.rows):
-        D[idx + 1] = ['lid'] + [row[h] for h in header]
+        D[idx + 1] = [row['ID']] + [row[h] for h in header]
     return D
 
 
@@ -109,52 +109,63 @@ def _cldf2wordlist(dataset, row='parameter_name', col='language_name'):
     return lp.Wordlist(_cldf2wld(dataset), row=row, col=col)
 
 
-def automatic_cognates(
+def iter_cognates(
         dataset, column='Segments', method='turchin', threshold=0.5, **keywords):
     """
     Compute cognates automatically for a given dataset.
     """
     if method == 'turchin':
-        cognates = []
         for row in dataset.rows:
             sounds = ''.join(tokens2class(row[column].split(' '), 'dolgo'))
             if sounds.startswith('V'):
                 sounds = 'H' + sounds
             sounds = '-'.join([s for s in sounds if s != 'V'][:2])
             cogid = slug(row['Parameter_name'])+'-'+sounds
-            if not '0' in sounds:
-                cognates += [(row['ID'], dataset.name, row['Value'], cogid, 'turchin')]
-        return cognates
-    
+            if '0' not in sounds:
+                yield (
+                    row['ID'],
+                    dataset.name,
+                    row['Value'],
+                    cogid,
+                    '',
+                    'turchin',
+                    '',  # cognate source
+                    '',  # alignment
+                    '',  # alignment method
+                    '',  # alignment source
+                )
+
     if method in ['sca', 'lexstat']:
         lex = _cldf2lexstat(dataset)
         if method == 'lexstat':
             lex.get_scorer(**keywords)
         lex.cluster(method=method, threshold=threshold, ref='cogid')
-        cognates = []
         for k in lex:
-            cognates += [(lex[k, 'lid'], dataset.name, lex[k, 'value'], lex[k,
-                'cogid'], method+'-t{0:.2f}'.format(threshold))]
-        return cognates
+            yield (
+                lex[k, 'lid'],
+                dataset.name,
+                lex[k, 'value'],
+                lex[k, 'cogid'],
+                '',
+                method + '-t{0:.2f}'.format(threshold),
+                '',  # cognate source
+                '',  # alignment
+                '',  # alignment method
+                '',  # alignment source
+            )
 
 
-def automatic_alignments(dataset, cognate_sets, column='Segments', method='library'):
+def iter_alignments(dataset, cognate_sets, column='Segments', method='library'):
     """
     Function computes automatic alignments and writes them to file.
     """
     wordlist = _cldf2wordlist(dataset)
-    cognates = {}
-    for row in cognate_sets:
-        lid = row[0]
-        cogid = row[-2]
-        cognates[lid] = cogid
-    wordlist.add_entries('cogid', 'lid', lambda x: cognates[x] if x in cognates
-            else '')
-    idx = 1
-    for k in wordlist:
+    cognates = {r[0]: r for r in cognate_sets}
+    wordlist.add_entries(
+        'cogid', 'lid', lambda x: cognates[x][3] if x in cognates else '')
+    for i, k in enumerate(wordlist):
         if not wordlist[k, 'cogid']:
-            wordlist[k][wordlist.header['cogid']] = 'empty-'+str(idx)
-            idx += 1
+            wordlist[k][wordlist.header['cogid']] = 'empty-%s' % i
 
     alm = lp.Alignments(
         wordlist,
@@ -163,7 +174,9 @@ def automatic_alignments(dataset, cognate_sets, column='Segments', method='libra
         col='language_name',
         segments=column.lower())
     alm.align(method=method)
-    alignments = []
     for k in alm:
-        alignments += [(alm[k, 'lid'], dataset.name, alm[k, 'alignment'], alm[k, 'cogid'], method)]
-    return alignments
+        if alm[k, 'lid'] in cognates:
+            row = list(cognates[alm[k, 'lid']])
+            row[7] = alm[k, 'alignment']
+            row[8] = method
+            yield row

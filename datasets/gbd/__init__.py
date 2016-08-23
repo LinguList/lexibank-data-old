@@ -142,7 +142,12 @@ def cldf(dataset, glottolog, concepticon, **kw):
                             ds.name,
                             item[0],
                             '%s-%s' % (slug(concept), item[1]),
-                            False
+                            False,
+                            'expert',
+                            '',
+                            '',
+                            '',
+                            '',
                         ])
         dataset.write_cognates()
         unmapped.pprint()

@@ -124,6 +124,11 @@ def cldf(dataset, glottolog, concepticon, **kw):
                             ds.name,
                             wl[k, 'ipa'],
                             cogid,
-                            False
-                            ])
+                            False,
+                            'expert',
+                            '',
+                            '',
+                            '',
+                            '',
+                        ])
         dataset.write_cognates()
