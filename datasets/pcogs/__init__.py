@@ -5,7 +5,7 @@ from pylexibank.dataset import CldfDataset
 from clldutils.misc import slug
 from clldutils.path import Path
 
-from pylexibank.lingpy_util import getEvoBibAsSource
+from pylexibank.lingpy_util import getEvoBibAsSource, iter_alignments
 from pylexibank.util import download_and_unpack_zipfiles
 import lingpy as lp
 
@@ -75,11 +75,22 @@ def cldf(dataset, glottolog, concepticon, **kw):
             cognates = []
             for k in wl:
                 concept = wl[k, 'concept']
-                idf = '-'.join(slug(concept, '%s', % wl[k, 'cogid']))
-                cognates += [[k, ds.name, wl[k, 'ipa'], idf, 'expert', srckey]]
-            alignments = automatic_alignments(ds, cognates, method='library')
-            dataset.cognates.extend(iter_alignments(ds, cognates,
-                column='Segments', method='progressive'))
+                idf = '-'.join([slug(concept), '%s' % wl[k, 'cogid']])
+                cognates += [[
+                    k, 
+                    ds.name, 
+                    wl[k, 'ipa'], 
+                    idf, 
+                    '', 
+                    'expert',
+                    srckey, 
+                    '', 
+                    '', 
+                    ''
+                    ]]
+
+            dataset.cognates.extend(iter_alignments(wl, cognates,
+                method='progressive'))
 
 
-            dataset.write_cognates()
+    dataset.write_cognates()

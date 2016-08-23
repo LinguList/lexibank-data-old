@@ -128,7 +128,7 @@ def iter_cognates(
                     row['Value'],
                     cogid,
                     '',
-                    'turchin',
+                    'CMM',
                     '',  # cognate source
                     '',  # alignment
                     '',  # alignment method
@@ -159,24 +159,27 @@ def iter_alignments(dataset, cognate_sets, column='Segments', method='library'):
     """
     Function computes automatic alignments and writes them to file.
     """
-    wordlist = _cldf2wordlist(dataset)
-    cognates = {r[0]: r for r in cognate_sets}
-    wordlist.add_entries(
-        'cogid', 'lid', lambda x: cognates[x][3] if x in cognates else '')
-    for i, k in enumerate(wordlist):
-        if not wordlist[k, 'cogid']:
-            wordlist[k][wordlist.header['cogid']] = 'empty-%s' % i
+    if not isinstance(dataset, lp.basic.parser.QLCParser):
+        wordlist = _cldf2wordlist(dataset)
+        cognates = {r[0]: r for r in cognate_sets}
+        wordlist.add_entries(
+            'cogid', 'lid', lambda x: cognates[x][3] if x in cognates else '')
+        for i, k in enumerate(wordlist):
+            if not wordlist[k, 'cogid']:
+                wordlist[k][wordlist.header['cogid']] = 'empty-%s' % i
 
-    alm = lp.Alignments(
-        wordlist,
-        ref='cogid',
-        row='parameter_name',
-        col='language_name',
-        segments=column.lower())
+        alm = lp.Alignments(
+            wordlist,
+            ref='cogid',
+            row='parameter_name',
+            col='language_name',
+            segments=column.lower())
+    else:
+        alm = lp.Alignments(dataset, ref='cogid')
+        
     alm.align(method=method)
-    for k in alm:
-        if alm[k, 'lid'] in cognates:
-            row = list(cognates[alm[k, 'lid']])
-            row[7] = alm[k, 'alignment']
-            row[8] = method
-            yield row
+    for row in cognate_sets:
+        idx = row[0]
+        row[7] = alm[idx, 'alignment']
+        row[8] = 'SCA-'+method
+        yield row
