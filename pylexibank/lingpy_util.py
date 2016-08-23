@@ -167,19 +167,26 @@ def iter_alignments(dataset, cognate_sets, column='Segments', method='library'):
         for i, k in enumerate(wordlist):
             if not wordlist[k, 'cogid']:
                 wordlist[k][wordlist.header['cogid']] = 'empty-%s' % i
-
         alm = lp.Alignments(
             wordlist,
             ref='cogid',
             row='parameter_name',
             col='language_name',
             segments=column.lower())
+        alm.align(method=method)
+        for k in alm:
+            if alm[k, 'lid'] in cognates:
+                row = list(cognates[alm[k, 'lid']])
+                row[7] = alm[k, 'alignment']
+                row[8] = method
+                yield row
+            cognate_sets = cognates.values()
     else:
         alm = lp.Alignments(dataset, ref='cogid')
         
-    alm.align(method=method)
-    for row in cognate_sets:
-        idx = row[0]
-        row[7] = alm[idx, 'alignment']
-        row[8] = 'SCA-'+method
-        yield row
+        alm.align(method=method)
+        for row in cognate_sets:
+            idx = row[0]
+            row[7] = alm[idx, 'alignment']
+            row[8] = 'SCA-'+method
+            yield row
