@@ -77,8 +77,8 @@ def cldf(dataset, glottolog, concepticon, **kw):
                 concept = wl[k, 'concept']
                 idf = '-'.join([slug(concept), '%s' % wl[k, 'cogid']])
                 cognates += [[
-                    k, 
-                    ds.name, 
+                    '{0}-{1}'.format(srckey, k),
+                    ds.name,
                     wl[k, 'ipa'], 
                     idf, 
                     '', 
@@ -87,10 +87,10 @@ def cldf(dataset, glottolog, concepticon, **kw):
                     '', 
                     '', 
                     ''
-                    ]]
+                ]]
 
             dataset.cognates.extend(iter_alignments(wl, cognates,
-                method='progressive'))
+                method='progressive', prefix=srckey + '-'))
 
 
     dataset.write_cognates()

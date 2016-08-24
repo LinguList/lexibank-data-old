@@ -6,6 +6,7 @@ import unicodedata
 from itertools import chain
 
 from pylexibank.dataset import CldfDataset
+from pylexibank.lingpy_util import segmentize, iter_alignments
 
 
 def download(dataset, **kw):
@@ -114,6 +115,7 @@ def cldf(dataset, glottolog, concepticon, **kw):
         nlids = set(nlids)
         assert nlids == lids  # make sure we found all expected language IDs
 
+    cognatesets = []
     with CldfDataset(
             ('ID',
              'Language_ID',
@@ -122,7 +124,8 @@ def cldf(dataset, glottolog, concepticon, **kw):
              'Parameter_ID',
              'Parameter_name',
              'Parameter_local_ID',
-             'Value'),
+             'Value',
+             'Segments'),
             dataset) as ds:
         for (cid, concept), cogsets in cognate_sets.items():
             for j, cogset in enumerate(cogsets):
@@ -138,8 +141,9 @@ def cldf(dataset, glottolog, concepticon, **kw):
                             concept,
                             cid,
                             word,
+                            '',
                         ])
-                        dataset.cognates.append([
+                        cognatesets.append([
                             wid,
                             ds.name,
                             word,
@@ -151,3 +155,5 @@ def cldf(dataset, glottolog, concepticon, **kw):
                             '',
                             '',
                         ])
+        segmentize(ds, clean=lambda s: s.split(' ~ ')[0])
+    dataset.cognates.extend(iter_alignments(ds, cognatesets, column='Segments'))

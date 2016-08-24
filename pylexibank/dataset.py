@@ -121,8 +121,14 @@ class Cognates(list):
     table['tableSchema']['columns'][0]['valueUrl'] = '{Wordlist_ID}.csv#{Word_ID}'
 
     def write(self, container):
+        cognatesets = Counter(r[3] for r in self)
         with csv.Writer(self.table, container=container) as writer:
-            writer.writerows(sorted(self, key=lambda r: (r[3], r[1], r[0])))
+            for row in sorted(self, key=lambda r: (r[3], r[1], r[0])):
+                if cognatesets[row[3]] > 1:
+                    row = list(row)
+                    if isinstance(row[7], list):
+                        row[7] = ' '.join(row[7])
+                    writer.writerow(row)
 
     def read(self, container):
         with csv.Reader(self.table, container=container) as reader:
@@ -267,6 +273,9 @@ class CldfDataset(CldfDatasetBase):
         self.write(outdir=self.dataset.cldf_dir)
 
     def add_row(self, row):
+        #
+        # add segments column, value cleaned from "<>=..."
+        #
         row = CldfDatasetBase.add_row(self, row)
         if row:
             for col, validator in self.validators.items():

@@ -6,6 +6,7 @@ from clldutils.misc import slug
 
 from pylexibank.providers import abvd
 from pylexibank.dataset import Unmapped
+from pylexibank.lingpy_util import iter_alignments
 
 from author_notes_map import MAP
 
@@ -39,6 +40,8 @@ def cldf(dataset, glottolog, concepticon, **kw):
 
     unmapped = Unmapped(lambda r: int(r[0]))
     for wl in wordlists:
-        wl.to_cldf(concept_map, unmapped, *source_map[wl.id])
-        dataset.cognates.extend(list(wl.cognates()))
+        ds = wl.to_cldf(concept_map, unmapped, *source_map[wl.id])
+        cognates = list(wl.cognates())
+        #dataset.cognates.extend(iter_alignments(ds, cognates, column='Value', method='progressive'))
+        dataset.cognates.extend(cognates)
     unmapped.pprint()

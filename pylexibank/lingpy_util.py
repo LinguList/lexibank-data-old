@@ -71,12 +71,23 @@ def test_sequence(sequence, **keywords):
         clpa_repl)
 
 
+def segmentize(dataset, source='Value', target='Segments', clean=lambda s: s, **kw):
+    """
+    Write a detailed transcription-report for a CLDF dataset in LexiBank.
+    """
+    for row in dataset.rows:
+        res = test_sequence(clean(row[source]), segmentized=False, **kw)
+        row[target] = ' '.join(res[0])
+
+
 def test_sequences(dataset, lid_getter, report, column='Value', **kw):
     """
     Write a detailed transcription-report for a CLDF dataset in LexiBank.
     """
     for row in dataset.rows:
         res = test_sequence(row[column], **kw)
+        if not kw['segmentized'] and column != 'Segments' and 'Segments' in row:
+            row['Segments'] = ' '.join(res[0])
         lr = report[lid_getter(row)]
         for i, attr in enumerate(['invalid', 'segments', 'lingpy_errors', 'clpa_errors']):
             lr[attr].update(res[i + 2])
@@ -155,7 +166,8 @@ def iter_cognates(
             )
 
 
-def iter_alignments(dataset, cognate_sets, column='Segments', method='library'):
+def iter_alignments(
+        dataset, cognate_sets, column='Segments', method='library', prefix=''):
     """
     Function computes automatic alignments and writes them to file.
     """
@@ -180,13 +192,11 @@ def iter_alignments(dataset, cognate_sets, column='Segments', method='library'):
                 row[7] = alm[k, 'alignment']
                 row[8] = method
                 yield row
-            cognate_sets = cognates.values()
     else:
         alm = lp.Alignments(dataset, ref='cogid')
-        
         alm.align(method=method)
         for row in cognate_sets:
-            idx = row[0]
+            idx = int(row[0].split('-')[1])
             row[7] = alm[idx, 'alignment']
             row[8] = 'SCA-'+method
             yield row

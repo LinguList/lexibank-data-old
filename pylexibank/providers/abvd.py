@@ -236,6 +236,7 @@ class Wordlist(object):
                         entry.comment or '',
                         entry.loan == 'L',
                     ])
+        return ds
 
     def cognates(self):
         for entry in self.entries:

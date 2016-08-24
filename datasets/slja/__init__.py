@@ -5,6 +5,7 @@ from clldutils.dsv import UnicodeReader
 from clldutils.misc import slug
 
 from pylexibank.util import xls2csv
+from pylexibank.lingpy_util import iter_alignments, segmentize
 from pylexibank.dataset import CldfDataset
 
 
@@ -45,6 +46,7 @@ def cldf(dataset, glottolog, concepticon, **kw):
     def sorted_(l):
         return sorted(l, key=lambda r: r[:2])
 
+    cognatesets = []
     with CldfDataset((
             'ID',
             'Language_ID',
@@ -52,6 +54,7 @@ def cldf(dataset, glottolog, concepticon, **kw):
             'Parameter_ID',
             'Parameter_name',
             'Value',
+            'Segments',
             'AltTranscription',
             ), dataset) as ds:
         for i, (word, cognate) in enumerate(zip(sorted_(words), sorted_(cognates))):
@@ -77,6 +80,7 @@ def cldf(dataset, glottolog, concepticon, **kw):
                     concept_map[concept],
                     concept,
                     word[index],
+                    '',
                     cognate[cindex],
                 ])
                 cs = cognate[cindex + 1]
@@ -84,7 +88,7 @@ def cldf(dataset, glottolog, concepticon, **kw):
                     css = css.strip()
                     if css != '?':
                         css = int(float(css))
-                        dataset.cognates.append([
+                        cognatesets.append([
                             wid,
                             ds.name,
                             word[index],
@@ -96,3 +100,5 @@ def cldf(dataset, glottolog, concepticon, **kw):
                             '',
                             '',
                         ])
+        segmentize(ds)
+    dataset.cognates.extend(iter_alignments(ds, cognatesets, column='Segments'))

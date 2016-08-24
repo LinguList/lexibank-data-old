@@ -27,7 +27,7 @@ def download(dataset):
 
 def iterforms(s):
     for i, form in enumerate(s.split('|')):
-        yield i + 1, form.strip()
+        yield i + 1, form.strip().replace('\xad', '')
 
 
 def cldf(dataset, glottolog, concepticon, **kw):
