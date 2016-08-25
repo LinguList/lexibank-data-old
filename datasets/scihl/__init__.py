@@ -1,0 +1,84 @@
+# coding=utf-8
+from __future__ import unicode_literals, print_function
+
+from pylexibank.dataset import CldfDataset
+from pylexibank.util import download_and_unpack_zipfiles
+from clldutils.misc import slug
+from clldutils.path import Path
+from .helpers import lang2glot, gloss2con
+from pylexibank.lingpy_util import getEvoBibAsSource, iter_alignments
+import lingpy as lp
+
+URL = "https://github.com/SequenceComparison/SupplementaryMaterial/zipball/master"
+PATH = Path('SequenceComparison-SupplementaryMaterial-cc4bf85/benchmark/cognates/')
+DSETS = ['SLV.csv', 'SIN.csv', 'ROM.csv', 'PIE.csv', 'PAN.csv', 'OUG.csv',
+        'KSL.csv', 'JAP.csv', 'IEL.csv', 'IDS.csv', 'GER.csv', 'BAI.csv']
+sources = ['Starostin2005b', 'Hou2004', 'Starostin2005b', 'Starostin2005b',
+        'Greenhill2008', 'Zhivlov2011', 'Kessler2001', 'Hattori1973', 'Dunn2012', 'List2014c',
+        'Starostin2005', 'Wang2006']
+
+def download(dataset, **kw):
+    download_and_unpack_zipfiles(URL, dataset, *[PATH.joinpath(dset) for dset \
+            in DSETS])
+
+def cldf(dataset, glottolog, concepticon, **kw):
+
+    for dset, srckey in zip(DSETS, sources):
+        wl = lp.Wordlist(dataset.raw.joinpath(dset).as_posix())
+        src = getEvoBibAsSource(srckey)
+        
+        with CldfDataset((
+            'ID',
+            'Language_ID',
+            'Language_name',
+            'Language_iso',
+            'Parameter_ID',
+            'Parameter_name',
+            'Value',
+            'Source',
+            'Segments',
+            'Cognacy',
+            'Loan'
+            )
+                , dataset, subset=dset.split('.')[0]) as ds:
+            ds.sources.add(src)
+            errors = []
+            for k in wl:
+                concept = wl[k, 'concept']
+                if '(V)' in concept:
+                    concept = concept[:-4]
+
+                if concept not in gloss2con:
+                    errors += [concept]
+                if wl[k, 'doculect'] not in lang2glot:
+                    errors += [wl[k, 'doculect']]
+
+                ds.add_row([
+                    '{0}-{1}'.format(srckey, k),
+                    lang2glot.get(wl[k, 'doculect'], ''),
+                    wl[k, 'glottolog'],
+                    '',
+                    gloss2con.get(wl[k, 'concept'], ''),
+                    wl[k, 'concept'],
+                    wl[k, 'ipa'],
+                    srckey,
+                    ' '.join(wl[k, 'tokens'] or ['']),
+                    wl[k, 'cogid'],
+                    wl[k, 'loan']
+                    ])
+                dataset.cognates += [[
+                    '{0}-{1}'.format(srckey, k),
+                    ds.name,
+                    wl[k, 'ipa'],
+                    wl[k, 'cogid'],
+                    '',
+                    'expert',
+                    srckey,
+                    '',
+                    '',
+                    ''
+                    ]]
+            for er in sorted(set(errors)):
+                print(er)
+    dataset.write_cognates()
+
