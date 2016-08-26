@@ -21,13 +21,13 @@ for k in sorted(abbr2lang):
 def download(dataset, **kw):
     urlretrieve(URL, Path(dataset.raw, 'tukano.tsv').as_posix())
 
+
 def cldf(dataset, glottolog, concepticon, **kw):
-    
     wl = lp.Alignments(dataset.raw.joinpath('tukano.tsv').as_posix())
     src1 = getEvoBibAsSource('Chacon2014')
     src2 = getEvoBibAsSource('Chacon2015')
-    gloss2conc = dict([(b,c) for a, b, c in dataset.concepts])
-    cogid2proto = {}
+    gloss2conc = {r['GLOSS']: r['CONCEPTICON_ID'] for r in dataset.concepts}
+    print(gloss2conc['feminine'])
     iso2gc = {l.iso: l.id for l in glottolog.languoids() if l.iso}
 
     with CldfDataset((
@@ -55,11 +55,18 @@ def cldf(dataset, glottolog, concepticon, **kw):
             alignment = wl[k, 'alignment']
             name, iso = abbr2lang[lid]
             concept = wl[k, 'concept']
-            cid = cogid2proto.get(concept, '')
+            cid = gloss2conc.get(concept)
             ds.add_row((
-                'Chacon2014-'+str(k), iso2gc.get(lid, ''), name, iso, cid, concept, value, 'Chacon2014',
+                'Chacon2014-'+str(k),
+                iso2gc.get(lid.lower(), ''),
+                name,
+                iso,
+                cid,
+                concept,
+                value,
+                'Chacon2014',
                 ' '.join(segments), str(cogid)))
-            
+
             cogid = '-'.join([slug(wl[k, 'concept']), '%s' % cogid])
             dataset.cognates.append([
                 'Chacon2014-'+str(k),
@@ -73,11 +80,3 @@ def cldf(dataset, glottolog, concepticon, **kw):
                 'expert',
                 'Chacon2015'
                 ])
-        dataset.write_cognates()
-
-
-def report(dataset):
-    for ds in dataset.iter_cldf_datasets():
-        test_sequences(ds, 'Segments', segmentized=True)
-        ds.write(dataset.cldf_dir)
-
