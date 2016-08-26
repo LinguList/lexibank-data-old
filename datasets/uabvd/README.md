@@ -15,7 +15,7 @@ Available online at https://abvd.shh.mpg.de/utoaztecan/
 - **Concepts:** 108
 - **Lexemes:** 4,713
 - **Synonymy:** 0.91
-- **Cognacy:** 4,760 cognates in 1,321 cognate sets
+- **Cognacy:** 4,108 cognates in 669 cognate sets
 - **Invalid lexemes:** 0
 - **Tokens:** 24,568
 - **Segments:** 322 (55 LingPy errors, 220 CLPA errors, 46 CLPA modified)

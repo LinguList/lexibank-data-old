@@ -1,5 +1,6 @@
 # coding=utf-8
 from __future__ import unicode_literals, print_function
+from collections import Counter
 
 from pylexibank.dataset import CldfDataset
 from pylexibank.util import download_and_unpack_zipfiles
@@ -38,10 +39,12 @@ def download(dataset, **kw):
     download_and_unpack_zipfiles(URL, dataset, *[PATH.joinpath(dset) for dset \
             in DSETS])
 
+
 def cldf(dataset, glottolog, concepticon, **kw):
     gloss2con = {x['GLOSS']: x['CONCEPTICON_ID'] for x in dataset.concepts}
     lang2glot = {x['NAME']: x['GLOTTOCODE'] for x in dataset.languages}
 
+    missingl = Counter()
     for dset, srckey in zip(DSETS, sources):
         wl = lp.Wordlist(dataset.raw.joinpath(dset).as_posix())
         if not 'tokens' in wl.header:
@@ -86,6 +89,8 @@ def cldf(dataset, glottolog, concepticon, **kw):
                     loan = False
                     cogid = wl[k, 'cogid']
 
+                if wl[k, 'doculect'] not in lang2glot:
+                    missingl.update([wl[k, 'doculect']])
                 ds.add_row([
                     '{0}-{1}'.format(srckey, k),
                     lang2glot.get(wl[k, 'doculect'], ''),
@@ -117,3 +122,4 @@ def cldf(dataset, glottolog, concepticon, **kw):
                     method='library'))
             for er in sorted(set(errors)):
                 print(er, dset)
+    print(missingl)

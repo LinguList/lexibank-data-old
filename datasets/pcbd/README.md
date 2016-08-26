@@ -1,4 +1,4 @@
-# Using sequence similarity networks to identify partial cognates in multilingual wordlists
+# Partial Cognate Benchmark
 
 Cite the source dataset as
 
@@ -15,7 +15,7 @@ Available online at https://zenodo.org/record/51328/files/partial-cognate-detect
 - **Concepts:** 236
 - **Lexemes:** 5,194
 - **Synonymy:** 1.06
-- **Cognacy:** 5,194 cognates in 1,687 cognate sets
+- **Cognacy:** 4,263 cognates in 756 cognate sets
 - **Invalid lexemes:** 0
 - **Tokens:** 28,639
 - **Segments:** 147 (0 LingPy errors, 0 CLPA errors, 0 CLPA modified)
