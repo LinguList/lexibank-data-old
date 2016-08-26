@@ -13,7 +13,7 @@ See also http://rspb.royalsocietypublishing.org/content/early/2011/05/04/rspb.20
 - **Concepts:** 210
 - **Lexemes:** 11,364
 - **Synonymy:** 1.00
-- **Cognacy:** 11,367 cognates in 677 cognate sets
+- **Cognacy:** 11,128 cognates in 441 cognate sets
 - **Invalid lexemes:** 0
 - **Tokens:** 51,867
 - **Segments:** 91 (24 LingPy errors, 40 CLPA errors, 6 CLPA modified)

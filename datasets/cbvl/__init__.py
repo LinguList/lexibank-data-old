@@ -1,14 +1,14 @@
 # coding=utf-8
 from __future__ import unicode_literals, print_function
 
-from collections import defaultdict
-from pylexibank.dataset import CldfDataset
+from six import text_type
 from clldutils.misc import slug
 from clldutils.path import Path
+import lingpy as lp
 
+from pylexibank.dataset import CldfDataset
 from pylexibank.lingpy_util import getEvoBibAsSource, iter_alignments
 from pylexibank.util import download_and_unpack_zipfiles
-import lingpy as lp
 
 URL = "https://zenodo.org/record/16760/files/Network-perspectives-on-Chinese-dialect-history-1.zip"
 PATH = Path('LinguList-Network-perspectives-on-Chinese-dialect-history-933bf29/Supplementary_Material_I/data/')
@@ -74,7 +74,7 @@ def cldf(dataset, glottolog, concepticon, **kw):
                 '', '', ''
                 ]]
             p2c[wl[k, 'proto']] = wl[k, 'cogid']
-        och = lp.csv2list(dataset.raw.joinpath('old_chinese.csv'))
+        och = lp.csv2list(dataset.raw.joinpath('old_chinese.csv').as_posix())
         idx = max([k for k in wl])+1
         for line in och:
             for val in line[1].split(', '):
@@ -91,6 +91,6 @@ def cldf(dataset, glottolog, concepticon, **kw):
                         ))
                 dataset.cognates += [[
                     '{0}-{1}'.format(SOURCE, idx), ds.name, val,
-                    '-'.join([slug(line[0]), str(p2c.get(val, val))]),
+                    '-'.join([slug(line[0]), text_type(p2c.get(val, val))]),
                     '', 'expert', SOURCE, '', '', '']]
                 idx += 1

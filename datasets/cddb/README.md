@@ -1,4 +1,4 @@
-# Using phylogenetic networks to model Chinese dialect history
+# Chinese Dialect Database
 
 Cite the source dataset as
 
@@ -15,7 +15,7 @@ Available online at https://gist.github.com/LinguList/7481097
 - **Concepts:** 180
 - **Lexemes:** 9,957
 - **Synonymy:** 1.41
-- **Cognacy:** 9,957 cognates in 3,061 cognate sets
+- **Cognacy:** 7,952 cognates in 1,056 cognate sets
 - **Invalid lexemes:** 0
 - **Tokens:** 68,055
 - **Segments:** 365 (2 LingPy errors, 227 CLPA errors, 20 CLPA modified)

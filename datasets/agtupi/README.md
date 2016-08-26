@@ -1,4 +1,4 @@
-# 
+# Genealogical relations and lexical distances within the Tupian linguistic family
 
 Cite the source dataset as
 
@@ -13,7 +13,7 @@ Available online at https://dx.doi.org/10.1590/1981-81222015000200004
 - **Concepts:** 100
 - **Lexemes:** 2,212
 - **Synonymy:** 1.04
-- **Cognacy:** 2,212 cognates in 712 cognate sets
+- **Cognacy:** 1,807 cognates in 307 cognate sets
 - **Invalid lexemes:** 0
 - **Tokens:** 10,027
 - **Segments:** 120 (12 LingPy errors, 46 CLPA errors, 25 CLPA modified)

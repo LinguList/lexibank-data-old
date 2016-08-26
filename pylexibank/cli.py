@@ -18,6 +18,7 @@ from time import time
 
 from clldutils.clilib import ArgumentParser, ParserError
 from clldutils.path import Path
+from clldutils import jsonlib
 
 import pylexibank
 from pylexibank.util import data_path, formatted_number
@@ -181,11 +182,7 @@ def _readme(ds, **kw):
             'See also %s' % ds.md.get('dc:related'),
             ''])
 
-    lexlines = [
-        '# %s - Lexemes per CLDF dataset\n' % ds.md.get('dc:title'),
-        ' | '.join(['Name', 'Languages', 'Concepts', 'Lexemes', 'Synonymy', 'Quality']),
-        '|'.join([':--- ', ' ---:', ' ---:', ' ---:', ' ---:', ':---:']),
-    ]
+    report_by_cldfds = {}
     trlines = []
     rows = []
 
@@ -193,13 +190,7 @@ def _readme(ds, **kw):
 
     for cldfds in ds.iter_cldf_datasets():
         rows.extend(cldfds.rows)
-        badges = [
-            get_badge(cldfds.rows, 'Glottolog', 'Language_ID'),
-            get_badge(cldfds.rows, 'Concepticon', 'Parameter_ID'),
-            get_badge(cldfds.rows, 'Source'),
-        ]
         stats = cldfds.stats
-        params = len(stats['parameters'])
         sindex, langs = synonymy_index(cldfds)
         if langs:
             sindex /= float(len(langs))
@@ -210,13 +201,23 @@ def _readme(ds, **kw):
         totals[2] += len(cldfds)
         totals[3] = (totals[3][0] + sindex, totals[3][1] + 1)
 
-        lexlines.append(' | '.join([
-            '[%s](%s)' % (cldfds.name, 'cldf/%s.csv' % cldfds.name),
-            '%s' % len(langs),
-            '%s' % params,
-            '%s' % len(cldfds),
-            '%.2f' % sindex,
-            ' '.join(badges)]))
+        report_by_cldfds[cldfds.name] = dict(
+            languages=list(langs),
+            concepts=list(stats['parameters']),
+            lexeme_count=len(cldfds),
+            synonymy_index='%.2f' % sindex)
+
+    report_by_cldfds['__total__'] = dict(
+        language_count=len(totals[0]),
+        concept_count=len(totals[1]),
+        lexeme_count=totals[2],
+        synonymy_index=totals[3])
+    #
+    # FIXME: add flags:
+    # - cognates
+    # - alignments
+    # - proto-forms
+    #
 
     tr = TranscriptionReport(ds, ds.dir.joinpath('transcription.json'))
     stats = tr.report['stats']
@@ -256,47 +257,7 @@ def _readme(ds, **kw):
     print('\n'.join(stats_lines))
     lines.extend(stats_lines)
 
-    #trlines, trtotals, trsounds, trerrorsl, trerrorsc = [], [], [], [], []
-    #if 'transcription' in cldfds.metadata:
-    #    _tr = cldfds.metadata['transcription']
-    #    new_badges, new_lines = _transcription_readme(
-    #        cldfds.metadata['transcription'])
-    #    trsounds += sorted(_tr['segments'])
-    #    trerrorsl += [err[0] for err in _tr['errors'].items() if 'lingpy'
-    #                  in err[1]]
-    #    trerrorsc += [err[0] for err in _tr['errors'].items() if 'clpa' in
-    #                  err[1]]
-    #    new_badges
-    #    trlines.append(
-    #        '[%s](%s)' % (cldfds.name, 'cldf/%s.csv' % cldfds.name) \
-    #        + ' | {0} | {1} | {2} | {3} | {4:.2f} | '.format(
-    #            *new_lines) + \
-    #        ' '.join(new_badges)
-    #    )
-    #    trtotals.append(new_lines)
-
-    #if trlines:
-    #    trtotals = [
-    #            sum([line[0] for line in trtotals]),
-    #            len(set(trsounds)),
-    #            len(set(trerrorsl)),
-    #            len(set(trerrorsc)),
-    #            sum([line[-1] for line in trtotals]) / len(trlines)
-    #            ]
-    #    trtotals[-1] = trtotals[-1] / len(trlines)
-    #    trlines = [
-    #            '',
-    #            '### Sounds',
-    #            '',
-    #            'Name  | Sounds (total) | Sounds (unique) | '+\
-    #                    'Errors (LingPy) | Errors (CLPA) | '+\
-    #                    'Inventory (mean) | Quality ',
-    #                    ':---| ---: | ---:| ---:| ---:| ---:| :---:|',
-    #                    '**total** | {0} | {1} | {2} | {3} | {4:.2f} | '.format(
-    #                        *trtotals)
-    #                    ]+\
-    #                    trlines
-
+    jsonlib.dump(report_by_cldfds, ds.dir.joinpath('README.json'))
     with ds.dir.joinpath('README.md').open('w', encoding='utf8') as fp:
         fp.write('\n'.join(lines + trlines))
     print(ds.dir.joinpath('README.md'))

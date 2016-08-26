@@ -3,9 +3,7 @@ from __future__ import unicode_literals, print_function
 
 from pylexibank.dataset import CldfDataset
 from pylexibank.util import download_and_unpack_zipfiles
-from clldutils.misc import slug
 from clldutils.path import Path
-from .helpers import lang2glot
 from pylexibank.lingpy_util import getEvoBibAsSource, iter_alignments
 import lingpy as lp
 
@@ -39,6 +37,7 @@ correct_concepts = {
 def download(dataset, **kw):
     download_and_unpack_zipfiles(URL, dataset, *[PATH.joinpath(dset) for dset \
             in DSETS])
+
 
 def cldf(dataset, glottolog, concepticon, **kw):
     gloss2con = {x['GLOSS']: x['CONCEPTICON_ID'] for x in dataset.concepts}
@@ -75,22 +74,13 @@ def cldf(dataset, glottolog, concepticon, **kw):
                 concept = correct_concepts.get(concept, concept)
                 if concept not in gloss2con:
                     errors += [concept]
-                doculect = correct_languages.get(wl[k, 'doculect'], wl[k,
-                    'doculect'])
-                if doculect not in lang2glot:
-                    errors += [wl[k, 'doculect']]
-
-                # determine cognate id
-                if wl[k, 'cogid'] < 0:
-                    cogid = abs(wl[k, 'cogid'])
-                    loan = True
-                else:
-                    loan = False
-                    cogid = wl[k, 'cogid']
+                doculect = correct_languages.get(wl[k, 'doculect'], wl[k, 'doculect'])
+                loan = wl[k, 'cogid'] < 0
+                cogid = abs(wl[k, 'cogid'])
 
                 ds.add_row([
                     '{0}-{1}'.format(srckey, k),
-                    lang2glot.get(wl[k, 'doculect'], ''),
+                    lang2glot[doculect],
                     wl[k, 'glottolog'],
                     '',
                     gloss2con.get(wl[k, 'concept'], ''),
@@ -115,9 +105,7 @@ def cldf(dataset, glottolog, concepticon, **kw):
                     ''
                     ]]
 
-            dataset.cognates.extend(iter_alignments(lp.Alignments(wl), cognates,
-                    method='library'))
+            dataset.cognates.extend(
+                iter_alignments(lp.Alignments(wl), cognates, method='library'))
             for er in sorted(set(errors)):
                 print(er, dset)
-    dataset.write_cognates()
-

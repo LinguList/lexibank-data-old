@@ -24,7 +24,12 @@ GC_PATTERN = re.compile('[a-z][a-z0-9]{3}[1-9][0-9]{3}$')
 
 
 def get_variety_id(row):
-    return row.get('Language_local_ID', row.get('Language_name', row.get('Language_ID')))
+    lid = row.get('Language_local_ID')
+    if not lid:
+        lid = row.get('Language_name')
+    if not lid:
+        lid = row.get('Language_ID')
+    return lid
 
 
 def synonymy_index(cldfds):

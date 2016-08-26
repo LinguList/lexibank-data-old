@@ -15,7 +15,7 @@ Available online at https://abvd.shh.mpg.de/mayan/
 - **Concepts:** 730
 - **Lexemes:** 49,519
 - **Synonymy:** 2.51
-- **Cognacy:** 24,132 cognates in 3,284 cognate sets
+- **Cognacy:** 22,705 cognates in 1,857 cognate sets
 - **Invalid lexemes:** 0
 - **Tokens:** 238,642
 - **Segments:** 187 (45 LingPy errors, 124 CLPA errors, 29 CLPA modified)
