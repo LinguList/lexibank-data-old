@@ -5,7 +5,7 @@
             "@language": "en"
         }
     ],
-    "dc:title": "Sequence comparison in historical linguistics",
+    "dc:title": "Benchmark Database for Automatic Cognate Detection",
     "dc:bibliographicCitation": "List, J.-M. Sequence comparison in historical linguistics. Düsseldorf: Düsseldorf University Press. 2014.",
     "dc:license": "https://www.gnu.org/licenses/gpl-3.0.de.html",
     "dc:identifier": "https://github.com/SequenceComparison/SupplementaryMaterial/zipball/master"

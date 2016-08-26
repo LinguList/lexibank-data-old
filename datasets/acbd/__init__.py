@@ -42,6 +42,7 @@ def download(dataset, **kw):
 
 def cldf(dataset, glottolog, concepticon, **kw):
     gloss2con = {x['GLOSS']: x['CONCEPTICON_ID'] for x in dataset.concepts}
+    lang2glot = {x['NAME']: x['GLOTTOCODE'] for x in dataset.languages}
 
     for dset, srckey in zip(DSETS, sources):
         wl = lp.Wordlist(dataset.raw.joinpath(dset).as_posix())
