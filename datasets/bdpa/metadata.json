@@ -1,0 +1,13 @@
+{
+    "@context": [
+        "http://www.w3.org/ns/csvw",
+        {
+            "@language": "en"
+        }
+    ],
+    "dc:title": "Benchmark Database of Phonetic Alignments (Germanic)",
+    "dc:bibliographicCitation": "List, Johann-Mattis and Jelena Prokić. (2014). A benchmark database of phonetic alignments in historical linguistics and dialectology. In: Proceedings of the International Conference on Language Resources and Evaluation (LREC), 26 — 31 May 2014, Reykjavik. 288-294.",
+    "dc:license": "https://www.gnu.org/licenses/gpl-3.0.de.html",
+    "dc:identifier": "https://zenodo.org/record/11880/files/germanic.zip",
+    "dc:comment" : "LexiBank data only shows a small of the full data in the original source, which contains mainly dialectal data."
+}

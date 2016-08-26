@@ -5,7 +5,7 @@ from pylexibank.dataset import CldfDataset
 from pylexibank.util import download_and_unpack_zipfiles
 from clldutils.misc import slug
 from clldutils.path import Path
-from .helpers import lang2glot, gloss2con
+from .helpers import lang2glot
 from pylexibank.lingpy_util import getEvoBibAsSource, iter_alignments
 import lingpy as lp
 
@@ -17,14 +17,37 @@ sources = ['Starostin2005b', 'Hou2004', 'Starostin2005b', 'Starostin2005b',
         'Greenhill2008', 'Zhivlov2011', 'Kessler2001', 'Hattori1973', 'Dunn2012', 'List2014c',
         'Starostin2005', 'Wang2006']
 
+correct_languages = {
+        "Guixian" : "Guiyang",
+        "Berawan (Long Terawan)" : "Berawan_Long_Terawan",
+        "Merina (Malagasy)" : "Merina_Malagasy"
+        }
+correct_concepts = {
+        "ear 1" : "ear",
+        "i" : "I",
+        "lie 1" : "lie", 
+        "light" : "watery",
+        "soja sauce" : "soya sauce",
+        "two pairs" : "two ounces",
+        "walk (go)" : "walk(go)",
+        "warm (hot)" : "warm",
+        "gras" : "grass", 
+        "saliva (splits)" : "saliva (spit)"
+        }
+        
+
 def download(dataset, **kw):
     download_and_unpack_zipfiles(URL, dataset, *[PATH.joinpath(dset) for dset \
             in DSETS])
 
 def cldf(dataset, glottolog, concepticon, **kw):
+    gloss2con = {x['GLOSS']: x['CONCEPTICON_ID'] for x in dataset.concepts}
 
     for dset, srckey in zip(DSETS, sources):
         wl = lp.Wordlist(dataset.raw.joinpath(dset).as_posix())
+        if not 'tokens' in wl.header:
+            wl.add_entries('tokens', 'ipa', lp.ipa2tokens, merge_vowels=False,
+                    expand_nasals=True)
         src = getEvoBibAsSource(srckey)
         
         with CldfDataset((
@@ -43,15 +66,26 @@ def cldf(dataset, glottolog, concepticon, **kw):
                 , dataset, subset=dset.split('.')[0]) as ds:
             ds.sources.add(src)
             errors = []
+            cognates = []
             for k in wl:
                 concept = wl[k, 'concept']
                 if '(V)' in concept:
                     concept = concept[:-4]
-
+                concept = correct_concepts.get(concept, concept)
                 if concept not in gloss2con:
                     errors += [concept]
-                if wl[k, 'doculect'] not in lang2glot:
+                doculect = correct_languages.get(wl[k, 'doculect'], wl[k,
+                    'doculect'])
+                if doculect not in lang2glot:
                     errors += [wl[k, 'doculect']]
+
+                # determine cognate id
+                if wl[k, 'cogid'] < 0:
+                    cogid = abs(wl[k, 'cogid'])
+                    loan = True
+                else:
+                    loan = False
+                    cogid = wl[k, 'cogid']
 
                 ds.add_row([
                     '{0}-{1}'.format(srckey, k),
@@ -63,22 +97,26 @@ def cldf(dataset, glottolog, concepticon, **kw):
                     wl[k, 'ipa'],
                     srckey,
                     ' '.join(wl[k, 'tokens'] or ['']),
-                    wl[k, 'cogid'],
+                    cogid,
                     wl[k, 'loan']
                     ])
-                dataset.cognates += [[
+
+                cognates += [[
                     '{0}-{1}'.format(srckey, k),
                     ds.name,
                     wl[k, 'ipa'],
-                    wl[k, 'cogid'],
-                    '',
+                    cogid,
+                    'borrowed' if loan else '',
                     'expert',
                     srckey,
                     '',
                     '',
                     ''
                     ]]
+
+            dataset.cognates.extend(iter_alignments(lp.Alignments(wl), cognates,
+                    method='library'))
             for er in sorted(set(errors)):
-                print(er)
+                print(er, dset)
     dataset.write_cognates()
 
