@@ -78,8 +78,9 @@ def cldf(dataset, glottolog, concepticon, **kw):
                 loan = wl[k, 'cogid'] < 0
                 cogid = abs(wl[k, 'cogid'])
 
+                wid = '{0}-{1}'.format(dset.split('.')[0], k)
                 ds.add_row([
-                    '{0}-{1}'.format(srckey, k),
+                    wid,
                     lang2glot[doculect],
                     wl[k, 'glottolog'],
                     '',
@@ -92,8 +93,8 @@ def cldf(dataset, glottolog, concepticon, **kw):
                     wl[k, 'loan']
                     ])
 
-                cognates += [[
-                    '{0}-{1}'.format(srckey, k),
+                cognates.append([
+                    wid,
                     ds.name,
                     wl[k, 'ipa'],
                     cogid,
@@ -103,7 +104,7 @@ def cldf(dataset, glottolog, concepticon, **kw):
                     '',
                     '',
                     ''
-                    ]]
+                ])
 
             dataset.cognates.extend(
                 iter_alignments(lp.Alignments(wl), cognates, method='library'))
