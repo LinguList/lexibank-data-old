@@ -3,9 +3,7 @@ from __future__ import unicode_literals, print_function
 
 from pylexibank.dataset import CldfDataset
 from pylexibank.util import download_and_unpack_zipfiles
-from clldutils.misc import slug
 from clldutils.path import Path
-from .helpers import lang2glot
 from pylexibank.lingpy_util import getEvoBibAsSource, iter_alignments
 import lingpy as lp
 
@@ -119,5 +117,3 @@ def cldf(dataset, glottolog, concepticon, **kw):
                     method='library'))
             for er in sorted(set(errors)):
                 print(er, dset)
-    dataset.write_cognates()
-
