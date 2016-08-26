@@ -94,5 +94,3 @@ def cldf(dataset, glottolog, concepticon, **kw):
                     '-'.join([slug(line[0]), text_type(p2c.get(val, val))]),
                     '', 'expert', SOURCE, '', '', '']]
                 idx += 1
-
-        dataset.write_cognates()

@@ -146,11 +146,10 @@ def cldf(dataset, glottolog, concepticon, **kw):
             ds.name,
             alms[k, 'ipa'],
             '-'.join([slug(alms[k, 'concept']), str(alms[k, 'cogid'])]),
-                '',
-                'expert',
-                SOURCE,
-                '', '', ''] for k in alms]
+            '',
+            'expert',
+            SOURCE,
+            '', '', ''] for k in alms]
 
         dataset.cognates.extend(iter_alignments(alms, cognates,
             method='library'))
-        dataset.write_cognates()
