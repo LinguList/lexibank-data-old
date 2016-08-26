@@ -22,19 +22,6 @@ def download(dataset, **kw):
 
 
 def cldf(dataset, glottolog, concepticon, **kw):
-    """
-    Implements the conversion of the raw data to CLDF dataset(s).
-
-    :param dataset: provides access to the information in supplementary files as follows:\
-     - the JSON object from `metadata.json` is available as `dataset.md`\
-     - items from languages.csv are available as `dataset.languages`\
-     - items from concepts.csv are available as `dataset.concepts`\
-     - if a Concepticon conceptlist was specified in metadata.json, its ID is available\
-       as `dataset.conceptlist`
-    :param glottolog: a pyglottolog.api.Glottolog` instance.
-    :param concepticon:  a pyconcepticon.api.Concepticon` instance.
-    :param kw: All arguments passed on the command line.
-    """
 
     for dset, srckey in zip(DSETS, SOURCES):
         wl = lp.Wordlist(dataset.dir.joinpath('raw', dset).as_posix())
@@ -91,6 +78,3 @@ def cldf(dataset, glottolog, concepticon, **kw):
 
             dataset.cognates.extend(iter_alignments(wl, cognates,
                 method='progressive', prefix=srckey + '-'))
-
-
-    dataset.write_cognates()
