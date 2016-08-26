@@ -1,6 +1,5 @@
 # coding=utf-8
 from __future__ import unicode_literals, print_function
-from collections import Counter
 
 from pylexibank.dataset import CldfDataset
 from pylexibank.util import download_and_unpack_zipfiles
@@ -44,7 +43,6 @@ def cldf(dataset, glottolog, concepticon, **kw):
     gloss2con = {x['GLOSS']: x['CONCEPTICON_ID'] for x in dataset.concepts}
     lang2glot = {x['NAME']: x['GLOTTOCODE'] for x in dataset.languages}
 
-    missingl = Counter()
     for dset, srckey in zip(DSETS, sources):
         wl = lp.Wordlist(dataset.raw.joinpath(dset).as_posix())
         if not 'tokens' in wl.header:
@@ -76,24 +74,13 @@ def cldf(dataset, glottolog, concepticon, **kw):
                 concept = correct_concepts.get(concept, concept)
                 if concept not in gloss2con:
                     errors += [concept]
-                doculect = correct_languages.get(wl[k, 'doculect'], wl[k,
-                    'doculect'])
-                if doculect not in lang2glot:
-                    errors += [wl[k, 'doculect']]
+                doculect = correct_languages.get(wl[k, 'doculect'], wl[k, 'doculect'])
+                loan = wl[k, 'cogid'] < 0
+                cogid = abs(wl[k, 'cogid'])
 
-                # determine cognate id
-                if wl[k, 'cogid'] < 0:
-                    cogid = abs(wl[k, 'cogid'])
-                    loan = True
-                else:
-                    loan = False
-                    cogid = wl[k, 'cogid']
-
-                if wl[k, 'doculect'] not in lang2glot:
-                    missingl.update([wl[k, 'doculect']])
                 ds.add_row([
                     '{0}-{1}'.format(srckey, k),
-                    lang2glot.get(wl[k, 'doculect'], ''),
+                    lang2glot[doculect],
                     wl[k, 'glottolog'],
                     '',
                     gloss2con.get(wl[k, 'concept'], ''),
@@ -118,8 +105,7 @@ def cldf(dataset, glottolog, concepticon, **kw):
                     ''
                     ]]
 
-            dataset.cognates.extend(iter_alignments(lp.Alignments(wl), cognates,
-                    method='library'))
+            dataset.cognates.extend(
+                iter_alignments(lp.Alignments(wl), cognates, method='library'))
             for er in sorted(set(errors)):
                 print(er, dset)
-    print(missingl)
