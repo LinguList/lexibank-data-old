@@ -55,6 +55,7 @@ def cldf(dataset, glottolog, concepticon, **kw):
     
     # language ids
     src = getEvoBibAsSource(SOURCE)
+    src2 = getEvoBibAsSource('List2014b')
 
     # get partial identifiers
     partial_ids = defaultdict(list)
@@ -69,6 +70,10 @@ def cldf(dataset, glottolog, concepticon, **kw):
                 partial_converter[char] = idx
                 idx += 1
             partial_ids[k] += [pidx]
+
+    # trace if proto-langugages was visited
+    visited = []
+    idx = max([k for k in wl]) + 1
     
     with CldfDataset((
         'ID',
@@ -82,17 +87,23 @@ def cldf(dataset, glottolog, concepticon, **kw):
         'Value_Chinese_characters',
         'Source',
         'Segments',
-        'Proto_form',
-        'Middle_Chinese',
         'Cognacy',
-        'Partial_cognacy',
         'Rank',
         'Comment'
         )
             , dataset) as ds:
         
         ds.sources.add(src)
+        ds.sources.add(src2)
+
+        D = {0 : ['doculect', 'concept', 'ipa', 'tokens', 'cogid']}
         for k in wl:
+            tokens = lp.ipa2tokens(wl[k, 'ipa'], merge_vowels=False,
+                    expand_nasals=True)
+            # remove sandhi-annotation in tokens, as it is confusing clpa
+            for i, t in enumerate(tokens):
+                if '⁻' in t:
+                    tokens[i] = t[:t.index('⁻')]
             ds.add_row([
                     '{0}-{1}'.format(SOURCE, k),
                     lids[wl[k, 'doculect']],
@@ -104,34 +115,42 @@ def cldf(dataset, glottolog, concepticon, **kw):
                     wl[k, 'ipa'],
                     wl[k, 'counterpart'],
                     SOURCE,
-                    ' '.join(lp.ipa2tokens(wl[k, 'ipa'], merge_vowels=False,
-                        expand_nasals=True)),
-                    wl[k, 'proto'],
-                    wl[k,'mch'],
+                    ' '.join(tokens),
                     wl[k, 'cogid'],
-                    ' '.join([str(x) for x in partial_ids[k]]),
                     wl[k, 'order'],
                     wl[k, 'note'] if wl[k, 'note'] != '-' else '',
                     ])
-        etd = wl.get_etymdict(ref='cogid')
-        cognates = []
-        for pid, vals in etd.items():
-            for val in vals:
-                if val:
-                    for k in val:
-                        cogid = '-'.join([slug(wl[k, 'concept']), str(pid)]) 
-                        cognates.append([
-                            '{0}-{1}'.format(SOURCE, k),
-                            ds.name,
-                            wl[k, 'ipa'],
-                            cogid,
-                            False,
-                            'expert',
-                            SOURCE,
-                            '',
-                            '',
-                            '',
-                        ])
-        dataset.cognates.extend(iter_alignments(lp.Alignments(wl), cognates,
+            D[k] = [wl[k, 'doculect'], wl[k, 'concept'], wl[k, 'ipa'], tokens, wl[k, 'cogid']]
+            if wl[k, 'cogid'] not in visited:
+                # we need to add new tones, otherwise it won't work, so we
+                # split syllables first, then check if the syllable ends with
+                # tone or not and add a '1' if this is not the case
+                syllables = wl[k, 'mch'].split('.')
+                for i, s in enumerate(syllables):
+                    if s[-1] not in '²³':
+                        if s[-1] not in 'ptk':
+                            syllables[i] += '¹'
+                        else:
+                            syllables[i] += '⁴'
+                tokens = lp.ipa2tokens(''.join(syllables))
+                ds.add_row(['{0}-{1}'.format(wl[k, 'concept'], idx), 'sini1245', 'Middle Chinese', 
+                    '', cids[wl[k, 'concept']], wl[k, 'concept'], '', 
+                    wl[k, 'proto'], wl[k, 'counterpart'], SOURCE, ' '.join(tokens),
+                    wl[k, 'cogid'], '', ''])
+                D[idx] = ['Middle Chinese', wl[k, 'concept'], wl[k, 'mch'], tokens, wl[k, 'cogid']]
+                idx += 1
+                visited += [wl[k, 'cogid']]
+        alms = lp.Alignments(D)
+        cognates = [[
+            '{0}-{1}'.format(SOURCE, k),
+            ds.name,
+            alms[k, 'ipa'],
+            '-'.join([slug(alms[k, 'concept']), str(alms[k, 'cogid'])]),
+                '',
+                'expert',
+                SOURCE,
+                '', '', ''] for k in alms]
+
+        dataset.cognates.extend(iter_alignments(alms, cognates,
             method='library'))
         dataset.write_cognates()
