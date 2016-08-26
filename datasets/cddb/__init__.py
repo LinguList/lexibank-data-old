@@ -6,7 +6,7 @@ from pylexibank.dataset import CldfDataset
 from clldutils.misc import slug
 from clldutils.path import Path
 
-from pylexibank.lingpy_util import getEvoBibAsSource
+from pylexibank.lingpy_util import getEvoBibAsSource, iter_alignments
 from pylexibank.util import download_and_unpack_zipfiles
 import lingpy as lp
 
@@ -94,7 +94,7 @@ def cldf(dataset, glottolog, concepticon, **kw):
         ds.sources.add(src)
         for k in wl:
             ds.add_row([
-                    k,
+                    '{0}-{1}'.format(SOURCE, k),
                     lids[wl[k, 'doculect']],
                     wl[k, 'doculect'],
                     '',
@@ -114,21 +114,24 @@ def cldf(dataset, glottolog, concepticon, **kw):
                     wl[k, 'note'] if wl[k, 'note'] != '-' else '',
                     ])
         etd = wl.get_etymdict(ref='cogid')
+        cognates = []
         for pid, vals in etd.items():
             for val in vals:
                 if val:
                     for k in val:
                         cogid = '-'.join([slug(wl[k, 'concept']), str(pid)]) 
-                        dataset.cognates.append([
-                            k,
+                        cognates.append([
+                            '{0}-{1}'.format(SOURCE, k),
                             ds.name,
                             wl[k, 'ipa'],
                             cogid,
                             False,
                             'expert',
-                            '',
+                            SOURCE,
                             '',
                             '',
                             '',
                         ])
+        dataset.cognates.extend(iter_alignments(lp.Alignments(wl), cognates,
+            method='library'))
         dataset.write_cognates()
