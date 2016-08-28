@@ -1,0 +1,12 @@
+{
+    "@context": [
+        "http://www.w3.org/ns/csvw",
+        {
+            "@language": "en"
+        }
+    ],
+    "dc:title": "Ainu Basic Vocabulary Lists",
+    "dc:bibliographicCitation": "Lee, S. & Hasegawa, T. 2013. Evolution of the Ainu language in space and time. PLOS ONE. 8.4.e62243.",
+    "dc:license": "https://creativecommons.org/licenses/by-nc/4.0/",
+    "dc:conformsTo": "http://concepticon.clld.org/contributions/Lee-2013-200"
+}

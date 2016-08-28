@@ -1,4 +1,4 @@
-# Lexicostatistic Wordlist of Semitic Languages
+# Semitic Basic Vocabulary Lists
 
 Cite the source dataset as
 
