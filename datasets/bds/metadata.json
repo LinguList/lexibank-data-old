@@ -1,0 +1,12 @@
+{
+    "@context": [
+        "http://www.w3.org/ns/csvw",
+        {
+            "@language": "en"
+        }
+    ],
+    "dc:title": "Bai Dialect Survey",
+    "dc:bibliographicCitation": "Allen, Bryan. 2007. Bai Dialect Survey. SIL International.",
+    "dc:identifier": "http://www.sil.org/resources/publications/entry/9121",
+    "dc:conformsTo": "http://concepticon.clld.org/contributions/Allen-2007-500"
+}
