@@ -1,0 +1,13 @@
+{
+    "@context": [
+        "http://www.w3.org/ns/csvw",
+        {
+            "@language": "en"
+        }
+    ],
+    "dc:title": "Lexicostatistic Wordlist of Semitic Languages",
+    "dc:bibliographicCitation": "Bayesian phylogenetic analysis of Semitic languages identifies an Early Bronze Age origin of Semitic in the Near East. Andrew Kitchen, Christopher Ehret, Shiferaw Assefa, Connie J. Mulligan. Proc. R. Soc. B 2009 -; DOI: 10.1098/rspb.2009.0408. Published 29 April 2009",
+    "dc:license": null,
+    "dc:related": "http://rspb.royalsocietypublishing.org/content/early/2009/04/27/rspb.2009.0408",
+    "dc:conformsTo": "http://concepticon.clld.org/contributions/Kitchen-2009-95"
+}

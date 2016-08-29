@@ -1,0 +1,13 @@
+{
+    "@context": [
+        "http://www.w3.org/ns/csvw",
+        {
+            "@language": "en"
+        }
+    ],
+    "dc:title": "Sidwell Austroasiatic lexical data set for phylogenetic analyses: 2015 version",
+    "dc:bibliographicCitation": "Sidwell, Paul 2015, Austroasiatic dataset for phylogenetic analysis: 2015 version, Mon-Khmer Studies: a journal of Southeast Asian Languages and cultures, vol. 44, pp. lxviii-ccclvii.",
+    "dc:license": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+    "dc:identifier": "http://dx.doi.org/10.5281/zenodo.34092",
+    "dc:conformsTo": "http://concepticon.clld.org/contributions/Sidwell-2015-200"
+}
