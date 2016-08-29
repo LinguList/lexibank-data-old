@@ -13,9 +13,10 @@ from pylexibank.lingpy_util import (clean_string, iter_alignments,
         wordlist2cognates, getEvoBibAsSource)
 import lingpy as lp
 
+
 PROVIDER = "Lees2013"
 SOURCE = "Hattori1960"
 
-def download(dataset):
 
+def download(dataset):
     xls2csv(dataset.raw.joinpath('AinuHattoriChiri.xlsx'), outdir=dataset.raw)

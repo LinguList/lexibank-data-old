@@ -19,19 +19,20 @@ def getEvoBibAsSource(key):
         urlopen("http://bibliography.lingpy.org/raw.php?key="+key).read().decode('utf-8'),
         bib_format='bibtex')
 
+
 def wordlist2cognates(wordlist, dataset, source, expert='expert', ref='cogid'):
     """Turn a wordlist into a cognate set list, using the cldf parameters."""
     return [[
-        dataset.name+'-'+str(k), 
+        wordlist[k, 'lid'],
         dataset.name, 
         wordlist[k, 'ipa'],
-        '{0}-{1}'.format(slug(wordlist[k, 'concept']), wordlist[k, 'cogid']),
+        '{0}-{1}'.format(slug(wordlist[k, 'concept']), wordlist[k, ref]),
         '',
-        'expert',
+        expert,
         source,
         '', '', ''] for k in wordlist]
 
-    
+
 def getSourceFromBibTex(source):
     "utility function to read source from bibtex"
     return database.parse_string(source, bib_format="bibtex")
