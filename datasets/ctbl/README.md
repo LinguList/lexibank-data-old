@@ -1,4 +1,4 @@
-# Genealogical relations and lexical distances within the Tupian linguistic family
+# Cognates in Tupian Basic Lexicon
 
 Cite the source dataset as
 
@@ -7,7 +7,7 @@ Cite the source dataset as
 Available online at https://dx.doi.org/10.1590/1981-81222015000200004
 
 ## Statistics
-![Glottolog: 100%](https://img.shields.io/badge/Glottolog-100%25-brightgreen.svg "Glottolog: 100%") ![Concepticon: 100%](https://img.shields.io/badge/Concepticon-100%25-brightgreen.svg "Concepticon: 100%") ![Source: 0%](https://img.shields.io/badge/Source-0%25-red.svg "Source: 0%") ![LingPy: 90%](https://img.shields.io/badge/LingPy-90%25-green.svg "LingPy: 90%") ![CLPA: 62%](https://img.shields.io/badge/CLPA-62%25-orange.svg "CLPA: 62%")
+![Glottolog: 100%](https://img.shields.io/badge/Glottolog-100%25-brightgreen.svg "Glottolog: 100%") ![Concepticon: 100%](https://img.shields.io/badge/Concepticon-100%25-brightgreen.svg "Concepticon: 100%") ![Source: 0%](https://img.shields.io/badge/Source-0%25-red.svg "Source: 0%") ![LingPy: 91%](https://img.shields.io/badge/LingPy-91%25-green.svg "LingPy: 91%") ![CLPA: 62%](https://img.shields.io/badge/CLPA-62%25-orange.svg "CLPA: 62%")
 
 - **Varieties:** 23
 - **Concepts:** 100
@@ -16,5 +16,5 @@ Available online at https://dx.doi.org/10.1590/1981-81222015000200004
 - **Cognacy:** 1,807 cognates in 307 cognate sets
 - **Invalid lexemes:** 0
 - **Tokens:** 10,027
-- **Segments:** 120 (12 LingPy errors, 46 CLPA errors, 25 CLPA modified)
+- **Segments:** 120 (11 LingPy errors, 46 CLPA errors, 25 CLPA modified)
 - **Inventory size (avg):** 37.17

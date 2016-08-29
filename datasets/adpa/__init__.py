@@ -9,9 +9,13 @@ from pycldf.sources import Source
 
 from pylexibank.util import xls2csv, with_temp_dir
 from pylexibank.dataset import CldfDataset, Unmapped
+from pylexibank.lingpy_util import (clean_string, iter_alignments,
+        wordlist2cognates, getEvoBibAsSource)
+import lingpy as lp
 
 
 URL = "https://zenodo.org/record/34092/files/Sidwell-Austroasiatic_phylogenetic-dataset-2015.xlsm"
+SOURCE = 'Sidwell2015'
 
 
 def download(dataset):
@@ -63,6 +67,7 @@ def cldf(dataset, glottolog_, concepticon, **kw):
         src = Source('misc', '_'.join(map(slug, langs)), title=src)
         for lang in langs:
             sources[lang] = src
+    sources['cognates'] = getEvoBibAsSource(SOURCE)
 
     unmapped = Unmapped()
     with CldfDataset((
@@ -73,29 +78,45 @@ def cldf(dataset, glottolog_, concepticon, **kw):
             'Parameter_ID',
             'Parameter_name',
             'Value',
+            'Segments',
             'Source',
             'Comment',
             ), dataset) as ds:
         ds.sources.add(*sources.values())
+        D = {0 : ['doculect', 'concept', 'ipa', 'tokens', 'cog']}
         for i, row in enumerate(words):
             form = row[4]
-            if not form or form == '*':
+            if not form or form in '*-':
                 continue
             assert row[1] in concepticon
             lang = language_map.get(row[3], row[3].strip())
             assert lang in languages
-            gc = glottolog.get(lang, glottolog.get(languages[lang][7]))
+            gc = glottolog.get(glottolog.get(languages[lang][7]), lang)
             if not gc:
                 unmapped.languages.add(('', lang, languages[lang][7]))
+            # get segments
+            segments = clean_string(form)
+            # get cognate identifier
+            cogid = row[5] if row[5].strip() and row[5].strip() != '*' else 'e'+str(i)
+            cogid = row[1] + '-' + cogid
+            
             ds.add_row([
-                '%s' % (i + 1,),
+                '{0}-{1}'.format(dataset.name, i+1),
                 glottolog.get(lang, glottolog.get(languages[lang][7])),
                 lang,
                 languages[lang][7],
                 concepticon[row[1]],
                 row[1],
                 form,
+                segments,
                 sources[lang].id,
-                None,
+                None
             ])
+            D[i+1] = [lang, row[1], form, segments, cogid]
+        wl = lp.Wordlist(D)
+        wl.renumber('cog')
+        alm = lp.Alignments(wl)
+        dataset.cognates.extend(iter_alignments(alm, wordlist2cognates(wl, ds,
+            SOURCE)))
+            
     unmapped.pprint()

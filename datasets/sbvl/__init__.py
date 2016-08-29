@@ -56,7 +56,7 @@ def cldf(dataset, glottolog, concepticon, **kw):
     correct_concepts = {
             'Cold (air)' : 'Cold (of air)',
             }
-    src = getEvoBibAsSource('Kitchen2012')
+    src = getEvoBibAsSource('Kitchen2009')
 
     with CldfDataset((
             'ID',
@@ -81,7 +81,7 @@ def cldf(dataset, glottolog, concepticon, **kw):
                             ('', ''), ('7', 's'),
                             ('', '')])[0]
                     ds.add_row([
-                        'Kitchen2012-'+str(idx),
+                        'Kitchen2009-'+str(idx),
                         language_map[lang],
                         clean_langs.get(lang, lang),
                         concepticon[concept],
@@ -120,13 +120,13 @@ def cldf(dataset, glottolog, concepticon, **kw):
         wl.renumber('cog')
         for k in wl:
             cognates += [[
-                'Kitchen2012-'+str(k),
+                'Kitchen2009-'+str(k),
                 ds.name,
                 wl[k, 'ipa'],
                 wl[k, 'concept']+'-'+str(wl[k, 'cogid']),
                 '',
                 'expert',
-                'Kitchen2012', 
+                'Kitchen2009', 
                 '', '', '']]
 
         dataset.cognates.extend(iter_alignments(lp.Alignments(wl), cognates))
