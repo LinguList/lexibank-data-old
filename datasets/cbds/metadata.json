@@ -1,0 +1,12 @@
+{
+    "@context": [
+        "http://www.w3.org/ns/csvw",
+        {
+            "@language": "en"
+        }
+    ],
+    "dc:title": "Cognates in the Bai Dialect Survey",
+    "dc:bibliographicCitation": "List, Johann-Mattis. 2016. Cognates in Bryan Allen's Bai Dialect Survey.",
+    "dc:identifier": "+++pending+++",
+    "dc:conformsTo": "http://concepticon.clld.org/contributions/Allen-2007-500"
+}
