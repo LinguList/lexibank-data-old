@@ -6,6 +6,8 @@
         }
     ],
     "dc:title": "Cognates in the Bai Dialect Survey",
+    "dc:isVersionOf": "http://lexibank.clld.org/contributions/baidial",
+    "dc:provenance": "...",
     "dc:bibliographicCitation": "List, Johann-Mattis. 2016. Cognates in Bryan Allen's Bai Dialect Survey.",
     "dc:identifier": "+++pending+++",
     "dc:conformsTo": "http://concepticon.clld.org/contributions/Allen-2007-500"

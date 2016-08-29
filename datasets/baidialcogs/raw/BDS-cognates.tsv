@@ -305,8 +305,8 @@ ID	LID	DOCULECT	CONCEPT	VALUE	TOKENS	COGID
 2788	Allen2007-2788	Xiangyun	be sick,ill	pɛ̃³¹	p ɛ̃ ³¹	646
 2789	Allen2007-2789	Luobenzhuo	be sick,ill	sõ³¹	s õ ³¹	647
 2790	Allen2007-2790	Zhoucheng	be sick,ill	pɛ³¹	p ɛ ³¹	646
-4501	0	Lanping	be sick,ill	sɔ̃⁴²/pæ̃⁴²	p æ̃ ⁴²	646
-4502	0	Jianchuan	be sick,ill	pɛ̃³¹/sɤ̃³¹	s ɤ̃ ³¹	647
+4501	Allen2007-2785	Lanping	be sick,ill	sɔ̃⁴²/pæ̃⁴²	p æ̃ ⁴²	646
+4502	Allen2007-2782	Jianchuan	be sick,ill	pɛ̃³¹/sɤ̃³¹	s ɤ̃ ³¹	647
 19	Allen2007-19	Jianchuan	bean	tɯ²¹	t ɯ ²¹	730
 20	Allen2007-20	Eryuan	bean	tɯ³¹	t ɯ ³¹	730
 21	Allen2007-21	Heqing	bean	tɯ³¹	t ɯ ³¹	730
@@ -460,6 +460,8 @@ ID	LID	DOCULECT	CONCEPT	VALUE	TOKENS	COGID
 3094	Allen2007-3094	Xiangyun	blue	tɕʰɛ̃⁵⁵	tɕʰ ɛ̃ ⁵⁵	359
 3095	Allen2007-3095	Luobenzhuo	blue	tɕʰã⁴⁴	tɕʰ ã ⁴⁴	359
 3096	Allen2007-3096	Zhoucheng	blue	tɕʰɛ⁵⁵	tɕʰ ɛ ⁵⁵	359
+4503	Allen2007-3090	Heqing	blue	tɕʰɛ̃⁵⁵/piɛ⁴⁴	p i ɛ ⁴⁴	554
+4504	Allen2007-3088	Jianchuan	blue	tɕʰɛ̃⁵⁵/piɛ⁴⁴	p i ɛ ⁴⁴	554
 3268	Allen2007-3268	Jianchuan	blunt (knife)	tua³¹	t u a ³¹	379
 3269	Allen2007-3269	Eryuan	blunt (knife)	tua³¹	t u a ³¹	379
 3270	Allen2007-3270	Heqing	blunt (knife)	tua³¹	t u a ³¹	379
@@ -675,7 +677,8 @@ ID	LID	DOCULECT	CONCEPT	VALUE	TOKENS	COGID
 2428	Allen2007-2428	Xiangyun	chase	tɕi⁴²	tɕ i ⁴²	241
 2429	Allen2007-2429	Luobenzhuo	chase	tẽ³³	t ẽ ³³	242
 2430	Allen2007-2430	Zhoucheng	chase	kʲi⁴²	kʲ i ⁴²	241
-4505	0	Lanping	chase	tẽ⁴²/tɕi³¹su³¹	tɕ i ³¹ s u ³¹	240
+4505	Allen2007-2425	Lanping	chase	tẽ⁴²/tɕi³¹su³¹	tɕ i ³¹ s u ³¹	240
+4506	Allen2007-2423	Eryuan	chase	tɕi⁴²/te³³	t e ³³	242
 3313	Allen2007-3313	Jianchuan	cheap	pʰi⁵⁵ji⁴⁴	pʰ i ⁵⁵ j i ⁴⁴	383
 3314	Allen2007-3314	Eryuan	cheap	pʰi⁵⁵ji⁴⁴	pʰ i ⁵⁵ j i ⁴⁴	383
 3315	Allen2007-3315	Heqing	cheap	pʰi⁵⁵ji⁴⁴	pʰ i ⁵⁵ j i ⁴⁴	383
@@ -991,10 +994,10 @@ ID	LID	DOCULECT	CONCEPT	VALUE	TOKENS	COGID
 3067	Allen2007-3067	Xiangyun	dark	xou⁴⁴	x o u ⁴⁴	17
 3068	Allen2007-3068	Luobenzhuo	dark	mɯ̃⁴⁴	m ɯ̃ ⁴⁴	9
 3069	Allen2007-3069	Zhoucheng	dark	miɛ⁴²/xɯ⁴⁴	m i ɛ ⁴²	9
-4507	0	Jianchuan	dark	miɛ⁴²/ã⁴⁴	ã ⁴⁴	1089
-4508	0	Qiliqiao	dark	miɛ³²/xɯ⁴⁴	x ɯ ⁴⁴	17
-4509	0	Zhoucheng	dark	miɛ⁴²/xɯ⁴⁴	x ɯ ⁴⁴	17
-4510	0	Eryuan	dark	miɛ⁴²/xɯ⁴⁴	x ɯ ⁴⁴	17
+4507	Allen2007-3061	Jianchuan	dark	miɛ⁴²/ã⁴⁴	ã ⁴⁴	1089
+4508	Allen2007-3065	Qiliqiao	dark	miɛ³²/xɯ⁴⁴	x ɯ ⁴⁴	17
+4509	Allen2007-3069	Zhoucheng	dark	miɛ⁴²/xɯ⁴⁴	x ɯ ⁴⁴	17
+4510	Allen2007-3062	Eryuan	dark	miɛ⁴²/xɯ⁴⁴	x ɯ ⁴⁴	17
 667	Allen2007-667	Jianchuan	daughter	jɤ̃³³	j ɤ̃ ³³	26
 668	Allen2007-668	Eryuan	daughter	ɲɤ³³	ɲ ɤ ³³	26
 669	Allen2007-669	Heqing	daughter	jɔ̃³³	j ɔ̃ ³³	26
@@ -1012,7 +1015,7 @@ ID	LID	DOCULECT	CONCEPT	VALUE	TOKENS	COGID
 2707	Allen2007-2707	Xiangyun	day	ni⁴⁴	n i ⁴⁴	39
 2708	Allen2007-2708	Luobenzhuo	day	ɲi³³	ɲ i ³³	39
 2709	Allen2007-2709	Zhoucheng	day	ɲi⁴⁴	ɲ i ⁴⁴	39
-4511	0	Jianchuan	day	jĩ⁴⁴/ɕɛ⁴⁴	ɕ ɛ ⁴⁴	49
+4511	Allen2007-2701	Jianchuan	day	jĩ⁴⁴/ɕɛ⁴⁴	ɕ ɛ ⁴⁴	49
 3205	Allen2007-3205	Jianchuan	day after tomorrow	tsɿ³³jĩ⁴⁴	ts ɿ ³³ j ĩ ⁴⁴	1041
 3206	Allen2007-3206	Eryuan	day after tomorrow	a³¹tsɿ³³ɲi⁴⁴	a ³¹ ts ɿ ³³ ɲ i ⁴⁴	1043
 3207	Allen2007-3207	Heqing	day after tomorrow	tsɿ³³jĩ⁴⁴	ts ɿ ³³ j ĩ ⁴⁴	1041
@@ -1076,6 +1079,8 @@ ID	LID	DOCULECT	CONCEPT	VALUE	TOKENS	COGID
 3472	Allen2007-3472	Xiangyun	diligent	pa⁴⁴tɕa⁴⁴	p a ⁴⁴ tɕ a ⁴⁴	400
 3473	Allen2007-3473	Luobenzhuo	diligent	ŋa⁴⁴	ŋ a ⁴⁴	402
 3474	Allen2007-3474	Zhoucheng	diligent	tɕʰɯ⁴²	tɕʰ ɯ ⁴²	396
+4512	Allen2007-3466	Jianchuan	diligent	tɕʰɯ̃⁴²kʰuɛ⁵⁵/tɕy²¹	tɕ y ²¹	396
+4513	Allen2007-3470	Qiliqiao	diligent	vɤ³⁵li³¹/ʰɯ⁵⁵tɕɯ³¹	ʰ ɯ ⁵⁵ tɕ ɯ ³¹	556
 973	Allen2007-973	Jianchuan	dinner (evening meal)	pẽ³³	p ẽ ³³	1353
 974	Allen2007-974	Eryuan	dinner (evening meal)	pe³³	p e ³³	1353
 975	Allen2007-975	Heqing	dinner (evening meal)	pẽ³³	p ẽ ³³	1353
@@ -1436,7 +1441,7 @@ ID	LID	DOCULECT	CONCEPT	VALUE	TOKENS	COGID
 3949	Allen2007-3949	Xiangyun	first	tou³¹	t o u ³¹	512
 3950	Allen2007-3950	Luobenzhuo	first	tɤ³¹	t ɤ ³¹	512
 3951	Allen2007-3951	Zhoucheng	first	ɕi³³	ɕ i ³³	511
-4514	0	Jianchuan	first	ɕĩ⁵⁵‹›tɯ²¹	t ɯ ²¹	512
+4514	Allen2007-3943	Jianchuan	first	ɕĩ⁵⁵‹›tɯ²¹	t ɯ ²¹	512
 2503	Allen2007-2503	Jianchuan	first month (lunar)	tsɿ⁵⁵wã⁴⁴	ts ɿ ⁵⁵ w ã ⁴⁴	1028
 2504	Allen2007-2504	Eryuan	first month (lunar)	tʂɛ³⁵ŋua⁴⁴	tʂ ɛ ³⁵ ŋ u a ⁴⁴	1028
 2505	Allen2007-2505	Heqing	first month (lunar)	tsɛ̃³⁵wã⁴⁴	ts ɛ̃ ³⁵ w ã ⁴⁴	1028
@@ -1482,6 +1487,7 @@ ID	LID	DOCULECT	CONCEPT	VALUE	TOKENS	COGID
 2419	Allen2007-2419	Xiangyun	flee	mou²¹/tsua³⁵	m o u ²¹	239
 2420	Allen2007-2420	Luobenzhuo	flee	mãõ³⁵	m ã õ ³⁵	239
 2421	Allen2007-2421	Zhoucheng	flee	mu²¹	m u ²¹	239
+4515	Allen2007-2419	Xiangyun	flee	mou²¹/tsua³⁵	ts u a ³⁵	563
 190	Allen2007-190	Jianchuan	flower	xou⁵⁵	x o u ⁵⁵	1191
 191	Allen2007-191	Eryuan	flower	xɔ³⁵	x ɔ ³⁵	1191
 192	Allen2007-192	Heqing	flower	xuɔ³⁵	x u ɔ ³⁵	1191
@@ -1608,6 +1614,7 @@ ID	LID	DOCULECT	CONCEPT	VALUE	TOKENS	COGID
 2770	Allen2007-2770	Xiangyun	give birth	sɯ̃³⁵	s ɯ̃ ³⁵	334
 2771	Allen2007-2771	Luobenzhuo	give birth	ɕõ³¹	ɕ õ ³¹	334
 2772	Allen2007-2772	Zhoucheng	give birth	xa⁵⁵	x a ⁵⁵	331
+4516	Allen2007-2767	Lanping	give birth	ku³¹xue⁴⁴mɯ⁵⁵/tɕĩ⁴²xɛ̃⁵⁵	tɕ ĩ ⁴² x ɛ̃ ⁵⁵	330
 2647	Allen2007-2647	Jianchuan	go	ŋɛ²¹	ŋ ɛ ²¹	290
 2648	Allen2007-2648	Eryuan	go	pe⁴⁴tsɿ²¹	p e ⁴⁴ ts ɿ ²¹	292
 2649	Allen2007-2649	Heqing	go	ŋɛ²¹	ŋ ɛ ²¹	290
@@ -1644,6 +1651,10 @@ ID	LID	DOCULECT	CONCEPT	VALUE	TOKENS	COGID
 3175	Allen2007-3175	Xiangyun	good	xu³³	x u ³³	611
 3176	Allen2007-3176	Luobenzhuo	good	xɯ̃³³/ɴ̣³³	x ɯ̃ ³³	611
 3177	Allen2007-3177	Zhoucheng	good	fe³⁵	f e ³⁵	612
+4517	Allen2007-3169	Jianchuan	good	tɕʰõ⁵⁵/ɕo³¹/xu³³	ɕ o ³¹	613
+4518	Allen2007-3172	Lanping	good	ɕo⁴²/xu³³	x u ³³	611
+4519	Allen2007-3176	Luobenzhuo	good	xɯ̃³³/ɴ̣³³	ɴ̣ ³³	587
+4520	Allen2007-3169	Jianchuan	good	tɕʰõ⁵⁵/ɕo³¹/xu³³	x u ³³	611
 613	Allen2007-613	Jianchuan	grandfather	a³¹ji⁴²	a ³¹ j i ⁴²	1269
 614	Allen2007-614	Eryuan	grandfather	a⁵⁵lɔ²¹	a ⁵⁵ l ɔ ²¹	1270
 615	Allen2007-615	Heqing	grandfather	a⁵⁵pɔu⁵⁵	a ⁵⁵ p ɔ u ⁵⁵	1271
@@ -1698,6 +1709,7 @@ ID	LID	DOCULECT	CONCEPT	VALUE	TOKENS	COGID
 2779	Allen2007-2779	Xiangyun	grow (of people)	kuɔ³⁵	k u ɔ ³⁵	336
 2780	Allen2007-2780	Luobenzhuo	grow (of people)	dao⁴²	d a o ⁴²	338
 2781	Allen2007-2781	Zhoucheng	grow (of people)	kuɔ³⁵	k u ɔ ³⁵	336
+4521	Allen2007-2773	Jianchuan	grow (of people)	kou⁵⁵/tou⁴²	t o u ⁴²	338
 2548	Allen2007-2548	Jianchuan	guess	tsɯ⁴²	ts ɯ ⁴²	269
 2549	Allen2007-2549	Eryuan	guess	tʂɯ⁴²	tʂ ɯ ⁴²	269
 2550	Allen2007-2550	Heqing	guess	tʰe³³	tʰ e ³³	269
@@ -1896,6 +1908,7 @@ ID	LID	DOCULECT	CONCEPT	VALUE	TOKENS	COGID
 1699	Allen2007-1699	Xiangyun	hold	kã³³	k ã ³³	122
 1700	Allen2007-1700	Luobenzhuo	hold	qʰæ⁵⁵	qʰ æ ⁵⁵	122
 1701	Allen2007-1701	Zhoucheng	hold	ne⁴⁴	n e ⁴⁴	121
+4522	Allen2007-1696	Lanping	hold	tã⁵⁵/nẽ⁵⁵	n ẽ ⁵⁵	121
 4375	Allen2007-4375	Jianchuan	horn	kɤ⁴⁴	k ɤ ⁴⁴	635
 4376	Allen2007-4376	Eryuan	horn	kɤ⁴⁴	k ɤ ⁴⁴	635
 4377	Allen2007-4377	Heqing	horn	kuɔ⁴⁴	k u ɔ ⁴⁴	635
@@ -1923,6 +1936,7 @@ ID	LID	DOCULECT	CONCEPT	VALUE	TOKENS	COGID
 3346	Allen2007-3346	Xiangyun	hot	wẽ³⁵	w ẽ ³⁵	638
 3347	Allen2007-3347	Luobenzhuo	hot	ɲi⁵⁵	ɲ i ⁵⁵	639
 3348	Allen2007-3348	Zhoucheng	hot	wɛ³⁵	w ɛ ³⁵	638
+4523	Allen2007-3344	Qiliqiao	hot	ɯ³¹ɲi⁴⁴/we³⁵	w e ³⁵	638
 3394	Allen2007-3394	Jianchuan	hot (spicy)	tɕʰĩ⁵⁵	tɕʰ ĩ ⁵⁵	848
 3395	Allen2007-3395	Eryuan	hot (spicy)	tɕʰi⁵⁵	tɕʰ i ⁵⁵	848
 3396	Allen2007-3396	Heqing	hot (spicy)	tɕʰĩ⁵⁵	tɕʰ ĩ ⁵⁵	848
@@ -2299,6 +2313,7 @@ ID	LID	DOCULECT	CONCEPT	VALUE	TOKENS	COGID
 1564	Allen2007-1564	Xiangyun	look	ã³³	ã ³³	111
 1565	Allen2007-1565	Luobenzhuo	look	ʔe³³	ʔ e ³³	111
 1566	Allen2007-1566	Zhoucheng	look	a³³	a ³³	111
+4524	Allen2007-1558	Jianchuan	look	xã⁵⁵/ã³³	ã ³³	111
 2323	Allen2007-2323	Jianchuan	look for	ɕĩ²¹/ã³³	ɕ ĩ ²¹	206
 2324	Allen2007-2324	Eryuan	look for	ji²¹	j i ²¹	207
 2325	Allen2007-2325	Heqing	look for	tsɔu³³	ts ɔ u ³³	208
@@ -2308,6 +2323,8 @@ ID	LID	DOCULECT	CONCEPT	VALUE	TOKENS	COGID
 2329	Allen2007-2329	Xiangyun	look for	zẽ³¹	z ẽ ³¹	206
 2330	Allen2007-2330	Luobenzhuo	look for	ʂæ⁴²	ʂ æ ⁴²	206
 2331	Allen2007-2331	Zhoucheng	look for	ji³¹	j i ³¹	207
+4525	Allen2007-2326	Lanping	look for	ji²¹/ã⁴⁴	ã ⁴⁴	571
+4526	Allen2007-2323	Jianchuan	look for	ɕĩ²¹/ã³³	ã ³³	571
 2314	Allen2007-2314	Jianchuan	lose (can't find)	nɛ⁴²su³³tsʰɯ⁵⁵	n ɛ ⁴² s u ³³ tsʰ ɯ ⁵⁵	195
 2315	Allen2007-2315	Eryuan	lose (can't find)	ta³⁵ʂɔ³³	t a ³⁵ ʂ ɔ ³³	198
 2316	Allen2007-2316	Heqing	lose (can't find)	sʰɔu³³	sʰ ɔ u ³³	196
@@ -2443,6 +2460,7 @@ ID	LID	DOCULECT	CONCEPT	VALUE	TOKENS	COGID
 2401	Allen2007-2401	Xiangyun	meet	pẽ⁴⁴tɕɛ̃⁴²	p ẽ ⁴⁴ tɕ ɛ̃ ⁴²	238
 2402	Allen2007-2402	Luobenzhuo	meet	sao⁵⁵tɕa⁴²	s a o ⁵⁵ tɕ a ⁴²	237
 2403	Allen2007-2403	Zhoucheng	meet	mɯ³⁵tɯ³³	m ɯ ³⁵ t ɯ ³³	235
+4527	Allen2007-2398	Lanping	meet	sã⁴⁴to³³/jy⁴⁴tɯ⁴⁴	j y ⁴⁴ t ɯ ⁴⁴	234
 1117	Allen2007-1117	Jianchuan	mill,grind	wẽ⁴²	w ẽ ⁴²	616
 1118	Allen2007-1118	Eryuan	mill,grind	ŋue⁴²	ŋ u e ⁴²	616
 1119	Allen2007-1119	Heqing	mill,grind	wɛ⁴²kʰa⁴⁴	w ɛ ⁴² kʰ a ⁴⁴	615
@@ -2560,6 +2578,7 @@ ID	LID	DOCULECT	CONCEPT	VALUE	TOKENS	COGID
 2986	Allen2007-2986	Xiangyun	much,many	tɕi³⁵	tɕ i ³⁵	692
 2987	Allen2007-2987	Luobenzhuo	much,many	ti⁵⁵	t i ⁵⁵	692
 2988	Allen2007-2988	Zhoucheng	much,many	mɛ³⁵/tɕi⁵⁵	m ɛ ³⁵	573
+4528	Allen2007-2988	Zhoucheng	much,many	mɛ³⁵/tɕi⁵⁵	tɕ i ⁵⁵	692
 145	Allen2007-145	Jianchuan	mushroom	sɛ̃³³	s ɛ̃ ³³	706
 146	Allen2007-146	Eryuan	mushroom	ʂɛ³³	ʂ ɛ ³³	706
 147	Allen2007-147	Heqing	mushroom	sʰɿ³³	sʰ ɿ ³³	706
@@ -2704,6 +2723,7 @@ ID	LID	DOCULECT	CONCEPT	VALUE	TOKENS	COGID
 3517	Allen2007-3517	Xiangyun	one	a³¹	a ³¹	716
 3518	Allen2007-3518	Luobenzhuo	one	ʔi⁵⁵	ʔ i ⁵⁵	715
 3519	Allen2007-3519	Zhoucheng	one	ji⁴⁴	j i ⁴⁴	715
+4529	Allen2007-3516	Yunlong	one	ji⁴⁴/a³¹	a ³¹	716
 3610	Allen2007-3610	Jianchuan	one hundred	a³¹pɛ⁴⁴	a ³¹ p ɛ ⁴⁴	644
 3611	Allen2007-3611	Eryuan	one hundred	a³¹pɛ⁴⁴	a ³¹ p ɛ ⁴⁴	644
 3612	Allen2007-3612	Heqing	one hundred	a³¹pɛ⁴⁴	a ³¹ p ɛ ⁴⁴	644
@@ -2920,6 +2940,8 @@ ID	LID	DOCULECT	CONCEPT	VALUE	TOKENS	COGID
 1942	Allen2007-1942	Xiangyun	plant (seed)	kʲɛ³⁵/tɕɛ̃⁴²	kʲ ɛ ³⁵	160
 1943	Allen2007-1943	Luobenzhuo	plant (seed)	tɕõ⁴²	tɕ õ ⁴²	159
 1944	Allen2007-1944	Zhoucheng	plant (seed)	tsɤ⁴²	ts ɤ ⁴²	159
+4530	Allen2007-1939	Lanping	plant (seed)	tsɔ̃⁴²ku⁴⁴/fɛ⁴⁴	f ɛ ⁴⁴	574
+4531	Allen2007-1942	Xiangyun	plant (seed)	kʲɛ³⁵/tɕɛ̃⁴²	tɕ ɛ̃ ⁴²	159
 2341	Allen2007-2341	Jianchuan	play	wa⁴²sẽ²¹	w a ⁴² s ẽ ²¹	212
 2342	Allen2007-2342	Eryuan	play	u³¹tɕʰu³¹	u ³¹ tɕʰ u ³¹	213
 2343	Allen2007-2343	Heqing	play	vɤ⁴²tɯ³³	v ɤ ⁴² t ɯ ³³	213
@@ -2929,6 +2951,7 @@ ID	LID	DOCULECT	CONCEPT	VALUE	TOKENS	COGID
 2347	Allen2007-2347	Xiangyun	play	tsʰu³¹	tsʰ u ³¹	214
 2348	Allen2007-2348	Luobenzhuo	play	xæ̃³⁵ʐæ⁴²	x æ̃ ³⁵ ʐ æ ⁴²	215
 2349	Allen2007-2349	Zhoucheng	play	nɔ³³/ɔ²¹tɕʰo³¹	n ɔ ³³	575
+4532	Allen2007-2349	Zhoucheng	play	nɔ³³/ɔ²¹tɕʰo³¹	ɔ ²¹ tɕʰ o ³¹	213
 1927	Allen2007-1927	Jianchuan	plough (field)	tsou⁴⁴	ts o u ⁴⁴	157
 1928	Allen2007-1928	Eryuan	plough (field)	tsɔ⁴⁴	ts ɔ ⁴⁴	157
 1929	Allen2007-1929	Heqing	plough (field)	tsou⁴⁴	ts o u ⁴⁴	157
@@ -2983,6 +3006,7 @@ ID	LID	DOCULECT	CONCEPT	VALUE	TOKENS	COGID
 1762	Allen2007-1762	Xiangyun	pull	tɕi⁴⁴/tɕɛ̃³⁵	tɕ i ⁴⁴	753
 1763	Allen2007-1763	Luobenzhuo	pull	tɕã⁴⁴	tɕ ã ⁴⁴	577
 1764	Allen2007-1764	Zhoucheng	pull	kʲi³³	kʲ i ³³	753
+4533	Allen2007-1762	Xiangyun	pull	tɕi⁴⁴/tɕɛ̃³⁵	tɕ ɛ̃ ³⁵	577
 1963	Allen2007-1963	Jianchuan	pull up (rice seedlings)	ma²¹	m a ²¹	754
 1964	Allen2007-1964	Eryuan	pull up (rice seedlings)	pʰia⁴²/ma²¹	pʰ i a ⁴²	755
 1965	Allen2007-1965	Heqing	pull up (rice seedlings)	ma²¹	m a ²¹	754
@@ -2992,6 +3016,8 @@ ID	LID	DOCULECT	CONCEPT	VALUE	TOKENS	COGID
 1969	Allen2007-1969	Xiangyun	pull up (rice seedlings)	ma²¹	m a ²¹	754
 1970	Allen2007-1970	Luobenzhuo	pull up (rice seedlings)	tɕãõ⁵⁵	tɕ ã õ ⁵⁵	756
 1971	Allen2007-1971	Zhoucheng	pull up (rice seedlings)	ma²¹	m a ²¹	754
+4534	Allen2007-1964	Eryuan	pull up (rice seedlings)	pʰia⁴²/ma²¹	m a ²¹	754
+4535	Allen2007-1966	Lanping	pull up (rice seedlings)	pia⁴²/ma²¹	m a ²¹	754
 46	Allen2007-46	Jianchuan	pumpkin	tɕi⁵⁵kua⁵⁵	tɕ i ⁵⁵ k u a ⁵⁵	1172
 47	Allen2007-47	Eryuan	pumpkin	e⁵⁵kua⁵⁵	e ⁵⁵ k u a ⁵⁵	1173
 48	Allen2007-48	Heqing	pumpkin	na⁵⁵kua⁵⁵	n a ⁵⁵ k u a ⁵⁵	1174
@@ -3010,6 +3036,7 @@ ID	LID	DOCULECT	CONCEPT	VALUE	TOKENS	COGID
 1771	Allen2007-1771	Xiangyun	push	tsʰu⁵⁵/ma³⁵	tsʰ u ⁵⁵	130
 1772	Allen2007-1772	Luobenzhuo	push	pʰa⁵⁵	pʰ a ⁵⁵	131
 1773	Allen2007-1773	Zhoucheng	push	ma³⁵	m a ³⁵	129
+4536	Allen2007-1771	Xiangyun	push	tsʰu⁵⁵/ma³⁵	m a ³⁵	129
 1972	Allen2007-1972	Jianchuan	put out to pasture	xã⁵⁵	x ã ⁵⁵	161
 1973	Allen2007-1973	Eryuan	put out to pasture	xa⁵⁵	x a ⁵⁵	161
 1974	Allen2007-1974	Heqing	put out to pasture	xʰã⁵⁵	xʰ ã ⁵⁵	161
@@ -3028,6 +3055,8 @@ ID	LID	DOCULECT	CONCEPT	VALUE	TOKENS	COGID
 2383	Allen2007-2383	Xiangyun	quarrel	ou⁴⁴tɕa⁴⁴	o u ⁴⁴ tɕ a ⁴⁴	227
 2384	Allen2007-2384	Luobenzhuo	quarrel	sao⁵⁵χa⁵⁵	s a o ⁵⁵ χ a ⁵⁵	223
 2385	Allen2007-2385	Zhoucheng	quarrel	sa⁵⁵ɯ⁴⁴	s a ⁵⁵ ɯ ⁴⁴	222
+4537	Allen2007-2378	Eryuan	quarrel	sa⁵⁵xɛ⁴⁴/sa⁵⁵pe³⁵	s a ⁵⁵ p e ³⁵	226
+4538	Allen2007-2380	Lanping	quarrel	sã⁴⁴tʰo³³/ɯ⁴⁴	ɯ ⁴⁴	228
 3970	Allen2007-3970	Jianchuan	quickly	tɕi⁴²tsua⁴²	tɕ i ⁴² ts u a ⁴²	519
 3971	Allen2007-3971	Eryuan	quickly	tɕi⁴²tsua⁴²	tɕ i ⁴² ts u a ⁴²	519
 3972	Allen2007-3972	Heqing	quickly	tɕi⁴²tsua⁴²	tɕ i ⁴² ts u a ⁴²	519
@@ -3036,6 +3065,7 @@ ID	LID	DOCULECT	CONCEPT	VALUE	TOKENS	COGID
 3975	Allen2007-3975	Yunlong	quickly	ka³¹tɕɯ³³	k a ³¹ tɕ ɯ ³³	522
 3976	Allen2007-3976	Xiangyun	quickly	pʰĩ⁵⁵pʰĩ³¹nou⁵⁵	pʰ ĩ ⁵⁵ pʰ ĩ ³¹ n o u ⁵⁵	523
 3977	Allen2007-3977	Luobenzhuo	quickly	tsa⁴⁴lɯ⁵⁵	ts a ⁴⁴ l ɯ ⁵⁵	520
+4539	Allen2007-3974	Qiliqiao	quickly	tɕɯ³¹/ɛ³³lɛ³³	ɛ ³³ l ɛ ³³	229
 892	Allen2007-892	Jianchuan	quilt	lou³¹po³¹	l o u ³¹ p o ³¹	1339
 893	Allen2007-893	Eryuan	quilt	lɔ³¹pɔ³¹	l ɔ ³¹ p ɔ ³¹	1339
 894	Allen2007-894	Heqing	quilt	lɔu³¹pɔu³¹	l ɔ u ³¹ p ɔ u ³¹	1339
@@ -3072,6 +3102,7 @@ ID	LID	DOCULECT	CONCEPT	VALUE	TOKENS	COGID
 1681	Allen2007-1681	Xiangyun	read	ɣou⁴²	ɣ o u ⁴²	760
 1682	Allen2007-1682	Luobenzhuo	read	ɣɯ⁴²sɤ³³	ɣ ɯ ⁴² s ɤ ³³	759
 1683	Allen2007-1683	Zhoucheng	read	ɣɯ⁴²	ɣ ɯ ⁴²	760
+4540	Allen2007-1675	Jianchuan	read	ɣɯ⁴²/jo³¹	j o ³¹	578
 2296	Allen2007-2296	Jianchuan	receive	sɯ⁵⁵	s ɯ ⁵⁵	193
 2297	Allen2007-2297	Eryuan	receive	ʂɯ³⁵	ʂ ɯ ³⁵	193
 2298	Allen2007-2298	Heqing	receive	sɯ⁵⁵	s ɯ ⁵⁵	193
@@ -3090,6 +3121,7 @@ ID	LID	DOCULECT	CONCEPT	VALUE	TOKENS	COGID
 3076	Allen2007-3076	Xiangyun	red	tsʰɛ⁴⁴	tsʰ ɛ ⁴⁴	762
 3077	Allen2007-3077	Luobenzhuo	red	ʈʰa⁵⁵	ʈʰ a ⁵⁵	762
 3078	Allen2007-3078	Zhoucheng	red	tsʰɛ⁴⁴	tsʰ ɛ ⁴⁴	762
+4541	Allen2007-3074	Qiliqiao	red	tsʰɛ⁴⁴/xuɔ³⁵	x u ɔ ³⁵	763
 2557	Allen2007-2557	Jianchuan	remember	tsɯ⁴⁴tɯ⁴⁴	ts ɯ ⁴⁴ t ɯ ⁴⁴	270
 2558	Allen2007-2558	Eryuan	remember	tʂɯ⁴⁴tɯ⁴⁴	tʂ ɯ ⁴⁴ t ɯ ⁴⁴	270
 2559	Allen2007-2559	Heqing	remember	tsɯ⁴⁴tɯ⁴⁴	ts ɯ ⁴⁴ t ɯ ⁴⁴	270
@@ -3117,6 +3149,7 @@ ID	LID	DOCULECT	CONCEPT	VALUE	TOKENS	COGID
 2662	Allen2007-2662	Xiangyun	return	ja²¹	j a ²¹	765
 2663	Allen2007-2663	Luobenzhuo	return	kɯ⁴⁴	k ɯ ⁴⁴	768
 2664	Allen2007-2664	Zhoucheng	return	pe⁴⁴ta⁴²	p e ⁴⁴ t a ⁴²	767
+4542	Allen2007-2661	Yunlong	return	pe⁴⁴ti³⁵/pe⁴⁴ja⁴⁴	p e ⁴⁴ j a ⁴⁴	766
 3493	Allen2007-3493	Jianchuan	rich	kou²¹ɕo²¹	k o u ²¹ ɕ o ²¹	774
 3494	Allen2007-3494	Eryuan	rich	kɔ²¹ji³⁵pɔ³⁵	k ɔ ²¹ j i ³⁵ p ɔ ³⁵	775
 3495	Allen2007-3495	Heqing	rich	kɔ²¹jĩ²¹pɔu⁵⁵	k ɔ ²¹ j ĩ ²¹ p ɔ u ⁵⁵	775
@@ -3180,6 +3213,7 @@ ID	LID	DOCULECT	CONCEPT	VALUE	TOKENS	COGID
 169	Allen2007-169	Xiangyun	root	me³¹me³¹	m e ³¹ m e ³¹	785
 170	Allen2007-170	Luobenzhuo	root	bo⁵⁵mɛ⁴⁴	b o ⁵⁵ m ɛ ⁴⁴	788
 171	Allen2007-171	Zhoucheng	root	mi⁴⁴	m i ⁴⁴	786
+4543	Allen2007-166	Lanping	root	te⁴⁴/mi⁵⁵	m i ⁵⁵	786
 1540	Allen2007-1540	Jianchuan	salary,pay	ɣɯ⁴²kɛ⁴²	ɣ ɯ ⁴² k ɛ ⁴²	109
 1541	Allen2007-1541	Eryuan	salary,pay	ɣɯ⁴²kʲɛ⁴²	ɣ ɯ ⁴² kʲ ɛ ⁴²	109
 1542	Allen2007-1542	Heqing	salary,pay	ɣɯ⁴²kɛ⁴²	ɣ ɯ ⁴² k ɛ ⁴²	109
@@ -3405,6 +3439,7 @@ ID	LID	DOCULECT	CONCEPT	VALUE	TOKENS	COGID
 3193	Allen2007-3193	Xiangyun	slow	pʰi⁵⁵	pʰ i ⁵⁵	370
 3194	Allen2007-3194	Luobenzhuo	slow	diɛ³¹	d i ɛ ³¹	371
 3195	Allen2007-3195	Zhoucheng	slow	pʰi⁵⁵	pʰ i ⁵⁵	370
+4544	Allen2007-3191	Qiliqiao	slow	kʰua³⁵ɕi³⁵/pʰi⁴²	pʰ i ⁴²	370
 3961	Allen2007-3961	Jianchuan	slowly	kʰũã⁵⁵ɕi⁵⁵	kʰ ũ ã ⁵⁵ ɕ i ⁵⁵	515
 3962	Allen2007-3962	Eryuan	slowly	kʰua⁵⁵ɕi⁵⁵	kʰ u a ⁵⁵ ɕ i ⁵⁵	515
 3963	Allen2007-3963	Heqing	slowly	kʰũã⁵⁵ɕi⁵⁵	kʰ ũ ã ⁵⁵ ɕ i ⁵⁵	515
@@ -3485,6 +3520,7 @@ ID	LID	DOCULECT	CONCEPT	VALUE	TOKENS	COGID
 2131	Allen2007-2131	Xiangyun	soak (seeds)	zɿ²¹	z ɿ ²¹	830
 2132	Allen2007-2132	Luobenzhuo	soak (seeds)	ɲũã⁵⁵	ɲ ũ ã ⁵⁵	831
 2133	Allen2007-2133	Zhoucheng	soak (seeds)	tsɿ²¹	ts ɿ ²¹	828
+4545	Allen2007-2128	Lanping	soak (seeds)	pʰao⁵⁵/tsɯ²¹	ts ɯ ²¹	828
 1108	Allen2007-1108	Jianchuan	soil	tʰu³³sɿ³³	tʰ u ³³ s ɿ ³³	1000
 1109	Allen2007-1109	Eryuan	soil	tʰu³³	tʰ u ³³	1001
 1110	Allen2007-1110	Heqing	soil	tʰu³³sɿ³³	tʰ u ³³ s ɿ ³³	1000
@@ -3647,6 +3683,7 @@ ID	LID	DOCULECT	CONCEPT	VALUE	TOKENS	COGID
 2077	Allen2007-2077	Xiangyun	stick,glue	nia⁴²	n i a ⁴²	168
 2078	Allen2007-2078	Luobenzhuo	stick,glue	pʰæ⁴²	pʰ æ ⁴²	173
 2079	Allen2007-2079	Zhoucheng	stick,glue	ɲa⁴⁴	ɲ a ⁴⁴	168
+4546	Allen2007-2075	Qiliqiao	stick,glue	ŋa³⁵/tɕʰa⁴⁴	tɕʰ a ⁴⁴	167
 2089	Allen2007-2089	Jianchuan	stir-fry	tsʰu³³	tsʰ u ³³	860
 2090	Allen2007-2090	Eryuan	stir-fry	tsʰu³³	tsʰ u ³³	860
 2091	Allen2007-2091	Heqing	stir-fry	tsʰu³³	tsʰ u ³³	860
@@ -3845,6 +3882,8 @@ ID	LID	DOCULECT	CONCEPT	VALUE	TOKENS	COGID
 2374	Allen2007-2374	Xiangyun	tell	kã³⁵	k ã ³⁵	792
 2375	Allen2007-2375	Luobenzhuo	tell	tsuɔ⁴²qã⁵⁵	ts u ɔ ⁴² q ã ⁵⁵	793
 2376	Allen2007-2376	Zhoucheng	tell	sua⁴⁴kɯ³¹	s u a ⁴⁴ k ɯ ³¹	580
+4547	Allen2007-2370	Heqing	tell	ka³¹/tsɔu⁴²	ts ɔ u ⁴²	794
+4548	Allen2007-2368	Jianchuan	tell	ka³¹/sua⁴⁴	s u a ⁴⁴	581
 3592	Allen2007-3592	Jianchuan	ten	tsɛ⁴²	ts ɛ ⁴²	885
 3593	Allen2007-3593	Eryuan	ten	tsɿ⁴²	ts ɿ ⁴²	885
 3594	Allen2007-3594	Heqing	ten	tsɿ⁴²	ts ɿ ⁴²	885
@@ -4438,6 +4477,8 @@ ID	LID	DOCULECT	CONCEPT	VALUE	TOKENS	COGID
 1420	Allen2007-1420	Xiangyun	word,speech	tã²¹	t ã ²¹	845
 1421	Allen2007-1421	Luobenzhuo	word,speech	tso³¹tɔ̃³¹	ts o ³¹ t ɔ̃ ³¹	847
 1422	Allen2007-1422	Zhoucheng	word,speech	to²¹	t o ²¹	845
+4549	Allen2007-1414	Jianchuan	word,speech	ɕi⁵⁵ɣou⁴²/tõ²¹	t õ ²¹	845
+4550	Allen2007-1417	Lanping	word,speech	tɔ̃²¹/wɔ̃⁴²	w ɔ̃ ⁴²	586
 2062	Allen2007-2062	Jianchuan	write	vɛ⁴²	v ɛ ⁴²	165
 2063	Allen2007-2063	Eryuan	write	wɛ⁴²	w ɛ ⁴²	165
 2064	Allen2007-2064	Heqing	write	vɛ⁴²	v ɛ ⁴²	165

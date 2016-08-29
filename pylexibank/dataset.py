@@ -15,7 +15,7 @@ from pycldf.dataset import Dataset as CldfDatasetBase
 from pycldf.dataset import MD_SUFFIX
 
 import pylexibank
-from pylexibank.util import with_sys_path
+from pylexibank.util import with_sys_path, data_path
 from pylexibank.lingpy_util import test_sequences
 
 logging.basicConfig(level=logging.INFO)
@@ -73,6 +73,10 @@ class Dataset(object):
         if cpath.exists():
             self.concepts = list(reader(cpath, dicts=True))
         self.cognates = Cognates()
+
+    @classmethod
+    def from_name(cls, name):
+        return cls(data_path(name))
 
     def iter_cldf_datasets(self):
         for fname in sorted(self.cldf_dir.glob('*' + MD_SUFFIX), key=lambda f: f.name):

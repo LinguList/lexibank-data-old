@@ -14,6 +14,7 @@ requires = [
     'pyconcepticon',
     'lingpy',
     'pyclpa>=0.3.1',
+    'tabulate',
 ]
 
 setup(

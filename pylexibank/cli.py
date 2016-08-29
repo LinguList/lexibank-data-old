@@ -11,14 +11,16 @@ The basic invocation looks like
     lexibank [OPTIONS] <command> [args]
 
 """
-from __future__ import unicode_literals, division
+from __future__ import unicode_literals, division, print_function
 import os
 import sys
 from time import time
+from textwrap import wrap
 
 from clldutils.clilib import ArgumentParser, ParserError
 from clldutils.path import Path
 from clldutils import jsonlib
+from tabulate import tabulate
 
 import pylexibank
 from pylexibank.util import data_path, formatted_number
@@ -66,11 +68,20 @@ def download(args):
     get_dataset(args).download()
 
 
-def list_(args):
+def short_title(t):
+    L = 40
+    if len(t) > L:
+        return wrap(t, width=L)[0] + '...'
+    return t
+
+
+def ls(args):
+    table = []
     for d in data_path(repos=Path(args.lexibank_repos)).iterdir():
         if is_dataset_dir(d):
             ds = Dataset(d)
-            print(d.name, ds.md['dc:title'])
+            table.append((d.name, short_title(ds.md['dc:title'])))
+    print(tabulate(sorted(table, key=lambda r: r[0])))
 
 
 def with_dataset(args, func):
@@ -274,7 +285,7 @@ def check(args):
 
 
 def main():
-    parser = ArgumentParser('pylexibank', readme, download, cldf, list_, report)
+    parser = ArgumentParser('pylexibank', readme, download, cldf, ls, report)
     parser.add_argument(
         '--lexibank-repos',
         help="path to lexibank data repository",
