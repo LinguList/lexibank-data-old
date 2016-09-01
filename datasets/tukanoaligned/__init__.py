@@ -27,7 +27,6 @@ def cldf(dataset, glottolog, concepticon, **kw):
     src1 = getEvoBibAsSource('Chacon2014')
     src2 = getEvoBibAsSource('Chacon2015')
     gloss2conc = {r['GLOSS']: r['CONCEPTICON_ID'] for r in dataset.concepts}
-    print(gloss2conc['feminine'])
     iso2gc = {l.iso: l.id for l in glottolog.languoids() if l.iso}
 
     with CldfDataset((
