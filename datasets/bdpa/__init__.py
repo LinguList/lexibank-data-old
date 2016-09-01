@@ -11,23 +11,29 @@ import lingpy as lp
 URL = "https://zenodo.org/record/11880/files/germanic.zip"
 PATH = Path("Germanic/msa/")
 FILES = list(range(369, 480))
-languages = {"English" : "stan1293", "Danish" : "dani1285", "Dutch" : "dutc1256", "Faroese" : "faro1244", "German" : "stan1295", "Icelandic" : "icel1247", "Norwegian (Stavanger)" : "norw1258", "Yiddish (New York)" : "west2361", "West Frisian (Grou)" : "west2354"}
+languages = {
+    "English": "stan1293",
+    "Danish": "dani1285",
+    "Dutch": "dutc1256",
+    "Faroese": "faro1244",
+    "German": "stan1295",
+    "Icelandic": "icel1247",
+    "Norwegian (Stavanger)": "norw1258",
+    "Yiddish (New York)": "west2361",
+    "West Frisian (Grou)": "west2354"
+}
 
 
 def download(dataset, **kw):
     download_and_unpack_zipfiles(
-            URL,
-            dataset,
-            *[
-                PATH.joinpath('phonalign_{0}.msa'.format(i)) for i in range(
-                    369,
-                    480)
-                ]
-            )
+        URL,
+        dataset,
+        *[PATH.joinpath('phonalign_{0}.msa'.format(i)) for i in range(369, 480)])
+
 
 def cldf(dataset, glottobank, concepticon, **kw):
-    concepts = {x['GLOSS'] : x['CONCEPTICON_ID'] for x in dataset.concepts} 
-    D = {} # dictionary to be passed to lingpy
+    concepts = {x['GLOSS']: x['CONCEPTICON_ID'] for x in dataset.concepts}
+    D = {}  # dictionary to be passed to lingpy
     D[0] = ['doculect', 'glottolog', 'concept', 'concepticon', 'ipa', 'segments', 'cogid', 'alignment']
     idx = 1
     for f in FILES:
@@ -78,5 +84,3 @@ def cldf(dataset, glottobank, concepticon, **kw):
                 '', 'expert', 'Heggarty2007', alm[k, 'alignment'],
                 'expert', 'List2014e']]
         dataset.write_cognates()
-
-

@@ -1,4 +1,4 @@
-# Sidwell Austroasiatic lexical data set for phylogenetic analyses: 2015 version
+# Austroasiatic dataset for phylogenetic analysis
 
 Cite the source dataset as
 
@@ -13,10 +13,10 @@ Available online at http://dx.doi.org/10.5281/zenodo.34092
 
 - **Varieties:** 122
 - **Concepts:** 200
-- **Lexemes:** 23,996
+- **Lexemes:** 47,992
 - **Synonymy:** 1.07
-- **Cognacy:** 0 cognates in 0 cognate sets
+- **Cognacy:** 19,364 cognates in 2,944 cognate sets
 - **Invalid lexemes:** 1
-- **Tokens:** 99,170
+- **Tokens:** 198,340
 - **Segments:** 881 (67 LingPy errors, 520 CLPA errors, 118 CLPA modified)
 - **Inventory size (avg):** 54.89

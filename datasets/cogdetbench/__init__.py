@@ -16,27 +16,26 @@ sources = ['Starostin2005b', 'Hou2004', 'Starostin2005b', 'Starostin2005b',
         'Starostin2005', 'Wang2006']
 
 correct_languages = {
-        "Guixian" : "Guiyang",
-        "Berawan (Long Terawan)" : "Berawan_Long_Terawan",
-        "Merina (Malagasy)" : "Merina_Malagasy"
+        "Guixian": "Guiyang",
+        "Berawan (Long Terawan)": "Berawan_Long_Terawan",
+        "Merina (Malagasy)": "Merina_Malagasy"
         }
 correct_concepts = {
-        "ear 1" : "ear",
-        "i" : "I",
-        "lie 1" : "lie", 
-        "light" : "watery",
-        "soja sauce" : "soya sauce",
-        "two pairs" : "two ounces",
-        "walk (go)" : "walk(go)",
-        "warm (hot)" : "warm",
-        "gras" : "grass", 
-        "saliva (splits)" : "saliva (spit)"
+        "ear 1": "ear",
+        "i": "I",
+        "lie 1": "lie",
+        "light": "watery",
+        "soja sauce": "soya sauce",
+        "two pairs": "two ounces",
+        "walk (go)": "walk(go)",
+        "warm (hot)": "warm",
+        "gras": "grass",
+        "saliva (splits)": "saliva (spit)"
         }
         
 
 def download(dataset, **kw):
-    download_and_unpack_zipfiles(URL, dataset, *[PATH.joinpath(dset) for dset \
-            in DSETS])
+    download_and_unpack_zipfiles(URL, dataset, *[PATH.joinpath(dset) for dset in DSETS])
 
 
 def cldf(dataset, glottolog, concepticon, **kw):
@@ -45,7 +44,7 @@ def cldf(dataset, glottolog, concepticon, **kw):
 
     for dset, srckey in zip(DSETS, sources):
         wl = lp.Wordlist(dataset.raw.joinpath(dset).as_posix())
-        if not 'tokens' in wl.header:
+        if 'tokens' not in wl.header:
             wl.add_entries('tokens', 'ipa', lp.ipa2tokens, merge_vowels=False,
                     expand_nasals=True)
         src = getEvoBibAsSource(srckey)

@@ -209,7 +209,11 @@ def iter_alignments(
         alm = lp.Alignments(dataset, ref='cogid')
         alm.align(method=method)
         for row in cognate_sets:
-            idx = int(row[0].split('-')[1])
+            try:
+                idx = int(row[0].split('-')[1])
+            except:
+                print(row)
+                raise
             row[7] = alm[idx, 'alignment']
             row[8] = 'SCA-'+method
             yield row

@@ -4,7 +4,7 @@ Cite the source dataset as
 
 > List, J.-M., P. Lopez, and E. Bapteste (2016): Using sequence similarity networks to identify partial cognates in multilingual wordlists. In: Proceedings of the Association of Computational Linguistics 2016. Short Papers.
 
-This dataset is licensed under a https://www.gnu.org/licenses/gpl-3.0.de.html license
+This dataset is licensed under a https://creativecommons.org/licenses/by-nc/4.0/ license
 
 Available online at https://zenodo.org/record/51328/files/partial-cognate-detection-v1.0.zip
 
@@ -13,10 +13,10 @@ Available online at https://zenodo.org/record/51328/files/partial-cognate-detect
 
 - **Varieties:** 32
 - **Concepts:** 236
-- **Lexemes:** 5,194
+- **Lexemes:** 10,388
 - **Synonymy:** 1.06
 - **Cognacy:** 4,263 cognates in 756 cognate sets
 - **Invalid lexemes:** 0
-- **Tokens:** 28,639
+- **Tokens:** 57,278
 - **Segments:** 147 (0 LingPy errors, 0 CLPA errors, 0 CLPA modified)
 - **Inventory size (avg):** 43.41

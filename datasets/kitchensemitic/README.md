@@ -1,4 +1,4 @@
-# Andrew Kitchen et al.: Semitic languages
+# Lexicostatistic Wordlist of Semitic Languages
 
 Cite the source dataset as
 
@@ -11,10 +11,10 @@ See also http://rspb.royalsocietypublishing.org/content/early/2009/04/27/rspb.20
 
 - **Varieties:** 25
 - **Concepts:** 95
-- **Lexemes:** 2,242
+- **Lexemes:** 4,484
 - **Synonymy:** 1.00
-- **Cognacy:** 0 cognates in 0 cognate sets
+- **Cognacy:** 1,731 cognates in 322 cognate sets
 - **Invalid lexemes:** 0
-- **Tokens:** 9,944
+- **Tokens:** 19,888
 - **Segments:** 190 (18 LingPy errors, 82 CLPA errors, 37 CLPA modified)
 - **Inventory size (avg):** 43.16

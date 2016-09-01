@@ -13,10 +13,10 @@ Available online at http://transnewguinea.org/
 
 - **Varieties:** 1,002
 - **Concepts:** 239
-- **Lexemes:** 144,598
+- **Lexemes:** 289,196
 - **Synonymy:** 1.17
 - **Cognacy:** 0 cognates in 0 cognate sets
 - **Invalid lexemes:** 130
-- **Tokens:** 697,804
+- **Tokens:** 1,395,608
 - **Segments:** 1,291 (228 LingPy errors, 969 CLPA errors, 120 CLPA modified)
 - **Inventory size (avg):** 31.17

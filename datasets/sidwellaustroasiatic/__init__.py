@@ -83,7 +83,7 @@ def cldf(dataset, glottolog_, concepticon, **kw):
             'Comment',
             ), dataset) as ds:
         ds.sources.add(*sources.values())
-        D = {0 : ['doculect', 'concept', 'ipa', 'tokens', 'cog']}
+        D = {0: ['lid', 'doculect', 'concept', 'ipa', 'tokens', 'cog']}
         for i, row in enumerate(words):
             form = row[4]
             if not form or form in '*-':
@@ -95,13 +95,13 @@ def cldf(dataset, glottolog_, concepticon, **kw):
             if not gc:
                 unmapped.languages.add(('', lang, languages[lang][7]))
             # get segments
-            segments = clean_string(form)
+            segments = clean_string(form)[0]
             # get cognate identifier
-            cogid = row[5] if row[5].strip() and row[5].strip() != '*' else 'e'+str(i)
+            cogid = row[5] if row[5].strip() and row[5].strip() != '*' else ('e%s' % i)
             cogid = row[1] + '-' + cogid
-            
+            lid = '{0}-{1}'.format(ds.name, i + 1)
             ds.add_row([
-                '{0}-{1}'.format(dataset.name, i+1),
+                lid,
                 glottolog.get(lang, glottolog.get(languages[lang][7])),
                 lang,
                 languages[lang][7],
@@ -112,11 +112,10 @@ def cldf(dataset, glottolog_, concepticon, **kw):
                 sources[lang].id,
                 None
             ])
-            D[i+1] = [lang, row[1], form, segments, cogid]
+            D[i + 1] = [lid, lang, row[1], form, segments, cogid]
         wl = lp.Wordlist(D)
         wl.renumber('cog')
         alm = lp.Alignments(wl)
-        dataset.cognates.extend(iter_alignments(alm, wordlist2cognates(wl, ds,
-            SOURCE)))
-            
+        dataset.cognates.extend(iter_alignments(alm, wordlist2cognates(wl, ds, SOURCE)))
+
     unmapped.pprint()

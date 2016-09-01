@@ -13,10 +13,10 @@ Available online at http://edictor.digling.org/?file=tukano
 
 - **Varieties:** 16
 - **Concepts:** 122
-- **Lexemes:** 1,542
+- **Lexemes:** 3,084
 - **Synonymy:** 1.00
 - **Cognacy:** 1,534 cognates in 141 cognate sets
 - **Invalid lexemes:** 0
-- **Tokens:** 6,276
+- **Tokens:** 12,552
 - **Segments:** 67 (7 LingPy errors, 21 CLPA errors, 10 CLPA modified)
 - **Inventory size (avg):** 28.62

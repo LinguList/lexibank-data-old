@@ -1,10 +1,10 @@
-# Chinese Basic Vocabulary Lists
+# BCD
 
 Cite the source dataset as
 
-> List, J.-M. (2015): Network perspectives on Chinese dialect history. Bulletin of Chinese Linguistics 8. 42-67.
+> Wang, F. 2004. BCD: basic words of Chinese dialects. Unpublished dataset. [Digital version in: List, J.-M. (2015): Network perspectives on Chinese dialect history. Bulletin of Chinese Linguistics 8. 42-67.]
 
-This dataset is licensed under a https://www.gnu.org/licenses/gpl-3.0.de.html license
+This dataset is licensed under a https://creativecommons.org/licenses/by-nc/4.0/ license
 
 Available online at https://gist.github.com/LinguList/7481097
 
