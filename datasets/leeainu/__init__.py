@@ -1,7 +1,7 @@
 # coding: utf8
 from __future__ import unicode_literals, print_function, division
-from itertools import groupby
-from collections import OrderedDict
+from itertools import izip_longest
+from collections import OrderedDict, defaultdict
 
 from clldutils.dsv import UnicodeReader
 from clldutils.misc import slug
@@ -64,6 +64,12 @@ def cldf(dataset, glottolog, concepticon, **kw):
     language_map = {l['NAME']: l['GLOTTOCODE'] or None for l in dataset.languages}
     concept_map = {c['ENGLISH']: c['CONCEPTICON_ID']
                    for c in concepticon.conceptlist(dataset.conceptlist)}
+    wordlists = list(read_csv(dataset))
+    cogsets = defaultdict(lambda: defaultdict(list))
+    for wl in wordlists:
+        for concept, (words, cogids) in wl.words.items():
+            if len(cogids) == 1:
+                cogsets[concept][cogids[0]].append(words[0])
 
     with CldfDataset((
         'ID',
@@ -75,8 +81,23 @@ def cldf(dataset, glottolog, concepticon, **kw):
         'Source',
         'Comment',
     ), dataset) as ds:
-        for wl in read_csv(dataset):
+        for wl in wordlists:
             #print(wl.language)
-            for k, v in wl.words.items():
-                #print(k, v)
+            for concept, (words, cogids) in wl.words.items():
+                if len(cogids) > 1:
+                    if len(words) < len(cogids):
+                        if len(words) == 1:
+                            if ':' in words[0]:
+                                words = words[0].split(':')
+                            if ',' in words[0]:
+                                words = words[0].split(',')
+                        assert len(words) >= len(cogids)
+                    print('    # Language {0} concept {1}'.format(wl.language, concept))
+                    for cogid in cogids:
+                        print('    # {0}: {1}'.format(cogid, '; '.join(cogsets[concept][cogid])))
+                    print('    {')
+                    for word, cogid in izip_longest(words, cogids):
+                        print('        "%s": %s,' % (word, cogid))
+                    print('    },')
+                    #print('    (%s, %s),' % (words, cogids))
                 pass

@@ -42,8 +42,8 @@ COGSET_MAP = {
     # 1: núnnun; nun; nunnun; sikonun; nunnun
     # 2: sikoní; ní
     {
-        "ní": 1,
-        "númnum": 2,
+        "ní": 2,
+        "númnum": 1,
     },
     # Language Horobetsu concept what
     # 1: nép; nép; nep; nep; nep; nep; nep; nep
@@ -63,8 +63,8 @@ COGSET_MAP = {
     # 1: 'oyá; 'oyá; 'oya; 'oya; 'oya; 'oyá; 'oyá; 'oyá; 'oyá; 'oyá; 'oyá; 'oyá
     # 2: mósma; mósma
     {
-        "mósma": 1,
-        "'oyá": 2,
+        "mósma": 2,
+        "'oyá": 1,
     },
     # Language Horobetsu concept leg
     # 1: cikír; cikír; cikír; cikír; cikír; cikír; cikír
@@ -77,8 +77,8 @@ COGSET_MAP = {
     # 1: níyepuy; ní'epuy; 'epuyke; níyepuy; níyepuy
     # 2: níka'op; níka'op; níka'op; níka'op
     {
-        "níka'op": 1,
-        "'epúyke": 2,
+        "níka'op": 2,
+        "'epúyke": 1,
     },
     # Language Horobetsu concept if
     # 1: nisap/ko; /ko
@@ -105,8 +105,8 @@ COGSET_MAP = {
     # 1: núnnun; nun; nunnun; sikonun; nunnun
     # 2: sikoní; ní
     {
-        "ní": 1,
-        "núnnun": 2,
+        "ní": 2,
+        "núnnun": 1,
     },
     # Language Horobetsu concept dust
     # 1: maná; maná; paná; paná; paná; paná; toypana; pana; paná
@@ -126,15 +126,15 @@ COGSET_MAP = {
     # 1: 'oyá; 'oyá; 'oya; 'oya; 'oya; 'oyá; 'oyá; 'oyá; 'oyá; 'oyá; 'oyá; 'oyá
     # 2: mósma; mósma
     {
-        "mósma": 1,
-        "'oyá": 2,
+        "mósma": 2,
+        "'oyá": 1,
     },
     # Language Hiratori concept fruit
     # 1: níyepuy; ní'epuy; 'epuyke; níyepuy; níyepuy
     # 2: níka'op; níka'op; níka'op; níka'op
     {
-        "níka'op": 1,
-        "múnepuy": 2,
+        "níka'op": 2,
+        "múnepuy": 1,
     },
     # Language Hiratori concept father
     # 2: míci; míci; míci; míci; míci; míci
@@ -161,22 +161,22 @@ COGSET_MAP = {
     # 1: húra nú; húra nú; húra nú; hura nu; húra nú; húra nú; húra nú; húra nú; húra nú; huránu
     # 3: húrarakkar; húrarakkar
     {
-        "húrarapkar": 1,
-        "húra nú": 3,
+        "húrarapkar": 3,
+        "húra nú": 1,
     },
     # Language Hiratori concept to suck
     # 1: núnnun; nun; nunnun; sikonun; nunnun
     # 2: sikoní; ní
     {
-        "ní": 1,
-        "núnnun": 2,
+        "ní": 2,
+        "núnnun": 1,
     },
     # Language Samani concept to suck
     # 1: núnnun; nun; nunnun; sikonun; nunnun
     # 2: sikoní; ní
     {
-        "ni": 1,
-        "nunnuɴ": 2,
+        "ni": 2,
+        "nunnuɴ": 1,
     },
     # Language Obihiro concept cloud
     # 2: nis; nis
@@ -210,15 +210,15 @@ COGSET_MAP = {
     # 1: sekúkke; sekuhke; sekukke; sekuhke; sekuhke; sekuhke; sekuhke
     # 3: sipísese; sipíse; sipísese; pisé; piséne
     {
-        "pisé": 1,
-        "sekúkke": 3,
+        "pisé": 3,
+        "sekúkke": 1,
     },
     # Language Obihiro concept to think
     # 2: sanniyo
     # 3: 'eyáyko'uwepeker; yáykopepeker
     {
-        "yáykopepeker": 2,
-        "yaykosanniyo": 3,
+        "yáykopepeker": 3,
+        "yaykosanniyo": 2,
     },
     # Language Obihiro concept to suck
     # 1: núnnun; nun; nunnun; sikonun; nunnun
@@ -231,15 +231,15 @@ COGSET_MAP = {
     # 1: maná; maná; paná; paná; paná; paná; toypana; pana; paná
     # 3:
     {
-        "kopónci": 1,
-        "paná": 3,
+        "kopónci": 3,
+        "paná": 1,
     },
     # Language Kushiro concept cloud
     # 1: nískur; kúr; nískur; nískur; nískur; nískur; nís; niskuru; niskuru; niskuru; niskuru
     # 3: 'uurara; 'uurara
     {
-        "'urar": 1,
-        "niskur": 3,
+        "'urar": 3,
+        "niskur": 1,
     },
     # Language Kushiro concept to suck
     # 1: núnnun; nun; nunnun; sikonun; nunnun
@@ -273,8 +273,8 @@ COGSET_MAP = {
     # 3: 'apappo; hapáppo
     # 4: 'epúy; 'epúy; 'epuy; 'ekipuy; 'epuy; 'ekipuy; 'epuy; munepuy
     {
-        "'epuyke": 3,
-        "'apappo": 4,
+        "'epuyke": 4,
+        "'apappo": 3,
     },
     # Language Bihoro concept to swell
     # 1: sekúkke; sekuhke; sekukke; sekuhke; sekuhke; sekuhke; sekuhke
@@ -287,15 +287,15 @@ COGSET_MAP = {
     # 1: yáykosiramsuye; yáykosiramsuye; yáykosiramse; yáykosiramsuye; yáykosiramsuye; yáykosiramsuye
     # 2: sanniyo
     {
-        "yaykosanniyo": 1,
-        "yaykosiramsuye": 2,
+        "yaykosanniyo": 2,
+        "yaykosiramsuye": 1,
     },
     # Language Bihoro concept to suck
     # 1: núnnun; nun; nunnun; sikonun; nunnun
     # 2: sikoní; ní
     {
-        "ni": 1,
-        "nunnum": 2,
+        "ni": 2,
+        "nunnum": 1,
     },
     # Language Asahikawa concept woman
     # 1: menokó; menokó; menokó; menokó; menokó; menokó; menokó; menokó; menéko
@@ -323,8 +323,8 @@ COGSET_MAP = {
     # 3: 'uurara; 'uurara
     {
         "nís": 1,
-        "nískur": 3,
-        "'úrar": None,
+        "nískur": 1,
+        "'úrar": 3,
     },
     # Language Asahikawa concept other
     # 1: 'oyá; 'oyá; 'oya; 'oya; 'oya; 'oyá; 'oyá; 'oyá; 'oyá; 'oyá; 'oyá; 'oyá
@@ -337,8 +337,8 @@ COGSET_MAP = {
     # 2: /yakun; /yakun; /yakun
     # 3: /cik; /cikanak; /ciki; /ciki; 'iká/ciki; /ciki; /ciki; /ciki
     {
-        "/ciki": 2,
-        "yak": 3,
+        "/ciki": 3,
+        "yak": 2,
     },
     # Language Asahikawa concept to think
     # 3: 'eyáyko'uwepeker; yáykopepeker
@@ -358,8 +358,8 @@ COGSET_MAP = {
     # 1: parúnpe; párunpe; parúnpe; parúnpe; parúnpe; parúnpe; parúnpe; parúnpe; parúnpe; parúnpe; parúnpe
     # 2: 'áw; 'áw; 'áw; 'áw; 'áw; 'áw; 'áw
     {
-        "'áw": 1,
-        "parúnpe": 2,
+        "'áw": 2,
+        "parúnpe": 1,
     },
     # Language Nayoro concept here
     # 1: téta; téta; téta; téta; téta; téta; téta; teeta; teeta; teeta; teeta; teeta; teyta
@@ -387,15 +387,15 @@ COGSET_MAP = {
     # 3: pátoy; pátoy; pátoy
     {
         "pápus": 2,
-        "cápus": 3,
-        "pátoy": None,
+        "cápus": 2,
+        "pátoy": 3,
     },
     # Language Nayoro concept ice
     # 1: kónru; kónru; kónru; kónru; kónru; kónru; kónru; kónru; kónru; kónru; kónru
     # 2: rúp; ruh; rup; ruh; ruh; ruh; tup
     {
-        "rúp": 1,
-        "kónru": 2,
+        "rúp": 2,
+        "kónru": 1,
     },
     # Language Nayoro concept to pull
     # 1: 'etayé; 'etayé; 'etáye; 'etáye; 'etáye; 'etáye; 'etáye; 'etáye; 'etáye; 'etáye
@@ -422,8 +422,8 @@ COGSET_MAP = {
     # 1: ninú; nínninu
     # 2: 'ukáwka; 'ukáwka; 'ukáwka; 'ukáwka; 'ukawka; 'ukawka; 'ukáwka; 'ukáwka; 'ukáwka; 'ukáwka; 'ukáwka; 'ukáwka; 'ukáwka; 'ukáwka
     {
-        "'ukáwka": 1,
-        "ninú": 2,
+        "'ukáwka": 2,
+        "ninú": 1,
     },
     # Language Nayoro concept dust
     # 1: maná; maná; paná; paná; paná; paná; toypana; pana; paná
@@ -436,8 +436,8 @@ COGSET_MAP = {
     # 1: nép; nép; nep; nep; nep; nep; nep; nep
     # 2: hemánta; hínta; hemánta; hemata; hemata; hemata; hemata; hemata; hemata
     {
-        "hemáta": 1,
-        "nép": 2,
+        "hemáta": 2,
+        "nép": 1,
     },
     # Language Sôya concept root
     # 1: sínrit; sínrit; sínrit; sínrit; sínrit; sínrit; sínrit; sínrit; sínrit; sínrit; sínrit; sínrit
@@ -450,15 +450,15 @@ COGSET_MAP = {
     # 1: nískur; kúr; nískur; nískur; nískur; nískur; nís; niskuru; niskuru; niskuru; niskuru
     # 3: 'uurara; 'uurara
     {
-        "'úrar": 1,
-        "nískur": 3,
+        "'úrar": 3,
+        "nískur": 1,
     },
     # Language Sôya concept smoke
     # 1: sipuyá; sipuyá; supúya; supúya; supúya; supúya; supúya; supúya; supúya; supúya; supúya
     # 2: pá; paa; paa; paa; paa; paa; paa
     {
-        "pá": 1,
-        "sipúya": 2,
+        "pá": 2,
+        "sipúya": 1,
     },
     # Language Sôya concept fire
     # 1: 'apé; 'apé; 'apé; 'apé; 'apé; 'apé; 'apé; 'apé; 'apé; 'apé; 'apé; 'apé
@@ -492,15 +492,15 @@ COGSET_MAP = {
     # 1: núnnun; nun; nunnun; sikonun; nunnun
     # 2: sikoní; ní
     {
-        "ni": 1,
-        "nunnun": 2,
+        "ni": 2,
+        "nunnun": 1,
     },
     # Language Ochiho concept louse
     # 1: 'úrki; 'úrki; 'úrki; 'úrki; 'úrki; 'úrki; 'úrki; 'úrki; 'úrki; 'úrki; 'úrki; 'úrki; 'úrki; 'uriki
     # 2: rasi; rasi; tasi
     {
-        "rasi": 1,
-        "'uriki": 2,
+        "rasi": 2,
+        "'uriki": 1,
     },
     # Language Ochiho concept straight
     # 3: ku'anno; 'e'iku'anno
@@ -513,31 +513,31 @@ COGSET_MAP = {
     # 2: 'emuyke; 'imiki; 'emuyke; 'emuyke
     # 3:
     {
-        "'anpahno": 2,
-        "'imiki": 3,
+        "'anpahno": 3,
+        "'imiki": 2,
     },
     # Language Tarantomari concept many
     # 1: porónno; poro'ónno; porónno; porónno; porónno; porónno; porónno; porónno; porónno; porónno; porónno; porónno; porónno; poroono; poroono
     # 2:
     # 3:
     {
-        "'okayno": 1,
+        "'okayno": 3,
         "renkayne": 2,
-        "poronno": 3,
+        "poronno": 1,
     },
     # Language Tarantomari concept root
     # 1: sínrit; sínrit; sínrit; sínrit; sínrit; sínrit; sínrit; sínrit; sínrit; sínrit; sínrit; sínrit
     # 2: ciɴkew; niicinkew; cinkew
     {
-        "cinkew": 1,
-        "niisinrit": 2,
+        "cinkew": 2,
+        "niisinrit": 1,
     },
     # Language Tarantomari concept skin
     # 1: káp; káp; káp; káp; káp; káp; káp; káp; káp; káp; káp; káp; kah; kah
     # 2: rus; rus
     {
-        "rus": 1,
-        "kap": 2,
+        "rus": 2,
+        "kap": 1,
     },
     # Language Tarantomari concept foot
     # 1: 'uré; pará'ure; 'uré; 'uré; paráwre; 'uré; paráwre; para'uri; parure
@@ -564,8 +564,8 @@ COGSET_MAP = {
     # 2: cókay
     # 3: 'anokay; 'anoka(y)
     {
-        "'anokay": 2,
-        "co'okay": 3,
+        "'anokay": 3,
+        "co'okay": 2,
     },
     # Language Maoka concept many
     # 1: porónno; poro'ónno; porónno; porónno; porónno; porónno; porónno; porónno; porónno; porónno; porónno; porónno; porónno; poroono; poroono
@@ -592,15 +592,15 @@ COGSET_MAP = {
     # 1: káp; káp; káp; káp; káp; káp; káp; káp; káp; káp; káp; káp; kah; kah
     # 2: rus; rus
     {
-        "rus": 1,
-        "kah": 2,
+        "rus": 2,
+        "kah": 1,
     },
     # Language Maoka concept dry
     # 1: sít; sít; sít; sít; sít; sít; sít; sít; sít; sít; sít; sít; sáttek; sahteh; sahteh; sahteh; sattek
     # 2: riwa
     {
-        "riwa": 1,
-        "sahteh": 2,
+        "riwa": 2,
+        "sahteh": 1,
     },
     # Language Maoka concept ye
     # 1: 'eciókay('utár); 'eci'okáy('utár); 'eci'oká; 'eci'oká; 'eci'okay; 'eci'utári; 'eci'okay; 'eci'okay; 'esí'utar; 'ecooka(y) 'uta(ri); 'eci'okay; 'eci'okayahcin; 'eco'okay ('utara)
@@ -613,8 +613,8 @@ COGSET_MAP = {
     # 1: 'ittusne; 'o'ihtusno
     # 3: ku'anno; 'e'iku'anno
     {
-        "ku'anno": 1,
-        "'istusne": 3,
+        "ku'anno": 3,
+        "'istusne": 1,
     },
     # Language Maoka concept to suck
     # 1: núnnun; nun; nunnun; sikonun; nunnun
@@ -648,89 +648,89 @@ COGSET_MAP = {
     # 2: 'emuyke; 'imiki; 'emuyke; 'emuyke
     # 4:
     {
-        "'okore": 2,
-        "'emuyke": 4,
+        "'okore": 4,
+        "'emuyke": 2,
     },
     # Language Raichishka concept many
     # 1: porónno; poro'ónno; porónno; porónno; porónno; porónno; porónno; porónno; porónno; porónno; porónno; porónno; porónno; poroono; poroono
     # 2:
     # 3:
     {
-        "'okayno": 1,
+        "'okayno": 3,
         "renkayne": 2,
-        "poronno": 3,
+        "poronno": 1,
     },
     # Language Raichishka concept root
     # 1: sínrit; sínrit; sínrit; sínrit; sínrit; sínrit; sínrit; sínrit; sínrit; sínrit; sínrit; sínrit
     # 2: ciɴkew; niicinkew; cinkew
     {
-        "cinkew(large)": 1,
-        "sinris(small)": 2,
+        "cinkew(large)": 2,
+        "sinris(small)": 1,
     },
     # Language Raichishka concept foot
     # 1: 'uré; pará'ure; 'uré; 'uré; paráwre; 'uré; paráwre; para'uri; parure
     # 3: kema
     {
-        "kema": 1,
-        "('urekucis)para'ure": 3,
+        "kema": 3,
+        "('urekucis)para'ure": 1,
     },
     # Language Raichishka concept he
     # 2: tara 'aynu; tara 'aynu; tara 'aynu; tara 'aynu; tara 'aynu
     # 3:
     {
-        "ta'an a'ynu": 2,
-        "tara 'aynu": 3,
+        "ta'an a'ynu": 3,
+        "tara 'aynu": 2,
     },
     # Language Raichishka concept they
     # 2: tara 'aynu 'utara; tara; tara 'aynu 'utara; tara 'aynu 'utara; tara 'aynu('utara)
     # 3:
     {
-        "ta'anoka 'aynu'utah": 2,
-        "taranoka 'aynu'utah": 3,
+        "ta'anoka 'aynu'utah": 3,
+        "taranoka 'aynu'utah": 2,
     },
     # Language Raichishka concept there
     # 2: taraata; 'ukita; tarata; taraata; tarata
     # 3:
     {
-        "ta'anteeta": 2,
-        "taranteeta": 3,
+        "ta'anteeta": 3,
+        "taranteeta": 2,
     },
     # Language Raichishka concept to suck
     # 1: núnnun; nun; nunnun; sikonun; nunnun
     # 2: sikoní; ní
     {
         "sikonun": 1,
-        "nunnun": 2,
-        "nii": None,
+        "nunnun": 1,
+        "nii": 2,
     },
     # Language Nairo concept I
     # 1: ku'ani; ku'ani; káni; káni; Ku'áni; Ku'áni; Ku'áni; Ku'áni; Ku'áni; Ku'áni; Ku'áni; Ku'áni
     # 2: cókay
     # 3: 'anokay; 'anoka(y)
     {
-        "'anokay": 1,
+        "'anokay": 3,
         "cookay": 2,
-        "ku'ani": 3,
+        "ku'ani": 1,
     },
     # Language Nairo concept many
     # 1: porónno; poro'ónno; porónno; porónno; porónno; porónno; porónno; porónno; porónno; porónno; porónno; porónno; porónno; poroono; poroono
     # 3:
     {
-        "'okayno": 1,
-        "poronno": 3,
+        "'okayno": 3,
+        "poronno": 1,
     },
     # Language Nairo concept skin
     # 1: káp; káp; káp; káp; káp; káp; káp; káp; káp; káp; káp; káp; kah; kah
     # 2: rus; rus
     {
-        "tus": 1,
-        "kap": 2,
+        "tus": 2,
+        "kap": 1,
     },
     # Language Nairo concept foot
     # 1: 'uré; pará'ure; 'uré; 'uré; paráwre; 'uré; paráwre; para'uri; parure
     # 3: kema
     {
-        "kema": 1,
-        "para'uri": 3,
+        "kema": 3,
+        "para'uri": 1,
     },
 }
