@@ -5,14 +5,14 @@ from collections import OrderedDict, defaultdict
 
 from clldutils.dsv import UnicodeReader
 from clldutils.misc import slug
-from pycldf.sources import Source
 
 from pylexibank.util import xls2csv
-from pylexibank.dataset import CldfDataset, Unmapped
+from pylexibank.dataset import CldfDataset
 from pylexibank.lingpy_util import (clean_string, iter_alignments,
         wordlist2cognates, getEvoBibAsSource)
 import lingpy as lp
 
+from .cogsets import COGSET_MAP
 
 PROVIDER = "Lees2013"
 SOURCE = "Hattori1960"
@@ -50,7 +50,7 @@ def read_csv(dataset):
                     else:
                         # a column containing cognate set IDs
                         assert concept
-                        words = [w for w in words if w != '#']
+                        words = [w for w in words if w and w != '#']
                         if words:
                             wl.words[concept] = (
                                 words,
@@ -78,9 +78,11 @@ def cldf(dataset, glottolog, concepticon, **kw):
         'Parameter_ID',
         'Parameter_name',
         'Value',
+        'Segments',
         'Source',
         'Comment',
     ), dataset) as ds:
+        cognates = []
         for wl in wordlists:
             #print(wl.language)
             for concept, (words, cogids) in wl.words.items():
@@ -92,12 +94,39 @@ def cldf(dataset, glottolog, concepticon, **kw):
                             if ',' in words[0]:
                                 words = words[0].split(',')
                         assert len(words) >= len(cogids)
-                    print('    # Language {0} concept {1}'.format(wl.language, concept))
-                    for cogid in cogids:
-                        print('    # {0}: {1}'.format(cogid, '; '.join(cogsets[concept][cogid])))
-                    print('    {')
-                    for word, cogid in izip_longest(words, cogids):
-                        print('        "%s": %s,' % (word, cogid))
-                    print('    },')
-                    #print('    (%s, %s),' % (words, cogids))
-                pass
+                    assert (wl.language, concept) in COGSET_MAP
+                    if len(words) > len(cogids):
+                        assert (wl.language, concept) in COGSET_MAP
+                if (wl.language, concept) in COGSET_MAP:
+                    word_to_cogid = COGSET_MAP[(wl.language, concept)]
+                else:
+                    word_to_cogid = dict(izip_longest(words, cogids))
+                for i, word in enumerate(words):
+                    if word.startswith('(') and word.endswith(')'):
+                        word = word[1:-1].strip()
+                    wid = '%s-%s-%s' % (slug(wl.language), slug(concept), i + 1)
+                    ds.add_row([
+                        wid,
+                        '',
+                        wl.language,
+                        '',
+                        concept,
+                        word,
+                        ' '.join(clean_string(word)),
+                        '',
+                        '',
+                    ])
+                    if word_to_cogid.get(word):
+                        cognates.append([
+                            wid,
+                            ds.name,
+                            word,
+                            '%s-%s' % (slug(concept), word_to_cogid[word]),
+                            False,
+                            'expert',
+                            '',
+                            '',
+                            '',
+                            '',
+                        ])
+        dataset.cognates.extend(iter_alignments(ds, cognates, column='Segments'))
