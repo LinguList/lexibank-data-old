@@ -1,6 +1,6 @@
 # coding: utf8
 from __future__ import unicode_literals, print_function, division
-from itertools import izip_longest
+from six.moves import zip_longest as izip_longest
 from collections import OrderedDict, defaultdict
 
 from clldutils.dsv import UnicodeReader
@@ -64,6 +64,7 @@ def cldf(dataset, glottolog, concepticon, **kw):
     language_map = {l['NAME']: l['GLOTTOCODE'] or None for l in dataset.languages}
     concept_map = {c['ENGLISH']: c['CONCEPTICON_ID']
                    for c in concepticon.conceptlist(dataset.conceptlist)}
+    concept_map['year'] = '1226' # dunno why this is missing, it's 200 words...
     wordlists = list(read_csv(dataset))
     cogsets = defaultdict(lambda: defaultdict(list))
     for wl in wordlists:
@@ -82,6 +83,7 @@ def cldf(dataset, glottolog, concepticon, **kw):
         'Source',
         'Comment',
     ), dataset) as ds:
+        ds.sources.add(getEvoBibAsSource(SOURCE))
         cognates = []
         for wl in wordlists:
             #print(wl.language)
@@ -109,11 +111,11 @@ def cldf(dataset, glottolog, concepticon, **kw):
                         wid,
                         '',
                         wl.language,
-                        '',
+                        concept_map.get(concept, ''),
                         concept,
                         word,
-                        ' '.join(clean_string(word)),
-                        '',
+                        clean_string(word, splitters='?')[0],
+                        SOURCE,
                         '',
                     ])
                     if word_to_cogid.get(word):
@@ -124,7 +126,7 @@ def cldf(dataset, glottolog, concepticon, **kw):
                             '%s-%s' % (slug(concept), word_to_cogid[word]),
                             False,
                             'expert',
-                            '',
+                            SOURCE,
                             '',
                             '',
                             '',
