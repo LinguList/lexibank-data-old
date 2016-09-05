@@ -109,7 +109,6 @@ def report(args):
 
     with_dataset(args, _report)
 
-
 def cldf(args):
     """
     Create CLDF datasets from the raw data for a dataset.
@@ -272,6 +271,10 @@ def _readme(ds, **kw):
     with ds.dir.joinpath('README.md').open('w', encoding='utf8') as fp:
         fp.write('\n'.join(lines + trlines))
     print(ds.dir.joinpath('README.md'))
+
+    with ds.dir.joinpath('TRANSCRIPTION.md').open('w', encoding='utf8') as fp:
+        fp.write(tr.detailed_report())
+
 
 
 def check(args):
