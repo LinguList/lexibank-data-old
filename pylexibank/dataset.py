@@ -275,24 +275,28 @@ class TranscriptionReport(UnicodeMixin):
         for ds in self.dataset.iter_cldf_datasets():
             dsrows += ds.rows
 
-        words = '| No | ID | LANGUAGE | CONCEPT | SEGMENTS | \n'
-        words += '| --- | --- | --- | --- | --- | \n'
+        words = '| No | ID | LANGUAGE | CONCEPT | VALUE | SEGMENTS | \n'
+        words += '| --- | --- | --- | --- | --- | --- |\n'
         count = 1
+        template = '![x](https://img.shields.io/badge/{0}--{1}.svg "{2}")'
         for row in dsrows:
             if row['ID'] in stats['bad_words']:
                 new_string = []
                 for segment in row[column].split(' '):
                     if segment in stats['lingpy_errors_types']:
-                        new_string += ['*'+segment+'*']
+                        new_string += [template.format(segment, 'red', 'lingpy')]
                     elif segment in stats['clpa_errors_types']:
-                        new_string += ['**'+segment+'**']
+                        new_string += [template.format(segment, 'yellow',
+                        'clpa')]
                     else:
-                        new_string += [segment]
-                words += '| {0} | {1} | {2} | {3} | {4} | \n'.format(
+                        new_string += [template.format(segment, 'brightgreen',
+                            'fine')]
+                words += '| {0} | {1} | {2} | {3} | {4} | {5} | \n'.format(
                         count, 
                         row['ID'],
                         row['Language_name'],
                         row['Parameter_name'],
+                        row['Value'],
                         ' '.join(new_string))
                 count += 1
         h1 = '# Detailed transcription record\n'
