@@ -1,7 +1,8 @@
 # coding=utf-8
 from __future__ import unicode_literals, print_function
 
-from pylexibank.dataset import CldfDataset
+from pylexibank.dataset import CldfDataset, TranscriptionReport
+from pylexibank.cli import _readme
 from pylexibank.util import download_and_unpack_zipfiles
 from clldutils.path import Path
 from pylexibank.lingpy_util import getEvoBibAsSource, iter_alignments
@@ -81,7 +82,7 @@ def cldf(dataset, glottolog, concepticon, **kw):
                 ds.add_row([
                     wid,
                     lang2glot[doculect],
-                    wl[k, 'glottolog'],
+                    wl[k, 'doculect'],
                     '',
                     gloss2con.get(wl[k, 'concept'], ''),
                     wl[k, 'concept'],
@@ -109,3 +110,10 @@ def cldf(dataset, glottolog, concepticon, **kw):
                 iter_alignments(lp.Alignments(wl), cognates, method='library'))
             for er in sorted(set(errors)):
                 print(er, dset)
+
+def report(dataset, **kw):
+    rep = TranscriptionReport(dataset,
+            dataset.dir.joinpath('transcription.json'))
+    rep.run(column='Segments', segmentized=True)
+    with dataset.dir.joinpath('TRANSCRIPTION.md').open('w', encoding='utf8') as fp:
+        fp.write(rep.detailed_report(column='Segments'))

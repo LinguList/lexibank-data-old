@@ -6,6 +6,7 @@ from clldutils.misc import slug
 
 from pylexibank.util import xls2csv
 from pylexibank.dataset import CldfDataset, valid_Value as vv_base
+from pylexibank.dataset import TranscriptionReport
 from pylexibank.lingpy_util import clean_string, iter_alignments, getEvoBibAsSource
 import lingpy as lp
 
@@ -131,4 +132,9 @@ def cldf(dataset, glottolog, concepticon, **kw):
 
         dataset.cognates.extend(iter_alignments(lp.Alignments(wl), cognates))
 
-
+def report(dataset, **kw):
+    rep = TranscriptionReport(dataset,
+            dataset.dir.joinpath('transcription.json'))
+    rep.run(column='Segments', segmentized=True)
+    with dataset.dir.joinpath('TRANSCRIPTION.md').open('w', encoding='utf8') as fp:
+        fp.write(rep.detailed_report(column='Segments'))

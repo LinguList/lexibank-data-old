@@ -105,7 +105,7 @@ def report(args):
     """
     """
     def _report(ds, **kw):
-        ds.report()
+        ds.report(**kw)
 
     with_dataset(args, _report)
 
@@ -273,8 +273,7 @@ def _readme(ds, **kw):
     print(ds.dir.joinpath('README.md'))
 
     with ds.dir.joinpath('TRANSCRIPTION.md').open('w', encoding='utf8') as fp:
-        fp.write(tr.detailed_report())
-
+        fp.write(tr.detailed_report(**kw))
 
 
 def check(args):

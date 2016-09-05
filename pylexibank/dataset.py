@@ -106,9 +106,12 @@ class Dataset(object):
         self._run_command('download', **kw)
 
     def report(self, **kw):
-        rep = TranscriptionReport(self, self.dir.joinpath('transcription.json'))
-        rep.run(**getattr(self.commands, 'TRANSCRIPTION_REPORT_CFG', {}))
-        print(rep.detailed_report())
+        try:
+            self._run_command('report', **kw)
+        except:
+            rep = TranscriptionReport(self, self.dir.joinpath('transcription.json'))
+            rep.run(**getattr(self.commands, 'TRANSCRIPTION_REPORT_CFG', {}))
+            print(rep.detailed_report())
 
 class Cognates(list):
     fields = [
@@ -168,6 +171,7 @@ class TranscriptionReport(UnicodeMixin):
     def run(self, **cfg):
         cfg.setdefault('column', 'Value')
         cfg.setdefault('segmentized', False)
+        cfg.setdefault('debug', False)
         self.report = defaultdict(lambda: dict(
             invalid=Counter(),
             segments=Counter(),
@@ -180,6 +184,7 @@ class TranscriptionReport(UnicodeMixin):
             segment_types=Counter(),
         ))
         for ds in self.dataset.iter_cldf_datasets():
+            if cfg['debug']: print('analyzing dataset', ds.name)
             test_sequences(ds, get_variety_id, self.report, **cfg)
 
         stats = dict(
@@ -226,6 +231,7 @@ class TranscriptionReport(UnicodeMixin):
 
         self.report['stats'] = stats
         jsonlib.dump(self.report, self.fname, indent=4)
+        if cfg['debug']: print('Number of words with errors:', len(stats['bad_words']))
 
     def __unicode__(self):
         
@@ -252,7 +258,7 @@ class TranscriptionReport(UnicodeMixin):
 
         return md
     
-    def detailed_report(self):
+    def detailed_report(self, column='Value', debug=False):
         
         stats = self.report['stats']
 
@@ -278,7 +284,7 @@ class TranscriptionReport(UnicodeMixin):
         for row in dsrows:
             if row['ID'] in stats['bad_words']:
                 new_string = []
-                for segment in row['Segments'].split(' '):
+                for segment in row[column].split(' '):
                     if segment in stats['lingpy_errors_types']:
                         new_string += ['*'+segment+'*']
                     elif segment in stats['clpa_errors_types']:
