@@ -279,7 +279,7 @@ class TranscriptionReport(UnicodeMixin):
             dsrows += ds.rows
 
         words = '| No | ID | LANGUAGE | CONCEPT | SEGMENTS | \n'
-        words += ' | --- | --- | --- | --- | --- | \n'
+        words += '| --- | --- | --- | --- | --- | \n'
         count = 1
         for row in dsrows:
             if row['ID'] in stats['bad_words']:
