@@ -171,7 +171,6 @@ class TranscriptionReport(UnicodeMixin):
     def run(self, **cfg):
         cfg.setdefault('column', 'Value')
         cfg.setdefault('segmentized', False)
-        cfg.setdefault('debug', False)
         self.report = defaultdict(lambda: dict(
             invalid=Counter(),
             segments=Counter(),
@@ -184,7 +183,6 @@ class TranscriptionReport(UnicodeMixin):
             segment_types=Counter(),
         ))
         for ds in self.dataset.iter_cldf_datasets():
-            if cfg['debug']: print('analyzing dataset', ds.name)
             test_sequences(ds, get_variety_id, self.report, **cfg)
 
         stats = dict(
@@ -231,7 +229,6 @@ class TranscriptionReport(UnicodeMixin):
 
         self.report['stats'] = stats
         jsonlib.dump(self.report, self.fname, indent=4)
-        if cfg['debug']: print('Number of words with errors:', len(stats['bad_words']))
 
     def __unicode__(self):
         
@@ -258,7 +255,7 @@ class TranscriptionReport(UnicodeMixin):
 
         return md
     
-    def detailed_report(self, column='Value', debug=False):
+    def detailed_report(self, column='Value'):
         
         stats = self.report['stats']
 

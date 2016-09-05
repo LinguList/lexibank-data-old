@@ -97,7 +97,7 @@ def segmentize(dataset, source='Value', target='Segments', clean=lambda s: s, **
         row[target] = ' '.join(res[0])
 
 
-def test_sequences(dataset, lid_getter, report, column='Value', debug=False, **kw):
+def test_sequences(dataset, lid_getter, report, column='Value', **kw):
     """
     Write a detailed transcription-report for a CLDF dataset in LexiBank.
     """
@@ -116,7 +116,6 @@ def test_sequences(dataset, lid_getter, report, column='Value', debug=False, **k
         lr['word_errors'] += 1 if res[-1] else 0
         if res[-1]:
             lr['bad_words'] += [row['ID']]
-        if debug and not i % 1000: print("analyzed {0} rows so far".format(i))
 
 def _cldf2wld(dataset):
     """Make lingpy-compatible dictinary out of cldf main data."""
