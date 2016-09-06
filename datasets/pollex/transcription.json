@@ -1,11 +1,17 @@
 {
     "stats": {
-        "tokens": 0, 
         "replacements": {}, 
-        "inventory_size": 0, 
+        "bad_words": [], 
         "lingpy_errors": 0, 
         "segments": 0, 
+        "clpa_errors_types": [], 
+        "invalid": 0, 
+        "tokens": 0, 
+        "word_errors": 0, 
+        "segment_types": {}, 
+        "lingpy_errors_types": [], 
+        "general_errors": 0, 
         "clpa_errors": 0, 
-        "invalid": 0
+        "inventory_size": 0
     }
 }

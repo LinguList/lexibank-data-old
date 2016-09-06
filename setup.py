@@ -15,6 +15,7 @@ requires = [
     'lingpy',
     'pyclpa>=0.3.1',
     'tabulate',
+    'tqdm',
 ]
 
 setup(

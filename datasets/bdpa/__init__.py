@@ -22,6 +22,7 @@ languages = {
     "Yiddish (New York)": "west2361",
     "West Frisian (Grou)": "west2354"
 }
+TRANSCRIPTION_REPORT_CFG = dict(column='Segments', segmentized=True)
 
 
 def download(dataset, **kw):
@@ -84,10 +85,3 @@ def cldf(dataset, glottobank, concepticon, **kw):
                 '', 'expert', 'Heggarty2007', alm[k, 'alignment'],
                 'expert', 'List2014e']]
         dataset.write_cognates()
-
-def report(dataset, **kw):
-    rep = TranscriptionReport(dataset,
-            dataset.dir.joinpath('transcription.json'))
-    rep.run(column='Segments', segmentized=True)
-    with dataset.dir.joinpath('TRANSCRIPTION.md').open('w', encoding='utf8') as fp:
-        fp.write(rep.detailed_report(column='Segments', debug=True))

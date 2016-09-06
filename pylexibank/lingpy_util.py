@@ -59,7 +59,7 @@ def test_sequence(sequence, **keywords):
         general_errors = len(['?' for x in zip(
             lingpy_analysis,
             clpa_analysis) if '?' in x])
-    except (ValueError, IndexError):
+    except (ValueError, IndexError, AttributeError):
         invalid.update([sequence])
         segments, clpa_analysis = [], []
 
@@ -88,6 +88,7 @@ def test_sequence(sequence, **keywords):
         clpa_repl,
         general_errors)
 
+
 def segmentize(dataset, source='Value', target='Segments', clean=lambda s: s, **kw):
     """
     Write a detailed transcription-report for a CLDF dataset in LexiBank.
@@ -101,14 +102,12 @@ def test_sequences(dataset, lid_getter, report, column='Value', **kw):
     """
     Write a detailed transcription-report for a CLDF dataset in LexiBank.
     """
-
     for i, row in enumerate(dataset.rows):
         res = test_sequence(row[column], **kw)
         if not kw['segmentized'] and column != 'Segments' and 'Segments' in row:
             row['Segments'] = ' '.join(res[0])
         lr = report[lid_getter(row)]
-        for j, attr in enumerate(['invalid', 'segments', 'lingpy_errors',
-            'clpa_errors']):
+        for j, attr in enumerate(['invalid', 'segments', 'lingpy_errors', 'clpa_errors']):
             lr[attr].update(res[j + 2])
         for segment, repls in res[-2].items():
             lr['replacements'][segment].update(repls)
@@ -116,6 +115,8 @@ def test_sequences(dataset, lid_getter, report, column='Value', **kw):
         lr['word_errors'] += 1 if res[-1] else 0
         if res[-1]:
             lr['bad_words'] += [row['ID']]
+            yield row
+
 
 def _cldf2wld(dataset):
     """Make lingpy-compatible dictinary out of cldf main data."""

@@ -4,6 +4,7 @@ import logging
 import re
 from importlib import import_module
 from collections import defaultdict, Counter
+from itertools import chain
 
 from clldutils import jsonlib
 from clldutils.dsv import reader
@@ -13,9 +14,10 @@ from pyconcepticon.api import Concepticon
 from pycldf import csv
 from pycldf.dataset import Dataset as CldfDatasetBase
 from pycldf.dataset import MD_SUFFIX
+from tqdm import tqdm
 
 import pylexibank
-from pylexibank.util import with_sys_path, data_path
+from pylexibank.util import with_sys_path, data_path, MarkdownTable
 from pylexibank.lingpy_util import test_sequences
 
 logging.basicConfig(level=logging.INFO)
@@ -78,6 +80,10 @@ class Dataset(object):
     def from_name(cls, name):
         return cls(data_path(name))
 
+    @property
+    def count_cldf_datasets(self):
+        return len(list(self.cldf_dir.glob('*' + MD_SUFFIX)))
+
     def iter_cldf_datasets(self):
         for fname in sorted(self.cldf_dir.glob('*' + MD_SUFFIX), key=lambda f: f.name):
             yield CldfDatasetBase.from_metadata(fname)
@@ -96,6 +102,7 @@ class Dataset(object):
             getattr(self.commands, name)(self, *args, **kw)
 
     def cldf(self, **kw):
+        # fixme: we need a lexeme count across cldf datasets available after this has run!
         self._run_command(
             'cldf',
             Glottolog(kw.pop('glottolog_repos')),
@@ -106,12 +113,12 @@ class Dataset(object):
         self._run_command('download', **kw)
 
     def report(self, **kw):
-        try:
-            self._run_command('report', **kw)
-        except:
-            rep = TranscriptionReport(self, self.dir.joinpath('transcription.json'))
-            rep.run(**getattr(self.commands, 'TRANSCRIPTION_REPORT_CFG', {}))
-            print(rep.detailed_report())
+        rep = TranscriptionReport(self, self.dir.joinpath('transcription.json'))
+        res = rep.run(**getattr(self.commands, 'TRANSCRIPTION_REPORT_CFG', {}))
+        if res:
+            with self.dir.joinpath('TRANSCRIPTION.md').open('w', encoding='utf8') as fp:
+                fp.write(res)
+
 
 class Cognates(list):
     fields = [
@@ -182,8 +189,11 @@ class TranscriptionReport(UnicodeMixin):
             bad_words=[],
             segment_types=Counter(),
         ))
-        for ds in self.dataset.iter_cldf_datasets():
-            test_sequences(ds, get_variety_id, self.report, **cfg)
+        bad_words = []
+        with tqdm(total=self.dataset.count_cldf_datasets, desc='cldf-ds', leave=False) as pbar:
+            for ds in self.dataset.iter_cldf_datasets():
+                bad_words.extend(test_sequences(ds, get_variety_id, self.report, **cfg))
+                pbar.update(1)
 
         stats = dict(
             invalid=set(),
@@ -197,7 +207,7 @@ class TranscriptionReport(UnicodeMixin):
             word_errors=0,
             bad_words=[],
             segment_types=Counter(),
-            )
+        )
         for lid, report in self.report.items():
             stats['invalid'].update(report['invalid'])
             stats['tokens'] += sum(report['segments'].values())
@@ -230,8 +240,47 @@ class TranscriptionReport(UnicodeMixin):
         self.report['stats'] = stats
         jsonlib.dump(self.report, self.fname, indent=4)
 
+        if not cfg.get('segmentized'):
+            return
+
+        segments = MarkdownTable('Segment', 'Occurrence', 'LingPy', 'CLPA')
+        for a, b in sorted(stats['segment_types'].items(), key=lambda x: (-x[1], x[0])):
+            c, d = '✓', '✓'
+            if a in stats['clpa_errors_types']:
+                c = '✓' if a not in stats['lingpy_errors_types'] else '?'
+                d = ', '.join(stats['clpa_errors_types'][a]) \
+                    if a not in stats['clpa_errors_types'] else '?'
+            segments.append([a, b, c, d])
+
+        words = MarkdownTable('ID', 'LANGUAGE', 'CONCEPT', 'VALUE', 'SEGMENTS')
+        with tqdm(total=len(bad_words), desc='bad-lexemes', leave=False) as pbar:
+            for i, row in enumerate(bad_words):
+                analyzed = []
+                for segment in row[cfg['column']].split(' '):
+                    if segment in stats['lingpy_errors_types'] \
+                            or segment in stats['clpa_errors_types']:
+                        analyzed.append('<s> %s </s>' % segment)
+                    else:
+                        analyzed.append(segment)
+                words.append([
+                    row['ID'],
+                    row['Language_name'],
+                    row['Parameter_name'],
+                    row['Value'],
+                    ' '.join(analyzed)])
+                if i % 10 == 0:
+                    pbar.update(10)
+        return """\
+# Detailed transcription record
+
+## Segments
+
+{0}
+## Words
+
+{1}""".format(segments.render(), words.render())
+
     def __unicode__(self):
-        
         md = """## Transcription Report
 ### General Statistics
 * Number of Tokens: {tokens}
@@ -250,59 +299,10 @@ class TranscriptionReport(UnicodeMixin):
             self.report['stats']['word_errors'], 
             self.report['stats']['lingpy_errors'],
             self.report['stats']['clpa_errors'],
-            ' '.join([str(lid) for lid in self.report['stats']['bad_words']])
+            len(self.report['stats']['bad_words']),
         )
 
         return md
-    
-    def detailed_report(self, column='Value'):
-        
-        stats = self.report['stats']
-
-        # start with segments
-        segments = '| No | Segment | Occurrence | LingPy | CLPA | \n|---|---|---|---|---|\n'
-        for i,(a, b) in enumerate(sorted(stats['segment_types'].items(),
-            key=lambda x: x[1], reverse=True)):
-            if a in stats['clpa_errors_types']:
-                c = '✓' if a not in stats['lingpy_errors_types'] else '?'
-                d = ', '.join(errors[a]) if a not in stats['clpa_errors_types'] else '?'
-            else:
-                c, d = '✓', '✓'
-            segments += '| {0} | {1} | {2} | {3} | {4} |\n'.format(i+1, a, b, c, d)
-
-        # now make detailed list of bad words
-        dsrows = []
-        for ds in self.dataset.iter_cldf_datasets():
-            dsrows += ds.rows
-
-        words = '| No | ID | LANGUAGE | CONCEPT | VALUE | SEGMENTS | \n'
-        words += '| --- | --- | --- | --- | --- | --- |\n'
-        count = 1
-        template = '![x](https://img.shields.io/badge/{0}--{1}.svg "{2}")'
-        for row in dsrows:
-            if row['ID'] in stats['bad_words']:
-                new_string = []
-                for segment in row[column].split(' '):
-                    if segment in stats['lingpy_errors_types']:
-                        new_string += [template.format(segment, 'red', 'lingpy')]
-                    elif segment in stats['clpa_errors_types']:
-                        new_string += [template.format(segment, 'yellow',
-                        'clpa')]
-                    else:
-                        new_string += [template.format(segment, 'brightgreen',
-                            'fine')]
-                words += '| {0} | {1} | {2} | {3} | {4} | {5} | \n'.format(
-                        count, 
-                        row['ID'],
-                        row['Language_name'],
-                        row['Parameter_name'],
-                        row['Value'],
-                        ' '.join(new_string))
-                count += 1
-        h1 = '# Detailed transcription record\n'
-        h2 = '## Segments\n\n'+segments
-        h3 = '## Words\n\n'+words
-        return '\n'.join([h1, h2, h3])
 
 
 class CldfDataset(CldfDatasetBase):
@@ -344,7 +344,6 @@ class CldfDataset(CldfDatasetBase):
         self.table.schema.columns['Language_ID'].valueUrl = \
             'http://glottolog.org/resource/languoid/id/{Language_ID}'
         self.metadata['tables'].append(Cognates.table)
-        #self.metadata['tables'].append(Alignments.table)
         super(CldfDataset, self).write(**kw)
 
 
