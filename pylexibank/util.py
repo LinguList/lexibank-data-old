@@ -6,6 +6,7 @@ import re
 from contextlib import contextmanager
 from tempfile import mkdtemp
 import zipfile
+from tabulate import tabulate
 
 from six.moves.urllib.request import urlretrieve
 import xlrd
@@ -18,7 +19,20 @@ import pylexibank
 
 logging.basicConfig(level=logging.INFO)
 REPOS_PATH = Path(pylexibank.__file__).parent.parent
-YEAR_PATTERN = re.compile('\s+\(?(?P<year>[1-9][0-9]{3}(\-[0-9]+)?)(\)|\.)')
+YEAR_PATTERN = re.compile('\s+\(?(?P<year>[1-9][0-9]{3}(-[0-9]+)?)(\)|\.)')
+
+
+class MarkdownTable(list):
+    def __init__(self, *cols):
+        self.columns = cols
+        list.__init__(self)
+
+    @staticmethod
+    def tr(row):
+        return '|'.join(['%s' % c for c in row])
+
+    def render(self):
+        return re.sub('[ ]+', ' ', tabulate(self, self.columns, "pipe")) + '\n\n(%s rows)\n\n' % len(self)
 
 
 def clean_form(form):

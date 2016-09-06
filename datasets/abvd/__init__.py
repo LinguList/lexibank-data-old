@@ -11,6 +11,7 @@ from pylexibank.lingpy_util import iter_alignments
 from author_notes_map import MAP
 
 SECTION = 'austronesian'
+TRANSCRIPTION_REPORT_CFG = dict(column='Segments', segmentized=True)
 
 
 def download(dataset, **kw):

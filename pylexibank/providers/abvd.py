@@ -10,6 +10,7 @@ from pycldf.sources import Source
 
 from pylexibank.dataset import CldfDataset
 from pylexibank import util
+from pylexibank.lingpy_util import segmentize
 
 URL = "http://language.psy.auckland.ac.nz/utils/save/?type=xml&section=%s&language=%d"
 INVALID_LANGUAGE_IDS = {
@@ -178,6 +179,7 @@ class Wordlist(object):
                 'Parameter_local_ID',
                 'Value',
                 'Value_in_source',
+                'Segments',
                 'Context',
                 'Source',
                 'Cognate_Set',
@@ -230,12 +232,14 @@ class Wordlist(object):
                         entry.word_id,
                         util.clean_form(form),
                         form,
+                        '',
                         context,
                         ref,
                         entry.cognacy,
                         entry.comment or '',
                         entry.loan == 'L',
                     ])
+            segmentize(ds)
         return ds
 
     def cognates(self):

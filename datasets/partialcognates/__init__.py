@@ -78,10 +78,3 @@ def cldf(dataset, glottolog, concepticon, **kw):
 
             dataset.cognates.extend(iter_alignments(wl, cognates,
                 method='progressive', prefix=srckey + '-'))
-
-def report(dataset, **kw):
-    rep = TranscriptionReport(dataset,
-            dataset.dir.joinpath('transcription.json'))
-    rep.run(column='Segments', segmentized=True)
-    with dataset.dir.joinpath('TRANSCRIPTION.md').open('w', encoding='utf8') as fp:
-        fp.write(rep.detailed_report(column='Segments', debug=True))

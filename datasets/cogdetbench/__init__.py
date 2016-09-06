@@ -8,6 +8,7 @@ from clldutils.path import Path
 from pylexibank.lingpy_util import getEvoBibAsSource, iter_alignments
 import lingpy as lp
 
+TRANSCRIPTION_REPORT_CFG = dict(column='Segments', segmentized=True)
 URL = "https://github.com/SequenceComparison/SupplementaryMaterial/zipball/master"
 PATH = Path('SequenceComparison-SupplementaryMaterial-cc4bf85/benchmark/cognates/')
 DSETS = ['SLV.csv', 'SIN.csv', 'ROM.csv', 'PIE.csv', 'PAN.csv', 'OUG.csv',
@@ -110,10 +111,3 @@ def cldf(dataset, glottolog, concepticon, **kw):
                 iter_alignments(lp.Alignments(wl), cognates, method='library'))
             for er in sorted(set(errors)):
                 print(er, dset)
-
-def report(dataset, **kw):
-    rep = TranscriptionReport(dataset,
-            dataset.dir.joinpath('transcription.json'))
-    rep.run(column='Segments', segmentized=True)
-    with dataset.dir.joinpath('TRANSCRIPTION.md').open('w', encoding='utf8') as fp:
-        fp.write(rep.detailed_report(column='Segments'))

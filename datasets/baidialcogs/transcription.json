@@ -1,6 +1,5 @@
 {
     "stats": {
-        "tokens": 20092, 
         "replacements": {
             "\u1e43": [
                 "m\u0329"
@@ -15,13 +14,154 @@
                 "t\u0283\u02b0"
             ]
         }, 
-        "inventory_size": 54.333333333333336, 
+        "bad_words": [
+            "Allen2007-3943", 
+            "Allen2007-2811", 
+            "Allen2007-3639", 
+            "Allen2007-4386", 
+            "Allen2007-134", 
+            "Allen2007-971", 
+            "Allen2007-1277", 
+            "Allen2007-1889", 
+            "Allen2007-2096", 
+            "Allen2007-3878", 
+            "Allen2007-4202", 
+            "Allen2007-4229", 
+            "Allen2007-1503", 
+            "Allen2007-1424", 
+            "Allen2007-1496", 
+            "Allen2007-1991", 
+            "Allen2007-3305"
+        ], 
         "lingpy_errors": 4, 
         "segments": 97, 
+        "clpa_errors_types": [
+            "k\u02b2\u02b0", 
+            "\u0274\u0323", 
+            "\u0274\u0325", 
+            "\u027f\u0303", 
+            "\u0285\u0303", 
+            "\u1e7d", 
+            "\u2039", 
+            "\u203a"
+        ], 
+        "invalid": 0, 
+        "tokens": 20092, 
+        "word_errors": 17, 
+        "segment_types": {
+            "\u0283": 17, 
+            "t\u0255": 275, 
+            "\u0255\u02b0": 9, 
+            "\u028a\u0303": 1, 
+            "\u02a7": 5, 
+            "\u2074\u2074": 1148, 
+            "ts": 626, 
+            "\u00e6\u0303": 13, 
+            "t\u0255\u02b0": 156, 
+            "\u00b3\u00b9": 854, 
+            "\u025b\u0303": 152, 
+            "\u0254": 555, 
+            "d": 41, 
+            "\u00e3": 205, 
+            "\u0264": 345, 
+            "l": 167, 
+            "p": 437, 
+            "\u0274": 7, 
+            "x": 224, 
+            "t\u02b0": 94, 
+            "\u02a7\u02b0": 13, 
+            "\u0288": 18, 
+            "\u0290": 22, 
+            "\u0294": 25, 
+            "k\u02b2\u02b0": 5, 
+            "q\u02b0": 20, 
+            "\u0129": 155, 
+            "t\u0282\u02b0": 10, 
+            "d\u0290": 4, 
+            "t": 487, 
+            "\u1e43": 1, 
+            "\u025b": 609, 
+            "t\u0282": 41, 
+            "c": 9, 
+            "z": 75, 
+            "g": 4, 
+            "\u0169": 72, 
+            "k": 564, 
+            "\u2074\u00b2": 641, 
+            "\u026f": 750, 
+            "s": 418, 
+            "w": 155, 
+            "\u0254\u0303": 66, 
+            "\u027f": 359, 
+            "\u0281": 3, 
+            "\u0285": 10, 
+            "\u0264\u0303": 32, 
+            "\u0291": 6, 
+            "\u02a5": 8, 
+            "\u0288\u02b0": 7, 
+            "s\u02b0": 27, 
+            "\u00b2\u00b9": 792, 
+            "\u00b3\u2075": 476, 
+            "k\u02b2": 63, 
+            "k\u02b0": 204, 
+            "\u203a": 2, 
+            "\u1ebd": 118, 
+            "\u03c7": 5, 
+            "\u0263": 70, 
+            "\u0285\u0303": 1, 
+            "\u0256": 5, 
+            "\u0265": 2, 
+            "b": 23, 
+            "f": 82, 
+            "\u2075\u2075": 1314, 
+            "j": 287, 
+            "n": 170, 
+            "\u00b3\u00b3": 1201, 
+            "\u0272": 125, 
+            "\u00f5": 74, 
+            "v": 80, 
+            "\u1ef9": 9, 
+            "\u0274\u0325": 2, 
+            "\u0274\u0323": 6, 
+            "\u0282": 33, 
+            "\u028a": 12, 
+            "\u026f\u0303": 84, 
+            "o": 478, 
+            "\u2039": 2, 
+            "\u027f\u0303": 1, 
+            "\u014b": 123, 
+            "\u0251": 3, 
+            "\u0255": 236, 
+            "x\u02b0": 12, 
+            "c\u02b0": 3, 
+            "a": 988, 
+            "p\u02b0": 140, 
+            "e": 432, 
+            "\u00e6": 23, 
+            "i": 836, 
+            "\u00b3\u00b2": 58, 
+            "m": 382, 
+            "q": 47, 
+            "u": 868, 
+            "ts\u02b0": 202, 
+            "y": 70, 
+            "\u1e7d": 1
+        }, 
+        "lingpy_errors_types": [
+            "\u1e43", 
+            "\u1e7d", 
+            "\u2039", 
+            "\u203a"
+        ], 
+        "general_errors": 21, 
         "clpa_errors": 8, 
-        "invalid": 0
+        "inventory_size": 54.333333333333336
     }, 
     "Jianchuan": {
+        "replacements": {}, 
+        "bad_words": [
+            "Allen2007-3943"
+        ], 
         "lingpy_errors": [
             "\u2039", 
             "\u203a"
@@ -78,14 +218,25 @@
             "t\u0255\u02b0": 17, 
             "\u027f": 45
         }, 
-        "replacements": {}, 
+        "invalid": {}, 
+        "word_errors": 1, 
+        "segment_types": {}, 
+        "general_errors": 2, 
         "clpa_errors": [
             "\u2039", 
             "\u203a"
-        ], 
-        "invalid": {}
+        ]
     }, 
     "Qiliqiao": {
+        "replacements": {
+            "\u02a7": [
+                "t\u0283"
+            ], 
+            "\u02a7\u02b0": [
+                "t\u0283\u02b0"
+            ]
+        }, 
+        "bad_words": [], 
         "lingpy_errors": [], 
         "segments": {
             "t\u02b0": 14, 
@@ -136,18 +287,19 @@
             "t\u0255\u02b0": 14, 
             "ts\u02b0": 21
         }, 
-        "replacements": {
-            "\u02a7": [
-                "t\u0283"
-            ], 
-            "\u02a7\u02b0": [
-                "t\u0283\u02b0"
-            ]
-        }, 
-        "clpa_errors": [], 
-        "invalid": {}
+        "invalid": {}, 
+        "word_errors": 0, 
+        "segment_types": {}, 
+        "general_errors": 0, 
+        "clpa_errors": []
     }, 
     "Heqing": {
+        "replacements": {}, 
+        "bad_words": [
+            "Allen2007-2811", 
+            "Allen2007-3639", 
+            "Allen2007-4386"
+        ], 
         "lingpy_errors": [
             "\u1e7d", 
             "\u2039", 
@@ -216,16 +368,20 @@
             "\u0254\u0303": 27, 
             "ts\u02b0": 24
         }, 
-        "replacements": {}, 
+        "invalid": {}, 
+        "word_errors": 3, 
+        "segment_types": {}, 
+        "general_errors": 4, 
         "clpa_errors": [
             "\u027f\u0303", 
             "\u1e7d", 
             "\u2039", 
             "\u203a"
-        ], 
-        "invalid": {}
+        ]
     }, 
     "Xiangyun": {
+        "replacements": {}, 
+        "bad_words": [], 
         "lingpy_errors": [], 
         "segments": {
             "m": 44, 
@@ -281,11 +437,37 @@
             "t\u0255\u02b0": 21, 
             "ts\u02b0": 32
         }, 
-        "replacements": {}, 
-        "clpa_errors": [], 
-        "invalid": {}
+        "invalid": {}, 
+        "word_errors": 0, 
+        "segment_types": {}, 
+        "general_errors": 0, 
+        "clpa_errors": []
     }, 
     "Luobenzhuo": {
+        "replacements": {
+            "\u1e43": [
+                "m\u0329"
+            ], 
+            "\u02a5": [
+                "d\u0291"
+            ], 
+            "\u02a7": [
+                "t\u0283"
+            ], 
+            "\u02a7\u02b0": [
+                "t\u0283\u02b0"
+            ]
+        }, 
+        "bad_words": [
+            "Allen2007-134", 
+            "Allen2007-971", 
+            "Allen2007-1277", 
+            "Allen2007-1889", 
+            "Allen2007-2096", 
+            "Allen2007-3878", 
+            "Allen2007-4202", 
+            "Allen2007-4229"
+        ], 
         "lingpy_errors": [
             "\u1e43"
         ], 
@@ -374,28 +556,21 @@
             "ts\u02b0": 9, 
             "\u0294": 19
         }, 
-        "replacements": {
-            "\u1e43": [
-                "m\u0329"
-            ], 
-            "\u02a5": [
-                "d\u0291"
-            ], 
-            "\u02a7": [
-                "t\u0283"
-            ], 
-            "\u02a7\u02b0": [
-                "t\u0283\u02b0"
-            ]
-        }, 
+        "invalid": {}, 
+        "word_errors": 8, 
+        "segment_types": {}, 
+        "general_errors": 10, 
         "clpa_errors": [
             "\u0274\u0323", 
             "\u0274\u0325", 
             "\u0285\u0303"
-        ], 
-        "invalid": {}
+        ]
     }, 
     "Zhoucheng": {
+        "replacements": {}, 
+        "bad_words": [
+            "Allen2007-1503"
+        ], 
         "lingpy_errors": [], 
         "segments": {
             "t\u02b0": 9, 
@@ -446,13 +621,21 @@
             "t\u0255\u02b0": 17, 
             "ts\u02b0": 23
         }, 
-        "replacements": {}, 
+        "invalid": {}, 
+        "word_errors": 1, 
+        "segment_types": {}, 
+        "general_errors": 1, 
         "clpa_errors": [
             "k\u02b2\u02b0"
-        ], 
-        "invalid": {}
+        ]
     }, 
     "Yunlong": {
+        "replacements": {
+            "\u02a5": [
+                "d\u0291"
+            ]
+        }, 
+        "bad_words": [], 
         "lingpy_errors": [], 
         "segments": {
             "\u0281": 3, 
@@ -506,15 +689,15 @@
             "ts\u02b0": 26, 
             "\u0294": 6
         }, 
-        "replacements": {
-            "\u02a5": [
-                "d\u0291"
-            ]
-        }, 
-        "clpa_errors": [], 
-        "invalid": {}
+        "invalid": {}, 
+        "word_errors": 0, 
+        "segment_types": {}, 
+        "general_errors": 0, 
+        "clpa_errors": []
     }, 
     "Lanping": {
+        "replacements": {}, 
+        "bad_words": [], 
         "lingpy_errors": [], 
         "segments": {
             "t\u0255": 29, 
@@ -569,11 +752,20 @@
             "\u0254\u0303": 24, 
             "ts\u02b0": 23
         }, 
-        "replacements": {}, 
-        "clpa_errors": [], 
-        "invalid": {}
+        "invalid": {}, 
+        "word_errors": 0, 
+        "segment_types": {}, 
+        "general_errors": 0, 
+        "clpa_errors": []
     }, 
     "Eryuan": {
+        "replacements": {}, 
+        "bad_words": [
+            "Allen2007-1424", 
+            "Allen2007-1496", 
+            "Allen2007-1991", 
+            "Allen2007-3305"
+        ], 
         "lingpy_errors": [], 
         "segments": {
             "\u0282": 21, 
@@ -625,10 +817,12 @@
             "t\u0255\u02b0": 12, 
             "ts\u02b0": 18
         }, 
-        "replacements": {}, 
+        "invalid": {}, 
+        "word_errors": 4, 
+        "segment_types": {}, 
+        "general_errors": 4, 
         "clpa_errors": [
             "k\u02b2\u02b0"
-        ], 
-        "invalid": {}
+        ]
     }
 }

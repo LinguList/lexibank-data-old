@@ -13,10 +13,10 @@ Available online at http://www.evolution.reading.ac.uk/DataSets.html
 
 - **Varieties:** 424
 - **Concepts:** 100
-- **Lexemes:** 75,444
+- **Lexemes:** 37,722
 - **Synonymy:** 1.00
 - **Cognacy:** 35,910 cognates in 2,059 cognate sets
 - **Invalid lexemes:** 0
-- **Tokens:** 364,310
+- **Tokens:** 182,155
 - **Segments:** 1,016 (109 LingPy errors, 699 CLPA errors, 165 CLPA modified)
 - **Inventory size (avg):** 45.27
