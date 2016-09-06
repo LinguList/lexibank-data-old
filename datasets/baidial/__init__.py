@@ -3,7 +3,7 @@ from __future__ import unicode_literals, print_function
 
 import lingpy as lp
 
-from pylexibank.dataset import CldfDataset
+from pylexibank.dataset import CldfDataset, TranscriptionReport
 from pylexibank.lingpy_util import getEvoBibAsSource, clean_string
 
 SOURCE = 'Allen2007'
@@ -48,3 +48,10 @@ def cldf(dataset, glottolog, concepticon, **kw):
                     clean_string(wl[k, 'value'])[0],
                     SOURCE
                 ])
+
+def report(dataset, **kw):
+    rep = TranscriptionReport(dataset,
+            dataset.dir.joinpath('transcription.json'))
+    rep.run(column='Segments', segmentized=True)
+    with dataset.dir.joinpath('TRANSCRIPTION.md').open('w', encoding='utf8') as fp:
+        fp.write(rep.detailed_report(column='Segments', debug=True))

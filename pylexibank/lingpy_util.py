@@ -47,6 +47,7 @@ def test_sequence(sequence, **keywords):
     lingpy_errors = set()
     clpa_errors = set()
     clpa_repl = defaultdict(set)
+    general_errors = 0
 
     # clean the string at first, we only take the first item, ignore the rest
     try:
@@ -55,6 +56,9 @@ def test_sequence(sequence, **keywords):
             x if y != '0' else '?' for x, y in
             zip(segments, tokens2class(segments, 'dolgo'))]
         clpa_analysis, _sounds, _errors = clpa.check_sequence(segments)
+        general_errors = len(['?' for x in zip(
+            lingpy_analysis,
+            clpa_analysis) if '?' in x])
     except (ValueError, IndexError):
         invalid.update([sequence])
         segments, clpa_analysis = [], []
@@ -73,7 +77,7 @@ def test_sequence(sequence, **keywords):
                     clpa_errors.add(a)
                 else:
                     clpa_repl[a].add(c)
-
+    
     return (
         segments,
         [clpa.segment2clpa(x) for x in clpa_analysis],
@@ -81,8 +85,8 @@ def test_sequence(sequence, **keywords):
         segment_count,
         lingpy_errors,
         clpa_errors,
-        clpa_repl)
-
+        clpa_repl,
+        general_errors)
 
 def segmentize(dataset, source='Value', target='Segments', clean=lambda s: s, **kw):
     """
@@ -97,16 +101,21 @@ def test_sequences(dataset, lid_getter, report, column='Value', **kw):
     """
     Write a detailed transcription-report for a CLDF dataset in LexiBank.
     """
-    for row in dataset.rows:
+
+    for i, row in enumerate(dataset.rows):
         res = test_sequence(row[column], **kw)
         if not kw['segmentized'] and column != 'Segments' and 'Segments' in row:
             row['Segments'] = ' '.join(res[0])
         lr = report[lid_getter(row)]
-        for i, attr in enumerate(['invalid', 'segments', 'lingpy_errors', 'clpa_errors']):
-            lr[attr].update(res[i + 2])
-        for segment, repls in res[-1].items():
+        for j, attr in enumerate(['invalid', 'segments', 'lingpy_errors',
+            'clpa_errors']):
+            lr[attr].update(res[j + 2])
+        for segment, repls in res[-2].items():
             lr['replacements'][segment].update(repls)
-
+        lr['general_errors'] += res[-1]
+        lr['word_errors'] += 1 if res[-1] else 0
+        if res[-1]:
+            lr['bad_words'] += [row['ID']]
 
 def _cldf2wld(dataset):
     """Make lingpy-compatible dictinary out of cldf main data."""

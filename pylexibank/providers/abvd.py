@@ -62,7 +62,7 @@ class XmlElement(object):
             ee = e.find(attr)
             if ee is not None:
                 text = e.find(attr).text
-                if text and not isinstance(text, unicode):
+                if text and not isinstance(text, text_type):
                     text = text.decode('utf8')
             else:
                 text = ''

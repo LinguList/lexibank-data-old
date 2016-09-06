@@ -106,9 +106,12 @@ class Dataset(object):
         self._run_command('download', **kw)
 
     def report(self, **kw):
-        rep = TranscriptionReport(self, self.dir.joinpath('transcription.json'))
-        rep.run(**getattr(self.commands, 'TRANSCRIPTION_REPORT_CFG', {}))
-
+        try:
+            self._run_command('report', **kw)
+        except:
+            rep = TranscriptionReport(self, self.dir.joinpath('transcription.json'))
+            rep.run(**getattr(self.commands, 'TRANSCRIPTION_REPORT_CFG', {}))
+            print(rep.detailed_report())
 
 class Cognates(list):
     fields = [
@@ -174,6 +177,10 @@ class TranscriptionReport(UnicodeMixin):
             lingpy_errors=set(),
             clpa_errors=set(),
             replacements=defaultdict(set),
+            general_errors=0,
+            word_errors=0,
+            bad_words=[],
+            segment_types=Counter(),
         ))
         for ds in self.dataset.iter_cldf_datasets():
             test_sequences(ds, get_variety_id, self.report, **cfg)
@@ -185,11 +192,23 @@ class TranscriptionReport(UnicodeMixin):
             lingpy_errors=set(),
             clpa_errors=set(),
             replacements=defaultdict(set),
-            inventory_size=0)
+            inventory_size=0,
+            general_errors=0,
+            word_errors=0,
+            bad_words=[],
+            segment_types=Counter(),
+            )
         for lid, report in self.report.items():
             stats['invalid'].update(report['invalid'])
             stats['tokens'] += sum(report['segments'].values())
             stats['segments'].update(report['segments'].keys())
+            
+            for segment, count in report['segments'].items():
+                stats['segment_types'][segment] += count
+
+            stats['general_errors'] += report['general_errors']
+            stats['word_errors'] += report['word_errors']
+            stats['bad_words'] += report['bad_words']
             for attr in ['lingpy_errors', 'clpa_errors']:
                 stats[attr].update(report[attr])
             for segment, repls in report['replacements'].items():
@@ -201,6 +220,8 @@ class TranscriptionReport(UnicodeMixin):
             for segment in report['replacements']:
                 report['replacements'][segment] = sorted(report['replacements'][segment])
         # make sure we can serialize as JSON:
+        for attr in ['lingpy_errors', 'clpa_errors']:
+            stats[attr+'_types'] = sorted(stats[attr])
         for attr in ['invalid', 'segments', 'lingpy_errors', 'clpa_errors']:
             stats[attr] = len(stats[attr])
         for segment in stats['replacements']:
@@ -210,54 +231,78 @@ class TranscriptionReport(UnicodeMixin):
         jsonlib.dump(self.report, self.fname, indent=4)
 
     def __unicode__(self):
+        
         md = """## Transcription Report
 ### General Statistics
-* Number of Tokens: {number_of_tokens}
-* Number of Segments: {number_of_segments}
-* Invalid forms: {invalid_rows}
+* Number of Tokens: {tokens}
+* Number of Segments: {segments}
+* Invalid forms: {invalid}
 * Inventory Size: {inventory_size:.2f}
+* [Erroneous tokens](report.md#tokens): {general_errors}
 """.format(**self.report['stats'])
 
         md += """\
-* Number of Errors: {0}
+* Erroneous words: {0}
 * Number of LingPy-Errors: {1}
 * Number of CLPA-Errors: {2}
+* Bad words: {3}
 """.format(
-            0,  # FIXME
-            self.report['stats']['number_of_errors']['lingpy'],
-            self.report['stats']['number_of_errors']['clpa'],
+            self.report['stats']['word_errors'], 
+            self.report['stats']['lingpy_errors'],
+            self.report['stats']['clpa_errors'],
+            ' '.join([str(lid) for lid in self.report['stats']['bad_words']])
         )
 
-        """
-{modified}
-## Detailed listing of recognized segments
-{segments}
-"""
-
         return md
+    
+    def detailed_report(self, column='Value'):
+        
+        stats = self.report['stats']
 
-        segments = '| Segment | Occurrence | LingPy | CLPA | \n|---|---|---|---|\n'
-        for a, b in sorted(stats.items(), key=lambda x: x[1], reverse=True):
-            if a in errors:
-                c = '✓' if 'lingpy' not in errors[a] else '?'
-                d = ', '.join(errors[a]) if 'clpa' not in errors[a] else '?'
+        # start with segments
+        segments = '| No | Segment | Occurrence | LingPy | CLPA | \n|---|---|---|---|---|\n'
+        for i,(a, b) in enumerate(sorted(stats['segment_types'].items(),
+            key=lambda x: x[1], reverse=True)):
+            if a in stats['clpa_errors_types']:
+                c = '✓' if a not in stats['lingpy_errors_types'] else '?'
+                d = ', '.join(errors[a]) if a not in stats['clpa_errors_types'] else '?'
             else:
                 c, d = '✓', '✓'
-            segments += '| {0} | {1} | {2} | {3} |\n'.format(a, b, c, d)
+            segments += '| {0} | {1} | {2} | {3} | {4} |\n'.format(i+1, a, b, c, d)
 
-        return text.format(
-            dataset=dataset.name,
-            NOT=number_of_tokens,
-            NOS=number_of_segments,
-            NOE=number_of_errors,
-            NOL=number_of_lingpy_errors,
-            NOC=number_of_clpa_errors,
-            IVS=inventory_size,
-            modified='\n## Automatically modified (CLPA)\n' +
-                     '| Source | Target |\n|---|---|\n' +
-                     ''.join(['| {0} | {1} |\n'.format(a, b) for a, b in modified])
-            if modified else '',
-            segments=segments)
+        # now make detailed list of bad words
+        dsrows = []
+        for ds in self.dataset.iter_cldf_datasets():
+            dsrows += ds.rows
+
+        words = '| No | ID | LANGUAGE | CONCEPT | VALUE | SEGMENTS | \n'
+        words += '| --- | --- | --- | --- | --- | --- |\n'
+        count = 1
+        template = '![x](https://img.shields.io/badge/{0}--{1}.svg "{2}")'
+        for row in dsrows:
+            if row['ID'] in stats['bad_words']:
+                new_string = []
+                for segment in row[column].split(' '):
+                    if segment in stats['lingpy_errors_types']:
+                        new_string += [template.format(segment, 'red', 'lingpy')]
+                    elif segment in stats['clpa_errors_types']:
+                        new_string += [template.format(segment, 'yellow',
+                        'clpa')]
+                    else:
+                        new_string += [template.format(segment, 'brightgreen',
+                            'fine')]
+                words += '| {0} | {1} | {2} | {3} | {4} | {5} | \n'.format(
+                        count, 
+                        row['ID'],
+                        row['Language_name'],
+                        row['Parameter_name'],
+                        row['Value'],
+                        ' '.join(new_string))
+                count += 1
+        h1 = '# Detailed transcription record\n'
+        h2 = '## Segments\n\n'+segments
+        h3 = '## Words\n\n'+words
+        return '\n'.join([h1, h2, h3])
 
 
 class CldfDataset(CldfDatasetBase):
