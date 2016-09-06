@@ -2,877 +2,884 @@
 
 ## Segments
 
-| No | Segment | Occurrence | LingPy | CLPA | 
-|---|---|---|---|---|
-| 1 | a | 1097 | ✓ | ✓ |
-| 2 | ɛ | 730 | ✓ | ✓ |
-| 3 | r | 529 | ✓ | ✓ |
-| 4 | s | 525 | ✓ | ✓ |
-| 5 | n | 522 | ✓ | ✓ |
-| 6 | m | 457 | ✓ | ✓ |
-| 7 | t | 428 | ✓ | ✓ |
-| 8 | ɨ | 412 | ✓ | ✓ |
-| 9 | k | 387 | ✓ | ✓ |
-| 10 | b | 320 | ✓ | ✓ |
-| 11 | e | 319 | ✓ | ✓ |
-| 12 | u | 279 | ✓ | ✓ |
-| 13 | d | 271 | ✓ | ✓ |
-| 14 | i | 268 | ✓ | ✓ |
-| 15 | l | 249 | ✓ | ✓ |
-| 16 | o | 175 | ✓ | ✓ |
-| 17 | g | 169 | ✓ | ✓ |
-| 18 | h | 158 | ✓ | ✓ |
-| 19 | ħ | 138 | ✓ | ✓ |
-| 20 | z | 113 | ✓ | ✓ |
-| 21 | f | 110 | ✓ | ✓ |
-| 22 | ʃ | 109 | ✓ | ✓ |
-| 23 | a: | 102 | ✓ | ✓ |
-| 24 | w | 101 | ✓ | ✓ |
-| 25 | _ | 99 | ✓ | ✓ |
-| 26 | c | 85 | ✓ | ✓ |
-| 27 | x | 59 | ✓ | ✓ |
-| 28 | ə | 58 | ✓ | ✓ |
-| 29 | ɔ | 57 | ✓ | ✓ |
-| 30 | nn | 52 | ✓ | ? |
-| 31 |  | 51 | ? | ? |
-| 32 | j | 39 | ✓ | ✓ |
-| 33 | 9 | 37 | ? | ? |
-| 34 | i: | 36 | ✓ | ✓ |
-| 35 | o: | 30 | ✓ | ✓ |
-| 36 | ɬ | 29 | ✓ | ✓ |
-| 37 | ee | 29 | ✓ | ✓ |
-| 38 | ii | 27 | ✓ | ? |
-| 39 | ay | 27 | ✓ | ? |
-| 40 | e: | 26 | ✓ | ✓ |
-| 41 | ʔ | 25 | ✓ | ✓ |
-| 42 | ll | 24 | ✓ | ? |
-| 43 | ʕ | 24 | ✓ | ✓ |
-| 44 | bb | 24 | ✓ | ? |
-| 45 | u: | 23 | ✓ | ✓ |
-| 46 | oo | 22 | ✓ | ✓ |
-| 47 | mm | 21 | ✓ | ? |
-| 48 | p | 21 | ✓ | ✓ |
-| 49 | ʊ | 21 | ✓ | ✓ |
-| 50 | ya | 19 | ✓ | ? |
-| 51 | ss | 18 | ✓ | ? |
-| 52 | dd | 18 | ✓ | ? |
-| 53 | q | 17 | ✓ | ✓ |
-| 54 | bh | 16 | ✓ | ✓ |
-| 55 | rr | 16 | ✓ | ? |
-| 56 | ɛ: | 15 | ✓ | ✓ |
-| 57 | dh | 15 | ✓ | ✓ |
-| 58 | aa | 15 | ✓ | ✓ |
-| 59 | ʒ | 12 | ✓ | ✓ |
-| 60 | y | 12 | ✓ | ✓ |
-| 61 | ð | 12 | ✓ | ✓ |
-| 62 | th | 12 | ✓ | ✓ |
-| 63 | rs | 11 | ✓ | ? |
-| 64 | β | 11 | ✓ | ✓ |
-| 65 | ɟ | 11 | ✓ | ✓ |
-| 66 | ɔ: | 11 | ✓ | ✓ |
-| 67 | ʷ | 10 | ? | ? |
-| 68 | kh | 10 | ✓ | ✓ |
-| 69 | ww | 9 | ✓ | ? |
-| 70 | kk | 9 | ✓ | ? |
-| 71 | zz | 9 | ✓ | ? |
-| 72 | θ | 8 | ✓ | ✓ |
-| 73 | ns | 8 | ✓ | ? |
-| 74 | a:y | 8 | ✓ | ? |
-| 75 | ɨyɛ | 7 | ✓ | ? |
-| 76 | yɨ | 7 | ✓ | ? |
-| 77 | gh | 6 | ✓ | ✓ |
-| 78 | ye | 6 | ✓ | ? |
-| 79 | ʊ: | 6 | ✓ | ✓ |
-| 80 | mʷ | 6 | ✓ | ✓ |
-| 81 | uu | 6 | ✓ | ✓ |
-| 82 | fw | 6 | ✓ | ? |
-| 83 | ɔɔ | 5 | ✓ | ? |
-| 84 | ɨ: | 5 | ✓ | ✓ |
-| 85 | nˡ | 5 | ✓ | ? |
-| 86 | æ | 5 | ✓ | ✓ |
-| 87 | bˡ | 5 | ✓ | ✓ |
-| 88 | ph | 5 | ✓ | ✓ |
-| 89 | ɪ | 5 | ✓ | ✓ |
-| 90 | ɛyɛ | 5 | ✓ | ? |
-| 91 | jj | 5 | ✓ | ? |
-| 92 | tt | 5 | ✓ | ? |
-| 93 | ɤɔ | 4 | ✓ | ? |
-| 94 | ɨya | 4 | ✓ | ? |
-| 95 | au | 4 | ✓ | ✓ |
-| 96 | gʷ | 4 | ✓ | ✓ |
-| 97 | tˡ | 4 | ✓ | ✓ |
-| 98 | ayɛ | 4 | ✓ | ? |
-| 99 | ms | 4 | ✓ | ? |
-| 100 | ey | 4 | ✓ | ? |
-| 101 | rʃ | 4 | ✓ | ? |
-| 102 | éé | 4 | ✓ | ? |
-| 103 | ɛy | 3 | ✓ | ? |
-| 104 | ai | 3 | ✓ | ✓ |
-| 105 | xʸ | 3 | ✓ | ✓ |
-| 106 | mw | 3 | ✓ | ✓ |
-| 107 | yɛ | 3 | ✓ | ? |
-| 108 | ñ | 3 | ✓ | ✓ |
-| 109 | kʸ | 3 | ✓ | ✓ |
-| 110 | ɛyyɨ | 3 | ✓ | ? |
-| 111 | eɛ | 3 | ✓ | ? |
-| 112 | gg | 3 | ✓ | ? |
-| 113 | ɛe | 3 | ✓ | ? |
-| 114 | pp | 3 | ✓ | ? |
-| 115 | ɪ: | 3 | ✓ | ✓ |
-| 116 | ǀ | 3 | ✓ | ✓ |
-| 117 | ea | 3 | ✓ | ? |
-| 118 | rw | 3 | ✓ | ? |
-| 119 | ʂ | 3 | ✓ | ✓ |
-| 120 | ff | 3 | ✓ | ? |
-| 121 | ayi | 3 | ✓ | ? |
-| 122 | fʷ | 3 | ✓ | ✓ |
-| 123 | cc | 3 | ✓ | ? |
-| 124 | eyo | 2 | ✓ | ? |
-| 125 | eya | 2 | ✓ | ? |
-| 126 | ỹ | 2 | ✓ | ✓ |
-| 127 | iya | 2 | ✓ | ? |
-| 128 | ẽ | 2 | ✓ | ✓ |
-| 129 | ĕ | 2 | ✓ | ? |
-| 130 | mʃ | 2 | ✓ | ? |
-| 131 | ẹ | 2 | ? | ? |
-| 132 | ɵa | 2 | ✓ | ? |
-| 133 | o:ya | 2 | ✓ | ? |
-| 134 | ls | 2 | ✓ | ? |
-| 135 | ṟ | 2 | ? | ? |
-| 136 | ă | 2 | ✓ | ✓ |
-| 137 | rh | 2 | ✓ | ✓ |
-| 138 | é | 2 | ✓ | ✓ |
-| 139 | ɤ | 2 | ✓ | ✓ |
-| 140 | eʸ | 2 | ✓ | ? |
-| 141 | ɤa | 2 | ✓ | ? |
-| 142 | mˡ | 2 | ✓ | ✓ |
-| 143 | a:yɛ | 2 | ✓ | ? |
-| 144 | zˡ | 2 | ✓ | ? |
-| 145 | i:ye | 2 | ✓ | ? |
-| 146 | yu | 2 | ✓ | ? |
-| 147 | ayyi | 2 | ✓ | ? |
-| 148 | ɵ | 2 | ✓ | ✓ |
-| 149 | rˡ | 2 | ✓ | ? |
-| 150 | kˡ | 2 | ✓ | ? |
-| 151 | əyya | 2 | ✓ | ? |
-| 152 | ɔʷ | 2 | ✓ | ? |
-| 153 | ks | 2 | ✓ | ✓ |
-| 154 | ọ | 1 | ✓ | ? |
-| 155 | ɵo | 1 | ✓ | ? |
-| 156 | iyy | 1 | ✓ | ? |
-| 157 | ðh | 1 | ✓ | ? |
-| 158 | dʸ | 1 | ✓ | ✓ |
-| 159 | ħħ | 1 | ✓ | ? |
-| 160 | ƭ | 1 | ? | ? |
-| 161 | ʏa: | 1 | ✓ | ? |
-| 162 | eyoo | 1 | ✓ | ? |
-| 163 | i:ʸ | 1 | ✓ | ? |
-| 164 | ɨ:yə | 1 | ✓ | ? |
-| 165 | iɛa | 1 | ✓ | ? |
-| 166 | iyɛ | 1 | ✓ | ? |
-| 167 | ua | 1 | ✓ | ✓ |
-| 168 | yaa | 1 | ✓ | ? |
-| 169 | dw | 1 | ✓ | ✓ |
-| 170 | ɛɛ | 1 | ✓ | ? |
-| 171 | ẖ | 1 | ? | ? |
-| 172 | nh | 1 | ✓ | ✓ |
-| 173 | ĭ | 1 | ✓ | ? |
-| 174 | ħʃ | 1 | ✓ | ? |
-| 175 | ayˡa | 1 | ✓ | ? |
-| 176 | ya: | 1 | ✓ | ? |
-| 177 | uy | 1 | ✓ | ? |
-| 178 | ɨy | 1 | ✓ | ? |
-| 179 | I | 1 | ? | ? |
-| 180 | lʸ | 1 | ✓ | ✓ |
-| 181 | aɔ | 1 | ✓ | ? |
-| 182 | i:y | 1 | ✓ | ? |
-| 183 | iyyi | 1 | ✓ | ? |
-| 184 | sʸ | 1 | ✓ | ✓ |
-| 185 | ç | 1 | ✓ | ✓ |
-| 186 | ʟ | 1 | ✓ | ✓ |
-| 187 | oa | 1 | ✓ | ? |
-| 188 | zh | 1 | ✓ | ? |
-| 189 | sh | 1 | ✓ | ✓ |
-| 190 |  | 1 | ? | ? |
-| 191 | aˡ | 1 | ✓ | ? |
-| 192 | oɵi | 1 | ✓ | ? |
-| 193 | ŏ | 1 | ✓ | ✓ |
-| 194 | aɤa | 1 | ✓ | ? |
-| 195 | ɵu | 1 | ✓ | ? |
-| 196 | ʊ:y | 1 | ✓ | ? |
-| 197 | uiya | 1 | ✓ | ? |
-| 198 | xx | 1 | ✓ | ? |
-| 199 | wʸ | 1 | ✓ | ✓ |
-| 200 | ɤay | 1 | ✓ | ? |
-| 201 | ayye | 1 | ✓ | ? |
-| 202 | ĩ | 1 | ✓ | ✓ |
-| 203 | o:y | 1 | ✓ | ? |
-| 204 | oy | 1 | ✓ | ? |
-| 205 | kʷ | 1 | ✓ | ✓ |
-| 206 | dˡ | 1 | ✓ | ✓ |
-| 207 | ɔ:y | 1 | ✓ | ? |
-| 208 | ɟɟ | 1 | ✓ | ? |
-| 209 | aʏi: | 1 | ✓ | ? |
-| 210 | lʃ | 1 | ✓ | ? |
-| 211 | eɤ | 1 | ✓ | ? |
-| 212 | uʷiye | 1 | ✓ | ? |
-| 213 | ɨi | 1 | ✓ | ? |
-| 214 | v | 1 | ✓ | ✓ |
-| 215 | ė | 1 | ? | ? |
-| 216 | ɛyoo | 1 | ✓ | ? |
-| 217 | hh | 1 | ✓ | ? |
-| 218 | ʏe | 1 | ✓ | ? |
-| 219 | xʷ | 1 | ✓ | ✓ |
-| 220 | oᵘ | 1 | ✓ | ? |
-| 221 | xw | 1 | ✓ | ? |
-| 222 | ayyɛ | 1 | ✓ | ? |
-| 223 | ayyɨ | 1 | ✓ | ? |
-| 224 | ooɤ | 1 | ✓ | ? |
-| 225 | aʷɔ | 1 | ✓ | ? |
-| 226 | ɛey | 1 | ✓ | ? |
-| 227 | ts | 1 | ✓ | ✓ |
-| 228 | sw | 1 | ✓ | ? |
-| 229 | ɛya | 1 | ✓ | ? |
-| 230 | tʸ | 1 | ✓ | ✓ |
-| 231 | iyaa | 1 | ✓ | ? |
-| 232 | B | 1 | ? | ? |
-| 233 | ɱ | 1 | ✓ | ✓ |
-| 234 | yo | 1 | ✓ | ? |
-| 235 | eɵe | 1 | ✓ | ? |
-| 236 | :t | 1 | ✓ | ? |
-| 237 | a:ʸyɔ: | 1 | ✓ | ? |
-| 238 | ɔe | 1 | ✓ | ? |
-| 239 | ɛʸ | 1 | ✓ | ? |
-| 240 | ɨyyɔ | 1 | ✓ | ? |
-| 241 | oyɛ | 1 | ✓ | ? |
-| 242 | ws | 1 | ✓ | ? |
-| 243 | iyyu | 1 | ✓ | ? |
-| 244 | mʃˡ | 1 | ✓ | ? |
-| 245 | nʃ | 1 | ✓ | ? |
-| 246 | ħs | 1 | ✓ | ? |
-| 247 | hʷ | 1 | ✓ | ✓ |
-| 248 | ʔʔ | 1 | ✓ | ? |
-| 249 | e:y | 1 | ✓ | ? |
-| 250 | p: | 1 | ✓ | ✓ |
-| 251 | iiyo | 1 | ✓ | ? |
-| 252 | yi | 1 | ✓ | ✓ |
-| 253 | eeye | 1 | ✓ | ? |
-| 254 | iy | 1 | ✓ | ? |
-| 255 | ʃʃ | 1 | ✓ | ? |
-| 256 | ĕh | 1 | ✓ | ? |
-| 257 | ʏa | 1 | ✓ | ? |
-| 258 | ɵe | 1 | ✓ | ? |
-| 259 | ɛa | 1 | ✓ | ? |
-| 260 | oi | 1 | ✓ | ✓ |
-| 261 | lh | 1 | ✓ | ✓ |
-| 262 | ɨʊaʊʷɛ | 1 | ✓ | ? |
-| 263 | nʸ | 1 | ✓ | ✓ |
-| 264 | ɪ:ya | 1 | ✓ | ? |
-| 265 | ɵoo | 1 | ✓ | ? |
-| 266 | eyɵe | 1 | ✓ | ? |
-| 267 | ɔy | 1 | ✓ | ? |
-| 268 | éh | 1 | ✓ | ? |
-| 269 | yi: | 1 | ✓ | ? |
-| 270 | eɤi | 1 | ✓ | ? |
-| 271 | sʷ | 1 | ✓ | ✓ |
-| 272 | bw | 1 | ✓ | ✓ |
-| 273 | yuɤɔ | 1 | ✓ | ? |
+| Segment | Occurrence | LingPy | CLPA |
+|:----------|-------------:|:---------|:-------|
+| a | 1097 | ✓ | ✓ |
+| ɛ | 730 | ✓ | ✓ |
+| r | 529 | ✓ | ✓ |
+| s | 525 | ✓ | ✓ |
+| n | 522 | ✓ | ✓ |
+| m | 457 | ✓ | ✓ |
+| t | 428 | ✓ | ✓ |
+| ɨ | 412 | ✓ | ✓ |
+| k | 387 | ✓ | ✓ |
+| b | 320 | ✓ | ✓ |
+| e | 319 | ✓ | ✓ |
+| u | 279 | ✓ | ✓ |
+| d | 271 | ✓ | ✓ |
+| i | 268 | ✓ | ✓ |
+| l | 249 | ✓ | ✓ |
+| o | 175 | ✓ | ✓ |
+| g | 169 | ✓ | ✓ |
+| h | 158 | ✓ | ✓ |
+| ħ | 138 | ✓ | ✓ |
+| z | 113 | ✓ | ✓ |
+| f | 110 | ✓ | ✓ |
+| ʃ | 109 | ✓ | ✓ |
+| a: | 102 | ✓ | ✓ |
+| w | 101 | ✓ | ✓ |
+| _ | 99 | ✓ | ✓ |
+| c | 85 | ✓ | ✓ |
+| x | 59 | ✓ | ✓ |
+| ə | 58 | ✓ | ✓ |
+| ɔ | 57 | ✓ | ✓ |
+| nn | 52 | ✓ | ? |
+| | 51 | ? | ? |
+| j | 39 | ✓ | ✓ |
+| 9 | 37 | ? | ? |
+| i: | 36 | ✓ | ✓ |
+| o: | 30 | ✓ | ✓ |
+| ee | 29 | ✓ | ✓ |
+| ɬ | 29 | ✓ | ✓ |
+| ay | 27 | ✓ | ? |
+| ii | 27 | ✓ | ? |
+| e: | 26 | ✓ | ✓ |
+| ʔ | 25 | ✓ | ✓ |
+| bb | 24 | ✓ | ? |
+| ll | 24 | ✓ | ? |
+| ʕ | 24 | ✓ | ✓ |
+| u: | 23 | ✓ | ✓ |
+| oo | 22 | ✓ | ✓ |
+| mm | 21 | ✓ | ? |
+| p | 21 | ✓ | ✓ |
+| ʊ | 21 | ✓ | ✓ |
+| ya | 19 | ✓ | ? |
+| dd | 18 | ✓ | ? |
+| ss | 18 | ✓ | ? |
+| q | 17 | ✓ | ✓ |
+| bh | 16 | ✓ | ✓ |
+| rr | 16 | ✓ | ? |
+| aa | 15 | ✓ | ✓ |
+| dh | 15 | ✓ | ✓ |
+| ɛ: | 15 | ✓ | ✓ |
+| th | 12 | ✓ | ✓ |
+| y | 12 | ✓ | ✓ |
+| ð | 12 | ✓ | ✓ |
+| ʒ | 12 | ✓ | ✓ |
+| rs | 11 | ✓ | ? |
+| ɔ: | 11 | ✓ | ✓ |
+| ɟ | 11 | ✓ | ✓ |
+| β | 11 | ✓ | ✓ |
+| kh | 10 | ✓ | ✓ |
+| ʷ | 10 | ? | ? |
+| kk | 9 | ✓ | ? |
+| ww | 9 | ✓ | ? |
+| zz | 9 | ✓ | ? |
+| a:y | 8 | ✓ | ? |
+| ns | 8 | ✓ | ? |
+| θ | 8 | ✓ | ✓ |
+| yɨ | 7 | ✓ | ? |
+| ɨyɛ | 7 | ✓ | ? |
+| fw | 6 | ✓ | ? |
+| gh | 6 | ✓ | ✓ |
+| mʷ | 6 | ✓ | ✓ |
+| uu | 6 | ✓ | ✓ |
+| ye | 6 | ✓ | ? |
+| ʊ: | 6 | ✓ | ✓ |
+| bˡ | 5 | ✓ | ✓ |
+| jj | 5 | ✓ | ? |
+| nˡ | 5 | ✓ | ? |
+| ph | 5 | ✓ | ✓ |
+| tt | 5 | ✓ | ? |
+| æ | 5 | ✓ | ✓ |
+| ɔɔ | 5 | ✓ | ? |
+| ɛyɛ | 5 | ✓ | ? |
+| ɨ: | 5 | ✓ | ✓ |
+| ɪ | 5 | ✓ | ✓ |
+| au | 4 | ✓ | ✓ |
+| ayɛ | 4 | ✓ | ? |
+| ey | 4 | ✓ | ? |
+| gʷ | 4 | ✓ | ✓ |
+| ms | 4 | ✓ | ? |
+| rʃ | 4 | ✓ | ? |
+| tˡ | 4 | ✓ | ✓ |
+| éé | 4 | ✓ | ? |
+| ɤɔ | 4 | ✓ | ? |
+| ɨya | 4 | ✓ | ? |
+| ai | 3 | ✓ | ✓ |
+| ayi | 3 | ✓ | ? |
+| cc | 3 | ✓ | ? |
+| ea | 3 | ✓ | ? |
+| eɛ | 3 | ✓ | ? |
+| ff | 3 | ✓ | ? |
+| fʷ | 3 | ✓ | ✓ |
+| gg | 3 | ✓ | ? |
+| kʸ | 3 | ✓ | ✓ |
+| mw | 3 | ✓ | ✓ |
+| pp | 3 | ✓ | ? |
+| rw | 3 | ✓ | ? |
+| xʸ | 3 | ✓ | ✓ |
+| yɛ | 3 | ✓ | ? |
+| ñ | 3 | ✓ | ✓ |
+| ǀ | 3 | ✓ | ✓ |
+| ɛe | 3 | ✓ | ? |
+| ɛy | 3 | ✓ | ? |
+| ɛyyɨ | 3 | ✓ | ? |
+| ɪ: | 3 | ✓ | ✓ |
+| ʂ | 3 | ✓ | ✓ |
+| a:yɛ | 2 | ✓ | ? |
+| ayyi | 2 | ✓ | ? |
+| eya | 2 | ✓ | ? |
+| eyo | 2 | ✓ | ? |
+| eʸ | 2 | ✓ | ? |
+| i:ye | 2 | ✓ | ? |
+| iya | 2 | ✓ | ? |
+| ks | 2 | ✓ | ✓ |
+| kˡ | 2 | ✓ | ? |
+| ls | 2 | ✓ | ? |
+| mʃ | 2 | ✓ | ? |
+| mˡ | 2 | ✓ | ✓ |
+| o:ya | 2 | ✓ | ? |
+| rh | 2 | ✓ | ✓ |
+| rˡ | 2 | ✓ | ? |
+| yu | 2 | ✓ | ? |
+| zˡ | 2 | ✓ | ? |
+| é | 2 | ✓ | ✓ |
+| ă | 2 | ✓ | ✓ |
+| ĕ | 2 | ✓ | ? |
+| ɔʷ | 2 | ✓ | ? |
+| əyya | 2 | ✓ | ? |
+| ɤ | 2 | ✓ | ✓ |
+| ɤa | 2 | ✓ | ? |
+| ɵ | 2 | ✓ | ✓ |
+| ɵa | 2 | ✓ | ? |
+| ṟ | 2 | ? | ? |
+| ẹ | 2 | ? | ? |
+| ẽ | 2 | ✓ | ✓ |
+| ỹ | 2 | ✓ | ✓ |
+| :t | 1 | ✓ | ? |
+| B | 1 | ? | ? |
+| I | 1 | ? | ? |
+| a:ʸyɔ: | 1 | ✓ | ? |
+| ayye | 1 | ✓ | ? |
+| ayyɛ | 1 | ✓ | ? |
+| ayyɨ | 1 | ✓ | ? |
+| ayˡa | 1 | ✓ | ? |
+| aɔ | 1 | ✓ | ? |
+| aɤa | 1 | ✓ | ? |
+| aʏi: | 1 | ✓ | ? |
+| aʷɔ | 1 | ✓ | ? |
+| aˡ | 1 | ✓ | ? |
+| bw | 1 | ✓ | ✓ |
+| dw | 1 | ✓ | ✓ |
+| dʸ | 1 | ✓ | ✓ |
+| dˡ | 1 | ✓ | ✓ |
+| e:y | 1 | ✓ | ? |
+| eeye | 1 | ✓ | ? |
+| eyoo | 1 | ✓ | ? |
+| eyɵe | 1 | ✓ | ? |
+| eɤ | 1 | ✓ | ? |
+| eɤi | 1 | ✓ | ? |
+| eɵe | 1 | ✓ | ? |
+| hh | 1 | ✓ | ? |
+| hʷ | 1 | ✓ | ✓ |
+| i:y | 1 | ✓ | ? |
+| i:ʸ | 1 | ✓ | ? |
+| iiyo | 1 | ✓ | ? |
+| iy | 1 | ✓ | ? |
+| iyaa | 1 | ✓ | ? |
+| iyy | 1 | ✓ | ? |
+| iyyi | 1 | ✓ | ? |
+| iyyu | 1 | ✓ | ? |
+| iyɛ | 1 | ✓ | ? |
+| iɛa | 1 | ✓ | ? |
+| kʷ | 1 | ✓ | ✓ |
+| lh | 1 | ✓ | ✓ |
+| lʃ | 1 | ✓ | ? |
+| lʸ | 1 | ✓ | ✓ |
+| mʃˡ | 1 | ✓ | ? |
+| nh | 1 | ✓ | ✓ |
+| nʃ | 1 | ✓ | ? |
+| nʸ | 1 | ✓ | ✓ |
+| o:y | 1 | ✓ | ? |
+| oa | 1 | ✓ | ? |
+| oi | 1 | ✓ | ✓ |
+| ooɤ | 1 | ✓ | ? |
+| oy | 1 | ✓ | ? |
+| oyɛ | 1 | ✓ | ? |
+| oɵi | 1 | ✓ | ? |
+| oᵘ | 1 | ✓ | ? |
+| p: | 1 | ✓ | ✓ |
+| sh | 1 | ✓ | ? |
+| sw | 1 | ✓ | ? |
+| sʷ | 1 | ✓ | ✓ |
+| sʸ | 1 | ✓ | ✓ |
+| ts | 1 | ✓ | ✓ |
+| tʸ | 1 | ✓ | ✓ |
+| ua | 1 | ✓ | ✓ |
+| uiya | 1 | ✓ | ? |
+| uy | 1 | ✓ | ? |
+| uʷiye | 1 | ✓ | ? |
+| v | 1 | ✓ | ✓ |
+| ws | 1 | ✓ | ? |
+| wʸ | 1 | ✓ | ✓ |
+| xw | 1 | ✓ | ? |
+| xx | 1 | ✓ | ? |
+| xʷ | 1 | ✓ | ✓ |
+| ya: | 1 | ✓ | ? |
+| yaa | 1 | ✓ | ? |
+| yi | 1 | ✓ | ✓ |
+| yi: | 1 | ✓ | ? |
+| yo | 1 | ✓ | ? |
+| yuɤɔ | 1 | ✓ | ? |
+| zh | 1 | ✓ | ? |
+| ç | 1 | ✓ | ✓ |
+| éh | 1 | ✓ | ? |
+| ðh | 1 | ✓ | ? |
+| ĕh | 1 | ✓ | ? |
+| ė | 1 | ? | ? |
+| ħs | 1 | ✓ | ? |
+| ħħ | 1 | ✓ | ? |
+| ħʃ | 1 | ✓ | ? |
+| ĩ | 1 | ✓ | ✓ |
+| ĭ | 1 | ✓ | ? |
+| ŏ | 1 | ✓ | ✓ |
+| ƭ | 1 | ? | ? |
+| ɔ:y | 1 | ✓ | ? |
+| ɔe | 1 | ✓ | ? |
+| ɔy | 1 | ✓ | ? |
+| ɛa | 1 | ✓ | ? |
+| ɛey | 1 | ✓ | ? |
+| ɛya | 1 | ✓ | ? |
+| ɛyoo | 1 | ✓ | ? |
+| ɛɛ | 1 | ✓ | ? |
+| ɛʸ | 1 | ✓ | ? |
+| ɟɟ | 1 | ✓ | ? |
+| ɤay | 1 | ✓ | ? |
+| ɨ:yə | 1 | ✓ | ? |
+| ɨi | 1 | ✓ | ? |
+| ɨy | 1 | ✓ | ? |
+| ɨyyɔ | 1 | ✓ | ? |
+| ɨʊaʊʷɛ | 1 | ✓ | ? |
+| ɪ:ya | 1 | ✓ | ? |
+| ɱ | 1 | ✓ | ✓ |
+| ɵe | 1 | ✓ | ? |
+| ɵo | 1 | ✓ | ? |
+| ɵoo | 1 | ✓ | ? |
+| ɵu | 1 | ✓ | ? |
+| ʃʃ | 1 | ✓ | ? |
+| ʊ:y | 1 | ✓ | ? |
+| ʏa | 1 | ✓ | ? |
+| ʏa: | 1 | ✓ | ? |
+| ʏe | 1 | ✓ | ? |
+| ʔʔ | 1 | ✓ | ? |
+| ʟ | 1 | ✓ | ✓ |
+| ẖ | 1 | ? | ? |
+| ọ | 1 | ? | ? |
+|  | 1 | ? | ? |
+
+(273 rows)
+
 
 ## Words
 
-| No | ID | LANGUAGE | CONCEPT | VALUE | SEGMENTS | 
-| --- | --- | --- | --- | --- | --- |
-| 1 | Kitchen2012-1 | Ge'ez | All | kʷɨllu | ![x](https://img.shields.io/badge/kʷ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ɨ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ll--yellow.svg "clpa") ![x](https://img.shields.io/badge/u--brightgreen.svg "fine") | 
-| 2 | Kitchen2012-2 | Tigre | All | kɨllu | ![x](https://img.shields.io/badge/k--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ɨ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ll--yellow.svg "clpa") ![x](https://img.shields.io/badge/u--brightgreen.svg "fine") | 
-| 3 | Kitchen2012-3 | Tigrinya | All | kullu | ![x](https://img.shields.io/badge/k--brightgreen.svg "fine") ![x](https://img.shields.io/badge/u--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ll--yellow.svg "clpa") ![x](https://img.shields.io/badge/u--brightgreen.svg "fine") | 
-| 4 | Kitchen2012-4 | Amharic | All | hullu | ![x](https://img.shields.io/badge/h--brightgreen.svg "fine") ![x](https://img.shields.io/badge/u--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ll--yellow.svg "clpa") ![x](https://img.shields.io/badge/u--brightgreen.svg "fine") | 
-| 5 | Kitchen2012-5 | Argobba | All | diyyu | ![x](https://img.shields.io/badge/d--brightgreen.svg "fine") ![x](https://img.shields.io/badge/iyyu--yellow.svg "clpa") | 
-| 6 | Kitchen2012-6 | Harari | All | kulluzo:m | ![x](https://img.shields.io/badge/k--brightgreen.svg "fine") ![x](https://img.shields.io/badge/u--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ll--yellow.svg "clpa") ![x](https://img.shields.io/badge/u--brightgreen.svg "fine") ![x](https://img.shields.io/badge/z--brightgreen.svg "fine") ![x](https://img.shields.io/badge/o:--brightgreen.svg "fine") ![x](https://img.shields.io/badge/m--brightgreen.svg "fine") | 
-| 7 | Kitchen2012-7 | Zway | All | hullɨn | ![x](https://img.shields.io/badge/h--brightgreen.svg "fine") ![x](https://img.shields.io/badge/u--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ll--yellow.svg "clpa") ![x](https://img.shields.io/badge/ɨ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/n--brightgreen.svg "fine") | 
-| 8 | Kitchen2012-8 | Walani | All | ullImka | ![x](https://img.shields.io/badge/u--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ll--yellow.svg "clpa") ![x](https://img.shields.io/badge/I--red.svg "lingpy") ![x](https://img.shields.io/badge/m--brightgreen.svg "fine") ![x](https://img.shields.io/badge/k--brightgreen.svg "fine") ![x](https://img.shields.io/badge/a--brightgreen.svg "fine") | 
-| 9 | Kitchen2012-9 | Gafat | All | yɨlho | ![x](https://img.shields.io/badge/yɨ--yellow.svg "clpa") ![x](https://img.shields.io/badge/lh--brightgreen.svg "fine") ![x](https://img.shields.io/badge/o--brightgreen.svg "fine") | 
-| 10 | Kitchen2012-10 | Soddo | All | kullɨmu | ![x](https://img.shields.io/badge/k--brightgreen.svg "fine") ![x](https://img.shields.io/badge/u--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ll--yellow.svg "clpa") ![x](https://img.shields.io/badge/ɨ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/m--brightgreen.svg "fine") ![x](https://img.shields.io/badge/u--brightgreen.svg "fine") | 
-| 11 | Kitchen2012-12 | Innemor | All | ɨnnɨ | ![x](https://img.shields.io/badge/ɨ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/nn--yellow.svg "clpa") ![x](https://img.shields.io/badge/ɨ--brightgreen.svg "fine") | 
-| 12 | Kitchen2012-14 | Geto | All | ɨnnɨm | ![x](https://img.shields.io/badge/ɨ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/nn--yellow.svg "clpa") ![x](https://img.shields.io/badge/ɨ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/m--brightgreen.svg "fine") | 
-| 13 | Kitchen2012-15 | Chaha | All | ɨnnɨm | ![x](https://img.shields.io/badge/ɨ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/nn--yellow.svg "clpa") ![x](https://img.shields.io/badge/ɨ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/m--brightgreen.svg "fine") | 
-| 14 | Kitchen2012-24 | Moroccan Arabic | All | koll | ![x](https://img.shields.io/badge/k--brightgreen.svg "fine") ![x](https://img.shields.io/badge/o--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ll--yellow.svg "clpa") | 
-| 15 | Kitchen2012-25 | Ogaden Arabic | All | kull | ![x](https://img.shields.io/badge/k--brightgreen.svg "fine") ![x](https://img.shields.io/badge/u--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ll--yellow.svg "clpa") | 
-| 16 | Kitchen2012-28 | Tigrinya | Ashes | ħamuxwusti | ![x](https://img.shields.io/badge/ħ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/a--brightgreen.svg "fine") ![x](https://img.shields.io/badge/m--brightgreen.svg "fine") ![x](https://img.shields.io/badge/u--brightgreen.svg "fine") ![x](https://img.shields.io/badge/xw--yellow.svg "clpa") ![x](https://img.shields.io/badge/u--brightgreen.svg "fine") ![x](https://img.shields.io/badge/s--brightgreen.svg "fine") ![x](https://img.shields.io/badge/t--brightgreen.svg "fine") ![x](https://img.shields.io/badge/i--brightgreen.svg "fine") | 
-| 17 | Kitchen2012-42 | Aramaic | Ashes | k'eƭ'm'/rmu'a | ![x](https://img.shields.io/badge/k--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ˈe--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ƭ--red.svg "lingpy") ![x](https://img.shields.io/badge/ˈm--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ˈ--brightgreen.svg "fine") | 
-| 18 | Kitchen2012-44 | Mehri | Ashes | rmiǀd | ![x](https://img.shields.io/badge/r--brightgreen.svg "fine") ![x](https://img.shields.io/badge/m--brightgreen.svg "fine") ![x](https://img.shields.io/badge/i--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ǀ--red.svg "lingpy") ![x](https://img.shields.io/badge/d--brightgreen.svg "fine") | 
-| 19 | Kitchen2012-46 | Soqotri | Ashes | riimid | ![x](https://img.shields.io/badge/r--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ii--yellow.svg "clpa") ![x](https://img.shields.io/badge/m--brightgreen.svg "fine") ![x](https://img.shields.io/badge/i--brightgreen.svg "fine") ![x](https://img.shields.io/badge/d--brightgreen.svg "fine") | 
-| 20 | Kitchen2012-50 | Ge'ez | Bark (tree) | lɨhɨs' | ![x](https://img.shields.io/badge/l--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ɨ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/h--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ɨ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/s--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ˈ--brightgreen.svg "fine") | 
-| 21 | Kitchen2012-52 | Tigrinya | Bark (tree) | lɨħs'ɪ | ![x](https://img.shields.io/badge/l--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ɨ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ħs--yellow.svg "clpa") ![x](https://img.shields.io/badge/ˈɪ--brightgreen.svg "fine") | 
-| 22 | Kitchen2012-53 | Amharic | Bark (tree) | lɨt' | ![x](https://img.shields.io/badge/l--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ɨ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/t--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ˈ--brightgreen.svg "fine") | 
-| 23 | Kitchen2012-55 | Harari | Bark (tree) | lit' | ![x](https://img.shields.io/badge/l--brightgreen.svg "fine") ![x](https://img.shields.io/badge/i--brightgreen.svg "fine") ![x](https://img.shields.io/badge/t--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ˈ--brightgreen.svg "fine") | 
-| 24 | Kitchen2012-57 | Walani | Bark (tree) | bossɛ | ![x](https://img.shields.io/badge/b--brightgreen.svg "fine") ![x](https://img.shields.io/badge/o--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ss--yellow.svg "clpa") ![x](https://img.shields.io/badge/ɛ--brightgreen.svg "fine") | 
-| 25 | Kitchen2012-61 | Mesmes | Bark (tree) | ha:nna | ![x](https://img.shields.io/badge/h--brightgreen.svg "fine") ![x](https://img.shields.io/badge/a:--brightgreen.svg "fine") ![x](https://img.shields.io/badge/nn--yellow.svg "clpa") ![x](https://img.shields.io/badge/a--brightgreen.svg "fine") | 
-| 26 | Kitchen2012-68 | Mehri | Bark (tree) | k'aɬiǀr | ![x](https://img.shields.io/badge/k--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ˈa--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ɬ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/i--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ǀ--red.svg "lingpy") ![x](https://img.shields.io/badge/r--brightgreen.svg "fine") | 
-| 27 | Kitchen2012-72 | Ogaden Arabic | Bark (tree) | jaza9 | ![x](https://img.shields.io/badge/j--brightgreen.svg "fine") ![x](https://img.shields.io/badge/a--brightgreen.svg "fine") ![x](https://img.shields.io/badge/z--brightgreen.svg "fine") ![x](https://img.shields.io/badge/a--brightgreen.svg "fine") ![x](https://img.shields.io/badge/9--red.svg "lingpy") | 
-| 28 | Kitchen2012-77 | Argobba | Belly | kɛrs | ![x](https://img.shields.io/badge/k--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ɛ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/rs--yellow.svg "clpa") | 
-| 29 | Kitchen2012-81 | Gafat | Belly | ɨrsɛ | ![x](https://img.shields.io/badge/ɨ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/rs--yellow.svg "clpa") ![x](https://img.shields.io/badge/ɛ--brightgreen.svg "fine") | 
-| 30 | Kitchen2012-82 | Soddo | Belly | kərs | ![x](https://img.shields.io/badge/k--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ə--brightgreen.svg "fine") ![x](https://img.shields.io/badge/rs--yellow.svg "clpa") | 
-| 31 | Kitchen2012-85 | Mesmes | Belly | kɔssa | ![x](https://img.shields.io/badge/k--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ɔ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ss--yellow.svg "clpa") ![x](https://img.shields.io/badge/a--brightgreen.svg "fine") | 
-| 32 | Kitchen2012-90 | Aramaic | Belly | karsa | ![x](https://img.shields.io/badge/k--brightgreen.svg "fine") ![x](https://img.shields.io/badge/a--brightgreen.svg "fine") ![x](https://img.shields.io/badge/rs--yellow.svg "clpa") ![x](https://img.shields.io/badge/a--brightgreen.svg "fine") | 
-| 33 | Kitchen2012-91 | Akkadian | Belly | karʃa | ![x](https://img.shields.io/badge/k--brightgreen.svg "fine") ![x](https://img.shields.io/badge/a--brightgreen.svg "fine") ![x](https://img.shields.io/badge/rʃ--yellow.svg "clpa") ![x](https://img.shields.io/badge/a--brightgreen.svg "fine") | 
-| 34 | Kitchen2012-94 | Soqotri | Belly | meǀr | ![x](https://img.shields.io/badge/m--brightgreen.svg "fine") ![x](https://img.shields.io/badge/e--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ǀ--red.svg "lingpy") ![x](https://img.shields.io/badge/r--brightgreen.svg "fine") | 
-| 35 | Kitchen2012-96 | Moroccan Arabic | Belly | kerʃ | ![x](https://img.shields.io/badge/k--brightgreen.svg "fine") ![x](https://img.shields.io/badge/e--brightgreen.svg "fine") ![x](https://img.shields.io/badge/rʃ--yellow.svg "clpa") | 
-| 36 | Kitchen2012-98 | Ge'ez | Big | 9abiyy | ![x](https://img.shields.io/badge/9--red.svg "lingpy") ![x](https://img.shields.io/badge/a--brightgreen.svg "fine") ![x](https://img.shields.io/badge/b--brightgreen.svg "fine") ![x](https://img.shields.io/badge/iyy--yellow.svg "clpa") | 
-| 37 | Kitchen2012-99 | Tigre | Big | 9abi | ![x](https://img.shields.io/badge/9--red.svg "lingpy") ![x](https://img.shields.io/badge/a--brightgreen.svg "fine") ![x](https://img.shields.io/badge/b--brightgreen.svg "fine") ![x](https://img.shields.io/badge/i--brightgreen.svg "fine") | 
-| 38 | Kitchen2012-100 | Tigrinya | Big | 9abiyyi | ![x](https://img.shields.io/badge/9--red.svg "lingpy") ![x](https://img.shields.io/badge/a--brightgreen.svg "fine") ![x](https://img.shields.io/badge/b--brightgreen.svg "fine") ![x](https://img.shields.io/badge/iyyi--yellow.svg "clpa") | 
-| 39 | Kitchen2012-101 | Amharic | Big | tɨllɨk' | ![x](https://img.shields.io/badge/t--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ɨ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ll--yellow.svg "clpa") ![x](https://img.shields.io/badge/ɨ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/k--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ˈ--brightgreen.svg "fine") | 
-| 40 | Kitchen2012-106 | Gafat | Big | ɨmmunɛ | ![x](https://img.shields.io/badge/ɨ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/mm--yellow.svg "clpa") ![x](https://img.shields.io/badge/u--brightgreen.svg "fine") ![x](https://img.shields.io/badge/n--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ɛ--brightgreen.svg "fine") | 
-| 41 | Kitchen2012-107 | Soddo | Big | ma:lɛk' | ![x](https://img.shields.io/badge/m--brightgreen.svg "fine") ![x](https://img.shields.io/badge/a:--brightgreen.svg "fine") ![x](https://img.shields.io/badge/l--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ɛ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/k--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ˈ--brightgreen.svg "fine") | 
-| 42 | Kitchen2012-115 | Aramaic | Big | rabba | ![x](https://img.shields.io/badge/r--brightgreen.svg "fine") ![x](https://img.shields.io/badge/a--brightgreen.svg "fine") ![x](https://img.shields.io/badge/bb--yellow.svg "clpa") ![x](https://img.shields.io/badge/a--brightgreen.svg "fine") | 
-| 43 | Kitchen2012-119 | Soqotri | Big | ʕiik'er | ![x](https://img.shields.io/badge/ʕ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ii--yellow.svg "clpa") ![x](https://img.shields.io/badge/k--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ˈe--brightgreen.svg "fine") ![x](https://img.shields.io/badge/r--brightgreen.svg "fine") | 
-| 44 | Kitchen2012-123 | Ge'ez | Bird | 9of | ![x](https://img.shields.io/badge/9--red.svg "lingpy") ![x](https://img.shields.io/badge/o--brightgreen.svg "fine") ![x](https://img.shields.io/badge/f--brightgreen.svg "fine") | 
-| 45 | Kitchen2012-125 | Tigrinya | Bird | 9uf | ![x](https://img.shields.io/badge/9--red.svg "lingpy") ![x](https://img.shields.io/badge/u--brightgreen.svg "fine") ![x](https://img.shields.io/badge/f--brightgreen.svg "fine") | 
-| 46 | Kitchen2012-131 | Gafat | Bird | yɨfʷɛ | ![x](https://img.shields.io/badge/yɨ--yellow.svg "clpa") ![x](https://img.shields.io/badge/fʷ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ɛ--brightgreen.svg "fine") | 
-| 47 | Kitchen2012-134 | Innemor | Bird | anfw | ![x](https://img.shields.io/badge/a--brightgreen.svg "fine") ![x](https://img.shields.io/badge/n--brightgreen.svg "fine") ![x](https://img.shields.io/badge/fw--yellow.svg "clpa") | 
-| 48 | Kitchen2012-136 | Geto | Bird | anfw | ![x](https://img.shields.io/badge/a--brightgreen.svg "fine") ![x](https://img.shields.io/badge/n--brightgreen.svg "fine") ![x](https://img.shields.io/badge/fw--yellow.svg "clpa") | 
-| 49 | Kitchen2012-137 | Chaha | Bird | anfw | ![x](https://img.shields.io/badge/a--brightgreen.svg "fine") ![x](https://img.shields.io/badge/n--brightgreen.svg "fine") ![x](https://img.shields.io/badge/fw--yellow.svg "clpa") | 
-| 50 | Kitchen2012-138 | Hebrew | Bird | s'ippor | ![x](https://img.shields.io/badge/s--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ˈi--brightgreen.svg "fine") ![x](https://img.shields.io/badge/pp--yellow.svg "clpa") ![x](https://img.shields.io/badge/o--brightgreen.svg "fine") ![x](https://img.shields.io/badge/r--brightgreen.svg "fine") | 
-| 51 | Kitchen2012-140 | Aramaic | Bird | ʂeppra | ![x](https://img.shields.io/badge/ʂ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/e--brightgreen.svg "fine") ![x](https://img.shields.io/badge/pp--yellow.svg "clpa") ![x](https://img.shields.io/badge/r--brightgreen.svg "fine") ![x](https://img.shields.io/badge/a--brightgreen.svg "fine") | 
-| 52 | Kitchen2012-142 | Mehri | Bird | t'eyriit | ![x](https://img.shields.io/badge/t--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ˈey--brightgreen.svg "fine") ![x](https://img.shields.io/badge/r--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ii--yellow.svg "clpa") ![x](https://img.shields.io/badge/t--brightgreen.svg "fine") | 
-| 53 | Kitchen2012-143 | Jibbali | Bird | ʕesferɛɛt | ![x](https://img.shields.io/badge/ʕ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/e--brightgreen.svg "fine") ![x](https://img.shields.io/badge/s--brightgreen.svg "fine") ![x](https://img.shields.io/badge/f--brightgreen.svg "fine") ![x](https://img.shields.io/badge/e--brightgreen.svg "fine") ![x](https://img.shields.io/badge/r--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ɛɛ--yellow.svg "clpa") ![x](https://img.shields.io/badge/t--brightgreen.svg "fine") | 
-| 54 | Kitchen2012-145 | Harsusi | Bird | s'eħħer | ![x](https://img.shields.io/badge/s--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ˈe--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ħħ--yellow.svg "clpa") ![x](https://img.shields.io/badge/e--brightgreen.svg "fine") ![x](https://img.shields.io/badge/r--brightgreen.svg "fine") | 
-| 55 | Kitchen2012-147 | Ogaden Arabic | Bird | tayr | ![x](https://img.shields.io/badge/t--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ay--yellow.svg "clpa") ![x](https://img.shields.io/badge/r--brightgreen.svg "fine") | 
-| 56 | Kitchen2012-148 | Ge'ez | Bite (v.) | nɛkkɛsɛ | ![x](https://img.shields.io/badge/n--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ɛ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/kk--yellow.svg "clpa") ![x](https://img.shields.io/badge/ɛ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/s--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ɛ--brightgreen.svg "fine") | 
-| 57 | Kitchen2012-151 | Amharic | Bite (v.) | nɛkkɛsɛ | ![x](https://img.shields.io/badge/n--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ɛ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/kk--yellow.svg "clpa") ![x](https://img.shields.io/badge/ɛ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/s--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ɛ--brightgreen.svg "fine") | 
-| 58 | Kitchen2012-152 | Argobba | Bite (v.) | nɛkkɛse | ![x](https://img.shields.io/badge/n--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ɛ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/kk--yellow.svg "clpa") ![x](https://img.shields.io/badge/ɛ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/s--brightgreen.svg "fine") ![x](https://img.shields.io/badge/e--brightgreen.svg "fine") | 
-| 59 | Kitchen2012-154 | Zway | Bite (v.) | nɛkkɛse | ![x](https://img.shields.io/badge/n--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ɛ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/kk--yellow.svg "clpa") ![x](https://img.shields.io/badge/ɛ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/s--brightgreen.svg "fine") ![x](https://img.shields.io/badge/e--brightgreen.svg "fine") | 
-| 60 | Kitchen2012-155 | Gafat | Bite (v.) | nɛkkɛsɛ | ![x](https://img.shields.io/badge/n--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ɛ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/kk--yellow.svg "clpa") ![x](https://img.shields.io/badge/ɛ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/s--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ɛ--brightgreen.svg "fine") | 
-| 61 | Kitchen2012-156 | Soddo | Bite (v.) | nɛkkɛsɛ-m | ![x](https://img.shields.io/badge/n--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ɛ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/kk--yellow.svg "clpa") ![x](https://img.shields.io/badge/ɛ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/s--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ɛ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/m--brightgreen.svg "fine") | 
-| 62 | Kitchen2012-169 | Harsusi | Bite (v.) | k'ebbos | ![x](https://img.shields.io/badge/k--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ˈe--brightgreen.svg "fine") ![x](https://img.shields.io/badge/bb--yellow.svg "clpa") ![x](https://img.shields.io/badge/o--brightgreen.svg "fine") ![x](https://img.shields.io/badge/s--brightgreen.svg "fine") | 
-| 63 | Kitchen2012-170 | Moroccan Arabic | Bite (v.) | ɛedˡ | ![x](https://img.shields.io/badge/ɛe--yellow.svg "clpa") ![x](https://img.shields.io/badge/dˡ--brightgreen.svg "fine") | 
-| 64 | Kitchen2012-171 | Ogaden Arabic | Bite (v.) | 9aɟɟ | ![x](https://img.shields.io/badge/9--red.svg "lingpy") ![x](https://img.shields.io/badge/a--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ɟɟ--yellow.svg "clpa") | 
-| 65 | Kitchen2012-172 | Ge'ez | Black | s'ɛllim | ![x](https://img.shields.io/badge/s--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ˈɛ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ll--yellow.svg "clpa") ![x](https://img.shields.io/badge/i--brightgreen.svg "fine") ![x](https://img.shields.io/badge/m--brightgreen.svg "fine") | 
-| 66 | Kitchen2012-173 | Tigre | Black | s'allɨm | ![x](https://img.shields.io/badge/s--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ˈa--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ll--yellow.svg "clpa") ![x](https://img.shields.io/badge/ɨ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/m--brightgreen.svg "fine") | 
-| 67 | Kitchen2012-174 | Tigrinya | Black | s'ɛllim | ![x](https://img.shields.io/badge/s--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ˈɛ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ll--yellow.svg "clpa") ![x](https://img.shields.io/badge/i--brightgreen.svg "fine") ![x](https://img.shields.io/badge/m--brightgreen.svg "fine") | 
-| 68 | Kitchen2012-175 | Amharic | Black | t'ɨk'ʷur | ![x](https://img.shields.io/badge/t--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ˈɨ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/k--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ˈʷ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/u--brightgreen.svg "fine") ![x](https://img.shields.io/badge/r--brightgreen.svg "fine") | 
-| 69 | Kitchen2012-178 | Zway | Black | gɛmbɛlla | ![x](https://img.shields.io/badge/g--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ɛ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/m--brightgreen.svg "fine") ![x](https://img.shields.io/badge/b--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ɛ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ll--yellow.svg "clpa") ![x](https://img.shields.io/badge/a--brightgreen.svg "fine") | 
-| 70 | Kitchen2012-182 | Mesqan | Black | t'ək'ʷɔr | ![x](https://img.shields.io/badge/t--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ˈə--brightgreen.svg "fine") ![x](https://img.shields.io/badge/k--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ˈʷ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ɔ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/r--brightgreen.svg "fine") | 
-| 71 | Kitchen2012-184 | Mesmes | Black | gɔmbɔnna | ![x](https://img.shields.io/badge/g--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ɔ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/m--brightgreen.svg "fine") ![x](https://img.shields.io/badge/b--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ɔ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/nn--yellow.svg "clpa") ![x](https://img.shields.io/badge/a--brightgreen.svg "fine") | 
-| 72 | Kitchen2012-188 | Aramaic | Black | ukˡama | ![x](https://img.shields.io/badge/u--brightgreen.svg "fine") ![x](https://img.shields.io/badge/kˡ--yellow.svg "clpa") ![x](https://img.shields.io/badge/a--brightgreen.svg "fine") ![x](https://img.shields.io/badge/m--brightgreen.svg "fine") ![x](https://img.shields.io/badge/a--brightgreen.svg "fine") | 
-| 73 | Kitchen2012-191 | Jibbali | Black | ħɔrm | ![x](https://img.shields.io/badge/ħ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/--red.svg "lingpy") ![x](https://img.shields.io/badge/ɔ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/r--brightgreen.svg "fine") ![x](https://img.shields.io/badge/m--brightgreen.svg "fine") | 
-| 74 | Kitchen2012-194 | Moroccan Arabic | Black | kẖel | ![x](https://img.shields.io/badge/k--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ẖ--red.svg "lingpy") ![x](https://img.shields.io/badge/e--brightgreen.svg "fine") ![x](https://img.shields.io/badge/l--brightgreen.svg "fine") | 
-| 75 | Kitchen2012-195 | Ogaden Arabic | Black | 7aswad | ![x](https://img.shields.io/badge/s--brightgreen.svg "fine") ![x](https://img.shields.io/badge/a--brightgreen.svg "fine") ![x](https://img.shields.io/badge/sw--yellow.svg "clpa") ![x](https://img.shields.io/badge/a--brightgreen.svg "fine") ![x](https://img.shields.io/badge/d--brightgreen.svg "fine") | 
-| 76 | Kitchen2012-220 | Ge'ez | Bone | 9as'ɨm | ![x](https://img.shields.io/badge/9--red.svg "lingpy") ![x](https://img.shields.io/badge/a--brightgreen.svg "fine") ![x](https://img.shields.io/badge/s--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ˈɨ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/m--brightgreen.svg "fine") | 
-| 77 | Kitchen2012-221 | Tigre | Bone | 9as'im | ![x](https://img.shields.io/badge/9--red.svg "lingpy") ![x](https://img.shields.io/badge/a--brightgreen.svg "fine") ![x](https://img.shields.io/badge/s--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ˈi--brightgreen.svg "fine") ![x](https://img.shields.io/badge/m--brightgreen.svg "fine") | 
-| 78 | Kitchen2012-222 | Tigrinya | Bone | 9at'smi | ![x](https://img.shields.io/badge/9--red.svg "lingpy") ![x](https://img.shields.io/badge/a--brightgreen.svg "fine") ![x](https://img.shields.io/badge/t--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ˈs--brightgreen.svg "fine") ![x](https://img.shields.io/badge/m--brightgreen.svg "fine") ![x](https://img.shields.io/badge/i--brightgreen.svg "fine") | 
-| 79 | Kitchen2012-225 | Harari | Bone | a:t' | ![x](https://img.shields.io/badge/a:--brightgreen.svg "fine") ![x](https://img.shields.io/badge/t--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ˈ--brightgreen.svg "fine") | 
-| 80 | Kitchen2012-239 | Mehri | Bone | ʔazayz | ![x](https://img.shields.io/badge/ʔ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/a--brightgreen.svg "fine") ![x](https://img.shields.io/badge/z--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ay--yellow.svg "clpa") ![x](https://img.shields.io/badge/z--brightgreen.svg "fine") | 
-| 81 | Kitchen2012-240 | Jibbali | Bone | ʕaylɛl | ![x](https://img.shields.io/badge/ʕ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ay--yellow.svg "clpa") ![x](https://img.shields.io/badge/l--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ɛ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/l--brightgreen.svg "fine") | 
-| 82 | Kitchen2012-242 | Harsusi | Bone | aɬayɬ | ![x](https://img.shields.io/badge/a--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ɬ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ay--yellow.svg "clpa") ![x](https://img.shields.io/badge/ɬ--brightgreen.svg "fine") | 
-| 83 | Kitchen2012-244 | Ogaden Arabic | Bone | 9aɟim | ![x](https://img.shields.io/badge/9--red.svg "lingpy") ![x](https://img.shields.io/badge/a--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ɟ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/i--brightgreen.svg "fine") ![x](https://img.shields.io/badge/m--brightgreen.svg "fine") | 
-| 84 | Kitchen2012-245 | Ge'ez | Breast | t'ɨbb | ![x](https://img.shields.io/badge/t--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ˈɨ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/bb--yellow.svg "clpa") | 
-| 85 | Kitchen2012-253 | Gafat | Breast | t'ʊwwɛ | ![x](https://img.shields.io/badge/t--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ˈʊ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ww--yellow.svg "clpa") ![x](https://img.shields.io/badge/ɛ--brightgreen.svg "fine") | 
-| 86 | Kitchen2012-254 | Soddo | Breast | t'ɨbuiya | ![x](https://img.shields.io/badge/t--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ˈɨ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/b--brightgreen.svg "fine") ![x](https://img.shields.io/badge/uiya--yellow.svg "clpa") | 
-| 87 | Kitchen2012-259 | Aramaic | Breast | hadhya | ![x](https://img.shields.io/badge/h--brightgreen.svg "fine") ![x](https://img.shields.io/badge/a--brightgreen.svg "fine") ![x](https://img.shields.io/badge/dh--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ya--yellow.svg "clpa") | 
-| 88 | Kitchen2012-261 | Mehri | Breast | ɵoodi | ![x](https://img.shields.io/badge/ɵoo--yellow.svg "clpa") ![x](https://img.shields.io/badge/d--brightgreen.svg "fine") ![x](https://img.shields.io/badge/i--brightgreen.svg "fine") | 
-| 89 | Kitchen2012-262 | Jibbali | Breast | ɵado | ![x](https://img.shields.io/badge/ɵa--yellow.svg "clpa") ![x](https://img.shields.io/badge/d--brightgreen.svg "fine") ![x](https://img.shields.io/badge/o--brightgreen.svg "fine") | 
-| 90 | Kitchen2012-264 | Harsusi | Breast | ɵodi | ![x](https://img.shields.io/badge/ɵo--yellow.svg "clpa") ![x](https://img.shields.io/badge/d--brightgreen.svg "fine") ![x](https://img.shields.io/badge/i--brightgreen.svg "fine") | 
-| 91 | Kitchen2012-265 | Moroccan Arabic | Breast | bezzula | ![x](https://img.shields.io/badge/b--brightgreen.svg "fine") ![x](https://img.shields.io/badge/e--brightgreen.svg "fine") ![x](https://img.shields.io/badge/zz--yellow.svg "clpa") ![x](https://img.shields.io/badge/u--brightgreen.svg "fine") ![x](https://img.shields.io/badge/l--brightgreen.svg "fine") ![x](https://img.shields.io/badge/a--brightgreen.svg "fine") | 
-| 92 | Kitchen2012-266 | Ogaden Arabic | Breast | ɵari | ![x](https://img.shields.io/badge/ɵa--yellow.svg "clpa") ![x](https://img.shields.io/badge/r--brightgreen.svg "fine") ![x](https://img.shields.io/badge/i--brightgreen.svg "fine") | 
-| 93 | Kitchen2012-267 | Ge'ez | Burn (tr. v.) | 7awɨ9ayɛ | ![x](https://img.shields.io/badge/s--brightgreen.svg "fine") ![x](https://img.shields.io/badge/a--brightgreen.svg "fine") ![x](https://img.shields.io/badge/w--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ɨ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/9--red.svg "lingpy") ![x](https://img.shields.io/badge/ayɛ--yellow.svg "clpa") | 
-| 94 | Kitchen2012-273 | Zway | Burn (tr. v.) | anɛddɔt | ![x](https://img.shields.io/badge/a--brightgreen.svg "fine") ![x](https://img.shields.io/badge/n--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ɛ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/dd--yellow.svg "clpa") ![x](https://img.shields.io/badge/ɔ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/t--brightgreen.svg "fine") | 
-| 95 | Kitchen2012-275 | Soddo | Burn (tr. v.) | anɛddɛdɛ-m | ![x](https://img.shields.io/badge/a--brightgreen.svg "fine") ![x](https://img.shields.io/badge/n--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ɛ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/dd--yellow.svg "clpa") ![x](https://img.shields.io/badge/ɛ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/d--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ɛ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/m--brightgreen.svg "fine") | 
-| 96 | Kitchen2012-278 | Mesmes | Burn (tr. v.) | totosɔ-ye | ![x](https://img.shields.io/badge/t--brightgreen.svg "fine") ![x](https://img.shields.io/badge/o--brightgreen.svg "fine") ![x](https://img.shields.io/badge/t--brightgreen.svg "fine") ![x](https://img.shields.io/badge/o--brightgreen.svg "fine") ![x](https://img.shields.io/badge/s--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ɔ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ye--yellow.svg "clpa") | 
-| 97 | Kitchen2012-285 | Mehri | Burn (tr. v.) | ɬatak' | ![x](https://img.shields.io/badge/ɬ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/a--brightgreen.svg "fine") ![x](https://img.shields.io/badge/t--brightgreen.svg "fine") ![x](https://img.shields.io/badge/a--brightgreen.svg "fine") ![x](https://img.shields.io/badge/k--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ˈ--brightgreen.svg "fine") | 
-| 98 | Kitchen2012-288 | Harsusi | Burn (tr. v.) | ħrok' | ![x](https://img.shields.io/badge/ħ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/r--brightgreen.svg "fine") ![x](https://img.shields.io/badge/o--brightgreen.svg "fine") ![x](https://img.shields.io/badge/k--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ˈ--brightgreen.svg "fine") | 
-| 99 | Kitchen2012-289 | Moroccan Arabic | Burn (tr. v.) | hṟeq | ![x](https://img.shields.io/badge/h--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ṟ--red.svg "lingpy") ![x](https://img.shields.io/badge/e--brightgreen.svg "fine") ![x](https://img.shields.io/badge/q--brightgreen.svg "fine") | 
-| 100 | Kitchen2012-290 | Ogaden Arabic | Burn (tr. v.) | ħarraq | ![x](https://img.shields.io/badge/ħ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/a--brightgreen.svg "fine") ![x](https://img.shields.io/badge/rr--yellow.svg "clpa") ![x](https://img.shields.io/badge/a--brightgreen.svg "fine") ![x](https://img.shields.io/badge/q--brightgreen.svg "fine") | 
-| 101 | Kitchen2012-291 | Ge'ez | Cloud | dɛmmɛna | ![x](https://img.shields.io/badge/d--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ɛ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/mm--yellow.svg "clpa") ![x](https://img.shields.io/badge/ɛ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/n--brightgreen.svg "fine") ![x](https://img.shields.io/badge/a--brightgreen.svg "fine") | 
-| 102 | Kitchen2012-294 | Amharic | Cloud | dɛmmɛna | ![x](https://img.shields.io/badge/d--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ɛ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/mm--yellow.svg "clpa") ![x](https://img.shields.io/badge/ɛ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/n--brightgreen.svg "fine") ![x](https://img.shields.io/badge/a--brightgreen.svg "fine") | 
-| 103 | Kitchen2012-295 | Argobba | Cloud | dɛmmɛna | ![x](https://img.shields.io/badge/d--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ɛ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/mm--yellow.svg "clpa") ![x](https://img.shields.io/badge/ɛ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/n--brightgreen.svg "fine") ![x](https://img.shields.io/badge/a--brightgreen.svg "fine") | 
-| 104 | Kitchen2012-299 | Gafat | Cloud | dɛmmɛnɛ | ![x](https://img.shields.io/badge/d--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ɛ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/mm--yellow.svg "clpa") ![x](https://img.shields.io/badge/ɛ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/n--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ɛ--brightgreen.svg "fine") | 
-| 105 | Kitchen2012-300 | Soddo | Cloud | dɛmmɛna | ![x](https://img.shields.io/badge/d--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ɛ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/mm--yellow.svg "clpa") ![x](https://img.shields.io/badge/ɛ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/n--brightgreen.svg "fine") ![x](https://img.shields.io/badge/a--brightgreen.svg "fine") | 
-| 106 | Kitchen2012-312 | Soqotri | Cloud | ħiihor | ![x](https://img.shields.io/badge/ħ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ii--yellow.svg "clpa") ![x](https://img.shields.io/badge/h--brightgreen.svg "fine") ![x](https://img.shields.io/badge/o--brightgreen.svg "fine") ![x](https://img.shields.io/badge/r--brightgreen.svg "fine") | 
-| 107 | Kitchen2012-318 | Tigrinya | Cold (air) | k'urri | ![x](https://img.shields.io/badge/k--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ˈu--brightgreen.svg "fine") ![x](https://img.shields.io/badge/rr--yellow.svg "clpa") ![x](https://img.shields.io/badge/i--brightgreen.svg "fine") | 
-| 108 | Kitchen2012-325 | Soddo | Cold (air) | bɛrrɛdɨ-m | ![x](https://img.shields.io/badge/b--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ɛ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/rr--yellow.svg "clpa") ![x](https://img.shields.io/badge/ɛ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/d--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ɨ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/m--brightgreen.svg "fine") | 
-| 109 | Kitchen2012-332 | Aramaic | Cold (air) | k'arˡira | ![x](https://img.shields.io/badge/k--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ˈa--brightgreen.svg "fine") ![x](https://img.shields.io/badge/rˡ--yellow.svg "clpa") ![x](https://img.shields.io/badge/i--brightgreen.svg "fine") ![x](https://img.shields.io/badge/r--brightgreen.svg "fine") ![x](https://img.shields.io/badge/a--brightgreen.svg "fine") | 
-| 110 | Kitchen2012-347 | Gafat | Come | sɛllɛ | ![x](https://img.shields.io/badge/s--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ɛ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ll--yellow.svg "clpa") ![x](https://img.shields.io/badge/ɛ--brightgreen.svg "fine") | 
-| 111 | Kitchen2012-351 | Mesmes | Come | -mma7a-ʏe | ![x](https://img.shields.io/badge/mm--yellow.svg "clpa") ![x](https://img.shields.io/badge/a--brightgreen.svg "fine") ![x](https://img.shields.io/badge/s--brightgreen.svg "fine") ![x](https://img.shields.io/badge/a--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ʏe--yellow.svg "clpa") | 
-| 112 | Kitchen2012-354 | Hebrew | Come | ba' | ![x](https://img.shields.io/badge/b--brightgreen.svg "fine") ![x](https://img.shields.io/badge/a--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ˈ--brightgreen.svg "fine") | 
-| 113 | Kitchen2012-355 | Ugaritic | Come | bw'/'tw | ![x](https://img.shields.io/badge/bw--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ˈ--brightgreen.svg "fine") | 
-| 114 | Kitchen2012-362 | Moroccan Arabic | Come | ʒay | ![x](https://img.shields.io/badge/ʒ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ay--yellow.svg "clpa") | 
-| 115 | Kitchen2012-368 | Argobba | Die | mo:dʏa | ![x](https://img.shields.io/badge/m--brightgreen.svg "fine") ![x](https://img.shields.io/badge/o:--brightgreen.svg "fine") ![x](https://img.shields.io/badge/d--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ʏa--yellow.svg "clpa") | 
-| 116 | Kitchen2012-371 | Gafat | Die | fɛttɛrɛ | ![x](https://img.shields.io/badge/f--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ɛ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/tt--yellow.svg "clpa") ![x](https://img.shields.io/badge/ɛ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/r--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ɛ--brightgreen.svg "fine") | 
-| 117 | Kitchen2012-391 | Amharic | Dog | wɨssa | ![x](https://img.shields.io/badge/w--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ɨ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ss--yellow.svg "clpa") ![x](https://img.shields.io/badge/a--brightgreen.svg "fine") | 
-| 118 | Kitchen2012-392 | Argobba | Dog | wʊssa | ![x](https://img.shields.io/badge/w--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ʊ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ss--yellow.svg "clpa") ![x](https://img.shields.io/badge/a--brightgreen.svg "fine") | 
-| 119 | Kitchen2012-394 | Zway | Dog | gɨnni | ![x](https://img.shields.io/badge/g--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ɨ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/nn--yellow.svg "clpa") ![x](https://img.shields.io/badge/i--brightgreen.svg "fine") | 
-| 120 | Kitchen2012-396 | Gafat | Dog | wʊssɛ | ![x](https://img.shields.io/badge/w--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ʊ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ss--yellow.svg "clpa") ![x](https://img.shields.io/badge/ɛ--brightgreen.svg "fine") | 
-| 121 | Kitchen2012-397 | Soddo | Dog | wʊssa | ![x](https://img.shields.io/badge/w--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ʊ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ss--yellow.svg "clpa") ![x](https://img.shields.io/badge/a--brightgreen.svg "fine") | 
-| 122 | Kitchen2012-398 | Mesqan | Dog | gɨ:yə | ![x](https://img.shields.io/badge/g--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ɨ:yə--yellow.svg "clpa") | 
-| 123 | Kitchen2012-399 | Innemor | Dog | gɨyɛ | ![x](https://img.shields.io/badge/g--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ɨyɛ--yellow.svg "clpa") | 
-| 124 | Kitchen2012-400 | Mesmes | Dog | gi:ye | ![x](https://img.shields.io/badge/g--brightgreen.svg "fine") ![x](https://img.shields.io/badge/i:ye--yellow.svg "clpa") | 
-| 125 | Kitchen2012-401 | Geto | Dog | gɨyɛ | ![x](https://img.shields.io/badge/g--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ɨyɛ--yellow.svg "clpa") | 
-| 126 | Kitchen2012-402 | Chaha | Dog | gɨyɛ | ![x](https://img.shields.io/badge/g--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ɨyɛ--yellow.svg "clpa") | 
-| 127 | Kitchen2012-412 | Ge'ez | Drink (v.) | sɛtɨyɛ | ![x](https://img.shields.io/badge/s--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ɛ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/t--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ɨyɛ--yellow.svg "clpa") | 
-| 128 | Kitchen2012-414 | Tigrinya | Drink (v.) | sɛtɛyɛ | ![x](https://img.shields.io/badge/s--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ɛ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/t--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ɛyɛ--yellow.svg "clpa") | 
-| 129 | Kitchen2012-416 | Argobba | Drink (v.) | sɛcca | ![x](https://img.shields.io/badge/s--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ɛ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/cc--yellow.svg "clpa") ![x](https://img.shields.io/badge/a--brightgreen.svg "fine") | 
-| 130 | Kitchen2012-418 | Zway | Drink (v.) | sɛ:ccin | ![x](https://img.shields.io/badge/s--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ɛ:--brightgreen.svg "fine") ![x](https://img.shields.io/badge/cc--yellow.svg "clpa") ![x](https://img.shields.io/badge/i--brightgreen.svg "fine") ![x](https://img.shields.io/badge/n--brightgreen.svg "fine") | 
-| 131 | Kitchen2012-430 | Mehri | Drink (v.) | ?etek' | ![x](https://img.shields.io/badge/ʔ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/e--brightgreen.svg "fine") ![x](https://img.shields.io/badge/t--brightgreen.svg "fine") ![x](https://img.shields.io/badge/e--brightgreen.svg "fine") ![x](https://img.shields.io/badge/k--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ˈ--brightgreen.svg "fine") | 
-| 132 | Kitchen2012-433 | Harsusi | Drink (v.) | tek' | ![x](https://img.shields.io/badge/t--brightgreen.svg "fine") ![x](https://img.shields.io/badge/e--brightgreen.svg "fine") ![x](https://img.shields.io/badge/k--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ˈ--brightgreen.svg "fine") | 
-| 133 | Kitchen2012-436 | Ge'ez | Dry (adj.) | yɛbɨs | ![x](https://img.shields.io/badge/yɛ--yellow.svg "clpa") ![x](https://img.shields.io/badge/b--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ɨ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/s--brightgreen.svg "fine") | 
-| 134 | Kitchen2012-437 | Tigre | Dry (adj.) | yɨbus | ![x](https://img.shields.io/badge/yɨ--yellow.svg "clpa") ![x](https://img.shields.io/badge/b--brightgreen.svg "fine") ![x](https://img.shields.io/badge/u--brightgreen.svg "fine") ![x](https://img.shields.io/badge/s--brightgreen.svg "fine") | 
-| 135 | Kitchen2012-438 | Tigrinya | Dry (adj.) | nɛx'as' | ![x](https://img.shields.io/badge/n--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ɛ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/x--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ˈa--brightgreen.svg "fine") ![x](https://img.shields.io/badge/s--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ˈ--brightgreen.svg "fine") | 
-| 136 | Kitchen2012-439 | Amharic | Dry (adj.) | dɛrɛk' | ![x](https://img.shields.io/badge/d--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ɛ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/r--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ɛ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/k--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ˈ--brightgreen.svg "fine") | 
-| 137 | Kitchen2012-440 | Argobba | Dry (adj.) | dɛrɛk' | ![x](https://img.shields.io/badge/d--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ɛ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/r--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ɛ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/k--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ˈ--brightgreen.svg "fine") | 
-| 138 | Kitchen2012-441 | Harari | Dry (adj.) | dɛrɛk' | ![x](https://img.shields.io/badge/d--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ɛ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/r--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ɛ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/k--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ˈ--brightgreen.svg "fine") | 
-| 139 | Kitchen2012-442 | Zway | Dry (adj.) | dɛrɛk' | ![x](https://img.shields.io/badge/d--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ɛ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/r--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ɛ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/k--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ˈ--brightgreen.svg "fine") | 
-| 140 | Kitchen2012-443 | Walani | Dry (adj.) | dɛrɛk' | ![x](https://img.shields.io/badge/d--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ɛ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/r--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ɛ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/k--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ˈ--brightgreen.svg "fine") | 
-| 141 | Kitchen2012-445 | Soddo | Dry (adj.) | dɛrɛk' | ![x](https://img.shields.io/badge/d--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ɛ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/r--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ɛ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/k--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ˈ--brightgreen.svg "fine") | 
-| 142 | Kitchen2012-446 | Mesqan | Dry (adj.) | t'ərɛk' | ![x](https://img.shields.io/badge/t--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ˈə--brightgreen.svg "fine") ![x](https://img.shields.io/badge/r--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ɛ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/k--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ˈ--brightgreen.svg "fine") | 
-| 143 | Kitchen2012-449 | Geto | Dry (adj.) | s'ɛrɛk' | ![x](https://img.shields.io/badge/s--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ˈɛ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/r--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ɛ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/k--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ˈ--brightgreen.svg "fine") | 
-| 144 | Kitchen2012-451 | Hebrew | Dry (adj.) | yabbeʃ | ![x](https://img.shields.io/badge/ya--yellow.svg "clpa") ![x](https://img.shields.io/badge/bb--yellow.svg "clpa") ![x](https://img.shields.io/badge/e--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ʃ--brightgreen.svg "fine") | 
-| 145 | Kitchen2012-453 | Aramaic | Dry (adj.) | yabbas | ![x](https://img.shields.io/badge/ya--yellow.svg "clpa") ![x](https://img.shields.io/badge/bb--yellow.svg "clpa") ![x](https://img.shields.io/badge/a--brightgreen.svg "fine") ![x](https://img.shields.io/badge/s--brightgreen.svg "fine") | 
-| 146 | Kitchen2012-456 | Moroccan Arabic | Dry (adj.) | yabes/naʃef | ![x](https://img.shields.io/badge/ya--yellow.svg "clpa") ![x](https://img.shields.io/badge/b--brightgreen.svg "fine") ![x](https://img.shields.io/badge/e--brightgreen.svg "fine") ![x](https://img.shields.io/badge/s--brightgreen.svg "fine") | 
-| 147 | Kitchen2012-457 | Ogaden Arabic | Dry (adj.) | ya:bis | ![x](https://img.shields.io/badge/ya:--yellow.svg "clpa") ![x](https://img.shields.io/badge/b--brightgreen.svg "fine") ![x](https://img.shields.io/badge/i--brightgreen.svg "fine") ![x](https://img.shields.io/badge/s--brightgreen.svg "fine") | 
-| 148 | Kitchen2012-464 | Zway | Ear | ɨzzɨn | ![x](https://img.shields.io/badge/ɨ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/zz--yellow.svg "clpa") ![x](https://img.shields.io/badge/ɨ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/n--brightgreen.svg "fine") | 
-| 149 | Kitchen2012-479 | Soqotri | Ear | ʔiðhen | ![x](https://img.shields.io/badge/ʔ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/i--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ðh--yellow.svg "clpa") ![x](https://img.shields.io/badge/e--brightgreen.svg "fine") ![x](https://img.shields.io/badge/n--brightgreen.svg "fine") | 
-| 150 | Kitchen2012-480 | Harsusi | Ear | ħeyɵen | ![x](https://img.shields.io/badge/ħ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/eyɵe--yellow.svg "clpa") ![x](https://img.shields.io/badge/n--brightgreen.svg "fine") | 
-| 151 | Kitchen2012-482 | Ogaden Arabic | Ear | yuɟun | ![x](https://img.shields.io/badge/yu--yellow.svg "clpa") ![x](https://img.shields.io/badge/ɟ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/u--brightgreen.svg "fine") ![x](https://img.shields.io/badge/n--brightgreen.svg "fine") | 
-| 152 | Kitchen2012-483 | Ge'ez | Eat | bɛl9a | ![x](https://img.shields.io/badge/b--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ɛ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/l--brightgreen.svg "fine") ![x](https://img.shields.io/badge/9--red.svg "lingpy") ![x](https://img.shields.io/badge/a--brightgreen.svg "fine") | 
-| 153 | Kitchen2012-484 | Tigre | Eat | bal9a | ![x](https://img.shields.io/badge/b--brightgreen.svg "fine") ![x](https://img.shields.io/badge/a--brightgreen.svg "fine") ![x](https://img.shields.io/badge/l--brightgreen.svg "fine") ![x](https://img.shields.io/badge/9--red.svg "lingpy") ![x](https://img.shields.io/badge/a--brightgreen.svg "fine") | 
-| 154 | Kitchen2012-485 | Tigrinya | Eat | bɛl9e | ![x](https://img.shields.io/badge/b--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ɛ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/l--brightgreen.svg "fine") ![x](https://img.shields.io/badge/9--red.svg "lingpy") ![x](https://img.shields.io/badge/e--brightgreen.svg "fine") | 
-| 155 | Kitchen2012-486 | Amharic | Eat | bɛlla | ![x](https://img.shields.io/badge/b--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ɛ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ll--yellow.svg "clpa") ![x](https://img.shields.io/badge/a--brightgreen.svg "fine") | 
-| 156 | Kitchen2012-487 | Argobba | Eat | bɛlla | ![x](https://img.shields.io/badge/b--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ɛ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ll--yellow.svg "clpa") ![x](https://img.shields.io/badge/a--brightgreen.svg "fine") | 
-| 157 | Kitchen2012-489 | Zway | Eat | bɛllʏa:n | ![x](https://img.shields.io/badge/b--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ɛ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ll--yellow.svg "clpa") ![x](https://img.shields.io/badge/ʏa:--yellow.svg "clpa") ![x](https://img.shields.io/badge/n--brightgreen.svg "fine") | 
-| 158 | Kitchen2012-490 | Gafat | Eat | bɛllɛ | ![x](https://img.shields.io/badge/b--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ɛ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ll--yellow.svg "clpa") ![x](https://img.shields.io/badge/ɛ--brightgreen.svg "fine") | 
-| 159 | Kitchen2012-491 | Soddo | Eat | bɛlla- | ![x](https://img.shields.io/badge/b--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ɛ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ll--yellow.svg "clpa") ![x](https://img.shields.io/badge/a--brightgreen.svg "fine") | 
-| 160 | Kitchen2012-493 | Innemor | Eat | bɛm7a | ![x](https://img.shields.io/badge/b--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ɛ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ms--yellow.svg "clpa") ![x](https://img.shields.io/badge/a--brightgreen.svg "fine") | 
-| 161 | Kitchen2012-505 | Moroccan Arabic | Eat | kla yakol | ![x](https://img.shields.io/badge/k--brightgreen.svg "fine") ![x](https://img.shields.io/badge/l--brightgreen.svg "fine") ![x](https://img.shields.io/badge/a--brightgreen.svg "fine") ![x](https://img.shields.io/badge/_--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ya--yellow.svg "clpa") ![x](https://img.shields.io/badge/k--brightgreen.svg "fine") ![x](https://img.shields.io/badge/o--brightgreen.svg "fine") ![x](https://img.shields.io/badge/l--brightgreen.svg "fine") | 
-| 162 | Kitchen2012-508 | Tigre | Egg | 7ɨink'o:k'ħa | ![x](https://img.shields.io/badge/s--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ɨi--yellow.svg "clpa") ![x](https://img.shields.io/badge/n--brightgreen.svg "fine") ![x](https://img.shields.io/badge/k--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ˈo:--brightgreen.svg "fine") ![x](https://img.shields.io/badge/k--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ˈħ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/a--brightgreen.svg "fine") | 
-| 163 | Kitchen2012-510 | Amharic | Egg | ɨnk'ʷulal | ![x](https://img.shields.io/badge/ɨ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/n--brightgreen.svg "fine") ![x](https://img.shields.io/badge/k--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ˈʷ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/u--brightgreen.svg "fine") ![x](https://img.shields.io/badge/l--brightgreen.svg "fine") ![x](https://img.shields.io/badge/a--brightgreen.svg "fine") ![x](https://img.shields.io/badge/l--brightgreen.svg "fine") | 
-| 164 | Kitchen2012-515 | Gafat | Egg | ank'ʷɛ | ![x](https://img.shields.io/badge/a--brightgreen.svg "fine") ![x](https://img.shields.io/badge/n--brightgreen.svg "fine") ![x](https://img.shields.io/badge/k--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ˈʷ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ɛ--brightgreen.svg "fine") | 
-| 165 | Kitchen2012-517 | Mesqan | Egg | ank'ʷa | ![x](https://img.shields.io/badge/a--brightgreen.svg "fine") ![x](https://img.shields.io/badge/n--brightgreen.svg "fine") ![x](https://img.shields.io/badge/k--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ˈʷ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/a--brightgreen.svg "fine") | 
-| 166 | Kitchen2012-522 | Hebrew | Egg | bĕỹsah | ![x](https://img.shields.io/badge/b--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ĕ--yellow.svg "clpa") ![x](https://img.shields.io/badge/ỹ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/s--brightgreen.svg "fine") ![x](https://img.shields.io/badge/a--brightgreen.svg "fine") ![x](https://img.shields.io/badge/h--brightgreen.svg "fine") | 
-| 167 | Kitchen2012-523 | Aramaic | Egg | bey'tha | ![x](https://img.shields.io/badge/b--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ey--yellow.svg "clpa") ![x](https://img.shields.io/badge/ˈth--brightgreen.svg "fine") ![x](https://img.shields.io/badge/a--brightgreen.svg "fine") | 
-| 168 | Kitchen2012-525 | Mehri | Egg | biizayt | ![x](https://img.shields.io/badge/b--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ii--yellow.svg "clpa") ![x](https://img.shields.io/badge/z--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ay--yellow.svg "clpa") ![x](https://img.shields.io/badge/t--brightgreen.svg "fine") | 
-| 169 | Kitchen2012-528 | Harsusi | Egg | beɵeh | ![x](https://img.shields.io/badge/b--brightgreen.svg "fine") ![x](https://img.shields.io/badge/eɵe--yellow.svg "clpa") ![x](https://img.shields.io/badge/h--brightgreen.svg "fine") | 
-| 170 | Kitchen2012-531 | Ge'ez | Eye | 9ɨyn | ![x](https://img.shields.io/badge/9--red.svg "lingpy") ![x](https://img.shields.io/badge/ɨy--yellow.svg "clpa") ![x](https://img.shields.io/badge/n--brightgreen.svg "fine") | 
-| 171 | Kitchen2012-532 | Tigre | Eye | 9ɨn | ![x](https://img.shields.io/badge/9--red.svg "lingpy") ![x](https://img.shields.io/badge/ɨ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/n--brightgreen.svg "fine") | 
-| 172 | Kitchen2012-533 | Tigrinya | Eye | 9ayni | ![x](https://img.shields.io/badge/9--red.svg "lingpy") ![x](https://img.shields.io/badge/ay--yellow.svg "clpa") ![x](https://img.shields.io/badge/n--brightgreen.svg "fine") ![x](https://img.shields.io/badge/i--brightgreen.svg "fine") | 
-| 173 | Kitchen2012-534 | Amharic | Eye | ayn | ![x](https://img.shields.io/badge/ay--yellow.svg "clpa") ![x](https://img.shields.io/badge/n--brightgreen.svg "fine") | 
-| 174 | Kitchen2012-541 | Mesqan | Eye | eʸn | ![x](https://img.shields.io/badge/eʸ--yellow.svg "clpa") ![x](https://img.shields.io/badge/n--brightgreen.svg "fine") | 
-| 175 | Kitchen2012-546 | Hebrew | Eye | ayin | ![x](https://img.shields.io/badge/ayi--yellow.svg "clpa") ![x](https://img.shields.io/badge/n--brightgreen.svg "fine") | 
-| 176 | Kitchen2012-550 | Mehri | Eye | ?ayn | ![x](https://img.shields.io/badge/ʔ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ay--yellow.svg "clpa") ![x](https://img.shields.io/badge/n--brightgreen.svg "fine") | 
-| 177 | Kitchen2012-552 | Soqotri | Eye | ʕayn | ![x](https://img.shields.io/badge/ʕ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ay--yellow.svg "clpa") ![x](https://img.shields.io/badge/n--brightgreen.svg "fine") | 
-| 178 | Kitchen2012-553 | Harsusi | Eye | ayn | ![x](https://img.shields.io/badge/ay--yellow.svg "clpa") ![x](https://img.shields.io/badge/n--brightgreen.svg "fine") | 
-| 179 | Kitchen2012-554 | Moroccan Arabic | Eye | ɛeynin | ![x](https://img.shields.io/badge/ɛey--yellow.svg "clpa") ![x](https://img.shields.io/badge/n--brightgreen.svg "fine") ![x](https://img.shields.io/badge/i--brightgreen.svg "fine") ![x](https://img.shields.io/badge/n--brightgreen.svg "fine") | 
-| 180 | Kitchen2012-555 | Ogaden Arabic | Eye | 9e:n | ![x](https://img.shields.io/badge/9--red.svg "lingpy") ![x](https://img.shields.io/badge/e:--brightgreen.svg "fine") ![x](https://img.shields.io/badge/n--brightgreen.svg "fine") | 
-| 181 | Kitchen2012-559 | Amharic | Fat (n.) | c'omma | ![x](https://img.shields.io/badge/c--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ˈo--brightgreen.svg "fine") ![x](https://img.shields.io/badge/mm--yellow.svg "clpa") ![x](https://img.shields.io/badge/a--brightgreen.svg "fine") | 
-| 182 | Kitchen2012-560 | Argobba | Fat (n.) | c'o:mma | ![x](https://img.shields.io/badge/c--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ˈo:--brightgreen.svg "fine") ![x](https://img.shields.io/badge/mm--yellow.svg "clpa") ![x](https://img.shields.io/badge/a--brightgreen.svg "fine") | 
-| 183 | Kitchen2012-562 | Zway | Fat (n.) | c'omma | ![x](https://img.shields.io/badge/c--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ˈo--brightgreen.svg "fine") ![x](https://img.shields.io/badge/mm--yellow.svg "clpa") ![x](https://img.shields.io/badge/a--brightgreen.svg "fine") | 
-| 184 | Kitchen2012-564 | Gafat | Fat (n.) | bussɨrɛ | ![x](https://img.shields.io/badge/b--brightgreen.svg "fine") ![x](https://img.shields.io/badge/u--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ss--yellow.svg "clpa") ![x](https://img.shields.io/badge/ɨ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/r--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ɛ--brightgreen.svg "fine") | 
-| 185 | Kitchen2012-567 | Mesmes | Fat (n.) | c'omma | ![x](https://img.shields.io/badge/c--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ˈo--brightgreen.svg "fine") ![x](https://img.shields.io/badge/mm--yellow.svg "clpa") ![x](https://img.shields.io/badge/a--brightgreen.svg "fine") | 
-| 186 | Kitchen2012-581 | Tigrinya | Fire | ħawwi | ![x](https://img.shields.io/badge/ħ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/a--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ww--yellow.svg "clpa") ![x](https://img.shields.io/badge/i--brightgreen.svg "fine") | 
-| 187 | Kitchen2012-583 | Argobba | Fire | ɨssa:d | ![x](https://img.shields.io/badge/ɨ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ss--yellow.svg "clpa") ![x](https://img.shields.io/badge/a:--brightgreen.svg "fine") ![x](https://img.shields.io/badge/d--brightgreen.svg "fine") | 
-| 188 | Kitchen2012-588 | Soddo | Fire | wsat | ![x](https://img.shields.io/badge/ws--yellow.svg "clpa") ![x](https://img.shields.io/badge/a--brightgreen.svg "fine") ![x](https://img.shields.io/badge/t--brightgreen.svg "fine") | 
-| 189 | Kitchen2012-599 | Jibbali | Fire | ɬɔɔt | ![x](https://img.shields.io/badge/ɬ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ɔɔ--yellow.svg "clpa") ![x](https://img.shields.io/badge/t--brightgreen.svg "fine") | 
-| 190 | Kitchen2012-600 | Soqotri | Fire | ɬiyaat | ![x](https://img.shields.io/badge/ɬ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/iyaa--yellow.svg "clpa") ![x](https://img.shields.io/badge/t--brightgreen.svg "fine") | 
-| 191 | Kitchen2012-601 | Harsusi | Fire | ɬewet' | ![x](https://img.shields.io/badge/ɬ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/e--brightgreen.svg "fine") ![x](https://img.shields.io/badge/w--brightgreen.svg "fine") ![x](https://img.shields.io/badge/e--brightgreen.svg "fine") ![x](https://img.shields.io/badge/t--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ˈ--brightgreen.svg "fine") | 
-| 192 | Kitchen2012-602 | Moroccan Arabic | Fire | ɛafya | ![x](https://img.shields.io/badge/ɛa--yellow.svg "clpa") ![x](https://img.shields.io/badge/f--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ya--yellow.svg "clpa") | 
-| 193 | Kitchen2012-604 | Ge'ez | Fish (n.) | 9ase | ![x](https://img.shields.io/badge/9--red.svg "lingpy") ![x](https://img.shields.io/badge/a--brightgreen.svg "fine") ![x](https://img.shields.io/badge/s--brightgreen.svg "fine") ![x](https://img.shields.io/badge/e--brightgreen.svg "fine") | 
-| 194 | Kitchen2012-605 | Tigre | Fish (n.) | 9a:sa | ![x](https://img.shields.io/badge/9--red.svg "lingpy") ![x](https://img.shields.io/badge/a:--brightgreen.svg "fine") ![x](https://img.shields.io/badge/s--brightgreen.svg "fine") ![x](https://img.shields.io/badge/a--brightgreen.svg "fine") | 
-| 195 | Kitchen2012-606 | Tigrinya | Fish (n.) | 9asa | ![x](https://img.shields.io/badge/9--red.svg "lingpy") ![x](https://img.shields.io/badge/a--brightgreen.svg "fine") ![x](https://img.shields.io/badge/s--brightgreen.svg "fine") ![x](https://img.shields.io/badge/a--brightgreen.svg "fine") | 
-| 196 | Kitchen2012-622 | Mehri | Fish (n.) | sayd | ![x](https://img.shields.io/badge/s--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ay--yellow.svg "clpa") ![x](https://img.shields.io/badge/d--brightgreen.svg "fine") | 
-| 197 | Kitchen2012-630 | Tigrinya | Fly (n.) | s'ɨns'ɨya | ![x](https://img.shields.io/badge/s--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ˈɨ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ns--yellow.svg "clpa") ![x](https://img.shields.io/badge/ˈɨya--brightgreen.svg "fine") | 
-| 198 | Kitchen2012-639 | Mesmes | Fly (n.) | ta:yɛ | ![x](https://img.shields.io/badge/t--brightgreen.svg "fine") ![x](https://img.shields.io/badge/a:yɛ--yellow.svg "clpa") | 
-| 199 | Kitchen2012-647 | Jibbali | Fly (n.) | nibbɔɔt | ![x](https://img.shields.io/badge/n--brightgreen.svg "fine") ![x](https://img.shields.io/badge/i--brightgreen.svg "fine") ![x](https://img.shields.io/badge/bb--yellow.svg "clpa") ![x](https://img.shields.io/badge/ɔɔ--yellow.svg "clpa") ![x](https://img.shields.io/badge/t--brightgreen.svg "fine") | 
-| 200 | Kitchen2012-648 | Soqotri | Fly (n.) | ʔedbiiboh | ![x](https://img.shields.io/badge/ʔ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/e--brightgreen.svg "fine") ![x](https://img.shields.io/badge/d--brightgreen.svg "fine") ![x](https://img.shields.io/badge/b--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ii--yellow.svg "clpa") ![x](https://img.shields.io/badge/b--brightgreen.svg "fine") ![x](https://img.shields.io/badge/o--brightgreen.svg "fine") ![x](https://img.shields.io/badge/h--brightgreen.svg "fine") | 
-| 201 | Kitchen2012-649 | Harsusi | Fly (n.) | ɵebbet | ![x](https://img.shields.io/badge/ɵe--yellow.svg "clpa") ![x](https://img.shields.io/badge/bb--yellow.svg "clpa") ![x](https://img.shields.io/badge/e--brightgreen.svg "fine") ![x](https://img.shields.io/badge/t--brightgreen.svg "fine") | 
-| 202 | Kitchen2012-650 | Moroccan Arabic | Fly (n.) | dabbana | ![x](https://img.shields.io/badge/d--brightgreen.svg "fine") ![x](https://img.shields.io/badge/a--brightgreen.svg "fine") ![x](https://img.shields.io/badge/bb--yellow.svg "clpa") ![x](https://img.shields.io/badge/a--brightgreen.svg "fine") ![x](https://img.shields.io/badge/n--brightgreen.svg "fine") ![x](https://img.shields.io/badge/a--brightgreen.svg "fine") | 
-| 203 | Kitchen2012-671 | Mehri | Foot | ɬryam | ![x](https://img.shields.io/badge/ɬ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/r--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ya--yellow.svg "clpa") ![x](https://img.shields.io/badge/m--brightgreen.svg "fine") | 
-| 204 | Kitchen2012-676 | Ogaden Arabic | Foot | xuff | ![x](https://img.shields.io/badge/x--brightgreen.svg "fine") ![x](https://img.shields.io/badge/u--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ff--yellow.svg "clpa") | 
-| 205 | Kitchen2012-709 | Soddo | Go | a:llɛfɛ- | ![x](https://img.shields.io/badge/a:--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ll--yellow.svg "clpa") ![x](https://img.shields.io/badge/ɛ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/f--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ɛ--brightgreen.svg "fine") | 
-| 206 | Kitchen2012-712 | Chaha | Go | wɛyɛ- | ![x](https://img.shields.io/badge/w--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ɛyɛ--yellow.svg "clpa") | 
-| 207 | Kitchen2012-713 | Mehri | Go | seyoor | ![x](https://img.shields.io/badge/s--brightgreen.svg "fine") ![x](https://img.shields.io/badge/eyoo--yellow.svg "clpa") ![x](https://img.shields.io/badge/r--brightgreen.svg "fine") | 
-| 208 | Kitchen2012-714 | Jibbali | Go | aɤad | ![x](https://img.shields.io/badge/aɤa--yellow.svg "clpa") ![x](https://img.shields.io/badge/d--brightgreen.svg "fine") | 
-| 209 | Kitchen2012-716 | Harsusi | Go | seyor | ![x](https://img.shields.io/badge/s--brightgreen.svg "fine") ![x](https://img.shields.io/badge/eyo--yellow.svg "clpa") ![x](https://img.shields.io/badge/r--brightgreen.svg "fine") | 
-| 210 | Kitchen2012-717 | Moroccan Arabic | Go | mʃa | ![x](https://img.shields.io/badge/mʃ--yellow.svg "clpa") ![x](https://img.shields.io/badge/a--brightgreen.svg "fine") | 
-| 211 | Kitchen2012-719 | Ge'ez | Good | sɛnnay | ![x](https://img.shields.io/badge/s--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ɛ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/nn--yellow.svg "clpa") ![x](https://img.shields.io/badge/ay--yellow.svg "clpa") | 
-| 212 | Kitchen2012-720 | Tigre | Good | gurrum | ![x](https://img.shields.io/badge/g--brightgreen.svg "fine") ![x](https://img.shields.io/badge/u--brightgreen.svg "fine") ![x](https://img.shields.io/badge/rr--yellow.svg "clpa") ![x](https://img.shields.io/badge/u--brightgreen.svg "fine") ![x](https://img.shields.io/badge/m--brightgreen.svg "fine") | 
-| 213 | Kitchen2012-721 | Tigrinya | Good | s'ɨbbux' | ![x](https://img.shields.io/badge/s--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ˈɨ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/bb--yellow.svg "clpa") ![x](https://img.shields.io/badge/u--brightgreen.svg "fine") ![x](https://img.shields.io/badge/x--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ˈ--brightgreen.svg "fine") | 
-| 214 | Kitchen2012-727 | Gafat | Good | gunnɛ | ![x](https://img.shields.io/badge/g--brightgreen.svg "fine") ![x](https://img.shields.io/badge/u--brightgreen.svg "fine") ![x](https://img.shields.io/badge/nn--yellow.svg "clpa") ![x](https://img.shields.io/badge/ɛ--brightgreen.svg "fine") | 
-| 215 | Kitchen2012-728 | Soddo | Good | fəyyan | ![x](https://img.shields.io/badge/f--brightgreen.svg "fine") ![x](https://img.shields.io/badge/əyya--yellow.svg "clpa") ![x](https://img.shields.io/badge/n--brightgreen.svg "fine") | 
-| 216 | Kitchen2012-729 | Mesqan | Good | fəyya | ![x](https://img.shields.io/badge/f--brightgreen.svg "fine") ![x](https://img.shields.io/badge/əyya--yellow.svg "clpa") | 
-| 217 | Kitchen2012-742 | Moroccan Arabic | Good | nezyan | ![x](https://img.shields.io/badge/n--brightgreen.svg "fine") ![x](https://img.shields.io/badge/e--brightgreen.svg "fine") ![x](https://img.shields.io/badge/z--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ya--yellow.svg "clpa") ![x](https://img.shields.io/badge/n--brightgreen.svg "fine") | 
-| 218 | Kitchen2012-743 | Ogaden Arabic | Good | tayyib | ![x](https://img.shields.io/badge/t--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ayyi--yellow.svg "clpa") ![x](https://img.shields.io/badge/b--brightgreen.svg "fine") | 
-| 219 | Kitchen2012-745 | Tigre | Grass | sa9ar | ![x](https://img.shields.io/badge/s--brightgreen.svg "fine") ![x](https://img.shields.io/badge/a--brightgreen.svg "fine") ![x](https://img.shields.io/badge/9--red.svg "lingpy") ![x](https://img.shields.io/badge/a--brightgreen.svg "fine") ![x](https://img.shields.io/badge/r--brightgreen.svg "fine") | 
-| 220 | Kitchen2012-746 | Tigrinya | Grass | sa9ri | ![x](https://img.shields.io/badge/s--brightgreen.svg "fine") ![x](https://img.shields.io/badge/a--brightgreen.svg "fine") ![x](https://img.shields.io/badge/9--red.svg "lingpy") ![x](https://img.shields.io/badge/r--brightgreen.svg "fine") ![x](https://img.shields.io/badge/i--brightgreen.svg "fine") | 
-| 221 | Kitchen2012-759 | Mehri | Grass | heriim | ![x](https://img.shields.io/badge/h--brightgreen.svg "fine") ![x](https://img.shields.io/badge/e--brightgreen.svg "fine") ![x](https://img.shields.io/badge/r--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ii--yellow.svg "clpa") ![x](https://img.shields.io/badge/m--brightgreen.svg "fine") | 
-| 222 | Kitchen2012-760 | Jibbali | Grass | rɤɔ | ![x](https://img.shields.io/badge/r--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ɤɔ--yellow.svg "clpa") | 
-| 223 | Kitchen2012-761 | Soqotri | Grass | k'azha | ![x](https://img.shields.io/badge/k--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ˈa--brightgreen.svg "fine") ![x](https://img.shields.io/badge/zh--yellow.svg "clpa") ![x](https://img.shields.io/badge/a--brightgreen.svg "fine") | 
-| 224 | Kitchen2012-774 | Soddo | Hair (head) | gun7ɛr | ![x](https://img.shields.io/badge/g--brightgreen.svg "fine") ![x](https://img.shields.io/badge/u--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ns--yellow.svg "clpa") ![x](https://img.shields.io/badge/ɛ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/r--brightgreen.svg "fine") | 
-| 225 | Kitchen2012-776 | Innemor | Hair (head) | gun7ɛr | ![x](https://img.shields.io/badge/g--brightgreen.svg "fine") ![x](https://img.shields.io/badge/u--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ns--yellow.svg "clpa") ![x](https://img.shields.io/badge/ɛ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/r--brightgreen.svg "fine") | 
-| 226 | Kitchen2012-784 | Mehri | Hair (head) | ɬeffiit | ![x](https://img.shields.io/badge/ɬ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/e--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ff--yellow.svg "clpa") ![x](https://img.shields.io/badge/ii--yellow.svg "clpa") ![x](https://img.shields.io/badge/t--brightgreen.svg "fine") | 
-| 227 | Kitchen2012-788 | Moroccan Arabic | Hair (head) | seɛra | ![x](https://img.shields.io/badge/s--brightgreen.svg "fine") ![x](https://img.shields.io/badge/eɛ--yellow.svg "clpa") ![x](https://img.shields.io/badge/r--brightgreen.svg "fine") ![x](https://img.shields.io/badge/a--brightgreen.svg "fine") | 
-| 228 | Kitchen2012-789 | Ogaden Arabic | Hair (head) | sa9ir | ![x](https://img.shields.io/badge/s--brightgreen.svg "fine") ![x](https://img.shields.io/badge/a--brightgreen.svg "fine") ![x](https://img.shields.io/badge/9--red.svg "lingpy") ![x](https://img.shields.io/badge/i--brightgreen.svg "fine") ![x](https://img.shields.io/badge/r--brightgreen.svg "fine") | 
-| 229 | Kitchen2012-793 | Amharic | Hand | ɨjj | ![x](https://img.shields.io/badge/ɨ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/jj--yellow.svg "clpa") | 
-| 230 | Kitchen2012-802 | Mesmes | Hand | ɨjja | ![x](https://img.shields.io/badge/ɨ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/jj--yellow.svg "clpa") ![x](https://img.shields.io/badge/a--brightgreen.svg "fine") | 
-| 231 | Kitchen2012-805 | Hebrew | Hand | yadh | ![x](https://img.shields.io/badge/ya--yellow.svg "clpa") ![x](https://img.shields.io/badge/dh--brightgreen.svg "fine") | 
-| 232 | Kitchen2012-809 | Mehri | Hand | ħayd | ![x](https://img.shields.io/badge/ħ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ay--yellow.svg "clpa") ![x](https://img.shields.io/badge/d--brightgreen.svg "fine") | 
-| 233 | Kitchen2012-813 | Moroccan Arabic | Hand | idd | ![x](https://img.shields.io/badge/i--brightgreen.svg "fine") ![x](https://img.shields.io/badge/dd--yellow.svg "clpa") | 
-| 234 | Kitchen2012-814 | Ogaden Arabic | Hand | yad | ![x](https://img.shields.io/badge/ya--yellow.svg "clpa") ![x](https://img.shields.io/badge/d--brightgreen.svg "fine") | 
-| 235 | Kitchen2012-817 | Tigrinya | Head | rɨ7si | ![x](https://img.shields.io/badge/r--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ɨ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ss--yellow.svg "clpa") ![x](https://img.shields.io/badge/i--brightgreen.svg "fine") | 
-| 236 | Kitchen2012-819 | Argobba | Head | dɨmma: | ![x](https://img.shields.io/badge/d--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ɨ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/mm--yellow.svg "clpa") ![x](https://img.shields.io/badge/a:--brightgreen.svg "fine") | 
-| 237 | Kitchen2012-824 | Soddo | Head | gunnɛn | ![x](https://img.shields.io/badge/g--brightgreen.svg "fine") ![x](https://img.shields.io/badge/u--brightgreen.svg "fine") ![x](https://img.shields.io/badge/nn--yellow.svg "clpa") ![x](https://img.shields.io/badge/ɛ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/n--brightgreen.svg "fine") | 
-| 238 | Kitchen2012-826 | Innemor | Head | gun7ɛr | ![x](https://img.shields.io/badge/g--brightgreen.svg "fine") ![x](https://img.shields.io/badge/u--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ns--yellow.svg "clpa") ![x](https://img.shields.io/badge/ɛ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/r--brightgreen.svg "fine") | 
-| 239 | Kitchen2012-827 | Mesmes | Head | gʊnnurɛ | ![x](https://img.shields.io/badge/g--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ʊ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/nn--yellow.svg "clpa") ![x](https://img.shields.io/badge/u--brightgreen.svg "fine") ![x](https://img.shields.io/badge/r--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ɛ--brightgreen.svg "fine") | 
-| 240 | Kitchen2012-834 | Mehri | Head | ħẹroh | ![x](https://img.shields.io/badge/ħ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ẹ--red.svg "lingpy") ![x](https://img.shields.io/badge/r--brightgreen.svg "fine") ![x](https://img.shields.io/badge/o--brightgreen.svg "fine") ![x](https://img.shields.io/badge/h--brightgreen.svg "fine") | 
-| 241 | Kitchen2012-836 | Soqotri | Head | rey | ![x](https://img.shields.io/badge/r--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ey--yellow.svg "clpa") | 
-| 242 | Kitchen2012-838 | Moroccan Arabic | Head | ras' | ![x](https://img.shields.io/badge/r--brightgreen.svg "fine") ![x](https://img.shields.io/badge/a--brightgreen.svg "fine") ![x](https://img.shields.io/badge/s--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ˈ--brightgreen.svg "fine") | 
-| 243 | Kitchen2012-840 | Ge'ez | Hear | sɛm9a | ![x](https://img.shields.io/badge/s--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ɛ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/m--brightgreen.svg "fine") ![x](https://img.shields.io/badge/9--red.svg "lingpy") ![x](https://img.shields.io/badge/a--brightgreen.svg "fine") | 
-| 244 | Kitchen2012-841 | Tigre | Hear | sam9a | ![x](https://img.shields.io/badge/s--brightgreen.svg "fine") ![x](https://img.shields.io/badge/a--brightgreen.svg "fine") ![x](https://img.shields.io/badge/m--brightgreen.svg "fine") ![x](https://img.shields.io/badge/9--red.svg "lingpy") ![x](https://img.shields.io/badge/a--brightgreen.svg "fine") | 
-| 245 | Kitchen2012-842 | Tigrinya | Hear | sɛm9ɛ | ![x](https://img.shields.io/badge/s--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ɛ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/m--brightgreen.svg "fine") ![x](https://img.shields.io/badge/9--red.svg "lingpy") ![x](https://img.shields.io/badge/ɛ--brightgreen.svg "fine") | 
-| 246 | Kitchen2012-843 | Amharic | Hear | sɛmma | ![x](https://img.shields.io/badge/s--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ɛ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/mm--yellow.svg "clpa") ![x](https://img.shields.io/badge/a--brightgreen.svg "fine") | 
-| 247 | Kitchen2012-844 | Argobba | Hear | sɛmma | ![x](https://img.shields.io/badge/s--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ɛ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/mm--yellow.svg "clpa") ![x](https://img.shields.io/badge/a--brightgreen.svg "fine") | 
-| 248 | Kitchen2012-846 | Zway | Hear | samma | ![x](https://img.shields.io/badge/s--brightgreen.svg "fine") ![x](https://img.shields.io/badge/a--brightgreen.svg "fine") ![x](https://img.shields.io/badge/mm--yellow.svg "clpa") ![x](https://img.shields.io/badge/a--brightgreen.svg "fine") | 
-| 249 | Kitchen2012-847 | Gafat | Hear | sɛmmɛ | ![x](https://img.shields.io/badge/s--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ɛ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/mm--yellow.svg "clpa") ![x](https://img.shields.io/badge/ɛ--brightgreen.svg "fine") | 
-| 250 | Kitchen2012-848 | Soddo | Hear | sɛmma- | ![x](https://img.shields.io/badge/s--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ɛ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/mm--yellow.svg "clpa") ![x](https://img.shields.io/badge/a--brightgreen.svg "fine") | 
-| 251 | Kitchen2012-850 | Innemor | Hear | sɛm7a | ![x](https://img.shields.io/badge/s--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ɛ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ms--yellow.svg "clpa") ![x](https://img.shields.io/badge/a--brightgreen.svg "fine") | 
-| 252 | Kitchen2012-855 | Ugaritic | Hear | ʃ m ' | ![x](https://img.shields.io/badge/ʃ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/_--brightgreen.svg "fine") ![x](https://img.shields.io/badge/m--brightgreen.svg "fine") ![x](https://img.shields.io/badge/_--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ˈ--brightgreen.svg "fine") | 
-| 253 | Kitchen2012-858 | Mehri | Hear | hiima | ![x](https://img.shields.io/badge/h--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ii--yellow.svg "clpa") ![x](https://img.shields.io/badge/m--brightgreen.svg "fine") ![x](https://img.shields.io/badge/a--brightgreen.svg "fine") | 
-| 254 | Kitchen2012-859 | Jibbali | Hear | ʃiiʕ | ![x](https://img.shields.io/badge/ʃ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ii--yellow.svg "clpa") ![x](https://img.shields.io/badge/ʕ--brightgreen.svg "fine") | 
-| 255 | Kitchen2012-860 | Soqotri | Hear | ʔiimaʕ | ![x](https://img.shields.io/badge/ʔ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ii--yellow.svg "clpa") ![x](https://img.shields.io/badge/m--brightgreen.svg "fine") ![x](https://img.shields.io/badge/a--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ʕ--brightgreen.svg "fine") | 
-| 256 | Kitchen2012-862 | Moroccan Arabic | Hear | smeɛ | ![x](https://img.shields.io/badge/s--brightgreen.svg "fine") ![x](https://img.shields.io/badge/m--brightgreen.svg "fine") ![x](https://img.shields.io/badge/eɛ--yellow.svg "clpa") | 
-| 257 | Kitchen2012-863 | Ogaden Arabic | Hear | sama9 | ![x](https://img.shields.io/badge/s--brightgreen.svg "fine") ![x](https://img.shields.io/badge/a--brightgreen.svg "fine") ![x](https://img.shields.io/badge/m--brightgreen.svg "fine") ![x](https://img.shields.io/badge/a--brightgreen.svg "fine") ![x](https://img.shields.io/badge/9--red.svg "lingpy") | 
-| 258 | Kitchen2012-864 | Ge'ez | Heart | lɨbb | ![x](https://img.shields.io/badge/l--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ɨ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/bb--yellow.svg "clpa") | 
-| 259 | Kitchen2012-866 | Tigrinya | Heart | lɨbbi | ![x](https://img.shields.io/badge/l--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ɨ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/bb--yellow.svg "clpa") ![x](https://img.shields.io/badge/i--brightgreen.svg "fine") | 
-| 260 | Kitchen2012-867 | Amharic | Heart | lɨbb | ![x](https://img.shields.io/badge/l--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ɨ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/bb--yellow.svg "clpa") | 
-| 261 | Kitchen2012-868 | Argobba | Heart | lɨbb | ![x](https://img.shields.io/badge/l--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ɨ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/bb--yellow.svg "clpa") | 
-| 262 | Kitchen2012-881 | Akkadian | Heart | libbu | ![x](https://img.shields.io/badge/l--brightgreen.svg "fine") ![x](https://img.shields.io/badge/i--brightgreen.svg "fine") ![x](https://img.shields.io/badge/bb--yellow.svg "clpa") ![x](https://img.shields.io/badge/u--brightgreen.svg "fine") | 
-| 263 | Kitchen2012-895 | Walani | Horn | k'ɛrr | ![x](https://img.shields.io/badge/k--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ˈɛ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/rr--yellow.svg "clpa") | 
-| 264 | Kitchen2012-897 | Soddo | Horn | k'ərr | ![x](https://img.shields.io/badge/k--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ˈə--brightgreen.svg "fine") ![x](https://img.shields.io/badge/rr--yellow.svg "clpa") | 
-| 265 | Kitchen2012-899 | Mesmes | Horn | kɔnna | ![x](https://img.shields.io/badge/k--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ɔ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/nn--yellow.svg "clpa") ![x](https://img.shields.io/badge/a--brightgreen.svg "fine") | 
-| 266 | Kitchen2012-912 | Argobba | I | ɨyyɔ | ![x](https://img.shields.io/badge/ɨyyɔ--yellow.svg "clpa") | 
-| 267 | Kitchen2012-914 | Zway | I | eya | ![x](https://img.shields.io/badge/eya--yellow.svg "clpa") | 
-| 268 | Kitchen2012-918 | Mesqan | I | ɨya | ![x](https://img.shields.io/badge/ɨya--yellow.svg "clpa") | 
-| 269 | Kitchen2012-919 | Innemor | I | iya | ![x](https://img.shields.io/badge/iya--yellow.svg "clpa") | 
-| 270 | Kitchen2012-920 | Mesmes | I | hiy'ya | ![x](https://img.shields.io/badge/h--brightgreen.svg "fine") ![x](https://img.shields.io/badge/iy--yellow.svg "clpa") ![x](https://img.shields.io/badge/ˈya--brightgreen.svg "fine") | 
-| 271 | Kitchen2012-921 | Geto | I | ɨya | ![x](https://img.shields.io/badge/ɨya--yellow.svg "clpa") | 
-| 272 | Kitchen2012-922 | Chaha | I | ɨya | ![x](https://img.shields.io/badge/ɨya--yellow.svg "clpa") | 
-| 273 | Kitchen2012-936 | Amharic | Kill | gɛddɛlɛ | ![x](https://img.shields.io/badge/g--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ɛ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/dd--yellow.svg "clpa") ![x](https://img.shields.io/badge/ɛ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/l--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ɛ--brightgreen.svg "fine") | 
-| 274 | Kitchen2012-937 | Argobba | Kill | gɛddɛli | ![x](https://img.shields.io/badge/g--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ɛ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/dd--yellow.svg "clpa") ![x](https://img.shields.io/badge/ɛ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/l--brightgreen.svg "fine") ![x](https://img.shields.io/badge/i--brightgreen.svg "fine") | 
-| 275 | Kitchen2012-939 | Zway | Kill | k'ɛcci:n | ![x](https://img.shields.io/badge/k--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ˈɛ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/cc--yellow.svg "clpa") ![x](https://img.shields.io/badge/i:--brightgreen.svg "fine") ![x](https://img.shields.io/badge/n--brightgreen.svg "fine") | 
-| 276 | Kitchen2012-940 | Soddo | Kill | gɛddɛlɛ | ![x](https://img.shields.io/badge/g--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ɛ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/dd--yellow.svg "clpa") ![x](https://img.shields.io/badge/ɛ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/l--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ɛ--brightgreen.svg "fine") | 
-| 277 | Kitchen2012-943 | Mesmes | Kill | :tɔrɔ- | ![x](https://img.shields.io/badge/:t--yellow.svg "clpa") ![x](https://img.shields.io/badge/ɔ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/r--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ɔ--brightgreen.svg "fine") | 
-| 278 | Kitchen2012-948 | Aramaic | Kill | k''t'al | ![x](https://img.shields.io/badge/k--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ˈ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ˈt--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ˈa--brightgreen.svg "fine") ![x](https://img.shields.io/badge/l--brightgreen.svg "fine") | 
-| 279 | Kitchen2012-950 | Mehri | Kill | letooɤ | ![x](https://img.shields.io/badge/l--brightgreen.svg "fine") ![x](https://img.shields.io/badge/e--brightgreen.svg "fine") ![x](https://img.shields.io/badge/t--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ooɤ--yellow.svg "clpa") | 
-| 280 | Kitchen2012-951 | Jibbali | Kill | leteɤ | ![x](https://img.shields.io/badge/l--brightgreen.svg "fine") ![x](https://img.shields.io/badge/e--brightgreen.svg "fine") ![x](https://img.shields.io/badge/t--brightgreen.svg "fine") ![x](https://img.shields.io/badge/eɤ--yellow.svg "clpa") | 
-| 281 | Kitchen2012-953 | Harsusi | Kill | gayyeb | ![x](https://img.shields.io/badge/g--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ayye--yellow.svg "clpa") ![x](https://img.shields.io/badge/b--brightgreen.svg "fine") | 
-| 282 | Kitchen2012-956 | Ge'ez | Know | lɛbbɛwɛ | ![x](https://img.shields.io/badge/l--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ɛ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/bb--yellow.svg "clpa") ![x](https://img.shields.io/badge/ɛ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/w--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ɛ--brightgreen.svg "fine") | 
-| 283 | Kitchen2012-959 | Amharic | Know | awwɛk'ɛ | ![x](https://img.shields.io/badge/a--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ww--yellow.svg "clpa") ![x](https://img.shields.io/badge/ɛ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/k--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ˈɛ--brightgreen.svg "fine") | 
-| 284 | Kitchen2012-961 | Harari | Know | 7aˡk'ɛ | ![x](https://img.shields.io/badge/s--brightgreen.svg "fine") ![x](https://img.shields.io/badge/aˡ--yellow.svg "clpa") ![x](https://img.shields.io/badge/k--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ˈɛ--brightgreen.svg "fine") | 
-| 285 | Kitchen2012-970 | Hebrew | Know | yadha | ![x](https://img.shields.io/badge/ya--yellow.svg "clpa") ![x](https://img.shields.io/badge/dh--brightgreen.svg "fine") ![x](https://img.shields.io/badge/a--brightgreen.svg "fine") | 
-| 286 | Kitchen2012-971 | Ugaritic | Know | y d ' | ![x](https://img.shields.io/badge/y--brightgreen.svg "fine") ![x](https://img.shields.io/badge/_--brightgreen.svg "fine") ![x](https://img.shields.io/badge/d--brightgreen.svg "fine") ![x](https://img.shields.io/badge/_--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ˈ--brightgreen.svg "fine") | 
-| 287 | Kitchen2012-974 | Mehri | Know | ɤaruub | ![x](https://img.shields.io/badge/ɤa--yellow.svg "clpa") ![x](https://img.shields.io/badge/r--brightgreen.svg "fine") ![x](https://img.shields.io/badge/uu--brightgreen.svg "fine") ![x](https://img.shields.io/badge/b--brightgreen.svg "fine") | 
-| 288 | Kitchen2012-975 | Jibbali | Know | yuɤɔreb | ![x](https://img.shields.io/badge/yuɤɔ--yellow.svg "clpa") ![x](https://img.shields.io/badge/r--brightgreen.svg "fine") ![x](https://img.shields.io/badge/e--brightgreen.svg "fine") ![x](https://img.shields.io/badge/b--brightgreen.svg "fine") | 
-| 289 | Kitchen2012-979 | Ogaden Arabic | Know | 9araf | ![x](https://img.shields.io/badge/9--red.svg "lingpy") ![x](https://img.shields.io/badge/a--brightgreen.svg "fine") ![x](https://img.shields.io/badge/r--brightgreen.svg "fine") ![x](https://img.shields.io/badge/a--brightgreen.svg "fine") ![x](https://img.shields.io/badge/f--brightgreen.svg "fine") | 
-| 290 | Kitchen2012-989 | Mesmes | Knee | gʊnno:da | ![x](https://img.shields.io/badge/g--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ʊ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/nn--yellow.svg "clpa") ![x](https://img.shields.io/badge/o:--brightgreen.svg "fine") ![x](https://img.shields.io/badge/d--brightgreen.svg "fine") ![x](https://img.shields.io/badge/a--brightgreen.svg "fine") | 
-| 291 | Kitchen2012-1000 | Ge'ez | Leaf | k'ʷos'ɨl | ![x](https://img.shields.io/badge/k--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ˈʷ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/o--brightgreen.svg "fine") ![x](https://img.shields.io/badge/s--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ˈɨ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/l--brightgreen.svg "fine") | 
-| 292 | Kitchen2012-1002 | Tigrinya | Leaf | k'ʷes'li | ![x](https://img.shields.io/badge/k--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ˈʷ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/e--brightgreen.svg "fine") ![x](https://img.shields.io/badge/s--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ˈl--brightgreen.svg "fine") ![x](https://img.shields.io/badge/i--brightgreen.svg "fine") | 
-| 293 | Kitchen2012-1019 | Jibbali | Leaf | seɤizfɔɔt | ![x](https://img.shields.io/badge/s--brightgreen.svg "fine") ![x](https://img.shields.io/badge/eɤi--yellow.svg "clpa") ![x](https://img.shields.io/badge/z--brightgreen.svg "fine") ![x](https://img.shields.io/badge/f--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ɔɔ--yellow.svg "clpa") ![x](https://img.shields.io/badge/t--brightgreen.svg "fine") | 
-| 294 | Kitchen2012-1020 | Soqotri | Leaf | saɔliifoh | ![x](https://img.shields.io/badge/s--brightgreen.svg "fine") ![x](https://img.shields.io/badge/aɔ--yellow.svg "clpa") ![x](https://img.shields.io/badge/l--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ii--yellow.svg "clpa") ![x](https://img.shields.io/badge/f--brightgreen.svg "fine") ![x](https://img.shields.io/badge/o--brightgreen.svg "fine") ![x](https://img.shields.io/badge/h--brightgreen.svg "fine") | 
-| 295 | Kitchen2012-1021 | Moroccan Arabic | Leaf | weṟqa | ![x](https://img.shields.io/badge/w--brightgreen.svg "fine") ![x](https://img.shields.io/badge/e--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ṟ--red.svg "lingpy") ![x](https://img.shields.io/badge/q--brightgreen.svg "fine") ![x](https://img.shields.io/badge/a--brightgreen.svg "fine") | 
-| 296 | Kitchen2012-1025 | Tigrinya | Liver | t'afiya | ![x](https://img.shields.io/badge/t--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ˈa--brightgreen.svg "fine") ![x](https://img.shields.io/badge/f--brightgreen.svg "fine") ![x](https://img.shields.io/badge/iya--yellow.svg "clpa") | 
-| 297 | Kitchen2012-1026 | Amharic | Liver | gubbɛt | ![x](https://img.shields.io/badge/g--brightgreen.svg "fine") ![x](https://img.shields.io/badge/u--brightgreen.svg "fine") ![x](https://img.shields.io/badge/bb--yellow.svg "clpa") ![x](https://img.shields.io/badge/ɛ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/t--brightgreen.svg "fine") | 
-| 298 | Kitchen2012-1031 | Soddo | Liver | gɨbbɔt | ![x](https://img.shields.io/badge/g--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ɨ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/bb--yellow.svg "clpa") ![x](https://img.shields.io/badge/ɔ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/t--brightgreen.svg "fine") | 
-| 299 | Kitchen2012-1040 | Mehri | Liver | ʃubdéét | ![x](https://img.shields.io/badge/ʃ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/u--brightgreen.svg "fine") ![x](https://img.shields.io/badge/b--brightgreen.svg "fine") ![x](https://img.shields.io/badge/d--brightgreen.svg "fine") ![x](https://img.shields.io/badge/éé--yellow.svg "clpa") ![x](https://img.shields.io/badge/t--brightgreen.svg "fine") | 
-| 300 | Kitchen2012-1041 | Jibbali | Liver | sebdéét | ![x](https://img.shields.io/badge/s--brightgreen.svg "fine") ![x](https://img.shields.io/badge/e--brightgreen.svg "fine") ![x](https://img.shields.io/badge/b--brightgreen.svg "fine") ![x](https://img.shields.io/badge/d--brightgreen.svg "fine") ![x](https://img.shields.io/badge/éé--yellow.svg "clpa") ![x](https://img.shields.io/badge/t--brightgreen.svg "fine") | 
-| 301 | Kitchen2012-1046 | Ge'ez | Long | nɛwwix | ![x](https://img.shields.io/badge/n--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ɛ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ww--yellow.svg "clpa") ![x](https://img.shields.io/badge/i--brightgreen.svg "fine") ![x](https://img.shields.io/badge/x--brightgreen.svg "fine") | 
-| 302 | Kitchen2012-1047 | Tigre | Long | rayyim | ![x](https://img.shields.io/badge/r--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ayyi--yellow.svg "clpa") ![x](https://img.shields.io/badge/m--brightgreen.svg "fine") | 
-| 303 | Kitchen2012-1048 | Tigrinya | Long | nɛwwi:ħ | ![x](https://img.shields.io/badge/n--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ɛ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ww--yellow.svg "clpa") ![x](https://img.shields.io/badge/i:--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ħ--brightgreen.svg "fine") | 
-| 304 | Kitchen2012-1049 | Amharic | Long | rɛjjɨm | ![x](https://img.shields.io/badge/r--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ɛ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/jj--yellow.svg "clpa") ![x](https://img.shields.io/badge/ɨ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/m--brightgreen.svg "fine") | 
-| 305 | Kitchen2012-1050 | Argobba | Long | rɛzzɨm | ![x](https://img.shields.io/badge/r--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ɛ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/zz--yellow.svg "clpa") ![x](https://img.shields.io/badge/ɨ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/m--brightgreen.svg "fine") | 
-| 306 | Kitchen2012-1051 | Harari | Long | gudʊrr | ![x](https://img.shields.io/badge/g--brightgreen.svg "fine") ![x](https://img.shields.io/badge/u--brightgreen.svg "fine") ![x](https://img.shields.io/badge/d--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ʊ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/rr--yellow.svg "clpa") | 
-| 307 | Kitchen2012-1054 | Gafat | Long | gɛddɛrmɛ | ![x](https://img.shields.io/badge/g--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ɛ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/dd--yellow.svg "clpa") ![x](https://img.shields.io/badge/ɛ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/r--brightgreen.svg "fine") ![x](https://img.shields.io/badge/m--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ɛ--brightgreen.svg "fine") | 
-| 308 | Kitchen2012-1055 | Soddo | Long | gɛllɨf | ![x](https://img.shields.io/badge/g--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ɛ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ll--yellow.svg "clpa") ![x](https://img.shields.io/badge/ɨ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/f--brightgreen.svg "fine") | 
-| 309 | Kitchen2012-1063 | Aramaic | Long | arˡikha | ![x](https://img.shields.io/badge/a--brightgreen.svg "fine") ![x](https://img.shields.io/badge/rˡ--yellow.svg "clpa") ![x](https://img.shields.io/badge/i--brightgreen.svg "fine") ![x](https://img.shields.io/badge/kh--brightgreen.svg "fine") ![x](https://img.shields.io/badge/a--brightgreen.svg "fine") | 
-| 310 | Kitchen2012-1065 | Mehri | Long | t'wiil | ![x](https://img.shields.io/badge/t--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ˈw--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ii--yellow.svg "clpa") ![x](https://img.shields.io/badge/l--brightgreen.svg "fine") | 
-| 311 | Kitchen2012-1066 | Jibbali | Long | rii | ![x](https://img.shields.io/badge/r--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ii--yellow.svg "clpa") | 
-| 312 | Kitchen2012-1067 | Soqotri | Long | riiyom | ![x](https://img.shields.io/badge/r--brightgreen.svg "fine") ![x](https://img.shields.io/badge/iiyo--yellow.svg "clpa") ![x](https://img.shields.io/badge/m--brightgreen.svg "fine") | 
-| 313 | Kitchen2012-1076 | Harari | Louse | k'uma:y | ![x](https://img.shields.io/badge/k--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ˈu--brightgreen.svg "fine") ![x](https://img.shields.io/badge/m--brightgreen.svg "fine") ![x](https://img.shields.io/badge/a:y--yellow.svg "clpa") | 
-| 314 | Kitchen2012-1077 | Zway | Louse | k'ɨma:y | ![x](https://img.shields.io/badge/k--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ˈɨ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/m--brightgreen.svg "fine") ![x](https://img.shields.io/badge/a:y--yellow.svg "clpa") | 
-| 315 | Kitchen2012-1086 | Hebrew | Louse | kinˡam | ![x](https://img.shields.io/badge/k--brightgreen.svg "fine") ![x](https://img.shields.io/badge/i--brightgreen.svg "fine") ![x](https://img.shields.io/badge/nˡ--yellow.svg "clpa") ![x](https://img.shields.io/badge/a--brightgreen.svg "fine") ![x](https://img.shields.io/badge/m--brightgreen.svg "fine") | 
-| 316 | Kitchen2012-1089 | Mehri | Louse | kinmiit | ![x](https://img.shields.io/badge/k--brightgreen.svg "fine") ![x](https://img.shields.io/badge/i--brightgreen.svg "fine") ![x](https://img.shields.io/badge/n--brightgreen.svg "fine") ![x](https://img.shields.io/badge/m--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ii--yellow.svg "clpa") ![x](https://img.shields.io/badge/t--brightgreen.svg "fine") | 
-| 317 | Kitchen2012-1090 | Jibbali | Louse | siniit | ![x](https://img.shields.io/badge/s--brightgreen.svg "fine") ![x](https://img.shields.io/badge/i--brightgreen.svg "fine") ![x](https://img.shields.io/badge/n--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ii--yellow.svg "clpa") ![x](https://img.shields.io/badge/t--brightgreen.svg "fine") | 
-| 318 | Kitchen2012-1096 | Tigre | Man | 7adda:m | ![x](https://img.shields.io/badge/s--brightgreen.svg "fine") ![x](https://img.shields.io/badge/a--brightgreen.svg "fine") ![x](https://img.shields.io/badge/dd--yellow.svg "clpa") ![x](https://img.shields.io/badge/a:--brightgreen.svg "fine") ![x](https://img.shields.io/badge/m--brightgreen.svg "fine") | 
-| 319 | Kitchen2012-1103 | Gafat | Man | sɛwwɛ | ![x](https://img.shields.io/badge/s--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ɛ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ww--yellow.svg "clpa") ![x](https://img.shields.io/badge/ɛ--brightgreen.svg "fine") | 
-| 320 | Kitchen2012-1114 | Mehri | Man | ɤay | ![x](https://img.shields.io/badge/ɤay--yellow.svg "clpa") | 
-| 321 | Kitchen2012-1117 | Harsusi | Man | gayg | ![x](https://img.shields.io/badge/g--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ay--yellow.svg "clpa") ![x](https://img.shields.io/badge/g--brightgreen.svg "fine") | 
-| 322 | Kitchen2012-1124 | Argobba | Many | bɨzzu | ![x](https://img.shields.io/badge/b--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ɨ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/zz--yellow.svg "clpa") ![x](https://img.shields.io/badge/u--brightgreen.svg "fine") | 
-| 323 | Kitchen2012-1126 | Zway | Many | bɨzzɨ(n) | ![x](https://img.shields.io/badge/b--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ɨ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/zz--yellow.svg "clpa") ![x](https://img.shields.io/badge/ɨ--brightgreen.svg "fine") | 
-| 324 | Kitchen2012-1128 | Gafat | Many | tɛbbɛ | ![x](https://img.shields.io/badge/t--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ɛ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/bb--yellow.svg "clpa") ![x](https://img.shields.io/badge/ɛ--brightgreen.svg "fine") | 
-| 325 | Kitchen2012-1129 | Soddo | Many | ma:lɛk' | ![x](https://img.shields.io/badge/m--brightgreen.svg "fine") ![x](https://img.shields.io/badge/a:--brightgreen.svg "fine") ![x](https://img.shields.io/badge/l--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ɛ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/k--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ˈ--brightgreen.svg "fine") | 
-| 326 | Kitchen2012-1139 | Mehri | Many | mééken | ![x](https://img.shields.io/badge/m--brightgreen.svg "fine") ![x](https://img.shields.io/badge/éé--yellow.svg "clpa") ![x](https://img.shields.io/badge/k--brightgreen.svg "fine") ![x](https://img.shields.io/badge/e--brightgreen.svg "fine") ![x](https://img.shields.io/badge/n--brightgreen.svg "fine") | 
-| 327 | Kitchen2012-1141 | Soqotri | Many | déélak' | ![x](https://img.shields.io/badge/d--brightgreen.svg "fine") ![x](https://img.shields.io/badge/éé--yellow.svg "clpa") ![x](https://img.shields.io/badge/l--brightgreen.svg "fine") ![x](https://img.shields.io/badge/a--brightgreen.svg "fine") ![x](https://img.shields.io/badge/k--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ˈ--brightgreen.svg "fine") | 
-| 328 | Kitchen2012-1143 | Moroccan Arabic | Many | bazzaf | ![x](https://img.shields.io/badge/b--brightgreen.svg "fine") ![x](https://img.shields.io/badge/a--brightgreen.svg "fine") ![x](https://img.shields.io/badge/zz--yellow.svg "clpa") ![x](https://img.shields.io/badge/a--brightgreen.svg "fine") ![x](https://img.shields.io/badge/f--brightgreen.svg "fine") | 
-| 329 | Kitchen2012-1151 | Zway | Meat | bɛsɛrr | ![x](https://img.shields.io/badge/b--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ɛ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/s--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ɛ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/rr--yellow.svg "clpa") | 
-| 330 | Kitchen2012-1164 | Mehri | Meat | tiiwi | ![x](https://img.shields.io/badge/t--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ii--yellow.svg "clpa") ![x](https://img.shields.io/badge/w--brightgreen.svg "fine") ![x](https://img.shields.io/badge/i--brightgreen.svg "fine") | 
-| 331 | Kitchen2012-1165 | Jibbali | Meat | tĕh | ![x](https://img.shields.io/badge/t--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ĕh--yellow.svg "clpa") | 
-| 332 | Kitchen2012-1166 | Soqotri | Meat | téh | ![x](https://img.shields.io/badge/t--brightgreen.svg "fine") ![x](https://img.shields.io/badge/éh--yellow.svg "clpa") | 
-| 333 | Kitchen2012-1179 | Soddo | Moon | dɛrra:k'a | ![x](https://img.shields.io/badge/d--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ɛ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/rr--yellow.svg "clpa") ![x](https://img.shields.io/badge/a:--brightgreen.svg "fine") ![x](https://img.shields.io/badge/k--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ˈa--brightgreen.svg "fine") | 
-| 334 | Kitchen2012-1183 | Hebrew | Moon | yareaħ | ![x](https://img.shields.io/badge/ya--yellow.svg "clpa") ![x](https://img.shields.io/badge/r--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ea--yellow.svg "clpa") ![x](https://img.shields.io/badge/ħ--brightgreen.svg "fine") | 
-| 335 | Kitchen2012-1197 | Argobba | Mountain | gubb | ![x](https://img.shields.io/badge/g--brightgreen.svg "fine") ![x](https://img.shields.io/badge/u--brightgreen.svg "fine") ![x](https://img.shields.io/badge/bb--yellow.svg "clpa") | 
-| 336 | Kitchen2012-1201 | Soddo | Mountain | gɛggɛra | ![x](https://img.shields.io/badge/g--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ɛ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/gg--yellow.svg "clpa") ![x](https://img.shields.io/badge/ɛ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/r--brightgreen.svg "fine") ![x](https://img.shields.io/badge/a--brightgreen.svg "fine") | 
-| 337 | Kitchen2012-1204 | Mesmes | Mountain | a:nya | ![x](https://img.shields.io/badge/a:--brightgreen.svg "fine") ![x](https://img.shields.io/badge/n--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ya--yellow.svg "clpa") | 
-| 338 | Kitchen2012-1212 | Jibbali | Mountain | gyel | ![x](https://img.shields.io/badge/g--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ye--yellow.svg "clpa") ![x](https://img.shields.io/badge/l--brightgreen.svg "fine") | 
-| 339 | Kitchen2012-1214 | Harsusi | Mountain | kermaym | ![x](https://img.shields.io/badge/k--brightgreen.svg "fine") ![x](https://img.shields.io/badge/e--brightgreen.svg "fine") ![x](https://img.shields.io/badge/r--brightgreen.svg "fine") ![x](https://img.shields.io/badge/m--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ay--yellow.svg "clpa") ![x](https://img.shields.io/badge/m--brightgreen.svg "fine") | 
-| 340 | Kitchen2012-1228 | Innemor | Mouth | amfw | ![x](https://img.shields.io/badge/a--brightgreen.svg "fine") ![x](https://img.shields.io/badge/m--brightgreen.svg "fine") ![x](https://img.shields.io/badge/fw--yellow.svg "clpa") | 
-| 341 | Kitchen2012-1230 | Geto | Mouth | anfw | ![x](https://img.shields.io/badge/a--brightgreen.svg "fine") ![x](https://img.shields.io/badge/n--brightgreen.svg "fine") ![x](https://img.shields.io/badge/fw--yellow.svg "clpa") | 
-| 342 | Kitchen2012-1231 | Chaha | Mouth | anfw | ![x](https://img.shields.io/badge/a--brightgreen.svg "fine") ![x](https://img.shields.io/badge/n--brightgreen.svg "fine") ![x](https://img.shields.io/badge/fw--yellow.svg "clpa") | 
-| 343 | Kitchen2012-1287 | Jibbali | Neck | ɤɔθo | ![x](https://img.shields.io/badge/ɤɔ--yellow.svg "clpa") ![x](https://img.shields.io/badge/θ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/o--brightgreen.svg "fine") | 
-| 344 | Kitchen2012-1289 | Harsusi | Neck | goɵi | ![x](https://img.shields.io/badge/g--brightgreen.svg "fine") ![x](https://img.shields.io/badge/oɵi--yellow.svg "clpa") | 
-| 345 | Kitchen2012-1290 | Moroccan Arabic | Neck | ɛenq | ![x](https://img.shields.io/badge/ɛe--yellow.svg "clpa") ![x](https://img.shields.io/badge/n--brightgreen.svg "fine") ![x](https://img.shields.io/badge/q--brightgreen.svg "fine") | 
-| 346 | Kitchen2012-1292 | Ge'ez | New | ħaddis | ![x](https://img.shields.io/badge/ħ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/a--brightgreen.svg "fine") ![x](https://img.shields.io/badge/dd--yellow.svg "clpa") ![x](https://img.shields.io/badge/i--brightgreen.svg "fine") ![x](https://img.shields.io/badge/s--brightgreen.svg "fine") | 
-| 347 | Kitchen2012-1294 | Tigrinya | New | ħaddis | ![x](https://img.shields.io/badge/ħ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/a--brightgreen.svg "fine") ![x](https://img.shields.io/badge/dd--yellow.svg "clpa") ![x](https://img.shields.io/badge/i--brightgreen.svg "fine") ![x](https://img.shields.io/badge/s--brightgreen.svg "fine") | 
-| 348 | Kitchen2012-1295 | Amharic | New | addis | ![x](https://img.shields.io/badge/a--brightgreen.svg "fine") ![x](https://img.shields.io/badge/dd--yellow.svg "clpa") ![x](https://img.shields.io/badge/i--brightgreen.svg "fine") ![x](https://img.shields.io/badge/s--brightgreen.svg "fine") | 
-| 349 | Kitchen2012-1296 | Argobba | New | haggɨs | ![x](https://img.shields.io/badge/h--brightgreen.svg "fine") ![x](https://img.shields.io/badge/a--brightgreen.svg "fine") ![x](https://img.shields.io/badge/gg--yellow.svg "clpa") ![x](https://img.shields.io/badge/ɨ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/s--brightgreen.svg "fine") | 
-| 350 | Kitchen2012-1298 | Zway | New | wɔ:yra | ![x](https://img.shields.io/badge/w--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ɔ:y--yellow.svg "clpa") ![x](https://img.shields.io/badge/r--brightgreen.svg "fine") ![x](https://img.shields.io/badge/a--brightgreen.svg "fine") | 
-| 351 | Kitchen2012-1300 | Gafat | New | addɛsɛ | ![x](https://img.shields.io/badge/a--brightgreen.svg "fine") ![x](https://img.shields.io/badge/dd--yellow.svg "clpa") ![x](https://img.shields.io/badge/ɛ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/s--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ɛ--brightgreen.svg "fine") | 
-| 352 | Kitchen2012-1301 | Soddo | New | addis | ![x](https://img.shields.io/badge/a--brightgreen.svg "fine") ![x](https://img.shields.io/badge/dd--yellow.svg "clpa") ![x](https://img.shields.io/badge/i--brightgreen.svg "fine") ![x](https://img.shields.io/badge/s--brightgreen.svg "fine") | 
-| 353 | Kitchen2012-1304 | Mesmes | New | wɔy'yamo | ![x](https://img.shields.io/badge/w--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ɔy--yellow.svg "clpa") ![x](https://img.shields.io/badge/ˈya--brightgreen.svg "fine") ![x](https://img.shields.io/badge/m--brightgreen.svg "fine") ![x](https://img.shields.io/badge/o--brightgreen.svg "fine") | 
-| 354 | Kitchen2012-1310 | Tigrinya | Night | lɛyti | ![x](https://img.shields.io/badge/l--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ɛy--yellow.svg "clpa") ![x](https://img.shields.io/badge/t--brightgreen.svg "fine") ![x](https://img.shields.io/badge/i--brightgreen.svg "fine") | 
-| 355 | Kitchen2012-1317 | Soddo | Night | mɛssɛman | ![x](https://img.shields.io/badge/m--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ɛ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ss--yellow.svg "clpa") ![x](https://img.shields.io/badge/ɛ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/m--brightgreen.svg "fine") ![x](https://img.shields.io/badge/a--brightgreen.svg "fine") ![x](https://img.shields.io/badge/n--brightgreen.svg "fine") | 
-| 356 | Kitchen2012-1320 | Mesmes | Night | haʷɔnsɔ:de | ![x](https://img.shields.io/badge/h--brightgreen.svg "fine") ![x](https://img.shields.io/badge/aʷɔ--yellow.svg "clpa") ![x](https://img.shields.io/badge/ns--yellow.svg "clpa") ![x](https://img.shields.io/badge/ɔ:--brightgreen.svg "fine") ![x](https://img.shields.io/badge/d--brightgreen.svg "fine") ![x](https://img.shields.io/badge/e--brightgreen.svg "fine") | 
-| 357 | Kitchen2012-1325 | Aramaic | Night | lelya | ![x](https://img.shields.io/badge/l--brightgreen.svg "fine") ![x](https://img.shields.io/badge/e--brightgreen.svg "fine") ![x](https://img.shields.io/badge/l--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ya--yellow.svg "clpa") | 
-| 358 | Kitchen2012-1327 | Mehri | Night | leeyet | ![x](https://img.shields.io/badge/l--brightgreen.svg "fine") ![x](https://img.shields.io/badge/eeye--yellow.svg "clpa") ![x](https://img.shields.io/badge/t--brightgreen.svg "fine") | 
-| 359 | Kitchen2012-1328 | Jibbali | Night | ɤɔʕre | ![x](https://img.shields.io/badge/ɤɔ--yellow.svg "clpa") ![x](https://img.shields.io/badge/ʕ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/r--brightgreen.svg "fine") ![x](https://img.shields.io/badge/e--brightgreen.svg "fine") | 
-| 360 | Kitchen2012-1337 | Argobba | Nose | affɨnc(c)a | ![x](https://img.shields.io/badge/a--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ff--yellow.svg "clpa") ![x](https://img.shields.io/badge/ɨ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/n--brightgreen.svg "fine") ![x](https://img.shields.io/badge/c--brightgreen.svg "fine") ![x](https://img.shields.io/badge/a--brightgreen.svg "fine") | 
-| 361 | Kitchen2012-1342 | Soddo | Nose | anfunna | ![x](https://img.shields.io/badge/a--brightgreen.svg "fine") ![x](https://img.shields.io/badge/n--brightgreen.svg "fine") ![x](https://img.shields.io/badge/f--brightgreen.svg "fine") ![x](https://img.shields.io/badge/u--brightgreen.svg "fine") ![x](https://img.shields.io/badge/nn--yellow.svg "clpa") ![x](https://img.shields.io/badge/a--brightgreen.svg "fine") | 
-| 362 | Kitchen2012-1345 | Mesmes | Nose | an'fʊnna | ![x](https://img.shields.io/badge/a--brightgreen.svg "fine") ![x](https://img.shields.io/badge/n--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ˈf--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ʊ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/nn--yellow.svg "clpa") ![x](https://img.shields.io/badge/a--brightgreen.svg "fine") | 
-| 363 | Kitchen2012-1351 | Akkadian | Nose | appau | ![x](https://img.shields.io/badge/a--brightgreen.svg "fine") ![x](https://img.shields.io/badge/pp--yellow.svg "clpa") ![x](https://img.shields.io/badge/au--brightgreen.svg "fine") | 
-| 364 | Kitchen2012-1365 | Walani | One | 7ədd | ![x](https://img.shields.io/badge/s--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ə--brightgreen.svg "fine") ![x](https://img.shields.io/badge/dd--yellow.svg "clpa") | 
-| 365 | Kitchen2012-1366 | Gafat | One | ɨjjɛ | ![x](https://img.shields.io/badge/ɨ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/jj--yellow.svg "clpa") ![x](https://img.shields.io/badge/ɛ--brightgreen.svg "fine") | 
-| 366 | Kitchen2012-1385 | Tigrinya | Rain (n.) | may | ![x](https://img.shields.io/badge/m--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ay--yellow.svg "clpa") | 
-| 367 | Kitchen2012-1394 | Innemor | Rain (n.) | diyɛ | ![x](https://img.shields.io/badge/d--brightgreen.svg "fine") ![x](https://img.shields.io/badge/iyɛ--yellow.svg "clpa") | 
-| 368 | Kitchen2012-1395 | Mesmes | Rain (n.) | di:ye | ![x](https://img.shields.io/badge/d--brightgreen.svg "fine") ![x](https://img.shields.io/badge/i:ye--yellow.svg "clpa") | 
-| 369 | Kitchen2012-1397 | Chaha | Rain (n.) | zɨraB | ![x](https://img.shields.io/badge/z--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ɨ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/r--brightgreen.svg "fine") ![x](https://img.shields.io/badge/a--brightgreen.svg "fine") ![x](https://img.shields.io/badge/B--red.svg "lingpy") | 
-| 370 | Kitchen2012-1401 | Akkadian | Rain (n.) | zunnu | ![x](https://img.shields.io/badge/z--brightgreen.svg "fine") ![x](https://img.shields.io/badge/u--brightgreen.svg "fine") ![x](https://img.shields.io/badge/nn--yellow.svg "clpa") ![x](https://img.shields.io/badge/u--brightgreen.svg "fine") | 
-| 371 | Kitchen2012-1404 | Soqotri | Rain (n.) | massa | ![x](https://img.shields.io/badge/m--brightgreen.svg "fine") ![x](https://img.shields.io/badge/a--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ss--yellow.svg "clpa") ![x](https://img.shields.io/badge/a--brightgreen.svg "fine") | 
-| 372 | Kitchen2012-1405 | Harsusi | Rain (n.) | ges' | ![x](https://img.shields.io/badge/g--brightgreen.svg "fine") ![x](https://img.shields.io/badge/e--brightgreen.svg "fine") ![x](https://img.shields.io/badge/s--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ˈ--brightgreen.svg "fine") | 
-| 373 | Kitchen2012-1414 | Zway | Red | arroa | ![x](https://img.shields.io/badge/a--brightgreen.svg "fine") ![x](https://img.shields.io/badge/rr--yellow.svg "clpa") ![x](https://img.shields.io/badge/oa--yellow.svg "clpa") | 
-| 374 | Kitchen2012-1416 | Soddo | Red | bɨssa | ![x](https://img.shields.io/badge/b--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ɨ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ss--yellow.svg "clpa") ![x](https://img.shields.io/badge/a--brightgreen.svg "fine") | 
-| 375 | Kitchen2012-1433 | Tigre | Road | gabay | ![x](https://img.shields.io/badge/g--brightgreen.svg "fine") ![x](https://img.shields.io/badge/a--brightgreen.svg "fine") ![x](https://img.shields.io/badge/b--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ay--yellow.svg "clpa") | 
-| 376 | Kitchen2012-1434 | Tigrinya | Road | mɛngɛddi | ![x](https://img.shields.io/badge/m--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ɛ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/n--brightgreen.svg "fine") ![x](https://img.shields.io/badge/g--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ɛ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/dd--yellow.svg "clpa") ![x](https://img.shields.io/badge/i--brightgreen.svg "fine") | 
-| 377 | Kitchen2012-1436 | Argobba | Road | he:mma | ![x](https://img.shields.io/badge/h--brightgreen.svg "fine") ![x](https://img.shields.io/badge/e:--brightgreen.svg "fine") ![x](https://img.shields.io/badge/mm--yellow.svg "clpa") ![x](https://img.shields.io/badge/a--brightgreen.svg "fine") | 
-| 378 | Kitchen2012-1443 | Innemor | Road | mea | ![x](https://img.shields.io/badge/m--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ea--yellow.svg "clpa") | 
-| 379 | Kitchen2012-1444 | Mesmes | Road | mo:ya | ![x](https://img.shields.io/badge/m--brightgreen.svg "fine") ![x](https://img.shields.io/badge/o:ya--yellow.svg "clpa") | 
-| 380 | Kitchen2012-1445 | Geto | Road | mɛya | ![x](https://img.shields.io/badge/m--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ɛya--yellow.svg "clpa") | 
-| 381 | Kitchen2012-1451 | Mehri | Road | ħọoorem | ![x](https://img.shields.io/badge/ħ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ọ--yellow.svg "clpa") ![x](https://img.shields.io/badge/oo--brightgreen.svg "fine") ![x](https://img.shields.io/badge/r--brightgreen.svg "fine") ![x](https://img.shields.io/badge/e--brightgreen.svg "fine") ![x](https://img.shields.io/badge/m--brightgreen.svg "fine") | 
-| 382 | Kitchen2012-1455 | Moroccan Arabic | Road | t'irik' | ![x](https://img.shields.io/badge/t--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ˈi--brightgreen.svg "fine") ![x](https://img.shields.io/badge/r--brightgreen.svg "fine") ![x](https://img.shields.io/badge/i--brightgreen.svg "fine") ![x](https://img.shields.io/badge/k--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ˈ--brightgreen.svg "fine") | 
-| 383 | Kitchen2012-1457 | Ge'ez | Root | sɨrwu | ![x](https://img.shields.io/badge/s--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ɨ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/rw--yellow.svg "clpa") ![x](https://img.shields.io/badge/u--brightgreen.svg "fine") | 
-| 384 | Kitchen2012-1461 | Argobba | Root | sɨrrɛ:d | ![x](https://img.shields.io/badge/s--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ɨ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/rr--yellow.svg "clpa") ![x](https://img.shields.io/badge/ɛ:--brightgreen.svg "fine") ![x](https://img.shields.io/badge/d--brightgreen.svg "fine") | 
-| 385 | Kitchen2012-1462 | Harari | Root | sirr | ![x](https://img.shields.io/badge/s--brightgreen.svg "fine") ![x](https://img.shields.io/badge/i--brightgreen.svg "fine") ![x](https://img.shields.io/badge/rr--yellow.svg "clpa") | 
-| 386 | Kitchen2012-1474 | Aramaic | Root | ʃerʃa | ![x](https://img.shields.io/badge/ʃ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/e--brightgreen.svg "fine") ![x](https://img.shields.io/badge/rʃ--yellow.svg "clpa") ![x](https://img.shields.io/badge/a--brightgreen.svg "fine") | 
-| 387 | Kitchen2012-1475 | Akkadian | Root | ʃurʃu | ![x](https://img.shields.io/badge/ʃ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/u--brightgreen.svg "fine") ![x](https://img.shields.io/badge/rʃ--yellow.svg "clpa") ![x](https://img.shields.io/badge/u--brightgreen.svg "fine") | 
-| 388 | Kitchen2012-1476 | Mehri | Root | ʔarok' ʔʔ | ![x](https://img.shields.io/badge/ʔ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/a--brightgreen.svg "fine") ![x](https://img.shields.io/badge/r--brightgreen.svg "fine") ![x](https://img.shields.io/badge/o--brightgreen.svg "fine") ![x](https://img.shields.io/badge/k--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ˈ_--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ʔʔ--yellow.svg "clpa") | 
-| 389 | Kitchen2012-1477 | Jibbali | Root | ʃirɔɔx | ![x](https://img.shields.io/badge/ʃ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/i--brightgreen.svg "fine") ![x](https://img.shields.io/badge/r--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ɔɔ--yellow.svg "clpa") ![x](https://img.shields.io/badge/x--brightgreen.svg "fine") | 
-| 390 | Kitchen2012-1478 | Soqotri | Root | ʃeriiħoh | ![x](https://img.shields.io/badge/ʃ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/e--brightgreen.svg "fine") ![x](https://img.shields.io/badge/r--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ii--yellow.svg "clpa") ![x](https://img.shields.io/badge/ħ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/o--brightgreen.svg "fine") ![x](https://img.shields.io/badge/h--brightgreen.svg "fine") | 
-| 391 | Kitchen2012-1479 | Harsusi | Root | arks' | ![x](https://img.shields.io/badge/a--brightgreen.svg "fine") ![x](https://img.shields.io/badge/r--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ks--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ˈ--brightgreen.svg "fine") | 
-| 392 | Kitchen2012-1488 | Zway | Sand | sɛrsɛre | ![x](https://img.shields.io/badge/s--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ɛ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/rs--yellow.svg "clpa") ![x](https://img.shields.io/badge/ɛ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/r--brightgreen.svg "fine") ![x](https://img.shields.io/badge/e--brightgreen.svg "fine") | 
-| 393 | Kitchen2012-1500 | Jibbali | Sand | aħʃi | ![x](https://img.shields.io/badge/a--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ħʃ--yellow.svg "clpa") ![x](https://img.shields.io/badge/i--brightgreen.svg "fine") | 
-| 394 | Kitchen2012-1501 | Soqotri | Sand | ʃiimi | ![x](https://img.shields.io/badge/ʃ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ii--yellow.svg "clpa") ![x](https://img.shields.io/badge/m--brightgreen.svg "fine") ![x](https://img.shields.io/badge/i--brightgreen.svg "fine") | 
-| 395 | Kitchen2012-1510 | Harari | Say | ba:yɛ | ![x](https://img.shields.io/badge/b--brightgreen.svg "fine") ![x](https://img.shields.io/badge/a:yɛ--yellow.svg "clpa") | 
-| 396 | Kitchen2012-1529 | Ge'ez | See | rɨ7ɨyɛ | ![x](https://img.shields.io/badge/r--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ɨ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/s--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ɨyɛ--yellow.svg "clpa") | 
-| 397 | Kitchen2012-1531 | Tigrinya | See | rɛ7ayɛ | ![x](https://img.shields.io/badge/r--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ɛ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/s--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ayɛ--yellow.svg "clpa") | 
-| 398 | Kitchen2012-1532 | Amharic | See | ayyɛ | ![x](https://img.shields.io/badge/ayyɛ--yellow.svg "clpa") | 
-| 399 | Kitchen2012-1536 | Gafat | See | ajjɛ | ![x](https://img.shields.io/badge/a--brightgreen.svg "fine") ![x](https://img.shields.io/badge/jj--yellow.svg "clpa") ![x](https://img.shields.io/badge/ɛ--brightgreen.svg "fine") | 
-| 400 | Kitchen2012-1537 | Soddo | See | azzɛ | ![x](https://img.shields.io/badge/a--brightgreen.svg "fine") ![x](https://img.shields.io/badge/zz--yellow.svg "clpa") ![x](https://img.shields.io/badge/ɛ--brightgreen.svg "fine") | 
-| 401 | Kitchen2012-1540 | Mesmes | See | -ha:ʸyɔ:- | ![x](https://img.shields.io/badge/h--brightgreen.svg "fine") ![x](https://img.shields.io/badge/a:ʸyɔ:--yellow.svg "clpa") | 
-| 402 | Kitchen2012-1547 | Mehri | See | ɤalook' | ![x](https://img.shields.io/badge/ɤa--yellow.svg "clpa") ![x](https://img.shields.io/badge/l--brightgreen.svg "fine") ![x](https://img.shields.io/badge/oo--brightgreen.svg "fine") ![x](https://img.shields.io/badge/k--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ˈ--brightgreen.svg "fine") | 
-| 403 | Kitchen2012-1553 | Ge'ez | Seed | zɛr7ɨ | ![x](https://img.shields.io/badge/z--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ɛ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/rs--yellow.svg "clpa") ![x](https://img.shields.io/badge/ɨ--brightgreen.svg "fine") | 
-| 404 | Kitchen2012-1555 | Tigrinya | Seed | zɛr7 | ![x](https://img.shields.io/badge/z--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ɛ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/rs--yellow.svg "clpa") | 
-| 405 | Kitchen2012-1559 | Zway | Seed | sɛnni | ![x](https://img.shields.io/badge/s--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ɛ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/nn--yellow.svg "clpa") ![x](https://img.shields.io/badge/i--brightgreen.svg "fine") | 
-| 406 | Kitchen2012-1565 | Mesmes | Seed | zur(ɪ)ye | ![x](https://img.shields.io/badge/z--brightgreen.svg "fine") ![x](https://img.shields.io/badge/u--brightgreen.svg "fine") ![x](https://img.shields.io/badge/r--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ye--yellow.svg "clpa") | 
-| 407 | Kitchen2012-1568 | Hebrew | Seed | zera' | ![x](https://img.shields.io/badge/z--brightgreen.svg "fine") ![x](https://img.shields.io/badge/e--brightgreen.svg "fine") ![x](https://img.shields.io/badge/r--brightgreen.svg "fine") ![x](https://img.shields.io/badge/a--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ˈ--brightgreen.svg "fine") | 
-| 408 | Kitchen2012-1569 | Ugaritic | Seed | d r' | ![x](https://img.shields.io/badge/d--brightgreen.svg "fine") ![x](https://img.shields.io/badge/_--brightgreen.svg "fine") ![x](https://img.shields.io/badge/r--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ˈ--brightgreen.svg "fine") | 
-| 409 | Kitchen2012-1573 | Moroccan Arabic | Seed | zerriɛa | ![x](https://img.shields.io/badge/z--brightgreen.svg "fine") ![x](https://img.shields.io/badge/e--brightgreen.svg "fine") ![x](https://img.shields.io/badge/rr--yellow.svg "clpa") ![x](https://img.shields.io/badge/iɛa--yellow.svg "clpa") | 
-| 410 | Kitchen2012-1574 | Ogaden Arabic | Seed | ħabb | ![x](https://img.shields.io/badge/ħ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/a--brightgreen.svg "fine") ![x](https://img.shields.io/badge/bb--yellow.svg "clpa") | 
-| 411 | Kitchen2012-1575 | Ge'ez | Sit | nɛbbɛrɛ | ![x](https://img.shields.io/badge/n--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ɛ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/bb--yellow.svg "clpa") ![x](https://img.shields.io/badge/ɛ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/r--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ɛ--brightgreen.svg "fine") | 
-| 412 | Kitchen2012-1578 | Amharic | Sit | tɛk'ɛmmɛt'ɛ | ![x](https://img.shields.io/badge/t--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ɛ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/k--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ˈɛ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/mm--yellow.svg "clpa") ![x](https://img.shields.io/badge/ɛ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/t--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ˈɛ--brightgreen.svg "fine") | 
-| 413 | Kitchen2012-1579 | Argobba | Sit | a:rrɛggaza | ![x](https://img.shields.io/badge/a:--brightgreen.svg "fine") ![x](https://img.shields.io/badge/rr--yellow.svg "clpa") ![x](https://img.shields.io/badge/ɛ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/gg--yellow.svg "clpa") ![x](https://img.shields.io/badge/a--brightgreen.svg "fine") ![x](https://img.shields.io/badge/z--brightgreen.svg "fine") ![x](https://img.shields.io/badge/a--brightgreen.svg "fine") | 
-| 414 | Kitchen2012-1581 | Zway | Sit | tɛgu:bbi | ![x](https://img.shields.io/badge/t--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ɛ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/g--brightgreen.svg "fine") ![x](https://img.shields.io/badge/u:--brightgreen.svg "fine") ![x](https://img.shields.io/badge/bb--yellow.svg "clpa") ![x](https://img.shields.io/badge/i--brightgreen.svg "fine") | 
-| 415 | Kitchen2012-1582 | Gafat | Sit | tɛwannɛ | ![x](https://img.shields.io/badge/t--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ɛ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/w--brightgreen.svg "fine") ![x](https://img.shields.io/badge/a--brightgreen.svg "fine") ![x](https://img.shields.io/badge/nn--yellow.svg "clpa") ![x](https://img.shields.io/badge/ɛ--brightgreen.svg "fine") | 
-| 416 | Kitchen2012-1583 | Soddo | Sit | tonna- | ![x](https://img.shields.io/badge/t--brightgreen.svg "fine") ![x](https://img.shields.io/badge/o--brightgreen.svg "fine") ![x](https://img.shields.io/badge/nn--yellow.svg "clpa") ![x](https://img.shields.io/badge/a--brightgreen.svg "fine") | 
-| 417 | Kitchen2012-1589 | Hebrew | Sit | yaʃabh | ![x](https://img.shields.io/badge/ya--yellow.svg "clpa") ![x](https://img.shields.io/badge/ʃ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/a--brightgreen.svg "fine") ![x](https://img.shields.io/badge/bh--brightgreen.svg "fine") | 
-| 418 | Kitchen2012-1595 | Soqotri | Sit | izɔem | ![x](https://img.shields.io/badge/i--brightgreen.svg "fine") ![x](https://img.shields.io/badge/z--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ɔe--yellow.svg "clpa") ![x](https://img.shields.io/badge/m--brightgreen.svg "fine") | 
-| 419 | Kitchen2012-1626 | Amharic | Sleep (v.) | tɛnna | ![x](https://img.shields.io/badge/t--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ɛ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/nn--yellow.svg "clpa") ![x](https://img.shields.io/badge/a--brightgreen.svg "fine") | 
-| 420 | Kitchen2012-1627 | Argobba | Sleep (v.) | tanni | ![x](https://img.shields.io/badge/t--brightgreen.svg "fine") ![x](https://img.shields.io/badge/a--brightgreen.svg "fine") ![x](https://img.shields.io/badge/nn--yellow.svg "clpa") ![x](https://img.shields.io/badge/i--brightgreen.svg "fine") | 
-| 421 | Kitchen2012-1629 | Zway | Sleep (v.) | tɛnni | ![x](https://img.shields.io/badge/t--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ɛ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/nn--yellow.svg "clpa") ![x](https://img.shields.io/badge/i--brightgreen.svg "fine") | 
-| 422 | Kitchen2012-1630 | Gafat | Sleep (v.) | (ta-)gɛddɛlɛ | ![x](https://img.shields.io/badge/g--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ɛ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/dd--yellow.svg "clpa") ![x](https://img.shields.io/badge/ɛ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/l--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ɛ--brightgreen.svg "fine") | 
-| 423 | Kitchen2012-1631 | Soddo | Sleep (v.) | ɨnnɛ- | ![x](https://img.shields.io/badge/ɨ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/nn--yellow.svg "clpa") ![x](https://img.shields.io/badge/ɛ--brightgreen.svg "fine") | 
-| 424 | Kitchen2012-1635 | Geto | Sleep (v.) | nɨyɛ- | ![x](https://img.shields.io/badge/n--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ɨyɛ--yellow.svg "clpa") | 
-| 425 | Kitchen2012-1636 | Chaha | Sleep (v.) | nɨyɛ- | ![x](https://img.shields.io/badge/n--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ɨyɛ--yellow.svg "clpa") | 
-| 426 | Kitchen2012-1637 | Hebrew | Sleep (v.) | yaʃen | ![x](https://img.shields.io/badge/ya--yellow.svg "clpa") ![x](https://img.shields.io/badge/ʃ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/e--brightgreen.svg "fine") ![x](https://img.shields.io/badge/n--brightgreen.svg "fine") | 
-| 427 | Kitchen2012-1645 | Moroccan Arabic | Sleep (v.) | neɛsa | ![x](https://img.shields.io/badge/n--brightgreen.svg "fine") ![x](https://img.shields.io/badge/eɛ--yellow.svg "clpa") ![x](https://img.shields.io/badge/s--brightgreen.svg "fine") ![x](https://img.shields.io/badge/a--brightgreen.svg "fine") | 
-| 428 | Kitchen2012-1650 | Amharic | Small | tɨnnɨs | ![x](https://img.shields.io/badge/t--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ɨ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/nn--yellow.svg "clpa") ![x](https://img.shields.io/badge/ɨ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/s--brightgreen.svg "fine") | 
-| 429 | Kitchen2012-1651 | Argobba | Small | massɨ | ![x](https://img.shields.io/badge/m--brightgreen.svg "fine") ![x](https://img.shields.io/badge/a--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ss--yellow.svg "clpa") ![x](https://img.shields.io/badge/ɨ--brightgreen.svg "fine") | 
-| 430 | Kitchen2012-1654 | Walani | Small | furt' | ![x](https://img.shields.io/badge/f--brightgreen.svg "fine") ![x](https://img.shields.io/badge/u--brightgreen.svg "fine") ![x](https://img.shields.io/badge/r--brightgreen.svg "fine") ![x](https://img.shields.io/badge/t--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ˈ--brightgreen.svg "fine") | 
-| 431 | Kitchen2012-1655 | Gafat | Small | ɨnsɛ | ![x](https://img.shields.io/badge/ɨ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ns--yellow.svg "clpa") ![x](https://img.shields.io/badge/ɛ--brightgreen.svg "fine") | 
-| 432 | Kitchen2012-1659 | Mesmes | Small | ʊ:nse | ![x](https://img.shields.io/badge/ʊ:--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ns--yellow.svg "clpa") ![x](https://img.shields.io/badge/e--brightgreen.svg "fine") | 
-| 433 | Kitchen2012-1660 | Geto | Small | ɨrs | ![x](https://img.shields.io/badge/ɨ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/rs--yellow.svg "clpa") | 
-| 434 | Kitchen2012-1661 | Chaha | Small | ɨrs | ![x](https://img.shields.io/badge/ɨ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/rs--yellow.svg "clpa") | 
-| 435 | Kitchen2012-1667 | Jibbali | Small | niisa | ![x](https://img.shields.io/badge/n--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ii--yellow.svg "clpa") ![x](https://img.shields.io/badge/s--brightgreen.svg "fine") ![x](https://img.shields.io/badge/a--brightgreen.svg "fine") | 
-| 436 | Kitchen2012-1669 | Harsusi | Small | k'ennon | ![x](https://img.shields.io/badge/k--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ˈe--brightgreen.svg "fine") ![x](https://img.shields.io/badge/nn--yellow.svg "clpa") ![x](https://img.shields.io/badge/o--brightgreen.svg "fine") ![x](https://img.shields.io/badge/n--brightgreen.svg "fine") | 
-| 437 | Kitchen2012-1671 | Ogaden Arabic | Small | saʏi:r | ![x](https://img.shields.io/badge/s--brightgreen.svg "fine") ![x](https://img.shields.io/badge/aʏi:--yellow.svg "clpa") ![x](https://img.shields.io/badge/r--brightgreen.svg "fine") | 
-| 438 | Kitchen2012-1674 | Tigrinya | Smoke (n.) | tɨkki | ![x](https://img.shields.io/badge/t--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ɨ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/kk--yellow.svg "clpa") ![x](https://img.shields.io/badge/i--brightgreen.svg "fine") | 
-| 439 | Kitchen2012-1680 | Gafat | Smoke (n.) | tɛnnɛ | ![x](https://img.shields.io/badge/t--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ɛ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/nn--yellow.svg "clpa") ![x](https://img.shields.io/badge/ɛ--brightgreen.svg "fine") | 
-| 440 | Kitchen2012-1684 | Mesmes | Smoke (n.) | tonna | ![x](https://img.shields.io/badge/t--brightgreen.svg "fine") ![x](https://img.shields.io/badge/o--brightgreen.svg "fine") ![x](https://img.shields.io/badge/nn--yellow.svg "clpa") ![x](https://img.shields.io/badge/a--brightgreen.svg "fine") | 
-| 441 | Kitchen2012-1689 | Aramaic | Smoke (n.) | tenˡana | ![x](https://img.shields.io/badge/t--brightgreen.svg "fine") ![x](https://img.shields.io/badge/e--brightgreen.svg "fine") ![x](https://img.shields.io/badge/nˡ--yellow.svg "clpa") ![x](https://img.shields.io/badge/a--brightgreen.svg "fine") ![x](https://img.shields.io/badge/n--brightgreen.svg "fine") ![x](https://img.shields.io/badge/a--brightgreen.svg "fine") | 
-| 442 | Kitchen2012-1691 | Mehri | Smoke (n.) | niideex | ![x](https://img.shields.io/badge/n--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ii--yellow.svg "clpa") ![x](https://img.shields.io/badge/d--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ee--brightgreen.svg "fine") ![x](https://img.shields.io/badge/x--brightgreen.svg "fine") | 
-| 443 | Kitchen2012-1692 | Jibbali | Smoke (n.) | mindɔɔx | ![x](https://img.shields.io/badge/m--brightgreen.svg "fine") ![x](https://img.shields.io/badge/i--brightgreen.svg "fine") ![x](https://img.shields.io/badge/n--brightgreen.svg "fine") ![x](https://img.shields.io/badge/d--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ɔɔ--yellow.svg "clpa") ![x](https://img.shields.io/badge/x--brightgreen.svg "fine") | 
-| 444 | Kitchen2012-1694 | Harsusi | Smoke (n.) | nedėx | ![x](https://img.shields.io/badge/n--brightgreen.svg "fine") ![x](https://img.shields.io/badge/e--brightgreen.svg "fine") ![x](https://img.shields.io/badge/d--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ė--red.svg "lingpy") ![x](https://img.shields.io/badge/x--brightgreen.svg "fine") | 
-| 445 | Kitchen2012-1695 | Moroccan Arabic | Smoke (n.) | doxxan | ![x](https://img.shields.io/badge/d--brightgreen.svg "fine") ![x](https://img.shields.io/badge/o--brightgreen.svg "fine") ![x](https://img.shields.io/badge/xx--yellow.svg "clpa") ![x](https://img.shields.io/badge/a--brightgreen.svg "fine") ![x](https://img.shields.io/badge/n--brightgreen.svg "fine") | 
-| 446 | Kitchen2012-1697 | Ge'ez | Snake | 7arwɛ | ![x](https://img.shields.io/badge/s--brightgreen.svg "fine") ![x](https://img.shields.io/badge/a--brightgreen.svg "fine") ![x](https://img.shields.io/badge/rw--yellow.svg "clpa") ![x](https://img.shields.io/badge/ɛ--brightgreen.svg "fine") | 
-| 447 | Kitchen2012-1698 | Tigre | Snake | 7arwe: | ![x](https://img.shields.io/badge/s--brightgreen.svg "fine") ![x](https://img.shields.io/badge/a--brightgreen.svg "fine") ![x](https://img.shields.io/badge/rw--yellow.svg "clpa") ![x](https://img.shields.io/badge/e:--brightgreen.svg "fine") | 
-| 448 | Kitchen2012-1704 | Gafat | Snake | ɨʊaʊʷɛ | ![x](https://img.shields.io/badge/ɨʊaʊʷɛ--yellow.svg "clpa") | 
-| 449 | Kitchen2012-1706 | Mesqan | Snake | yɛdɨm wɛdərə | ![x](https://img.shields.io/badge/yɛ--yellow.svg "clpa") ![x](https://img.shields.io/badge/d--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ɨ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/m--brightgreen.svg "fine") ![x](https://img.shields.io/badge/_--brightgreen.svg "fine") ![x](https://img.shields.io/badge/w--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ɛ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/d--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ə--brightgreen.svg "fine") ![x](https://img.shields.io/badge/r--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ə--brightgreen.svg "fine") | 
-| 450 | Kitchen2012-1708 | Mesmes | Snake | hawa:y | ![x](https://img.shields.io/badge/h--brightgreen.svg "fine") ![x](https://img.shields.io/badge/a--brightgreen.svg "fine") ![x](https://img.shields.io/badge/w--brightgreen.svg "fine") ![x](https://img.shields.io/badge/a:y--yellow.svg "clpa") | 
-| 451 | Kitchen2012-1711 | Mehri | Snake | riiʃiit | ![x](https://img.shields.io/badge/r--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ii--yellow.svg "clpa") ![x](https://img.shields.io/badge/ʃ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ii--yellow.svg "clpa") ![x](https://img.shields.io/badge/t--brightgreen.svg "fine") | 
-| 452 | Kitchen2012-1712 | Jibbali | Snake | ɤɔzzet | ![x](https://img.shields.io/badge/ɤɔ--yellow.svg "clpa") ![x](https://img.shields.io/badge/zz--yellow.svg "clpa") ![x](https://img.shields.io/badge/e--brightgreen.svg "fine") ![x](https://img.shields.io/badge/t--brightgreen.svg "fine") | 
-| 453 | Kitchen2012-1714 | Harsusi | Snake | beddefen | ![x](https://img.shields.io/badge/b--brightgreen.svg "fine") ![x](https://img.shields.io/badge/e--brightgreen.svg "fine") ![x](https://img.shields.io/badge/dd--yellow.svg "clpa") ![x](https://img.shields.io/badge/e--brightgreen.svg "fine") ![x](https://img.shields.io/badge/f--brightgreen.svg "fine") ![x](https://img.shields.io/badge/e--brightgreen.svg "fine") ![x](https://img.shields.io/badge/n--brightgreen.svg "fine") | 
-| 454 | Kitchen2012-1715 | Moroccan Arabic | Snake | henʃ | ![x](https://img.shields.io/badge/h--brightgreen.svg "fine") ![x](https://img.shields.io/badge/e--brightgreen.svg "fine") ![x](https://img.shields.io/badge/nʃ--yellow.svg "clpa") | 
-| 455 | Kitchen2012-1716 | Ogaden Arabic | Snake | ɵu9ba:n | ![x](https://img.shields.io/badge/ɵu--yellow.svg "clpa") ![x](https://img.shields.io/badge/9--red.svg "lingpy") ![x](https://img.shields.io/badge/b--brightgreen.svg "fine") ![x](https://img.shields.io/badge/a:--brightgreen.svg "fine") ![x](https://img.shields.io/badge/n--brightgreen.svg "fine") | 
-| 456 | Kitchen2012-1726 | Mesqan | Stand | k'ʷomɛ | ![x](https://img.shields.io/badge/k--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ˈʷ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/o--brightgreen.svg "fine") ![x](https://img.shields.io/badge/m--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ɛ--brightgreen.svg "fine") | 
-| 457 | Kitchen2012-1728 | Mesmes | Stand | -təsəkkɔ- | ![x](https://img.shields.io/badge/t--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ə--brightgreen.svg "fine") ![x](https://img.shields.io/badge/s--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ə--brightgreen.svg "fine") ![x](https://img.shields.io/badge/kk--yellow.svg "clpa") ![x](https://img.shields.io/badge/ɔ--brightgreen.svg "fine") | 
-| 458 | Kitchen2012-1733 | Akkadian | Stand | izuzˡu | ![x](https://img.shields.io/badge/i--brightgreen.svg "fine") ![x](https://img.shields.io/badge/z--brightgreen.svg "fine") ![x](https://img.shields.io/badge/u--brightgreen.svg "fine") ![x](https://img.shields.io/badge/zˡ--yellow.svg "clpa") ![x](https://img.shields.io/badge/u--brightgreen.svg "fine") | 
-| 459 | Kitchen2012-1750 | Mesmes | Star | hohoyɛ | ![x](https://img.shields.io/badge/h--brightgreen.svg "fine") ![x](https://img.shields.io/badge/o--brightgreen.svg "fine") ![x](https://img.shields.io/badge/h--brightgreen.svg "fine") ![x](https://img.shields.io/badge/oyɛ--yellow.svg "clpa") | 
-| 460 | Kitchen2012-1755 | Aramaic | Star | kaukkbha | ![x](https://img.shields.io/badge/k--brightgreen.svg "fine") ![x](https://img.shields.io/badge/au--brightgreen.svg "fine") ![x](https://img.shields.io/badge/kk--yellow.svg "clpa") ![x](https://img.shields.io/badge/bh--brightgreen.svg "fine") ![x](https://img.shields.io/badge/a--brightgreen.svg "fine") | 
-| 461 | Kitchen2012-1756 | Akkadian | Star | kakˡabu | ![x](https://img.shields.io/badge/k--brightgreen.svg "fine") ![x](https://img.shields.io/badge/a--brightgreen.svg "fine") ![x](https://img.shields.io/badge/kˡ--yellow.svg "clpa") ![x](https://img.shields.io/badge/a--brightgreen.svg "fine") ![x](https://img.shields.io/badge/b--brightgreen.svg "fine") ![x](https://img.shields.io/badge/u--brightgreen.svg "fine") | 
-| 462 | Kitchen2012-1766 | Amharic | Stone | dɨngay | ![x](https://img.shields.io/badge/d--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ɨ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/n--brightgreen.svg "fine") ![x](https://img.shields.io/badge/g--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ay--yellow.svg "clpa") | 
-| 463 | Kitchen2012-1767 | Argobba | Stone | dɨnga:y | ![x](https://img.shields.io/badge/d--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ɨ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/n--brightgreen.svg "fine") ![x](https://img.shields.io/badge/g--brightgreen.svg "fine") ![x](https://img.shields.io/badge/a:y--yellow.svg "clpa") | 
-| 464 | Kitchen2012-1772 | Soddo | Stone | ɨmmayɛ | ![x](https://img.shields.io/badge/ɨ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/mm--yellow.svg "clpa") ![x](https://img.shields.io/badge/ayɛ--yellow.svg "clpa") | 
-| 465 | Kitchen2012-1775 | Mesmes | Stone | oᵘna | ![x](https://img.shields.io/badge/oᵘ--yellow.svg "clpa") ![x](https://img.shields.io/badge/n--brightgreen.svg "fine") ![x](https://img.shields.io/badge/a--brightgreen.svg "fine") | 
-| 466 | Kitchen2012-1782 | Mehri | Stone | ʃaykat | ![x](https://img.shields.io/badge/ʃ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ay--yellow.svg "clpa") ![x](https://img.shields.io/badge/k--brightgreen.svg "fine") ![x](https://img.shields.io/badge/a--brightgreen.svg "fine") ![x](https://img.shields.io/badge/t--brightgreen.svg "fine") | 
-| 467 | Kitchen2012-1785 | Harsusi | Stone | s'ewwer | ![x](https://img.shields.io/badge/s--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ˈe--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ww--yellow.svg "clpa") ![x](https://img.shields.io/badge/e--brightgreen.svg "fine") ![x](https://img.shields.io/badge/r--brightgreen.svg "fine") | 
-| 468 | Kitchen2012-1788 | Ge'ez | Sun | s'ɛħay | ![x](https://img.shields.io/badge/s--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ˈɛ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ħ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ay--yellow.svg "clpa") | 
-| 469 | Kitchen2012-1789 | Tigre | Sun | s'aħa:y | ![x](https://img.shields.io/badge/s--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ˈa--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ħ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/a:y--yellow.svg "clpa") | 
-| 470 | Kitchen2012-1790 | Tigrinya | Sun | s'ɛħay | ![x](https://img.shields.io/badge/s--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ˈɛ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ħ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ay--yellow.svg "clpa") | 
-| 471 | Kitchen2012-1791 | Amharic | Sun | s'ɛhay | ![x](https://img.shields.io/badge/s--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ˈɛ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/h--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ay--yellow.svg "clpa") | 
-| 472 | Kitchen2012-1793 | Harari | Sun | 7irr | ![x](https://img.shields.io/badge/s--brightgreen.svg "fine") ![x](https://img.shields.io/badge/i--brightgreen.svg "fine") ![x](https://img.shields.io/badge/rr--yellow.svg "clpa") | 
-| 473 | Kitchen2012-1797 | Soddo | Sun | yɨmɛr | ![x](https://img.shields.io/badge/yɨ--yellow.svg "clpa") ![x](https://img.shields.io/badge/m--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ɛ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/r--brightgreen.svg "fine") | 
-| 474 | Kitchen2012-1799 | Innemor | Sun | ayɛd | ![x](https://img.shields.io/badge/ayɛ--yellow.svg "clpa") ![x](https://img.shields.io/badge/d--brightgreen.svg "fine") | 
-| 475 | Kitchen2012-1802 | Chaha | Sun | eyat | ![x](https://img.shields.io/badge/eya--yellow.svg "clpa") ![x](https://img.shields.io/badge/t--brightgreen.svg "fine") | 
-| 476 | Kitchen2012-1805 | Aramaic | Sun | ʃemʃˡ | ![x](https://img.shields.io/badge/ʃ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/e--brightgreen.svg "fine") ![x](https://img.shields.io/badge/mʃˡ--yellow.svg "clpa") | 
-| 477 | Kitchen2012-1806 | Akkadian | Sun | ʃamʃu | ![x](https://img.shields.io/badge/ʃ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/a--brightgreen.svg "fine") ![x](https://img.shields.io/badge/mʃ--yellow.svg "clpa") ![x](https://img.shields.io/badge/u--brightgreen.svg "fine") | 
-| 478 | Kitchen2012-1807 | Mehri | Sun | ħɛyoom | ![x](https://img.shields.io/badge/ħ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ɛyoo--yellow.svg "clpa") ![x](https://img.shields.io/badge/m--brightgreen.svg "fine") | 
-| 479 | Kitchen2012-1808 | Jibbali | Sun | yu, ʃu | ![x](https://img.shields.io/badge/yu--yellow.svg "clpa") | 
-| 480 | Kitchen2012-1810 | Harsusi | Sun | ħeyom | ![x](https://img.shields.io/badge/ħ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/eyo--yellow.svg "clpa") ![x](https://img.shields.io/badge/m--brightgreen.svg "fine") | 
-| 481 | Kitchen2012-1811 | Moroccan Arabic | Sun | ʃems | ![x](https://img.shields.io/badge/ʃ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/e--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ms--yellow.svg "clpa") | 
-| 482 | Kitchen2012-1812 | Ogaden Arabic | Sun | sams | ![x](https://img.shields.io/badge/s--brightgreen.svg "fine") ![x](https://img.shields.io/badge/a--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ms--yellow.svg "clpa") | 
-| 483 | Kitchen2012-1813 | Ge'ez | Swim | tɛ-wanɛyɛ | ![x](https://img.shields.io/badge/t--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ɛ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/w--brightgreen.svg "fine") ![x](https://img.shields.io/badge/a--brightgreen.svg "fine") ![x](https://img.shields.io/badge/n--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ɛyɛ--yellow.svg "clpa") | 
-| 484 | Kitchen2012-1816 | Amharic | Swim | wannɛ | ![x](https://img.shields.io/badge/w--brightgreen.svg "fine") ![x](https://img.shields.io/badge/a--brightgreen.svg "fine") ![x](https://img.shields.io/badge/nn--yellow.svg "clpa") ![x](https://img.shields.io/badge/ɛ--brightgreen.svg "fine") | 
-| 485 | Kitchen2012-1817 | Argobba | Swim | wanna | ![x](https://img.shields.io/badge/w--brightgreen.svg "fine") ![x](https://img.shields.io/badge/a--brightgreen.svg "fine") ![x](https://img.shields.io/badge/nn--yellow.svg "clpa") ![x](https://img.shields.io/badge/a--brightgreen.svg "fine") | 
-| 486 | Kitchen2012-1820 | Soddo | Swim | wannɛ- | ![x](https://img.shields.io/badge/w--brightgreen.svg "fine") ![x](https://img.shields.io/badge/a--brightgreen.svg "fine") ![x](https://img.shields.io/badge/nn--yellow.svg "clpa") ![x](https://img.shields.io/badge/ɛ--brightgreen.svg "fine") | 
-| 487 | Kitchen2012-1830 | Jibbali | Swim | riih, ebrehi | ![x](https://img.shields.io/badge/r--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ii--yellow.svg "clpa") ![x](https://img.shields.io/badge/h--brightgreen.svg "fine") | 
-| 488 | Kitchen2012-1833 | Moroccan Arabic | Swim | ɛewma | ![x](https://img.shields.io/badge/ɛe--yellow.svg "clpa") ![x](https://img.shields.io/badge/w--brightgreen.svg "fine") ![x](https://img.shields.io/badge/m--brightgreen.svg "fine") ![x](https://img.shields.io/badge/a--brightgreen.svg "fine") | 
-| 489 | Kitchen2012-1841 | Zway | Tail | gu:nna | ![x](https://img.shields.io/badge/g--brightgreen.svg "fine") ![x](https://img.shields.io/badge/u:--brightgreen.svg "fine") ![x](https://img.shields.io/badge/nn--yellow.svg "clpa") ![x](https://img.shields.io/badge/a--brightgreen.svg "fine") | 
-| 490 | Kitchen2012-1858 | Moroccan Arabic | Tail | ʃuwwal | ![x](https://img.shields.io/badge/ʃ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/u--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ww--yellow.svg "clpa") ![x](https://img.shields.io/badge/a--brightgreen.svg "fine") ![x](https://img.shields.io/badge/l--brightgreen.svg "fine") | 
-| 491 | Kitchen2012-1875 | Ogaden Arabic | Thin | ɟa9i:f | ![x](https://img.shields.io/badge/ɟ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/a--brightgreen.svg "fine") ![x](https://img.shields.io/badge/9--red.svg "lingpy") ![x](https://img.shields.io/badge/i:--brightgreen.svg "fine") ![x](https://img.shields.io/badge/f--brightgreen.svg "fine") | 
-| 492 | Kitchen2012-1877 | Tigre | This | 7ɨlli | ![x](https://img.shields.io/badge/s--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ɨ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ll--yellow.svg "clpa") ![x](https://img.shields.io/badge/i--brightgreen.svg "fine") | 
-| 493 | Kitchen2012-1878 | Tigrinya | This | ɨzzuy | ![x](https://img.shields.io/badge/ɨ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/zz--yellow.svg "clpa") ![x](https://img.shields.io/badge/uy--yellow.svg "clpa") | 
-| 494 | Kitchen2012-1879 | Amharic | This | yɨh | ![x](https://img.shields.io/badge/yɨ--yellow.svg "clpa") ![x](https://img.shields.io/badge/h--brightgreen.svg "fine") | 
-| 495 | Kitchen2012-1882 | Zway | This | yi: | ![x](https://img.shields.io/badge/yi:--yellow.svg "clpa") | 
-| 496 | Kitchen2012-1883 | Gafat | This | ɨnnɨ | ![x](https://img.shields.io/badge/ɨ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/nn--yellow.svg "clpa") ![x](https://img.shields.io/badge/ɨ--brightgreen.svg "fine") | 
-| 497 | Kitchen2012-1890 | Hebrew | This | hazˡeh | ![x](https://img.shields.io/badge/h--brightgreen.svg "fine") ![x](https://img.shields.io/badge/a--brightgreen.svg "fine") ![x](https://img.shields.io/badge/zˡ--yellow.svg "clpa") ![x](https://img.shields.io/badge/e--brightgreen.svg "fine") ![x](https://img.shields.io/badge/h--brightgreen.svg "fine") | 
-| 498 | Kitchen2012-1893 | Akkadian | This | annu | ![x](https://img.shields.io/badge/a--brightgreen.svg "fine") ![x](https://img.shields.io/badge/nn--yellow.svg "clpa") ![x](https://img.shields.io/badge/u--brightgreen.svg "fine") | 
-| 499 | Kitchen2012-1910 | Mesqan | Three | sɔʷst | ![x](https://img.shields.io/badge/s--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ɔʷ--yellow.svg "clpa") ![x](https://img.shields.io/badge/s--brightgreen.svg "fine") ![x](https://img.shields.io/badge/t--brightgreen.svg "fine") | 
-| 500 | Kitchen2012-1918 | Tigrinya | Thou | nɨssɨxa | ![x](https://img.shields.io/badge/n--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ɨ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ss--yellow.svg "clpa") ![x](https://img.shields.io/badge/ɨ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/x--brightgreen.svg "fine") ![x](https://img.shields.io/badge/a--brightgreen.svg "fine") | 
-| 501 | Kitchen2012-1922 | Zway | Thou | atta | ![x](https://img.shields.io/badge/a--brightgreen.svg "fine") ![x](https://img.shields.io/badge/tt--yellow.svg "clpa") ![x](https://img.shields.io/badge/a--brightgreen.svg "fine") | 
-| 502 | Kitchen2012-1937 | Soqotri | Thou | yaanhen, sen | ![x](https://img.shields.io/badge/yaa--yellow.svg "clpa") ![x](https://img.shields.io/badge/nh--brightgreen.svg "fine") ![x](https://img.shields.io/badge/e--brightgreen.svg "fine") ![x](https://img.shields.io/badge/n--brightgreen.svg "fine") | 
-| 503 | Kitchen2012-1942 | Tigre | Tongue | nɨssa:l | ![x](https://img.shields.io/badge/n--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ɨ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ss--yellow.svg "clpa") ![x](https://img.shields.io/badge/a:--brightgreen.svg "fine") ![x](https://img.shields.io/badge/l--brightgreen.svg "fine") | 
-| 504 | Kitchen2012-1946 | Harari | Tongue | arrat | ![x](https://img.shields.io/badge/a--brightgreen.svg "fine") ![x](https://img.shields.io/badge/rr--yellow.svg "clpa") ![x](https://img.shields.io/badge/a--brightgreen.svg "fine") ![x](https://img.shields.io/badge/t--brightgreen.svg "fine") | 
-| 505 | Kitchen2012-1960 | Mehri | Tongue | liʃiin | ![x](https://img.shields.io/badge/l--brightgreen.svg "fine") ![x](https://img.shields.io/badge/i--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ʃ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ii--yellow.svg "clpa") ![x](https://img.shields.io/badge/n--brightgreen.svg "fine") | 
-| 506 | Kitchen2012-1961 | Jibbali | Tongue | lʃa | ![x](https://img.shields.io/badge/lʃ--yellow.svg "clpa") ![x](https://img.shields.io/badge/a--brightgreen.svg "fine") | 
-| 507 | Kitchen2012-1962 | Soqotri | Tongue | leʃʃin | ![x](https://img.shields.io/badge/l--brightgreen.svg "fine") ![x](https://img.shields.io/badge/e--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ʃʃ--yellow.svg "clpa") ![x](https://img.shields.io/badge/i--brightgreen.svg "fine") ![x](https://img.shields.io/badge/n--brightgreen.svg "fine") | 
-| 508 | Kitchen2012-1964 | Moroccan Arabic | Tongue | lsan | ![x](https://img.shields.io/badge/ls--yellow.svg "clpa") ![x](https://img.shields.io/badge/a--brightgreen.svg "fine") ![x](https://img.shields.io/badge/n--brightgreen.svg "fine") | 
-| 509 | Kitchen2012-1968 | Tigrinya | Tooth | sɨnni | ![x](https://img.shields.io/badge/s--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ɨ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/nn--yellow.svg "clpa") ![x](https://img.shields.io/badge/i--brightgreen.svg "fine") | 
-| 510 | Kitchen2012-1969 | Amharic | Tooth | t'ɨrs | ![x](https://img.shields.io/badge/t--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ˈɨ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/rs--yellow.svg "clpa") | 
-| 511 | Kitchen2012-1970 | Argobba | Tooth | sɨnn | ![x](https://img.shields.io/badge/s--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ɨ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/nn--yellow.svg "clpa") | 
-| 512 | Kitchen2012-1975 | Soddo | Tooth | sɨnn | ![x](https://img.shields.io/badge/s--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ɨ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/nn--yellow.svg "clpa") | 
-| 513 | Kitchen2012-1976 | Mesqan | Tooth | sɔʷst | ![x](https://img.shields.io/badge/s--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ɔʷ--yellow.svg "clpa") ![x](https://img.shields.io/badge/s--brightgreen.svg "fine") ![x](https://img.shields.io/badge/t--brightgreen.svg "fine") | 
-| 514 | Kitchen2012-1983 | Aramaic | Tooth | ʃenˡa | ![x](https://img.shields.io/badge/ʃ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/e--brightgreen.svg "fine") ![x](https://img.shields.io/badge/nˡ--yellow.svg "clpa") ![x](https://img.shields.io/badge/a--brightgreen.svg "fine") | 
-| 515 | Kitchen2012-1984 | Akkadian | Tooth | sinˡ | ![x](https://img.shields.io/badge/s--brightgreen.svg "fine") ![x](https://img.shields.io/badge/i--brightgreen.svg "fine") ![x](https://img.shields.io/badge/nˡ--yellow.svg "clpa") | 
-| 516 | Kitchen2012-1989 | Moroccan Arabic | Tooth | senna | ![x](https://img.shields.io/badge/s--brightgreen.svg "fine") ![x](https://img.shields.io/badge/e--brightgreen.svg "fine") ![x](https://img.shields.io/badge/nn--yellow.svg "clpa") ![x](https://img.shields.io/badge/a--brightgreen.svg "fine") | 
-| 517 | Kitchen2012-1990 | Ogaden Arabic | Tooth | sinn | ![x](https://img.shields.io/badge/s--brightgreen.svg "fine") ![x](https://img.shields.io/badge/i--brightgreen.svg "fine") ![x](https://img.shields.io/badge/nn--yellow.svg "clpa") | 
-| 518 | Kitchen2012-1991 | Ge'ez | Tree | 9ɨs'ɛ | ![x](https://img.shields.io/badge/9--red.svg "lingpy") ![x](https://img.shields.io/badge/ɨ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/s--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ˈɛ--brightgreen.svg "fine") | 
-| 519 | Kitchen2012-1992 | Tigre | Tree | 9ɨc'c'at | ![x](https://img.shields.io/badge/9--red.svg "lingpy") ![x](https://img.shields.io/badge/ɨ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/c--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ˈc--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ˈa--brightgreen.svg "fine") ![x](https://img.shields.io/badge/t--brightgreen.svg "fine") | 
-| 520 | Kitchen2012-2003 | Mesmes | Tree | ye7e | ![x](https://img.shields.io/badge/ye--yellow.svg "clpa") ![x](https://img.shields.io/badge/s--brightgreen.svg "fine") ![x](https://img.shields.io/badge/e--brightgreen.svg "fine") | 
-| 521 | Kitchen2012-2007 | Ugaritic | Tree | s' | ![x](https://img.shields.io/badge/s--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ˈ--brightgreen.svg "fine") | 
-| 522 | Kitchen2012-2016 | Ge'ez | Two | kɨlɨ7ɛttu | ![x](https://img.shields.io/badge/k--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ɨ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/l--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ɨ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/s--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ɛ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/tt--yellow.svg "clpa") ![x](https://img.shields.io/badge/u--brightgreen.svg "fine") | 
-| 523 | Kitchen2012-2017 | Tigre | Two | kɨl7o:t | ![x](https://img.shields.io/badge/k--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ɨ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ls--yellow.svg "clpa") ![x](https://img.shields.io/badge/o:--brightgreen.svg "fine") ![x](https://img.shields.io/badge/t--brightgreen.svg "fine") | 
-| 524 | Kitchen2012-2018 | Tigrinya | Two | kɨlttɛ | ![x](https://img.shields.io/badge/k--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ɨ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/l--brightgreen.svg "fine") ![x](https://img.shields.io/badge/tt--yellow.svg "clpa") ![x](https://img.shields.io/badge/ɛ--brightgreen.svg "fine") | 
-| 525 | Kitchen2012-2019 | Amharic | Two | hulɛtt | ![x](https://img.shields.io/badge/h--brightgreen.svg "fine") ![x](https://img.shields.io/badge/u--brightgreen.svg "fine") ![x](https://img.shields.io/badge/l--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ɛ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/tt--yellow.svg "clpa") | 
-| 526 | Kitchen2012-2022 | Zway | Two | ho:yt | ![x](https://img.shields.io/badge/h--brightgreen.svg "fine") ![x](https://img.shields.io/badge/o:y--yellow.svg "clpa") ![x](https://img.shields.io/badge/t--brightgreen.svg "fine") | 
-| 527 | Kitchen2012-2027 | Innemor | Two | wɨr7e:t | ![x](https://img.shields.io/badge/w--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ɨ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/rs--yellow.svg "clpa") ![x](https://img.shields.io/badge/e:--brightgreen.svg "fine") ![x](https://img.shields.io/badge/t--brightgreen.svg "fine") | 
-| 528 | Kitchen2012-2029 | Geto | Two | x'ʷe:t | ![x](https://img.shields.io/badge/x--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ˈʷ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/e:--brightgreen.svg "fine") ![x](https://img.shields.io/badge/t--brightgreen.svg "fine") | 
-| 529 | Kitchen2012-2030 | Chaha | Two | x'ʷe:t | ![x](https://img.shields.io/badge/x--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ˈʷ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/e:--brightgreen.svg "fine") ![x](https://img.shields.io/badge/t--brightgreen.svg "fine") | 
-| 530 | Kitchen2012-2031 | Hebrew | Two | ʃnayim | ![x](https://img.shields.io/badge/ʃ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/n--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ayi--yellow.svg "clpa") ![x](https://img.shields.io/badge/m--brightgreen.svg "fine") | 
-| 531 | Kitchen2012-2033 | Aramaic | Two | trĕỹn | ![x](https://img.shields.io/badge/t--brightgreen.svg "fine") ![x](https://img.shields.io/badge/r--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ĕ--yellow.svg "clpa") ![x](https://img.shields.io/badge/ỹ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/n--brightgreen.svg "fine") | 
-| 532 | Kitchen2012-2041 | Ge'ez | Warm | mɨwuk' | ![x](https://img.shields.io/badge/m--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ɨ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/w--brightgreen.svg "fine") ![x](https://img.shields.io/badge/u--brightgreen.svg "fine") ![x](https://img.shields.io/badge/k--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ˈ--brightgreen.svg "fine") | 
-| 533 | Kitchen2012-2043 | Tigrinya | Warm | mɨwux' | ![x](https://img.shields.io/badge/m--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ɨ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/w--brightgreen.svg "fine") ![x](https://img.shields.io/badge/u--brightgreen.svg "fine") ![x](https://img.shields.io/badge/x--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ˈ--brightgreen.svg "fine") | 
-| 534 | Kitchen2012-2044 | Amharic | Warm | muk' | ![x](https://img.shields.io/badge/m--brightgreen.svg "fine") ![x](https://img.shields.io/badge/u--brightgreen.svg "fine") ![x](https://img.shields.io/badge/k--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ˈ--brightgreen.svg "fine") | 
-| 535 | Kitchen2012-2045 | Argobba | Warm | mu:k' | ![x](https://img.shields.io/badge/m--brightgreen.svg "fine") ![x](https://img.shields.io/badge/u:--brightgreen.svg "fine") ![x](https://img.shields.io/badge/k--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ˈ--brightgreen.svg "fine") | 
-| 536 | Kitchen2012-2046 | Harari | Warm | wʊ:y | ![x](https://img.shields.io/badge/w--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ʊ:y--yellow.svg "clpa") | 
-| 537 | Kitchen2012-2047 | Zway | Warm | mu:k' | ![x](https://img.shields.io/badge/m--brightgreen.svg "fine") ![x](https://img.shields.io/badge/u:--brightgreen.svg "fine") ![x](https://img.shields.io/badge/k--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ˈ--brightgreen.svg "fine") | 
-| 538 | Kitchen2012-2048 | Walani | Warm | muk' | ![x](https://img.shields.io/badge/m--brightgreen.svg "fine") ![x](https://img.shields.io/badge/u--brightgreen.svg "fine") ![x](https://img.shields.io/badge/k--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ˈ--brightgreen.svg "fine") | 
-| 539 | Kitchen2012-2050 | Soddo | Warm | yemo:k'ə | ![x](https://img.shields.io/badge/ye--yellow.svg "clpa") ![x](https://img.shields.io/badge/m--brightgreen.svg "fine") ![x](https://img.shields.io/badge/o:--brightgreen.svg "fine") ![x](https://img.shields.io/badge/k--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ˈə--brightgreen.svg "fine") | 
-| 540 | Kitchen2012-2051 | Mesqan | Warm | hʷey | ![x](https://img.shields.io/badge/hʷ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ey--yellow.svg "clpa") | 
-| 541 | Kitchen2012-2053 | Mesmes | Warm | ma7oy- | ![x](https://img.shields.io/badge/m--brightgreen.svg "fine") ![x](https://img.shields.io/badge/a--brightgreen.svg "fine") ![x](https://img.shields.io/badge/s--brightgreen.svg "fine") ![x](https://img.shields.io/badge/oy--yellow.svg "clpa") | 
-| 542 | Kitchen2012-2054 | Geto | Warm | mo:k' | ![x](https://img.shields.io/badge/m--brightgreen.svg "fine") ![x](https://img.shields.io/badge/o:--brightgreen.svg "fine") ![x](https://img.shields.io/badge/k--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ˈ--brightgreen.svg "fine") | 
-| 543 | Kitchen2012-2055 | Chaha | Warm | mo:k' | ![x](https://img.shields.io/badge/m--brightgreen.svg "fine") ![x](https://img.shields.io/badge/o:--brightgreen.svg "fine") ![x](https://img.shields.io/badge/k--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ˈ--brightgreen.svg "fine") | 
-| 544 | Kitchen2012-2059 | Akkadian | Warm | emmu | ![x](https://img.shields.io/badge/e--brightgreen.svg "fine") ![x](https://img.shields.io/badge/mm--yellow.svg "clpa") ![x](https://img.shields.io/badge/u--brightgreen.svg "fine") | 
-| 545 | Kitchen2012-2060 | Harsusi | Warm | ħark' | ![x](https://img.shields.io/badge/ħ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/a--brightgreen.svg "fine") ![x](https://img.shields.io/badge/r--brightgreen.svg "fine") ![x](https://img.shields.io/badge/k--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ˈ--brightgreen.svg "fine") | 
-| 546 | Kitchen2012-2063 | Ge'ez | Water | ɱay | ![x](https://img.shields.io/badge/ɱ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ay--yellow.svg "clpa") | 
-| 547 | Kitchen2012-2064 | Tigre | Water | ma:y | ![x](https://img.shields.io/badge/m--brightgreen.svg "fine") ![x](https://img.shields.io/badge/a:y--yellow.svg "clpa") | 
-| 548 | Kitchen2012-2065 | Tigrinya | Water | may | ![x](https://img.shields.io/badge/m--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ay--yellow.svg "clpa") | 
-| 549 | Kitchen2012-2067 | Argobba | Water | ɔhuwwa: | ![x](https://img.shields.io/badge/ɔ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/h--brightgreen.svg "fine") ![x](https://img.shields.io/badge/u--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ww--yellow.svg "clpa") ![x](https://img.shields.io/badge/a:--brightgreen.svg "fine") | 
-| 550 | Kitchen2012-2068 | Harari | Water | mi:y | ![x](https://img.shields.io/badge/m--brightgreen.svg "fine") ![x](https://img.shields.io/badge/i:y--yellow.svg "clpa") | 
-| 551 | Kitchen2012-2069 | Zway | Water | ma:y | ![x](https://img.shields.io/badge/m--brightgreen.svg "fine") ![x](https://img.shields.io/badge/a:y--yellow.svg "clpa") | 
-| 552 | Kitchen2012-2073 | Mesqan | Water | mʷak' | ![x](https://img.shields.io/badge/mʷ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/a--brightgreen.svg "fine") ![x](https://img.shields.io/badge/k--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ˈ--brightgreen.svg "fine") | 
-| 553 | Kitchen2012-2078 | Hebrew | Water | mayim | ![x](https://img.shields.io/badge/m--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ayi--yellow.svg "clpa") ![x](https://img.shields.io/badge/m--brightgreen.svg "fine") | 
-| 554 | Kitchen2012-2080 | Aramaic | Water | mayˡa | ![x](https://img.shields.io/badge/m--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ayˡa--yellow.svg "clpa") | 
-| 555 | Kitchen2012-2084 | Soqotri | Water | riiho | ![x](https://img.shields.io/badge/r--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ii--yellow.svg "clpa") ![x](https://img.shields.io/badge/h--brightgreen.svg "fine") ![x](https://img.shields.io/badge/o--brightgreen.svg "fine") | 
-| 556 | Kitchen2012-2085 | Harsusi | Water | ħẹmyoh | ![x](https://img.shields.io/badge/ħ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ẹ--red.svg "lingpy") ![x](https://img.shields.io/badge/m--brightgreen.svg "fine") ![x](https://img.shields.io/badge/yo--yellow.svg "clpa") ![x](https://img.shields.io/badge/h--brightgreen.svg "fine") | 
-| 557 | Kitchen2012-2087 | Ogaden Arabic | Water | mo:ya | ![x](https://img.shields.io/badge/m--brightgreen.svg "fine") ![x](https://img.shields.io/badge/o:ya--yellow.svg "clpa") | 
-| 558 | Kitchen2012-2091 | Amharic | We | ɨnna | ![x](https://img.shields.io/badge/ɨ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/nn--yellow.svg "clpa") ![x](https://img.shields.io/badge/a--brightgreen.svg "fine") | 
-| 559 | Kitchen2012-2092 | Argobba | We | ɨnna | ![x](https://img.shields.io/badge/ɨ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/nn--yellow.svg "clpa") ![x](https://img.shields.io/badge/a--brightgreen.svg "fine") | 
-| 560 | Kitchen2012-2093 | Harari | We | 7inna:c | ![x](https://img.shields.io/badge/s--brightgreen.svg "fine") ![x](https://img.shields.io/badge/i--brightgreen.svg "fine") ![x](https://img.shields.io/badge/nn--yellow.svg "clpa") ![x](https://img.shields.io/badge/a:--brightgreen.svg "fine") ![x](https://img.shields.io/badge/c--brightgreen.svg "fine") | 
-| 561 | Kitchen2012-2094 | Zway | We | ɨnnɛ | ![x](https://img.shields.io/badge/ɨ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/nn--yellow.svg "clpa") ![x](https://img.shields.io/badge/ɛ--brightgreen.svg "fine") | 
-| 562 | Kitchen2012-2095 | Walani | We | ɨnnə | ![x](https://img.shields.io/badge/ɨ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/nn--yellow.svg "clpa") ![x](https://img.shields.io/badge/ə--brightgreen.svg "fine") | 
-| 563 | Kitchen2012-2096 | Gafat | We | ɨnni | ![x](https://img.shields.io/badge/ɨ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/nn--yellow.svg "clpa") ![x](https://img.shields.io/badge/i--brightgreen.svg "fine") | 
-| 564 | Kitchen2012-2097 | Soddo | We | ɨnna | ![x](https://img.shields.io/badge/ɨ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/nn--yellow.svg "clpa") ![x](https://img.shields.io/badge/a--brightgreen.svg "fine") | 
-| 565 | Kitchen2012-2100 | Mesmes | We | ɨnna | ![x](https://img.shields.io/badge/ɨ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/nn--yellow.svg "clpa") ![x](https://img.shields.io/badge/a--brightgreen.svg "fine") | 
-| 566 | Kitchen2012-2101 | Geto | We | yɨna | ![x](https://img.shields.io/badge/yɨ--yellow.svg "clpa") ![x](https://img.shields.io/badge/n--brightgreen.svg "fine") ![x](https://img.shields.io/badge/a--brightgreen.svg "fine") | 
-| 567 | Kitchen2012-2102 | Chaha | We | yɨna | ![x](https://img.shields.io/badge/yɨ--yellow.svg "clpa") ![x](https://img.shields.io/badge/n--brightgreen.svg "fine") ![x](https://img.shields.io/badge/a--brightgreen.svg "fine") | 
-| 568 | Kitchen2012-2119 | Gafat | Wet | jibbɛ | ![x](https://img.shields.io/badge/j--brightgreen.svg "fine") ![x](https://img.shields.io/badge/i--brightgreen.svg "fine") ![x](https://img.shields.io/badge/bb--yellow.svg "clpa") ![x](https://img.shields.io/badge/ɛ--brightgreen.svg "fine") | 
-| 569 | Kitchen2012-2120 | Soddo | Wet | yɛbɛssɛbbɛsɛ | ![x](https://img.shields.io/badge/yɛ--yellow.svg "clpa") ![x](https://img.shields.io/badge/b--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ɛ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ss--yellow.svg "clpa") ![x](https://img.shields.io/badge/ɛ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/bb--yellow.svg "clpa") ![x](https://img.shields.io/badge/ɛ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/s--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ɛ--brightgreen.svg "fine") | 
-| 570 | Kitchen2012-2122 | Innemor | Wet | ɪ:ya | ![x](https://img.shields.io/badge/ɪ:ya--yellow.svg "clpa") | 
-| 571 | Kitchen2012-2130 | Tigrinya | What? | 7ɨntay | ![x](https://img.shields.io/badge/s--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ɨ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/n--brightgreen.svg "fine") ![x](https://img.shields.io/badge/t--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ay--yellow.svg "clpa") | 
-| 572 | Kitchen2012-2132 | Argobba | What? | mɨnn | ![x](https://img.shields.io/badge/m--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ɨ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/nn--yellow.svg "clpa") | 
-| 573 | Kitchen2012-2152 | Ge'ez | White | s'ɛ9adɛ | ![x](https://img.shields.io/badge/s--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ˈɛ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/9--red.svg "lingpy") ![x](https://img.shields.io/badge/a--brightgreen.svg "fine") ![x](https://img.shields.io/badge/d--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ɛ--brightgreen.svg "fine") | 
-| 574 | Kitchen2012-2153 | Tigre | White | s'a9ada | ![x](https://img.shields.io/badge/s--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ˈa--brightgreen.svg "fine") ![x](https://img.shields.io/badge/9--red.svg "lingpy") ![x](https://img.shields.io/badge/a--brightgreen.svg "fine") ![x](https://img.shields.io/badge/d--brightgreen.svg "fine") ![x](https://img.shields.io/badge/a--brightgreen.svg "fine") | 
-| 575 | Kitchen2012-2154 | Tigrinya | White | s'a9da | ![x](https://img.shields.io/badge/s--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ˈa--brightgreen.svg "fine") ![x](https://img.shields.io/badge/9--red.svg "lingpy") ![x](https://img.shields.io/badge/d--brightgreen.svg "fine") ![x](https://img.shields.io/badge/a--brightgreen.svg "fine") | 
-| 576 | Kitchen2012-2155 | Amharic | White | nɛc'c' | ![x](https://img.shields.io/badge/n--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ɛ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/c--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ˈc--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ˈ--brightgreen.svg "fine") | 
-| 577 | Kitchen2012-2156 | Argobba | White | zahh | ![x](https://img.shields.io/badge/z--brightgreen.svg "fine") ![x](https://img.shields.io/badge/a--brightgreen.svg "fine") ![x](https://img.shields.io/badge/hh--yellow.svg "clpa") | 
-| 578 | Kitchen2012-2175 | Moroccan Arabic | White | byed | ![x](https://img.shields.io/badge/b--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ye--yellow.svg "clpa") ![x](https://img.shields.io/badge/d--brightgreen.svg "fine") | 
-| 579 | Kitchen2012-2176 | Ogaden Arabic | White | 7abyaɟ | ![x](https://img.shields.io/badge/s--brightgreen.svg "fine") ![x](https://img.shields.io/badge/a--brightgreen.svg "fine") ![x](https://img.shields.io/badge/b--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ya--yellow.svg "clpa") ![x](https://img.shields.io/badge/ɟ--brightgreen.svg "fine") | 
-| 580 | Kitchen2012-2177 | Ge'ez | Who? | mɛnnu | ![x](https://img.shields.io/badge/m--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ɛ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/nn--yellow.svg "clpa") ![x](https://img.shields.io/badge/u--brightgreen.svg "fine") | 
-| 581 | Kitchen2012-2179 | Tigrinya | Who? | mɛngɛddi | ![x](https://img.shields.io/badge/m--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ɛ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/n--brightgreen.svg "fine") ![x](https://img.shields.io/badge/g--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ɛ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/dd--yellow.svg "clpa") ![x](https://img.shields.io/badge/i--brightgreen.svg "fine") | 
-| 582 | Kitchen2012-2181 | Argobba | Who? | manna | ![x](https://img.shields.io/badge/m--brightgreen.svg "fine") ![x](https://img.shields.io/badge/a--brightgreen.svg "fine") ![x](https://img.shields.io/badge/nn--yellow.svg "clpa") ![x](https://img.shields.io/badge/a--brightgreen.svg "fine") | 
-| 583 | Kitchen2012-2183 | Zway | Who? | ma:nnu | ![x](https://img.shields.io/badge/m--brightgreen.svg "fine") ![x](https://img.shields.io/badge/a:--brightgreen.svg "fine") ![x](https://img.shields.io/badge/nn--yellow.svg "clpa") ![x](https://img.shields.io/badge/u--brightgreen.svg "fine") | 
-| 584 | Kitchen2012-2186 | Soddo | Who? | ma:lɛk' | ![x](https://img.shields.io/badge/m--brightgreen.svg "fine") ![x](https://img.shields.io/badge/a:--brightgreen.svg "fine") ![x](https://img.shields.io/badge/l--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ɛ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/k--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ˈ--brightgreen.svg "fine") | 
-| 585 | Kitchen2012-2203 | Tigre | Woman | 7ɨssit | ![x](https://img.shields.io/badge/s--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ɨ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ss--yellow.svg "clpa") ![x](https://img.shields.io/badge/i--brightgreen.svg "fine") ![x](https://img.shields.io/badge/t--brightgreen.svg "fine") | 
-| 586 | Kitchen2012-2204 | Tigrinya | Woman | sɛbeʸti | ![x](https://img.shields.io/badge/s--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ɛ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/b--brightgreen.svg "fine") ![x](https://img.shields.io/badge/eʸ--yellow.svg "clpa") ![x](https://img.shields.io/badge/t--brightgreen.svg "fine") ![x](https://img.shields.io/badge/i--brightgreen.svg "fine") | 
-| 587 | Kitchen2012-2210 | Gafat | Woman | amnsitɛ | ![x](https://img.shields.io/badge/a--brightgreen.svg "fine") ![x](https://img.shields.io/badge/m--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ns--yellow.svg "clpa") ![x](https://img.shields.io/badge/i--brightgreen.svg "fine") ![x](https://img.shields.io/badge/t--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ɛ--brightgreen.svg "fine") | 
-| 588 | Kitchen2012-2219 | Aramaic | Woman | ĭñtˡa | ![x](https://img.shields.io/badge/ĭ--yellow.svg "clpa") ![x](https://img.shields.io/badge/ñ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/tˡ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/a--brightgreen.svg "fine") | 
-| 589 | Kitchen2012-2220 | Akkadian | Woman | sinˡiʃtu | ![x](https://img.shields.io/badge/s--brightgreen.svg "fine") ![x](https://img.shields.io/badge/i--brightgreen.svg "fine") ![x](https://img.shields.io/badge/nˡ--yellow.svg "clpa") ![x](https://img.shields.io/badge/i--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ʃ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/t--brightgreen.svg "fine") ![x](https://img.shields.io/badge/u--brightgreen.svg "fine") | 
-| 590 | Kitchen2012-2224 | Harsusi | Woman | tet'/dim | ![x](https://img.shields.io/badge/t--brightgreen.svg "fine") ![x](https://img.shields.io/badge/e--brightgreen.svg "fine") ![x](https://img.shields.io/badge/t--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ˈ--brightgreen.svg "fine") | 
-| 591 | Kitchen2012-2229 | Tigrinya | Ye | nɨssɨxatkum | ![x](https://img.shields.io/badge/n--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ɨ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ss--yellow.svg "clpa") ![x](https://img.shields.io/badge/ɨ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/x--brightgreen.svg "fine") ![x](https://img.shields.io/badge/a--brightgreen.svg "fine") ![x](https://img.shields.io/badge/t--brightgreen.svg "fine") ![x](https://img.shields.io/badge/k--brightgreen.svg "fine") ![x](https://img.shields.io/badge/u--brightgreen.svg "fine") ![x](https://img.shields.io/badge/m--brightgreen.svg "fine") | 
-| 592 | Kitchen2012-2230 | Amharic | Ye | ɨnnantɛ | ![x](https://img.shields.io/badge/ɨ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/nn--yellow.svg "clpa") ![x](https://img.shields.io/badge/a--brightgreen.svg "fine") ![x](https://img.shields.io/badge/n--brightgreen.svg "fine") ![x](https://img.shields.io/badge/t--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ɛ--brightgreen.svg "fine") | 
-| 593 | Kitchen2012-2231 | Argobba | Ye | ɨnnakum | ![x](https://img.shields.io/badge/ɨ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/nn--yellow.svg "clpa") ![x](https://img.shields.io/badge/a--brightgreen.svg "fine") ![x](https://img.shields.io/badge/k--brightgreen.svg "fine") ![x](https://img.shields.io/badge/u--brightgreen.svg "fine") ![x](https://img.shields.io/badge/m--brightgreen.svg "fine") | 
-| 594 | Kitchen2012-2235 | Gafat | Ye | ɨnnantɛ | ![x](https://img.shields.io/badge/ɨ--brightgreen.svg "fine") ![x](https://img.shields.io/badge/nn--yellow.svg "clpa") ![x](https://img.shields.io/badge/a--brightgreen.svg "fine") ![x](https://img.shields.io/badge/n--brightgreen.svg "fine") ![x](https://img.shields.io/badge/t--brightgreen.svg "fine") ![x](https://img.shields.io/badge/ɛ--brightgreen.svg "fine") | 
+| ID | LANGUAGE | CONCEPT | VALUE | SEGMENTS |
+|:-----------------|:----------------|:--------------|:--------------|:------------------------------------------------|
+| Kitchen2012-1 | Ge'ez | All | kʷɨllu | kʷ ɨ <s> ll </s> u |
+| Kitchen2012-2 | Tigre | All | kɨllu | k ɨ <s> ll </s> u |
+| Kitchen2012-3 | Tigrinya | All | kullu | k u <s> ll </s> u |
+| Kitchen2012-4 | Amharic | All | hullu | h u <s> ll </s> u |
+| Kitchen2012-5 | Argobba | All | diyyu | d <s> iyyu </s> |
+| Kitchen2012-6 | Harari | All | kulluzo:m | k u <s> ll </s> u z o: m |
+| Kitchen2012-7 | Zway | All | hullɨn | h u <s> ll </s> ɨ n |
+| Kitchen2012-8 | Walani | All | ullImka | u <s> ll </s> <s> I </s> m k a |
+| Kitchen2012-9 | Gafat | All | yɨlho | <s> yɨ </s> lh o |
+| Kitchen2012-10 | Soddo | All | kullɨmu | k u <s> ll </s> ɨ m u |
+| Kitchen2012-12 | Innemor | All | ɨnnɨ | ɨ <s> nn </s> ɨ |
+| Kitchen2012-14 | Geto | All | ɨnnɨm | ɨ <s> nn </s> ɨ m |
+| Kitchen2012-15 | Chaha | All | ɨnnɨm | ɨ <s> nn </s> ɨ m |
+| Kitchen2012-24 | Moroccan Arabic | All | koll | k o <s> ll </s> |
+| Kitchen2012-25 | Ogaden Arabic | All | kull | k u <s> ll </s> |
+| Kitchen2012-28 | Tigrinya | Ashes | ħamuxwusti | ħ a m u <s> xw </s> u s t i |
+| Kitchen2012-42 | Aramaic | Ashes | k'eƭ'm'/rmu'a | k ˈe <s> ƭ </s> ˈm ˈ |
+| Kitchen2012-44 | Mehri | Ashes | rmiǀd | r m i <s> ǀ </s> d |
+| Kitchen2012-46 | Soqotri | Ashes | riimid | r <s> ii </s> m i d |
+| Kitchen2012-50 | Ge'ez | Bark (tree) | lɨhɨs' | l ɨ h ɨ s ˈ |
+| Kitchen2012-52 | Tigrinya | Bark (tree) | lɨħs'ɪ | l ɨ <s> ħs </s> ˈɪ |
+| Kitchen2012-53 | Amharic | Bark (tree) | lɨt' | l ɨ t ˈ |
+| Kitchen2012-55 | Harari | Bark (tree) | lit' | l i t ˈ |
+| Kitchen2012-57 | Walani | Bark (tree) | bossɛ | b o <s> ss </s> ɛ |
+| Kitchen2012-61 | Mesmes | Bark (tree) | ha:nna | h a: <s> nn </s> a |
+| Kitchen2012-68 | Mehri | Bark (tree) | k'aɬiǀr | k ˈa ɬ i <s> ǀ </s> r |
+| Kitchen2012-72 | Ogaden Arabic | Bark (tree) | jaza9 | j a z a <s> 9 </s> |
+| Kitchen2012-77 | Argobba | Belly | kɛrs | k ɛ <s> rs </s> |
+| Kitchen2012-81 | Gafat | Belly | ɨrsɛ | ɨ <s> rs </s> ɛ |
+| Kitchen2012-82 | Soddo | Belly | kərs | k ə <s> rs </s> |
+| Kitchen2012-85 | Mesmes | Belly | kɔssa | k ɔ <s> ss </s> a |
+| Kitchen2012-90 | Aramaic | Belly | karsa | k a <s> rs </s> a |
+| Kitchen2012-91 | Akkadian | Belly | karʃa | k a <s> rʃ </s> a |
+| Kitchen2012-94 | Soqotri | Belly | meǀr | m e <s> ǀ </s> r |
+| Kitchen2012-96 | Moroccan Arabic | Belly | kerʃ | k e <s> rʃ </s> |
+| Kitchen2012-98 | Ge'ez | Big | 9abiyy | <s> 9 </s> a b <s> iyy </s> |
+| Kitchen2012-99 | Tigre | Big | 9abi | <s> 9 </s> a b i |
+| Kitchen2012-100 | Tigrinya | Big | 9abiyyi | <s> 9 </s> a b <s> iyyi </s> |
+| Kitchen2012-101 | Amharic | Big | tɨllɨk' | t ɨ <s> ll </s> ɨ k ˈ |
+| Kitchen2012-106 | Gafat | Big | ɨmmunɛ | ɨ <s> mm </s> u n ɛ |
+| Kitchen2012-107 | Soddo | Big | ma:lɛk' | m a: l ɛ k ˈ |
+| Kitchen2012-115 | Aramaic | Big | rabba | r a <s> bb </s> a |
+| Kitchen2012-119 | Soqotri | Big | ʕiik'er | ʕ <s> ii </s> k ˈe r |
+| Kitchen2012-123 | Ge'ez | Bird | 9of | <s> 9 </s> o f |
+| Kitchen2012-125 | Tigrinya | Bird | 9uf | <s> 9 </s> u f |
+| Kitchen2012-131 | Gafat | Bird | yɨfʷɛ | <s> yɨ </s> fʷ ɛ |
+| Kitchen2012-134 | Innemor | Bird | anfw | a n <s> fw </s> |
+| Kitchen2012-136 | Geto | Bird | anfw | a n <s> fw </s> |
+| Kitchen2012-137 | Chaha | Bird | anfw | a n <s> fw </s> |
+| Kitchen2012-138 | Hebrew | Bird | s'ippor | s ˈi <s> pp </s> o r |
+| Kitchen2012-140 | Aramaic | Bird | ʂeppra | ʂ e <s> pp </s> r a |
+| Kitchen2012-142 | Mehri | Bird | t'eyriit | t ˈey r <s> ii </s> t |
+| Kitchen2012-143 | Jibbali | Bird | ʕesferɛɛt | ʕ e s f e r <s> ɛɛ </s> t |
+| Kitchen2012-145 | Harsusi | Bird | s'eħħer | s ˈe <s> ħħ </s> e r |
+| Kitchen2012-147 | Ogaden Arabic | Bird | tayr | t <s> ay </s> r |
+| Kitchen2012-148 | Ge'ez | Bite (v.) | nɛkkɛsɛ | n ɛ <s> kk </s> ɛ s ɛ |
+| Kitchen2012-151 | Amharic | Bite (v.) | nɛkkɛsɛ | n ɛ <s> kk </s> ɛ s ɛ |
+| Kitchen2012-152 | Argobba | Bite (v.) | nɛkkɛse | n ɛ <s> kk </s> ɛ s e |
+| Kitchen2012-154 | Zway | Bite (v.) | nɛkkɛse | n ɛ <s> kk </s> ɛ s e |
+| Kitchen2012-155 | Gafat | Bite (v.) | nɛkkɛsɛ | n ɛ <s> kk </s> ɛ s ɛ |
+| Kitchen2012-156 | Soddo | Bite (v.) | nɛkkɛsɛ-m | n ɛ <s> kk </s> ɛ s ɛ m |
+| Kitchen2012-169 | Harsusi | Bite (v.) | k'ebbos | k ˈe <s> bb </s> o s |
+| Kitchen2012-170 | Moroccan Arabic | Bite (v.) | ɛedˡ | <s> ɛe </s> dˡ |
+| Kitchen2012-171 | Ogaden Arabic | Bite (v.) | 9aɟɟ | <s> 9 </s> a <s> ɟɟ </s> |
+| Kitchen2012-172 | Ge'ez | Black | s'ɛllim | s ˈɛ <s> ll </s> i m |
+| Kitchen2012-173 | Tigre | Black | s'allɨm | s ˈa <s> ll </s> ɨ m |
+| Kitchen2012-174 | Tigrinya | Black | s'ɛllim | s ˈɛ <s> ll </s> i m |
+| Kitchen2012-175 | Amharic | Black | t'ɨk'ʷur | t ˈɨ k ˈʷ u r |
+| Kitchen2012-178 | Zway | Black | gɛmbɛlla | g ɛ m b ɛ <s> ll </s> a |
+| Kitchen2012-182 | Mesqan | Black | t'ək'ʷɔr | t ˈə k ˈʷ ɔ r |
+| Kitchen2012-184 | Mesmes | Black | gɔmbɔnna | g ɔ m b ɔ <s> nn </s> a |
+| Kitchen2012-188 | Aramaic | Black | ukˡama | u <s> kˡ </s> a m a |
+| Kitchen2012-191 | Jibbali | Black | ħɔrm | ħ <s>  </s> ɔ r m |
+| Kitchen2012-194 | Moroccan Arabic | Black | kẖel | k <s> ẖ </s> e l |
+| Kitchen2012-195 | Ogaden Arabic | Black | 7aswad | s a <s> sw </s> a d |
+| Kitchen2012-220 | Ge'ez | Bone | 9as'ɨm | <s> 9 </s> a s ˈɨ m |
+| Kitchen2012-221 | Tigre | Bone | 9as'im | <s> 9 </s> a s ˈi m |
+| Kitchen2012-222 | Tigrinya | Bone | 9at'smi | <s> 9 </s> a t ˈs m i |
+| Kitchen2012-225 | Harari | Bone | a:t' | a: t ˈ |
+| Kitchen2012-239 | Mehri | Bone | ʔazayz | ʔ a z <s> ay </s> z |
+| Kitchen2012-240 | Jibbali | Bone | ʕaylɛl | ʕ <s> ay </s> l ɛ l |
+| Kitchen2012-242 | Harsusi | Bone | aɬayɬ | a ɬ <s> ay </s> ɬ |
+| Kitchen2012-244 | Ogaden Arabic | Bone | 9aɟim | <s> 9 </s> a ɟ i m |
+| Kitchen2012-245 | Ge'ez | Breast | t'ɨbb | t ˈɨ <s> bb </s> |
+| Kitchen2012-253 | Gafat | Breast | t'ʊwwɛ | t ˈʊ <s> ww </s> ɛ |
+| Kitchen2012-254 | Soddo | Breast | t'ɨbuiya | t ˈɨ b <s> uiya </s> |
+| Kitchen2012-259 | Aramaic | Breast | hadhya | h a dh <s> ya </s> |
+| Kitchen2012-261 | Mehri | Breast | ɵoodi | <s> ɵoo </s> d i |
+| Kitchen2012-262 | Jibbali | Breast | ɵado | <s> ɵa </s> d o |
+| Kitchen2012-264 | Harsusi | Breast | ɵodi | <s> ɵo </s> d i |
+| Kitchen2012-265 | Moroccan Arabic | Breast | bezzula | b e <s> zz </s> u l a |
+| Kitchen2012-266 | Ogaden Arabic | Breast | ɵari | <s> ɵa </s> r i |
+| Kitchen2012-267 | Ge'ez | Burn (tr. v.) | 7awɨ9ayɛ | s a w ɨ <s> 9 </s> <s> ayɛ </s> |
+| Kitchen2012-273 | Zway | Burn (tr. v.) | anɛddɔt | a n ɛ <s> dd </s> ɔ t |
+| Kitchen2012-275 | Soddo | Burn (tr. v.) | anɛddɛdɛ-m | a n ɛ <s> dd </s> ɛ d ɛ m |
+| Kitchen2012-278 | Mesmes | Burn (tr. v.) | totosɔ-ye | t o t o s ɔ <s> ye </s> |
+| Kitchen2012-285 | Mehri | Burn (tr. v.) | ɬatak' | ɬ a t a k ˈ |
+| Kitchen2012-288 | Harsusi | Burn (tr. v.) | ħrok' | ħ r o k ˈ |
+| Kitchen2012-289 | Moroccan Arabic | Burn (tr. v.) | hṟeq | h <s> ṟ </s> e q |
+| Kitchen2012-290 | Ogaden Arabic | Burn (tr. v.) | ħarraq | ħ a <s> rr </s> a q |
+| Kitchen2012-291 | Ge'ez | Cloud | dɛmmɛna | d ɛ <s> mm </s> ɛ n a |
+| Kitchen2012-294 | Amharic | Cloud | dɛmmɛna | d ɛ <s> mm </s> ɛ n a |
+| Kitchen2012-295 | Argobba | Cloud | dɛmmɛna | d ɛ <s> mm </s> ɛ n a |
+| Kitchen2012-299 | Gafat | Cloud | dɛmmɛnɛ | d ɛ <s> mm </s> ɛ n ɛ |
+| Kitchen2012-300 | Soddo | Cloud | dɛmmɛna | d ɛ <s> mm </s> ɛ n a |
+| Kitchen2012-312 | Soqotri | Cloud | ħiihor | ħ <s> ii </s> h o r |
+| Kitchen2012-314 | Moroccan Arabic | Cloud | shaba | <s> sh </s> a b a |
+| Kitchen2012-318 | Tigrinya | Cold (air) | k'urri | k ˈu <s> rr </s> i |
+| Kitchen2012-325 | Soddo | Cold (air) | bɛrrɛdɨ-m | b ɛ <s> rr </s> ɛ d ɨ m |
+| Kitchen2012-332 | Aramaic | Cold (air) | k'arˡira | k ˈa <s> rˡ </s> i r a |
+| Kitchen2012-347 | Gafat | Come | sɛllɛ | s ɛ <s> ll </s> ɛ |
+| Kitchen2012-351 | Mesmes | Come | -mma7a-ʏe | <s> mm </s> a s a <s> ʏe </s> |
+| Kitchen2012-354 | Hebrew | Come | ba' | b a ˈ |
+| Kitchen2012-355 | Ugaritic | Come | bw'/'tw | bw ˈ |
+| Kitchen2012-362 | Moroccan Arabic | Come | ʒay | ʒ <s> ay </s> |
+| Kitchen2012-368 | Argobba | Die | mo:dʏa | m o: d <s> ʏa </s> |
+| Kitchen2012-371 | Gafat | Die | fɛttɛrɛ | f ɛ <s> tt </s> ɛ r ɛ |
+| Kitchen2012-391 | Amharic | Dog | wɨssa | w ɨ <s> ss </s> a |
+| Kitchen2012-392 | Argobba | Dog | wʊssa | w ʊ <s> ss </s> a |
+| Kitchen2012-394 | Zway | Dog | gɨnni | g ɨ <s> nn </s> i |
+| Kitchen2012-396 | Gafat | Dog | wʊssɛ | w ʊ <s> ss </s> ɛ |
+| Kitchen2012-397 | Soddo | Dog | wʊssa | w ʊ <s> ss </s> a |
+| Kitchen2012-398 | Mesqan | Dog | gɨ:yə | g <s> ɨ:yə </s> |
+| Kitchen2012-399 | Innemor | Dog | gɨyɛ | g <s> ɨyɛ </s> |
+| Kitchen2012-400 | Mesmes | Dog | gi:ye | g <s> i:ye </s> |
+| Kitchen2012-401 | Geto | Dog | gɨyɛ | g <s> ɨyɛ </s> |
+| Kitchen2012-402 | Chaha | Dog | gɨyɛ | g <s> ɨyɛ </s> |
+| Kitchen2012-412 | Ge'ez | Drink (v.) | sɛtɨyɛ | s ɛ t <s> ɨyɛ </s> |
+| Kitchen2012-414 | Tigrinya | Drink (v.) | sɛtɛyɛ | s ɛ t <s> ɛyɛ </s> |
+| Kitchen2012-416 | Argobba | Drink (v.) | sɛcca | s ɛ <s> cc </s> a |
+| Kitchen2012-418 | Zway | Drink (v.) | sɛ:ccin | s ɛ: <s> cc </s> i n |
+| Kitchen2012-430 | Mehri | Drink (v.) | ?etek' | ʔ e t e k ˈ |
+| Kitchen2012-433 | Harsusi | Drink (v.) | tek' | t e k ˈ |
+| Kitchen2012-436 | Ge'ez | Dry (adj.) | yɛbɨs | <s> yɛ </s> b ɨ s |
+| Kitchen2012-437 | Tigre | Dry (adj.) | yɨbus | <s> yɨ </s> b u s |
+| Kitchen2012-438 | Tigrinya | Dry (adj.) | nɛx'as' | n ɛ x ˈa s ˈ |
+| Kitchen2012-439 | Amharic | Dry (adj.) | dɛrɛk' | d ɛ r ɛ k ˈ |
+| Kitchen2012-440 | Argobba | Dry (adj.) | dɛrɛk' | d ɛ r ɛ k ˈ |
+| Kitchen2012-441 | Harari | Dry (adj.) | dɛrɛk' | d ɛ r ɛ k ˈ |
+| Kitchen2012-442 | Zway | Dry (adj.) | dɛrɛk' | d ɛ r ɛ k ˈ |
+| Kitchen2012-443 | Walani | Dry (adj.) | dɛrɛk' | d ɛ r ɛ k ˈ |
+| Kitchen2012-445 | Soddo | Dry (adj.) | dɛrɛk' | d ɛ r ɛ k ˈ |
+| Kitchen2012-446 | Mesqan | Dry (adj.) | t'ərɛk' | t ˈə r ɛ k ˈ |
+| Kitchen2012-449 | Geto | Dry (adj.) | s'ɛrɛk' | s ˈɛ r ɛ k ˈ |
+| Kitchen2012-451 | Hebrew | Dry (adj.) | yabbeʃ | <s> ya </s> <s> bb </s> e ʃ |
+| Kitchen2012-453 | Aramaic | Dry (adj.) | yabbas | <s> ya </s> <s> bb </s> a s |
+| Kitchen2012-456 | Moroccan Arabic | Dry (adj.) | yabes/naʃef | <s> ya </s> b e s |
+| Kitchen2012-457 | Ogaden Arabic | Dry (adj.) | ya:bis | <s> ya: </s> b i s |
+| Kitchen2012-464 | Zway | Ear | ɨzzɨn | ɨ <s> zz </s> ɨ n |
+| Kitchen2012-479 | Soqotri | Ear | ʔiðhen | ʔ i <s> ðh </s> e n |
+| Kitchen2012-480 | Harsusi | Ear | ħeyɵen | ħ <s> eyɵe </s> n |
+| Kitchen2012-482 | Ogaden Arabic | Ear | yuɟun | <s> yu </s> ɟ u n |
+| Kitchen2012-483 | Ge'ez | Eat | bɛl9a | b ɛ l <s> 9 </s> a |
+| Kitchen2012-484 | Tigre | Eat | bal9a | b a l <s> 9 </s> a |
+| Kitchen2012-485 | Tigrinya | Eat | bɛl9e | b ɛ l <s> 9 </s> e |
+| Kitchen2012-486 | Amharic | Eat | bɛlla | b ɛ <s> ll </s> a |
+| Kitchen2012-487 | Argobba | Eat | bɛlla | b ɛ <s> ll </s> a |
+| Kitchen2012-489 | Zway | Eat | bɛllʏa:n | b ɛ <s> ll </s> <s> ʏa: </s> n |
+| Kitchen2012-490 | Gafat | Eat | bɛllɛ | b ɛ <s> ll </s> ɛ |
+| Kitchen2012-491 | Soddo | Eat | bɛlla- | b ɛ <s> ll </s> a |
+| Kitchen2012-493 | Innemor | Eat | bɛm7a | b ɛ <s> ms </s> a |
+| Kitchen2012-505 | Moroccan Arabic | Eat | kla yakol | k l a _ <s> ya </s> k o l |
+| Kitchen2012-508 | Tigre | Egg | 7ɨink'o:k'ħa | s <s> ɨi </s> n k ˈo: k ˈħ a |
+| Kitchen2012-510 | Amharic | Egg | ɨnk'ʷulal | ɨ n k ˈʷ u l a l |
+| Kitchen2012-515 | Gafat | Egg | ank'ʷɛ | a n k ˈʷ ɛ |
+| Kitchen2012-517 | Mesqan | Egg | ank'ʷa | a n k ˈʷ a |
+| Kitchen2012-522 | Hebrew | Egg | bĕỹsah | b <s> ĕ </s> ỹ s a h |
+| Kitchen2012-523 | Aramaic | Egg | bey'tha | b <s> ey </s> ˈth a |
+| Kitchen2012-525 | Mehri | Egg | biizayt | b <s> ii </s> z <s> ay </s> t |
+| Kitchen2012-528 | Harsusi | Egg | beɵeh | b <s> eɵe </s> h |
+| Kitchen2012-531 | Ge'ez | Eye | 9ɨyn | <s> 9 </s> <s> ɨy </s> n |
+| Kitchen2012-532 | Tigre | Eye | 9ɨn | <s> 9 </s> ɨ n |
+| Kitchen2012-533 | Tigrinya | Eye | 9ayni | <s> 9 </s> <s> ay </s> n i |
+| Kitchen2012-534 | Amharic | Eye | ayn | <s> ay </s> n |
+| Kitchen2012-541 | Mesqan | Eye | eʸn | <s> eʸ </s> n |
+| Kitchen2012-546 | Hebrew | Eye | ayin | <s> ayi </s> n |
+| Kitchen2012-550 | Mehri | Eye | ?ayn | ʔ <s> ay </s> n |
+| Kitchen2012-552 | Soqotri | Eye | ʕayn | ʕ <s> ay </s> n |
+| Kitchen2012-553 | Harsusi | Eye | ayn | <s> ay </s> n |
+| Kitchen2012-554 | Moroccan Arabic | Eye | ɛeynin | <s> ɛey </s> n i n |
+| Kitchen2012-555 | Ogaden Arabic | Eye | 9e:n | <s> 9 </s> e: n |
+| Kitchen2012-559 | Amharic | Fat (n.) | c'omma | c ˈo <s> mm </s> a |
+| Kitchen2012-560 | Argobba | Fat (n.) | c'o:mma | c ˈo: <s> mm </s> a |
+| Kitchen2012-562 | Zway | Fat (n.) | c'omma | c ˈo <s> mm </s> a |
+| Kitchen2012-564 | Gafat | Fat (n.) | bussɨrɛ | b u <s> ss </s> ɨ r ɛ |
+| Kitchen2012-567 | Mesmes | Fat (n.) | c'omma | c ˈo <s> mm </s> a |
+| Kitchen2012-581 | Tigrinya | Fire | ħawwi | ħ a <s> ww </s> i |
+| Kitchen2012-583 | Argobba | Fire | ɨssa:d | ɨ <s> ss </s> a: d |
+| Kitchen2012-588 | Soddo | Fire | wsat | <s> ws </s> a t |
+| Kitchen2012-599 | Jibbali | Fire | ɬɔɔt | ɬ <s> ɔɔ </s> t |
+| Kitchen2012-600 | Soqotri | Fire | ɬiyaat | ɬ <s> iyaa </s> t |
+| Kitchen2012-601 | Harsusi | Fire | ɬewet' | ɬ e w e t ˈ |
+| Kitchen2012-602 | Moroccan Arabic | Fire | ɛafya | <s> ɛa </s> f <s> ya </s> |
+| Kitchen2012-604 | Ge'ez | Fish (n.) | 9ase | <s> 9 </s> a s e |
+| Kitchen2012-605 | Tigre | Fish (n.) | 9a:sa | <s> 9 </s> a: s a |
+| Kitchen2012-606 | Tigrinya | Fish (n.) | 9asa | <s> 9 </s> a s a |
+| Kitchen2012-622 | Mehri | Fish (n.) | sayd | s <s> ay </s> d |
+| Kitchen2012-630 | Tigrinya | Fly (n.) | s'ɨns'ɨya | s ˈɨ <s> ns </s> ˈɨya |
+| Kitchen2012-639 | Mesmes | Fly (n.) | ta:yɛ | t <s> a:yɛ </s> |
+| Kitchen2012-647 | Jibbali | Fly (n.) | nibbɔɔt | n i <s> bb </s> <s> ɔɔ </s> t |
+| Kitchen2012-648 | Soqotri | Fly (n.) | ʔedbiiboh | ʔ e d b <s> ii </s> b o h |
+| Kitchen2012-649 | Harsusi | Fly (n.) | ɵebbet | <s> ɵe </s> <s> bb </s> e t |
+| Kitchen2012-650 | Moroccan Arabic | Fly (n.) | dabbana | d a <s> bb </s> a n a |
+| Kitchen2012-671 | Mehri | Foot | ɬryam | ɬ r <s> ya </s> m |
+| Kitchen2012-676 | Ogaden Arabic | Foot | xuff | x u <s> ff </s> |
+| Kitchen2012-709 | Soddo | Go | a:llɛfɛ- | a: <s> ll </s> ɛ f ɛ |
+| Kitchen2012-712 | Chaha | Go | wɛyɛ- | w <s> ɛyɛ </s> |
+| Kitchen2012-713 | Mehri | Go | seyoor | s <s> eyoo </s> r |
+| Kitchen2012-714 | Jibbali | Go | aɤad | <s> aɤa </s> d |
+| Kitchen2012-716 | Harsusi | Go | seyor | s <s> eyo </s> r |
+| Kitchen2012-717 | Moroccan Arabic | Go | mʃa | <s> mʃ </s> a |
+| Kitchen2012-719 | Ge'ez | Good | sɛnnay | s ɛ <s> nn </s> <s> ay </s> |
+| Kitchen2012-720 | Tigre | Good | gurrum | g u <s> rr </s> u m |
+| Kitchen2012-721 | Tigrinya | Good | s'ɨbbux' | s ˈɨ <s> bb </s> u x ˈ |
+| Kitchen2012-727 | Gafat | Good | gunnɛ | g u <s> nn </s> ɛ |
+| Kitchen2012-728 | Soddo | Good | fəyyan | f <s> əyya </s> n |
+| Kitchen2012-729 | Mesqan | Good | fəyya | f <s> əyya </s> |
+| Kitchen2012-742 | Moroccan Arabic | Good | nezyan | n e z <s> ya </s> n |
+| Kitchen2012-743 | Ogaden Arabic | Good | tayyib | t <s> ayyi </s> b |
+| Kitchen2012-745 | Tigre | Grass | sa9ar | s a <s> 9 </s> a r |
+| Kitchen2012-746 | Tigrinya | Grass | sa9ri | s a <s> 9 </s> r i |
+| Kitchen2012-759 | Mehri | Grass | heriim | h e r <s> ii </s> m |
+| Kitchen2012-760 | Jibbali | Grass | rɤɔ | r <s> ɤɔ </s> |
+| Kitchen2012-761 | Soqotri | Grass | k'azha | k ˈa <s> zh </s> a |
+| Kitchen2012-774 | Soddo | Hair (head) | gun7ɛr | g u <s> ns </s> ɛ r |
+| Kitchen2012-776 | Innemor | Hair (head) | gun7ɛr | g u <s> ns </s> ɛ r |
+| Kitchen2012-784 | Mehri | Hair (head) | ɬeffiit | ɬ e <s> ff </s> <s> ii </s> t |
+| Kitchen2012-788 | Moroccan Arabic | Hair (head) | seɛra | s <s> eɛ </s> r a |
+| Kitchen2012-789 | Ogaden Arabic | Hair (head) | sa9ir | s a <s> 9 </s> i r |
+| Kitchen2012-793 | Amharic | Hand | ɨjj | ɨ <s> jj </s> |
+| Kitchen2012-802 | Mesmes | Hand | ɨjja | ɨ <s> jj </s> a |
+| Kitchen2012-805 | Hebrew | Hand | yadh | <s> ya </s> dh |
+| Kitchen2012-809 | Mehri | Hand | ħayd | ħ <s> ay </s> d |
+| Kitchen2012-813 | Moroccan Arabic | Hand | idd | i <s> dd </s> |
+| Kitchen2012-814 | Ogaden Arabic | Hand | yad | <s> ya </s> d |
+| Kitchen2012-817 | Tigrinya | Head | rɨ7si | r ɨ <s> ss </s> i |
+| Kitchen2012-819 | Argobba | Head | dɨmma: | d ɨ <s> mm </s> a: |
+| Kitchen2012-824 | Soddo | Head | gunnɛn | g u <s> nn </s> ɛ n |
+| Kitchen2012-826 | Innemor | Head | gun7ɛr | g u <s> ns </s> ɛ r |
+| Kitchen2012-827 | Mesmes | Head | gʊnnurɛ | g ʊ <s> nn </s> u r ɛ |
+| Kitchen2012-834 | Mehri | Head | ħẹroh | ħ <s> ẹ </s> r o h |
+| Kitchen2012-836 | Soqotri | Head | rey | r <s> ey </s> |
+| Kitchen2012-838 | Moroccan Arabic | Head | ras' | r a s ˈ |
+| Kitchen2012-840 | Ge'ez | Hear | sɛm9a | s ɛ m <s> 9 </s> a |
+| Kitchen2012-841 | Tigre | Hear | sam9a | s a m <s> 9 </s> a |
+| Kitchen2012-842 | Tigrinya | Hear | sɛm9ɛ | s ɛ m <s> 9 </s> ɛ |
+| Kitchen2012-843 | Amharic | Hear | sɛmma | s ɛ <s> mm </s> a |
+| Kitchen2012-844 | Argobba | Hear | sɛmma | s ɛ <s> mm </s> a |
+| Kitchen2012-846 | Zway | Hear | samma | s a <s> mm </s> a |
+| Kitchen2012-847 | Gafat | Hear | sɛmmɛ | s ɛ <s> mm </s> ɛ |
+| Kitchen2012-848 | Soddo | Hear | sɛmma- | s ɛ <s> mm </s> a |
+| Kitchen2012-850 | Innemor | Hear | sɛm7a | s ɛ <s> ms </s> a |
+| Kitchen2012-855 | Ugaritic | Hear | ʃ m ' | ʃ _ m _ ˈ |
+| Kitchen2012-858 | Mehri | Hear | hiima | h <s> ii </s> m a |
+| Kitchen2012-859 | Jibbali | Hear | ʃiiʕ | ʃ <s> ii </s> ʕ |
+| Kitchen2012-860 | Soqotri | Hear | ʔiimaʕ | ʔ <s> ii </s> m a ʕ |
+| Kitchen2012-862 | Moroccan Arabic | Hear | smeɛ | s m <s> eɛ </s> |
+| Kitchen2012-863 | Ogaden Arabic | Hear | sama9 | s a m a <s> 9 </s> |
+| Kitchen2012-864 | Ge'ez | Heart | lɨbb | l ɨ <s> bb </s> |
+| Kitchen2012-866 | Tigrinya | Heart | lɨbbi | l ɨ <s> bb </s> i |
+| Kitchen2012-867 | Amharic | Heart | lɨbb | l ɨ <s> bb </s> |
+| Kitchen2012-868 | Argobba | Heart | lɨbb | l ɨ <s> bb </s> |
+| Kitchen2012-881 | Akkadian | Heart | libbu | l i <s> bb </s> u |
+| Kitchen2012-895 | Walani | Horn | k'ɛrr | k ˈɛ <s> rr </s> |
+| Kitchen2012-897 | Soddo | Horn | k'ərr | k ˈə <s> rr </s> |
+| Kitchen2012-899 | Mesmes | Horn | kɔnna | k ɔ <s> nn </s> a |
+| Kitchen2012-912 | Argobba | I | ɨyyɔ | <s> ɨyyɔ </s> |
+| Kitchen2012-914 | Zway | I | eya | <s> eya </s> |
+| Kitchen2012-918 | Mesqan | I | ɨya | <s> ɨya </s> |
+| Kitchen2012-919 | Innemor | I | iya | <s> iya </s> |
+| Kitchen2012-920 | Mesmes | I | hiy'ya | h <s> iy </s> ˈya |
+| Kitchen2012-921 | Geto | I | ɨya | <s> ɨya </s> |
+| Kitchen2012-922 | Chaha | I | ɨya | <s> ɨya </s> |
+| Kitchen2012-936 | Amharic | Kill | gɛddɛlɛ | g ɛ <s> dd </s> ɛ l ɛ |
+| Kitchen2012-937 | Argobba | Kill | gɛddɛli | g ɛ <s> dd </s> ɛ l i |
+| Kitchen2012-939 | Zway | Kill | k'ɛcci:n | k ˈɛ <s> cc </s> i: n |
+| Kitchen2012-940 | Soddo | Kill | gɛddɛlɛ | g ɛ <s> dd </s> ɛ l ɛ |
+| Kitchen2012-943 | Mesmes | Kill | :tɔrɔ- | <s> :t </s> ɔ r ɔ |
+| Kitchen2012-948 | Aramaic | Kill | k''t'al | k ˈ ˈt ˈa l |
+| Kitchen2012-950 | Mehri | Kill | letooɤ | l e t <s> ooɤ </s> |
+| Kitchen2012-951 | Jibbali | Kill | leteɤ | l e t <s> eɤ </s> |
+| Kitchen2012-953 | Harsusi | Kill | gayyeb | g <s> ayye </s> b |
+| Kitchen2012-956 | Ge'ez | Know | lɛbbɛwɛ | l ɛ <s> bb </s> ɛ w ɛ |
+| Kitchen2012-959 | Amharic | Know | awwɛk'ɛ | a <s> ww </s> ɛ k ˈɛ |
+| Kitchen2012-961 | Harari | Know | 7aˡk'ɛ | s <s> aˡ </s> k ˈɛ |
+| Kitchen2012-970 | Hebrew | Know | yadha | <s> ya </s> dh a |
+| Kitchen2012-971 | Ugaritic | Know | y d ' | y _ d _ ˈ |
+| Kitchen2012-974 | Mehri | Know | ɤaruub | <s> ɤa </s> r uu b |
+| Kitchen2012-975 | Jibbali | Know | yuɤɔreb | <s> yuɤɔ </s> r e b |
+| Kitchen2012-979 | Ogaden Arabic | Know | 9araf | <s> 9 </s> a r a f |
+| Kitchen2012-989 | Mesmes | Knee | gʊnno:da | g ʊ <s> nn </s> o: d a |
+| Kitchen2012-1000 | Ge'ez | Leaf | k'ʷos'ɨl | k ˈʷ o s ˈɨ l |
+| Kitchen2012-1002 | Tigrinya | Leaf | k'ʷes'li | k ˈʷ e s ˈl i |
+| Kitchen2012-1019 | Jibbali | Leaf | seɤizfɔɔt | s <s> eɤi </s> z f <s> ɔɔ </s> t |
+| Kitchen2012-1020 | Soqotri | Leaf | saɔliifoh | s <s> aɔ </s> l <s> ii </s> f o h |
+| Kitchen2012-1021 | Moroccan Arabic | Leaf | weṟqa | w e <s> ṟ </s> q a |
+| Kitchen2012-1025 | Tigrinya | Liver | t'afiya | t ˈa f <s> iya </s> |
+| Kitchen2012-1026 | Amharic | Liver | gubbɛt | g u <s> bb </s> ɛ t |
+| Kitchen2012-1031 | Soddo | Liver | gɨbbɔt | g ɨ <s> bb </s> ɔ t |
+| Kitchen2012-1040 | Mehri | Liver | ʃubdéét | ʃ u b d <s> éé </s> t |
+| Kitchen2012-1041 | Jibbali | Liver | sebdéét | s e b d <s> éé </s> t |
+| Kitchen2012-1046 | Ge'ez | Long | nɛwwix | n ɛ <s> ww </s> i x |
+| Kitchen2012-1047 | Tigre | Long | rayyim | r <s> ayyi </s> m |
+| Kitchen2012-1048 | Tigrinya | Long | nɛwwi:ħ | n ɛ <s> ww </s> i: ħ |
+| Kitchen2012-1049 | Amharic | Long | rɛjjɨm | r ɛ <s> jj </s> ɨ m |
+| Kitchen2012-1050 | Argobba | Long | rɛzzɨm | r ɛ <s> zz </s> ɨ m |
+| Kitchen2012-1051 | Harari | Long | gudʊrr | g u d ʊ <s> rr </s> |
+| Kitchen2012-1054 | Gafat | Long | gɛddɛrmɛ | g ɛ <s> dd </s> ɛ r m ɛ |
+| Kitchen2012-1055 | Soddo | Long | gɛllɨf | g ɛ <s> ll </s> ɨ f |
+| Kitchen2012-1063 | Aramaic | Long | arˡikha | a <s> rˡ </s> i kh a |
+| Kitchen2012-1065 | Mehri | Long | t'wiil | t ˈw <s> ii </s> l |
+| Kitchen2012-1066 | Jibbali | Long | rii | r <s> ii </s> |
+| Kitchen2012-1067 | Soqotri | Long | riiyom | r <s> iiyo </s> m |
+| Kitchen2012-1076 | Harari | Louse | k'uma:y | k ˈu m <s> a:y </s> |
+| Kitchen2012-1077 | Zway | Louse | k'ɨma:y | k ˈɨ m <s> a:y </s> |
+| Kitchen2012-1086 | Hebrew | Louse | kinˡam | k i <s> nˡ </s> a m |
+| Kitchen2012-1089 | Mehri | Louse | kinmiit | k i n m <s> ii </s> t |
+| Kitchen2012-1090 | Jibbali | Louse | siniit | s i n <s> ii </s> t |
+| Kitchen2012-1096 | Tigre | Man | 7adda:m | s a <s> dd </s> a: m |
+| Kitchen2012-1103 | Gafat | Man | sɛwwɛ | s ɛ <s> ww </s> ɛ |
+| Kitchen2012-1114 | Mehri | Man | ɤay | <s> ɤay </s> |
+| Kitchen2012-1117 | Harsusi | Man | gayg | g <s> ay </s> g |
+| Kitchen2012-1124 | Argobba | Many | bɨzzu | b ɨ <s> zz </s> u |
+| Kitchen2012-1126 | Zway | Many | bɨzzɨ(n) | b ɨ <s> zz </s> ɨ |
+| Kitchen2012-1128 | Gafat | Many | tɛbbɛ | t ɛ <s> bb </s> ɛ |
+| Kitchen2012-1129 | Soddo | Many | ma:lɛk' | m a: l ɛ k ˈ |
+| Kitchen2012-1139 | Mehri | Many | mééken | m <s> éé </s> k e n |
+| Kitchen2012-1141 | Soqotri | Many | déélak' | d <s> éé </s> l a k ˈ |
+| Kitchen2012-1143 | Moroccan Arabic | Many | bazzaf | b a <s> zz </s> a f |
+| Kitchen2012-1151 | Zway | Meat | bɛsɛrr | b ɛ s ɛ <s> rr </s> |
+| Kitchen2012-1164 | Mehri | Meat | tiiwi | t <s> ii </s> w i |
+| Kitchen2012-1165 | Jibbali | Meat | tĕh | t <s> ĕh </s> |
+| Kitchen2012-1166 | Soqotri | Meat | téh | t <s> éh </s> |
+| Kitchen2012-1179 | Soddo | Moon | dɛrra:k'a | d ɛ <s> rr </s> a: k ˈa |
+| Kitchen2012-1183 | Hebrew | Moon | yareaħ | <s> ya </s> r <s> ea </s> ħ |
+| Kitchen2012-1197 | Argobba | Mountain | gubb | g u <s> bb </s> |
+| Kitchen2012-1201 | Soddo | Mountain | gɛggɛra | g ɛ <s> gg </s> ɛ r a |
+| Kitchen2012-1204 | Mesmes | Mountain | a:nya | a: n <s> ya </s> |
+| Kitchen2012-1212 | Jibbali | Mountain | gyel | g <s> ye </s> l |
+| Kitchen2012-1214 | Harsusi | Mountain | kermaym | k e r m <s> ay </s> m |
+| Kitchen2012-1228 | Innemor | Mouth | amfw | a m <s> fw </s> |
+| Kitchen2012-1230 | Geto | Mouth | anfw | a n <s> fw </s> |
+| Kitchen2012-1231 | Chaha | Mouth | anfw | a n <s> fw </s> |
+| Kitchen2012-1287 | Jibbali | Neck | ɤɔθo | <s> ɤɔ </s> θ o |
+| Kitchen2012-1289 | Harsusi | Neck | goɵi | g <s> oɵi </s> |
+| Kitchen2012-1290 | Moroccan Arabic | Neck | ɛenq | <s> ɛe </s> n q |
+| Kitchen2012-1292 | Ge'ez | New | ħaddis | ħ a <s> dd </s> i s |
+| Kitchen2012-1294 | Tigrinya | New | ħaddis | ħ a <s> dd </s> i s |
+| Kitchen2012-1295 | Amharic | New | addis | a <s> dd </s> i s |
+| Kitchen2012-1296 | Argobba | New | haggɨs | h a <s> gg </s> ɨ s |
+| Kitchen2012-1298 | Zway | New | wɔ:yra | w <s> ɔ:y </s> r a |
+| Kitchen2012-1300 | Gafat | New | addɛsɛ | a <s> dd </s> ɛ s ɛ |
+| Kitchen2012-1301 | Soddo | New | addis | a <s> dd </s> i s |
+| Kitchen2012-1304 | Mesmes | New | wɔy'yamo | w <s> ɔy </s> ˈya m o |
+| Kitchen2012-1310 | Tigrinya | Night | lɛyti | l <s> ɛy </s> t i |
+| Kitchen2012-1317 | Soddo | Night | mɛssɛman | m ɛ <s> ss </s> ɛ m a n |
+| Kitchen2012-1320 | Mesmes | Night | haʷɔnsɔ:de | h <s> aʷɔ </s> <s> ns </s> ɔ: d e |
+| Kitchen2012-1325 | Aramaic | Night | lelya | l e l <s> ya </s> |
+| Kitchen2012-1327 | Mehri | Night | leeyet | l <s> eeye </s> t |
+| Kitchen2012-1328 | Jibbali | Night | ɤɔʕre | <s> ɤɔ </s> ʕ r e |
+| Kitchen2012-1337 | Argobba | Nose | affɨnc(c)a | a <s> ff </s> ɨ n c a |
+| Kitchen2012-1342 | Soddo | Nose | anfunna | a n f u <s> nn </s> a |
+| Kitchen2012-1345 | Mesmes | Nose | an'fʊnna | a n ˈf ʊ <s> nn </s> a |
+| Kitchen2012-1351 | Akkadian | Nose | appau | a <s> pp </s> au |
+| Kitchen2012-1365 | Walani | One | 7ədd | s ə <s> dd </s> |
+| Kitchen2012-1366 | Gafat | One | ɨjjɛ | ɨ <s> jj </s> ɛ |
+| Kitchen2012-1385 | Tigrinya | Rain (n.) | may | m <s> ay </s> |
+| Kitchen2012-1394 | Innemor | Rain (n.) | diyɛ | d <s> iyɛ </s> |
+| Kitchen2012-1395 | Mesmes | Rain (n.) | di:ye | d <s> i:ye </s> |
+| Kitchen2012-1397 | Chaha | Rain (n.) | zɨraB | z ɨ r a <s> B </s> |
+| Kitchen2012-1401 | Akkadian | Rain (n.) | zunnu | z u <s> nn </s> u |
+| Kitchen2012-1404 | Soqotri | Rain (n.) | massa | m a <s> ss </s> a |
+| Kitchen2012-1405 | Harsusi | Rain (n.) | ges' | g e s ˈ |
+| Kitchen2012-1414 | Zway | Red | arroa | a <s> rr </s> <s> oa </s> |
+| Kitchen2012-1416 | Soddo | Red | bɨssa | b ɨ <s> ss </s> a |
+| Kitchen2012-1433 | Tigre | Road | gabay | g a b <s> ay </s> |
+| Kitchen2012-1434 | Tigrinya | Road | mɛngɛddi | m ɛ n g ɛ <s> dd </s> i |
+| Kitchen2012-1436 | Argobba | Road | he:mma | h e: <s> mm </s> a |
+| Kitchen2012-1443 | Innemor | Road | mea | m <s> ea </s> |
+| Kitchen2012-1444 | Mesmes | Road | mo:ya | m <s> o:ya </s> |
+| Kitchen2012-1445 | Geto | Road | mɛya | m <s> ɛya </s> |
+| Kitchen2012-1451 | Mehri | Road | ħọoorem | ħ <s> ọ </s> oo r e m |
+| Kitchen2012-1455 | Moroccan Arabic | Road | t'irik' | t ˈi r i k ˈ |
+| Kitchen2012-1457 | Ge'ez | Root | sɨrwu | s ɨ <s> rw </s> u |
+| Kitchen2012-1461 | Argobba | Root | sɨrrɛ:d | s ɨ <s> rr </s> ɛ: d |
+| Kitchen2012-1462 | Harari | Root | sirr | s i <s> rr </s> |
+| Kitchen2012-1474 | Aramaic | Root | ʃerʃa | ʃ e <s> rʃ </s> a |
+| Kitchen2012-1475 | Akkadian | Root | ʃurʃu | ʃ u <s> rʃ </s> u |
+| Kitchen2012-1476 | Mehri | Root | ʔarok' ʔʔ | ʔ a r o k ˈ_ <s> ʔʔ </s> |
+| Kitchen2012-1477 | Jibbali | Root | ʃirɔɔx | ʃ i r <s> ɔɔ </s> x |
+| Kitchen2012-1478 | Soqotri | Root | ʃeriiħoh | ʃ e r <s> ii </s> ħ o h |
+| Kitchen2012-1479 | Harsusi | Root | arks' | a r ks ˈ |
+| Kitchen2012-1488 | Zway | Sand | sɛrsɛre | s ɛ <s> rs </s> ɛ r e |
+| Kitchen2012-1500 | Jibbali | Sand | aħʃi | a <s> ħʃ </s> i |
+| Kitchen2012-1501 | Soqotri | Sand | ʃiimi | ʃ <s> ii </s> m i |
+| Kitchen2012-1510 | Harari | Say | ba:yɛ | b <s> a:yɛ </s> |
+| Kitchen2012-1529 | Ge'ez | See | rɨ7ɨyɛ | r ɨ s <s> ɨyɛ </s> |
+| Kitchen2012-1531 | Tigrinya | See | rɛ7ayɛ | r ɛ s <s> ayɛ </s> |
+| Kitchen2012-1532 | Amharic | See | ayyɛ | <s> ayyɛ </s> |
+| Kitchen2012-1536 | Gafat | See | ajjɛ | a <s> jj </s> ɛ |
+| Kitchen2012-1537 | Soddo | See | azzɛ | a <s> zz </s> ɛ |
+| Kitchen2012-1540 | Mesmes | See | -ha:ʸyɔ:- | h <s> a:ʸyɔ: </s> |
+| Kitchen2012-1547 | Mehri | See | ɤalook' | <s> ɤa </s> l oo k ˈ |
+| Kitchen2012-1553 | Ge'ez | Seed | zɛr7ɨ | z ɛ <s> rs </s> ɨ |
+| Kitchen2012-1555 | Tigrinya | Seed | zɛr7 | z ɛ <s> rs </s> |
+| Kitchen2012-1559 | Zway | Seed | sɛnni | s ɛ <s> nn </s> i |
+| Kitchen2012-1565 | Mesmes | Seed | zur(ɪ)ye | z u r <s> ye </s> |
+| Kitchen2012-1568 | Hebrew | Seed | zera' | z e r a ˈ |
+| Kitchen2012-1569 | Ugaritic | Seed | d r' | d _ r ˈ |
+| Kitchen2012-1573 | Moroccan Arabic | Seed | zerriɛa | z e <s> rr </s> <s> iɛa </s> |
+| Kitchen2012-1574 | Ogaden Arabic | Seed | ħabb | ħ a <s> bb </s> |
+| Kitchen2012-1575 | Ge'ez | Sit | nɛbbɛrɛ | n ɛ <s> bb </s> ɛ r ɛ |
+| Kitchen2012-1578 | Amharic | Sit | tɛk'ɛmmɛt'ɛ | t ɛ k ˈɛ <s> mm </s> ɛ t ˈɛ |
+| Kitchen2012-1579 | Argobba | Sit | a:rrɛggaza | a: <s> rr </s> ɛ <s> gg </s> a z a |
+| Kitchen2012-1581 | Zway | Sit | tɛgu:bbi | t ɛ g u: <s> bb </s> i |
+| Kitchen2012-1582 | Gafat | Sit | tɛwannɛ | t ɛ w a <s> nn </s> ɛ |
+| Kitchen2012-1583 | Soddo | Sit | tonna- | t o <s> nn </s> a |
+| Kitchen2012-1589 | Hebrew | Sit | yaʃabh | <s> ya </s> ʃ a bh |
+| Kitchen2012-1595 | Soqotri | Sit | izɔem | i z <s> ɔe </s> m |
+| Kitchen2012-1626 | Amharic | Sleep (v.) | tɛnna | t ɛ <s> nn </s> a |
+| Kitchen2012-1627 | Argobba | Sleep (v.) | tanni | t a <s> nn </s> i |
+| Kitchen2012-1629 | Zway | Sleep (v.) | tɛnni | t ɛ <s> nn </s> i |
+| Kitchen2012-1630 | Gafat | Sleep (v.) | (ta-)gɛddɛlɛ | g ɛ <s> dd </s> ɛ l ɛ |
+| Kitchen2012-1631 | Soddo | Sleep (v.) | ɨnnɛ- | ɨ <s> nn </s> ɛ |
+| Kitchen2012-1635 | Geto | Sleep (v.) | nɨyɛ- | n <s> ɨyɛ </s> |
+| Kitchen2012-1636 | Chaha | Sleep (v.) | nɨyɛ- | n <s> ɨyɛ </s> |
+| Kitchen2012-1637 | Hebrew | Sleep (v.) | yaʃen | <s> ya </s> ʃ e n |
+| Kitchen2012-1645 | Moroccan Arabic | Sleep (v.) | neɛsa | n <s> eɛ </s> s a |
+| Kitchen2012-1650 | Amharic | Small | tɨnnɨs | t ɨ <s> nn </s> ɨ s |
+| Kitchen2012-1651 | Argobba | Small | massɨ | m a <s> ss </s> ɨ |
+| Kitchen2012-1654 | Walani | Small | furt' | f u r t ˈ |
+| Kitchen2012-1655 | Gafat | Small | ɨnsɛ | ɨ <s> ns </s> ɛ |
+| Kitchen2012-1659 | Mesmes | Small | ʊ:nse | ʊ: <s> ns </s> e |
+| Kitchen2012-1660 | Geto | Small | ɨrs | ɨ <s> rs </s> |
+| Kitchen2012-1661 | Chaha | Small | ɨrs | ɨ <s> rs </s> |
+| Kitchen2012-1667 | Jibbali | Small | niisa | n <s> ii </s> s a |
+| Kitchen2012-1669 | Harsusi | Small | k'ennon | k ˈe <s> nn </s> o n |
+| Kitchen2012-1671 | Ogaden Arabic | Small | saʏi:r | s <s> aʏi: </s> r |
+| Kitchen2012-1674 | Tigrinya | Smoke (n.) | tɨkki | t ɨ <s> kk </s> i |
+| Kitchen2012-1680 | Gafat | Smoke (n.) | tɛnnɛ | t ɛ <s> nn </s> ɛ |
+| Kitchen2012-1684 | Mesmes | Smoke (n.) | tonna | t o <s> nn </s> a |
+| Kitchen2012-1689 | Aramaic | Smoke (n.) | tenˡana | t e <s> nˡ </s> a n a |
+| Kitchen2012-1691 | Mehri | Smoke (n.) | niideex | n <s> ii </s> d ee x |
+| Kitchen2012-1692 | Jibbali | Smoke (n.) | mindɔɔx | m i n d <s> ɔɔ </s> x |
+| Kitchen2012-1694 | Harsusi | Smoke (n.) | nedėx | n e d <s> ė </s> x |
+| Kitchen2012-1695 | Moroccan Arabic | Smoke (n.) | doxxan | d o <s> xx </s> a n |
+| Kitchen2012-1697 | Ge'ez | Snake | 7arwɛ | s a <s> rw </s> ɛ |
+| Kitchen2012-1698 | Tigre | Snake | 7arwe: | s a <s> rw </s> e: |
+| Kitchen2012-1704 | Gafat | Snake | ɨʊaʊʷɛ | <s> ɨʊaʊʷɛ </s> |
+| Kitchen2012-1706 | Mesqan | Snake | yɛdɨm wɛdərə | <s> yɛ </s> d ɨ m _ w ɛ d ə r ə |
+| Kitchen2012-1708 | Mesmes | Snake | hawa:y | h a w <s> a:y </s> |
+| Kitchen2012-1711 | Mehri | Snake | riiʃiit | r <s> ii </s> ʃ <s> ii </s> t |
+| Kitchen2012-1712 | Jibbali | Snake | ɤɔzzet | <s> ɤɔ </s> <s> zz </s> e t |
+| Kitchen2012-1714 | Harsusi | Snake | beddefen | b e <s> dd </s> e f e n |
+| Kitchen2012-1715 | Moroccan Arabic | Snake | henʃ | h e <s> nʃ </s> |
+| Kitchen2012-1716 | Ogaden Arabic | Snake | ɵu9ba:n | <s> ɵu </s> <s> 9 </s> b a: n |
+| Kitchen2012-1726 | Mesqan | Stand | k'ʷomɛ | k ˈʷ o m ɛ |
+| Kitchen2012-1728 | Mesmes | Stand | -təsəkkɔ- | t ə s ə <s> kk </s> ɔ |
+| Kitchen2012-1733 | Akkadian | Stand | izuzˡu | i z u <s> zˡ </s> u |
+| Kitchen2012-1750 | Mesmes | Star | hohoyɛ | h o h <s> oyɛ </s> |
+| Kitchen2012-1755 | Aramaic | Star | kaukkbha | k au <s> kk </s> bh a |
+| Kitchen2012-1756 | Akkadian | Star | kakˡabu | k a <s> kˡ </s> a b u |
+| Kitchen2012-1766 | Amharic | Stone | dɨngay | d ɨ n g <s> ay </s> |
+| Kitchen2012-1767 | Argobba | Stone | dɨnga:y | d ɨ n g <s> a:y </s> |
+| Kitchen2012-1772 | Soddo | Stone | ɨmmayɛ | ɨ <s> mm </s> <s> ayɛ </s> |
+| Kitchen2012-1775 | Mesmes | Stone | oᵘna | <s> oᵘ </s> n a |
+| Kitchen2012-1782 | Mehri | Stone | ʃaykat | ʃ <s> ay </s> k a t |
+| Kitchen2012-1785 | Harsusi | Stone | s'ewwer | s ˈe <s> ww </s> e r |
+| Kitchen2012-1788 | Ge'ez | Sun | s'ɛħay | s ˈɛ ħ <s> ay </s> |
+| Kitchen2012-1789 | Tigre | Sun | s'aħa:y | s ˈa ħ <s> a:y </s> |
+| Kitchen2012-1790 | Tigrinya | Sun | s'ɛħay | s ˈɛ ħ <s> ay </s> |
+| Kitchen2012-1791 | Amharic | Sun | s'ɛhay | s ˈɛ h <s> ay </s> |
+| Kitchen2012-1793 | Harari | Sun | 7irr | s i <s> rr </s> |
+| Kitchen2012-1797 | Soddo | Sun | yɨmɛr | <s> yɨ </s> m ɛ r |
+| Kitchen2012-1799 | Innemor | Sun | ayɛd | <s> ayɛ </s> d |
+| Kitchen2012-1802 | Chaha | Sun | eyat | <s> eya </s> t |
+| Kitchen2012-1805 | Aramaic | Sun | ʃemʃˡ | ʃ e <s> mʃˡ </s> |
+| Kitchen2012-1806 | Akkadian | Sun | ʃamʃu | ʃ a <s> mʃ </s> u |
+| Kitchen2012-1807 | Mehri | Sun | ħɛyoom | ħ <s> ɛyoo </s> m |
+| Kitchen2012-1808 | Jibbali | Sun | yu, ʃu | <s> yu </s> |
+| Kitchen2012-1810 | Harsusi | Sun | ħeyom | ħ <s> eyo </s> m |
+| Kitchen2012-1811 | Moroccan Arabic | Sun | ʃems | ʃ e <s> ms </s> |
+| Kitchen2012-1812 | Ogaden Arabic | Sun | sams | s a <s> ms </s> |
+| Kitchen2012-1813 | Ge'ez | Swim | tɛ-wanɛyɛ | t ɛ w a n <s> ɛyɛ </s> |
+| Kitchen2012-1816 | Amharic | Swim | wannɛ | w a <s> nn </s> ɛ |
+| Kitchen2012-1817 | Argobba | Swim | wanna | w a <s> nn </s> a |
+| Kitchen2012-1820 | Soddo | Swim | wannɛ- | w a <s> nn </s> ɛ |
+| Kitchen2012-1830 | Jibbali | Swim | riih, ebrehi | r <s> ii </s> h |
+| Kitchen2012-1833 | Moroccan Arabic | Swim | ɛewma | <s> ɛe </s> w m a |
+| Kitchen2012-1841 | Zway | Tail | gu:nna | g u: <s> nn </s> a |
+| Kitchen2012-1858 | Moroccan Arabic | Tail | ʃuwwal | ʃ u <s> ww </s> a l |
+| Kitchen2012-1875 | Ogaden Arabic | Thin | ɟa9i:f | ɟ a <s> 9 </s> i: f |
+| Kitchen2012-1877 | Tigre | This | 7ɨlli | s ɨ <s> ll </s> i |
+| Kitchen2012-1878 | Tigrinya | This | ɨzzuy | ɨ <s> zz </s> <s> uy </s> |
+| Kitchen2012-1879 | Amharic | This | yɨh | <s> yɨ </s> h |
+| Kitchen2012-1882 | Zway | This | yi: | <s> yi: </s> |
+| Kitchen2012-1883 | Gafat | This | ɨnnɨ | ɨ <s> nn </s> ɨ |
+| Kitchen2012-1890 | Hebrew | This | hazˡeh | h a <s> zˡ </s> e h |
+| Kitchen2012-1893 | Akkadian | This | annu | a <s> nn </s> u |
+| Kitchen2012-1910 | Mesqan | Three | sɔʷst | s <s> ɔʷ </s> s t |
+| Kitchen2012-1918 | Tigrinya | Thou | nɨssɨxa | n ɨ <s> ss </s> ɨ x a |
+| Kitchen2012-1922 | Zway | Thou | atta | a <s> tt </s> a |
+| Kitchen2012-1937 | Soqotri | Thou | yaanhen, sen | <s> yaa </s> nh e n |
+| Kitchen2012-1942 | Tigre | Tongue | nɨssa:l | n ɨ <s> ss </s> a: l |
+| Kitchen2012-1946 | Harari | Tongue | arrat | a <s> rr </s> a t |
+| Kitchen2012-1960 | Mehri | Tongue | liʃiin | l i ʃ <s> ii </s> n |
+| Kitchen2012-1961 | Jibbali | Tongue | lʃa | <s> lʃ </s> a |
+| Kitchen2012-1962 | Soqotri | Tongue | leʃʃin | l e <s> ʃʃ </s> i n |
+| Kitchen2012-1964 | Moroccan Arabic | Tongue | lsan | <s> ls </s> a n |
+| Kitchen2012-1968 | Tigrinya | Tooth | sɨnni | s ɨ <s> nn </s> i |
+| Kitchen2012-1969 | Amharic | Tooth | t'ɨrs | t ˈɨ <s> rs </s> |
+| Kitchen2012-1970 | Argobba | Tooth | sɨnn | s ɨ <s> nn </s> |
+| Kitchen2012-1975 | Soddo | Tooth | sɨnn | s ɨ <s> nn </s> |
+| Kitchen2012-1976 | Mesqan | Tooth | sɔʷst | s <s> ɔʷ </s> s t |
+| Kitchen2012-1983 | Aramaic | Tooth | ʃenˡa | ʃ e <s> nˡ </s> a |
+| Kitchen2012-1984 | Akkadian | Tooth | sinˡ | s i <s> nˡ </s> |
+| Kitchen2012-1989 | Moroccan Arabic | Tooth | senna | s e <s> nn </s> a |
+| Kitchen2012-1990 | Ogaden Arabic | Tooth | sinn | s i <s> nn </s> |
+| Kitchen2012-1991 | Ge'ez | Tree | 9ɨs'ɛ | <s> 9 </s> ɨ s ˈɛ |
+| Kitchen2012-1992 | Tigre | Tree | 9ɨc'c'at | <s> 9 </s> ɨ c ˈc ˈa t |
+| Kitchen2012-2003 | Mesmes | Tree | ye7e | <s> ye </s> s e |
+| Kitchen2012-2007 | Ugaritic | Tree | s' | s ˈ |
+| Kitchen2012-2016 | Ge'ez | Two | kɨlɨ7ɛttu | k ɨ l ɨ s ɛ <s> tt </s> u |
+| Kitchen2012-2017 | Tigre | Two | kɨl7o:t | k ɨ <s> ls </s> o: t |
+| Kitchen2012-2018 | Tigrinya | Two | kɨlttɛ | k ɨ l <s> tt </s> ɛ |
+| Kitchen2012-2019 | Amharic | Two | hulɛtt | h u l ɛ <s> tt </s> |
+| Kitchen2012-2022 | Zway | Two | ho:yt | h <s> o:y </s> t |
+| Kitchen2012-2027 | Innemor | Two | wɨr7e:t | w ɨ <s> rs </s> e: t |
+| Kitchen2012-2029 | Geto | Two | x'ʷe:t | x ˈʷ e: t |
+| Kitchen2012-2030 | Chaha | Two | x'ʷe:t | x ˈʷ e: t |
+| Kitchen2012-2031 | Hebrew | Two | ʃnayim | ʃ n <s> ayi </s> m |
+| Kitchen2012-2033 | Aramaic | Two | trĕỹn | t r <s> ĕ </s> ỹ n |
+| Kitchen2012-2041 | Ge'ez | Warm | mɨwuk' | m ɨ w u k ˈ |
+| Kitchen2012-2043 | Tigrinya | Warm | mɨwux' | m ɨ w u x ˈ |
+| Kitchen2012-2044 | Amharic | Warm | muk' | m u k ˈ |
+| Kitchen2012-2045 | Argobba | Warm | mu:k' | m u: k ˈ |
+| Kitchen2012-2046 | Harari | Warm | wʊ:y | w <s> ʊ:y </s> |
+| Kitchen2012-2047 | Zway | Warm | mu:k' | m u: k ˈ |
+| Kitchen2012-2048 | Walani | Warm | muk' | m u k ˈ |
+| Kitchen2012-2050 | Soddo | Warm | yemo:k'ə | <s> ye </s> m o: k ˈə |
+| Kitchen2012-2051 | Mesqan | Warm | hʷey | hʷ <s> ey </s> |
+| Kitchen2012-2053 | Mesmes | Warm | ma7oy- | m a s <s> oy </s> |
+| Kitchen2012-2054 | Geto | Warm | mo:k' | m o: k ˈ |
+| Kitchen2012-2055 | Chaha | Warm | mo:k' | m o: k ˈ |
+| Kitchen2012-2059 | Akkadian | Warm | emmu | e <s> mm </s> u |
+| Kitchen2012-2060 | Harsusi | Warm | ħark' | ħ a r k ˈ |
+| Kitchen2012-2063 | Ge'ez | Water | ɱay | ɱ <s> ay </s> |
+| Kitchen2012-2064 | Tigre | Water | ma:y | m <s> a:y </s> |
+| Kitchen2012-2065 | Tigrinya | Water | may | m <s> ay </s> |
+| Kitchen2012-2067 | Argobba | Water | ɔhuwwa: | ɔ h u <s> ww </s> a: |
+| Kitchen2012-2068 | Harari | Water | mi:y | m <s> i:y </s> |
+| Kitchen2012-2069 | Zway | Water | ma:y | m <s> a:y </s> |
+| Kitchen2012-2073 | Mesqan | Water | mʷak' | mʷ a k ˈ |
+| Kitchen2012-2078 | Hebrew | Water | mayim | m <s> ayi </s> m |
+| Kitchen2012-2080 | Aramaic | Water | mayˡa | m <s> ayˡa </s> |
+| Kitchen2012-2084 | Soqotri | Water | riiho | r <s> ii </s> h o |
+| Kitchen2012-2085 | Harsusi | Water | ħẹmyoh | ħ <s> ẹ </s> m <s> yo </s> h |
+| Kitchen2012-2087 | Ogaden Arabic | Water | mo:ya | m <s> o:ya </s> |
+| Kitchen2012-2091 | Amharic | We | ɨnna | ɨ <s> nn </s> a |
+| Kitchen2012-2092 | Argobba | We | ɨnna | ɨ <s> nn </s> a |
+| Kitchen2012-2093 | Harari | We | 7inna:c | s i <s> nn </s> a: c |
+| Kitchen2012-2094 | Zway | We | ɨnnɛ | ɨ <s> nn </s> ɛ |
+| Kitchen2012-2095 | Walani | We | ɨnnə | ɨ <s> nn </s> ə |
+| Kitchen2012-2096 | Gafat | We | ɨnni | ɨ <s> nn </s> i |
+| Kitchen2012-2097 | Soddo | We | ɨnna | ɨ <s> nn </s> a |
+| Kitchen2012-2100 | Mesmes | We | ɨnna | ɨ <s> nn </s> a |
+| Kitchen2012-2101 | Geto | We | yɨna | <s> yɨ </s> n a |
+| Kitchen2012-2102 | Chaha | We | yɨna | <s> yɨ </s> n a |
+| Kitchen2012-2119 | Gafat | Wet | jibbɛ | j i <s> bb </s> ɛ |
+| Kitchen2012-2120 | Soddo | Wet | yɛbɛssɛbbɛsɛ | <s> yɛ </s> b ɛ <s> ss </s> ɛ <s> bb </s> ɛ s ɛ |
+| Kitchen2012-2122 | Innemor | Wet | ɪ:ya | <s> ɪ:ya </s> |
+| Kitchen2012-2130 | Tigrinya | What? | 7ɨntay | s ɨ n t <s> ay </s> |
+| Kitchen2012-2132 | Argobba | What? | mɨnn | m ɨ <s> nn </s> |
+| Kitchen2012-2152 | Ge'ez | White | s'ɛ9adɛ | s ˈɛ <s> 9 </s> a d ɛ |
+| Kitchen2012-2153 | Tigre | White | s'a9ada | s ˈa <s> 9 </s> a d a |
+| Kitchen2012-2154 | Tigrinya | White | s'a9da | s ˈa <s> 9 </s> d a |
+| Kitchen2012-2155 | Amharic | White | nɛc'c' | n ɛ c ˈc ˈ |
+| Kitchen2012-2156 | Argobba | White | zahh | z a <s> hh </s> |
+| Kitchen2012-2175 | Moroccan Arabic | White | byed | b <s> ye </s> d |
+| Kitchen2012-2176 | Ogaden Arabic | White | 7abyaɟ | s a b <s> ya </s> ɟ |
+| Kitchen2012-2177 | Ge'ez | Who? | mɛnnu | m ɛ <s> nn </s> u |
+| Kitchen2012-2179 | Tigrinya | Who? | mɛngɛddi | m ɛ n g ɛ <s> dd </s> i |
+| Kitchen2012-2181 | Argobba | Who? | manna | m a <s> nn </s> a |
+| Kitchen2012-2183 | Zway | Who? | ma:nnu | m a: <s> nn </s> u |
+| Kitchen2012-2186 | Soddo | Who? | ma:lɛk' | m a: l ɛ k ˈ |
+| Kitchen2012-2203 | Tigre | Woman | 7ɨssit | s ɨ <s> ss </s> i t |
+| Kitchen2012-2204 | Tigrinya | Woman | sɛbeʸti | s ɛ b <s> eʸ </s> t i |
+| Kitchen2012-2210 | Gafat | Woman | amnsitɛ | a m <s> ns </s> i t ɛ |
+| Kitchen2012-2219 | Aramaic | Woman | ĭñtˡa | <s> ĭ </s> ñ tˡ a |
+| Kitchen2012-2220 | Akkadian | Woman | sinˡiʃtu | s i <s> nˡ </s> i ʃ t u |
+| Kitchen2012-2224 | Harsusi | Woman | tet'/dim | t e t ˈ |
+| Kitchen2012-2229 | Tigrinya | Ye | nɨssɨxatkum | n ɨ <s> ss </s> ɨ x a t k u m |
+| Kitchen2012-2230 | Amharic | Ye | ɨnnantɛ | ɨ <s> nn </s> a n t ɛ |
+| Kitchen2012-2231 | Argobba | Ye | ɨnnakum | ɨ <s> nn </s> a k u m |
+| Kitchen2012-2235 | Gafat | Ye | ɨnnantɛ | ɨ <s> nn </s> a n t ɛ |
+
+(595 rows)
+
