@@ -45,7 +45,7 @@ def lgid(n):
     return n.split('.')[0].lower().replace(' ', '_')
 
 
-def cldf(dataset, glottolog, concepticon, **kw):
+def cldf(dataset, concepticon, **kw):
     concept_map = {int(c['GLOSS']): c['CONCEPTICON_ID'] or None for c in dataset.concepts}
 
     gc_pattern = re.compile('[a-z0-9]{4}[1-9][0-9]{3}$')

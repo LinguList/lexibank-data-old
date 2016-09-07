@@ -21,9 +21,10 @@ from clldutils.clilib import ArgumentParser, ParserError
 from clldutils.path import Path
 from clldutils import jsonlib
 from tabulate import tabulate
+from pyglottolog.api import Glottolog
 
 import pylexibank
-from pylexibank.util import data_path, formatted_number
+from pylexibank.util import data_path, formatted_number, MarkdownTable
 from pylexibank.dataset import Dataset, synonymy_index, TranscriptionReport
 
 
@@ -68,20 +69,47 @@ def download(args):
     get_dataset(args).download()
 
 
-def short_title(t):
-    L = 40
-    if len(t) > L:
-        return wrap(t, width=L)[0] + '...'
+def short_title(t, l=40):
+    if len(t) > l:
+        return wrap(t, width=l)[0] + '...'
     return t
 
 
 def ls(args):
-    table = []
+    """
+    lexibank ls [COLS]+
+
+    column specification:
+    - license
+    - lexemes
+    - macroareas
+    """
+    # FIXME: how to smartly choose columns?
+    table = MarkdownTable('ID', 'Title')
+    cols = [col for col in args.args if col in ['license', 'lexemes', 'macroareas']]
+    tl = 40
+    if args.args:
+        tl = 25
+        table.columns.extend(col.capitalize() for col in cols)
     for d in data_path(repos=Path(args.lexibank_repos)).iterdir():
         if is_dataset_dir(d):
             ds = Dataset(d)
-            table.append((d.name, short_title(ds.md['dc:title'])))
-    print(tabulate(sorted(table, key=lambda r: r[0])))
+            row = [d.name, short_title(ds.md['dc:title'], l=tl)]
+            for col in cols:
+                if col == 'license':
+                    row.append(ds.md.get('dc:license'))
+                elif col in ['lexemes', 'macroareas']:
+                    mds = list(ds.iter_cldf_metadata())
+                    if col == 'lexemes':
+                        row.append(sum(md.notes['stats']['lexeme_count'] for md in mds))
+                    elif col == 'macroareas':
+                        mas = set()
+                        for md in mds:
+                            mas = mas.union(md.notes['stats']['macroareas'])
+                        row.append(', '.join(sorted(mas)))
+
+            table.append(row)
+    print(table.render(fmt='simple', sortkey=lambda r: r[0], condensed=False))
 
 
 def with_dataset(args, func):
@@ -116,7 +144,11 @@ def cldf(args):
 
     lexibank cldf [DATASET_ID]
     """
+    # FIXME: get dict of all glottolog langs right here, and attach to datasets!
+    languoids = {l.id: l for l in Glottolog(args.glottolog_repos).languoids()}
+
     def _cldf(ds, **kw):
+        ds.languoids = languoids
         ds.cldf(**kw)
         ds.write_cognates()
 

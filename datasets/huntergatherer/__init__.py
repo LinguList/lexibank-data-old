@@ -84,7 +84,7 @@ def valid_Value(row):
     return bool(row['Value']) and row['Value'] not in missing_marker
 
 
-def cldf(dataset, glottolog, concepticon, **kw):
+def cldf(dataset, concepticon, **kw):
     concept_map = {
         re.sub('^(\*|\$)', '', c['ENGLISH']): c['CONCEPTICON_ID']
         for c in concepticon.conceptlist(dataset.conceptlist)}

@@ -21,8 +21,7 @@ def download(dataset, **kw):
     download_and_unpack_zipfiles(URL, dataset, *[PATH.joinpath(dset) for dset in DSETS])
 
 
-def cldf(dataset, glottolog, concepticon, **kw):
-
+def cldf(dataset, concepticon, **kw):
     for dset, srckey in zip(DSETS, SOURCES):
         wl = lp.Wordlist(dataset.dir.joinpath('raw', dset).as_posix())
         src = getEvoBibAsSource(srckey)

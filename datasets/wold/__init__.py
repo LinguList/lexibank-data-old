@@ -10,7 +10,7 @@ def download(dataset, **kw):
     clld.download(dataset, __name__)
 
 
-def cldf(dataset, glottolog, concepticon, **kw):
+def cldf(dataset, concepticon, **kw):
     unmapped = set()
     for ods in clld.itercldf(dataset, __name__):
         lid = ods.name.split('-')[-1]

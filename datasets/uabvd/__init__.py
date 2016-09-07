@@ -11,8 +11,8 @@ def download(dataset):
     abvd.download(dataset, SECTION)
 
 
-def cldf(dataset, glottolog, concepticon, **kw):
-    gl_map = {l.iso_code: l.id for l in glottolog.languoids() if l.iso_code}
+def cldf(dataset, concepticon, **kw):
+    gl_map = dataset.glottolog_languoids_by_iso
     l_map = {l['NAME']: l['GLOTTOCODE'] or None for l in dataset.languages}
 
     unmapped = Unmapped(lambda r: int(r[0]))
