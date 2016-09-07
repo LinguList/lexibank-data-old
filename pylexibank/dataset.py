@@ -197,7 +197,10 @@ class TranscriptionReport(UnicodeMixin):
             segment_types=Counter(),
         ))
         bad_words = []
-        with tqdm(total=self.dataset.count_cldf_datasets, desc='cldf-ds', leave=False) as pbar:
+        with tqdm(
+                total=len(list(self.dataset.iter_cldf_metadata())),
+                desc='cldf-ds',
+                leave=False) as pbar:
             for ds in self.dataset.iter_cldf_datasets():
                 bad_words.extend(test_sequences(ds, get_variety_id, self.report, **cfg))
                 pbar.update(1)
