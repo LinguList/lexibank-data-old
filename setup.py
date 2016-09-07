@@ -3,7 +3,7 @@ from setuptools import setup, find_packages
 
 requires = [
     # list required third-party packages here
-    'pycldf>=0.6.0',
+    'pycldf>=0.6.2',
     'openpyxl',
     'beautifulsoup4>=4.4.1',
     'requests',

@@ -26,7 +26,7 @@ def read_csv(dataset, name, offset):
     return header, rows
 
 
-def cldf(dataset, glottolog, concepticon, **kw):
+def cldf(dataset, concepticon, **kw):
     language_map = {l['NAME']: l['GLOTTOCODE'] or None for l in dataset.languages}
     concept_map = {c['ENGLISH']: c['CONCEPTICON_ID']
                    for c in concepticon.conceptlist(dataset.conceptlist)}

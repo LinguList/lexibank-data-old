@@ -8,7 +8,7 @@ def download(dataset, **kw):
     raise NotImplemented
 
 
-def cldf(dataset, glottolog, concepticon, **kw):
+def cldf(dataset, concepticon, **kw):
     """
     Implements the conversion of the raw data to CLDF dataset(s).
 
@@ -18,9 +18,13 @@ def cldf(dataset, glottolog, concepticon, **kw):
      - items from concepts.csv are available as `dataset.concepts`\
      - if a Concepticon conceptlist was specified in metadata.json, its ID is available\
        as `dataset.conceptlist`
-    :param glottolog: a pyglottolog.api.Glottolog` instance.
     :param concepticon:  a pyconcepticon.api.Concepticon` instance.
     :param kw: All arguments passed on the command line.
+
+    .. notes::
+
+        There's also a dict `dataset.glottolog_languoids` mapping Glottocodes to \
+        Glottolog languoid objects.
     """
     with CldfDataset(REQUIRED_FIELDS, dataset) as ds:
         pass

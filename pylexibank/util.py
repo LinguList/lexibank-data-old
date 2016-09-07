@@ -24,15 +24,20 @@ YEAR_PATTERN = re.compile('\s+\(?(?P<year>[1-9][0-9]{3}(-[0-9]+)?)(\)|\.)')
 
 class MarkdownTable(list):
     def __init__(self, *cols):
-        self.columns = cols
+        self.columns = list(cols)
         list.__init__(self)
 
     @staticmethod
     def tr(row):
         return '|'.join(['%s' % c for c in row])
 
-    def render(self):
-        return re.sub('[ ]+', ' ', tabulate(self, self.columns, "pipe")) + '\n\n(%s rows)\n\n' % len(self)
+    def render(self, fmt='pipe', sortkey=None, condensed=True):
+        res = tabulate(sorted(self, key=sortkey) if sortkey else self, self.columns, fmt)
+        if condensed:
+            res = re.sub('[ ]+', ' ', res)
+        if fmt == 'pipe':
+            res += '\n\n(%s rows)\n\n' % len(self)
+        return res
 
 
 def clean_form(form):

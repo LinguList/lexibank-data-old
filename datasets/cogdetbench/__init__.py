@@ -40,7 +40,7 @@ def download(dataset, **kw):
     download_and_unpack_zipfiles(URL, dataset, *[PATH.joinpath(dset) for dset in DSETS])
 
 
-def cldf(dataset, glottolog, concepticon, **kw):
+def cldf(dataset, concepticon, **kw):
     gloss2con = {x['GLOSS']: x['CONCEPTICON_ID'] for x in dataset.concepts}
     lang2glot = {x['NAME']: x['GLOTTOCODE'] for x in dataset.languages}
 

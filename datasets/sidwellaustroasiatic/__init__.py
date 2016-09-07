@@ -24,7 +24,7 @@ def download(dataset):
         xls2csv(tmpdir.joinpath('ds.xlsm'), outdir=dataset.raw)
 
 
-def cldf(dataset, glottolog_, concepticon, **kw):
+def cldf(dataset, concepticon, **kw):
     concepticon = {
         c['ENGLISH']: c['CONCEPTICON_ID'] for c in
         concepticon.conceptlist(dataset.conceptlist)}
@@ -55,10 +55,8 @@ def cldf(dataset, glottolog_, concepticon, **kw):
     lids = [int(float(r[0])) for r in languages.values()]
     assert min(lids) == 1 and max(lids) == 122
 
-    glottolog = {l['NAME']: l['GLOTTOCODE'] or None for l in dataset.languages}
-    for l in glottolog_.languoids():
-        if l.iso_code:
-            glottolog[l.iso_code] = l.id
+    glottolog = dataset.glottocode_by_iso
+    glottolog.update({l['NAME']: l['GLOTTOCODE'] or None for l in dataset.languages})
 
     sources = {}
     for src, langs in groupby(
