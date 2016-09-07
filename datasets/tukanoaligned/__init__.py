@@ -13,7 +13,7 @@ import lingpy as lp
 
 URL = "http://edictor.digling.org/triples/get_data.py?file=tukano"
 SOURCES = ['Chacon2014', 'Chacon2015']
-abbr2lang = {'Bar': ('Bar', 'bao'), 'Bas': ('Barasano', 'bsn'), 'Des': ('Desano', 'des'), 'ID': ('Name', 'ISOCODE'), 'Kar': ('Karapan', 'coe'), 'Kor': ('Koreguahe', 'coe'), 'Kub': ('Kubeo', 'cub'), 'Kue': ('Kueretu', ''), 'Mai': ('Maihiki', 'ore'), 'Mak': ('Makuna', 'myy'), 'Pir': ('Piratapuyo', 'pir'), 'Pis': ('Pisamira', ''), 'Sek': ('Sekoya', 'sey'), 'Sio': ('Siona', 'snn'), 'Sir': ('Siriano', 'sri'), 'Tan': ('Tanimuka', 'tnc'), 'Tat': ('Tatuyo', 'tav'), 'Tuk': ('Tukano', 'tuo'), 'Tuy': ('Tuyuka', 'tue'), 'Wan': ('Wanano', 'gvc'), 'Yup': ('Yupua', ''), 'Yur': ('Yuruti', 'yur'), '*PT' : ('Proto-Tucanoan', 'tuca1253')}
+abbr2lang = {'Bar': ('Bar', 'bao'), 'Bas': ('Barasano', 'bsn'), 'Des': ('Desano', 'des'), 'Kar': ('Karapan', 'coe'), 'Kor': ('Koreguahe', 'coe'), 'Kub': ('Kubeo', 'cub'), 'Kue': ('Kueretu', ''), 'Mai': ('Maihiki', 'ore'), 'Mak': ('Makuna', 'myy'), 'Pir': ('Piratapuyo', 'pir'), 'Pis': ('Pisamira', ''), 'Sek': ('Sekoya', 'sey'), 'Sio': ('Siona', 'snn'), 'Sir': ('Siriano', 'sri'), 'Tan': ('Tanimuka', 'tnc'), 'Tat': ('Tatuyo', 'tav'), 'Tuk': ('Tukano', 'tuo'), 'Tuy': ('Tuyuka', 'tue'), 'Wan': ('Wanano', 'gvc'), 'Yup': ('Yupua', ''), 'Yur': ('Yuruti', 'yur'), '*PT' : ('Proto-Tucanoan', 'tuca1253')}
 for k in sorted(abbr2lang):
     abbr2lang[k.upper()] = abbr2lang[k]
 
@@ -56,7 +56,7 @@ def cldf(dataset, concepticon, **kw):
             cid = gloss2conc.get(concept)
             ds.add_row((
                 'Chacon2014-'+str(k),
-                dataset.glottocode_by_iso.get(lid.lower(), ''),
+                dataset.glottocode_by_iso.get(iso, ''),
                 name,
                 iso,
                 cid,
