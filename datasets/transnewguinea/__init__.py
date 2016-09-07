@@ -16,8 +16,8 @@ def download(dataset):
 
 def cldf(dataset, concepticon, **kw):
     data = get_all(dataset)
-    gl_map = {k: v for k, v in dataset.glottolog_languoids}
-    gl_map.update(dataset.glottolog_languoids_by_iso)
+    gl_map = {k: v.id for k, v in dataset.glottolog_languoids.items()}
+    gl_map.update(dataset.glottocode_by_iso)
 
     swadesh_concepts = {
         k: v for k, v in data['word'].items() if v['id'] in data['concept_ids']}

@@ -20,9 +20,8 @@ def cldf(dataset, concepticon, **kw):
         if wl.language.name in language_map:
             wl.language.glottocode = language_map[wl.language.name]
         elif wl.language.iso:
-            if wl.language.iso in dataset.glottolog_languoids_by_iso:
-                wl.language.glottocode = \
-                    dataset.glottolog_languoids_by_iso[wl.language.iso]
+            if wl.language.iso in dataset.glottocode_by_iso:
+                wl.language.glottocode = dataset.glottocode_by_iso[wl.language.iso]
         if not wl.language.glottocode:
             unmapped.languages.add((wl.language.id, wl.language.name, wl.language.iso))
         wordlists.append(wl)

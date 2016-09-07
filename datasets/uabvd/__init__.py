@@ -12,7 +12,7 @@ def download(dataset):
 
 
 def cldf(dataset, concepticon, **kw):
-    gl_map = dataset.glottolog_languoids_by_iso
+    gl_map = dataset.glottocode_by_iso
     l_map = {l['NAME']: l['GLOTTOCODE'] or None for l in dataset.languages}
 
     unmapped = Unmapped(lambda r: int(r[0]))

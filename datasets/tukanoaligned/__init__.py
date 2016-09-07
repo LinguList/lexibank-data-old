@@ -27,7 +27,6 @@ def cldf(dataset, concepticon, **kw):
     src1 = getEvoBibAsSource('Chacon2014')
     src2 = getEvoBibAsSource('Chacon2015')
     gloss2conc = {r['GLOSS']: r['CONCEPTICON_ID'] for r in dataset.concepts}
-    iso2gc = dataset.glottolog_languoids_by_iso
 
     with CldfDataset((
         'ID',
@@ -57,7 +56,7 @@ def cldf(dataset, concepticon, **kw):
             cid = gloss2conc.get(concept)
             ds.add_row((
                 'Chacon2014-'+str(k),
-                iso2gc.get(lid.lower(), ''),
+                dataset.glottocode_by_iso.get(lid.lower(), ''),
                 name,
                 iso,
                 cid,

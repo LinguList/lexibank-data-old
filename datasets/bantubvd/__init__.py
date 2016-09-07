@@ -19,8 +19,7 @@ def cldf(dataset, concepticon, **kw):
     for c in dataset.concepts:
         concept_map[c['ID']] = c['CONCEPTICON_ID'] or None
 
-    gl_map = {
-        l.iso_code: l.id for l in dataset.glottolog_languoids.values() if l.iso_code}
+    gl_map = dataset.glottocode_by_iso
     wordlists = []
     for xml in dataset.raw.glob('*.xml'):
         wl = abvd.Wordlist(dataset, xml, SECTION)

@@ -24,7 +24,6 @@ def download(dataset, **kw):
 def cldf(dataset, concepticon, **kw):
     # column "counterpart_doculect" gives us the proper names of the doculects
     wl = lp.Wordlist(dataset.raw.joinpath(FNAME).as_posix(), col="counterpart_doculect")
-    iso2gc = {l.iso: l.id for l in dataset.glottolog_languoids.values() if l.iso}
 
     # get the language identifiers stored in wl._meta['doculect'] parsed from input file
     lids = {}
@@ -67,7 +66,7 @@ def cldf(dataset, concepticon, **kw):
             for i, (l, c, form, id_) in enumerate(rows):
                 assert ds.add_row([
                     '%s-%s-%s-%s-%s' % (iso, slug(language), cid, slug(concept), i + 1),
-                    iso2gc.get(iso, ''),
+                    dataset.glottocode_by_iso.get(iso, ''),
                     language.capitalize(),
                     iso,
                     cid,

@@ -55,7 +55,7 @@ def cldf(dataset, concepticon, **kw):
     lids = [int(float(r[0])) for r in languages.values()]
     assert min(lids) == 1 and max(lids) == 122
 
-    glottolog = dataset.glottolog_languoids_by_iso
+    glottolog = dataset.glottocode_by_iso
     glottolog.update({l['NAME']: l['GLOTTOCODE'] or None for l in dataset.languages})
 
     sources = {}

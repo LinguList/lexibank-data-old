@@ -24,7 +24,7 @@ def cldf(dataset, concepticon, **kw):
         for c in concepticon.conceptlist(dataset.conceptlist)}
 
     l_map = {int(l['ID']): l['GLOTTOCODE'] for l in dataset.languages if l['GLOTTOCODE']}
-    gl_map = {l.iso_code: l.id for l in dataset.languoids.values() if l.iso_code}
+    gl_map = dataset.glottocode_by_iso
     wordlists = []
     for xml in tqdm(list(dataset.raw.glob('*.xml')), desc='xml-to-wordlist', leave=False):
         wl = abvd.Wordlist(dataset, xml, SECTION)

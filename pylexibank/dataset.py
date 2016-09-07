@@ -89,7 +89,7 @@ class Dataset(object):
         return cls(data_path(name))
 
     @cached_property()
-    def glottolog_languoids_by_iso(self):
+    def glottocode_by_iso(self):
         return {l.iso_code: l.id for l in self.glottolog_languoids.values() if l.iso_code}
 
     def iter_cldf_metadata(self):
