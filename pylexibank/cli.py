@@ -148,7 +148,7 @@ def cldf(args):
     languoids = {l.id: l for l in Glottolog(args.glottolog_repos).languoids()}
 
     def _cldf(ds, **kw):
-        ds.languoids = languoids
+        ds.glottolog_languoids = languoids
         ds.cldf(**kw)
         ds.write_cognates()
 
