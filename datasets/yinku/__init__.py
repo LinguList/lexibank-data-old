@@ -22,7 +22,7 @@ def download(dataset, **kw):
     download_and_unpack_zipfiles(URL, dataset, PATH.joinpath(DSET))
 
 
-def cldf(dataset, glottolog, concepticon, **kw):
+def cldf(dataset, concepticon, **kw):
     """
     Implements the conversion of the raw data to CLDF dataset(s).
 

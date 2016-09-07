@@ -10,7 +10,7 @@ def download(dataset):
     clld.download(dataset, __name__)
 
 
-def cldf(dataset, glottolog, concepticon, **kw):
+def cldf(dataset, concepticon, **kw):
     concept_map = {cs['GLOSS']: cs['ID'] for cs in concepticon.conceptsets()}
     for concept in dataset.concepts:
         concept_map[concept['GLOSS']] = concept['CONCEPTICON_ID']

@@ -12,14 +12,14 @@ def download(dataset, **kw):
     abvd.download(dataset, SECTION)
 
 
-def cldf(dataset, glottolog, concepticon, **kw):
+def cldf(dataset, concepticon, **kw):
     concept_map = {
         c['URL'].split('v=')[1]: c['CONCEPTICON_ID']
         for c in concepticon.conceptlist(dataset.conceptlist)}
     for c in dataset.concepts:
         concept_map[c['ID']] = c['CONCEPTICON_ID'] or None
 
-    gl_map = {l.iso_code: l.id for l in glottolog.languoids() if l.iso_code}
+    gl_map = dataset.glottocode_by_iso
     wordlists = []
     for xml in dataset.raw.glob('*.xml'):
         wl = abvd.Wordlist(dataset, xml, SECTION)
@@ -28,7 +28,8 @@ def cldf(dataset, glottolog, concepticon, **kw):
                 wl.language.glottocode = gl_map[wl.language.iso]
         if not wl.language.glottocode:
             dataset.log.warn(
-                'no glottocode for language %s, iso-code %s' % (wl.language.name, wl.language.iso))
+                'no glottocode for language %s, iso-code %s' % (
+                    wl.language.name, wl.language.iso))
         wordlists.append(wl)
 
     sources = {}

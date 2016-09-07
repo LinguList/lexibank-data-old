@@ -82,7 +82,7 @@ LANGUAGE_ID_FIXES = {
 }
 
 
-def cldf(dataset, glottolog, concepticon, **kw):
+def cldf(dataset, concepticon, **kw):
     concepticon = {
         c['ENGLISH']: c['CONCEPTICON_ID']
         for c in concepticon.conceptlist(dataset.conceptlist)}

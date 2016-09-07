@@ -30,7 +30,7 @@ def iterforms(s):
         yield i + 1, form.strip().replace('\xad', '')
 
 
-def cldf(dataset, glottolog, concepticon, **kw):
+def cldf(dataset, concepticon, **kw):
     concepticon = {
         c['ENGLISH']: c['CONCEPTICON_ID']
         for c in concepticon.conceptlist(dataset.conceptlist)}

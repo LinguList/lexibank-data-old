@@ -4,16 +4,16 @@ import logging
 import re
 from importlib import import_module
 from collections import defaultdict, Counter
-from itertools import chain
 
 from clldutils import jsonlib
 from clldutils.dsv import reader
-from clldutils.misc import UnicodeMixin
+from clldutils.misc import UnicodeMixin, cached_property
 from pyglottolog.api import Glottolog
 from pyconcepticon.api import Concepticon
 from pycldf import csv
 from pycldf.dataset import Dataset as CldfDatasetBase
 from pycldf.dataset import MD_SUFFIX
+from pycldf.metadata import Metadata as CldfMetadataBase
 from tqdm import tqdm
 
 import pylexibank
@@ -46,6 +46,13 @@ def synonymy_index(cldfds):
         set(synonyms.keys()))
 
 
+class Metadata(CldfMetadataBase):
+    @property
+    def notes(self):
+        return {o['dc:title']: o.get('properties', {})
+                for o in self.get_table().get('notes', [])}
+
+
 class Dataset(object):
     def __init__(self, path):
         self.id = path.name
@@ -75,14 +82,19 @@ class Dataset(object):
         if cpath.exists():
             self.concepts = list(reader(cpath, dicts=True))
         self.cognates = Cognates()
+        self.glottolog_languoids = {}
 
     @classmethod
     def from_name(cls, name):
         return cls(data_path(name))
 
-    @property
-    def count_cldf_datasets(self):
-        return len(list(self.cldf_dir.glob('*' + MD_SUFFIX)))
+    @cached_property()
+    def glottocode_by_iso(self):
+        return {l.iso_code: l.id for l in self.glottolog_languoids.values() if l.iso_code}
+
+    def iter_cldf_metadata(self):
+        for fname in sorted(self.cldf_dir.glob('*' + MD_SUFFIX), key=lambda f: f.name):
+            yield Metadata.from_file(fname)
 
     def iter_cldf_datasets(self):
         for fname in sorted(self.cldf_dir.glob('*' + MD_SUFFIX), key=lambda f: f.name):
@@ -102,12 +114,7 @@ class Dataset(object):
             getattr(self.commands, name)(self, *args, **kw)
 
     def cldf(self, **kw):
-        # fixme: we need a lexeme count across cldf datasets available after this has run!
-        self._run_command(
-            'cldf',
-            Glottolog(kw.pop('glottolog_repos')),
-            Concepticon(kw.pop('concepticon_repos')),
-            **kw)
+        self._run_command('cldf', Concepticon(kw.pop('concepticon_repos')), **kw)
 
     def download(self, **kw):
         self._run_command('download', **kw)
@@ -344,6 +351,22 @@ class CldfDataset(CldfDatasetBase):
         self.table.schema.columns['Language_ID'].valueUrl = \
             'http://glottolog.org/resource/languoid/id/{Language_ID}'
         self.metadata['tables'].append(Cognates.table)
+        macroareas = set()
+        for row in self.rows:
+            if row['Language_ID'] in self.dataset.glottolog_languoids:
+                for ma in self.dataset.glottolog_languoids[row['Language_ID']].macroareas:
+                    macroareas.add(ma)
+        stats = {
+            'dc:title': 'stats',
+            'properties': {
+                'lexeme_count': len(self.rows),
+                'macroareas': list(macroareas),
+            }
+        }
+        if 'notes' in self.table:
+            self.table['notes'].append(stats)
+        else:
+            self.table['notes'] = [stats]
         super(CldfDataset, self).write(**kw)
 
 

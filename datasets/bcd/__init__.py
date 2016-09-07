@@ -21,11 +21,11 @@ def download(dataset, **kw):
         URL, dataset, *[PATH.joinpath(DSET), PATH.joinpath('old_chinese.csv')])
 
 
-def cldf(dataset, glottolog, concepticon, **kw):
+def cldf(dataset, concepticon, **kw):
     wl = lp.Wordlist(dataset.dir.joinpath('raw', DSET).as_posix())
     gcode = {x['NAME']: x['GLOTTOCODE'] for x in dataset.languages}
     ccode = {x['ENGLISH']: x['CONCEPTICON_ID'] for x in
-            concepticon.conceptlist(dataset.conceptlist)}
+             concepticon.conceptlist(dataset.conceptlist)}
     src = getEvoBibAsSource(SOURCE)
     src2 = getEvoBibAsSource('List2015d')
 

@@ -32,7 +32,7 @@ def download(dataset, **kw):
         *[PATH.joinpath('phonalign_{0}.msa'.format(i)) for i in range(369, 480)])
 
 
-def cldf(dataset, glottobank, concepticon, **kw):
+def cldf(dataset, concepticon, **kw):
     concepts = {x['GLOSS']: x['CONCEPTICON_ID'] for x in dataset.concepts}
     D = {}  # dictionary to be passed to lingpy
     D[0] = ['doculect', 'glottolog', 'concept', 'concepticon', 'ipa', 'segments', 'cogid', 'alignment']

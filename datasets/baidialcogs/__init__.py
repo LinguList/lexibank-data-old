@@ -11,9 +11,9 @@ def download(dataset):
     pass
 
 
-def cldf(dataset, glottolog, concepticon, **kw):
+def cldf(dataset, concepticon, **kw):
     orig_ds = Dataset.from_name('baidial')
-    orig_ds.commands.cldf(dataset, glottolog, concepticon, **kw)
+    orig_ds.commands.cldf(dataset, concepticon, **kw)
 
     for cldfds in dataset.iter_cldf_datasets():
         for attr in ['dc:isVersionOf', 'dc:provenance']:
