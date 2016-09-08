@@ -20,7 +20,7 @@ from textwrap import wrap
 from clldutils.clilib import ArgumentParser, ParserError
 from clldutils.path import Path
 from clldutils import jsonlib
-from tabulate import tabulate
+from clldutils import licenses
 from pyglottolog.api import Glottolog
 
 import pylexibank
@@ -97,7 +97,8 @@ def ls(args):
             row = [d.name, short_title(ds.md['dc:title'], l=tl)]
             for col in cols:
                 if col == 'license':
-                    row.append(ds.md.get('dc:license'))
+                    lic = licenses.find(ds.md.get('dc:license') or '')
+                    row.append(lic.id if lic else ds.md.get('dc:license'))
                 elif col in ['lexemes', 'macroareas']:
                     mds = list(ds.iter_cldf_metadata())
                     if col == 'lexemes':

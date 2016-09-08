@@ -7,7 +7,7 @@
     ],
     "dc:title": "Dataset of Huber and Reed's \"Comparative Vocabulary\"",
     "dc:bibliographicCitation": "Cysouw, M. and Prokić, J. and Bouda, P. and Moran, S. (2012): Dataset of Huber and Reed's \"Comparative Vocabulary\". Marburg: Philipps-University Marburg.",
-    "dc:license": "https://www.gnu.org/licenses/gpl-3.0.de.html",
+    "dc:license": "GPL-3.0",
     "dc:identifier": "https://gist.github.com/LinguList/7481097",
     "dc:conformsTo": "http://concepticon.clld.org/contributions/Huber-1992-374"
 }

@@ -7,7 +7,7 @@ requires = [
     'openpyxl',
     'beautifulsoup4>=4.4.1',
     'requests',
-    'clldutils>=1.0.1',
+    'clldutils>=1.3.0',
     'nameparser',
     'purl',
     'pyglottolog',
