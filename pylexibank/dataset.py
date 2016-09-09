@@ -8,7 +8,6 @@ from collections import defaultdict, Counter
 from clldutils import jsonlib
 from clldutils.dsv import reader
 from clldutils.misc import UnicodeMixin, cached_property
-from pyglottolog.api import Glottolog
 from pyconcepticon.api import Concepticon
 from pycldf import csv
 from pycldf.dataset import Dataset as CldfDatasetBase
@@ -47,6 +46,11 @@ def synonymy_index(cldfds):
 
 
 class Metadata(CldfMetadataBase):
+    """
+    Augmented CLDF metadata object, with support for notes on the values table.
+
+    .. seealso:: https://www.w3.org/TR/tabular-metadata/#table-notes
+    """
     @property
     def notes(self):
         return {o['dc:title']: o.get('properties', {})
@@ -54,7 +58,19 @@ class Metadata(CldfMetadataBase):
 
 
 class Dataset(object):
+    """
+    A lexibank dataset.
+
+    This object provides access to a dataset's
+    - python module as attribute `commands`
+    - language list as attribute `languages`
+    - concept list as attribute `concepts`
+    - concepticon concept-list ID as attribute `conceptlist`
+    """
     def __init__(self, path):
+        """
+        A dataset is initialzed passing its directory path.
+        """
         self.id = path.name
         self.log = logging.getLogger(pylexibank.__name__)
         self.dir = path
@@ -86,19 +102,35 @@ class Dataset(object):
 
     @classmethod
     def from_name(cls, name):
+        """
+        Factory method, looking up a dataset by name in the default data directory.
+        """
         return cls(data_path(name))
 
     @cached_property()
     def glottocode_by_iso(self):
+        """
+        :return: A dict mapping ISO-639-3 codes to corresponding Glottocodes.
+
+        .. note:: This property is only valid within the `cldf` method.
+        """
         return {l.iso_code: l.id for l in self.glottolog_languoids.values() if l.iso_code}
 
-    def iter_cldf_metadata(self):
+    def _iter_cldf(self, factory):
         for fname in sorted(self.cldf_dir.glob('*' + MD_SUFFIX), key=lambda f: f.name):
-            yield Metadata.from_file(fname)
+            yield factory(fname)
+
+    def iter_cldf_metadata(self):
+        """
+        :return: A generator yielding CLDF metadata objects.
+        """
+        return self._iter_cldf(Metadata.from_file)
 
     def iter_cldf_datasets(self):
-        for fname in sorted(self.cldf_dir.glob('*' + MD_SUFFIX), key=lambda f: f.name):
-            yield CldfDatasetBase.from_metadata(fname)
+        """
+        :return: A generator yielding CLDF datasets.
+        """
+        return self._iter_cldf(CldfDatasetBase.from_metadata)
 
     def write_cognates(self):
         self.cognates.write(self.cldf_dir)
@@ -108,6 +140,14 @@ class Dataset(object):
         return len(cognates), len(set(r['Cognate_set_ID'] for r in cognates))
 
     def _run_command(self, name, *args, **kw):
+        """
+        Call a callable defined in the dataset's python module, if available.
+
+        :param name: Name of the callable.
+        :param args: Positional arguments are passed to the callable.
+        :param kw: Keyword arguments are passed to the callable.
+        :return:
+        """
         if not hasattr(self.commands, name):
             self.log.warn('command "%s" not available for dataset %s' % (name, self.id))
         else:

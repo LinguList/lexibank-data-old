@@ -24,7 +24,7 @@ from clldutils import licenses
 from pyglottolog.api import Glottolog
 
 import pylexibank
-from pylexibank.util import data_path, formatted_number, MarkdownTable
+from pylexibank.util import data_path, MarkdownTable
 from pylexibank.dataset import Dataset, synonymy_index, TranscriptionReport
 
 
@@ -287,8 +287,7 @@ def _readme(ds, **kw):
         '- **Concepts:** {0:,}'.format(len(totals[1])),
         '- **Lexemes:** {0:,}'.format(totals[2]),
         '- **Synonymy:** %.2f' % (totals[3][0] / totals[3][1]),
-        '- **Cognacy:** %s cognates in %s cognate sets' % tuple(
-            map(formatted_number, ds.cognate_stats())),
+        '- **Cognacy:** {0:,} cognates in {1:,} cognate sets'.format(*ds.cognate_stats()),
         '- **Invalid lexemes:** {0:,}'.format(stats['invalid']),
         '- **Tokens:** {0:,}'.format(stats['tokens']),
         '- **Segments:** {0:,} ({1} LingPy errors, {2} CLPA errors, {3} CLPA modified)'
@@ -305,9 +304,6 @@ def _readme(ds, **kw):
     with ds.dir.joinpath('README.md').open('w', encoding='utf8') as fp:
         fp.write('\n'.join(lines + trlines))
     print(ds.dir.joinpath('README.md'))
-
-    with ds.dir.joinpath('TRANSCRIPTION.md').open('w', encoding='utf8') as fp:
-        fp.write(tr.detailed_report(**kw))
 
 
 def check(args):

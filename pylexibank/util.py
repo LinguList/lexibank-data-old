@@ -87,15 +87,6 @@ def split(s, sep=',;', exclude_contexts=None):
         yield token.strip(), context.strip() or None
 
 
-def formatted_number(n):
-    if isinstance(n, set):
-        n = len(n)
-    s = '%s' % n
-    sr = list(reversed(s))
-    return ''.join(reversed(
-        ','.join([''.join(sr[i:i + 3]) for i in range(0, len(sr), 3)])))
-
-
 @contextmanager
 def with_temp_dir():
     tmpdir = Path(mkdtemp())
