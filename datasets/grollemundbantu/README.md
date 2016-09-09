@@ -4,8 +4,6 @@ Cite the source dataset as
 
 > Grollemund et al. 2015. Bantu expansion shows that habitat alters the route and pace of human dispersals
 
-This dataset is licensed under a none license
-
 Available online at http://www.evolution.reading.ac.uk/DataSets.html
 
 ## Statistics

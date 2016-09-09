@@ -13,10 +13,10 @@ Available online at https://zenodo.org/record/51328/files/partial-cognate-detect
 
 - **Varieties:** 32
 - **Concepts:** 236
-- **Lexemes:** 10,388
+- **Lexemes:** 5,194
 - **Synonymy:** 1.06
 - **Cognacy:** 4,263 cognates in 756 cognate sets
 - **Invalid lexemes:** 0
-- **Tokens:** 57,278
+- **Tokens:** 28,639
 - **Segments:** 147 (0 LingPy errors, 0 CLPA errors, 0 CLPA modified)
 - **Inventory size (avg):** 43.41

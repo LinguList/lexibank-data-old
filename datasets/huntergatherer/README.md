@@ -11,10 +11,10 @@ Available online at https://huntergatherer.la.utexas.edu/
 
 - **Varieties:** 239
 - **Concepts:** 185
-- **Lexemes:** 151,194
+- **Lexemes:** 75,597
 - **Synonymy:** 1.20
 - **Cognacy:** 0 cognates in 0 cognate sets
 - **Invalid lexemes:** 214
-- **Tokens:** 902,716
+- **Tokens:** 451,358
 - **Segments:** 1,464 (677 LingPy errors, 1158 CLPA errors, 168 CLPA modified)
 - **Inventory size (avg):** 54.39

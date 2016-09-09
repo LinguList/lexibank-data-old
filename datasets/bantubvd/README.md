@@ -13,10 +13,10 @@ Available online at http://language.psy.auckland.ac.nz/bantu/
 
 - **Varieties:** 10
 - **Concepts:** 416
-- **Lexemes:** 8,512
+- **Lexemes:** 4,256
 - **Synonymy:** 1.10
 - **Cognacy:** 0 cognates in 0 cognate sets
 - **Invalid lexemes:** 0
-- **Tokens:** 36,040
+- **Tokens:** 18,020
 - **Segments:** 200 (13 LingPy errors, 120 CLPA errors, 31 CLPA modified)
 - **Inventory size (avg):** 67.90

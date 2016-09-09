@@ -7,14 +7,14 @@ Cite the source dataset as
 See also http://rspb.royalsocietypublishing.org/content/early/2009/04/27/rspb.2009.0408
 
 ## Statistics
-![Glottolog: 89%](https://img.shields.io/badge/Glottolog-89%25-yellowgreen.svg "Glottolog: 89%") ![Concepticon: 100%](https://img.shields.io/badge/Concepticon-100%25-brightgreen.svg "Concepticon: 100%") ![Source: 0%](https://img.shields.io/badge/Source-0%25-red.svg "Source: 0%") ![LingPy: 91%](https://img.shields.io/badge/LingPy-91%25-green.svg "LingPy: 91%") ![CLPA: 57%](https://img.shields.io/badge/CLPA-57%25-red.svg "CLPA: 57%")
+![Glottolog: 89%](https://img.shields.io/badge/Glottolog-89%25-yellowgreen.svg "Glottolog: 89%") ![Concepticon: 100%](https://img.shields.io/badge/Concepticon-100%25-brightgreen.svg "Concepticon: 100%") ![Source: 0%](https://img.shields.io/badge/Source-0%25-red.svg "Source: 0%") ![LingPy: 95%](https://img.shields.io/badge/LingPy-95%25-green.svg "LingPy: 95%") ![CLPA: 41%](https://img.shields.io/badge/CLPA-41%25-red.svg "CLPA: 41%")
 
 - **Varieties:** 25
 - **Concepts:** 95
-- **Lexemes:** 4,484
+- **Lexemes:** 2,242
 - **Synonymy:** 1.00
 - **Cognacy:** 1,731 cognates in 322 cognate sets
 - **Invalid lexemes:** 0
-- **Tokens:** 19,888
-- **Segments:** 190 (18 LingPy errors, 82 CLPA errors, 37 CLPA modified)
-- **Inventory size (avg):** 43.16
+- **Tokens:** 9,609
+- **Segments:** 273 (13 LingPy errors, 162 CLPA errors, 37 CLPA modified)
+- **Inventory size (avg):** 47.12

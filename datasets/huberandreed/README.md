@@ -4,7 +4,7 @@ Cite the source dataset as
 
 > Cysouw, M. and Prokić, J. and Bouda, P. and Moran, S. (2012): Dataset of Huber and Reed's "Comparative Vocabulary". Marburg: Philipps-University Marburg.
 
-This dataset is licensed under a https://www.gnu.org/licenses/gpl-3.0.de.html license
+This dataset is licensed under a GPL-3.0 license
 
 Available online at https://gist.github.com/LinguList/7481097
 
@@ -13,10 +13,10 @@ Available online at https://gist.github.com/LinguList/7481097
 
 - **Varieties:** 71
 - **Concepts:** 349
-- **Lexemes:** 55,042
+- **Lexemes:** 27,521
 - **Synonymy:** 1.19
 - **Cognacy:** 0 cognates in 0 cognate sets
 - **Invalid lexemes:** 0
-- **Tokens:** 322,874
+- **Tokens:** 161,437
 - **Segments:** 342 (17 LingPy errors, 192 CLPA errors, 54 CLPA modified)
 - **Inventory size (avg):** 49.31

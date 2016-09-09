@@ -9,7 +9,7 @@ This dataset is licensed under a https://creativecommons.org/licenses/by-nc/4.0/
 Available online at https://zenodo.org/record/11880/files/germanic.zip
 
 ## Statistics
-![Glottolog: 100%](https://img.shields.io/badge/Glottolog-100%25-brightgreen.svg "Glottolog: 100%") ![Concepticon: 98%](https://img.shields.io/badge/Concepticon-98%25-green.svg "Concepticon: 98%") ![Source: 100%](https://img.shields.io/badge/Source-100%25-brightgreen.svg "Source: 100%") ![LingPy: 100%](https://img.shields.io/badge/LingPy-100%25-brightgreen.svg "LingPy: 100%") ![CLPA: 91%](https://img.shields.io/badge/CLPA-91%25-green.svg "CLPA: 91%")
+![Glottolog: 100%](https://img.shields.io/badge/Glottolog-100%25-brightgreen.svg "Glottolog: 100%") ![Concepticon: 98%](https://img.shields.io/badge/Concepticon-98%25-green.svg "Concepticon: 98%") ![Source: 100%](https://img.shields.io/badge/Source-100%25-brightgreen.svg "Source: 100%") ![LingPy: 100%](https://img.shields.io/badge/LingPy-100%25-brightgreen.svg "LingPy: 100%") ![CLPA: 66%](https://img.shields.io/badge/CLPA-66%25-orange.svg "CLPA: 66%")
 
 - **Varieties:** 9
 - **Concepts:** 108
@@ -17,6 +17,6 @@ Available online at https://zenodo.org/record/11880/files/germanic.zip
 - **Synonymy:** 1.01
 - **Cognacy:** 969 cognates in 111 cognate sets
 - **Invalid lexemes:** 0
-- **Tokens:** 3,658
-- **Segments:** 116 (0 LingPy errors, 11 CLPA errors, 5 CLPA modified)
-- **Inventory size (avg):** 50.33
+- **Tokens:** 3,387
+- **Segments:** 178 (0 LingPy errors, 60 CLPA errors, 7 CLPA modified)
+- **Inventory size (avg):** 58.00

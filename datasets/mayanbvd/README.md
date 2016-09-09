@@ -13,10 +13,10 @@ Available online at https://abvd.shh.mpg.de/mayan/
 
 - **Varieties:** 37
 - **Concepts:** 730
-- **Lexemes:** 99,038
+- **Lexemes:** 49,519
 - **Synonymy:** 2.51
 - **Cognacy:** 22,705 cognates in 1,857 cognate sets
 - **Invalid lexemes:** 0
-- **Tokens:** 477,284
+- **Tokens:** 238,642
 - **Segments:** 187 (45 LingPy errors, 124 CLPA errors, 29 CLPA modified)
 - **Inventory size (avg):** 55.59
