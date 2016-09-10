@@ -10,12 +10,12 @@ This dataset is licensed under a CC-BY-4.0 license
 Available online at https://figshare.com/articles/A_Central_Asian_Language_Survey/3443090/1
 
 ## Statistics
-![Glottolog: 100%](https://img.shields.io/badge/Glottolog-100%25-brightgreen.svg "Glottolog: 100%") ![Concepticon: 0%](https://img.shields.io/badge/Concepticon-0%25-red.svg "Concepticon: 0%") ![Source: 0%](https://img.shields.io/badge/Source-0%25-red.svg "Source: 0%") ![LingPy: 95%](https://img.shields.io/badge/LingPy-95%25-green.svg "LingPy: 95%") ![CLPA: 57%](https://img.shields.io/badge/CLPA-57%25-red.svg "CLPA: 57%")
+![Glottolog: 100%](https://img.shields.io/badge/Glottolog-100%25-brightgreen.svg "Glottolog: 100%") ![Concepticon: 90%](https://img.shields.io/badge/Concepticon-90%25-green.svg "Concepticon: 90%") ![Source: 0%](https://img.shields.io/badge/Source-0%25-red.svg "Source: 0%") ![LingPy: 95%](https://img.shields.io/badge/LingPy-95%25-green.svg "LingPy: 95%") ![CLPA: 57%](https://img.shields.io/badge/CLPA-57%25-red.svg "CLPA: 57%")
 
-- **Varieties:** 0
-- **Concepts:** 1
+- **Varieties:** 88
+- **Concepts:** 166
 - **Lexemes:** 15,742
-- **Synonymy:** 0.00
+- **Synonymy:** 1.00
 - **Cognacy:** 15,564 cognates in 715 cognate sets
 - **Invalid lexemes:** 0
 - **Tokens:** 69,233

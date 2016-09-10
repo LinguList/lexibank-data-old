@@ -1,4 +1,7 @@
 # coding=utf-8
+"""
+Note: We run libreoffice to convert from doc to docx after download.
+"""
 from __future__ import unicode_literals, print_function
 from subprocess import check_call
 import re
@@ -35,18 +38,17 @@ def text_and_color(cell):
 
 
 def download(dataset, **kw):
-    def rpath(*names):
+    def rp(*names):
         return dataset.raw.joinpath(*names).as_posix()
 
     download_and_unpack_zipfiles(URL, dataset, FNAME)
     check_call(
-        'libreoffice --headless --convert-to docx %s --outdir %s'
-        % (rpath(FNAME), rpath()),
+        'libreoffice --headless --convert-to docx %s --outdir %s' % (rp(FNAME), rp()),
         shell=True)
 
-    doc = Document(rpath(Path(FNAME).stem + '.docx'))
+    doc = Document(rp(Path(FNAME).stem + '.docx'))
     for i, table in enumerate(doc.tables):
-        with UnicodeWriter(rpath('%s.csv' % (i + 1,))) as writer:
+        with UnicodeWriter(rp('%s.csv' % (i + 1,))) as writer:
             for row in table.rows:
                 writer.writerow(map(text_and_color, row.cells))
 
@@ -75,6 +77,8 @@ def read_csv(fname, data):
 
 def cldf(dataset, concepticon, **kw):
     gcode = {x['ID']: x['GLOTTOCODE'] for x in dataset.languages}
+    ccode = {x['ENGLISH']: x['CONCEPTICON_ID'] for x in
+             concepticon.conceptlist(dataset.conceptlist)}
     data = defaultdict(dict)
     for fname in dataset.raw.glob('*.csv'):
         read_csv(fname, data)
@@ -93,11 +97,18 @@ def cldf(dataset, concepticon, **kw):
         for doculect, wl in data.items():
             for concept, (form, loan, cogset) in wl.items():
                 wid = '%s-%s' % (slug(doculect), slug(concept))
+                if concept in ccode:
+                    csid = ccode[concept]
+                elif concept.startswith('to ') and concept[3:] in ccode:
+                    csid = ccode[concept[3:]]
+                else:
+                    csid = None
+
                 ds.add_row([
                     wid,
                     gcode[doculect.split('-')[0]],
                     doculect,
-                    '',
+                    csid,
                     concept,
                     form,
                     '',
