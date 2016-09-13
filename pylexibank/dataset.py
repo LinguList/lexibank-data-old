@@ -156,6 +156,18 @@ class Dataset(object):
     def cldf(self, **kw):
         self._run_command('cldf', Concepticon(kw.pop('concepticon_repos')), **kw)
 
+    def word_length(self, res):
+        for cldfds in self.iter_cldf_datasets():
+            for row in cldfds.rows:
+                if row['Parameter_ID'] and row['Language_ID'] and row.get('Segments'):
+                    res[row['Parameter_ID']][(row['Language_ID'], get_variety_id(row))].append(row['Segments'])
+
+    def coverage(self, vars):
+        for cldfds in self.iter_cldf_datasets():
+            for row in cldfds.rows:
+                if row['Parameter_ID']:
+                    vars[get_variety_id(row)].add(int(row['Parameter_ID']))
+
     def download(self, **kw):
         self._run_command('download', **kw)
 
