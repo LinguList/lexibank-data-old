@@ -1,0 +1,12 @@
+{
+    "@context": [
+        "http://www.w3.org/ns/csvw",
+        {
+            "@language": "en"
+        }
+    ],
+    "dc:title": "COMPARATIVE INDOEUROPEAN DATABASE COLLECTED BY ISIDORE DYEN",
+    "dc:bibliographicCitation": "Isidore Dyen, Joseph Kruskal, and Paul Black",
+    "dc:license": null,
+    "dc:conformsTo": "http://concepticon.clld.org/contributions/Dyen-1992-200"
+}
