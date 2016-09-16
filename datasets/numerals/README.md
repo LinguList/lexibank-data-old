@@ -11,10 +11,10 @@ Available online at https://mpi-lingweb.shh.mpg.de/numeral/
 
 - **Varieties:** 3,884
 - **Concepts:** 33
-- **Lexemes:** 292,534
+- **Lexemes:** 146,267
 - **Synonymy:** 1.15
 - **Cognacy:** 0 cognates in 0 cognate sets
 - **Invalid lexemes:** 253
-- **Tokens:** 2,919,118
+- **Tokens:** 1,459,559
 - **Segments:** 2,830 (227 LingPy errors, 2095 CLPA errors, 278 CLPA modified)
 - **Inventory size (avg):** 24.72

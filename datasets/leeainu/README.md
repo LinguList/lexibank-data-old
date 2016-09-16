@@ -14,7 +14,7 @@ This dataset is licensed under a https://creativecommons.org/licenses/by-nc/4.0/
 - **Lexemes:** 3,973
 - **Synonymy:** 1.06
 - **Cognacy:** 3,717 cognates in 305 cognate sets
-- **Invalid lexemes:** 6
-- **Tokens:** 18,846
+- **Invalid lexemes:** 0
+- **Tokens:** 18,901
 - **Segments:** 53 (5 LingPy errors, 25 CLPA errors, 7 CLPA modified)
 - **Inventory size (avg):** 31.21

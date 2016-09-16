@@ -16,7 +16,7 @@ Available online at http://language.psy.auckland.ac.nz/austronesian/
 - **Lexemes:** 266,128
 - **Synonymy:** 1.14
 - **Cognacy:** 191,597 cognates in 14,854 cognate sets
-- **Invalid lexemes:** 10
+- **Invalid lexemes:** 1
 - **Tokens:** 1,346,295
 - **Segments:** 1,577 (344 LingPy errors, 1141 CLPA errors, 184 CLPA modified)
 - **Inventory size (avg):** 36.53

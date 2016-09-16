@@ -5,9 +5,10 @@ requires = [
     # list required third-party packages here
     'pycldf>=0.6.2',
     'openpyxl',
+    'python-docx',
     'beautifulsoup4>=4.4.1',
     'requests',
-    'clldutils>=1.0.1',
+    'clldutils>=1.3.0',
     'nameparser',
     'purl',
     'pyglottolog',

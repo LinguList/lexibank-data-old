@@ -1,4 +1,4 @@
-# BCD
+# Basic Words in Chinese Dialects
 
 Cite the source dataset as
 

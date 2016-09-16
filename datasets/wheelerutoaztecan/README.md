@@ -11,10 +11,10 @@ Available online at http://onlinelibrary.wiley.com/doi/10.1111/cla.12078/suppinf
 
 - **Varieties:** 40
 - **Concepts:** 101
-- **Lexemes:** 9,456
+- **Lexemes:** 4,728
 - **Synonymy:** 1.26
 - **Cognacy:** 3,740 cognates in 830 cognate sets
 - **Invalid lexemes:** 0
-- **Tokens:** 44,874
+- **Tokens:** 22,437
 - **Segments:** 240 (7 LingPy errors, 160 CLPA errors, 21 CLPA modified)
 - **Inventory size (avg):** 39.70

@@ -549,1583 +549,1583 @@
 ## Words
 
 | ID | LANGUAGE | CONCEPT | VALUE | SEGMENTS |
-|:---------|-----------:|:--------------------|:-------------------|:-------------------------------------------------------------------|
-| BAI-1 | | all | ʦʰæ₂₂ja₄₂ | ʦʰ æ <s> ₂₂ </s> j a <s> ₄₂ </s> |
-| BAI-2 | | all | da₄₂t͡ʂɚ₂₂ | d a <s> ₄₂ </s> t͡ʂ ɚ <s> ₂₂ </s> |
-| BAI-3 | | all | so₂₁ji₂₁ | s o <s> ₂₁ </s> j i <s> ₂₁ </s> |
-| BAI-4 | | all | ʨwan₄₂pu₅₅ | ʨ w a n <s> ₄₂ </s> p u <s> ₅₅ </s> |
-| BAI-5 | | all | ji₃₁su₃₃ | j i <s> ₃₁ </s> s u <s> ₃₃ </s> |
-| BAI-6 | | all | ʦa₃₅kɑ₂₁ʦi₃₃ | ʦ a <s> ₃₅ </s> k ɑ <s> ₂₁ </s> ʦ i <s> ₃₃ </s> |
-| BAI-7 | | all | ʨʰa₅₅ | ʨʰ a <s> ₅₅ </s> |
-| BAI-8 | | all | ʨa₂₄ʁo₂₁ʦi₂₂ | ʨ a <s> ₂₄ </s> ʁ o <s> ₂₁ </s> ʦ i <s> ₂₂ </s> |
-| BAI-9 | | all | da₅₅ŋwa₂₂ | d a <s> ₅₅ </s> ŋ w a <s> ₂₂ </s> |
-| BAI-10 | | ashes | xwɛ₂₂ɕy₅₅ʁwa₁₂ | x w ɛ <s> ₂₂ </s> ɕ y <s> ₅₅ </s> ʁ w a <s> ₁₂ </s> |
-| BAI-11 | | ashes | kʰwa₅₅la₂₁ɕu₅₅ | kʰ w a <s> ₅₅ </s> l a <s> ₂₁ </s> ɕ u <s> ₅₅ </s> |
-| BAI-12 | | ashes | xwa₃₁la₄₄su₅₅ | x w a <s> ₃₁ </s> l a <s> ₄₄ </s> s u <s> ₅₅ </s> |
-| BAI-13 | | ashes | su₅₅ | s u <s> ₅₅ </s> |
-| BAI-14 | | ashes | su₅₅ | s u <s> ₅₅ </s> |
-| BAI-15 | | ashes | ʂɤ₅₅ | ʂ ɤ <s> ₅₅ </s> |
-| BAI-16 | | ashes | xwi₂₂ɕu₂₄ | x w i <s> ₂₂ </s> ɕ u <s> ₂₄ </s> |
-| BAI-17 | | ashes | xwa₅₅lo₂₁ɕu₅₅ | x w a <s> ₅₅ </s> l o <s> ₂₁ </s> ɕ u <s> ₅₅ </s> |
-| BAI-18 | | bark | d͡ʐi₁₂bi₂₁ | d͡ʐ i <s> ₁₂ </s> b i <s> ₂₁ </s> |
-| BAI-19 | | bark | ɕen₅₅pe₂₁ | ɕ e n <s> ₅₅ </s> p e <s> ₂₁ </s> |
-| BAI-20 | | bark | t͡ʂɯ₂₁pe₂₁ | t͡ʂ ɯ <s> ₂₁ </s> p e <s> ₂₁ </s> |
-| BAI-21 | | bark | ʦɯ₃₁pe₂₁ | ʦ ɯ <s> ₃₁ </s> p e <s> ₂₁ </s> |
-| BAI-22 | | bark | ʦɯ₃₁pe₂₁ | ʦ ɯ <s> ₃₁ </s> p e <s> ₂₁ </s> |
-| BAI-23 | | bark | djɯ₂₁bi₃₅ | d j ɯ <s> ₂₁ </s> b i <s> ₃₅ </s> |
-| BAI-24 | | bark | djɯ₄₃pi₂₁ | d j ɯ <s> ₄₃ </s> p i <s> ₂₁ </s> |
-| BAI-25 | | bark | ʥi₄₂ʨyj₂₁qa₅₅ | ʥ i <s> ₄₂ </s> ʨ y j <s> ₂₁ </s> q a <s> ₅₅ </s> |
-| BAI-26 | | belly | ʐi₂₁ | ʐ i <s> ₂₁ </s> |
-| BAI-27 | | belly | ʐɚ₄₂ | ʐ ɚ <s> ₄₂ </s> |
-| BAI-28 | | belly | pɯ₄₄ | p ɯ <s> ₄₄ </s> |
-| BAI-29 | | belly | fo₄₄ | f o <s> ₄₄ </s> |
-| BAI-30 | | belly | fɤ₄₄ | f ɤ <s> ₄₄ </s> |
-| BAI-31 | | belly | fɤ₄₄ | f ɤ <s> ₄₄ </s> |
-| BAI-32 | | belly | fɚ₄₂ | f ɚ <s> ₄₂ </s> |
-| BAI-33 | | belly | fo₂₄ | f o <s> ₂₄ </s> |
-| BAI-34 | | belly | xu₄₄qʰo₂₂ | x u <s> ₄₄ </s> qʰ o <s> ₂₂ </s> |
-| BAI-35 | | big | da₄₂ | d a <s> ₄₂ </s> |
-| BAI-36 | | big | do₄₂ | d o <s> ₄₂ </s> |
-| BAI-37 | | big | do₄₂ | d o <s> ₄₂ </s> |
-| BAI-38 | | big | tow₄₂ | t o w <s> ₄₂ </s> |
-| BAI-39 | | big | to₄₂ | t o <s> ₄₂ </s> |
-| BAI-40 | | big | tow₄₂ | t o w <s> ₄₂ </s> |
-| BAI-41 | | big | dɔ₂₁ | d ɔ <s> ₂₁ </s> |
-| BAI-42 | | big | da₄₃ | d a <s> ₄₃ </s> |
-| BAI-43 | | big | do₄₂ | d o <s> ₄₂ </s> |
-| BAI-44 | | bird | ʦu₂₄ | ʦ u <s> ₂₄ </s> |
-| BAI-45 | | bird | ʦo₅₅ | ʦ o <s> ₅₅ </s> |
-| BAI-46 | | bird | ʦo₄₄ | ʦ o <s> ₄₄ </s> |
-| BAI-47 | | bird | ʦow₃₃ | ʦ o w <s> ₃₃ </s> |
-| BAI-48 | | bird | ʦow₄₄ | ʦ o w <s> ₄₄ </s> |
-| BAI-49 | | bird | ʦow₄₄ | ʦ o w <s> ₄₄ </s> |
-| BAI-50 | | bird | ʦu₄₂ | ʦ u <s> ₄₂ </s> |
-| BAI-51 | | bird | ʦu₅₅ | ʦ u <s> ₅₅ </s> |
-| BAI-52 | | bird | ʦu₄₄ | ʦ u <s> ₄₄ </s> |
-| BAI-53 | | bite (V) | ŋa₂₄ | ŋ a <s> ₂₄ </s> |
-| BAI-54 | | bite (V) | ŋa₄₄ | ŋ a <s> ₄₄ </s> |
-| BAI-55 | | bite (V) | ŋɑ₄₄ | ŋ ɑ <s> ₄₄ </s> |
-| BAI-56 | | bite (V) | ɣaŋ₄₄ | ɣ a ŋ <s> ₄₄ </s> |
-| BAI-57 | | bite (V) | ŋa₄₄ | ŋ a <s> ₄₄ </s> |
-| BAI-58 | | bite (V) | ɑ̃₄₄ | ɑ̃ <s> ₄₄ </s> |
-| BAI-59 | | bite (V) | ŋɔ₄₂ | ŋ ɔ <s> ₄₂ </s> |
-| BAI-60 | | bite (V) | ɴa₅₅ | ɴ a <s> ₅₅ </s> |
-| BAI-61 | | bite (V) | ŋo₄₄ | ŋ o <s> ₄₄ </s> |
-| BAI-62 | | black | χe₂₄ | χ e <s> ₂₄ </s> |
-| BAI-63 | | black | xɯ₅₅ | x ɯ <s> ₅₅ </s> |
-| BAI-64 | | black | xɯ₄₄ | x ɯ <s> ₄₄ </s> |
-| BAI-65 | | black | xɯ₄₄ | x ɯ <s> ₄₄ </s> |
-| BAI-66 | | black | xɯ₄₄ | x ɯ <s> ₄₄ </s> |
-| BAI-67 | | black | xɯ₄₄ | x ɯ <s> ₄₄ </s> |
-| BAI-68 | | black | xɚ₄₂ | x ɚ <s> ₄₂ </s> |
-| BAI-69 | | black | χɯ₅₅ | χ ɯ <s> ₅₅ </s> |
-| BAI-70 | | black | xɯ₄₄ | x ɯ <s> ₄₄ </s> |
-| BAI-71 | | blood | swa₂₄ | s w a <s> ₂₄ </s> |
-| BAI-72 | | blood | swa₅₅ | s w a <s> ₅₅ </s> |
-| BAI-73 | | blood | swa₄₄ | s w a <s> ₄₄ </s> |
-| BAI-74 | | blood | sʰwa₄₄ | sʰ w a <s> ₄₄ </s> |
-| BAI-75 | | blood | swa₄₄ | s w a <s> ₄₄ </s> |
-| BAI-76 | | blood | swɑ₄₄ | s w ɑ <s> ₄₄ </s> |
-| BAI-77 | | blood | swɔ₄₂ | s w ɔ <s> ₄₂ </s> |
-| BAI-78 | | blood | swa₅₅ | s w a <s> ₅₅ </s> |
-| BAI-79 | | blood | swa₄₄ | s w a <s> ₄₄ </s> |
-| BAI-80 | | bone | qwa₂₄ | q w a <s> ₂₄ </s> |
-| BAI-81 | | bone | qwa₅₅ʦe₅₅ | q w a <s> ₅₅ </s> ʦ e <s> ₅₅ </s> |
-| BAI-82 | | bone | kwa₄₄twɤ₄₄ | k w a <s> ₄₄ </s> t w ɤ <s> ₄₄ </s> |
-| BAI-83 | | bone | kwa₄₄tjǝ₃₃ | k w a <s> ₄₄ </s> t j ǝ <s> ₃₃ </s> |
-| BAI-84 | | bone | kwa₄₄tɯ₃₃ | k w a <s> ₄₄ </s> t ɯ <s> ₃₃ </s> |
-| BAI-85 | | bone | kwɑ₄₄tǝ₄₂ | k w ɑ <s> ₄₄ </s> t ǝ <s> ₄₂ </s> |
-| BAI-86 | | bone | ku₄₂djɯ₃₅ʦɛ₄₂ | k u <s> ₄₂ </s> d j ɯ <s> ₃₅ </s> ʦ ɛ <s> ₄₂ </s> |
-| BAI-87 | | bone | qwa₅₅ | q w a <s> ₅₅ </s> |
-| BAI-88 | | bone | qwa₄₄ | q w a <s> ₄₄ </s> |
-| BAI-89 | | breast | ba₂₁ | b a <s> ₂₁ </s> |
-| BAI-90 | | breast | pa₄₂ | p a <s> ₄₂ </s> |
-| BAI-91 | | breast | noŋ₃₃ | n o ŋ <s> ₃₃ </s> |
-| BAI-92 | | breast | pa₄₂ | p a <s> ₄₂ </s> |
-| BAI-93 | | breast | pa₄₂ | p a <s> ₄₂ </s> |
-| BAI-94 | | breast | pɑ₄₂ | p ɑ <s> ₄₂ </s> |
-| BAI-95 | | breast | bo₄₂ | b o <s> ₄₂ </s> |
-| BAI-96 | | breast | pa₂₁ | p a <s> ₂₁ </s> |
-| BAI-97 | | breast | pa₄₂ | p a <s> ₄₂ </s> |
-| BAI-98 | | burn (V) | ɕy₂₂ | ɕ y <s> ₂₂ </s> |
-| BAI-99 | | burn (V) | fɤ₅₅ji₅₅ | f ɤ <s> ₅₅ </s> j i <s> ₅₅ </s> |
-| BAI-100 | | burn (V) | sɤ₅₅ | s ɤ <s> ₅₅ </s> |
-| BAI-101 | | burn (V) | ʂu₅₅ | ʂ u <s> ₅₅ </s> |
-| BAI-102 | | burn (V) | ɲɯ₃₃ | ɲ ɯ <s> ₃₃ </s> |
-| BAI-103 | | burn (V) | jĩ₃₃ | j ĩ <s> ₃₃ </s> |
-| BAI-104 | | burn (V) | jen₃₃ | j e n <s> ₃₃ </s> |
-| BAI-105 | | burn (V) | xu₂₄ | x u <s> ₂₄ </s> |
-| BAI-106 | | burn (V) | fi₂₂pɛ₂₂ | f i <s> ₂₂ </s> p ɛ <s> ₂₂ </s> |
-| BAI-107 | | burn (V) | ɕy₅₅ | ɕ y <s> ₅₅ </s> |
-| BAI-108 | | burn (V) | fi₃₃kʰǝɯ₅₅ | f i <s> ₃₃ </s> kʰ <s> ǝɯ </s> <s> ₅₅ </s> |
-| BAI-109 | | burn (V) | su₅₅ | s u <s> ₅₅ </s> |
-| BAI-110 | | claw | t͡ʂi₂₄qa₂₄ | t͡ʂ i <s> ₂₄ </s> q a <s> ₂₄ </s> |
-| BAI-111 | | claw | qa₄₄ | q a <s> ₄₄ </s> |
-| BAI-112 | | claw | sǝɯ₃₃kɚ₄₄ | s <s> ǝɯ </s> <s> ₃₃ </s> k ɚ <s> ₄₄ </s> |
-| BAI-113 | | claw | ʂɯ₃₃ka₄₄ | ʂ ɯ <s> ₃₃ </s> k a <s> ₄₄ </s> |
-| BAI-114 | | claw | sɯ₃₃ka₄₄ | s ɯ <s> ₃₃ </s> k a <s> ₄₄ </s> |
-| BAI-115 | | claw | sɯ₃₃ka₄₄ | s ɯ <s> ₃₃ </s> k a <s> ₄₄ </s> |
-| BAI-116 | | claw | ɕɯ₃₃qa₄₂ | ɕ ɯ <s> ₃₃ </s> q a <s> ₄₂ </s> |
-| BAI-117 | | claw | tjɯ₂₁qa₂₄ | t j ɯ <s> ₂₁ </s> q a <s> ₂₄ </s> |
-| BAI-118 | | claw | ɕi₂₂qa₄₄ | ɕ i <s> ₂₂ </s> q a <s> ₄₄ </s> |
-| BAI-119 | | cloud | ŋɛ₁₂qǝ₅₅ | ŋ ɛ <s> ₁₂ </s> q ǝ <s> ₅₅ </s> |
-| BAI-120 | | cloud | mɯ₂₁ko₄₂ | m ɯ <s> ₂₁ </s> k o <s> ₄₂ </s> |
-| BAI-121 | | cloud | ɥen₂₁pe₂₁ | ɥ e n <s> ₂₁ </s> p e <s> ₂₁ </s> |
-| BAI-122 | | cloud | vɤ̃₂₁nõ₂₁ | v ɤ̃ <s> ₂₁ </s> n õ <s> ₂₁ </s> |
-| BAI-123 | | cloud | ɤ₂₁ | ɤ <s> ₂₁ </s> |
-| BAI-124 | | cloud | ɤ̃₂₁ | ɤ̃ <s> ₂₁ </s> |
-| BAI-125 | | cloud | ŋɔ₃₅qa₄₂ | ŋ ɔ <s> ₃₅ </s> q a <s> ₄₂ </s> |
-| BAI-126 | | cloud | ʁæ₂₁ | ʁ æ <s> ₂₁ </s> |
-| BAI-127 | | cloud | mɯ̃₂₁ko₄₂ | m ɯ̃ <s> ₂₁ </s> k o <s> ₄₂ </s> |
-| BAI-128 | | cold | ga₁₂ | g a <s> ₁₂ </s> |
-| BAI-129 | | cold | kɯ₅₅ | k ɯ <s> ₅₅ </s> |
-| BAI-130 | | cold | kɯ₅₅ | k ɯ <s> ₅₅ </s> |
-| BAI-131 | | cold | kɯ₃₅ | k ɯ <s> ₃₅ </s> |
-| BAI-132 | | cold | kɯ₃₅ | k ɯ <s> ₃₅ </s> |
-| BAI-133 | | cold | kɯ₅₅ | k ɯ <s> ₅₅ </s> |
-| BAI-134 | | cold | kɯ₅₅ | k ɯ <s> ₅₅ </s> |
-| BAI-135 | | cold | kɯ₂₄ | k ɯ <s> ₂₄ </s> |
-| BAI-136 | | cold | kɯ₅₅ | k ɯ <s> ₅₅ </s> |
-| BAI-137 | | cold | ka₂₁ | k a <s> ₂₁ </s> |
-| BAI-138 | | cold | kɑ₂₁ | k ɑ <s> ₂₁ </s> |
-| BAI-139 | | come (V) | ji₂₁kǝ₂₂ | j i <s> ₂₁ </s> k ǝ <s> ₂₂ </s> |
-| BAI-140 | | come (V) | ʨwa₅₅ | ʨ w a <s> ₅₅ </s> |
-| BAI-141 | | come (V) | ɣǝɯ₂₁ | ɣ <s> ǝɯ </s> <s> ₂₁ </s> |
-| BAI-142 | | come (V) | ɣǝ₃₅ | ɣ ǝ <s> ₃₅ </s> |
-| BAI-143 | | come (V) | jɯ₃₅ | j ɯ <s> ₃₅ </s> |
-| BAI-144 | | come (V) | ɣǝ₃₅ | ɣ ǝ <s> ₃₅ </s> |
-| BAI-145 | | come (V) | t͡ʂʰo₄₂ | t͡ʂʰ o <s> ₄₂ </s> |
-| BAI-146 | | come (V) | ji₅₅ki₂₄ | j i <s> ₅₅ </s> k i <s> ₂₄ </s> |
-| BAI-147 | | come (V) | ji₅₅kɯ₂₂ | j i <s> ₅₅ </s> k ɯ <s> ₂₂ </s> |
-| BAI-148 | | come (V) | jɯ₃₃kɯ₅₅ | j ɯ <s> ₃₃ </s> k ɯ <s> ₅₅ </s> |
-| BAI-149 | | die (V) | ɕi₂₂ | ɕ i <s> ₂₂ </s> |
-| BAI-150 | | die (V) | ɕi₂₂ | ɕ i <s> ₂₂ </s> |
-| BAI-151 | | die (V) | ɕi₃₃ | ɕ i <s> ₃₃ </s> |
-| BAI-152 | | die (V) | ɕi₃₃ | ɕ i <s> ₃₃ </s> |
-| BAI-153 | | die (V) | ɕi₃₃ | ɕ i <s> ₃₃ </s> |
-| BAI-154 | | die (V) | ɕi₃₃ | ɕ i <s> ₃₃ </s> |
-| BAI-155 | | die (V) | ɕi₃₃ | ɕ i <s> ₃₃ </s> |
-| BAI-156 | | die (V) | si₂₂ | s i <s> ₂₂ </s> |
-| BAI-157 | | die (V) | si₂₂ | s i <s> ₂₂ </s> |
-| BAI-158 | | dog | qʰwaŋ₂₂ | qʰ w a ŋ <s> ₂₂ </s> |
-| BAI-159 | | dog | qʰõ₂₂ | qʰ õ <s> ₂₂ </s> |
-| BAI-160 | | dog | kʰwaŋ₃₃ | kʰ w a ŋ <s> ₃₃ </s> |
-| BAI-161 | | dog | kʰwaŋ₃₃ | kʰ w a ŋ <s> ₃₃ </s> |
-| BAI-162 | | dog | kʰwa₃₃ | kʰ w a <s> ₃₃ </s> |
-| BAI-163 | | dog | kʰwɑ̃₃₃ | kʰ w ɑ̃ <s> ₃₃ </s> |
-| BAI-164 | | dog | qʰwaŋ₃₃ | qʰ w a ŋ <s> ₃₃ </s> |
-| BAI-165 | | dog | qʰwa₂₂ | qʰ w a <s> ₂₂ </s> |
-| BAI-166 | | dog | qʰwa₂₂ | qʰ w a <s> ₂₂ </s> |
-| BAI-167 | | drink (V) | ʔoŋ₂₂ | ʔ o ŋ <s> ₂₂ </s> |
-| BAI-168 | | drink (V) | ɯ̃₂₂ | ɯ̃ <s> ₂₂ </s> |
-| BAI-169 | | drink (V) | oŋ₃₃ | o ŋ <s> ₃₃ </s> |
-| BAI-170 | | drink (V) | ǝ̃₃₃ | ǝ̃ <s> ₃₃ </s> |
-| BAI-171 | | drink (V) | ɯ₃₃ | ɯ <s> ₃₃ </s> |
-| BAI-172 | | drink (V) | ǝ̃₃₃ | ǝ̃ <s> ₃₃ </s> |
-| BAI-173 | | drink (V) | ɯ̃₃₃ | ɯ̃ <s> ₃₃ </s> |
-| BAI-174 | | drink (V) | ɯ₂₂ | ɯ <s> ₂₂ </s> |
-| BAI-175 | | drink (V) | ɯ̃₂₂ | ɯ̃ <s> ₂₂ </s> |
-| BAI-176 | | dry | qaŋ₅₅ | q a ŋ <s> ₅₅ </s> |
-| BAI-177 | | dry | qã₅₅ | q ã <s> ₅₅ </s> |
-| BAI-178 | | dry | kaŋ₅₅ | k a ŋ <s> ₅₅ </s> |
-| BAI-179 | | dry | kã₃₅ | k ã <s> ₃₅ </s> |
-| BAI-180 | | dry | ka₃₅ | k a <s> ₃₅ </s> |
-| BAI-181 | | dry | kɑ̃₅₅ | k ɑ̃ <s> ₅₅ </s> |
-| BAI-182 | | dry | qɔŋ₅₅ | q ɔ ŋ <s> ₅₅ </s> |
-| BAI-183 | | dry | qa₂₄ | q a <s> ₂₄ </s> |
-| BAI-184 | | dry | qo₅₅ | q o <s> ₅₅ </s> |
-| BAI-185 | | ear | jaŋ₂₂kʰwaŋ₂₂ | j a ŋ <s> ₂₂ </s> kʰ w a ŋ <s> ₂₂ </s> |
-| BAI-186 | | ear | ẽ₄₂ʨwẽ₂₂ | ẽ <s> ₄₂ </s> ʨ w ẽ <s> ₂₂ </s> |
-| BAI-187 | | ear | jɛ₃₃kɛ₃₃pjen₂₁ | j ɛ <s> ₃₃ </s> k ɛ <s> ₃₃ </s> p j e n <s> ₂₁ </s> |
-| BAI-188 | | ear | jen₃₃toŋ₃₁ | j e n <s> ₃₃ </s> t o ŋ <s> ₃₁ </s> |
-| BAI-189 | | ear | ɲow₃₃to₄₂ | ɲ o w <s> ₃₃ </s> t o <s> ₄₂ </s> |
-| BAI-190 | | ear | jen₃₃tɯ₃₁kwɑ₅₅ | j e n <s> ₃₃ </s> t ɯ <s> ₃₁ </s> k w ɑ <s> ₅₅ </s> |
-| BAI-191 | | ear | wen₃₃zɥen₃₅ | w e n <s> ₃₃ </s> z ɥ e n <s> ₃₅ </s> |
-| BAI-192 | | ear | ŋu₂₂ʦu₂₁qʰwa₂₄ | ŋ u <s> ₂₂ </s> ʦ u <s> ₂₁ </s> qʰ w a <s> ₂₄ </s> |
-| BAI-193 | | ear | ji₂₂ʨyj₂₁ | j i <s> ₂₂ </s> ʨ y j <s> ₂₁ </s> |
-| BAI-194 | | earth | ʥi₄₂ | ʥ i <s> ₄₂ </s> |
-| BAI-195 | | earth | ʥi₄₂ | ʥ i <s> ₄₂ </s> |
-| BAI-196 | | earth | ti₂₁ | t i <s> ₂₁ </s> |
-| BAI-197 | | earth | ʨi₃₁ | ʨ i <s> ₃₁ </s> |
-| BAI-198 | | earth | ʨi₃₁ | ʨ i <s> ₃₁ </s> |
-| BAI-199 | | earth | ʨi₃₁ | ʨ i <s> ₃₁ </s> |
-| BAI-200 | | earth | ʑi₂₁ | ʑ i <s> ₂₁ </s> |
-| BAI-201 | | earth | ʥi₄₃ | ʥ i <s> ₄₃ </s> |
-| BAI-202 | | earth | ʨi₄₂pa₂₂ | ʨ i <s> ₄₂ </s> p a <s> ₂₂ </s> |
-| BAI-203 | | eat (V) | ju₂₄ | j u <s> ₂₄ </s> |
-| BAI-204 | | eat (V) | ji₅₅ | j i <s> ₅₅ </s> |
-| BAI-205 | | eat (V) | ji₄₄ | j i <s> ₄₄ </s> |
-| BAI-206 | | eat (V) | jɯ₄₄ | j ɯ <s> ₄₄ </s> |
-| BAI-207 | | eat (V) | jɯ₄₄ | j ɯ <s> ₄₄ </s> |
-| BAI-208 | | eat (V) | jɯ₄₄ | j ɯ <s> ₄₄ </s> |
-| BAI-209 | | eat (V) | ju₄₂ | j u <s> ₄₂ </s> |
-| BAI-210 | | eat (V) | jɯ₅₅ | j ɯ <s> ₅₅ </s> |
-| BAI-211 | | eat (V) | ji₄₄ | j i <s> ₄₄ </s> |
-| BAI-212 | | egg | sen₄₂ | s e n <s> ₄₂ </s> |
-| BAI-213 | | egg | sẽ₄₂ | s ẽ <s> ₄₂ </s> |
-| BAI-214 | | egg | sɛ₄₂ | s ɛ <s> ₄₂ </s> |
-| BAI-215 | | egg | sen₄₂ | s e n <s> ₄₂ </s> |
-| BAI-216 | | egg | se₄₂ | s e <s> ₄₂ </s> |
-| BAI-217 | | egg | sen₄₂ | s e n <s> ₄₂ </s> |
-| BAI-218 | | egg | sen₂₁ | s e n <s> ₂₁ </s> |
-| BAI-219 | | egg | sɛ₄₃ | s ɛ <s> ₄₃ </s> |
-| BAI-220 | | egg | sɛ₄₂ | s ɛ <s> ₄₂ </s> |
-| BAI-221 | | eye | wen₂₂ | w e n <s> ₂₂ </s> |
-| BAI-222 | | eye | mi₂₂ | m i <s> ₂₂ </s> |
-| BAI-223 | | eye | ŋwɛ₃₃ | ŋ w ɛ <s> ₃₃ </s> |
-| BAI-224 | | eye | wẽ₃₃ | w ẽ <s> ₃₃ </s> |
-| BAI-225 | | eye | we₃₃ | w e <s> ₃₃ </s> |
-| BAI-226 | | eye | wẽ₃₃ | w ẽ <s> ₃₃ </s> |
-| BAI-227 | | eye | wen₃₃ | w e n <s> ₃₃ </s> |
-| BAI-228 | | eye | ŋwi₂₂ | ŋ w i <s> ₂₂ </s> |
-| BAI-229 | | eye | ŋwi₂₂ | ŋ w i <s> ₂₂ </s> |
-| BAI-230 | | fat | t͡ʂi₅₅ | t͡ʂ i <s> ₅₅ </s> |
-| BAI-231 | | fat | t͡ʂi₅₅ | t͡ʂ i <s> ₅₅ </s> |
-| BAI-232 | | fat | ʦi₅₅ | ʦ i <s> ₅₅ </s> |
-| BAI-233 | | fat | t͡ʂi₅₅ | t͡ʂ i <s> ₅₅ </s> |
-| BAI-234 | | fat | ʦi₃₅ | ʦ i <s> ₃₅ </s> |
-| BAI-235 | | fat | ʦi₅₅ | ʦ i <s> ₅₅ </s> |
-| BAI-236 | | fat | t͡ʂi₅₅ | t͡ʂ i <s> ₅₅ </s> |
-| BAI-237 | | fat | ʦi₂₄ | ʦ i <s> ₂₄ </s> |
-| BAI-238 | | fat | ʦɛ₅₅ | ʦ ɛ <s> ₅₅ </s> |
-| BAI-239 | | feather | mi₁₂ | m i <s> ₁₂ </s> |
-| BAI-240 | | feather | mje₂₁ | m j e <s> ₂₁ </s> |
-| BAI-241 | | feather | me₂₁ | m e <s> ₂₁ </s> |
-| BAI-242 | | feather | ma₂₁ | m a <s> ₂₁ </s> |
-| BAI-243 | | feather | ma₂₁ | m a <s> ₂₁ </s> |
-| BAI-244 | | feather | mɑ̃₂₁ | m ɑ̃ <s> ₂₁ </s> |
-| BAI-245 | | feather | me₃₅ | m e <s> ₃₅ </s> |
-| BAI-246 | | feather | mjɛ₂₁ | m j ɛ <s> ₂₁ </s> |
-| BAI-247 | | feather | mi₂₁ | m i <s> ₂₁ </s> |
-| BAI-248 | | fire | xwɛ₂₂ | x w ɛ <s> ₂₂ </s> |
-| BAI-249 | | fire | fi₂₂ | f i <s> ₂₂ </s> |
-| BAI-250 | | fire | fi₃₃ | f i <s> ₃₃ </s> |
-| BAI-251 | | fire | xwi₃₃ | x w i <s> ₃₃ </s> |
-| BAI-252 | | fire | xwi₃₃ | x w i <s> ₃₃ </s> |
-| BAI-253 | | fire | xwi₃₃ | x w i <s> ₃₃ </s> |
-| BAI-254 | | fire | xwe₃₃ | x w e <s> ₃₃ </s> |
-| BAI-255 | | fire | xwi₂₂ | x w i <s> ₂₂ </s> |
-| BAI-256 | | fire | fi₂₂ | f i <s> ₂₂ </s> |
-| BAI-257 | | fish | ŋo₅₅ | ŋ o <s> ₅₅ </s> |
-| BAI-258 | | fish | ŋu₅₅ | ŋ u <s> ₅₅ </s> |
-| BAI-259 | | fish | oŋ₅₅ | o ŋ <s> ₅₅ </s> |
-| BAI-260 | | fish | wɤ̃₃₅ | w ɤ̃ <s> ₃₅ </s> |
-| BAI-261 | | fish | ŋo₃₅ | ŋ o <s> ₃₅ </s> |
-| BAI-262 | | fish | ṃ₅₅ | <s> ṃ </s> <s> ₅₅ </s> |
-| BAI-263 | | fish | ŋɤ₅₅ | ŋ ɤ <s> ₅₅ </s> |
-| BAI-264 | | fish | ŋo₂₄ | ŋ o <s> ₂₄ </s> |
-| BAI-265 | | fish | ŋu₅₅ | ŋ u <s> ₅₅ </s> |
-| BAI-266 | | fly (V) | p͡fu₅₅ | p͡f u <s> ₅₅ </s> |
-| BAI-267 | | fly (V) | fi₅₅ | f i <s> ₅₅ </s> |
-| BAI-268 | | fly (V) | pi₅₅ | p i <s> ₅₅ </s> |
-| BAI-269 | | fly (V) | fɤ₃₅ | f ɤ <s> ₃₅ </s> |
-| BAI-270 | | fly (V) | fɤ₃₅ | f ɤ <s> ₃₅ </s> |
-| BAI-271 | | fly (V) | fɤ₅₅ | f ɤ <s> ₅₅ </s> |
-| BAI-272 | | fly (V) | fɚ₅₅ | f ɚ <s> ₅₅ </s> |
-| BAI-273 | | fly (V) | fɛ₂₄ | f ɛ <s> ₂₄ </s> |
-| BAI-274 | | fly (V) | xwɛ₅₅ | x w ɛ <s> ₅₅ </s> |
-| BAI-275 | | foot | ku₂₄ | k u <s> ₂₄ </s> |
-| BAI-276 | | foot | ko₅₅ | k o <s> ₅₅ </s> |
-| BAI-277 | | foot | ko₄₄ | k o <s> ₄₄ </s> |
-| BAI-278 | | foot | kow₄₄ | k o w <s> ₄₄ </s> |
-| BAI-279 | | foot | ko₄₄ | k o <s> ₄₄ </s> |
-| BAI-280 | | foot | kow₄₄ | k o w <s> ₄₄ </s> |
-| BAI-281 | | foot | ko₄₂ | k o <s> ₄₂ </s> |
-| BAI-282 | | foot | ku₅₅ | k u <s> ₅₅ </s> |
-| BAI-283 | | foot | ku₄₄ | k u <s> ₄₄ </s> |
-| BAI-284 | | full | mi₂₂ | m i <s> ₂₂ </s> |
-| BAI-285 | | full | me₂₂ | m e <s> ₂₂ </s> |
-| BAI-286 | | full | mɛ₃₃ | m ɛ <s> ₃₃ </s> |
-| BAI-287 | | full | ma₃₃ | m a <s> ₃₃ </s> |
-| BAI-288 | | full | ma₃₃ | m a <s> ₃₃ </s> |
-| BAI-289 | | full | mɑ̃₃₃ | m ɑ̃ <s> ₃₃ </s> |
-| BAI-290 | | full | me₃₃ | m e <s> ₃₃ </s> |
-| BAI-291 | | full | mjɛ₂₂ | m j ɛ <s> ₂₂ </s> |
-| BAI-292 | | full | mi₂₂ | m i <s> ₂₂ </s> |
-| BAI-293 | | give (V) | zi₄₂ | z i <s> ₄₂ </s> |
-| BAI-294 | | give (V) | zi₄₂ | z i <s> ₄₂ </s> |
-| BAI-295 | | give (V) | zǝɯ₂₁ | z <s> ǝɯ </s> <s> ₂₁ </s> |
-| BAI-296 | | give (V) | zi₂₁ | z i <s> ₂₁ </s> |
-| BAI-297 | | give (V) | zɯ₄₂ | z ɯ <s> ₄₂ </s> |
-| BAI-298 | | give (V) | si₃₁ | s i <s> ₃₁ </s> |
-| BAI-299 | | give (V) | zi₂₁ | z i <s> ₂₁ </s> |
-| BAI-300 | | give (V) | ʦi₄₃ | ʦ i <s> ₄₃ </s> |
-| BAI-301 | | give (V) | zi₄₂ | z i <s> ₄₂ </s> |
-| BAI-302 | | good | ʣan₁₂ | ʣ a n <s> ₁₂ </s> |
-| BAI-303 | | good | xo₂₂ | x o <s> ₂₂ </s> |
-| BAI-304 | | good | xǝ₃₃ | x ǝ <s> ₃₃ </s> |
-| BAI-305 | | good | xu₃₃ | x u <s> ₃₃ </s> |
-| BAI-306 | | good | xu₃₃ | x u <s> ₃₃ </s> |
-| BAI-307 | | good | xu₃₃ | x u <s> ₃₃ </s> |
-| BAI-308 | | good | djaŋ₃₅ | d j a ŋ <s> ₃₅ </s> |
-| BAI-309 | | good | djæ₂₁ | d j æ <s> ₂₁ </s> |
-| BAI-310 | | good | xo₅₅ | x o <s> ₅₅ </s> |
-| BAI-311 | | good | ʨʰõ₄₄ | ʨʰ õ <s> ₄₄ </s> |
-| BAI-312 | | good | ʨʰow₅₅ | ʨʰ o w <s> ₅₅ </s> |
-| BAI-313 | | good | ʨʰõ₄₄ | ʨʰ õ <s> ₄₄ </s> |
-| BAI-314 | | green | ʦʰan₂₄ | ʦʰ a n <s> ₂₄ </s> |
-| BAI-315 | | green | ʨʰã₅₅ | ʨʰ ã <s> ₅₅ </s> |
-| BAI-316 | | green | lɤ₄₄ | l ɤ <s> ₄₄ </s> |
-| BAI-317 | | green | lo₄₄ | l o <s> ₄₄ </s> |
-| BAI-318 | | green | lɤ₄₄ | l ɤ <s> ₄₄ </s> |
-| BAI-319 | | green | lu₄₄ | l u <s> ₄₄ </s> |
-| BAI-320 | | green | ʨʰaŋ₂₁ | ʨʰ a ŋ <s> ₂₁ </s> |
-| BAI-321 | | green | ʨʰæ₂₄ | ʨʰ æ <s> ₂₄ </s> |
-| BAI-322 | | green | ʨʰa₄₂ | ʨʰ a <s> ₄₂ </s> |
-| BAI-323 | | hair | di₂₄mjɛ₁₂ | d i <s> ₂₄ </s> m j ɛ <s> ₁₂ </s> |
-| BAI-324 | | hair | ʈe₂₁me₅₅ | ʈ e <s> ₂₁ </s> m e <s> ₅₅ </s> |
-| BAI-325 | | hair | tɛ₂₁mɛ₅₅ | t ɛ <s> ₂₁ </s> m ɛ <s> ₅₅ </s> |
-| BAI-326 | | hair | ɕa₄₄ | ɕ a <s> ₄₄ </s> |
-| BAI-327 | | hair | tɯ₂₁ma₃₅ | t ɯ <s> ₂₁ </s> m a <s> ₃₅ </s> |
-| BAI-328 | | hair | ɕɔ₄₄ | ɕ ɔ <s> ₄₄ </s> |
-| BAI-329 | | hair | djɯ₃₅me₅₅ | d j ɯ <s> ₃₅ </s> m e <s> ₅₅ </s> |
-| BAI-330 | | hair | tjɯ₂₁mjɛ₂₄ | t j ɯ <s> ₂₁ </s> m j ɛ <s> ₂₄ </s> |
-| BAI-331 | | hair | ti₂₁mi₅₅ | t i <s> ₂₁ </s> m i <s> ₅₅ </s> |
-| BAI-332 | | hair | tǝ₂₁mã₅₅ | t ǝ <s> ₂₁ </s> m ã <s> ₅₅ </s> |
-| BAI-333 | | hand | ʂi₂₂ | ʂ i <s> ₂₂ </s> |
-| BAI-334 | | hand | ɕi₂₂ | ɕ i <s> ₂₂ </s> |
-| BAI-335 | | hand | sǝɯ₃₃ | s <s> ǝɯ </s> <s> ₃₃ </s> |
-| BAI-336 | | hand | ʂʰɯ₃₃ | ʂʰ ɯ <s> ₃₃ </s> |
-| BAI-337 | | hand | sɯ₃₃ | s ɯ <s> ₃₃ </s> |
-| BAI-338 | | hand | sɯ₃₃ | s ɯ <s> ₃₃ </s> |
-| BAI-339 | | hand | ɕɯ₃₃ | ɕ ɯ <s> ₃₃ </s> |
-| BAI-340 | | hand | ɕɯ₂₂ | ɕ ɯ <s> ₂₂ </s> |
-| BAI-341 | | hand | ɕi₂₂ | ɕ i <s> ₂₂ </s> |
-| BAI-342 | | head | di₁₂ | d i <s> ₁₂ </s> |
-| BAI-343 | | head | ʈo₂₂ | ʈ o <s> ₂₂ </s> |
-| BAI-344 | | head | ta₄₂po₂₁ | t a <s> ₄₂ </s> p o <s> ₂₁ </s> |
-| BAI-345 | | head | ti₄₂ | t i <s> ₄₂ </s> |
-| BAI-346 | | head | tɯ₃₁po₂₁ | t ɯ <s> ₃₁ </s> p o <s> ₂₁ </s> |
-| BAI-347 | | head | tǝ₃₁ | t ǝ <s> ₃₁ </s> |
-| BAI-348 | | head | djɯ₃₅ | d j ɯ <s> ₃₅ </s> |
-| BAI-349 | | head | tiw₂₁ | t i w <s> ₂₁ </s> |
-| BAI-350 | | head | ʨu₂₂qa₅₅ | ʨ u <s> ₂₂ </s> q a <s> ₅₅ </s> |
-| BAI-351 | | hear (V) | ʨʰjan₅₅ | ʨʰ j a n <s> ₅₅ </s> |
-| BAI-352 | | hear (V) | ʨʰjã₅₅ | ʨʰ j ã <s> ₅₅ </s> |
-| BAI-353 | | hear (V) | ʨʰɚ̃₅₅ | ʨʰ <s> ɚ̃ </s> <s> ₅₅ </s> |
-| BAI-354 | | hear (V) | ʨʰjɚ̃₅₅ | ʨʰ j <s> ɚ̃ </s> <s> ₅₅ </s> |
-| BAI-355 | | hear (V) | ʨʰjɛ₅₅ | ʨʰ j ɛ <s> ₅₅ </s> |
-| BAI-356 | | hear (V) | ʨʰjan₅₅tǝ₃₃ | ʨʰ j a n <s> ₅₅ </s> t ǝ <s> ₃₃ </s> |
-| BAI-357 | | hear (V) | ʨʰjaŋ₅₅ | ʨʰ j a ŋ <s> ₅₅ </s> |
-| BAI-358 | | hear (V) | ʨʰjæ₂₄ | ʨʰ j æ <s> ₂₄ </s> |
-| BAI-359 | | hear (V) | ʨʰja₅₅ | ʨʰ j a <s> ₅₅ </s> |
-| BAI-360 | | heart | ɕin₅₅ | ɕ i n <s> ₅₅ </s> |
-| BAI-361 | | heart | sẽ₅₅ | s ẽ <s> ₅₅ </s> |
-| BAI-362 | | heart | ɕen₅₅ | ɕ e n <s> ₅₅ </s> |
-| BAI-363 | | heart | ɕen₅₅ | ɕ e n <s> ₅₅ </s> |
-| BAI-364 | | heart | ɕi₃₅ | ɕ i <s> ₃₅ </s> |
-| BAI-365 | | heart | ɕen₅₅ | ɕ e n <s> ₅₅ </s> |
-| BAI-366 | | heart | ɕen₅₅ | ɕ e n <s> ₅₅ </s> |
-| BAI-367 | | heart | si₂₄ | s i <s> ₂₄ </s> |
-| BAI-368 | | heart | sɛ₅₅ | s ɛ <s> ₅₅ </s> |
-| BAI-369 | | horn | qwa₂₄ | q w a <s> ₂₄ </s> |
-| BAI-370 | | horn | qo₅₅ | q o <s> ₅₅ </s> |
-| BAI-371 | | horn | koŋ₄₄ | k o ŋ <s> ₄₄ </s> |
-| BAI-372 | | horn | ko₄₄ | k o <s> ₄₄ </s> |
-| BAI-373 | | horn | kɤ₄₄ | k ɤ <s> ₄₄ </s> |
-| BAI-374 | | horn | kɤ₄₄ | k ɤ <s> ₄₄ </s> |
-| BAI-375 | | horn | qo₄₂qa₂₁ | q o <s> ₄₂ </s> q a <s> ₂₁ </s> |
-| BAI-376 | | horn | qo₅₅ | q o <s> ₅₅ </s> |
-| BAI-377 | | horn | qo₄₄ | q o <s> ₄₄ </s> |
-| BAI-378 | | I | ŋa₄₂ | ŋ a <s> ₄₂ </s> |
-| BAI-379 | | I | õ₄₂ | õ <s> ₄₂ </s> |
-| BAI-380 | | I | ŋo₄₂ | ŋ o <s> ₄₂ </s> |
-| BAI-381 | | I | ŋõ₃₁ | ŋ õ <s> ₃₁ </s> |
-| BAI-382 | | I | ŋo₃₁ | ŋ o <s> ₃₁ </s> |
-| BAI-383 | | I | wõ₃₁ | w õ <s> ₃₁ </s> |
-| BAI-384 | | I | ŋɔ₂₁ | ŋ ɔ <s> ₂₁ </s> |
-| BAI-385 | | I | ɴo₄₃ | ɴ o <s> ₄₃ </s> |
-| BAI-386 | | I | ŋo₄₂ | ŋ o <s> ₄₂ </s> |
-| BAI-387 | | kill (V) | χa₂₄ | χ a <s> ₂₄ </s> |
-| BAI-388 | | kill (V) | ɕa₅₅ | ɕ a <s> ₅₅ </s> |
-| BAI-389 | | kill (V) | ɕa₄₄ | ɕ a <s> ₄₄ </s> |
-| BAI-390 | | kill (V) | ɕʰa₄₄ | ɕʰ a <s> ₄₄ </s> |
-| BAI-391 | | kill (V) | ɕa₄₄ | ɕ a <s> ₄₄ </s> |
-| BAI-392 | | kill (V) | ɕɑ₄₄ | ɕ ɑ <s> ₄₄ </s> |
-| BAI-393 | | kill (V) | ɕɔ₄₂ | ɕ ɔ <s> ₄₂ </s> |
-| BAI-394 | | kill (V) | xa₅₅ | x a <s> ₅₅ </s> |
-| BAI-395 | | kill (V) | ɕo₄₄ | ɕ o <s> ₄₄ </s> |
-| BAI-396 | | knee | qa₅₅ʦi₂₂qa₅₅qa₄₂ | q a <s> ₅₅ </s> ʦ i <s> ₂₂ </s> q a <s> ₅₅ </s> q a <s> ₄₂ </s> |
-| BAI-397 | | knee | ko₄₄ʦe₄₄ | k o <s> ₄₄ </s> ʦ e <s> ₄₄ </s> |
-| BAI-398 | | knee | ko₄₄ʦɛ₄₄tǝɯ₂₁ | k o <s> ₄₄ </s> ʦ ɛ <s> ₄₄ </s> t <s> ǝɯ </s> <s> ₂₁ </s> |
-| BAI-399 | | knee | kʰwa₃₁tjow₃₁ʦe₄₄ | kʰ w a <s> ₃₁ </s> t j o w <s> ₃₁ </s> ʦ e <s> ₄₄ </s> |
-| BAI-400 | | knee | kʰwa₃₃te₅₅tɯ₂₁ | kʰ w a <s> ₃₃ </s> t e <s> ₅₅ </s> t ɯ <s> ₂₁ </s> |
-| BAI-401 | | knee | kʰwɑ₃₁ʦɿ₃₃te₄₄kɔ₃₃ | kʰ w ɑ <s> ₃₁ </s> ʦ ɿ <s> ₃₃ </s> t e <s> ₄₄ </s> k ɔ <s> ₃₃ </s> |
-| BAI-402 | | knee | qʰoŋ₅₅mo₄₂qɔ₄₂ | qʰ o ŋ <s> ₅₅ </s> m o <s> ₄₂ </s> q ɔ <s> ₄₂ </s> |
-| BAI-403 | | knee | qʰa₄₃ʦo₂₁qa₅₅ | qʰ a <s> ₄₃ </s> ʦ o <s> ₂₁ </s> q a <s> ₅₅ </s> |
-| BAI-404 | | knee | qʰo₄₂ʦu₂₁qo₅₅ | qʰ o <s> ₄₂ </s> ʦ u <s> ₂₁ </s> q o <s> ₅₅ </s> |
-| BAI-405 | | know (V) | t͡ʂi₄₂ʦʰwa₅₅ | t͡ʂ i <s> ₄₂ </s> ʦʰ w a <s> ₅₅ </s> |
-| BAI-406 | | know (V) | sɿ₄₄ | s ɿ <s> ₄₄ </s> |
-| BAI-407 | | know (V) | sɯ₄₄ | s ɯ <s> ₄₄ </s> |
-| BAI-408 | | know (V) | se₃₃ | s e <s> ₃₃ </s> |
-| BAI-409 | | know (V) | zɯ₄₄tɯ₄₄ | z ɯ <s> ₄₄ </s> t ɯ <s> ₄₄ </s> |
-| BAI-410 | | know (V) | sen₃₃ | s e n <s> ₃₃ </s> |
-| BAI-411 | | know (V) | t͡ʂɤ₅₅t͡ʂʰɤ₂₁ | t͡ʂ ɤ <s> ₅₅ </s> t͡ʂʰ ɤ <s> ₂₁ </s> |
-| BAI-412 | | know (V) | swɛ₂₂ | s w ɛ <s> ₂₂ </s> |
-| BAI-413 | | know (V) | si₄₄ | s i <s> ₄₄ </s> |
-| BAI-414 | | leaf | sɛ₂₄ | s ɛ <s> ₂₄ </s> |
-| BAI-415 | | leaf | ʂɚ₅₅ | ʂ ɚ <s> ₅₅ </s> |
-| BAI-416 | | leaf | sɛ₄₄ | s ɛ <s> ₄₄ </s> |
-| BAI-417 | | leaf | ʂʰe₄₄ | ʂʰ e <s> ₄₄ </s> |
-| BAI-418 | | leaf | se₄₄ | s e <s> ₄₄ </s> |
-| BAI-419 | | leaf | se₄₄ | s e <s> ₄₄ </s> |
-| BAI-420 | | leaf | djɯ₂₁mɯ₄₂ɕi₄₂ | d j ɯ <s> ₂₁ </s> m ɯ <s> ₄₂ </s> ɕ i <s> ₄₂ </s> |
-| BAI-421 | | leaf | ɕɛ₅₅ | ɕ ɛ <s> ₅₅ </s> |
-| BAI-422 | | leaf | sɛ₄₄ | s ɛ <s> ₄₄ </s> |
-| BAI-423 | | lie (V) | nen₁₂ | n e n <s> ₁₂ </s> |
-| BAI-424 | | lie (V) | lo₂₁ | l o <s> ₂₁ </s> |
-| BAI-425 | | lie (V) | mi₅₅ | m i <s> ₅₅ </s> |
-| BAI-426 | | lie (V) | t͡ʂʰɚ̃₃₃ | t͡ʂʰ <s> ɚ̃ </s> <s> ₃₃ </s> |
-| BAI-427 | | lie (V) | ʦʰɛ₃₃ | ʦʰ ɛ <s> ₃₃ </s> |
-| BAI-428 | | lie (V) | ʦʰan₃₃ | ʦʰ a n <s> ₃₃ </s> |
-| BAI-429 | | lie (V) | ʐa₄₂ | ʐ a <s> ₄₂ </s> |
-| BAI-430 | | lie (V) | to₂₄ʨi₂₂ | t o <s> ₂₄ </s> ʨ i <s> ₂₂ </s> |
-| BAI-431 | | lie (V) | lo₂₁ | l o <s> ₂₁ </s> |
-| BAI-432 | | liver | qaŋ₅₅ | q a ŋ <s> ₅₅ </s> |
-| BAI-433 | | liver | qã₅₅ | q ã <s> ₅₅ </s> |
-| BAI-434 | | liver | kaŋ₅₅ | k a ŋ <s> ₅₅ </s> |
-| BAI-435 | | liver | kã₃₅ | k ã <s> ₃₅ </s> |
-| BAI-436 | | liver | ka₃₅ | k a <s> ₃₅ </s> |
-| BAI-437 | | liver | kɑ₅₅ | k ɑ <s> ₅₅ </s> |
-| BAI-438 | | liver | qɔŋ₅₅ | q ɔ ŋ <s> ₅₅ </s> |
-| BAI-439 | | liver | qa₂₄ | q a <s> ₂₄ </s> |
-| BAI-440 | | liver | qo₅₅ | q o <s> ₅₅ </s> |
-| BAI-441 | | long | ʥow₁₂ | ʥ o w <s> ₁₂ </s> |
-| BAI-442 | | long | ʈõ₂₁ | ʈ õ <s> ₂₁ </s> |
-| BAI-443 | | long | ʦoŋ₂₁ | ʦ o ŋ <s> ₂₁ </s> |
-| BAI-444 | | long | t͡ʂõ₂₁ | t͡ʂ õ <s> ₂₁ </s> |
-| BAI-445 | | long | ʦow₂₁ | ʦ o w <s> ₂₁ </s> |
-| BAI-446 | | long | ʦõ₂₁ | ʦ õ <s> ₂₁ </s> |
-| BAI-447 | | long | dɤ₃₅ | d ɤ <s> ₃₅ </s> |
-| BAI-448 | | long | tjo₂₁ | t j o <s> ₂₁ </s> |
-| BAI-449 | | long | ʨu₂₁ | ʨ u <s> ₂₁ </s> |
-| BAI-450 | | louse | ɕi₂₄ | ɕ i <s> ₂₄ </s> |
-| BAI-451 | | louse | ɕi₅₅ | ɕ i <s> ₅₅ </s> |
-| BAI-452 | | louse | ɕi₄₄ | ɕ i <s> ₄₄ </s> |
-| BAI-453 | | louse | ɕi₃₃ | ɕ i <s> ₃₃ </s> |
-| BAI-454 | | louse | ɕe₄₄ | ɕ e <s> ₄₄ </s> |
-| BAI-455 | | louse | ɕi₄₄ | ɕ i <s> ₄₄ </s> |
-| BAI-456 | | louse | ɕi₄₂ | ɕ i <s> ₄₂ </s> |
-| BAI-457 | | louse | ɕi₅₅ | ɕ i <s> ₅₅ </s> |
-| BAI-458 | | louse | ɕi₄₄ | ɕ i <s> ₄₄ </s> |
-| BAI-459 | | man | ʦi₂₂ | ʦ i <s> ₂₂ </s> |
-| BAI-460 | | man | da₅₃xõ₅₅ʦi₂₂ | d a <s> ₅₃ </s> x õ <s> ₅₅ </s> ʦ i <s> ₂₂ </s> |
-| BAI-461 | | man | ʦi₃₃ | ʦ i <s> ₃₃ </s> |
-| BAI-462 | | man | ʦi₃₃ | ʦ i <s> ₃₃ </s> |
-| BAI-463 | | man | ʦi₄₄ | ʦ i <s> ₄₄ </s> |
-| BAI-464 | | man | ʦi₃₃ | ʦ i <s> ₃₃ </s> |
-| BAI-465 | | man | ɕa₅₅tʰjo₂₁po₅₅ | ɕ a <s> ₅₅ </s> tʰ j o <s> ₂₁ </s> p o <s> ₅₅ </s> |
-| BAI-466 | | man | da₄₃xo₂₄ | d a <s> ₄₃ </s> x o <s> ₂₄ </s> |
-| BAI-467 | | man | do₄₂xõ₅₅ʦi₂₂ | d o <s> ₄₂ </s> x õ <s> ₅₅ </s> ʦ i <s> ₂₂ </s> |
-| BAI-468 | | many | ti₅₅ | t i <s> ₅₅ </s> |
-| BAI-469 | | many | ti₅₅ | t i <s> ₅₅ </s> |
-| BAI-470 | | many | ti₅₅ | t i <s> ₅₅ </s> |
-| BAI-471 | | many | ʨi₃₅ | ʨ i <s> ₃₅ </s> |
-| BAI-472 | | many | ʨi₃₅ | ʨ i <s> ₃₅ </s> |
-| BAI-473 | | many | ʨi₅₅ | ʨ i <s> ₅₅ </s> |
-| BAI-474 | | many | ʨɯ₅₅ | ʨ ɯ <s> ₅₅ </s> |
-| BAI-475 | | many | ti₂₄ | t i <s> ₂₄ </s> |
-| BAI-476 | | many | ti₅₅ | t i <s> ₅₅ </s> |
-| BAI-477 | | meat | ɢæ₁₂ | ɢ æ <s> ₁₂ </s> |
-| BAI-478 | | meat | qa₂₁ | q a <s> ₂₁ </s> |
-| BAI-479 | | meat | kɚ₂₁ | k ɚ <s> ₂₁ </s> |
-| BAI-480 | | meat | kɚ₂₁ | k ɚ <s> ₂₁ </s> |
-| BAI-481 | | meat | kɛ₂₁ | k ɛ <s> ₂₁ </s> |
-| BAI-482 | | meat | ka₂₁ | k a <s> ₂₁ </s> |
-| BAI-483 | | meat | ʁa₃₅ | ʁ a <s> ₃₅ </s> |
-| BAI-484 | | meat | qæ₂₁ | q æ <s> ₂₁ </s> |
-| BAI-485 | | meat | qa₂₁ | q a <s> ₂₁ </s> |
-| BAI-486 | | moon | ɲi₂₄waŋ₅₅ | ɲ i <s> ₂₄ </s> w a ŋ <s> ₅₅ </s> |
-| BAI-487 | | moon | ɲo₅₅ŋõ₅₅ | ɲ o <s> ₅₅ </s> ŋ õ <s> ₅₅ </s> |
-| BAI-488 | | moon | mjen₅₅ŋwa₄₄ | m j e n <s> ₅₅ </s> ŋ w a <s> ₄₄ </s> |
-| BAI-489 | | moon | mi₅₅wã₄₄ | m i <s> ₅₅ </s> w ã <s> ₄₄ </s> |
-| BAI-490 | | moon | mi₃₅wa₄₄ | m i <s> ₃₅ </s> w a <s> ₄₄ </s> |
-| BAI-491 | | moon | mi₅₅wɑ̃₅₅ | m i <s> ₅₅ </s> w ɑ̃ <s> ₅₅ </s> |
-| BAI-492 | | moon | jen₅₅wo₄₂ | j e n <s> ₅₅ </s> w o <s> ₄₂ </s> |
-| BAI-493 | | moon | mjɛ₂₄wa₅₅ | m j ɛ <s> ₂₄ </s> w a <s> ₅₅ </s> |
-| BAI-494 | | moon | ɲa₅₅ŋwa₄₄ | ɲ a <s> ₅₅ </s> ŋ w a <s> ₄₄ </s> |
-| BAI-495 | | mountain | swa₄₂ | s w a <s> ₄₂ </s> |
-| BAI-496 | | mountain | ʂɚ̃₅₅ | ʂ <s> ɚ̃ </s> <s> ₅₅ </s> |
-| BAI-497 | | mountain | sen₅₅ | s e n <s> ₅₅ </s> |
-| BAI-498 | | mountain | ʂo₄₂ | ʂ o <s> ₄₂ </s> |
-| BAI-499 | | mountain | sɤ₅₃ | s ɤ <s> ₅₃ </s> |
-| BAI-500 | | mountain | sɤ̃₄₂ | s ɤ̃ <s> ₄₂ </s> |
-| BAI-501 | | mountain | ɕen₅₅ | ɕ e n <s> ₅₅ </s> |
-| BAI-502 | | mountain | ɕo₄₃ | ɕ o <s> ₄₃ </s> |
-| BAI-503 | | mountain | sɛ₅₅ | s ɛ <s> ₅₅ </s> |
-| BAI-504 | | mouth | ʦu₂₂qwɛ₅₅ | ʦ u <s> ₂₂ </s> q w ɛ <s> ₅₅ </s> |
-| BAI-505 | | mouth | ʨu₂₂kwe₅₅ | ʨ u <s> ₂₂ </s> k w e <s> ₅₅ </s> |
-| BAI-506 | | mouth | ʦwi₃₃ | ʦ w i <s> ₃₃ </s> |
-| BAI-507 | | mouth | ʦwi₃₃ | ʦ w i <s> ₃₃ </s> |
-| BAI-508 | | mouth | ʨy₃₃kɤ₃₃ | ʨ y <s> ₃₃ </s> k ɤ <s> ₃₃ </s> |
-| BAI-509 | | mouth | ʨyj₃₃kwe₅₅ | ʨ y j <s> ₃₃ </s> k w e <s> ₅₅ </s> |
-| BAI-510 | | mouth | ʨu₃₃qwa₅₅ | ʨ u <s> ₃₃ </s> q w a <s> ₅₅ </s> |
-| BAI-511 | | mouth | ʨu₂₂qwa₂₄ | ʨ u <s> ₂₂ </s> q w a <s> ₂₄ </s> |
-| BAI-512 | | mouth | ʨu₂₂kwa₅₅qo₄₂ | ʨ u <s> ₂₂ </s> k w a <s> ₅₅ </s> q o <s> ₄₂ </s> |
-| BAI-513 | | name | ɲwɛ₅₅ | ɲ w ɛ <s> ₅₅ </s> |
-| BAI-514 | | name | ɲo₅₅ | ɲ o <s> ₅₅ </s> |
-| BAI-515 | | name | mjɚ₅₅ | m j ɚ <s> ₅₅ </s> |
-| BAI-516 | | name | mjɚ₃₅ | m j ɚ <s> ₃₅ </s> |
-| BAI-517 | | name | mjɛ₃₅ | m j ɛ <s> ₃₅ </s> |
-| BAI-518 | | name | mjan₅₅ | m j a n <s> ₅₅ </s> |
-| BAI-519 | | name | ɲwa₅₅ | ɲ w a <s> ₅₅ </s> |
-| BAI-520 | | name | mjæ₂₄ | m j æ <s> ₂₄ </s> |
-| BAI-521 | | name | ɲɥa₅₅ | ɲ ɥ a <s> ₅₅ </s> |
-| BAI-522 | | neck | qoŋ₅₅noŋ₄₂ | q o ŋ <s> ₅₅ </s> n o ŋ <s> ₄₂ </s> |
-| BAI-523 | | neck | qo₄₂te₃₃me₄₂ | q o <s> ₄₂ </s> t e <s> ₃₃ </s> m e <s> ₄₂ </s> |
-| BAI-524 | | neck | kɤ₄₂tɛ₅₅ | k ɤ <s> ₄₂ </s> t ɛ <s> ₅₅ </s> |
-| BAI-525 | | neck | mjɚ₄₂tʰõ₅₅ | m j ɚ <s> ₄₂ </s> tʰ õ <s> ₅₅ </s> |
-| BAI-526 | | neck | po₃₅ʦɿ₃₃ku₃₅ | p o <s> ₃₅ </s> ʦ ɿ <s> ₃₃ </s> k u <s> ₃₅ </s> |
-| BAI-527 | | neck | kɤ₄₂mi₄₂ʦɿ₃₃ | k ɤ <s> ₄₂ </s> m i <s> ₄₂ </s> ʦ ɿ <s> ₃₃ </s> |
-| BAI-528 | | neck | qoŋ₂₁mo₂₁ | q o ŋ <s> ₂₁ </s> m o <s> ₂₁ </s> |
-| BAI-529 | | neck | qo₄₃tæ₅₅ | q o <s> ₄₃ </s> t æ <s> ₅₅ </s> |
-| BAI-530 | | neck | qo₄₂tɛ₄₄me₄₂ | q o <s> ₄₂ </s> t ɛ <s> ₄₄ </s> m e <s> ₄₂ </s> |
-| BAI-531 | | neck | ɚ₄₄mjɚ₄₂ | ɚ <s> ₄₄ </s> m j ɚ <s> ₄₂ </s> |
-| BAI-532 | | new | ɕen₅₅ | ɕ e n <s> ₅₅ </s> |
-| BAI-533 | | new | sẽ₅₅ | s ẽ <s> ₅₅ </s> |
-| BAI-534 | | new | ɕen₅₅ | ɕ e n <s> ₅₅ </s> |
-| BAI-535 | | new | ɕʰen₅₅ | ɕʰ e n <s> ₅₅ </s> |
-| BAI-536 | | new | ɕi₃₅ | ɕ i <s> ₃₅ </s> |
-| BAI-537 | | new | ɕen₅₅ | ɕ e n <s> ₅₅ </s> |
-| BAI-538 | | new | ɕen₅₅ | ɕ e n <s> ₅₅ </s> |
-| BAI-539 | | new | si₂₄ | s i <s> ₂₄ </s> |
-| BAI-540 | | new | sɛ₅₅ | s ɛ <s> ₅₅ </s> |
-| BAI-541 | | night | ja₅₅xɯ₄₂ | j a <s> ₅₅ </s> x ɯ <s> ₄₂ </s> |
-| BAI-542 | | night | ɕa₅₅xɯ̃₄₂ | ɕ a <s> ₅₅ </s> x ɯ̃ <s> ₄₂ </s> |
-| BAI-543 | | night | ɕɚ₅₅pʰo₅₅ | ɕ ɚ <s> ₅₅ </s> pʰ o <s> ₅₅ </s> |
-| BAI-544 | | night | pe₃₃kɚ₄₂ | p e <s> ₃₃ </s> k ɚ <s> ₄₂ </s> |
-| BAI-545 | | night | pe₃₃kɛ₄₂ | p e <s> ₃₃ </s> k ɛ <s> ₄₂ </s> |
-| BAI-546 | | night | pẽ₅₅ka₄₂ | p ẽ <s> ₅₅ </s> k a <s> ₄₂ </s> |
-| BAI-547 | | night | pɛ₃₃ʨa₂₁ | p ɛ <s> ₃₃ </s> ʨ a <s> ₂₁ </s> |
-| BAI-548 | | night | ɕa₂₄xɯ₂₂ | ɕ a <s> ₂₄ </s> x ɯ <s> ₂₂ </s> |
-| BAI-549 | | night | ɲi₄₄u₂₂ | ɲ i <s> ₄₄ </s> u <s> ₂₂ </s> |
-| BAI-550 | | night | xa₄₂xɯ₂₁ | x a <s> ₄₂ </s> x ɯ <s> ₂₁ </s> |
-| BAI-551 | | nose | ty₂₁tjy₂₄ | t y <s> ₂₁ </s> t j y <s> ₂₄ </s> |
-| BAI-552 | | nose | qʰwe₄₂tjɯ₂₁ | qʰ w e <s> ₄₂ </s> t j ɯ <s> ₂₁ </s> |
-| BAI-553 | | nose | pʰjen₄₂ | pʰ j e n <s> ₄₂ </s> |
-| BAI-554 | | nose | wɤ₄₂tiǝ₂₁ | w ɤ <s> ₄₂ </s> t iǝ <s> ₂₁ </s> |
-| BAI-555 | | nose | pi₃₁fɤ₄₄ʦɿ₄₄ | p i <s> ₃₁ </s> f ɤ <s> ₄₄ </s> ʦ ɿ <s> ₄₄ </s> |
-| BAI-556 | | nose | pjen₂₁ | p j e n <s> ₂₁ </s> |
-| BAI-557 | | nose | vɚ₄₂djɯ₃₅ | v ɚ <s> ₄₂ </s> d j ɯ <s> ₃₅ </s> |
-| BAI-558 | | nose | ʦo₂₁qʰo₂₂tjɯ₂₁ | ʦ o <s> ₂₁ </s> qʰ o <s> ₂₂ </s> t j ɯ <s> ₂₁ </s> |
-| BAI-559 | | nose | kʰwɛ₄₂ʨyj₂₁ | kʰ w ɛ <s> ₄₂ </s> ʨ y j <s> ₂₁ </s> |
-| BAI-560 | | not | ɛ₅₅ | ɛ <s> ₅₅ </s> |
-| BAI-561 | | not | a₄₂ | a <s> ₄₂ </s> |
-| BAI-562 | | not | a₃₁mow₃₃ | a <s> ₃₁ </s> m o w <s> ₃₃ </s> |
-| BAI-563 | | not | ma₃₃xa₅₅ | m a <s> ₃₃ </s> x a <s> ₅₅ </s> |
-| BAI-564 | | not | mo₃₃ | m o <s> ₃₃ </s> |
-| BAI-565 | | not | ɣa₃₅ | ɣ a <s> ₃₅ </s> |
-| BAI-566 | | not | e₃₅ | e <s> ₃₅ </s> |
-| BAI-567 | | not | a₄₃ | a <s> ₄₃ </s> |
-| BAI-568 | | not | a₄₂ | a <s> ₄₂ </s> |
-| BAI-569 | | not | pu₂₁ | p u <s> ₂₁ </s> |
-| BAI-570 | | not | a₄₂ɣẽ₅₅ | a <s> ₄₂ </s> ɣ ẽ <s> ₅₅ </s> |
-| BAI-571 | | not | a₂₁ | a <s> ₂₁ </s> |
-| BAI-572 | | one | a₅₅ | a <s> ₅₅ </s> |
-| BAI-573 | | one | a₄₂ | a <s> ₄₂ </s> |
-| BAI-574 | | one | a₂₁ | a <s> ₂₁ </s> |
-| BAI-575 | | one | ji₄₄ | j i <s> ₄₄ </s> |
-| BAI-576 | | one | a₃₁ | a <s> ₃₁ </s> |
-| BAI-577 | | one | a₄₂ | a <s> ₄₂ </s> |
-| BAI-578 | | one | a₂₁ | a <s> ₂₁ </s> |
-| BAI-579 | | one | ji₅₅ | j i <s> ₅₅ </s> |
-| BAI-580 | | one | a₄₂ | a <s> ₄₂ </s> |
-| BAI-581 | | one | ji₂₄ | j i <s> ₂₄ </s> |
-| BAI-582 | | one | ji₄₂ | j i <s> ₄₂ </s> |
-| BAI-583 | | one | ji₄₄ | j i <s> ₄₄ </s> |
-| BAI-584 | | one | ji₄₄ | j i <s> ₄₄ </s> |
-| BAI-585 | | one | ji₄₂ | j i <s> ₄₂ </s> |
-| BAI-586 | | one | a₄₃ | a <s> ₄₃ </s> |
-| BAI-587 | | one | ji₅₅ | j i <s> ₅₅ </s> |
-| BAI-588 | | person | ɲi₁₂ | ɲ i <s> ₁₂ </s> |
-| BAI-589 | | person | ɲi₂₁ | ɲ i <s> ₂₁ </s> |
-| BAI-590 | | person | ɲen₂₁ | ɲ e n <s> ₂₁ </s> |
-| BAI-591 | | person | jen₂₁ | j e n <s> ₂₁ </s> |
-| BAI-592 | | person | ɲi₂₁ | ɲ i <s> ₂₁ </s> |
-| BAI-593 | | person | jen₂₁ | j e n <s> ₂₁ </s> |
-| BAI-594 | | person | jen₃₅ | j e n <s> ₃₅ </s> |
-| BAI-595 | | person | ɲi₂₁qa₂₄ | ɲ i <s> ₂₁ </s> q a <s> ₂₄ </s> |
-| BAI-596 | | person | ɲi₂₁ | ɲ i <s> ₂₁ </s> |
-| BAI-597 | | rain (V) | ʐi₂₂ | ʐ i <s> ₂₂ </s> |
-| BAI-598 | | rain (V) | ʐɚ₂₂wo₄₂ | ʐ ɚ <s> ₂₂ </s> w o <s> ₄₂ </s> |
-| BAI-599 | | rain (V) | ju₅₅ | j u <s> ₅₅ </s> |
-| BAI-600 | | rain (V) | wɤ₃₃ | w ɤ <s> ₃₃ </s> |
-| BAI-601 | | rain (V) | ow₄₂ɤ₃₃ɕi₄₄ | o w <s> ₄₂ </s> ɤ <s> ₃₃ </s> ɕ i <s> ₄₄ </s> |
-| BAI-602 | | rain (V) | ɤ₃₃ | ɤ <s> ₃₃ </s> |
-| BAI-603 | | rain (V) | ʐi₃₃ | ʐ i <s> ₃₃ </s> |
-| BAI-604 | | rain (V) | zi₂₂ | z i <s> ₂₂ </s> |
-| BAI-605 | | rain (V) | zɛ₂₂u₄₂ | z ɛ <s> ₂₂ </s> u <s> ₄₂ </s> |
-| BAI-606 | | rain (V) | u₂₁ | u <s> ₂₁ </s> |
-| BAI-607 | | red | tʰæ₂₄ | tʰ æ <s> ₂₄ </s> |
-| BAI-608 | | red | ʈʰa₅₅ | ʈʰ a <s> ₅₅ </s> |
-| BAI-609 | | red | xoŋ₃₃ | x o ŋ <s> ₃₃ </s> |
-| BAI-610 | | red | t͡ʂʰɚ₄₄ | t͡ʂʰ ɚ <s> ₄₄ </s> |
-| BAI-611 | | red | ʦʰɛ₄₄ | ʦʰ ɛ <s> ₄₄ </s> |
-| BAI-612 | | red | ʦʰa₄₄ | ʦʰ a <s> ₄₄ </s> |
-| BAI-613 | | red | tʰa₄₂ | tʰ a <s> ₄₂ </s> |
-| BAI-614 | | red | tʰjæ₅₅ | tʰ j æ <s> ₅₅ </s> |
-| BAI-615 | | red | ʨʰa₄₄ | ʨʰ a <s> ₄₄ </s> |
-| BAI-616 | | road | tʰy₂₂ | tʰ y <s> ₂₂ </s> |
-| BAI-617 | | road | ʈʰu₂₂ | ʈʰ u <s> ₂₂ </s> |
-| BAI-618 | | road | tʰǝɯ₃₃ | tʰ <s> ǝɯ </s> <s> ₃₃ </s> |
-| BAI-619 | | road | tʰu₃₃ | tʰ u <s> ₃₃ </s> |
-| BAI-620 | | road | tʰo₃₃ | tʰ o <s> ₃₃ </s> |
-| BAI-621 | | road | tʰu₃₃ | tʰ u <s> ₃₃ </s> |
-| BAI-622 | | road | tʰɤ₃₃ | tʰ ɤ <s> ₃₃ </s> |
-| BAI-623 | | road | tʰiw₂₂ | tʰ i w <s> ₂₂ </s> |
-| BAI-624 | | road | ʨiw₂₂ | ʨ i w <s> ₂₂ </s> |
-| BAI-625 | | root | tɛ₂₄ | t ɛ <s> ₂₄ </s> |
-| BAI-626 | | root | me₄₂ | m e <s> ₄₂ </s> |
-| BAI-627 | | root | ʦo₃₃ | ʦ o <s> ₃₃ </s> |
-| BAI-628 | | root | te₄₄ | t e <s> ₄₄ </s> |
-| BAI-629 | | root | mi₄₄ | m i <s> ₄₄ </s> |
-| BAI-630 | | root | te₄₄ | t e <s> ₄₄ </s> |
-| BAI-631 | | root | mɛ₂₁ | m ɛ <s> ₂₁ </s> |
-| BAI-632 | | root | tɛ₅₅ | t ɛ <s> ₅₅ </s> |
-| BAI-633 | | root | mɛ₄₂ | m ɛ <s> ₄₂ </s> |
-| BAI-634 | | root | te₄₂ | t e <s> ₄₂ </s> |
-| BAI-635 | | root | mi₄₄ | m i <s> ₄₄ </s> |
-| BAI-636 | | root | mɛ₄₃ | m ɛ <s> ₄₃ </s> |
-| BAI-637 | | root | tɛ₄₂ | t ɛ <s> ₄₂ </s> |
-| BAI-638 | | round | wen₁₂ | w e n <s> ₁₂ </s> |
-| BAI-639 | | round | ŋwe₂₁ | ŋ w e <s> ₂₁ </s> |
-| BAI-640 | | round | ɣen₂₁ | ɣ e n <s> ₂₁ </s> |
-| BAI-641 | | round | wẽ₃₁ | w ẽ <s> ₃₁ </s> |
-| BAI-642 | | round | we₂₁ | w e <s> ₂₁ </s> |
-| BAI-643 | | round | wẽ₂₁ | w ẽ <s> ₂₁ </s> |
-| BAI-644 | | round | wen₃₅ | w e n <s> ₃₅ </s> |
-| BAI-645 | | round | ʁwɛ₂₁ | ʁ w ɛ <s> ₂₁ </s> |
-| BAI-646 | | round | kʰwɛ₄₄ | kʰ w ɛ <s> ₄₄ </s> |
-| BAI-647 | | sand | swa₅₅ | s w a <s> ₅₅ </s> |
-| BAI-648 | | sand | ɕo₅₅ | ɕ o <s> ₅₅ </s> |
-| BAI-649 | | sand | sa₅₅ | s a <s> ₅₅ </s> |
-| BAI-650 | | sand | ʂʰow₅₅ | ʂʰ o w <s> ₅₅ </s> |
-| BAI-651 | | sand | so₅₅ | s o <s> ₅₅ </s> |
-| BAI-652 | | sand | sow₅₅ | s o w <s> ₅₅ </s> |
-| BAI-653 | | sand | ɕwɨ₅₅ | ɕ w ɨ <s> ₅₅ </s> |
-| BAI-654 | | sand | ɕo₂₄ | ɕ o <s> ₂₄ </s> |
-| BAI-655 | | sand | ɕo₅₅mi₂₂ | ɕ o <s> ₅₅ </s> m i <s> ₂₂ </s> |
-| BAI-656 | | say (V) | ʣu₂₁ | ʣ u <s> ₂₁ </s> |
-| BAI-657 | | say (V) | swa₄₄ | s w a <s> ₄₄ </s> |
-| BAI-658 | | say (V) | ʨaŋ₂₁ | ʨ a ŋ <s> ₂₁ </s> |
-| BAI-659 | | say (V) | swa₄₄ | s w a <s> ₄₄ </s> |
-| BAI-660 | | say (V) | swɑ₄₄ | s w ɑ <s> ₄₄ </s> |
-| BAI-661 | | say (V) | zu₄₂ | z u <s> ₄₂ </s> |
-| BAI-662 | | say (V) | ʦu₂₁ | ʦ u <s> ₂₁ </s> |
-| BAI-663 | | say (V) | ʦo₄₂ | ʦ o <s> ₄₂ </s> |
-| BAI-664 | | say (V) | swa₄₂ | s w a <s> ₄₂ </s> |
-| BAI-665 | | see (V) | en₂₂qen₄₂ | e n <s> ₂₂ </s> q e n <s> ₄₂ </s> |
-| BAI-666 | | see (V) | e₂₂tɯ₄₄ | e <s> ₂₂ </s> t ɯ <s> ₄₄ </s> |
-| BAI-667 | | see (V) | xã₅₅kɛ₄₂ | x ã <s> ₅₅ </s> k ɛ <s> ₄₂ </s> |
-| BAI-668 | | see (V) | aŋ₃₃ke₃₁ | a ŋ <s> ₃₃ </s> k e <s> ₃₁ </s> |
-| BAI-669 | | see (V) | a₃₃tɯ₄₄ | a <s> ₃₃ </s> t ɯ <s> ₄₄ </s> |
-| BAI-670 | | see (V) | xɑ̃₅₅ | x ɑ̃ <s> ₅₅ </s> |
-| BAI-671 | | see (V) | en₃₃qɛ₂₁ | e n <s> ₃₃ </s> q ɛ <s> ₂₁ </s> |
-| BAI-672 | | see (V) | ɛ₂₂tɯ₅₅la₂₂ | ɛ <s> ₂₂ </s> t ɯ <s> ₅₅ </s> l a <s> ₂₂ </s> |
-| BAI-673 | | see (V) | e₂₂tɯ₄₄ | e <s> ₂₂ </s> t ɯ <s> ₄₄ </s> |
-| BAI-674 | | seed | ʦoŋ₂₂ | ʦ o ŋ <s> ₂₂ </s> |
-| BAI-675 | | seed | ʨõ₂₂ | ʨ õ <s> ₂₂ </s> |
-| BAI-676 | | seed | ʦoŋ₃₃ | ʦ o ŋ <s> ₃₃ </s> |
-| BAI-677 | | seed | t͡ʂoŋ₃₃ | t͡ʂ o ŋ <s> ₃₃ </s> |
-| BAI-678 | | seed | ʦɤ₃₃ | ʦ ɤ <s> ₃₃ </s> |
-| BAI-679 | | seed | ʦɤ̃₃₃ | ʦ ɤ̃ <s> ₃₃ </s> |
-| BAI-680 | | seed | t͡ʂɤŋ₃₃ | t͡ʂ ɤ ŋ <s> ₃₃ </s> |
-| BAI-681 | | seed | ʨo₂₂ | ʨ o <s> ₂₂ </s> |
-| BAI-682 | | seed | ʨu₂₂ | ʨ u <s> ₂₂ </s> |
-| BAI-683 | | sit (V) | kwa₄₂ | k w a <s> ₄₂ </s> |
-| BAI-684 | | sit (V) | kɤ₄₂ | k ɤ <s> ₄₂ </s> |
-| BAI-685 | | sit (V) | kɤ₄₂ | k ɤ <s> ₄₂ </s> |
-| BAI-686 | | sit (V) | ko₄₂ | k o <s> ₄₂ </s> |
-| BAI-687 | | sit (V) | kɤ₄₂ | k ɤ <s> ₄₂ </s> |
-| BAI-688 | | sit (V) | kɤ₄₂ | k ɤ <s> ₄₂ </s> |
-| BAI-689 | | sit (V) | kɤ₂₁ | k ɤ <s> ₂₁ </s> |
-| BAI-690 | | sit (V) | ku₄₃ | k u <s> ₄₃ </s> |
-| BAI-691 | | sit (V) | kɤ₄₂ | k ɤ <s> ₄₂ </s> |
-| BAI-692 | | skin | bi₁₂ | b i <s> ₁₂ </s> |
-| BAI-693 | | skin | ʨyj₂₁ | ʨ y j <s> ₂₁ </s> |
-| BAI-694 | | skin | pe₂₁ | p e <s> ₂₁ </s> |
-| BAI-695 | | skin | pe₂₁ | p e <s> ₂₁ </s> |
-| BAI-696 | | skin | pe₂₁ | p e <s> ₂₁ </s> |
-| BAI-697 | | skin | pe₂₁ | p e <s> ₂₁ </s> |
-| BAI-698 | | skin | bi₃₅ | b i <s> ₃₅ </s> |
-| BAI-699 | | skin | pi₂₁ | p i <s> ₂₁ </s> |
-| BAI-700 | | skin | ʨyj₂₁qa₅₅ | ʨ y j <s> ₂₁ </s> q a <s> ₅₅ </s> |
-| BAI-701 | | sleep (V) | nɛ₁₂ | n ɛ <s> ₁₂ </s> |
-| BAI-702 | | sleep (V) | wɤ̃₄₂ti₄₂ | w ɤ̃ <s> ₄₂ </s> t i <s> ₄₂ </s> |
-| BAI-703 | | sleep (V) | mi₅₅ | m i <s> ₅₅ </s> |
-| BAI-704 | | sleep (V) | t͡ʂʰɚ̃₃₃ | t͡ʂʰ <s> ɚ̃ </s> <s> ₃₃ </s> |
-| BAI-705 | | sleep (V) | ʦʰɛ₃₃ | ʦʰ ɛ <s> ₃₃ </s> |
-| BAI-706 | | sleep (V) | ʦʰan₃₃ | ʦʰ a n <s> ₃₃ </s> |
-| BAI-707 | | sleep (V) | ʐa₄₂ma₄₂ | ʐ a <s> ₄₂ </s> m a <s> ₄₂ </s> |
-| BAI-708 | | sleep (V) | ʦʰi₂₂ | ʦʰ i <s> ₂₂ </s> |
-| BAI-709 | | sleep (V) | ŋu₄₂ti₄₂ | ŋ u <s> ₄₂ </s> t i <s> ₄₂ </s> |
-| BAI-710 | | small | sɛ₄₂ | s ɛ <s> ₄₂ </s> |
-| BAI-711 | | small | sẽ₄₂ | s ẽ <s> ₄₂ </s> |
-| BAI-712 | | small | sɛ₂₁ | s ɛ <s> ₂₁ </s> |
-| BAI-713 | | small | sʰe₂₁ | sʰ e <s> ₂₁ </s> |
-| BAI-714 | | small | se₃₁ | s e <s> ₃₁ </s> |
-| BAI-715 | | small | se₃₁ | s e <s> ₃₁ </s> |
-| BAI-716 | | small | se₂₁ | s e <s> ₂₁ </s> |
-| BAI-717 | | small | sɛ₄₃ | s ɛ <s> ₄₃ </s> |
-| BAI-718 | | small | sɛ₄₂ | s ɛ <s> ₄₂ </s> |
-| BAI-719 | | smoke | xwi₂₂ɕi₅₅ | x w i <s> ₂₂ </s> ɕ i <s> ₅₅ </s> |
-| BAI-720 | | smoke | fi₂₂se₅₅ | f i <s> ₂₂ </s> s e <s> ₅₅ </s> |
-| BAI-721 | | smoke | fi₃₃ɕen₅₅ | f i <s> ₃₃ </s> ɕ e n <s> ₅₅ </s> |
-| BAI-722 | | smoke | xwi₃₃ɕen₃₅ | x w i <s> ₃₃ </s> ɕ e n <s> ₃₅ </s> |
-| BAI-723 | | smoke | xwi₃₃ɕe₅₅ | x w i <s> ₃₃ </s> ɕ e <s> ₅₅ </s> |
-| BAI-724 | | smoke | xwi₃₃ɕen₅₅ | x w i <s> ₃₃ </s> ɕ e n <s> ₅₅ </s> |
-| BAI-725 | | smoke | xwe₃₃ɕen₅₅ | x w e <s> ₃₃ </s> ɕ e n <s> ₅₅ </s> |
-| BAI-726 | | smoke | xwi₂₂si₂₄ | x w i <s> ₂₂ </s> s i <s> ₂₄ </s> |
-| BAI-727 | | smoke | fi₂₂sɛ₅₅ | f i <s> ₂₂ </s> s ɛ <s> ₅₅ </s> |
-| BAI-728 | | stand (V) | ji₂₁ | j i <s> ₂₁ </s> |
-| BAI-729 | | stand (V) | djõ₂₂ | d j õ <s> ₂₂ </s> |
-| BAI-730 | | stand (V) | zi₄₂ | z i <s> ₄₂ </s> |
-| BAI-731 | | stand (V) | t͡ʂɯ₂₁ | t͡ʂ ɯ <s> ₂₁ </s> |
-| BAI-732 | | stand (V) | ʦɯ₃₁ | ʦ ɯ <s> ₃₁ </s> |
-| BAI-733 | | stand (V) | ʦɯ₃₁ | ʦ ɯ <s> ₃₁ </s> |
-| BAI-734 | | stand (V) | ji₄₂kʰɯ₃₃ | j i <s> ₄₂ </s> kʰ ɯ <s> ₃₃ </s> |
-| BAI-735 | | stand (V) | djɯ₄₃ | d j ɯ <s> ₄₃ </s> |
-| BAI-736 | | stand (V) | ji₄₂ | j i <s> ₄₂ </s> |
-| BAI-737 | | stand (V) | ʥõ₂₂ | ʥ õ <s> ₂₂ </s> |
-| BAI-738 | | star | san₅₅ | s a n <s> ₅₅ </s> |
-| BAI-739 | | star | ɕã₅₅ | ɕ ã <s> ₅₅ </s> |
-| BAI-740 | | star | ɕɚ̃₅₅ | ɕ <s> ɚ̃ </s> <s> ₅₅ </s> |
-| BAI-741 | | star | ɕɚ̃₅₅ | ɕ <s> ɚ̃ </s> <s> ₅₅ </s> |
-| BAI-742 | | star | ɕɛ₅₅ | ɕ ɛ <s> ₅₅ </s> |
-| BAI-743 | | star | ɕan₅₅ | ɕ a n <s> ₅₅ </s> |
-| BAI-744 | | star | ɕaŋ₅₅ | ɕ a ŋ <s> ₅₅ </s> |
-| BAI-745 | | star | ɕæ₂₄ | ɕ æ <s> ₂₄ </s> |
-| BAI-746 | | star | ɕa₅₅ | ɕ a <s> ₅₅ </s> |
-| BAI-747 | | stone | ʣu₂₁qʰwɛ₅₅ | ʣ u <s> ₂₁ </s> qʰ w ɛ <s> ₅₅ </s> |
-| BAI-748 | | stone | ʈo₂₁ | ʈ o <s> ₂₁ </s> |
-| BAI-749 | | stone | ʦʰɤ₄₂ | ʦʰ ɤ <s> ₄₂ </s> |
-| BAI-750 | | stone | t͡ʂow₄₂ | t͡ʂ o w <s> ₄₂ </s> |
-| BAI-751 | | stone | ʦow₄₂ | ʦ o w <s> ₄₂ </s> |
-| BAI-752 | | stone | ʦow₄₂ | ʦ o w <s> ₄₂ </s> |
-| BAI-753 | | stone | diw₄₂ | d i w <s> ₄₂ </s> |
-| BAI-754 | | stone | tiw₂₁ | t i w <s> ₂₁ </s> |
-| BAI-755 | | stone | ʨiw₄₂ | ʨ i w <s> ₄₂ </s> |
-| BAI-756 | | stone | da₄₂ŋã₂₁ | d a <s> ₄₂ </s> ŋ ã <s> ₂₁ </s> |
-| BAI-757 | | sun | ɲi₂₄ | ɲ i <s> ₂₄ </s> |
-| BAI-758 | | sun | ɲi₅₅ | ɲ i <s> ₅₅ </s> |
-| BAI-759 | | sun | ɲɛ₄₄ | ɲ ɛ <s> ₄₄ </s> |
-| BAI-760 | | sun | jen₄₄ | j e n <s> ₄₄ </s> |
-| BAI-761 | | sun | mi₄₄ | m i <s> ₄₄ </s> |
-| BAI-762 | | sun | jjen₄₄ | jː e n <s> ₄₄ </s> |
-| BAI-763 | | sun | jjen₄₂ | jː e n <s> ₄₂ </s> |
-| BAI-764 | | sun | ɲi₅₅ | ɲ i <s> ₅₅ </s> |
-| BAI-765 | | sun | ɲi₄₄ | ɲ i <s> ₄₄ </s> |
-| BAI-766 | | swim (V) | ɕi₂₂qoŋ₅₅ | ɕ i <s> ₂₂ </s> q o ŋ <s> ₅₅ </s> |
-| BAI-767 | | swim (V) | ɕyj₂₂lu₂₁ | ɕ y j <s> ₂₂ </s> l u <s> ₂₁ </s> |
-| BAI-768 | | swim (V) | ʦʰɛ₃₁ɕu₃₃si₅₅ | ʦʰ ɛ <s> ₃₁ </s> ɕ u <s> ₃₃ </s> s i <s> ₅₅ </s> |
-| BAI-769 | | swim (V) | se₃₃pe₂₁ | s e <s> ₃₃ </s> p e <s> ₂₁ </s> |
-| BAI-770 | | swim (V) | se₃₃ʦʰi₅₅kʰow₅₅ | s e <s> ₃₃ </s> ʦʰ i <s> ₅₅ </s> kʰ o w <s> ₅₅ </s> |
-| BAI-771 | | swim (V) | se₃₃pe₂₁ | s e <s> ₃₃ </s> p e <s> ₂₁ </s> |
-| BAI-772 | | swim (V) | fɤ₃₅ɕyj₃₃ | f ɤ <s> ₃₅ </s> ɕ y j <s> ₃₃ </s> |
-| BAI-773 | | swim (V) | sɛ₂₄ɕyj₂₂ | s ɛ <s> ₂₄ </s> ɕ y j <s> ₂₂ </s> |
-| BAI-774 | | swim (V) | ɕyj₂₂qu₅₅ | ɕ y j <s> ₂₂ </s> q u <s> ₅₅ </s> |
-| BAI-775 | | tail | mu₂₂qwa₂₄ | m u <s> ₂₂ </s> q w a <s> ₂₄ </s> |
-| BAI-776 | | tail | mo₂₂qwa₄₄ | m o <s> ₂₂ </s> q w a <s> ₄₄ </s> |
-| BAI-777 | | tail | mi₃₃ | m i <s> ₃₃ </s> |
-| BAI-778 | | tail | wɤ₃₃to₅₅ | w ɤ <s> ₃₃ </s> t o <s> ₅₅ </s> |
-| BAI-779 | | tail | mi₄₂tu₃₅ | m i <s> ₄₂ </s> t u <s> ₃₅ </s> |
-| BAI-780 | | tail | ɤ̃₃₃tɤ̃₅₅ | ɤ̃ <s> ₃₃ </s> t ɤ̃ <s> ₅₅ </s> |
-| BAI-781 | | tail | mɔ₄₂qɔ₄₂ | m ɔ <s> ₄₂ </s> q ɔ <s> ₄₂ </s> |
-| BAI-782 | | tail | mæ₂₂qwa₅₅ | m æ <s> ₂₂ </s> q w a <s> ₅₅ </s> |
-| BAI-783 | | tail | mu₂₂qwa₄₄ | m u <s> ₂₂ </s> q w a <s> ₄₄ </s> |
-| BAI-784 | | that | twa₅₅ɣǝ₂₁ | t w a <s> ₅₅ </s> ɣ ǝ <s> ₂₁ </s> |
-| BAI-785 | | that | tõ₅₅ | t õ <s> ₅₅ </s> |
-| BAI-786 | | that | pu₃₃ʦoŋ₂₁ | p u <s> ₃₃ </s> ʦ o ŋ <s> ₂₁ </s> |
-| BAI-787 | | that | na₅₅ | n a <s> ₅₅ </s> |
-| BAI-788 | | that | na₅₅wi₃₃ | n a <s> ₅₅ </s> w i <s> ₃₃ </s> |
-| BAI-789 | | that | no₅₅ | n o <s> ₅₅ </s> |
-| BAI-790 | | that | bo₂₁ | b o <s> ₂₁ </s> |
-| BAI-791 | | that | vɯ₄₃ | v ɯ <s> ₄₃ </s> |
-| BAI-792 | | that | a₅₅po₂₁ | a <s> ₅₅ </s> p o <s> ₂₁ </s> |
-| BAI-793 | | that | lo₅₅ | l o <s> ₅₅ </s> |
-| BAI-794 | | this | ɣǝ₂₁ | ɣ ǝ <s> ₂₁ </s> |
-| BAI-795 | | this | nõ₅₅ | n õ <s> ₅₅ </s> |
-| BAI-796 | | this | ne₃₃ʦoŋ₂₁ | n e <s> ₃₃ </s> ʦ o ŋ <s> ₂₁ </s> |
-| BAI-797 | | this | a₅₅ta₃₃ | a <s> ₅₅ </s> t a <s> ₃₃ </s> |
-| BAI-798 | | this | te₃₃le₃₁ | t e <s> ₃₃ </s> l e <s> ₃₁ </s> |
-| BAI-799 | | this | lɯ₃₁ | l ɯ <s> ₃₁ </s> |
-| BAI-800 | | this | djɯ₂₁ | d j ɯ <s> ₂₁ </s> |
-| BAI-801 | | this | nɯ₅₅ | n ɯ <s> ₅₅ </s> |
-| BAI-802 | | this | a₅₅na₂₄ | a <s> ₅₅ </s> n a <s> ₂₄ </s> |
-| BAI-803 | | this | lɛ₄₂ | l ɛ <s> ₄₂ </s> |
-| BAI-804 | | thou | na₄₂ | n a <s> ₄₂ </s> |
-| BAI-805 | | thou | no₄₂ | n o <s> ₄₂ </s> |
-| BAI-806 | | thou | nen₄₂ | n e n <s> ₄₂ </s> |
-| BAI-807 | | thou | nõ₃₁ | n õ <s> ₃₁ </s> |
-| BAI-808 | | thou | no₃₁ | n o <s> ₃₁ </s> |
-| BAI-809 | | thou | now₃₁ | n o w <s> ₃₁ </s> |
-| BAI-810 | | thou | nɔ₂₁ | n ɔ <s> ₂₁ </s> |
-| BAI-811 | | thou | no₄₃ | n o <s> ₄₃ </s> |
-| BAI-812 | | thou | no₄₂ | n o <s> ₄₂ </s> |
-| BAI-813 | | tongue | djɛ₂₁ | d j ɛ <s> ₂₁ </s> |
-| BAI-814 | | tongue | ʈɚ₄₂ | ʈ ɚ <s> ₄₂ </s> |
-| BAI-815 | | tongue | ʦʰɛ₄₂ | ʦʰ ɛ <s> ₄₂ </s> |
-| BAI-816 | | tongue | t͡ʂe₄₂ | t͡ʂ e <s> ₄₂ </s> |
-| BAI-817 | | tongue | ʦe₄₂ | ʦ e <s> ₄₂ </s> |
-| BAI-818 | | tongue | ʦe₄₂ | ʦ e <s> ₄₂ </s> |
-| BAI-819 | | tongue | de₄₂ | d e <s> ₄₂ </s> |
-| BAI-820 | | tongue | tjɛ₂₁ | t j ɛ <s> ₂₁ </s> |
-| BAI-821 | | tongue | ti₂₁pʰɛ₄₂ | t i <s> ₂₁ </s> pʰ ɛ <s> ₄₂ </s> |
-| BAI-822 | | tooth | xu₅₅ja₂₁ | x u <s> ₅₅ </s> j a <s> ₂₁ </s> |
-| BAI-823 | | tooth | ʨu₂₂pa₄₄ | ʨ u <s> ₂₂ </s> p a <s> ₄₄ </s> |
-| BAI-824 | | tooth | ʦi₃₃pɑ₄₄ | ʦ i <s> ₃₃ </s> p ɑ <s> ₄₄ </s> |
-| BAI-825 | | tooth | t͡ʂʰi₄₄pa₄₄ | t͡ʂʰ i <s> ₄₄ </s> p a <s> ₄₄ </s> |
-| BAI-826 | | tooth | ʦi₃₃pa₄₄ | ʦ i <s> ₃₃ </s> p a <s> ₄₄ </s> |
-| BAI-827 | | tooth | ʦɤ₄₄pɑ₄₄ | ʦ ɤ <s> ₄₄ </s> p ɑ <s> ₄₄ </s> |
-| BAI-828 | | tooth | jaŋ₃₅ | j a ŋ <s> ₃₅ </s> |
-| BAI-829 | | tooth | qʰwa₂₂ɲa₂₁ | qʰ w a <s> ₂₂ </s> ɲ a <s> ₂₁ </s> |
-| BAI-830 | | tooth | ʨu₂₂pa₄₄qwa₄₄ | ʨ u <s> ₂₂ </s> p a <s> ₄₄ </s> q w a <s> ₄₄ </s> |
-| BAI-831 | | tooth | t͡ʂi₂₁pa₂₄ | t͡ʂ i <s> ₂₁ </s> p a <s> ₂₄ </s> |
-| BAI-832 | | tooth | ʨu₄₂po₄₂ | ʨ u <s> ₄₂ </s> p o <s> ₄₂ </s> |
-| BAI-833 | | tooth | ʨu₂₂pa₅₅ | ʨ u <s> ₂₂ </s> p a <s> ₅₅ </s> |
-| BAI-834 | | tree | d͡ʐi₄₂ | d͡ʐ i <s> ₄₂ </s> |
-| BAI-835 | | tree | ɖɯ₄₂ | ɖ ɯ <s> ₄₂ </s> |
-| BAI-836 | | tree | ʣǝɯ₂₁ | ʣ <s> ǝɯ </s> <s> ₂₁ </s> |
-| BAI-837 | | tree | t͡ʂɯ₂₁ | t͡ʂ ɯ <s> ₂₁ </s> |
-| BAI-838 | | tree | ʦɯ₃₁ | ʦ ɯ <s> ₃₁ </s> |
-| BAI-839 | | tree | ʦɯ₃₁ | ʦ ɯ <s> ₃₁ </s> |
-| BAI-840 | | tree | djɯ₂₁ | d j ɯ <s> ₂₁ </s> |
-| BAI-841 | | tree | djɯ₄₃ | d j ɯ <s> ₄₃ </s> |
-| BAI-842 | | tree | ʥi₄₂ | ʥ i <s> ₄₂ </s> |
-| BAI-843 | | two | koŋ₃₃ | k o ŋ <s> ₃₃ </s> |
-| BAI-844 | | two | koŋ₃₃ | k o ŋ <s> ₃₃ </s> |
-| BAI-845 | | two | koŋ₃₃ | k o ŋ <s> ₃₃ </s> |
-| BAI-846 | | two | koŋ₃₃ | k o ŋ <s> ₃₃ </s> |
-| BAI-847 | | two | kow₃₃ | k o w <s> ₃₃ </s> |
-| BAI-848 | | two | kõ₃₃ | k õ <s> ₃₃ </s> |
-| BAI-849 | | two | koŋ₃₃ | k o ŋ <s> ₃₃ </s> |
-| BAI-850 | | two | ku₂₂ | k u <s> ₂₂ </s> |
-| BAI-851 | | two | kɤ₃₃ | k ɤ <s> ₃₃ </s> |
-| BAI-852 | | walk (V) | ʁan₁₂ | ʁ a n <s> ₁₂ </s> |
-| BAI-853 | | walk (V) | ja₅₅ | j a <s> ₅₅ </s> |
-| BAI-854 | | walk (V) | ɣaŋ₂₁ | ɣ a ŋ <s> ₂₁ </s> |
-| BAI-855 | | walk (V) | pe₄₄ | p e <s> ₄₄ </s> |
-| BAI-856 | | walk (V) | pe₄₄ | p e <s> ₄₄ </s> |
-| BAI-857 | | walk (V) | pe₄₄ | p e <s> ₄₄ </s> |
-| BAI-858 | | walk (V) | jɔ₄₂ | j ɔ <s> ₄₂ </s> |
-| BAI-859 | | walk (V) | ɴa₂₁ | ɴ a <s> ₂₁ </s> |
-| BAI-860 | | walk (V) | ŋa₂₁ | ŋ a <s> ₂₁ </s> |
-| BAI-861 | | walk (V) | ŋa₃₅ | ŋ a <s> ₃₅ </s> |
-| BAI-862 | | warm | ɲi₂₄ | ɲ i <s> ₂₄ </s> |
-| BAI-863 | | warm | ɲi₄₄ | ɲ i <s> ₄₄ </s> |
-| BAI-864 | | warm | ɲɛ₄₄ | ɲ ɛ <s> ₄₄ </s> |
-| BAI-865 | | warm | jen₄₄ | j e n <s> ₄₄ </s> |
-| BAI-866 | | warm | ɲe₄₄ | ɲ e <s> ₄₄ </s> |
-| BAI-867 | | warm | jẽ₄₄ | j ẽ <s> ₄₄ </s> |
-| BAI-868 | | warm | jen₄₂ | j e n <s> ₄₂ </s> |
-| BAI-869 | | warm | ɲi₅₅ | ɲ i <s> ₅₅ </s> |
-| BAI-870 | | warm | ɲi₄₄ | ɲ i <s> ₄₄ </s> |
-| BAI-871 | | water | ɕy₂₂ | ɕ y <s> ₂₂ </s> |
-| BAI-872 | | water | ɕyj₂₂ | ɕ y j <s> ₂₂ </s> |
-| BAI-873 | | water | ɕyj₃₃ | ɕ y j <s> ₃₃ </s> |
-| BAI-874 | | water | ɕuj₃₃ | ɕ u j <s> ₃₃ </s> |
-| BAI-875 | | water | ɕyj₃₃ | ɕ y j <s> ₃₃ </s> |
-| BAI-876 | | water | ɕyj₃₃ | ɕ y j <s> ₃₃ </s> |
-| BAI-877 | | water | ɕyj₃₃ | ɕ y j <s> ₃₃ </s> |
-| BAI-878 | | water | ɕyj₂₂ | ɕ y j <s> ₂₂ </s> |
-| BAI-879 | | water | ɕyj₂₂ | ɕ y j <s> ₂₂ </s> |
-| BAI-880 | | we | ʁaŋ₂₄ | ʁ a ŋ <s> ₂₄ </s> |
-| BAI-881 | | we | ɲa₂₁t͡ʂɚ₂₂ | ɲ a <s> ₂₁ </s> t͡ʂ ɚ <s> ₂₂ </s> |
-| BAI-882 | | we | ŋa₅₅xo₃₃ | ŋ a <s> ₅₅ </s> x o <s> ₃₃ </s> |
-| BAI-883 | | we | ɲã₅₅ | ɲ ã <s> ₅₅ </s> |
-| BAI-884 | | we | ɲa₅₅ | ɲ a <s> ₅₅ </s> |
-| BAI-885 | | we | jɑ̃₅₅ | j ɑ̃ <s> ₅₅ </s> |
-| BAI-886 | | we | a₅₅ŋɔ₂₁ | a <s> ₅₅ </s> ŋ ɔ <s> ₂₁ </s> |
-| BAI-887 | | we | a₅₅ʁo₂₁ | a <s> ₅₅ </s> ʁ o <s> ₂₁ </s> |
-| BAI-888 | | we | ɲo₂₁ɣo₂₂ | ɲ o <s> ₂₁ </s> ɣ o <s> ₂₂ </s> |
-| BAI-889 | | we | ŋa₄₂xõ₂₂ | ŋ a <s> ₄₂ </s> x õ <s> ₂₂ </s> |
-| BAI-890 | | we | mi₅₅ | m i <s> ₅₅ </s> |
-| BAI-891 | | we | ŋɑ₅₅ | ŋ ɑ <s> ₅₅ </s> |
-| BAI-892 | | we | we₅₅ | w e <s> ₅₅ </s> |
-| BAI-893 | | we | wi₂₄ʦɿ₂₁ | w i <s> ₂₄ </s> ʦ ɿ <s> ₂₁ </s> |
-| BAI-894 | | we | ŋwi₅₅ | ŋ w i <s> ₅₅ </s> |
-| BAI-895 | | what | a₅₅qʰa₅₅ | a <s> ₅₅ </s> qʰ a <s> ₅₅ </s> |
-| BAI-896 | | what | a₅₅xã₄₂ | a <s> ₅₅ </s> x ã <s> ₄₂ </s> |
-| BAI-897 | | what | a₅₅se₅₅ | a <s> ₅₅ </s> s e <s> ₅₅ </s> |
-| BAI-898 | | what | ɚ₅₅xɚ₄₂ | ɚ <s> ₅₅ </s> x ɚ <s> ₄₂ </s> |
-| BAI-899 | | what | xa₃₁le₃₁ | x a <s> ₃₁ </s> l e <s> ₃₁ </s> |
-| BAI-900 | | what | ɑ₅₅xan₃₁ | ɑ <s> ₅₅ </s> x a n <s> ₃₁ </s> |
-| BAI-901 | | what | a₅₅haŋ₂₁ | a <s> ₅₅ </s> h a ŋ <s> ₂₁ </s> |
-| BAI-902 | | what | a₅₅χa₅₅ | a <s> ₅₅ </s> χ a <s> ₅₅ </s> |
-| BAI-903 | | what | a₅₅xa₄₂ | a <s> ₅₅ </s> x a <s> ₄₂ </s> |
-| BAI-904 | | white | bæ₂₁ | b æ <s> ₂₁ </s> |
-| BAI-905 | | white | pa₄₂ | p a <s> ₄₂ </s> |
-| BAI-906 | | white | pʰɚ₄₂ | pʰ ɚ <s> ₄₂ </s> |
-| BAI-907 | | white | pɚ₄₂ | p ɚ <s> ₄₂ </s> |
-| BAI-908 | | white | pɛ₄₂ | p ɛ <s> ₄₂ </s> |
-| BAI-909 | | white | pa₄₂ | p a <s> ₄₂ </s> |
-| BAI-910 | | white | ba₄₂ | b a <s> ₄₂ </s> |
-| BAI-911 | | white | pa₂₁ | p a <s> ₂₁ </s> |
-| BAI-912 | | white | pa₄₂ | p a <s> ₄₂ </s> |
-| BAI-913 | | who | a₂₂ma₅₅bu₂₂ɲǝn₂₄ | a <s> ₂₂ </s> m a <s> ₅₅ </s> b u <s> ₂₂ </s> ɲ ǝ n <s> ₂₄ </s> |
-| BAI-914 | | who | a₅₅ma₅₅ | a <s> ₅₅ </s> m a <s> ₅₅ </s> |
-| BAI-915 | | who | a₅₅to₃₃ | a <s> ₅₅ </s> t o <s> ₃₃ </s> |
-| BAI-916 | | who | a₅₅ma₃₃tjɯ₃₁ | a <s> ₅₅ </s> m a <s> ₃₃ </s> t j ɯ <s> ₃₁ </s> |
-| BAI-917 | | who | a₅₅ɲi₂₁ | a <s> ₅₅ </s> ɲ i <s> ₂₁ </s> |
-| BAI-918 | | who | ɑ₃₁tow₃₁ | ɑ <s> ₃₁ </s> t o w <s> ₃₁ </s> |
-| BAI-919 | | who | a₂₁do₃₅ | a <s> ₂₁ </s> d o <s> ₃₅ </s> |
-| BAI-920 | | who | a₄₃to₂₁ | a <s> ₄₃ </s> t o <s> ₂₁ </s> |
-| BAI-921 | | who | a₅₅to₂₁ | a <s> ₅₅ </s> t o <s> ₂₁ </s> |
-| BAI-922 | | who | ɑ₅₅nɑ̃₄₄jen₂₁ | ɑ <s> ₅₅ </s> n ɑ̃ <s> ₄₄ </s> j e n <s> ₂₁ </s> |
-| BAI-923 | | woman | ɲu₂₂ɲi₂₁ʦi₂₂ | ɲ u <s> ₂₂ </s> ɲ i <s> ₂₁ </s> ʦ i <s> ₂₂ </s> |
-| BAI-924 | | woman | ɲõ₃₃ɲĩ₂₁ | ɲ õ <s> ₃₃ </s> ɲ ĩ <s> ₂₁ </s> |
-| BAI-925 | | woman | jũ₃₃lã₄₂ | j ũ <s> ₃₃ </s> l ã <s> ₄₂ </s> |
-| BAI-926 | | woman | ɲɤ₃₃ | ɲ ɤ <s> ₃₃ </s> |
-| BAI-927 | | woman | jɤ̃₃₃jen₂₁jen₂₁ | j ɤ̃ <s> ₃₃ </s> j e n <s> ₂₁ </s> j e n <s> ₂₁ </s> |
-| BAI-928 | | woman | jen₃₅hoŋ₅₅mo₃₃ | j e n <s> ₃₅ </s> h o ŋ <s> ₅₅ </s> m o <s> ₃₃ </s> |
-| BAI-929 | | woman | ɲyj₂₂ʦi₂₂ | ɲ y j <s> ₂₂ </s> ʦ i <s> ₂₂ </s> |
-| BAI-930 | | yellow | ʁaŋ₁₂ | ʁ a ŋ <s> ₁₂ </s> |
-| BAI-931 | | yellow | õ₂₁ | õ <s> ₂₁ </s> |
-| BAI-932 | | yellow | ɣoŋ₂₁ | ɣ o ŋ <s> ₂₁ </s> |
-| BAI-933 | | yellow | wɤ̃₂₁ | w ɤ̃ <s> ₂₁ </s> |
-| BAI-934 | | yellow | ŋɤ₂₁ | ŋ ɤ <s> ₂₁ </s> |
-| BAI-935 | | yellow | ɤ̃₂₁ | ɤ̃ <s> ₂₁ </s> |
-| BAI-936 | | yellow | ŋoŋ₃₅ | ŋ o ŋ <s> ₃₅ </s> |
-| BAI-937 | | yellow | ʁo₂₁ | ʁ o <s> ₂₁ </s> |
-| BAI-938 | | yellow | ŋõ₂₁ | ŋ õ <s> ₂₁ </s> |
-| BAI-939 | | far | tɥen₂₂ | t ɥ e n <s> ₂₂ </s> |
-| BAI-940 | | far | tyj₂₂ | t y j <s> ₂₂ </s> |
-| BAI-941 | | far | ʦwen₃₃ | ʦ w e n <s> ₃₃ </s> |
-| BAI-942 | | far | twen₃₃ | t w e n <s> ₃₃ </s> |
-| BAI-943 | | far | twe₃₃ | t w e <s> ₃₃ </s> |
-| BAI-944 | | far | twen₃₃ | t w e n <s> ₃₃ </s> |
-| BAI-945 | | far | twe₃₃ | t w e <s> ₃₃ </s> |
-| BAI-946 | | far | tɥɛ₂₂ | t ɥ ɛ <s> ₂₂ </s> |
-| BAI-947 | | far | ti₂₂ | t i <s> ₂₂ </s> |
-| BAI-948 | | heavy | ʣoŋ₂₂ | ʣ o ŋ <s> ₂₂ </s> |
-| BAI-949 | | heavy | ʥõ₂₂ | ʥ õ <s> ₂₂ </s> |
-| BAI-950 | | heavy | ʦõ₂₁ | ʦ õ <s> ₂₁ </s> |
-| BAI-951 | | heavy | t͡ʂõ₃₃ | t͡ʂ õ <s> ₃₃ </s> |
-| BAI-952 | | heavy | ʦɤ₃₃ | ʦ ɤ <s> ₃₃ </s> |
-| BAI-953 | | heavy | ʦɤ̃₃₃ | ʦ ɤ̃ <s> ₃₃ </s> |
-| BAI-954 | | heavy | ʐɤŋ₃₃ | ʐ ɤ ŋ <s> ₃₃ </s> |
-| BAI-955 | | heavy | d͡ʐo₂₂ | d͡ʐ o <s> ₂₂ </s> |
-| BAI-956 | | heavy | ʥo₂₂ | ʥ o <s> ₂₂ </s> |
-| BAI-957 | | near | ʥen₂₂ | ʥ e n <s> ₂₂ </s> |
-| BAI-958 | | near | ʦʰo₅₅ | ʦʰ o <s> ₅₅ </s> |
-| BAI-959 | | near | ʨen₃₃ | ʨ e n <s> ₃₃ </s> |
-| BAI-960 | | near | ʨen₃₃ | ʨ e n <s> ₃₃ </s> |
-| BAI-961 | | near | ʨe₃₃ | ʨ e <s> ₃₃ </s> |
-| BAI-962 | | near | ʨen₃₃ | ʨ e n <s> ₃₃ </s> |
-| BAI-963 | | near | jen₃₃ | j e n <s> ₃₃ </s> |
-| BAI-964 | | near | ʨi₂₂ | ʨ i <s> ₂₂ </s> |
-| BAI-965 | | near | ʦʰo₅₅ | ʦʰ o <s> ₅₅ </s> |
-| BAI-966 | | salt | ʨwen₅₅ | ʨ w e n <s> ₅₅ </s> |
-| BAI-967 | | salt | ʦwẽ₅₅ | ʦ w ẽ <s> ₅₅ </s> |
-| BAI-968 | | salt | ʦʰoŋ₂₁ | ʦʰ o ŋ <s> ₂₁ </s> |
-| BAI-969 | | salt | pjẽ₃₅ | p j ẽ <s> ₃₅ </s> |
-| BAI-970 | | salt | pi₃₅ | p i <s> ₃₅ </s> |
-| BAI-971 | | salt | pjen₅₅ | p j e n <s> ₅₅ </s> |
-| BAI-972 | | salt | ʨwen₅₅ | ʨ w e n <s> ₅₅ </s> |
-| BAI-973 | | salt | ʦwɛ₂₄ | ʦ w ɛ <s> ₂₄ </s> |
-| BAI-974 | | salt | ʦwɛ₅₅ | ʦ w ɛ <s> ₅₅ </s> |
-| BAI-975 | | short | ʦʰwa₂₄ | ʦʰ w a <s> ₂₄ </s> |
-| BAI-976 | | short | ʨʰi₅₅ | ʨʰ i <s> ₅₅ </s> |
-| BAI-977 | | short | ʦʰǝɯ₅₅ | ʦʰ <s> ǝɯ </s> <s> ₅₅ </s> |
-| BAI-978 | | short | ʦʰɯ₅₅ | ʦʰ ɯ <s> ₅₅ </s> |
-| BAI-979 | | short | ʦʰɯ₅₅ | ʦʰ ɯ <s> ₅₅ </s> |
-| BAI-980 | | short | ʦʰɯ₅₅ | ʦʰ ɯ <s> ₅₅ </s> |
-| BAI-981 | | short | ʦʰɤ₄₂ | ʦʰ ɤ <s> ₄₂ </s> |
-| BAI-982 | | short | ʦʰo₅₅ | ʦʰ o <s> ₅₅ </s> |
-| BAI-983 | | short | ʨʰi₅₅ | ʨʰ i <s> ₅₅ </s> |
-| BAI-984 | | snake | t͡ʂʰi₂₂ | t͡ʂʰ i <s> ₂₂ </s> |
-| BAI-985 | | snake | ʨʰɚ̃₂₂ | ʨʰ <s> ɚ̃ </s> <s> ₂₂ </s> |
-| BAI-986 | | snake | ʨʰiw₃₃ | ʨʰ i w <s> ₃₃ </s> |
-| BAI-987 | | snake | kʰo₃₃ | kʰ o <s> ₃₃ </s> |
-| BAI-988 | | snake | kʰɤ₃₃ | kʰ ɤ <s> ₃₃ </s> |
-| BAI-989 | | snake | kʰɤ₃₃ | kʰ ɤ <s> ₃₃ </s> |
-| BAI-990 | | snake | t͡ʂʰɚ̃₃₃ | t͡ʂʰ <s> ɚ̃ </s> <s> ₃₃ </s> |
-| BAI-991 | | snake | ʦʰɿ₂₂ | ʦʰ ɿ <s> ₂₂ </s> |
-| BAI-992 | | snake | ʦʰɛ₂₂ | ʦʰ ɛ <s> ₂₂ </s> |
-| BAI-993 | | thin | bwa₂₁ | b w a <s> ₂₁ </s> |
-| BAI-994 | | thin | po₄₂ | p o <s> ₄₂ </s> |
-| BAI-995 | | thin | pʰo₄₂ | pʰ o <s> ₄₂ </s> |
-| BAI-996 | | thin | pow₄₂ | p o w <s> ₄₂ </s> |
-| BAI-997 | | thin | pow₄₂ | p o w <s> ₄₂ </s> |
-| BAI-998 | | thin | pow₄₂ | p o w <s> ₄₂ </s> |
-| BAI-999 | | thin | bɯ₄₂ | b ɯ <s> ₄₂ </s> |
-| BAI-1000 | | thin | pɯ₂₁ | p ɯ <s> ₂₁ </s> |
-| BAI-1001 | | thin | pu₄₂ | p u <s> ₄₂ </s> |
-| BAI-1002 | | wind | ʨwen₅₅ | ʨ w e n <s> ₅₅ </s> |
-| BAI-1003 | | wind | ʨyj₅₅ | ʨ y j <s> ₅₅ </s> |
-| BAI-1004 | | wind | pjen₅₅ | p j e n <s> ₅₅ </s> |
-| BAI-1005 | | wind | pjɛ̃₃₅ | p j ɛ̃ <s> ₃₅ </s> |
-| BAI-1006 | | wind | pi₃₅ | p i <s> ₃₅ </s> |
-| BAI-1007 | | wind | pi₅₅ | p i <s> ₅₅ </s> |
-| BAI-1008 | | wind | ʨwen₅₅ | ʨ w e n <s> ₅₅ </s> |
-| BAI-1009 | | wind | ʦwɛ₂₄ | ʦ w ɛ <s> ₂₄ </s> |
-| BAI-1010 | | wind | ʨyj₅₅ | ʨ y j <s> ₅₅ </s> |
-| BAI-1011 | | worm | ʣwa₁₂ | ʣ w a <s> ₁₂ </s> |
-| BAI-1012 | | worm | ʨu₂₁ | ʨ u <s> ₂₁ </s> |
-| BAI-1013 | | worm | ʣõ₂₁ | ʣ õ <s> ₂₁ </s> |
-| BAI-1014 | | worm | t͡ʂo₂₁ | t͡ʂ o <s> ₂₁ </s> |
-| BAI-1015 | | worm | ʦɤ₂₁ | ʦ ɤ <s> ₂₁ </s> |
-| BAI-1016 | | worm | ʦɤ₂₁ | ʦ ɤ <s> ₂₁ </s> |
-| BAI-1017 | | worm | ʐɤ₃₅ | ʐ ɤ <s> ₃₅ </s> |
-| BAI-1018 | | worm | ʨo₂₁ | ʨ o <s> ₂₁ </s> |
-| BAI-1019 | | worm | ʨu₂₁ | ʨ u <s> ₂₁ </s> |
-| BAI-1020 | | year | swa₂₄ | s w a <s> ₂₄ </s> |
-| BAI-1021 | | year | swa₅₅ | s w a <s> ₅₅ </s> |
-| BAI-1022 | | year | swa₄₄ | s w a <s> ₄₄ </s> |
-| BAI-1023 | | year | sʰwa₄₄ | sʰ w a <s> ₄₄ </s> |
-| BAI-1024 | | year | swa₄₄ | s w a <s> ₄₄ </s> |
-| BAI-1025 | | year | swɑ₄₄ | s w ɑ <s> ₄₄ </s> |
-| BAI-1026 | | year | swɔ₄₂ | s w ɔ <s> ₄₂ </s> |
-| BAI-1027 | | year | swa₅₅ | s w a <s> ₅₅ </s> |
-| BAI-1028 | | year | swa₄₄ | s w a <s> ₄₄ </s> |
-| GER-27 | | belly | bœyk | b <s> œy </s> k |
-| GER-36 | | big | stouːr | s t <s> ouː </s> r |
-| GER-66 | | blood | plouːθ | p l <s> ouː </s> θ |
-| GER-73 | | bone | peiːn | p <s> eiː </s> n |
-| GER-123 | | die (V) | teiːja | t <s> eiː </s> j a |
-| GER-137 | | drink (V) | trɛʰka | t r <s> ɛʰ </s> k a |
-| GER-148 | | ear | ɪər | <s> ɪə </s> r |
-| GER-149 | | ear | øːʌ | <s> øːʌ </s> |
-| GER-151 | | ear | eiːra | <s> eiː </s> r a |
-| GER-179 | | eye | øyːɣa | <s> øyː </s> ɣ a |
-| GER-196 | | fire | fɔyər | f <s> ɔyə </s> r |
-| GER-197 | | fire | faɪər | f <s> aɪə </s> r |
-| GER-215 | | fly (V) | fljuːa | f l j <s> uːa </s> |
-| GER-222 | | foot | fouːtʏr | f <s> ouː </s> t ʏ r |
-| GER-243 | | good | kouːðʏr | k <s> ouː </s> ð ʏ r |
-| GER-254 | | hair | hɛər | h <s> ɛə </s> r |
-| GER-257 | | hair | hauːr | h <s> auː </s> r |
-| GER-269 | | head | hoːəð | h <s> oːə </s> ð |
-| GER-275 | | hear (V) | hɪər | h <s> ɪə </s> r |
-| GER-276 | | hear (V) | høːʌ | h <s> øːʌ </s> |
-| GER-278 | | hear (V) | heiːra | h <s> eiː </s> r a |
-| GER-314 | | knee | kʰniɛː | kʰ n <s> iɛː </s> |
-| GER-337 | | leaf | løyːv | l <s> øyː </s> v |
-| GER-365 | | louse | lœys | l <s> œy </s> s |
-| GER-398 | | moon | mauːnɪ | m <s> auː </s> n ɪ |
-| GER-429 | | new | nɔy | n <s> ɔy </s> |
-| GER-440 | | night | nouʰt | n <s> ouʰ </s> t |
-| GER-454 | | not | ɛʰcɪ | <s> ɛʰ </s> c ɪ |
-| GER-482 | | red | røyːðʏr | r <s> øyː </s> ð ʏ r |
-| GER-495 | | root | rouːt | r <s> ouː </s> t |
-| GER-501 | | round | kʰriŋlouʰtʏr | kʰ r i ŋ l <s> ouʰ </s> t ʏ r |
-| GER-513 | | say (V) | seiːja | s <s> eiː </s> j a |
-| GER-516 | | see (V) | zeːən | z <s> eːə </s> n |
-| GER-520 | | see (V) | sjauː | s j <s> auː </s> |
-| GER-527 | | seed | fraiː | f r <s> aiː </s> |
-| GER-546 | | skin | hœyt | h <s> œy </s> t |
-| GER-561 | | small | lɪtḷ | l ɪ t <s> ḷ </s> |
-| GER-564 | | small | smauːr | s m <s> auː </s> r |
-| GER-569 | | smoke | reiːkʏr | r <s> eiː </s> k ʏ r |
-| GER-572 | | stand (V) | ʃteːən | ʃ t <s> eːə </s> n |
-| GER-597 | | sun | souːl | s <s> ouː </s> l |
-| GER-614 | | tail | skɔʰt | s k <s> ɔʰ </s> t |
-| GER-623 | | that | sauː | s <s> auː </s> |
-| GER-668 | | walk (V) | ɡeːən | ɡ <s> eːə </s> n |
-| GER-686 | | water | vaʰtn̥ | v <s> aʰ </s> t n̥ |
-| GER-750 | | near | naːə | n <s> aːə </s> |
-| GER-751 | | near | nɪər | n <s> ɪə </s> r |
-| GER-754 | | near | nauː | n <s> auː </s> |
-| GER-770 | | short | stʏʰtʏr | s t <s> ʏʰ </s> t ʏ r |
-| GER-809 | | year | jɪər | j <s> ɪə </s> r |
-| GER-812 | | year | auːr | <s> auː </s> r |
-| IDS-378 | | the uncle | ʌŋkḷ | ʌ ŋ k <s> ḷ </s> |
-| IDS-463 | | the animal | ænɪmḷ | æ n ɪ m <s> ḷ </s> |
-| IDS-472 | | the stable or stall | steɪbḷ | s t e ɪ b <s> ḷ </s> |
-| IDS-477 | | the cattle | kætḷ | k æ t <s> ḷ </s> |
-| IDS-578 | | the eagle | iːɡḷ | iː ɡ <s> ḷ </s> |
-| IDS-916 | | the ankle | æŋkḷ | æ ŋ k <s> ḷ </s> |
-| IDS-942 | | the navel | neɪvḷ | n e ɪ v <s> ḷ </s> |
-| IDS-1264 | | the kettle | kɛtḷ | k ɛ t <s> ḷ </s> |
-| IDS-1450 | | the spindle | spɪndḷ | s p ɪ n d <s> ḷ </s> |
-| IDS-1458 | | the needle(1) | niːdḷ | n iː d <s> ḷ </s> |
-| IDS-1649 | | the candle | kændḷ | k æ n d <s> ḷ </s> |
-| IDS-1737 | | the shovel | ʃʌvḷ | ʃ ʌ v <s> ḷ </s> |
-| IDS-1870 | | the nettle | nɛtḷ | n ɛ t <s> ḷ </s> |
-| IDS-2104 | | the chisel | ʧɪzḷ | ʧ ɪ z <s> ḷ </s> |
-| IDS-2354 | | the paddle | pædḷ | p æ d <s> ḷ </s> |
-| IDS-2626 | | the top | sɔmmɛ | s ɔ <s> mm </s> ɛ |
-| IDS-2655 | | the middle | mɪdḷ | m ɪ d <s> ḷ </s> |
-| IDS-2707 | | small | lɪtḷ | l ɪ t <s> ḷ </s> |
-| IEL-44 | | animal | zviːr̝ɛ | z v iː <s> r̝ </s> ɛ |
-| IEL-45 | | animal | d̥yːʌ | d̥ <s> yːʌ </s> |
-| IEL-49 | | animal | tiːɐ̯ | t <s> iːɐ̯ </s> |
-| IEL-50 | | animal | zo̞o̞ | z <s> o̞o̞ </s> |
-| IEL-54 | | animal | ʒɨvotnoe | ʒ ɨ v o t n <s> oe </s> |
-| IEL-82 | | ashes | bʱɔsmoɔ | bʱ ɔ s m <s> oɔ </s> |
-| IEL-83 | | ashes | paːũsɔ | p <s> aːũ </s> s ɔ |
-| IEL-106 | | at | pr̝ɪ | p <s> r̝ </s> ɪ |
-| IEL-145 | | bad | wa͜iːʈ | w <s> a͜iː </s> ʈ |
-| IEL-175 | | bark | čheli | <s> č </s> h e l i |
-| IEL-194 | | because | ðio̞ti | ð <s> io̞ </s> t i |
-| IEL-195 | | belly | br̝ɪxo | b <s> r̝ </s> ɪ x o |
-| IEL-200 | | belly | bœyk | b <s> œy </s> k |
-| IEL-220 | | big | sd̥ʰoɐ̯ | s d̥ʰ <s> oɐ̯ </s> |
-| IEL-263 | | bite | koʊ̯sat | k <s> oʊ̯ </s> s a t |
-| IEL-305 | | blood | ɑɾɪ̯un | ɑ ɾ <s> ɪ̯u </s> n |
-| IEL-326 | | blow | foʊ̯kat | f <s> oʊ̯ </s> k a t |
-| IEL-327 | | blow | veːən | v <s> eːə </s> n |
-| IEL-337 | | blow | wayən | w <s> ayə </s> n |
-| IEL-392 | | breathe | anapne̞o̞ | a n a p n <s> e̞o̞ </s> |
-| IEL-404 | | burn | ɑɪ̯ɾvɛl | <s> ɑɪ̯ </s> ɾ v ɛ l |
-| IEL-405 | | burn | hor̝ɛt | h o <s> r̝ </s> ɛ t |
-| IEL-413 | | burn | ce̞o̞ | c <s> e̞o̞ </s> |
-| IEL-450 | | child | kɾiɐ̃sɐ | k ɾ <s> iɐ̃ </s> s ɐ |
-| IEL-459 | | cloud | nyaʒ | n <s> ya </s> ʒ |
-| IEL-482 | | cold | krio̞s | k r <s> io̞ </s> s |
-| IEL-486 | | cold | fɾiu | f ɾ <s> iu </s> |
-| IEL-488 | | cold | fɾio | f ɾ <s> io </s> |
-| IEL-495 | | come | pr̝ɪjiːt | p <s> r̝ </s> ɪ j iː t |
-| IEL-511 | | come | aeəb | <s> aeə </s> b |
-| IEL-535 | | cut | r̝ɛzat | <s> r̝ </s> ɛ z a t |
-| IEL-540 | | cut | sg̥ʰɛːʌ | s g̥ʰ <s> ɛːʌ </s> |
-| IEL-569 | | day | diɐ | d <s> iɐ </s> |
-| IEL-624 | | dirty | vœyl | v <s> œy </s> l |
-| IEL-655 | | dog | kɐ̃uː | k <s> ɐ̃uː </s> |
-| IEL-706 | | dull | slø̞w | s l <s> ø̞ </s> w |
-| IEL-727 | | dust | puejɾɐ | p <s> ue </s> j ɾ ɐ |
-| IEL-730 | | dust | sd̥ʰø̞w | s d̥ʰ <s> ø̞ </s> w |
-| IEL-747 | | ear | œ̞ːra | <s> œ̞ː </s> r a |
-| IEL-749 | | ear | ø̞ːʌ | <s> ø̞ːʌ </s> |
-| IEL-751 | | ear | ɪə | <s> ɪə </s> |
-| IEL-753 | | ear | oːɐ̯ | <s> oːɐ̯ </s> |
-| IEL-766 | | earth | duːaʁ | d <s> uːa </s> ʁ |
-| IEL-768 | | earth | joɐ̯ | j <s> oɐ̯ </s> |
-| IEL-772 | | earth | eːɐ̯də | <s> eːɐ̯ </s> d ə |
-| IEL-780 | | earth | bʱũĩ | bʱ <s> ũĩ </s> |
-| IEL-804 | | eat | kʰaeəb | kʰ <s> aeə </s> b |
-| IEL-844 | | eye | aĩkʰ | <s> aĩ </s> kʰ |
-| IEL-860 | | fall | kɐiɾ | k <s> ɐi </s> ɾ |
-| IEL-862 | | fall | kaeɾ | k <s> ae </s> ɾ |
-| IEL-874 | | far | fjɛɐ̯n | f j <s> ɛɐ̯ </s> n |
-| IEL-908 | | fat | čɔrbi | <s> č </s> ɔ r b i |
-| IEL-913 | | father | hɑɪ̯ɾ | h <s> ɑɪ̯ </s> ɾ |
-| IEL-937 | | fear | fʁœ̝g̥d̥ʰə | f ʁ <s> œ̝ </s> g̥ d̥ʰ ə |
-| IEL-939 | | fear | fɪə | f <s> ɪə </s> |
-| IEL-948 | | fear | bʱɔyɔ#kɔriba | bʱ <s> ɔyɔ </s> # k ɔ r i b a |
-| IEL-958 | | feather | fjeɐ̯ | f j <s> eɐ̯ </s> |
-| IEL-968 | | feather | pluɛn | p l <s> uɛ </s> n |
-| IEL-969 | | feather | paĩkʰ | p <s> aĩ </s> kʰ |
-| IEL-989 | | few | poouku | p <s> oou </s> k u |
-| IEL-1008 | | fight | ǰuddʱɔ#kɔriba | ǰ u <s> dːʱ </s> ɔ # k ɔ r i b a |
-| IEL-1015 | | fight | peleaɾ | p e l <s> ea </s> ɾ |
-| IEL-1045 | | fire | faɪə | f <s> aɪə </s> |
-| IEL-1047 | | fire | fɔyɐ | f <s> ɔyɐ </s> |
-| IEL-1053 | | fire | nĩã | n <s> ĩã </s> |
-| IEL-1070 | | fish | pɐiʃɨ | p <s> ɐi </s> ʃ ɨ |
-| IEL-1102 | | float | ple̞o̞ | p l <s> e̞o̞ </s> |
-| IEL-1110 | | float | cʰətəlaeəb | cʰ ə t ə l <s> aeə </s> b |
-| IEL-1114 | | float | ploʊ̯t | p l <s> oʊ̯ </s> t |
-| IEL-1127 | | flow | re̞o̞ | r <s> e̞o̞ </s> |
-| IEL-1149 | | flower | flaʊə | f l <s> aʊə </s> |
-| IEL-1188 | | fog | nɨvuejɾu | n ɨ v <s> ue </s> j ɾ u |
-| IEL-1195 | | fog | dʱũin | dʱ <s> ũi </s> n |
-| IEL-1220 | | foot | pyaer | p <s> yae </s> r |
-| IEL-1222 | | foot | pɑuː | p <s> ɑuː </s> |
-| IEL-1225 | | four | tʂtɪr̝ɪ | t ʂ t ɪ <s> r̝ </s> ɪ |
-| IEL-1226 | | four | fiːɐ̯ | f <s> iːɐ̯ </s> |
-| IEL-1231 | | four | fiːʌ | f <s> iːʌ </s> |
-| IEL-1244 | | freeze | zamr̩znoʊ̯t | z a m r̩ z n <s> oʊ̯ </s> t |
-| IEL-1302 | | give | rɛĩ | r <s> ɛĩ </s> |
-| IEL-1335 | | good | barhĩyã | b a r h <s> ĩyã </s> |
-| IEL-1365 | | green | g̥ʁɶ̝n | g̥ ʁ <s> ɶ̝ </s> n |
-| IEL-1375 | | green | həriyər | h ə r <s> iyə </s> r |
-| IEL-1380 | | guts | vɲɪtr̝noscɪ | v ɲ ɪ t <s> r̝ </s> n o s c ɪ |
-| IEL-1404 | | hair | haːɐ̯ | h <s> aːɐ̯ </s> |
-| IEL-1411 | | hair | hɛə | h <s> ɛə </s> |
-| IEL-1437 | | hand | mɐ̃u | m <s> ɐ̃u </s> |
-| IEL-1444 | | he | woʰ | w <s> oʰ </s> |
-| IEL-1447 | | he | eːɐ̯ | <s> eːɐ̯ </s> |
-| IEL-1470 | | head | hoːəð | h <s> oːə </s> ð |
-| IEL-1488 | | hear | hoːʌ | h <s> oːʌ </s> |
-| IEL-1490 | | hear | hɪə | h <s> ɪə </s> |
-| IEL-1493 | | hear | akuo̞ | a k <s> uo̞ </s> |
-| IEL-1511 | | heart | jɛɐ̯d̥ʰə | j <s> ɛɐ̯ </s> d̥ʰ ə |
-| IEL-1523 | | heart | hrudɔyɔ | h r u d <s> ɔyɔ </s> |
-| IEL-1527 | | heavy | ʃveːɐ̯ | ʃ v <s> eːɐ̯ </s> |
-| IEL-1548 | | here | hiːɐ̯ | h <s> iːɐ̯ </s> |
-| IEL-1551 | | here | hɛɐ̯ | h <s> ɛɐ̯ </s> |
-| IEL-1553 | | here | hɪə | h <s> ɪə </s> |
-| IEL-1561 | | hit | ʊdɛr̝ɪt | ʊ d ɛ <s> r̝ </s> ɪ t |
-| IEL-1565 | | hit | skɛĩ | s k <s> ɛĩ </s> |
-| IEL-1573 | | hit | ɡolpeaɾ | ɡ o l p <s> ea </s> ɾ |
-| IEL-1611 | | horn | hoɐ̯n | h <s> oɐ̯ </s> n |
-| IEL-1620 | | horn | jɛʁʤɪ̯uɾ | j ɛ ʁ ʤ <s> ɪ̯u </s> ɾ |
-| IEL-1651 | | hunt | ʃaseal | ʃ a s <s> ea </s> l |
-| IEL-1697 | | I | io | <s> io </s> |
-| IEL-1714 | | ice | sɑruɪ̯ʦʰ | s ɑ r <s> uɪ̯ </s> ʦʰ |
-| IEL-1876 | | laugh | riuwɾə | r <s> iu </s> w ɾ ə |
-| IEL-1952 | | leg | pyaer | p <s> yae </s> r |
-| IEL-1970 | | lie | kɔreiu | k ɔ r <s> eiu </s> |
-| IEL-1996 | | live | jiɔnta | j <s> iɔ </s> n t a |
-| IEL-2002 | | liver | lɪ̯ɑrtʰ | l <s> ɪ̯ɑ </s> r tʰ |
-| IEL-2025 | | long | dloʊ̯ɦiː | d l <s> oʊ̯ </s> ɦ iː |
-| IEL-2059 | | louse | pioʎu | p <s> io </s> ʎ u |
-| IEL-2119 | | meat | kre̞as | k r <s> e̞a </s> s |
-| IEL-2120 | | meat | mãũs | m <s> ãũ </s> s |
-| IEL-2126 | | meat | kø̞ð | k <s> ø̞ </s> ð |
-| IEL-2128 | | meat | mã̄s | m <s> ã̄ </s> s |
-| IEL-2145 | | mother | maɪ̯ɾ | m <s> aɪ̯ </s> ɾ |
-| IEL-2152 | | mother | moɐ̯ | m <s> oɐ̯ </s> |
-| IEL-2157 | | mother | aiː | <s> aiː </s> |
-| IEL-2159 | | mother | mɐ̃i | m <s> ɐ̃i </s> |
-| IEL-2172 | | mountain | b̥jɛɐ̯w | b̥ j <s> ɛɐ̯ </s> w |
-| IEL-2186 | | mouth | mʊ̃ʰ | m <s> ʊ̃ʰ </s> |
-| IEL-2248 | | narrow | ɨʃtɾɐitu | ɨ ʃ t ɾ <s> ɐi </s> t u |
-| IEL-2252 | | near | naːə | n <s> aːə </s> |
-| IEL-2256 | | near | nɛɐ̯ | n <s> ɛɐ̯ </s> |
-| IEL-2258 | | near | nɪə | n <s> ɪə </s> |
-| IEL-2297 | | new | nɔy | n <s> ɔy </s> |
-| IEL-2371 | | not | nɐ̃uː | n <s> ɐ̃uː </s> |
-| IEL-2388 | | old | pale̞o̞s | p a l <s> e̞o̞ </s> s |
-| IEL-2433 | | other | ooutɾu | <s> oou </s> t ɾ u |
-| IEL-2438 | | other | ɔnyanyɔ | ɔ n <s> ya </s> n <s> yɔ </s> |
-| IEL-2440 | | other | ɑɪ̯l | <s> ɑɪ̯ </s> l |
-| IEL-2449 | | person | b̥ʰæɐ̯son | b̥ʰ <s> æɐ̯ </s> s o n |
-| IEL-2455 | | person | byekti | b <s> ye </s> k t i |
-| IEL-2458 | | person | byɔkti | b <s> yɔ </s> k t i |
-| IEL-2485 | | pull | taːɦnoʊ̯t | t aː ɦ n <s> oʊ̯ </s> t |
-| IEL-2487 | | pull | t͜siːən | t͜s <s> iːə </s> n |
-| IEL-2521 | | push | sχœyvən | s χ <s> œy </s> v ə n |
-| IEL-2542 | | rain | pauːs | p <s> auː </s> s |
-| IEL-2629 | | river | r̝ɛka | <s> r̝ </s> ɛ k a |
-| IEL-2642 | | river | ʀiu | ʀ <s> iu </s> |
-| IEL-2644 | | river | rio | r <s> io </s> |
-| IEL-2677 | | root | kor̝ɛn | k o <s> r̝ </s> ɛ n |
-| IEL-2690 | | root | ɾɐiʃ | ɾ <s> ɐi </s> ʃ |
-| IEL-2695 | | root | siɔ | s <s> iɔ </s> |
-| IEL-2734 | | rotten | pɔča | p ɔ <s> č </s> a |
-| IEL-2755 | | round | okroʊ̯ɦliː | o k r <s> oʊ̯ </s> ɦ l iː |
-| IEL-2757 | | rub | tr̝iːt | t <s> r̝ </s> iː t |
-| IEL-2773 | | rub | tel#ləgaeəb | t e l # l ə g <s> aeə </s> b |
-| IEL-2822 | | say | r̝iːkat | <s> r̝ </s> iː k a t |
-| IEL-2858 | | scratch | culculaeəb | c u l c u l <s> aeə </s> b |
-| IEL-2867 | | sea | mor̝ɛ | m o <s> r̝ </s> ɛ |
-| IEL-2887 | | sea | meːɐ̯ | m <s> eːɐ̯ </s> |
-| IEL-2888 | | sea | oːt͜seaːn | oː t͜s <s> eaː </s> n |
-| IEL-2894 | | see | zeːən | z <s> eːə </s> n |
-| IEL-2927 | | seed | biya | b <s> iya </s> |
-| IEL-2933 | | sew | nɛːən | n <s> ɛːə </s> n |
-| IEL-3013 | | sing | gaeəb | g <s> aeə </s> b |
-| IEL-3049 | | skin | hœyt | h <s> œy </s> t |
-| IEL-3054 | | skin | čhalɔ | <s> č </s> h a l ɔ |
-| IEL-3112 | | small | biːãn | b <s> iːã </s> n |
-| IEL-3133 | | smell | rœykən | r <s> œy </s> k ə n |
-| IEL-3142 | | smell | gəndʱ#aeəb | g ə n dʱ # <s> aeə </s> b |
-| IEL-3165 | | smoke | dʱũa | dʱ <s> ũa </s> |
-| IEL-3166 | | smoke | dʱũã | dʱ <s> ũã </s> |
-| IEL-3191 | | smooth | mə͜uː | m <s> ə͜uː </s> |
-| IEL-3200 | | snake | naɛr | n <s> aɛ </s> r |
-| IEL-3214 | | snow | ʣɪ̯un | ʣ <s> ɪ̯u </s> n |
-| IEL-3246 | | some | kayo | k <s> ayo </s> |
-| IEL-3254 | | spit | ʃpeiən | ʃ p <s> eiə </s> n |
-| IEL-3285 | | split | čiriba | <s> č </s> i r i b a |
-| IEL-3318 | | stab | ɛɐ̯ʃtɛçn̩ | <s> ɛɐ̯ </s> ʃ t ɛ ç n̩ |
-| IEL-3332 | | stab | piːxnoʊ̯t | p iː x n <s> oʊ̯ </s> t |
-| IEL-3339 | | stand | ʃteːən | ʃ t <s> eːə </s> n |
-| IEL-3351 | | stand | ʈʰarh#haeəb | ʈʰ a r h # h <s> aeə </s> b |
-| IEL-3364 | | star | sd̥ʰjæɐ̯nə | s d̥ʰ j <s> æɐ̯ </s> n ə |
-| IEL-3393 | | stick | pʰɑɪ̯t | pʰ <s> ɑɪ̯ </s> t |
-| IEL-3395 | | stick | bɐʃtɐ̃uː | b ɐ ʃ t <s> ɐ̃uː </s> |
-| IEL-3413 | | stone | pət̪ʰːəɾ | p ə <s> t̪ʰː </s> ə ɾ |
-| IEL-3416 | | stone | pɔtʰɔrɔo | p ɔ tʰ ɔ r <s> ɔo </s> |
-| IEL-3422 | | straight | pr̝iːmiː | p <s> r̝ </s> iː m iː |
-| IEL-3426 | | straight | liːə | l <s> iːə </s> |
-| IEL-3449 | | suck | suːə | s <s> uːə </s> |
-| IEL-3450 | | suck | zœyɣən | z <s> œy </s> ɣ ə n |
-| IEL-3460 | | suck | čusiba | <s> č </s> u s i b a |
-| IEL-3482 | | sun | surjyɔ | s u r j <s> yɔ </s> |
-| IEL-3486 | | swell | opʊxnoʊ̯t | o p ʊ x n <s> oʊ̯ </s> t |
-| IEL-3546 | | that | woʰ | w <s> oʰ </s> |
-| IEL-3547 | | that | ɑɪ̯n | <s> ɑɪ̯ </s> n |
-| IEL-3565 | | there | ɑɪ̯ntɛʁ | <s> ɑɪ̯ </s> n t ɛ ʁ |
-| IEL-3575 | | there | dɛɐ̯ | d <s> ɛɐ̯ </s> |
-| IEL-3576 | | there | ðɛə | ð <s> ɛə </s> |
-| IEL-3581 | | there | ɐi | <s> ɐi </s> |
-| IEL-3583 | | they | woʰ | w <s> oʰ </s> |
-| IEL-3673 | | this | jeʰ | j <s> eʰ </s> |
-| IEL-3674 | | this | ɑɪ̯s | <s> ɑɪ̯ </s> s |
-| IEL-3710 | | three | t̝in | <s> t̝ </s> i n |
-| IEL-3714 | | three | tr̝ɪ | t <s> r̝ </s> ɪ |
-| IEL-3790 | | tongue | lĩguɐ | l ĩ g <s> uɐ </s> |
-| IEL-3793 | | tongue | jiu | j <s> iu </s> |
-| IEL-3839 | | turn | trɛĩ | t r <s> ɛĩ </s> |
-| IEL-3863 | | two | due | d <s> ue </s> |
-| IEL-3868 | | two | ðio̞ | ð <s> io̞ </s> |
-| IEL-3894 | | vomit | kəyə#kərəb | k <s> əyə </s> # k ə r ə b |
-| IEL-3906 | | walk | geːən | g <s> eːə </s> n |
-| IEL-3923 | | walk | jaeəb | j <s> aeə </s> b |
-| IEL-3927 | | walk | kʰɑɪ̯lɛl | kʰ <s> ɑɪ̯ </s> l ɛ l |
-| IEL-3982 | | water | oaɳiː | <s> oa </s> ɳ iː |
-| IEL-3995 | | we | viːɐ̯ | v <s> iːɐ̯ </s> |
-| IEL-4048 | | what | kɔɔɳɔ | k <s> ɔɔ </s> ɳ ɔ |
-| IEL-4064 | | when | kuɐ̃ðu | k <s> uɐ̃ </s> ð u |
-| IEL-4067 | | when | kəhiya | k ə h <s> iya </s> |
-| IEL-4078 | | where | wɛə | w <s> ɛə </s> |
-| IEL-4087 | | where | kẽũʈʰiki | k <s> ẽũ </s> ʈʰ i k i |
-| IEL-4115 | | who | veːɐ̯ | v <s> eːɐ̯ </s> |
-| IEL-4131 | | wide | lɑɪ̯n | l <s> ɑɪ̯ </s> n |
-| IEL-4203 | | wing | kr̝ɪːdlo | k <s> r̝ </s> ɪː d l o |
-| IEL-4219 | | wing | paĩkʰ | p <s> aĩ </s> kʰ |
-| IEL-4230 | | wipe | d̥ʰɶɐ̯ʌ | d̥ʰ <s> ɶɐ̯ʌ </s> |
-| IEL-4241 | | wipe | počhi | p o <s> č </s> h i |
-| IEL-4277 | | woman | ba͜iː | b <s> a͜iː </s> |
-| IEL-4318 | | worm | oɐ̯m | <s> oɐ̯ </s> m |
-| IEL-4340 | | year | jaːɐ̯ | j <s> aːɐ̯ </s> |
-| IEL-4348 | | year | jɪə | j <s> ɪə </s> |
-| IEL-4371 | | yellow | piyər | p <s> iyə </s> r |
-| IEL-4378 | | you | iːɐ̯ | <s> iːɐ̯ </s> |
-| JAP-10 | | I | oiː | <s> oiː </s> |
-| JAP-19 | | thou | omae | o m <s> ae </s> |
-| JAP-20 | | thou | waiː | w <s> aiː </s> |
-| JAP-40 | | this | koiː | k <s> oiː </s> |
-| JAP-50 | | that | aiː | <s> aiː </s> |
-| JAP-60 | | who | daiː | d <s> aiː </s> |
-| JAP-70 | | what | naiː | n <s> aiː </s> |
-| JAP-89 | | all | ɴːna | <s> ɴː </s> n a |
-| JAP-112 | | two | hutaʦːu | h u t a <s> ʦː </s> u |
-| JAP-132 | | small | ʨiʨːai | ʨ i <s> ʨː </s> ai |
-| JAP-176 | | person | ʦːu | <s> ʦː </s> u |
-| JAP-189 | | fish | eo | <s> eo </s> |
-| JAP-190 | | fish | iːo | <s> iːo </s> |
-| JAP-200 | | bird | toiː | t <s> oiː </s> |
-| JAP-565 | | see | ɴːzuɴ | <s> ɴː </s> z u ɴ |
-| JAP-585 | | know | siʦːoːɴ | s i <s> ʦː </s> oː ɴ |
-| JAP-588 | | know | siʨːoru | s i <s> ʨː </s> o r u |
-| JAP-599 | | sleep | neimuʨːoi | n ei m u <s> ʨː </s> oi |
-| JAP-645 | | walk | ʔaʦːuɴ | ʔ a <s> ʦː </s> u ɴ |
-| JAP-679 | | sit | suwaiːʨo | s u w <s> aiː </s> ʨ o |
-| JAP-682 | | stand | θaʨːuri | θ a <s> ʨː </s> u r i |
-| JAP-685 | | stand | taʦːoːn | t a <s> ʦː </s> oː n |
-| JAP-688 | | stand | taʨːoru | t a <s> ʨː </s> o r u |
-| JAP-689 | | stand | taʨːo | t a <s> ʨː </s> o |
-| JAP-708 | | say | eo | <s> eo </s> |
-| JAP-709 | | say | juiu | j <s> uiu </s> |
-| JAP-831 | | burn | moeru | m <s> oe </s> r u |
-| JAP-833 | | burn | moeru | m <s> oe </s> r u |
-| JAP-836 | | burn | moeru | m <s> oe </s> r u |
-| JAP-837 | | burn | moeru | m <s> oe </s> r u |
-| JAP-838 | | burn | moeru | m <s> oe </s> r u |
-| JAP-962 | | good | iʨːari | i <s> ʨː </s> a r i |
-| JAP-989 | | dry | kaeta | k <s> ae </s> t a |
-| JAP-991 | | name | namae | n a m <s> ae </s> |
-| JAP-1008 | | ye | omaera | o m <s> ae </s> r a |
-| JAP-1015 | | he | ʔanuʦːu | ʔ a n u <s> ʦː </s> u |
-| JAP-1019 | | he | aiː | <s> aiː </s> |
-| JAP-1028 | | they | aera | <s> ae </s> r a |
-| JAP-1029 | | they | aiːdoɴ | <s> aiː </s> d o ɴ |
-| JAP-1091 | | three | miʦːu | m i <s> ʦː </s> u |
-| JAP-1093 | | three | miʦːu | m i <s> ʦː </s> u |
-| JAP-1094 | | three | miʦːu | m i <s> ʦː </s> u |
-| JAP-1097 | | three | miʦːu | m i <s> ʦː </s> u |
-| JAP-1098 | | three | miʦːu | m i <s> ʦː </s> u |
-| JAP-1101 | | four | joʦːu | j o <s> ʦː </s> u |
-| JAP-1103 | | four | joʦːu | j o <s> ʦː </s> u |
-| JAP-1104 | | four | joʦːu | j o <s> ʦː </s> u |
-| JAP-1107 | | four | joʦːu | j o <s> ʦː </s> u |
-| JAP-1108 | | four | joʦːu | j o <s> ʦː </s> u |
-| JAP-1149 | | day | hiːi | h <s> iːi </s> |
-| JAP-1159 | | fog | kiːi | k <s> iːi </s> |
-| JAP-1198 | | lake | mizuiuɴ | m i z <s> uiu </s> ɴ |
-| JAP-1312 | | navel | heʦːogo | h e <s> ʦː </s> o g o |
-| JAP-1430 | | father | otoʨːaɴ | o t o <s> ʨː </s> a ɴ |
-| JAP-1435 | | father | teʦːaɴ | t e <s> ʦː </s> a ɴ |
-| JAP-1436 | | father | otoʦːaɴ | o t o <s> ʦː </s> a ɴ |
-| JAP-1473 | | ice | koːi | k <s> oːi </s> |
-| JAP-1542 | | far | toːi | t <s> oːi </s> |
-| JAP-1547 | | far | toːi | t <s> oːi </s> |
-| JAP-1550 | | far | toie | t <s> oie </s> |
-| JAP-1611 | | sharp | ʧːi | <s> ʧː </s> i |
-| JAP-1646 | | bad | kuʦːoːru | k u <s> ʦː </s> oː r u |
-| JAP-1673 | | correct (right) | iʨːari | i <s> ʨː </s> a r i |
-| JAP-1680 | | correct (right) | naiːʨo | n <s> aiː </s> ʨ o |
-| JAP-1774 | | stick (stab) | ʦuʨːasu | ʦ u <s> ʨː </s> a s u |
-| JAP-1830 | | think | kaɴŋaeru | k a ɴ ŋ <s> ae </s> r u |
-| JAP-1832 | | think | kaɴŋaeru | k a ɴ ŋ <s> ae </s> r u |
-| JAP-1835 | | think | kaɴgaeru | k a ɴ g <s> ae </s> r u |
-| JAP-1836 | | think | kaɴgaeru | k a ɴ g <s> ae </s> r u |
-| JAP-1837 | | think | kaɴŋaeru | k a ɴ ŋ <s> ae </s> r u |
-| JAP-1851 | | smell | nioŋu | n <s> io </s> ŋ u |
-| JAP-1877 | | suck | suiu | s <s> uiu </s> |
-| JAP-1918 | | down | sitae | s i t <s> ae </s> |
-| JAP-1920 | | down | sitae | s i t <s> ae </s> |
-| JAP-1928 | | up | ueː | <s> ueː </s> |
-| JAP-1930 | | up | ueː | <s> ueː </s> |
-| JAP-1933 | | up | ue | <s> ue </s> |
-| JAP-1934 | | up | ue | <s> ue </s> |
-| JAP-1936 | | up | ueː | <s> ueː </s> |
-| JAP-1966 | | alive (live) | ikiːʨːo | i k iː <s> ʨː </s> o |
-| KSL-6 | | all | ʔayɬʦo | ʔ <s> ay </s> ɬ ʦ o |
-| KSL-41 | | back | nayɣah | n <s> ay </s> ɣ a h |
-| KSL-48 | | bad | jayʔayʃõõ | j <s> ay </s> ʔ <s> ay </s> ʃ õ õ |
-| KSL-55 | | bark | kayʃtˀoːʒ | k <s> ay </s> ʃ tˀ oː ʒ |
-| KSL-62 | | because | haːlay | h aː l <s> ay </s> |
-| KSL-76 | | big | ʔayniɬʦo | ʔ <s> ay </s> n i ɬ ʦ o |
-| KSL-90 | | bite | ʔahayɬhaːʃ | ʔ a h <s> ay </s> ɬ h aː ʃ |
-| KSL-132 | | breathe | ńdiʣih | <s> ń </s> d i ʣ i h |
-| KSL-188 | | cut | ʔahaygeːʃ | ʔ a h <s> ay </s> g eː ʃ |
-| KSL-363 | | flower | ʧˀilaytah | ʧˀ i l <s> ay </s> t a h |
-| KSL-377 | | fog | ayhi | <s> ay </s> h i |
-| KSL-433 | | good | jayʔaytˀeːh | j <s> ay </s> ʔ <s> ay </s> tˀ eː h |
-| KSL-524 | | hit | ńdiːɬʦˀin | <s> ń </s> d iː ɬ ʦˀ i n |
-| KSL-713 | | mother | may | m <s> ay </s> |
-| KSL-741 | | narrow | ʔayɬʦˀoːzi | ʔ <s> ay </s> ɬ ʦˀ oː z i |
-| KSL-748 | | near | ʔayhayni | ʔ <s> ay </s> h <s> ay </s> n i |
-| KSL-797 | | old | sayni | s <s> ay </s> n i |
-| KSL-804 | | one | ɬayʔiː | ɬ <s> ay </s> ʔ iː |
-| KSL-860 | | right | niʃnay | n i ʃ n <s> ay </s> |
-| KSL-902 | | salt | ʔayʃĩːh | ʔ <s> ay </s> ʃ ĩː h |
-| KSL-951 | | sew | nayiɬkad | n <s> ay </s> i ɬ k a d |
-| KSL-965 | | short | jayʒi | j <s> ay </s> ʒ i |
-| KSL-979 | | sit | siday | s i d <s> ay </s> |
-| KSL-986 | | skin | kaygi | k <s> ay </s> g i |
-| KSL-993 | | sky | yay | y <s> ay </s> |
-| KSL-1007 | | small | jayʒi | j <s> ay </s> ʒ i |
-| KSL-1059 | | split | splɪit | s p l <s> ɪi </s> t |
-| KSL-1063 | | split | ʔaɬtayniːgeːʃ | ʔ a ɬ t <s> ay </s> n iː g eː ʃ |
-| KSL-1077 | | stab | biɣayʔniɬgeːd | b i ɣ <s> ay </s> ʔ n i ɬ g eː d |
-| KSL-1126 | | sun | ʃay | ʃ <s> ay </s> |
-| KSL-1182 | | thin | ʔayɬtˀã́ʔi | ʔ <s> ay </s> ɬ tˀ ã́ ʔ i |
-| KSL-1266 | | vomit | naykwi | n <s> ay </s> kw i |
-| KSL-1301 | | what | haʔaytˀiːʃ | h a ʔ <s> ay </s> tˀ iː ʃ |
-| KSL-1315 | | who | hayi | h <s> ay </s> i |
-| KSL-1350 | | wipe | naynitˀod | n <s> ay </s> n i tˀ o d |
-| KSL-1364 | | woman | ʔasʣayni | ʔ a s ʣ <s> ay </s> n i |
-| OUG-146 | | blood | wyɨr | w <s> yɨ </s> r |
-| OUG-182 | | breast | maɨl | m <s> aɨ </s> l |
-| OUG-183 | | breast | maɨl | m <s> aɨ </s> l |
-| OUG-207 | | burn (V) | tæitæl | t <s> æi </s> t æ l |
-| OUG-312 | | dog | oɔmp | <s> oɔ </s> m p |
-| OUG-314 | | dog | oɔmp | <s> oɔ </s> m p |
-| OUG-315 | | dog | oɔmp | <s> oɔ </s> m p |
-| OUG-404 | | eat (V) | teːɨɣ | t <s> eːɨ </s> ɣ |
-| OUG-407 | | eat (V) | teːi | t <s> eːi </s> |
-| OUG-408 | | eat (V) | təɨɣ | t <s> əɨ </s> ɣ |
-| OUG-503 | | fire | toɔt | t <s> oɔ </s> t |
-| OUG-505 | | fire | oɔrəsʲ | <s> oɔ </s> r ə sʲ |
-| OUG-547 | | fly (V) | təɨli | t <s> əɨ </s> l i |
-| OUG-548 | | fly (V) | təɨli | t <s> əɨ </s> l i |
-| OUG-563 | | foot | laəl | l <s> aə </s> l |
-| OUG-577 | | full | taɨl | t <s> aɨ </s> l |
-| OUG-578 | | full | taɨl | t <s> aɨ </s> l |
-| OUG-600 | | give (V) | məɨɣ | m <s> əɨ </s> ɣ |
-| OUG-635 | | green | ɲoɔrpum | ɲ <s> oɔ </s> r p u m |
-| OUG-637 | | green | ɲoɔrpom | ɲ <s> oɔ </s> r p o m |
-| OUG-670 | | hand | koɔt | k <s> oɔ </s> t |
-| OUG-672 | | hand | koɔt | k <s> oɔ </s> t |
-| OUG-673 | | hand | koæt | k <s> oæ </s> t |
-| OUG-969 | | many | ʃoɔw | ʃ <s> oɔ </s> w |
-| OUG-990 | | meat | ɲəːul | ɲ <s> əːu </s> l |
-| OUG-1007 | | moon | joɔŋqəp | j <s> oɔ </s> ŋ q ə p |
-| OUG-1166 | | not | oɔt | <s> oɔ </s> t |
-| OUG-1237 | | red | wyɨr | w <s> yɨ </s> r |
-| OUG-1272 | | root | toɔr | t <s> oɔ </s> r |
-| OUG-1275 | | root | toɔr | t <s> oɔ </s> r |
-| OUG-1344 | | say | loɔɣi | l <s> oɔ </s> ɣ i |
-| OUG-1345 | | say | lɔːi | l <s> ɔːi </s> |
-| OUG-1364 | | seed | toɔjəm | t <s> oɔ </s> j ə m |
-| OUG-1561 | | tail | leːɨɣ | l <s> eːɨ </s> ɣ |
-| OUG-1614 | | thou | næi | n <s> æi </s> |
-| OUG-1879 | | heavy | toɔrwitʲiŋ | t <s> oɔ </s> r w i tʲ i ŋ |
-| OUG-2036 | | year | toɔl | t <s> oɔ </s> l |
-| OUG-2039 | | year | toɔl | t <s> oɔ </s> l |
-| PAN-556 | | to breathe | mau#ːuriuri | m a u <s> #ː </s> u r i u r i |
-| PAN-2263 | | mosquito | di#ːmbõhõ | d i <s> #ː </s> m b õ h õ |
-| PAN-2779 | | thunder | rita#ːmbanua | r i t a <s> #ː </s> m b a n u a |
-| PAN-3562 | | when? | he#ːmega | h e <s> #ː </s> m e g a |
-| PAN-3777 | | where? | abo#ːde | a b o <s> #ː </s> d e |
-| PAN-4068 | | how? | abo#ːua | a b o <s> #ː </s> u a |
-| PAN-4070 | | how? | he#ːwisa | h e <s> #ː </s> w i s a |
-| PIE-51 | | bark | flios | f l <s> io </s> s |
-| PIE-60 | | bark | korteʧʧa | k o r t e <s> ʧː </s> a |
-| PIE-63 | | belly | bœyk | b <s> œy </s> k |
-| PIE-101 | | big | stouːr | s t <s> ouː </s> r |
-| PIE-124 | | bird | uʧːɛllo | u <s> ʧː </s> ɛ lː o |
-| PIE-125 | | bird | ʧɪɽɪyaː | ʧ ɪ ɽ <s> ɪyaː </s> |
-| PIE-175 | | blood | ɑɾɪun | ɑ ɾ <s> ɪu </s> n |
-| PIE-182 | | blood | plouːθ | p l <s> ouː </s> θ |
-| PIE-200 | | bone | peiːn | p <s> eiː </s> n |
-| PIE-235 | | burn (V) | ceo | c <s> eo </s> |
-| PIE-244 | | burn (V) | bruʧːare | b r u <s> ʧː </s> a r e |
-| PIE-343 | | die (V) | teiːja | t <s> eiː </s> j a |
-| PIE-365 | | dog | kɐ̃uː | k <s> ɐ̃uː </s> |
-| PIE-382 | | drink (V) | trɛʰka | t r <s> ɛʰ </s> k a |
-| PIE-409 | | ear | ɪər | <s> ɪə </s> r |
-| PIE-412 | | ear | øːʌ | <s> øːʌ </s> |
-| PIE-422 | | ear | eiːra | <s> eiː </s> r a |
-| PIE-498 | | eye | øyːɣa | <s> øyː </s> ɣ a |
-| PIE-545 | | fire | faɪər | f <s> aɪə </s> r |
-| PIE-546 | | fire | fɔyər | f <s> ɔyə </s> r |
-| PIE-597 | | fly (V) | fljuːa | f l j <s> uːa </s> |
-| PIE-616 | | foot | fouːtʏr | f <s> ouː </s> t ʏ r |
-| PIE-673 | | good | kouːðʏr | k <s> ouː </s> ð ʏ r |
-| PIE-698 | | hair | hɛər | h <s> ɛə </s> r |
-| PIE-711 | | hair | hauːr | h <s> auː </s> r |
-| PIE-739 | | head | hoːəð | h <s> oːə </s> ð |
-| PIE-755 | | hear (V) | hɪər | h <s> ɪə </s> r |
-| PIE-758 | | hear (V) | høːʌ | h <s> øːʌ </s> |
-| PIE-768 | | hear (V) | heiːra | h <s> eiː </s> r a |
-| PIE-826 | | I | io | <s> io </s> |
-| PIE-845 | | kill (V) | uʧːidere | u <s> ʧː </s> i d e r e |
-| PIE-864 | | knee | kʰniɛː | kʰ n <s> iɛː </s> |
-| PIE-867 | | knee | ʒuɐʎu | ʒ <s> uɐ </s> ʎ u |
-| PIE-921 | | leaf | løyːv | l <s> øyː </s> v |
-| PIE-948 | | liver | lɪɑrtʰ | l <s> ɪɑ </s> r tʰ |
-| PIE-978 | | louse | lœys | l <s> œy </s> s |
-| PIE-1043 | | meat | kreas | k r <s> ea </s> s |
-| PIE-1074 | | moon | luɐ | l <s> uɐ </s> |
-| PIE-1075 | | moon | mauːnɪ | m <s> auː </s> n ɪ |
-| PIE-1158 | | new | nɔy | n <s> ɔy </s> |
-| PIE-1162 | | new | neos | n <s> eo </s> s |
-| PIE-1189 | | night | nouʰt | n <s> ouʰ </s> t |
-| PIE-1226 | | not | ɛʰcɪ | <s> ɛʰ </s> c ɪ |
-| PIE-1284 | | rain (V) | pjɔʤːa | p j ɔ <s> ʤː </s> a |
-| PIE-1300 | | red | røyːðʏr | r <s> øyː </s> ð ʏ r |
-| PIE-1324 | | road | viɐ | v <s> iɐ </s> |
-| PIE-1339 | | root | rouːt | r <s> ouː </s> t |
-| PIE-1358 | | round | kʰriŋlouʰtʏr | kʰ r i ŋ l <s> ouʰ </s> t ʏ r |
-| PIE-1396 | | say (V) | seiːja | s <s> eiː </s> j a |
-| PIE-1404 | | see (V) | zeːən | z <s> eːə </s> n |
-| PIE-1410 | | see (V) | vedea | v e d <s> ea </s> |
-| PIE-1416 | | see (V) | sjauː | s j <s> auː </s> |
-| PIE-1435 | | seed | fraiː | f r <s> aiː </s> |
-| PIE-1449 | | sit (V) | ʃedea | ʃ e d <s> ea </s> |
-| PIE-1478 | | skin | hœyt | h <s> œy </s> t |
-| PIE-1521 | | small | lɪtḷ | l ɪ t <s> ḷ </s> |
-| PIE-1523 | | small | smauːr | s m <s> auː </s> r |
-| PIE-1538 | | smoke | reiːkʏr | r <s> eiː </s> k ʏ r |
-| PIE-1540 | | smoke | dʱʊãː | dʱ <s> ʊãː </s> |
-| PIE-1545 | | stand (V) | ʃteːən | ʃ t <s> eːə </s> n |
-| PIE-1567 | | star | stea | s t <s> ea </s> |
-| PIE-1611 | | sun | souːl | s <s> ouː </s> l |
-| PIE-1654 | | tail | skɔʰt | s k <s> ɔʰ </s> t |
-| PIE-1664 | | that | ɑɪ̯n | <s> ɑɪ̯ </s> n |
-| PIE-1676 | | that | sauː | s <s> auː </s> |
-| PIE-1790 | | two | due | d <s> ue </s> |
-| PIE-1796 | | walk (V) | ɡeːən | ɡ <s> eːə </s> n |
-| PIE-1848 | | water | vaʰtn̥ | v <s> aʰ </s> t n̥ |
-| PIE-1914 | | who | opios | o p <s> io </s> s |
-| PIE-2007 | | near | nɪər | n <s> ɪə </s> r |
-| PIE-2008 | | near | naːə | n <s> aːə </s> |
-| PIE-2020 | | near | nauː | n <s> auː </s> |
-| PIE-2059 | | short | stʏʰtʏr | s t <s> ʏʰ </s> t ʏ r |
-| PIE-2156 | | year | jɪər | j <s> ɪə </s> r |
-| PIE-2169 | | year | auːr | <s> auː </s> r |
-| ROM-19 | | bark | korteʧʧa | k o r t e <s> ʧː </s> a |
-| ROM-36 | | bird | uʧːɛllo | u <s> ʧː </s> ɛ lː o |
-| ROM-73 | | burn (V) | bruʧːare | b r u <s> ʧː </s> a r e |
-| ROM-102 | | dog | kɐ̃uː | k <s> ɐ̃uː </s> |
-| ROM-229 | | i | io | <s> io </s> |
-| ROM-234 | | kill (V) | uʧːidere | u <s> ʧː </s> i d e r e |
-| ROM-237 | | knee | ʒuɐʎu | ʒ <s> uɐ </s> ʎ u |
-| ROM-291 | | moon | luɐ | l <s> uɐ </s> |
-| ROM-348 | | rain (V) | pjɔʤːa | p j ɔ <s> ʤː </s> a |
-| ROM-359 | | road | viɐ | v <s> iɐ </s> |
-| ROM-384 | | see (V) | vedea | v e d <s> ea </s> |
-| ROM-395 | | sit (V) | ʃedea | ʃ e d <s> ea </s> |
-| ROM-423 | | star | stea | s t <s> ea </s> |
-| ROM-481 | | two | due | d <s> ue </s> |
-| SIN-1552 | | he | a²¹ɔ³²¹ | a ²¹ ɔ <s> ³²¹ </s> |
+|:---------|:-------------------|:--------------------|:-------------------|:-------------------------------------------------------------------|
+| BAI-1 | Gongxing | all | ʦʰæ₂₂ja₄₂ | ʦʰ æ <s> ₂₂ </s> j a <s> ₄₂ </s> |
+| BAI-2 | Jinman | all | da₄₂t͡ʂɚ₂₂ | d a <s> ₄₂ </s> t͡ʂ ɚ <s> ₂₂ </s> |
+| BAI-3 | Mazhelong | all | so₂₁ji₂₁ | s o <s> ₂₁ </s> j i <s> ₂₁ </s> |
+| BAI-4 | Dashi | all | ʨwan₄₂pu₅₅ | ʨ w a n <s> ₄₂ </s> p u <s> ₅₅ </s> |
+| BAI-5 | Zhoucheng | all | ji₃₁su₃₃ | j i <s> ₃₁ </s> s u <s> ₃₃ </s> |
+| BAI-6 | Jinxing | all | ʦa₃₅kɑ₂₁ʦi₃₃ | ʦ a <s> ₃₅ </s> k ɑ <s> ₂₁ </s> ʦ i <s> ₃₃ </s> |
+| BAI-7 | Tuolo | all | ʨʰa₅₅ | ʨʰ a <s> ₅₅ </s> |
+| BAI-8 | Enqi | all | ʨa₂₄ʁo₂₁ʦi₂₂ | ʨ a <s> ₂₄ </s> ʁ o <s> ₂₁ </s> ʦ i <s> ₂₂ </s> |
+| BAI-9 | Ega | all | da₅₅ŋwa₂₂ | d a <s> ₅₅ </s> ŋ w a <s> ₂₂ </s> |
+| BAI-10 | Gongxing | ashes | xwɛ₂₂ɕy₅₅ʁwa₁₂ | x w ɛ <s> ₂₂ </s> ɕ y <s> ₅₅ </s> ʁ w a <s> ₁₂ </s> |
+| BAI-11 | Jinman | ashes | kʰwa₅₅la₂₁ɕu₅₅ | kʰ w a <s> ₅₅ </s> l a <s> ₂₁ </s> ɕ u <s> ₅₅ </s> |
+| BAI-12 | Mazhelong | ashes | xwa₃₁la₄₄su₅₅ | x w a <s> ₃₁ </s> l a <s> ₄₄ </s> s u <s> ₅₅ </s> |
+| BAI-13 | Zhoucheng | ashes | su₅₅ | s u <s> ₅₅ </s> |
+| BAI-14 | Jinxing | ashes | su₅₅ | s u <s> ₅₅ </s> |
+| BAI-15 | Tuolo | ashes | ʂɤ₅₅ | ʂ ɤ <s> ₅₅ </s> |
+| BAI-16 | Enqi | ashes | xwi₂₂ɕu₂₄ | x w i <s> ₂₂ </s> ɕ u <s> ₂₄ </s> |
+| BAI-17 | Ega | ashes | xwa₅₅lo₂₁ɕu₅₅ | x w a <s> ₅₅ </s> l o <s> ₂₁ </s> ɕ u <s> ₅₅ </s> |
+| BAI-18 | Gongxing | bark | d͡ʐi₁₂bi₂₁ | d͡ʐ i <s> ₁₂ </s> b i <s> ₂₁ </s> |
+| BAI-19 | Mazhelong | bark | ɕen₅₅pe₂₁ | ɕ e n <s> ₅₅ </s> p e <s> ₂₁ </s> |
+| BAI-20 | Dashi | bark | t͡ʂɯ₂₁pe₂₁ | t͡ʂ ɯ <s> ₂₁ </s> p e <s> ₂₁ </s> |
+| BAI-21 | Zhoucheng | bark | ʦɯ₃₁pe₂₁ | ʦ ɯ <s> ₃₁ </s> p e <s> ₂₁ </s> |
+| BAI-22 | Jinxing | bark | ʦɯ₃₁pe₂₁ | ʦ ɯ <s> ₃₁ </s> p e <s> ₂₁ </s> |
+| BAI-23 | Tuolo | bark | djɯ₂₁bi₃₅ | d j ɯ <s> ₂₁ </s> b i <s> ₃₅ </s> |
+| BAI-24 | Enqi | bark | djɯ₄₃pi₂₁ | d j ɯ <s> ₄₃ </s> p i <s> ₂₁ </s> |
+| BAI-25 | Ega | bark | ʥi₄₂ʨyj₂₁qa₅₅ | ʥ i <s> ₄₂ </s> ʨ y j <s> ₂₁ </s> q a <s> ₅₅ </s> |
+| BAI-26 | Gongxing | belly | ʐi₂₁ | ʐ i <s> ₂₁ </s> |
+| BAI-27 | Jinman | belly | ʐɚ₄₂ | ʐ ɚ <s> ₄₂ </s> |
+| BAI-28 | Mazhelong | belly | pɯ₄₄ | p ɯ <s> ₄₄ </s> |
+| BAI-29 | Dashi | belly | fo₄₄ | f o <s> ₄₄ </s> |
+| BAI-30 | Zhoucheng | belly | fɤ₄₄ | f ɤ <s> ₄₄ </s> |
+| BAI-31 | Jinxing | belly | fɤ₄₄ | f ɤ <s> ₄₄ </s> |
+| BAI-32 | Tuolo | belly | fɚ₄₂ | f ɚ <s> ₄₂ </s> |
+| BAI-33 | Enqi | belly | fo₂₄ | f o <s> ₂₄ </s> |
+| BAI-34 | Ega | belly | xu₄₄qʰo₂₂ | x u <s> ₄₄ </s> qʰ o <s> ₂₂ </s> |
+| BAI-35 | Gongxing | big | da₄₂ | d a <s> ₄₂ </s> |
+| BAI-36 | Jinman | big | do₄₂ | d o <s> ₄₂ </s> |
+| BAI-37 | Mazhelong | big | do₄₂ | d o <s> ₄₂ </s> |
+| BAI-38 | Dashi | big | tow₄₂ | t o w <s> ₄₂ </s> |
+| BAI-39 | Zhoucheng | big | to₄₂ | t o <s> ₄₂ </s> |
+| BAI-40 | Jinxing | big | tow₄₂ | t o w <s> ₄₂ </s> |
+| BAI-41 | Tuolo | big | dɔ₂₁ | d ɔ <s> ₂₁ </s> |
+| BAI-42 | Enqi | big | da₄₃ | d a <s> ₄₃ </s> |
+| BAI-43 | Ega | big | do₄₂ | d o <s> ₄₂ </s> |
+| BAI-44 | Gongxing | bird | ʦu₂₄ | ʦ u <s> ₂₄ </s> |
+| BAI-45 | Jinman | bird | ʦo₅₅ | ʦ o <s> ₅₅ </s> |
+| BAI-46 | Mazhelong | bird | ʦo₄₄ | ʦ o <s> ₄₄ </s> |
+| BAI-47 | Dashi | bird | ʦow₃₃ | ʦ o w <s> ₃₃ </s> |
+| BAI-48 | Zhoucheng | bird | ʦow₄₄ | ʦ o w <s> ₄₄ </s> |
+| BAI-49 | Jinxing | bird | ʦow₄₄ | ʦ o w <s> ₄₄ </s> |
+| BAI-50 | Tuolo | bird | ʦu₄₂ | ʦ u <s> ₄₂ </s> |
+| BAI-51 | Enqi | bird | ʦu₅₅ | ʦ u <s> ₅₅ </s> |
+| BAI-52 | Ega | bird | ʦu₄₄ | ʦ u <s> ₄₄ </s> |
+| BAI-53 | Gongxing | bite (V) | ŋa₂₄ | ŋ a <s> ₂₄ </s> |
+| BAI-54 | Jinman | bite (V) | ŋa₄₄ | ŋ a <s> ₄₄ </s> |
+| BAI-55 | Mazhelong | bite (V) | ŋɑ₄₄ | ŋ ɑ <s> ₄₄ </s> |
+| BAI-56 | Dashi | bite (V) | ɣaŋ₄₄ | ɣ a ŋ <s> ₄₄ </s> |
+| BAI-57 | Zhoucheng | bite (V) | ŋa₄₄ | ŋ a <s> ₄₄ </s> |
+| BAI-58 | Jinxing | bite (V) | ɑ̃₄₄ | ɑ̃ <s> ₄₄ </s> |
+| BAI-59 | Tuolo | bite (V) | ŋɔ₄₂ | ŋ ɔ <s> ₄₂ </s> |
+| BAI-60 | Enqi | bite (V) | ɴa₅₅ | ɴ a <s> ₅₅ </s> |
+| BAI-61 | Ega | bite (V) | ŋo₄₄ | ŋ o <s> ₄₄ </s> |
+| BAI-62 | Gongxing | black | χe₂₄ | χ e <s> ₂₄ </s> |
+| BAI-63 | Jinman | black | xɯ₅₅ | x ɯ <s> ₅₅ </s> |
+| BAI-64 | Mazhelong | black | xɯ₄₄ | x ɯ <s> ₄₄ </s> |
+| BAI-65 | Dashi | black | xɯ₄₄ | x ɯ <s> ₄₄ </s> |
+| BAI-66 | Zhoucheng | black | xɯ₄₄ | x ɯ <s> ₄₄ </s> |
+| BAI-67 | Jinxing | black | xɯ₄₄ | x ɯ <s> ₄₄ </s> |
+| BAI-68 | Tuolo | black | xɚ₄₂ | x ɚ <s> ₄₂ </s> |
+| BAI-69 | Enqi | black | χɯ₅₅ | χ ɯ <s> ₅₅ </s> |
+| BAI-70 | Ega | black | xɯ₄₄ | x ɯ <s> ₄₄ </s> |
+| BAI-71 | Gongxing | blood | swa₂₄ | s w a <s> ₂₄ </s> |
+| BAI-72 | Jinman | blood | swa₅₅ | s w a <s> ₅₅ </s> |
+| BAI-73 | Mazhelong | blood | swa₄₄ | s w a <s> ₄₄ </s> |
+| BAI-74 | Dashi | blood | sʰwa₄₄ | sʰ w a <s> ₄₄ </s> |
+| BAI-75 | Zhoucheng | blood | swa₄₄ | s w a <s> ₄₄ </s> |
+| BAI-76 | Jinxing | blood | swɑ₄₄ | s w ɑ <s> ₄₄ </s> |
+| BAI-77 | Tuolo | blood | swɔ₄₂ | s w ɔ <s> ₄₂ </s> |
+| BAI-78 | Enqi | blood | swa₅₅ | s w a <s> ₅₅ </s> |
+| BAI-79 | Ega | blood | swa₄₄ | s w a <s> ₄₄ </s> |
+| BAI-80 | Gongxing | bone | qwa₂₄ | q w a <s> ₂₄ </s> |
+| BAI-81 | Jinman | bone | qwa₅₅ʦe₅₅ | q w a <s> ₅₅ </s> ʦ e <s> ₅₅ </s> |
+| BAI-82 | Mazhelong | bone | kwa₄₄twɤ₄₄ | k w a <s> ₄₄ </s> t w ɤ <s> ₄₄ </s> |
+| BAI-83 | Dashi | bone | kwa₄₄tjǝ₃₃ | k w a <s> ₄₄ </s> t j ǝ <s> ₃₃ </s> |
+| BAI-84 | Zhoucheng | bone | kwa₄₄tɯ₃₃ | k w a <s> ₄₄ </s> t ɯ <s> ₃₃ </s> |
+| BAI-85 | Jinxing | bone | kwɑ₄₄tǝ₄₂ | k w ɑ <s> ₄₄ </s> t ǝ <s> ₄₂ </s> |
+| BAI-86 | Tuolo | bone | ku₄₂djɯ₃₅ʦɛ₄₂ | k u <s> ₄₂ </s> d j ɯ <s> ₃₅ </s> ʦ ɛ <s> ₄₂ </s> |
+| BAI-87 | Enqi | bone | qwa₅₅ | q w a <s> ₅₅ </s> |
+| BAI-88 | Ega | bone | qwa₄₄ | q w a <s> ₄₄ </s> |
+| BAI-89 | Gongxing | breast | ba₂₁ | b a <s> ₂₁ </s> |
+| BAI-90 | Jinman | breast | pa₄₂ | p a <s> ₄₂ </s> |
+| BAI-91 | Mazhelong | breast | noŋ₃₃ | n o ŋ <s> ₃₃ </s> |
+| BAI-92 | Dashi | breast | pa₄₂ | p a <s> ₄₂ </s> |
+| BAI-93 | Zhoucheng | breast | pa₄₂ | p a <s> ₄₂ </s> |
+| BAI-94 | Jinxing | breast | pɑ₄₂ | p ɑ <s> ₄₂ </s> |
+| BAI-95 | Tuolo | breast | bo₄₂ | b o <s> ₄₂ </s> |
+| BAI-96 | Enqi | breast | pa₂₁ | p a <s> ₂₁ </s> |
+| BAI-97 | Ega | breast | pa₄₂ | p a <s> ₄₂ </s> |
+| BAI-98 | Gongxing | burn (V) | ɕy₂₂ | ɕ y <s> ₂₂ </s> |
+| BAI-99 | Jinman | burn (V) | fɤ₅₅ji₅₅ | f ɤ <s> ₅₅ </s> j i <s> ₅₅ </s> |
+| BAI-100 | Mazhelong | burn (V) | sɤ₅₅ | s ɤ <s> ₅₅ </s> |
+| BAI-101 | Dashi | burn (V) | ʂu₅₅ | ʂ u <s> ₅₅ </s> |
+| BAI-102 | Zhoucheng | burn (V) | ɲɯ₃₃ | ɲ ɯ <s> ₃₃ </s> |
+| BAI-103 | Jinxing | burn (V) | jĩ₃₃ | j ĩ <s> ₃₃ </s> |
+| BAI-104 | Tuolo | burn (V) | jen₃₃ | j e n <s> ₃₃ </s> |
+| BAI-105 | Enqi | burn (V) | xu₂₄ | x u <s> ₂₄ </s> |
+| BAI-106 | Ega | burn (V) | fi₂₂pɛ₂₂ | f i <s> ₂₂ </s> p ɛ <s> ₂₂ </s> |
+| BAI-107 | Gongxing | burn (V) | ɕy₅₅ | ɕ y <s> ₅₅ </s> |
+| BAI-108 | Mazhelong | burn (V) | fi₃₃kʰǝɯ₅₅ | f i <s> ₃₃ </s> kʰ <s> ǝɯ </s> <s> ₅₅ </s> |
+| BAI-109 | Zhoucheng | burn (V) | su₅₅ | s u <s> ₅₅ </s> |
+| BAI-110 | Gongxing | claw | t͡ʂi₂₄qa₂₄ | t͡ʂ i <s> ₂₄ </s> q a <s> ₂₄ </s> |
+| BAI-111 | Jinman | claw | qa₄₄ | q a <s> ₄₄ </s> |
+| BAI-112 | Mazhelong | claw | sǝɯ₃₃kɚ₄₄ | s <s> ǝɯ </s> <s> ₃₃ </s> k ɚ <s> ₄₄ </s> |
+| BAI-113 | Dashi | claw | ʂɯ₃₃ka₄₄ | ʂ ɯ <s> ₃₃ </s> k a <s> ₄₄ </s> |
+| BAI-114 | Zhoucheng | claw | sɯ₃₃ka₄₄ | s ɯ <s> ₃₃ </s> k a <s> ₄₄ </s> |
+| BAI-115 | Jinxing | claw | sɯ₃₃ka₄₄ | s ɯ <s> ₃₃ </s> k a <s> ₄₄ </s> |
+| BAI-116 | Tuolo | claw | ɕɯ₃₃qa₄₂ | ɕ ɯ <s> ₃₃ </s> q a <s> ₄₂ </s> |
+| BAI-117 | Enqi | claw | tjɯ₂₁qa₂₄ | t j ɯ <s> ₂₁ </s> q a <s> ₂₄ </s> |
+| BAI-118 | Ega | claw | ɕi₂₂qa₄₄ | ɕ i <s> ₂₂ </s> q a <s> ₄₄ </s> |
+| BAI-119 | Gongxing | cloud | ŋɛ₁₂qǝ₅₅ | ŋ ɛ <s> ₁₂ </s> q ǝ <s> ₅₅ </s> |
+| BAI-120 | Jinman | cloud | mɯ₂₁ko₄₂ | m ɯ <s> ₂₁ </s> k o <s> ₄₂ </s> |
+| BAI-121 | Mazhelong | cloud | ɥen₂₁pe₂₁ | ɥ e n <s> ₂₁ </s> p e <s> ₂₁ </s> |
+| BAI-122 | Dashi | cloud | vɤ̃₂₁nõ₂₁ | v ɤ̃ <s> ₂₁ </s> n õ <s> ₂₁ </s> |
+| BAI-123 | Zhoucheng | cloud | ɤ₂₁ | ɤ <s> ₂₁ </s> |
+| BAI-124 | Jinxing | cloud | ɤ̃₂₁ | ɤ̃ <s> ₂₁ </s> |
+| BAI-125 | Tuolo | cloud | ŋɔ₃₅qa₄₂ | ŋ ɔ <s> ₃₅ </s> q a <s> ₄₂ </s> |
+| BAI-126 | Enqi | cloud | ʁæ₂₁ | ʁ æ <s> ₂₁ </s> |
+| BAI-127 | Ega | cloud | mɯ̃₂₁ko₄₂ | m ɯ̃ <s> ₂₁ </s> k o <s> ₄₂ </s> |
+| BAI-128 | Gongxing | cold | ga₁₂ | g a <s> ₁₂ </s> |
+| BAI-129 | Jinman | cold | kɯ₅₅ | k ɯ <s> ₅₅ </s> |
+| BAI-130 | Mazhelong | cold | kɯ₅₅ | k ɯ <s> ₅₅ </s> |
+| BAI-131 | Dashi | cold | kɯ₃₅ | k ɯ <s> ₃₅ </s> |
+| BAI-132 | Zhoucheng | cold | kɯ₃₅ | k ɯ <s> ₃₅ </s> |
+| BAI-133 | Jinxing | cold | kɯ₅₅ | k ɯ <s> ₅₅ </s> |
+| BAI-134 | Tuolo | cold | kɯ₅₅ | k ɯ <s> ₅₅ </s> |
+| BAI-135 | Enqi | cold | kɯ₂₄ | k ɯ <s> ₂₄ </s> |
+| BAI-136 | Ega | cold | kɯ₅₅ | k ɯ <s> ₅₅ </s> |
+| BAI-137 | Dashi | cold | ka₂₁ | k a <s> ₂₁ </s> |
+| BAI-138 | Jinxing | cold | kɑ₂₁ | k ɑ <s> ₂₁ </s> |
+| BAI-139 | Gongxing | come (V) | ji₂₁kǝ₂₂ | j i <s> ₂₁ </s> k ǝ <s> ₂₂ </s> |
+| BAI-140 | Jinman | come (V) | ʨwa₅₅ | ʨ w a <s> ₅₅ </s> |
+| BAI-141 | Mazhelong | come (V) | ɣǝɯ₂₁ | ɣ <s> ǝɯ </s> <s> ₂₁ </s> |
+| BAI-142 | Dashi | come (V) | ɣǝ₃₅ | ɣ ǝ <s> ₃₅ </s> |
+| BAI-143 | Zhoucheng | come (V) | jɯ₃₅ | j ɯ <s> ₃₅ </s> |
+| BAI-144 | Jinxing | come (V) | ɣǝ₃₅ | ɣ ǝ <s> ₃₅ </s> |
+| BAI-145 | Tuolo | come (V) | t͡ʂʰo₄₂ | t͡ʂʰ o <s> ₄₂ </s> |
+| BAI-146 | Enqi | come (V) | ji₅₅ki₂₄ | j i <s> ₅₅ </s> k i <s> ₂₄ </s> |
+| BAI-147 | Ega | come (V) | ji₅₅kɯ₂₂ | j i <s> ₅₅ </s> k ɯ <s> ₂₂ </s> |
+| BAI-148 | Tuolo | come (V) | jɯ₃₃kɯ₅₅ | j ɯ <s> ₃₃ </s> k ɯ <s> ₅₅ </s> |
+| BAI-149 | Gongxing | die (V) | ɕi₂₂ | ɕ i <s> ₂₂ </s> |
+| BAI-150 | Jinman | die (V) | ɕi₂₂ | ɕ i <s> ₂₂ </s> |
+| BAI-151 | Mazhelong | die (V) | ɕi₃₃ | ɕ i <s> ₃₃ </s> |
+| BAI-152 | Dashi | die (V) | ɕi₃₃ | ɕ i <s> ₃₃ </s> |
+| BAI-153 | Zhoucheng | die (V) | ɕi₃₃ | ɕ i <s> ₃₃ </s> |
+| BAI-154 | Jinxing | die (V) | ɕi₃₃ | ɕ i <s> ₃₃ </s> |
+| BAI-155 | Tuolo | die (V) | ɕi₃₃ | ɕ i <s> ₃₃ </s> |
+| BAI-156 | Enqi | die (V) | si₂₂ | s i <s> ₂₂ </s> |
+| BAI-157 | Ega | die (V) | si₂₂ | s i <s> ₂₂ </s> |
+| BAI-158 | Gongxing | dog | qʰwaŋ₂₂ | qʰ w a ŋ <s> ₂₂ </s> |
+| BAI-159 | Jinman | dog | qʰõ₂₂ | qʰ õ <s> ₂₂ </s> |
+| BAI-160 | Mazhelong | dog | kʰwaŋ₃₃ | kʰ w a ŋ <s> ₃₃ </s> |
+| BAI-161 | Dashi | dog | kʰwaŋ₃₃ | kʰ w a ŋ <s> ₃₃ </s> |
+| BAI-162 | Zhoucheng | dog | kʰwa₃₃ | kʰ w a <s> ₃₃ </s> |
+| BAI-163 | Jinxing | dog | kʰwɑ̃₃₃ | kʰ w ɑ̃ <s> ₃₃ </s> |
+| BAI-164 | Tuolo | dog | qʰwaŋ₃₃ | qʰ w a ŋ <s> ₃₃ </s> |
+| BAI-165 | Enqi | dog | qʰwa₂₂ | qʰ w a <s> ₂₂ </s> |
+| BAI-166 | Ega | dog | qʰwa₂₂ | qʰ w a <s> ₂₂ </s> |
+| BAI-167 | Gongxing | drink (V) | ʔoŋ₂₂ | ʔ o ŋ <s> ₂₂ </s> |
+| BAI-168 | Jinman | drink (V) | ɯ̃₂₂ | ɯ̃ <s> ₂₂ </s> |
+| BAI-169 | Mazhelong | drink (V) | oŋ₃₃ | o ŋ <s> ₃₃ </s> |
+| BAI-170 | Dashi | drink (V) | ǝ̃₃₃ | ǝ̃ <s> ₃₃ </s> |
+| BAI-171 | Zhoucheng | drink (V) | ɯ₃₃ | ɯ <s> ₃₃ </s> |
+| BAI-172 | Jinxing | drink (V) | ǝ̃₃₃ | ǝ̃ <s> ₃₃ </s> |
+| BAI-173 | Tuolo | drink (V) | ɯ̃₃₃ | ɯ̃ <s> ₃₃ </s> |
+| BAI-174 | Enqi | drink (V) | ɯ₂₂ | ɯ <s> ₂₂ </s> |
+| BAI-175 | Ega | drink (V) | ɯ̃₂₂ | ɯ̃ <s> ₂₂ </s> |
+| BAI-176 | Gongxing | dry | qaŋ₅₅ | q a ŋ <s> ₅₅ </s> |
+| BAI-177 | Jinman | dry | qã₅₅ | q ã <s> ₅₅ </s> |
+| BAI-178 | Mazhelong | dry | kaŋ₅₅ | k a ŋ <s> ₅₅ </s> |
+| BAI-179 | Dashi | dry | kã₃₅ | k ã <s> ₃₅ </s> |
+| BAI-180 | Zhoucheng | dry | ka₃₅ | k a <s> ₃₅ </s> |
+| BAI-181 | Jinxing | dry | kɑ̃₅₅ | k ɑ̃ <s> ₅₅ </s> |
+| BAI-182 | Tuolo | dry | qɔŋ₅₅ | q ɔ ŋ <s> ₅₅ </s> |
+| BAI-183 | Enqi | dry | qa₂₄ | q a <s> ₂₄ </s> |
+| BAI-184 | Ega | dry | qo₅₅ | q o <s> ₅₅ </s> |
+| BAI-185 | Gongxing | ear | jaŋ₂₂kʰwaŋ₂₂ | j a ŋ <s> ₂₂ </s> kʰ w a ŋ <s> ₂₂ </s> |
+| BAI-186 | Jinman | ear | ẽ₄₂ʨwẽ₂₂ | ẽ <s> ₄₂ </s> ʨ w ẽ <s> ₂₂ </s> |
+| BAI-187 | Mazhelong | ear | jɛ₃₃kɛ₃₃pjen₂₁ | j ɛ <s> ₃₃ </s> k ɛ <s> ₃₃ </s> p j e n <s> ₂₁ </s> |
+| BAI-188 | Dashi | ear | jen₃₃toŋ₃₁ | j e n <s> ₃₃ </s> t o ŋ <s> ₃₁ </s> |
+| BAI-189 | Zhoucheng | ear | ɲow₃₃to₄₂ | ɲ o w <s> ₃₃ </s> t o <s> ₄₂ </s> |
+| BAI-190 | Jinxing | ear | jen₃₃tɯ₃₁kwɑ₅₅ | j e n <s> ₃₃ </s> t ɯ <s> ₃₁ </s> k w ɑ <s> ₅₅ </s> |
+| BAI-191 | Tuolo | ear | wen₃₃zɥen₃₅ | w e n <s> ₃₃ </s> z ɥ e n <s> ₃₅ </s> |
+| BAI-192 | Enqi | ear | ŋu₂₂ʦu₂₁qʰwa₂₄ | ŋ u <s> ₂₂ </s> ʦ u <s> ₂₁ </s> qʰ w a <s> ₂₄ </s> |
+| BAI-193 | Ega | ear | ji₂₂ʨyj₂₁ | j i <s> ₂₂ </s> ʨ y j <s> ₂₁ </s> |
+| BAI-194 | Gongxing | earth | ʥi₄₂ | ʥ i <s> ₄₂ </s> |
+| BAI-195 | Jinman | earth | ʥi₄₂ | ʥ i <s> ₄₂ </s> |
+| BAI-196 | Mazhelong | earth | ti₂₁ | t i <s> ₂₁ </s> |
+| BAI-197 | Dashi | earth | ʨi₃₁ | ʨ i <s> ₃₁ </s> |
+| BAI-198 | Zhoucheng | earth | ʨi₃₁ | ʨ i <s> ₃₁ </s> |
+| BAI-199 | Jinxing | earth | ʨi₃₁ | ʨ i <s> ₃₁ </s> |
+| BAI-200 | Tuolo | earth | ʑi₂₁ | ʑ i <s> ₂₁ </s> |
+| BAI-201 | Enqi | earth | ʥi₄₃ | ʥ i <s> ₄₃ </s> |
+| BAI-202 | Ega | earth | ʨi₄₂pa₂₂ | ʨ i <s> ₄₂ </s> p a <s> ₂₂ </s> |
+| BAI-203 | Gongxing | eat (V) | ju₂₄ | j u <s> ₂₄ </s> |
+| BAI-204 | Jinman | eat (V) | ji₅₅ | j i <s> ₅₅ </s> |
+| BAI-205 | Mazhelong | eat (V) | ji₄₄ | j i <s> ₄₄ </s> |
+| BAI-206 | Dashi | eat (V) | jɯ₄₄ | j ɯ <s> ₄₄ </s> |
+| BAI-207 | Zhoucheng | eat (V) | jɯ₄₄ | j ɯ <s> ₄₄ </s> |
+| BAI-208 | Jinxing | eat (V) | jɯ₄₄ | j ɯ <s> ₄₄ </s> |
+| BAI-209 | Tuolo | eat (V) | ju₄₂ | j u <s> ₄₂ </s> |
+| BAI-210 | Enqi | eat (V) | jɯ₅₅ | j ɯ <s> ₅₅ </s> |
+| BAI-211 | Ega | eat (V) | ji₄₄ | j i <s> ₄₄ </s> |
+| BAI-212 | Gongxing | egg | sen₄₂ | s e n <s> ₄₂ </s> |
+| BAI-213 | Jinman | egg | sẽ₄₂ | s ẽ <s> ₄₂ </s> |
+| BAI-214 | Mazhelong | egg | sɛ₄₂ | s ɛ <s> ₄₂ </s> |
+| BAI-215 | Dashi | egg | sen₄₂ | s e n <s> ₄₂ </s> |
+| BAI-216 | Zhoucheng | egg | se₄₂ | s e <s> ₄₂ </s> |
+| BAI-217 | Jinxing | egg | sen₄₂ | s e n <s> ₄₂ </s> |
+| BAI-218 | Tuolo | egg | sen₂₁ | s e n <s> ₂₁ </s> |
+| BAI-219 | Enqi | egg | sɛ₄₃ | s ɛ <s> ₄₃ </s> |
+| BAI-220 | Ega | egg | sɛ₄₂ | s ɛ <s> ₄₂ </s> |
+| BAI-221 | Gongxing | eye | wen₂₂ | w e n <s> ₂₂ </s> |
+| BAI-222 | Jinman | eye | mi₂₂ | m i <s> ₂₂ </s> |
+| BAI-223 | Mazhelong | eye | ŋwɛ₃₃ | ŋ w ɛ <s> ₃₃ </s> |
+| BAI-224 | Dashi | eye | wẽ₃₃ | w ẽ <s> ₃₃ </s> |
+| BAI-225 | Zhoucheng | eye | we₃₃ | w e <s> ₃₃ </s> |
+| BAI-226 | Jinxing | eye | wẽ₃₃ | w ẽ <s> ₃₃ </s> |
+| BAI-227 | Tuolo | eye | wen₃₃ | w e n <s> ₃₃ </s> |
+| BAI-228 | Enqi | eye | ŋwi₂₂ | ŋ w i <s> ₂₂ </s> |
+| BAI-229 | Ega | eye | ŋwi₂₂ | ŋ w i <s> ₂₂ </s> |
+| BAI-230 | Gongxing | fat | t͡ʂi₅₅ | t͡ʂ i <s> ₅₅ </s> |
+| BAI-231 | Jinman | fat | t͡ʂi₅₅ | t͡ʂ i <s> ₅₅ </s> |
+| BAI-232 | Mazhelong | fat | ʦi₅₅ | ʦ i <s> ₅₅ </s> |
+| BAI-233 | Dashi | fat | t͡ʂi₅₅ | t͡ʂ i <s> ₅₅ </s> |
+| BAI-234 | Zhoucheng | fat | ʦi₃₅ | ʦ i <s> ₃₅ </s> |
+| BAI-235 | Jinxing | fat | ʦi₅₅ | ʦ i <s> ₅₅ </s> |
+| BAI-236 | Tuolo | fat | t͡ʂi₅₅ | t͡ʂ i <s> ₅₅ </s> |
+| BAI-237 | Enqi | fat | ʦi₂₄ | ʦ i <s> ₂₄ </s> |
+| BAI-238 | Ega | fat | ʦɛ₅₅ | ʦ ɛ <s> ₅₅ </s> |
+| BAI-239 | Gongxing | feather | mi₁₂ | m i <s> ₁₂ </s> |
+| BAI-240 | Jinman | feather | mje₂₁ | m j e <s> ₂₁ </s> |
+| BAI-241 | Mazhelong | feather | me₂₁ | m e <s> ₂₁ </s> |
+| BAI-242 | Dashi | feather | ma₂₁ | m a <s> ₂₁ </s> |
+| BAI-243 | Zhoucheng | feather | ma₂₁ | m a <s> ₂₁ </s> |
+| BAI-244 | Jinxing | feather | mɑ̃₂₁ | m ɑ̃ <s> ₂₁ </s> |
+| BAI-245 | Tuolo | feather | me₃₅ | m e <s> ₃₅ </s> |
+| BAI-246 | Enqi | feather | mjɛ₂₁ | m j ɛ <s> ₂₁ </s> |
+| BAI-247 | Ega | feather | mi₂₁ | m i <s> ₂₁ </s> |
+| BAI-248 | Gongxing | fire | xwɛ₂₂ | x w ɛ <s> ₂₂ </s> |
+| BAI-249 | Jinman | fire | fi₂₂ | f i <s> ₂₂ </s> |
+| BAI-250 | Mazhelong | fire | fi₃₃ | f i <s> ₃₃ </s> |
+| BAI-251 | Dashi | fire | xwi₃₃ | x w i <s> ₃₃ </s> |
+| BAI-252 | Zhoucheng | fire | xwi₃₃ | x w i <s> ₃₃ </s> |
+| BAI-253 | Jinxing | fire | xwi₃₃ | x w i <s> ₃₃ </s> |
+| BAI-254 | Tuolo | fire | xwe₃₃ | x w e <s> ₃₃ </s> |
+| BAI-255 | Enqi | fire | xwi₂₂ | x w i <s> ₂₂ </s> |
+| BAI-256 | Ega | fire | fi₂₂ | f i <s> ₂₂ </s> |
+| BAI-257 | Gongxing | fish | ŋo₅₅ | ŋ o <s> ₅₅ </s> |
+| BAI-258 | Jinman | fish | ŋu₅₅ | ŋ u <s> ₅₅ </s> |
+| BAI-259 | Mazhelong | fish | oŋ₅₅ | o ŋ <s> ₅₅ </s> |
+| BAI-260 | Dashi | fish | wɤ̃₃₅ | w ɤ̃ <s> ₃₅ </s> |
+| BAI-261 | Zhoucheng | fish | ŋo₃₅ | ŋ o <s> ₃₅ </s> |
+| BAI-262 | Jinxing | fish | ṃ₅₅ | <s> ṃ </s> <s> ₅₅ </s> |
+| BAI-263 | Tuolo | fish | ŋɤ₅₅ | ŋ ɤ <s> ₅₅ </s> |
+| BAI-264 | Enqi | fish | ŋo₂₄ | ŋ o <s> ₂₄ </s> |
+| BAI-265 | Ega | fish | ŋu₅₅ | ŋ u <s> ₅₅ </s> |
+| BAI-266 | Gongxing | fly (V) | p͡fu₅₅ | p͡f u <s> ₅₅ </s> |
+| BAI-267 | Jinman | fly (V) | fi₅₅ | f i <s> ₅₅ </s> |
+| BAI-268 | Mazhelong | fly (V) | pi₅₅ | p i <s> ₅₅ </s> |
+| BAI-269 | Dashi | fly (V) | fɤ₃₅ | f ɤ <s> ₃₅ </s> |
+| BAI-270 | Zhoucheng | fly (V) | fɤ₃₅ | f ɤ <s> ₃₅ </s> |
+| BAI-271 | Jinxing | fly (V) | fɤ₅₅ | f ɤ <s> ₅₅ </s> |
+| BAI-272 | Tuolo | fly (V) | fɚ₅₅ | f ɚ <s> ₅₅ </s> |
+| BAI-273 | Enqi | fly (V) | fɛ₂₄ | f ɛ <s> ₂₄ </s> |
+| BAI-274 | Ega | fly (V) | xwɛ₅₅ | x w ɛ <s> ₅₅ </s> |
+| BAI-275 | Gongxing | foot | ku₂₄ | k u <s> ₂₄ </s> |
+| BAI-276 | Jinman | foot | ko₅₅ | k o <s> ₅₅ </s> |
+| BAI-277 | Mazhelong | foot | ko₄₄ | k o <s> ₄₄ </s> |
+| BAI-278 | Dashi | foot | kow₄₄ | k o w <s> ₄₄ </s> |
+| BAI-279 | Zhoucheng | foot | ko₄₄ | k o <s> ₄₄ </s> |
+| BAI-280 | Jinxing | foot | kow₄₄ | k o w <s> ₄₄ </s> |
+| BAI-281 | Tuolo | foot | ko₄₂ | k o <s> ₄₂ </s> |
+| BAI-282 | Enqi | foot | ku₅₅ | k u <s> ₅₅ </s> |
+| BAI-283 | Ega | foot | ku₄₄ | k u <s> ₄₄ </s> |
+| BAI-284 | Gongxing | full | mi₂₂ | m i <s> ₂₂ </s> |
+| BAI-285 | Jinman | full | me₂₂ | m e <s> ₂₂ </s> |
+| BAI-286 | Mazhelong | full | mɛ₃₃ | m ɛ <s> ₃₃ </s> |
+| BAI-287 | Dashi | full | ma₃₃ | m a <s> ₃₃ </s> |
+| BAI-288 | Zhoucheng | full | ma₃₃ | m a <s> ₃₃ </s> |
+| BAI-289 | Jinxing | full | mɑ̃₃₃ | m ɑ̃ <s> ₃₃ </s> |
+| BAI-290 | Tuolo | full | me₃₃ | m e <s> ₃₃ </s> |
+| BAI-291 | Enqi | full | mjɛ₂₂ | m j ɛ <s> ₂₂ </s> |
+| BAI-292 | Ega | full | mi₂₂ | m i <s> ₂₂ </s> |
+| BAI-293 | Gongxing | give (V) | zi₄₂ | z i <s> ₄₂ </s> |
+| BAI-294 | Jinman | give (V) | zi₄₂ | z i <s> ₄₂ </s> |
+| BAI-295 | Mazhelong | give (V) | zǝɯ₂₁ | z <s> ǝɯ </s> <s> ₂₁ </s> |
+| BAI-296 | Dashi | give (V) | zi₂₁ | z i <s> ₂₁ </s> |
+| BAI-297 | Zhoucheng | give (V) | zɯ₄₂ | z ɯ <s> ₄₂ </s> |
+| BAI-298 | Jinxing | give (V) | si₃₁ | s i <s> ₃₁ </s> |
+| BAI-299 | Tuolo | give (V) | zi₂₁ | z i <s> ₂₁ </s> |
+| BAI-300 | Enqi | give (V) | ʦi₄₃ | ʦ i <s> ₄₃ </s> |
+| BAI-301 | Ega | give (V) | zi₄₂ | z i <s> ₄₂ </s> |
+| BAI-302 | Gongxing | good | ʣan₁₂ | ʣ a n <s> ₁₂ </s> |
+| BAI-303 | Jinman | good | xo₂₂ | x o <s> ₂₂ </s> |
+| BAI-304 | Mazhelong | good | xǝ₃₃ | x ǝ <s> ₃₃ </s> |
+| BAI-305 | Dashi | good | xu₃₃ | x u <s> ₃₃ </s> |
+| BAI-306 | Zhoucheng | good | xu₃₃ | x u <s> ₃₃ </s> |
+| BAI-307 | Jinxing | good | xu₃₃ | x u <s> ₃₃ </s> |
+| BAI-308 | Tuolo | good | djaŋ₃₅ | d j a ŋ <s> ₃₅ </s> |
+| BAI-309 | Enqi | good | djæ₂₁ | d j æ <s> ₂₁ </s> |
+| BAI-310 | Ega | good | xo₅₅ | x o <s> ₅₅ </s> |
+| BAI-311 | Dashi | good | ʨʰõ₄₄ | ʨʰ õ <s> ₄₄ </s> |
+| BAI-312 | Zhoucheng | good | ʨʰow₅₅ | ʨʰ o w <s> ₅₅ </s> |
+| BAI-313 | Jinxing | good | ʨʰõ₄₄ | ʨʰ õ <s> ₄₄ </s> |
+| BAI-314 | Gongxing | green | ʦʰan₂₄ | ʦʰ a n <s> ₂₄ </s> |
+| BAI-315 | Jinman | green | ʨʰã₅₅ | ʨʰ ã <s> ₅₅ </s> |
+| BAI-316 | Mazhelong | green | lɤ₄₄ | l ɤ <s> ₄₄ </s> |
+| BAI-317 | Dashi | green | lo₄₄ | l o <s> ₄₄ </s> |
+| BAI-318 | Zhoucheng | green | lɤ₄₄ | l ɤ <s> ₄₄ </s> |
+| BAI-319 | Jinxing | green | lu₄₄ | l u <s> ₄₄ </s> |
+| BAI-320 | Tuolo | green | ʨʰaŋ₂₁ | ʨʰ a ŋ <s> ₂₁ </s> |
+| BAI-321 | Enqi | green | ʨʰæ₂₄ | ʨʰ æ <s> ₂₄ </s> |
+| BAI-322 | Ega | green | ʨʰa₄₂ | ʨʰ a <s> ₄₂ </s> |
+| BAI-323 | Gongxing | hair | di₂₄mjɛ₁₂ | d i <s> ₂₄ </s> m j ɛ <s> ₁₂ </s> |
+| BAI-324 | Jinman | hair | ʈe₂₁me₅₅ | ʈ e <s> ₂₁ </s> m e <s> ₅₅ </s> |
+| BAI-325 | Mazhelong | hair | tɛ₂₁mɛ₅₅ | t ɛ <s> ₂₁ </s> m ɛ <s> ₅₅ </s> |
+| BAI-326 | Dashi | hair | ɕa₄₄ | ɕ a <s> ₄₄ </s> |
+| BAI-327 | Zhoucheng | hair | tɯ₂₁ma₃₅ | t ɯ <s> ₂₁ </s> m a <s> ₃₅ </s> |
+| BAI-328 | Jinxing | hair | ɕɔ₄₄ | ɕ ɔ <s> ₄₄ </s> |
+| BAI-329 | Tuolo | hair | djɯ₃₅me₅₅ | d j ɯ <s> ₃₅ </s> m e <s> ₅₅ </s> |
+| BAI-330 | Enqi | hair | tjɯ₂₁mjɛ₂₄ | t j ɯ <s> ₂₁ </s> m j ɛ <s> ₂₄ </s> |
+| BAI-331 | Ega | hair | ti₂₁mi₅₅ | t i <s> ₂₁ </s> m i <s> ₅₅ </s> |
+| BAI-332 | Jinxing | hair | tǝ₂₁mã₅₅ | t ǝ <s> ₂₁ </s> m ã <s> ₅₅ </s> |
+| BAI-333 | Gongxing | hand | ʂi₂₂ | ʂ i <s> ₂₂ </s> |
+| BAI-334 | Jinman | hand | ɕi₂₂ | ɕ i <s> ₂₂ </s> |
+| BAI-335 | Mazhelong | hand | sǝɯ₃₃ | s <s> ǝɯ </s> <s> ₃₃ </s> |
+| BAI-336 | Dashi | hand | ʂʰɯ₃₃ | ʂʰ ɯ <s> ₃₃ </s> |
+| BAI-337 | Zhoucheng | hand | sɯ₃₃ | s ɯ <s> ₃₃ </s> |
+| BAI-338 | Jinxing | hand | sɯ₃₃ | s ɯ <s> ₃₃ </s> |
+| BAI-339 | Tuolo | hand | ɕɯ₃₃ | ɕ ɯ <s> ₃₃ </s> |
+| BAI-340 | Enqi | hand | ɕɯ₂₂ | ɕ ɯ <s> ₂₂ </s> |
+| BAI-341 | Ega | hand | ɕi₂₂ | ɕ i <s> ₂₂ </s> |
+| BAI-342 | Gongxing | head | di₁₂ | d i <s> ₁₂ </s> |
+| BAI-343 | Jinman | head | ʈo₂₂ | ʈ o <s> ₂₂ </s> |
+| BAI-344 | Mazhelong | head | ta₄₂po₂₁ | t a <s> ₄₂ </s> p o <s> ₂₁ </s> |
+| BAI-345 | Dashi | head | ti₄₂ | t i <s> ₄₂ </s> |
+| BAI-346 | Zhoucheng | head | tɯ₃₁po₂₁ | t ɯ <s> ₃₁ </s> p o <s> ₂₁ </s> |
+| BAI-347 | Jinxing | head | tǝ₃₁ | t ǝ <s> ₃₁ </s> |
+| BAI-348 | Tuolo | head | djɯ₃₅ | d j ɯ <s> ₃₅ </s> |
+| BAI-349 | Enqi | head | tiw₂₁ | t i w <s> ₂₁ </s> |
+| BAI-350 | Ega | head | ʨu₂₂qa₅₅ | ʨ u <s> ₂₂ </s> q a <s> ₅₅ </s> |
+| BAI-351 | Gongxing | hear (V) | ʨʰjan₅₅ | ʨʰ j a n <s> ₅₅ </s> |
+| BAI-352 | Jinman | hear (V) | ʨʰjã₅₅ | ʨʰ j ã <s> ₅₅ </s> |
+| BAI-353 | Mazhelong | hear (V) | ʨʰɚ̃₅₅ | ʨʰ <s> ɚ̃ </s> <s> ₅₅ </s> |
+| BAI-354 | Dashi | hear (V) | ʨʰjɚ̃₅₅ | ʨʰ j <s> ɚ̃ </s> <s> ₅₅ </s> |
+| BAI-355 | Zhoucheng | hear (V) | ʨʰjɛ₅₅ | ʨʰ j ɛ <s> ₅₅ </s> |
+| BAI-356 | Jinxing | hear (V) | ʨʰjan₅₅tǝ₃₃ | ʨʰ j a n <s> ₅₅ </s> t ǝ <s> ₃₃ </s> |
+| BAI-357 | Tuolo | hear (V) | ʨʰjaŋ₅₅ | ʨʰ j a ŋ <s> ₅₅ </s> |
+| BAI-358 | Enqi | hear (V) | ʨʰjæ₂₄ | ʨʰ j æ <s> ₂₄ </s> |
+| BAI-359 | Ega | hear (V) | ʨʰja₅₅ | ʨʰ j a <s> ₅₅ </s> |
+| BAI-360 | Gongxing | heart | ɕin₅₅ | ɕ i n <s> ₅₅ </s> |
+| BAI-361 | Jinman | heart | sẽ₅₅ | s ẽ <s> ₅₅ </s> |
+| BAI-362 | Mazhelong | heart | ɕen₅₅ | ɕ e n <s> ₅₅ </s> |
+| BAI-363 | Dashi | heart | ɕen₅₅ | ɕ e n <s> ₅₅ </s> |
+| BAI-364 | Zhoucheng | heart | ɕi₃₅ | ɕ i <s> ₃₅ </s> |
+| BAI-365 | Jinxing | heart | ɕen₅₅ | ɕ e n <s> ₅₅ </s> |
+| BAI-366 | Tuolo | heart | ɕen₅₅ | ɕ e n <s> ₅₅ </s> |
+| BAI-367 | Enqi | heart | si₂₄ | s i <s> ₂₄ </s> |
+| BAI-368 | Ega | heart | sɛ₅₅ | s ɛ <s> ₅₅ </s> |
+| BAI-369 | Gongxing | horn | qwa₂₄ | q w a <s> ₂₄ </s> |
+| BAI-370 | Jinman | horn | qo₅₅ | q o <s> ₅₅ </s> |
+| BAI-371 | Mazhelong | horn | koŋ₄₄ | k o ŋ <s> ₄₄ </s> |
+| BAI-372 | Dashi | horn | ko₄₄ | k o <s> ₄₄ </s> |
+| BAI-373 | Zhoucheng | horn | kɤ₄₄ | k ɤ <s> ₄₄ </s> |
+| BAI-374 | Jinxing | horn | kɤ₄₄ | k ɤ <s> ₄₄ </s> |
+| BAI-375 | Tuolo | horn | qo₄₂qa₂₁ | q o <s> ₄₂ </s> q a <s> ₂₁ </s> |
+| BAI-376 | Enqi | horn | qo₅₅ | q o <s> ₅₅ </s> |
+| BAI-377 | Ega | horn | qo₄₄ | q o <s> ₄₄ </s> |
+| BAI-378 | Gongxing | I | ŋa₄₂ | ŋ a <s> ₄₂ </s> |
+| BAI-379 | Jinman | I | õ₄₂ | õ <s> ₄₂ </s> |
+| BAI-380 | Mazhelong | I | ŋo₄₂ | ŋ o <s> ₄₂ </s> |
+| BAI-381 | Dashi | I | ŋõ₃₁ | ŋ õ <s> ₃₁ </s> |
+| BAI-382 | Zhoucheng | I | ŋo₃₁ | ŋ o <s> ₃₁ </s> |
+| BAI-383 | Jinxing | I | wõ₃₁ | w õ <s> ₃₁ </s> |
+| BAI-384 | Tuolo | I | ŋɔ₂₁ | ŋ ɔ <s> ₂₁ </s> |
+| BAI-385 | Enqi | I | ɴo₄₃ | ɴ o <s> ₄₃ </s> |
+| BAI-386 | Ega | I | ŋo₄₂ | ŋ o <s> ₄₂ </s> |
+| BAI-387 | Gongxing | kill (V) | χa₂₄ | χ a <s> ₂₄ </s> |
+| BAI-388 | Jinman | kill (V) | ɕa₅₅ | ɕ a <s> ₅₅ </s> |
+| BAI-389 | Mazhelong | kill (V) | ɕa₄₄ | ɕ a <s> ₄₄ </s> |
+| BAI-390 | Dashi | kill (V) | ɕʰa₄₄ | ɕʰ a <s> ₄₄ </s> |
+| BAI-391 | Zhoucheng | kill (V) | ɕa₄₄ | ɕ a <s> ₄₄ </s> |
+| BAI-392 | Jinxing | kill (V) | ɕɑ₄₄ | ɕ ɑ <s> ₄₄ </s> |
+| BAI-393 | Tuolo | kill (V) | ɕɔ₄₂ | ɕ ɔ <s> ₄₂ </s> |
+| BAI-394 | Enqi | kill (V) | xa₅₅ | x a <s> ₅₅ </s> |
+| BAI-395 | Ega | kill (V) | ɕo₄₄ | ɕ o <s> ₄₄ </s> |
+| BAI-396 | Gongxing | knee | qa₅₅ʦi₂₂qa₅₅qa₄₂ | q a <s> ₅₅ </s> ʦ i <s> ₂₂ </s> q a <s> ₅₅ </s> q a <s> ₄₂ </s> |
+| BAI-397 | Jinman | knee | ko₄₄ʦe₄₄ | k o <s> ₄₄ </s> ʦ e <s> ₄₄ </s> |
+| BAI-398 | Mazhelong | knee | ko₄₄ʦɛ₄₄tǝɯ₂₁ | k o <s> ₄₄ </s> ʦ ɛ <s> ₄₄ </s> t <s> ǝɯ </s> <s> ₂₁ </s> |
+| BAI-399 | Dashi | knee | kʰwa₃₁tjow₃₁ʦe₄₄ | kʰ w a <s> ₃₁ </s> t j o w <s> ₃₁ </s> ʦ e <s> ₄₄ </s> |
+| BAI-400 | Zhoucheng | knee | kʰwa₃₃te₅₅tɯ₂₁ | kʰ w a <s> ₃₃ </s> t e <s> ₅₅ </s> t ɯ <s> ₂₁ </s> |
+| BAI-401 | Jinxing | knee | kʰwɑ₃₁ʦɿ₃₃te₄₄kɔ₃₃ | kʰ w ɑ <s> ₃₁ </s> ʦ ɿ <s> ₃₃ </s> t e <s> ₄₄ </s> k ɔ <s> ₃₃ </s> |
+| BAI-402 | Tuolo | knee | qʰoŋ₅₅mo₄₂qɔ₄₂ | qʰ o ŋ <s> ₅₅ </s> m o <s> ₄₂ </s> q ɔ <s> ₄₂ </s> |
+| BAI-403 | Enqi | knee | qʰa₄₃ʦo₂₁qa₅₅ | qʰ a <s> ₄₃ </s> ʦ o <s> ₂₁ </s> q a <s> ₅₅ </s> |
+| BAI-404 | Ega | knee | qʰo₄₂ʦu₂₁qo₅₅ | qʰ o <s> ₄₂ </s> ʦ u <s> ₂₁ </s> q o <s> ₅₅ </s> |
+| BAI-405 | Gongxing | know (V) | t͡ʂi₄₂ʦʰwa₅₅ | t͡ʂ i <s> ₄₂ </s> ʦʰ w a <s> ₅₅ </s> |
+| BAI-406 | Jinman | know (V) | sɿ₄₄ | s ɿ <s> ₄₄ </s> |
+| BAI-407 | Mazhelong | know (V) | sɯ₄₄ | s ɯ <s> ₄₄ </s> |
+| BAI-408 | Dashi | know (V) | se₃₃ | s e <s> ₃₃ </s> |
+| BAI-409 | Zhoucheng | know (V) | zɯ₄₄tɯ₄₄ | z ɯ <s> ₄₄ </s> t ɯ <s> ₄₄ </s> |
+| BAI-410 | Jinxing | know (V) | sen₃₃ | s e n <s> ₃₃ </s> |
+| BAI-411 | Tuolo | know (V) | t͡ʂɤ₅₅t͡ʂʰɤ₂₁ | t͡ʂ ɤ <s> ₅₅ </s> t͡ʂʰ ɤ <s> ₂₁ </s> |
+| BAI-412 | Enqi | know (V) | swɛ₂₂ | s w ɛ <s> ₂₂ </s> |
+| BAI-413 | Ega | know (V) | si₄₄ | s i <s> ₄₄ </s> |
+| BAI-414 | Gongxing | leaf | sɛ₂₄ | s ɛ <s> ₂₄ </s> |
+| BAI-415 | Jinman | leaf | ʂɚ₅₅ | ʂ ɚ <s> ₅₅ </s> |
+| BAI-416 | Mazhelong | leaf | sɛ₄₄ | s ɛ <s> ₄₄ </s> |
+| BAI-417 | Dashi | leaf | ʂʰe₄₄ | ʂʰ e <s> ₄₄ </s> |
+| BAI-418 | Zhoucheng | leaf | se₄₄ | s e <s> ₄₄ </s> |
+| BAI-419 | Jinxing | leaf | se₄₄ | s e <s> ₄₄ </s> |
+| BAI-420 | Tuolo | leaf | djɯ₂₁mɯ₄₂ɕi₄₂ | d j ɯ <s> ₂₁ </s> m ɯ <s> ₄₂ </s> ɕ i <s> ₄₂ </s> |
+| BAI-421 | Enqi | leaf | ɕɛ₅₅ | ɕ ɛ <s> ₅₅ </s> |
+| BAI-422 | Ega | leaf | sɛ₄₄ | s ɛ <s> ₄₄ </s> |
+| BAI-423 | Gongxing | lie (V) | nen₁₂ | n e n <s> ₁₂ </s> |
+| BAI-424 | Jinman | lie (V) | lo₂₁ | l o <s> ₂₁ </s> |
+| BAI-425 | Mazhelong | lie (V) | mi₅₅ | m i <s> ₅₅ </s> |
+| BAI-426 | Dashi | lie (V) | t͡ʂʰɚ̃₃₃ | t͡ʂʰ <s> ɚ̃ </s> <s> ₃₃ </s> |
+| BAI-427 | Zhoucheng | lie (V) | ʦʰɛ₃₃ | ʦʰ ɛ <s> ₃₃ </s> |
+| BAI-428 | Jinxing | lie (V) | ʦʰan₃₃ | ʦʰ a n <s> ₃₃ </s> |
+| BAI-429 | Tuolo | lie (V) | ʐa₄₂ | ʐ a <s> ₄₂ </s> |
+| BAI-430 | Enqi | lie (V) | to₂₄ʨi₂₂ | t o <s> ₂₄ </s> ʨ i <s> ₂₂ </s> |
+| BAI-431 | Ega | lie (V) | lo₂₁ | l o <s> ₂₁ </s> |
+| BAI-432 | Gongxing | liver | qaŋ₅₅ | q a ŋ <s> ₅₅ </s> |
+| BAI-433 | Jinman | liver | qã₅₅ | q ã <s> ₅₅ </s> |
+| BAI-434 | Mazhelong | liver | kaŋ₅₅ | k a ŋ <s> ₅₅ </s> |
+| BAI-435 | Dashi | liver | kã₃₅ | k ã <s> ₃₅ </s> |
+| BAI-436 | Zhoucheng | liver | ka₃₅ | k a <s> ₃₅ </s> |
+| BAI-437 | Jinxing | liver | kɑ₅₅ | k ɑ <s> ₅₅ </s> |
+| BAI-438 | Tuolo | liver | qɔŋ₅₅ | q ɔ ŋ <s> ₅₅ </s> |
+| BAI-439 | Enqi | liver | qa₂₄ | q a <s> ₂₄ </s> |
+| BAI-440 | Ega | liver | qo₅₅ | q o <s> ₅₅ </s> |
+| BAI-441 | Gongxing | long | ʥow₁₂ | ʥ o w <s> ₁₂ </s> |
+| BAI-442 | Jinman | long | ʈõ₂₁ | ʈ õ <s> ₂₁ </s> |
+| BAI-443 | Mazhelong | long | ʦoŋ₂₁ | ʦ o ŋ <s> ₂₁ </s> |
+| BAI-444 | Dashi | long | t͡ʂõ₂₁ | t͡ʂ õ <s> ₂₁ </s> |
+| BAI-445 | Zhoucheng | long | ʦow₂₁ | ʦ o w <s> ₂₁ </s> |
+| BAI-446 | Jinxing | long | ʦõ₂₁ | ʦ õ <s> ₂₁ </s> |
+| BAI-447 | Tuolo | long | dɤ₃₅ | d ɤ <s> ₃₅ </s> |
+| BAI-448 | Enqi | long | tjo₂₁ | t j o <s> ₂₁ </s> |
+| BAI-449 | Ega | long | ʨu₂₁ | ʨ u <s> ₂₁ </s> |
+| BAI-450 | Gongxing | louse | ɕi₂₄ | ɕ i <s> ₂₄ </s> |
+| BAI-451 | Jinman | louse | ɕi₅₅ | ɕ i <s> ₅₅ </s> |
+| BAI-452 | Mazhelong | louse | ɕi₄₄ | ɕ i <s> ₄₄ </s> |
+| BAI-453 | Dashi | louse | ɕi₃₃ | ɕ i <s> ₃₃ </s> |
+| BAI-454 | Zhoucheng | louse | ɕe₄₄ | ɕ e <s> ₄₄ </s> |
+| BAI-455 | Jinxing | louse | ɕi₄₄ | ɕ i <s> ₄₄ </s> |
+| BAI-456 | Tuolo | louse | ɕi₄₂ | ɕ i <s> ₄₂ </s> |
+| BAI-457 | Enqi | louse | ɕi₅₅ | ɕ i <s> ₅₅ </s> |
+| BAI-458 | Ega | louse | ɕi₄₄ | ɕ i <s> ₄₄ </s> |
+| BAI-459 | Gongxing | man | ʦi₂₂ | ʦ i <s> ₂₂ </s> |
+| BAI-460 | Jinman | man | da₅₃xõ₅₅ʦi₂₂ | d a <s> ₅₃ </s> x õ <s> ₅₅ </s> ʦ i <s> ₂₂ </s> |
+| BAI-461 | Mazhelong | man | ʦi₃₃ | ʦ i <s> ₃₃ </s> |
+| BAI-462 | Dashi | man | ʦi₃₃ | ʦ i <s> ₃₃ </s> |
+| BAI-463 | Zhoucheng | man | ʦi₄₄ | ʦ i <s> ₄₄ </s> |
+| BAI-464 | Jinxing | man | ʦi₃₃ | ʦ i <s> ₃₃ </s> |
+| BAI-465 | Tuolo | man | ɕa₅₅tʰjo₂₁po₅₅ | ɕ a <s> ₅₅ </s> tʰ j o <s> ₂₁ </s> p o <s> ₅₅ </s> |
+| BAI-466 | Enqi | man | da₄₃xo₂₄ | d a <s> ₄₃ </s> x o <s> ₂₄ </s> |
+| BAI-467 | Ega | man | do₄₂xõ₅₅ʦi₂₂ | d o <s> ₄₂ </s> x õ <s> ₅₅ </s> ʦ i <s> ₂₂ </s> |
+| BAI-468 | Gongxing | many | ti₅₅ | t i <s> ₅₅ </s> |
+| BAI-469 | Jinman | many | ti₅₅ | t i <s> ₅₅ </s> |
+| BAI-470 | Mazhelong | many | ti₅₅ | t i <s> ₅₅ </s> |
+| BAI-471 | Dashi | many | ʨi₃₅ | ʨ i <s> ₃₅ </s> |
+| BAI-472 | Zhoucheng | many | ʨi₃₅ | ʨ i <s> ₃₅ </s> |
+| BAI-473 | Jinxing | many | ʨi₅₅ | ʨ i <s> ₅₅ </s> |
+| BAI-474 | Tuolo | many | ʨɯ₅₅ | ʨ ɯ <s> ₅₅ </s> |
+| BAI-475 | Enqi | many | ti₂₄ | t i <s> ₂₄ </s> |
+| BAI-476 | Ega | many | ti₅₅ | t i <s> ₅₅ </s> |
+| BAI-477 | Gongxing | meat | ɢæ₁₂ | ɢ æ <s> ₁₂ </s> |
+| BAI-478 | Jinman | meat | qa₂₁ | q a <s> ₂₁ </s> |
+| BAI-479 | Mazhelong | meat | kɚ₂₁ | k ɚ <s> ₂₁ </s> |
+| BAI-480 | Dashi | meat | kɚ₂₁ | k ɚ <s> ₂₁ </s> |
+| BAI-481 | Zhoucheng | meat | kɛ₂₁ | k ɛ <s> ₂₁ </s> |
+| BAI-482 | Jinxing | meat | ka₂₁ | k a <s> ₂₁ </s> |
+| BAI-483 | Tuolo | meat | ʁa₃₅ | ʁ a <s> ₃₅ </s> |
+| BAI-484 | Enqi | meat | qæ₂₁ | q æ <s> ₂₁ </s> |
+| BAI-485 | Ega | meat | qa₂₁ | q a <s> ₂₁ </s> |
+| BAI-486 | Gongxing | moon | ɲi₂₄waŋ₅₅ | ɲ i <s> ₂₄ </s> w a ŋ <s> ₅₅ </s> |
+| BAI-487 | Jinman | moon | ɲo₅₅ŋõ₅₅ | ɲ o <s> ₅₅ </s> ŋ õ <s> ₅₅ </s> |
+| BAI-488 | Mazhelong | moon | mjen₅₅ŋwa₄₄ | m j e n <s> ₅₅ </s> ŋ w a <s> ₄₄ </s> |
+| BAI-489 | Dashi | moon | mi₅₅wã₄₄ | m i <s> ₅₅ </s> w ã <s> ₄₄ </s> |
+| BAI-490 | Zhoucheng | moon | mi₃₅wa₄₄ | m i <s> ₃₅ </s> w a <s> ₄₄ </s> |
+| BAI-491 | Jinxing | moon | mi₅₅wɑ̃₅₅ | m i <s> ₅₅ </s> w ɑ̃ <s> ₅₅ </s> |
+| BAI-492 | Tuolo | moon | jen₅₅wo₄₂ | j e n <s> ₅₅ </s> w o <s> ₄₂ </s> |
+| BAI-493 | Enqi | moon | mjɛ₂₄wa₅₅ | m j ɛ <s> ₂₄ </s> w a <s> ₅₅ </s> |
+| BAI-494 | Ega | moon | ɲa₅₅ŋwa₄₄ | ɲ a <s> ₅₅ </s> ŋ w a <s> ₄₄ </s> |
+| BAI-495 | Gongxing | mountain | swa₄₂ | s w a <s> ₄₂ </s> |
+| BAI-496 | Jinman | mountain | ʂɚ̃₅₅ | ʂ <s> ɚ̃ </s> <s> ₅₅ </s> |
+| BAI-497 | Mazhelong | mountain | sen₅₅ | s e n <s> ₅₅ </s> |
+| BAI-498 | Dashi | mountain | ʂo₄₂ | ʂ o <s> ₄₂ </s> |
+| BAI-499 | Zhoucheng | mountain | sɤ₅₃ | s ɤ <s> ₅₃ </s> |
+| BAI-500 | Jinxing | mountain | sɤ̃₄₂ | s ɤ̃ <s> ₄₂ </s> |
+| BAI-501 | Tuolo | mountain | ɕen₅₅ | ɕ e n <s> ₅₅ </s> |
+| BAI-502 | Enqi | mountain | ɕo₄₃ | ɕ o <s> ₄₃ </s> |
+| BAI-503 | Ega | mountain | sɛ₅₅ | s ɛ <s> ₅₅ </s> |
+| BAI-504 | Gongxing | mouth | ʦu₂₂qwɛ₅₅ | ʦ u <s> ₂₂ </s> q w ɛ <s> ₅₅ </s> |
+| BAI-505 | Jinman | mouth | ʨu₂₂kwe₅₅ | ʨ u <s> ₂₂ </s> k w e <s> ₅₅ </s> |
+| BAI-506 | Mazhelong | mouth | ʦwi₃₃ | ʦ w i <s> ₃₃ </s> |
+| BAI-507 | Dashi | mouth | ʦwi₃₃ | ʦ w i <s> ₃₃ </s> |
+| BAI-508 | Zhoucheng | mouth | ʨy₃₃kɤ₃₃ | ʨ y <s> ₃₃ </s> k ɤ <s> ₃₃ </s> |
+| BAI-509 | Jinxing | mouth | ʨyj₃₃kwe₅₅ | ʨ y j <s> ₃₃ </s> k w e <s> ₅₅ </s> |
+| BAI-510 | Tuolo | mouth | ʨu₃₃qwa₅₅ | ʨ u <s> ₃₃ </s> q w a <s> ₅₅ </s> |
+| BAI-511 | Enqi | mouth | ʨu₂₂qwa₂₄ | ʨ u <s> ₂₂ </s> q w a <s> ₂₄ </s> |
+| BAI-512 | Ega | mouth | ʨu₂₂kwa₅₅qo₄₂ | ʨ u <s> ₂₂ </s> k w a <s> ₅₅ </s> q o <s> ₄₂ </s> |
+| BAI-513 | Gongxing | name | ɲwɛ₅₅ | ɲ w ɛ <s> ₅₅ </s> |
+| BAI-514 | Jinman | name | ɲo₅₅ | ɲ o <s> ₅₅ </s> |
+| BAI-515 | Mazhelong | name | mjɚ₅₅ | m j ɚ <s> ₅₅ </s> |
+| BAI-516 | Dashi | name | mjɚ₃₅ | m j ɚ <s> ₃₅ </s> |
+| BAI-517 | Zhoucheng | name | mjɛ₃₅ | m j ɛ <s> ₃₅ </s> |
+| BAI-518 | Jinxing | name | mjan₅₅ | m j a n <s> ₅₅ </s> |
+| BAI-519 | Tuolo | name | ɲwa₅₅ | ɲ w a <s> ₅₅ </s> |
+| BAI-520 | Enqi | name | mjæ₂₄ | m j æ <s> ₂₄ </s> |
+| BAI-521 | Ega | name | ɲɥa₅₅ | ɲ ɥ a <s> ₅₅ </s> |
+| BAI-522 | Gongxing | neck | qoŋ₅₅noŋ₄₂ | q o ŋ <s> ₅₅ </s> n o ŋ <s> ₄₂ </s> |
+| BAI-523 | Jinman | neck | qo₄₂te₃₃me₄₂ | q o <s> ₄₂ </s> t e <s> ₃₃ </s> m e <s> ₄₂ </s> |
+| BAI-524 | Mazhelong | neck | kɤ₄₂tɛ₅₅ | k ɤ <s> ₄₂ </s> t ɛ <s> ₅₅ </s> |
+| BAI-525 | Dashi | neck | mjɚ₄₂tʰõ₅₅ | m j ɚ <s> ₄₂ </s> tʰ õ <s> ₅₅ </s> |
+| BAI-526 | Zhoucheng | neck | po₃₅ʦɿ₃₃ku₃₅ | p o <s> ₃₅ </s> ʦ ɿ <s> ₃₃ </s> k u <s> ₃₅ </s> |
+| BAI-527 | Jinxing | neck | kɤ₄₂mi₄₂ʦɿ₃₃ | k ɤ <s> ₄₂ </s> m i <s> ₄₂ </s> ʦ ɿ <s> ₃₃ </s> |
+| BAI-528 | Tuolo | neck | qoŋ₂₁mo₂₁ | q o ŋ <s> ₂₁ </s> m o <s> ₂₁ </s> |
+| BAI-529 | Enqi | neck | qo₄₃tæ₅₅ | q o <s> ₄₃ </s> t æ <s> ₅₅ </s> |
+| BAI-530 | Ega | neck | qo₄₂tɛ₄₄me₄₂ | q o <s> ₄₂ </s> t ɛ <s> ₄₄ </s> m e <s> ₄₂ </s> |
+| BAI-531 | Dashi | neck | ɚ₄₄mjɚ₄₂ | ɚ <s> ₄₄ </s> m j ɚ <s> ₄₂ </s> |
+| BAI-532 | Gongxing | new | ɕen₅₅ | ɕ e n <s> ₅₅ </s> |
+| BAI-533 | Jinman | new | sẽ₅₅ | s ẽ <s> ₅₅ </s> |
+| BAI-534 | Mazhelong | new | ɕen₅₅ | ɕ e n <s> ₅₅ </s> |
+| BAI-535 | Dashi | new | ɕʰen₅₅ | ɕʰ e n <s> ₅₅ </s> |
+| BAI-536 | Zhoucheng | new | ɕi₃₅ | ɕ i <s> ₃₅ </s> |
+| BAI-537 | Jinxing | new | ɕen₅₅ | ɕ e n <s> ₅₅ </s> |
+| BAI-538 | Tuolo | new | ɕen₅₅ | ɕ e n <s> ₅₅ </s> |
+| BAI-539 | Enqi | new | si₂₄ | s i <s> ₂₄ </s> |
+| BAI-540 | Ega | new | sɛ₅₅ | s ɛ <s> ₅₅ </s> |
+| BAI-541 | Gongxing | night | ja₅₅xɯ₄₂ | j a <s> ₅₅ </s> x ɯ <s> ₄₂ </s> |
+| BAI-542 | Jinman | night | ɕa₅₅xɯ̃₄₂ | ɕ a <s> ₅₅ </s> x ɯ̃ <s> ₄₂ </s> |
+| BAI-543 | Mazhelong | night | ɕɚ₅₅pʰo₅₅ | ɕ ɚ <s> ₅₅ </s> pʰ o <s> ₅₅ </s> |
+| BAI-544 | Dashi | night | pe₃₃kɚ₄₂ | p e <s> ₃₃ </s> k ɚ <s> ₄₂ </s> |
+| BAI-545 | Zhoucheng | night | pe₃₃kɛ₄₂ | p e <s> ₃₃ </s> k ɛ <s> ₄₂ </s> |
+| BAI-546 | Jinxing | night | pẽ₅₅ka₄₂ | p ẽ <s> ₅₅ </s> k a <s> ₄₂ </s> |
+| BAI-547 | Tuolo | night | pɛ₃₃ʨa₂₁ | p ɛ <s> ₃₃ </s> ʨ a <s> ₂₁ </s> |
+| BAI-548 | Enqi | night | ɕa₂₄xɯ₂₂ | ɕ a <s> ₂₄ </s> x ɯ <s> ₂₂ </s> |
+| BAI-549 | Ega | night | ɲi₄₄u₂₂ | ɲ i <s> ₄₄ </s> u <s> ₂₂ </s> |
+| BAI-550 | Tuolo | night | xa₄₂xɯ₂₁ | x a <s> ₄₂ </s> x ɯ <s> ₂₁ </s> |
+| BAI-551 | Gongxing | nose | ty₂₁tjy₂₄ | t y <s> ₂₁ </s> t j y <s> ₂₄ </s> |
+| BAI-552 | Jinman | nose | qʰwe₄₂tjɯ₂₁ | qʰ w e <s> ₄₂ </s> t j ɯ <s> ₂₁ </s> |
+| BAI-553 | Mazhelong | nose | pʰjen₄₂ | pʰ j e n <s> ₄₂ </s> |
+| BAI-554 | Dashi | nose | wɤ₄₂tiǝ₂₁ | w ɤ <s> ₄₂ </s> t iǝ <s> ₂₁ </s> |
+| BAI-555 | Zhoucheng | nose | pi₃₁fɤ₄₄ʦɿ₄₄ | p i <s> ₃₁ </s> f ɤ <s> ₄₄ </s> ʦ ɿ <s> ₄₄ </s> |
+| BAI-556 | Jinxing | nose | pjen₂₁ | p j e n <s> ₂₁ </s> |
+| BAI-557 | Tuolo | nose | vɚ₄₂djɯ₃₅ | v ɚ <s> ₄₂ </s> d j ɯ <s> ₃₅ </s> |
+| BAI-558 | Enqi | nose | ʦo₂₁qʰo₂₂tjɯ₂₁ | ʦ o <s> ₂₁ </s> qʰ o <s> ₂₂ </s> t j ɯ <s> ₂₁ </s> |
+| BAI-559 | Ega | nose | kʰwɛ₄₂ʨyj₂₁ | kʰ w ɛ <s> ₄₂ </s> ʨ y j <s> ₂₁ </s> |
+| BAI-560 | Gongxing | not | ɛ₅₅ | ɛ <s> ₅₅ </s> |
+| BAI-561 | Jinman | not | a₄₂ | a <s> ₄₂ </s> |
+| BAI-562 | Mazhelong | not | a₃₁mow₃₃ | a <s> ₃₁ </s> m o w <s> ₃₃ </s> |
+| BAI-563 | Dashi | not | ma₃₃xa₅₅ | m a <s> ₃₃ </s> x a <s> ₅₅ </s> |
+| BAI-564 | Zhoucheng | not | mo₃₃ | m o <s> ₃₃ </s> |
+| BAI-565 | Jinxing | not | ɣa₃₅ | ɣ a <s> ₃₅ </s> |
+| BAI-566 | Tuolo | not | e₃₅ | e <s> ₃₅ </s> |
+| BAI-567 | Enqi | not | a₄₃ | a <s> ₄₃ </s> |
+| BAI-568 | Ega | not | a₄₂ | a <s> ₄₂ </s> |
+| BAI-569 | Mazhelong | not | pu₂₁ | p u <s> ₂₁ </s> |
+| BAI-570 | Dashi | not | a₄₂ɣẽ₅₅ | a <s> ₄₂ </s> ɣ ẽ <s> ₅₅ </s> |
+| BAI-571 | Tuolo | not | a₂₁ | a <s> ₂₁ </s> |
+| BAI-572 | Gongxing | one | a₅₅ | a <s> ₅₅ </s> |
+| BAI-573 | Jinman | one | a₄₂ | a <s> ₄₂ </s> |
+| BAI-574 | Mazhelong | one | a₂₁ | a <s> ₂₁ </s> |
+| BAI-575 | Dashi | one | ji₄₄ | j i <s> ₄₄ </s> |
+| BAI-576 | Zhoucheng | one | a₃₁ | a <s> ₃₁ </s> |
+| BAI-577 | Jinxing | one | a₄₂ | a <s> ₄₂ </s> |
+| BAI-578 | Tuolo | one | a₂₁ | a <s> ₂₁ </s> |
+| BAI-579 | Enqi | one | ji₅₅ | j i <s> ₅₅ </s> |
+| BAI-580 | Ega | one | a₄₂ | a <s> ₄₂ </s> |
+| BAI-581 | Gongxing | one | ji₂₄ | j i <s> ₂₄ </s> |
+| BAI-582 | Mazhelong | one | ji₄₂ | j i <s> ₄₂ </s> |
+| BAI-583 | Zhoucheng | one | ji₄₄ | j i <s> ₄₄ </s> |
+| BAI-584 | Jinxing | one | ji₄₄ | j i <s> ₄₄ </s> |
+| BAI-585 | Tuolo | one | ji₄₂ | j i <s> ₄₂ </s> |
+| BAI-586 | Enqi | one | a₄₃ | a <s> ₄₃ </s> |
+| BAI-587 | Ega | one | ji₅₅ | j i <s> ₅₅ </s> |
+| BAI-588 | Gongxing | person | ɲi₁₂ | ɲ i <s> ₁₂ </s> |
+| BAI-589 | Jinman | person | ɲi₂₁ | ɲ i <s> ₂₁ </s> |
+| BAI-590 | Mazhelong | person | ɲen₂₁ | ɲ e n <s> ₂₁ </s> |
+| BAI-591 | Dashi | person | jen₂₁ | j e n <s> ₂₁ </s> |
+| BAI-592 | Zhoucheng | person | ɲi₂₁ | ɲ i <s> ₂₁ </s> |
+| BAI-593 | Jinxing | person | jen₂₁ | j e n <s> ₂₁ </s> |
+| BAI-594 | Tuolo | person | jen₃₅ | j e n <s> ₃₅ </s> |
+| BAI-595 | Enqi | person | ɲi₂₁qa₂₄ | ɲ i <s> ₂₁ </s> q a <s> ₂₄ </s> |
+| BAI-596 | Ega | person | ɲi₂₁ | ɲ i <s> ₂₁ </s> |
+| BAI-597 | Gongxing | rain (V) | ʐi₂₂ | ʐ i <s> ₂₂ </s> |
+| BAI-598 | Jinman | rain (V) | ʐɚ₂₂wo₄₂ | ʐ ɚ <s> ₂₂ </s> w o <s> ₄₂ </s> |
+| BAI-599 | Mazhelong | rain (V) | ju₅₅ | j u <s> ₅₅ </s> |
+| BAI-600 | Dashi | rain (V) | wɤ₃₃ | w ɤ <s> ₃₃ </s> |
+| BAI-601 | Zhoucheng | rain (V) | ow₄₂ɤ₃₃ɕi₄₄ | o w <s> ₄₂ </s> ɤ <s> ₃₃ </s> ɕ i <s> ₄₄ </s> |
+| BAI-602 | Jinxing | rain (V) | ɤ₃₃ | ɤ <s> ₃₃ </s> |
+| BAI-603 | Tuolo | rain (V) | ʐi₃₃ | ʐ i <s> ₃₃ </s> |
+| BAI-604 | Enqi | rain (V) | zi₂₂ | z i <s> ₂₂ </s> |
+| BAI-605 | Ega | rain (V) | zɛ₂₂u₄₂ | z ɛ <s> ₂₂ </s> u <s> ₄₂ </s> |
+| BAI-606 | Enqi | rain (V) | u₂₁ | u <s> ₂₁ </s> |
+| BAI-607 | Gongxing | red | tʰæ₂₄ | tʰ æ <s> ₂₄ </s> |
+| BAI-608 | Jinman | red | ʈʰa₅₅ | ʈʰ a <s> ₅₅ </s> |
+| BAI-609 | Mazhelong | red | xoŋ₃₃ | x o ŋ <s> ₃₃ </s> |
+| BAI-610 | Dashi | red | t͡ʂʰɚ₄₄ | t͡ʂʰ ɚ <s> ₄₄ </s> |
+| BAI-611 | Zhoucheng | red | ʦʰɛ₄₄ | ʦʰ ɛ <s> ₄₄ </s> |
+| BAI-612 | Jinxing | red | ʦʰa₄₄ | ʦʰ a <s> ₄₄ </s> |
+| BAI-613 | Tuolo | red | tʰa₄₂ | tʰ a <s> ₄₂ </s> |
+| BAI-614 | Enqi | red | tʰjæ₅₅ | tʰ j æ <s> ₅₅ </s> |
+| BAI-615 | Ega | red | ʨʰa₄₄ | ʨʰ a <s> ₄₄ </s> |
+| BAI-616 | Gongxing | road | tʰy₂₂ | tʰ y <s> ₂₂ </s> |
+| BAI-617 | Jinman | road | ʈʰu₂₂ | ʈʰ u <s> ₂₂ </s> |
+| BAI-618 | Mazhelong | road | tʰǝɯ₃₃ | tʰ <s> ǝɯ </s> <s> ₃₃ </s> |
+| BAI-619 | Dashi | road | tʰu₃₃ | tʰ u <s> ₃₃ </s> |
+| BAI-620 | Zhoucheng | road | tʰo₃₃ | tʰ o <s> ₃₃ </s> |
+| BAI-621 | Jinxing | road | tʰu₃₃ | tʰ u <s> ₃₃ </s> |
+| BAI-622 | Tuolo | road | tʰɤ₃₃ | tʰ ɤ <s> ₃₃ </s> |
+| BAI-623 | Enqi | road | tʰiw₂₂ | tʰ i w <s> ₂₂ </s> |
+| BAI-624 | Ega | road | ʨiw₂₂ | ʨ i w <s> ₂₂ </s> |
+| BAI-625 | Gongxing | root | tɛ₂₄ | t ɛ <s> ₂₄ </s> |
+| BAI-626 | Jinman | root | me₄₂ | m e <s> ₄₂ </s> |
+| BAI-627 | Mazhelong | root | ʦo₃₃ | ʦ o <s> ₃₃ </s> |
+| BAI-628 | Dashi | root | te₄₄ | t e <s> ₄₄ </s> |
+| BAI-629 | Zhoucheng | root | mi₄₄ | m i <s> ₄₄ </s> |
+| BAI-630 | Jinxing | root | te₄₄ | t e <s> ₄₄ </s> |
+| BAI-631 | Tuolo | root | mɛ₂₁ | m ɛ <s> ₂₁ </s> |
+| BAI-632 | Enqi | root | tɛ₅₅ | t ɛ <s> ₅₅ </s> |
+| BAI-633 | Ega | root | mɛ₄₂ | m ɛ <s> ₄₂ </s> |
+| BAI-634 | Jinman | root | te₄₂ | t e <s> ₄₂ </s> |
+| BAI-635 | Dashi | root | mi₄₄ | m i <s> ₄₄ </s> |
+| BAI-636 | Enqi | root | mɛ₄₃ | m ɛ <s> ₄₃ </s> |
+| BAI-637 | Ega | root | tɛ₄₂ | t ɛ <s> ₄₂ </s> |
+| BAI-638 | Gongxing | round | wen₁₂ | w e n <s> ₁₂ </s> |
+| BAI-639 | Jinman | round | ŋwe₂₁ | ŋ w e <s> ₂₁ </s> |
+| BAI-640 | Mazhelong | round | ɣen₂₁ | ɣ e n <s> ₂₁ </s> |
+| BAI-641 | Dashi | round | wẽ₃₁ | w ẽ <s> ₃₁ </s> |
+| BAI-642 | Zhoucheng | round | we₂₁ | w e <s> ₂₁ </s> |
+| BAI-643 | Jinxing | round | wẽ₂₁ | w ẽ <s> ₂₁ </s> |
+| BAI-644 | Tuolo | round | wen₃₅ | w e n <s> ₃₅ </s> |
+| BAI-645 | Enqi | round | ʁwɛ₂₁ | ʁ w ɛ <s> ₂₁ </s> |
+| BAI-646 | Ega | round | kʰwɛ₄₄ | kʰ w ɛ <s> ₄₄ </s> |
+| BAI-647 | Gongxing | sand | swa₅₅ | s w a <s> ₅₅ </s> |
+| BAI-648 | Jinman | sand | ɕo₅₅ | ɕ o <s> ₅₅ </s> |
+| BAI-649 | Mazhelong | sand | sa₅₅ | s a <s> ₅₅ </s> |
+| BAI-650 | Dashi | sand | ʂʰow₅₅ | ʂʰ o w <s> ₅₅ </s> |
+| BAI-651 | Zhoucheng | sand | so₅₅ | s o <s> ₅₅ </s> |
+| BAI-652 | Jinxing | sand | sow₅₅ | s o w <s> ₅₅ </s> |
+| BAI-653 | Tuolo | sand | ɕwɨ₅₅ | ɕ w ɨ <s> ₅₅ </s> |
+| BAI-654 | Enqi | sand | ɕo₂₄ | ɕ o <s> ₂₄ </s> |
+| BAI-655 | Ega | sand | ɕo₅₅mi₂₂ | ɕ o <s> ₅₅ </s> m i <s> ₂₂ </s> |
+| BAI-656 | Gongxing | say (V) | ʣu₂₁ | ʣ u <s> ₂₁ </s> |
+| BAI-657 | Mazhelong | say (V) | swa₄₄ | s w a <s> ₄₄ </s> |
+| BAI-658 | Dashi | say (V) | ʨaŋ₂₁ | ʨ a ŋ <s> ₂₁ </s> |
+| BAI-659 | Zhoucheng | say (V) | swa₄₄ | s w a <s> ₄₄ </s> |
+| BAI-660 | Jinxing | say (V) | swɑ₄₄ | s w ɑ <s> ₄₄ </s> |
+| BAI-661 | Tuolo | say (V) | zu₄₂ | z u <s> ₄₂ </s> |
+| BAI-662 | Enqi | say (V) | ʦu₂₁ | ʦ u <s> ₂₁ </s> |
+| BAI-663 | Ega | say (V) | ʦo₄₂ | ʦ o <s> ₄₂ </s> |
+| BAI-664 | Tuolo | say (V) | swa₄₂ | s w a <s> ₄₂ </s> |
+| BAI-665 | Gongxing | see (V) | en₂₂qen₄₂ | e n <s> ₂₂ </s> q e n <s> ₄₂ </s> |
+| BAI-666 | Jinman | see (V) | e₂₂tɯ₄₄ | e <s> ₂₂ </s> t ɯ <s> ₄₄ </s> |
+| BAI-667 | Mazhelong | see (V) | xã₅₅kɛ₄₂ | x ã <s> ₅₅ </s> k ɛ <s> ₄₂ </s> |
+| BAI-668 | Dashi | see (V) | aŋ₃₃ke₃₁ | a ŋ <s> ₃₃ </s> k e <s> ₃₁ </s> |
+| BAI-669 | Zhoucheng | see (V) | a₃₃tɯ₄₄ | a <s> ₃₃ </s> t ɯ <s> ₄₄ </s> |
+| BAI-670 | Jinxing | see (V) | xɑ̃₅₅ | x ɑ̃ <s> ₅₅ </s> |
+| BAI-671 | Tuolo | see (V) | en₃₃qɛ₂₁ | e n <s> ₃₃ </s> q ɛ <s> ₂₁ </s> |
+| BAI-672 | Enqi | see (V) | ɛ₂₂tɯ₅₅la₂₂ | ɛ <s> ₂₂ </s> t ɯ <s> ₅₅ </s> l a <s> ₂₂ </s> |
+| BAI-673 | Ega | see (V) | e₂₂tɯ₄₄ | e <s> ₂₂ </s> t ɯ <s> ₄₄ </s> |
+| BAI-674 | Gongxing | seed | ʦoŋ₂₂ | ʦ o ŋ <s> ₂₂ </s> |
+| BAI-675 | Jinman | seed | ʨõ₂₂ | ʨ õ <s> ₂₂ </s> |
+| BAI-676 | Mazhelong | seed | ʦoŋ₃₃ | ʦ o ŋ <s> ₃₃ </s> |
+| BAI-677 | Dashi | seed | t͡ʂoŋ₃₃ | t͡ʂ o ŋ <s> ₃₃ </s> |
+| BAI-678 | Zhoucheng | seed | ʦɤ₃₃ | ʦ ɤ <s> ₃₃ </s> |
+| BAI-679 | Jinxing | seed | ʦɤ̃₃₃ | ʦ ɤ̃ <s> ₃₃ </s> |
+| BAI-680 | Tuolo | seed | t͡ʂɤŋ₃₃ | t͡ʂ ɤ ŋ <s> ₃₃ </s> |
+| BAI-681 | Enqi | seed | ʨo₂₂ | ʨ o <s> ₂₂ </s> |
+| BAI-682 | Ega | seed | ʨu₂₂ | ʨ u <s> ₂₂ </s> |
+| BAI-683 | Gongxing | sit (V) | kwa₄₂ | k w a <s> ₄₂ </s> |
+| BAI-684 | Jinman | sit (V) | kɤ₄₂ | k ɤ <s> ₄₂ </s> |
+| BAI-685 | Mazhelong | sit (V) | kɤ₄₂ | k ɤ <s> ₄₂ </s> |
+| BAI-686 | Dashi | sit (V) | ko₄₂ | k o <s> ₄₂ </s> |
+| BAI-687 | Zhoucheng | sit (V) | kɤ₄₂ | k ɤ <s> ₄₂ </s> |
+| BAI-688 | Jinxing | sit (V) | kɤ₄₂ | k ɤ <s> ₄₂ </s> |
+| BAI-689 | Tuolo | sit (V) | kɤ₂₁ | k ɤ <s> ₂₁ </s> |
+| BAI-690 | Enqi | sit (V) | ku₄₃ | k u <s> ₄₃ </s> |
+| BAI-691 | Ega | sit (V) | kɤ₄₂ | k ɤ <s> ₄₂ </s> |
+| BAI-692 | Gongxing | skin | bi₁₂ | b i <s> ₁₂ </s> |
+| BAI-693 | Jinman | skin | ʨyj₂₁ | ʨ y j <s> ₂₁ </s> |
+| BAI-694 | Mazhelong | skin | pe₂₁ | p e <s> ₂₁ </s> |
+| BAI-695 | Dashi | skin | pe₂₁ | p e <s> ₂₁ </s> |
+| BAI-696 | Zhoucheng | skin | pe₂₁ | p e <s> ₂₁ </s> |
+| BAI-697 | Jinxing | skin | pe₂₁ | p e <s> ₂₁ </s> |
+| BAI-698 | Tuolo | skin | bi₃₅ | b i <s> ₃₅ </s> |
+| BAI-699 | Enqi | skin | pi₂₁ | p i <s> ₂₁ </s> |
+| BAI-700 | Ega | skin | ʨyj₂₁qa₅₅ | ʨ y j <s> ₂₁ </s> q a <s> ₅₅ </s> |
+| BAI-701 | Gongxing | sleep (V) | nɛ₁₂ | n ɛ <s> ₁₂ </s> |
+| BAI-702 | Jinman | sleep (V) | wɤ̃₄₂ti₄₂ | w ɤ̃ <s> ₄₂ </s> t i <s> ₄₂ </s> |
+| BAI-703 | Mazhelong | sleep (V) | mi₅₅ | m i <s> ₅₅ </s> |
+| BAI-704 | Dashi | sleep (V) | t͡ʂʰɚ̃₃₃ | t͡ʂʰ <s> ɚ̃ </s> <s> ₃₃ </s> |
+| BAI-705 | Zhoucheng | sleep (V) | ʦʰɛ₃₃ | ʦʰ ɛ <s> ₃₃ </s> |
+| BAI-706 | Jinxing | sleep (V) | ʦʰan₃₃ | ʦʰ a n <s> ₃₃ </s> |
+| BAI-707 | Tuolo | sleep (V) | ʐa₄₂ma₄₂ | ʐ a <s> ₄₂ </s> m a <s> ₄₂ </s> |
+| BAI-708 | Enqi | sleep (V) | ʦʰi₂₂ | ʦʰ i <s> ₂₂ </s> |
+| BAI-709 | Ega | sleep (V) | ŋu₄₂ti₄₂ | ŋ u <s> ₄₂ </s> t i <s> ₄₂ </s> |
+| BAI-710 | Gongxing | small | sɛ₄₂ | s ɛ <s> ₄₂ </s> |
+| BAI-711 | Jinman | small | sẽ₄₂ | s ẽ <s> ₄₂ </s> |
+| BAI-712 | Mazhelong | small | sɛ₂₁ | s ɛ <s> ₂₁ </s> |
+| BAI-713 | Dashi | small | sʰe₂₁ | sʰ e <s> ₂₁ </s> |
+| BAI-714 | Zhoucheng | small | se₃₁ | s e <s> ₃₁ </s> |
+| BAI-715 | Jinxing | small | se₃₁ | s e <s> ₃₁ </s> |
+| BAI-716 | Tuolo | small | se₂₁ | s e <s> ₂₁ </s> |
+| BAI-717 | Enqi | small | sɛ₄₃ | s ɛ <s> ₄₃ </s> |
+| BAI-718 | Ega | small | sɛ₄₂ | s ɛ <s> ₄₂ </s> |
+| BAI-719 | Gongxing | smoke | xwi₂₂ɕi₅₅ | x w i <s> ₂₂ </s> ɕ i <s> ₅₅ </s> |
+| BAI-720 | Jinman | smoke | fi₂₂se₅₅ | f i <s> ₂₂ </s> s e <s> ₅₅ </s> |
+| BAI-721 | Mazhelong | smoke | fi₃₃ɕen₅₅ | f i <s> ₃₃ </s> ɕ e n <s> ₅₅ </s> |
+| BAI-722 | Dashi | smoke | xwi₃₃ɕen₃₅ | x w i <s> ₃₃ </s> ɕ e n <s> ₃₅ </s> |
+| BAI-723 | Zhoucheng | smoke | xwi₃₃ɕe₅₅ | x w i <s> ₃₃ </s> ɕ e <s> ₅₅ </s> |
+| BAI-724 | Jinxing | smoke | xwi₃₃ɕen₅₅ | x w i <s> ₃₃ </s> ɕ e n <s> ₅₅ </s> |
+| BAI-725 | Tuolo | smoke | xwe₃₃ɕen₅₅ | x w e <s> ₃₃ </s> ɕ e n <s> ₅₅ </s> |
+| BAI-726 | Enqi | smoke | xwi₂₂si₂₄ | x w i <s> ₂₂ </s> s i <s> ₂₄ </s> |
+| BAI-727 | Ega | smoke | fi₂₂sɛ₅₅ | f i <s> ₂₂ </s> s ɛ <s> ₅₅ </s> |
+| BAI-728 | Gongxing | stand (V) | ji₂₁ | j i <s> ₂₁ </s> |
+| BAI-729 | Jinman | stand (V) | djõ₂₂ | d j õ <s> ₂₂ </s> |
+| BAI-730 | Mazhelong | stand (V) | zi₄₂ | z i <s> ₄₂ </s> |
+| BAI-731 | Dashi | stand (V) | t͡ʂɯ₂₁ | t͡ʂ ɯ <s> ₂₁ </s> |
+| BAI-732 | Zhoucheng | stand (V) | ʦɯ₃₁ | ʦ ɯ <s> ₃₁ </s> |
+| BAI-733 | Jinxing | stand (V) | ʦɯ₃₁ | ʦ ɯ <s> ₃₁ </s> |
+| BAI-734 | Tuolo | stand (V) | ji₄₂kʰɯ₃₃ | j i <s> ₄₂ </s> kʰ ɯ <s> ₃₃ </s> |
+| BAI-735 | Enqi | stand (V) | djɯ₄₃ | d j ɯ <s> ₄₃ </s> |
+| BAI-736 | Ega | stand (V) | ji₄₂ | j i <s> ₄₂ </s> |
+| BAI-737 | Ega | stand (V) | ʥõ₂₂ | ʥ õ <s> ₂₂ </s> |
+| BAI-738 | Gongxing | star | san₅₅ | s a n <s> ₅₅ </s> |
+| BAI-739 | Jinman | star | ɕã₅₅ | ɕ ã <s> ₅₅ </s> |
+| BAI-740 | Mazhelong | star | ɕɚ̃₅₅ | ɕ <s> ɚ̃ </s> <s> ₅₅ </s> |
+| BAI-741 | Dashi | star | ɕɚ̃₅₅ | ɕ <s> ɚ̃ </s> <s> ₅₅ </s> |
+| BAI-742 | Zhoucheng | star | ɕɛ₅₅ | ɕ ɛ <s> ₅₅ </s> |
+| BAI-743 | Jinxing | star | ɕan₅₅ | ɕ a n <s> ₅₅ </s> |
+| BAI-744 | Tuolo | star | ɕaŋ₅₅ | ɕ a ŋ <s> ₅₅ </s> |
+| BAI-745 | Enqi | star | ɕæ₂₄ | ɕ æ <s> ₂₄ </s> |
+| BAI-746 | Ega | star | ɕa₅₅ | ɕ a <s> ₅₅ </s> |
+| BAI-747 | Gongxing | stone | ʣu₂₁qʰwɛ₅₅ | ʣ u <s> ₂₁ </s> qʰ w ɛ <s> ₅₅ </s> |
+| BAI-748 | Jinman | stone | ʈo₂₁ | ʈ o <s> ₂₁ </s> |
+| BAI-749 | Mazhelong | stone | ʦʰɤ₄₂ | ʦʰ ɤ <s> ₄₂ </s> |
+| BAI-750 | Dashi | stone | t͡ʂow₄₂ | t͡ʂ o w <s> ₄₂ </s> |
+| BAI-751 | Zhoucheng | stone | ʦow₄₂ | ʦ o w <s> ₄₂ </s> |
+| BAI-752 | Jinxing | stone | ʦow₄₂ | ʦ o w <s> ₄₂ </s> |
+| BAI-753 | Tuolo | stone | diw₄₂ | d i w <s> ₄₂ </s> |
+| BAI-754 | Enqi | stone | tiw₂₁ | t i w <s> ₂₁ </s> |
+| BAI-755 | Ega | stone | ʨiw₄₂ | ʨ i w <s> ₄₂ </s> |
+| BAI-756 | Jinman | stone | da₄₂ŋã₂₁ | d a <s> ₄₂ </s> ŋ ã <s> ₂₁ </s> |
+| BAI-757 | Gongxing | sun | ɲi₂₄ | ɲ i <s> ₂₄ </s> |
+| BAI-758 | Jinman | sun | ɲi₅₅ | ɲ i <s> ₅₅ </s> |
+| BAI-759 | Mazhelong | sun | ɲɛ₄₄ | ɲ ɛ <s> ₄₄ </s> |
+| BAI-760 | Dashi | sun | jen₄₄ | j e n <s> ₄₄ </s> |
+| BAI-761 | Zhoucheng | sun | mi₄₄ | m i <s> ₄₄ </s> |
+| BAI-762 | Jinxing | sun | jjen₄₄ | jː e n <s> ₄₄ </s> |
+| BAI-763 | Tuolo | sun | jjen₄₂ | jː e n <s> ₄₂ </s> |
+| BAI-764 | Enqi | sun | ɲi₅₅ | ɲ i <s> ₅₅ </s> |
+| BAI-765 | Ega | sun | ɲi₄₄ | ɲ i <s> ₄₄ </s> |
+| BAI-766 | Gongxing | swim (V) | ɕi₂₂qoŋ₅₅ | ɕ i <s> ₂₂ </s> q o ŋ <s> ₅₅ </s> |
+| BAI-767 | Jinman | swim (V) | ɕyj₂₂lu₂₁ | ɕ y j <s> ₂₂ </s> l u <s> ₂₁ </s> |
+| BAI-768 | Mazhelong | swim (V) | ʦʰɛ₃₁ɕu₃₃si₅₅ | ʦʰ ɛ <s> ₃₁ </s> ɕ u <s> ₃₃ </s> s i <s> ₅₅ </s> |
+| BAI-769 | Dashi | swim (V) | se₃₃pe₂₁ | s e <s> ₃₃ </s> p e <s> ₂₁ </s> |
+| BAI-770 | Zhoucheng | swim (V) | se₃₃ʦʰi₅₅kʰow₅₅ | s e <s> ₃₃ </s> ʦʰ i <s> ₅₅ </s> kʰ o w <s> ₅₅ </s> |
+| BAI-771 | Jinxing | swim (V) | se₃₃pe₂₁ | s e <s> ₃₃ </s> p e <s> ₂₁ </s> |
+| BAI-772 | Tuolo | swim (V) | fɤ₃₅ɕyj₃₃ | f ɤ <s> ₃₅ </s> ɕ y j <s> ₃₃ </s> |
+| BAI-773 | Enqi | swim (V) | sɛ₂₄ɕyj₂₂ | s ɛ <s> ₂₄ </s> ɕ y j <s> ₂₂ </s> |
+| BAI-774 | Ega | swim (V) | ɕyj₂₂qu₅₅ | ɕ y j <s> ₂₂ </s> q u <s> ₅₅ </s> |
+| BAI-775 | Gongxing | tail | mu₂₂qwa₂₄ | m u <s> ₂₂ </s> q w a <s> ₂₄ </s> |
+| BAI-776 | Jinman | tail | mo₂₂qwa₄₄ | m o <s> ₂₂ </s> q w a <s> ₄₄ </s> |
+| BAI-777 | Mazhelong | tail | mi₃₃ | m i <s> ₃₃ </s> |
+| BAI-778 | Dashi | tail | wɤ₃₃to₅₅ | w ɤ <s> ₃₃ </s> t o <s> ₅₅ </s> |
+| BAI-779 | Zhoucheng | tail | mi₄₂tu₃₅ | m i <s> ₄₂ </s> t u <s> ₃₅ </s> |
+| BAI-780 | Jinxing | tail | ɤ̃₃₃tɤ̃₅₅ | ɤ̃ <s> ₃₃ </s> t ɤ̃ <s> ₅₅ </s> |
+| BAI-781 | Tuolo | tail | mɔ₄₂qɔ₄₂ | m ɔ <s> ₄₂ </s> q ɔ <s> ₄₂ </s> |
+| BAI-782 | Enqi | tail | mæ₂₂qwa₅₅ | m æ <s> ₂₂ </s> q w a <s> ₅₅ </s> |
+| BAI-783 | Ega | tail | mu₂₂qwa₄₄ | m u <s> ₂₂ </s> q w a <s> ₄₄ </s> |
+| BAI-784 | Gongxing | that | twa₅₅ɣǝ₂₁ | t w a <s> ₅₅ </s> ɣ ǝ <s> ₂₁ </s> |
+| BAI-785 | Jinman | that | tõ₅₅ | t õ <s> ₅₅ </s> |
+| BAI-786 | Mazhelong | that | pu₃₃ʦoŋ₂₁ | p u <s> ₃₃ </s> ʦ o ŋ <s> ₂₁ </s> |
+| BAI-787 | Dashi | that | na₅₅ | n a <s> ₅₅ </s> |
+| BAI-788 | Zhoucheng | that | na₅₅wi₃₃ | n a <s> ₅₅ </s> w i <s> ₃₃ </s> |
+| BAI-789 | Jinxing | that | no₅₅ | n o <s> ₅₅ </s> |
+| BAI-790 | Tuolo | that | bo₂₁ | b o <s> ₂₁ </s> |
+| BAI-791 | Enqi | that | vɯ₄₃ | v ɯ <s> ₄₃ </s> |
+| BAI-792 | Ega | that | a₅₅po₂₁ | a <s> ₅₅ </s> p o <s> ₂₁ </s> |
+| BAI-793 | Jinxing | that | lo₅₅ | l o <s> ₅₅ </s> |
+| BAI-794 | Gongxing | this | ɣǝ₂₁ | ɣ ǝ <s> ₂₁ </s> |
+| BAI-795 | Jinman | this | nõ₅₅ | n õ <s> ₅₅ </s> |
+| BAI-796 | Mazhelong | this | ne₃₃ʦoŋ₂₁ | n e <s> ₃₃ </s> ʦ o ŋ <s> ₂₁ </s> |
+| BAI-797 | Dashi | this | a₅₅ta₃₃ | a <s> ₅₅ </s> t a <s> ₃₃ </s> |
+| BAI-798 | Zhoucheng | this | te₃₃le₃₁ | t e <s> ₃₃ </s> l e <s> ₃₁ </s> |
+| BAI-799 | Jinxing | this | lɯ₃₁ | l ɯ <s> ₃₁ </s> |
+| BAI-800 | Tuolo | this | djɯ₂₁ | d j ɯ <s> ₂₁ </s> |
+| BAI-801 | Enqi | this | nɯ₅₅ | n ɯ <s> ₅₅ </s> |
+| BAI-802 | Ega | this | a₅₅na₂₄ | a <s> ₅₅ </s> n a <s> ₂₄ </s> |
+| BAI-803 | Mazhelong | this | lɛ₄₂ | l ɛ <s> ₄₂ </s> |
+| BAI-804 | Gongxing | thou | na₄₂ | n a <s> ₄₂ </s> |
+| BAI-805 | Jinman | thou | no₄₂ | n o <s> ₄₂ </s> |
+| BAI-806 | Mazhelong | thou | nen₄₂ | n e n <s> ₄₂ </s> |
+| BAI-807 | Dashi | thou | nõ₃₁ | n õ <s> ₃₁ </s> |
+| BAI-808 | Zhoucheng | thou | no₃₁ | n o <s> ₃₁ </s> |
+| BAI-809 | Jinxing | thou | now₃₁ | n o w <s> ₃₁ </s> |
+| BAI-810 | Tuolo | thou | nɔ₂₁ | n ɔ <s> ₂₁ </s> |
+| BAI-811 | Enqi | thou | no₄₃ | n o <s> ₄₃ </s> |
+| BAI-812 | Ega | thou | no₄₂ | n o <s> ₄₂ </s> |
+| BAI-813 | Gongxing | tongue | djɛ₂₁ | d j ɛ <s> ₂₁ </s> |
+| BAI-814 | Jinman | tongue | ʈɚ₄₂ | ʈ ɚ <s> ₄₂ </s> |
+| BAI-815 | Mazhelong | tongue | ʦʰɛ₄₂ | ʦʰ ɛ <s> ₄₂ </s> |
+| BAI-816 | Dashi | tongue | t͡ʂe₄₂ | t͡ʂ e <s> ₄₂ </s> |
+| BAI-817 | Zhoucheng | tongue | ʦe₄₂ | ʦ e <s> ₄₂ </s> |
+| BAI-818 | Jinxing | tongue | ʦe₄₂ | ʦ e <s> ₄₂ </s> |
+| BAI-819 | Tuolo | tongue | de₄₂ | d e <s> ₄₂ </s> |
+| BAI-820 | Enqi | tongue | tjɛ₂₁ | t j ɛ <s> ₂₁ </s> |
+| BAI-821 | Ega | tongue | ti₂₁pʰɛ₄₂ | t i <s> ₂₁ </s> pʰ ɛ <s> ₄₂ </s> |
+| BAI-822 | Gongxing | tooth | xu₅₅ja₂₁ | x u <s> ₅₅ </s> j a <s> ₂₁ </s> |
+| BAI-823 | Jinman | tooth | ʨu₂₂pa₄₄ | ʨ u <s> ₂₂ </s> p a <s> ₄₄ </s> |
+| BAI-824 | Mazhelong | tooth | ʦi₃₃pɑ₄₄ | ʦ i <s> ₃₃ </s> p ɑ <s> ₄₄ </s> |
+| BAI-825 | Dashi | tooth | t͡ʂʰi₄₄pa₄₄ | t͡ʂʰ i <s> ₄₄ </s> p a <s> ₄₄ </s> |
+| BAI-826 | Zhoucheng | tooth | ʦi₃₃pa₄₄ | ʦ i <s> ₃₃ </s> p a <s> ₄₄ </s> |
+| BAI-827 | Jinxing | tooth | ʦɤ₄₄pɑ₄₄ | ʦ ɤ <s> ₄₄ </s> p ɑ <s> ₄₄ </s> |
+| BAI-828 | Tuolo | tooth | jaŋ₃₅ | j a ŋ <s> ₃₅ </s> |
+| BAI-829 | Enqi | tooth | qʰwa₂₂ɲa₂₁ | qʰ w a <s> ₂₂ </s> ɲ a <s> ₂₁ </s> |
+| BAI-830 | Ega | tooth | ʨu₂₂pa₄₄qwa₄₄ | ʨ u <s> ₂₂ </s> p a <s> ₄₄ </s> q w a <s> ₄₄ </s> |
+| BAI-831 | Gongxing | tooth | t͡ʂi₂₁pa₂₄ | t͡ʂ i <s> ₂₁ </s> p a <s> ₂₄ </s> |
+| BAI-832 | Tuolo | tooth | ʨu₄₂po₄₂ | ʨ u <s> ₄₂ </s> p o <s> ₄₂ </s> |
+| BAI-833 | Enqi | tooth | ʨu₂₂pa₅₅ | ʨ u <s> ₂₂ </s> p a <s> ₅₅ </s> |
+| BAI-834 | Gongxing | tree | d͡ʐi₄₂ | d͡ʐ i <s> ₄₂ </s> |
+| BAI-835 | Jinman | tree | ɖɯ₄₂ | ɖ ɯ <s> ₄₂ </s> |
+| BAI-836 | Mazhelong | tree | ʣǝɯ₂₁ | ʣ <s> ǝɯ </s> <s> ₂₁ </s> |
+| BAI-837 | Dashi | tree | t͡ʂɯ₂₁ | t͡ʂ ɯ <s> ₂₁ </s> |
+| BAI-838 | Zhoucheng | tree | ʦɯ₃₁ | ʦ ɯ <s> ₃₁ </s> |
+| BAI-839 | Jinxing | tree | ʦɯ₃₁ | ʦ ɯ <s> ₃₁ </s> |
+| BAI-840 | Tuolo | tree | djɯ₂₁ | d j ɯ <s> ₂₁ </s> |
+| BAI-841 | Enqi | tree | djɯ₄₃ | d j ɯ <s> ₄₃ </s> |
+| BAI-842 | Ega | tree | ʥi₄₂ | ʥ i <s> ₄₂ </s> |
+| BAI-843 | Gongxing | two | koŋ₃₃ | k o ŋ <s> ₃₃ </s> |
+| BAI-844 | Jinman | two | koŋ₃₃ | k o ŋ <s> ₃₃ </s> |
+| BAI-845 | Mazhelong | two | koŋ₃₃ | k o ŋ <s> ₃₃ </s> |
+| BAI-846 | Dashi | two | koŋ₃₃ | k o ŋ <s> ₃₃ </s> |
+| BAI-847 | Zhoucheng | two | kow₃₃ | k o w <s> ₃₃ </s> |
+| BAI-848 | Jinxing | two | kõ₃₃ | k õ <s> ₃₃ </s> |
+| BAI-849 | Tuolo | two | koŋ₃₃ | k o ŋ <s> ₃₃ </s> |
+| BAI-850 | Enqi | two | ku₂₂ | k u <s> ₂₂ </s> |
+| BAI-851 | Ega | two | kɤ₃₃ | k ɤ <s> ₃₃ </s> |
+| BAI-852 | Gongxing | walk (V) | ʁan₁₂ | ʁ a n <s> ₁₂ </s> |
+| BAI-853 | Jinman | walk (V) | ja₅₅ | j a <s> ₅₅ </s> |
+| BAI-854 | Mazhelong | walk (V) | ɣaŋ₂₁ | ɣ a ŋ <s> ₂₁ </s> |
+| BAI-855 | Dashi | walk (V) | pe₄₄ | p e <s> ₄₄ </s> |
+| BAI-856 | Zhoucheng | walk (V) | pe₄₄ | p e <s> ₄₄ </s> |
+| BAI-857 | Jinxing | walk (V) | pe₄₄ | p e <s> ₄₄ </s> |
+| BAI-858 | Tuolo | walk (V) | jɔ₄₂ | j ɔ <s> ₄₂ </s> |
+| BAI-859 | Enqi | walk (V) | ɴa₂₁ | ɴ a <s> ₂₁ </s> |
+| BAI-860 | Ega | walk (V) | ŋa₂₁ | ŋ a <s> ₂₁ </s> |
+| BAI-861 | Tuolo | walk (V) | ŋa₃₅ | ŋ a <s> ₃₅ </s> |
+| BAI-862 | Gongxing | warm | ɲi₂₄ | ɲ i <s> ₂₄ </s> |
+| BAI-863 | Jinman | warm | ɲi₄₄ | ɲ i <s> ₄₄ </s> |
+| BAI-864 | Mazhelong | warm | ɲɛ₄₄ | ɲ ɛ <s> ₄₄ </s> |
+| BAI-865 | Dashi | warm | jen₄₄ | j e n <s> ₄₄ </s> |
+| BAI-866 | Zhoucheng | warm | ɲe₄₄ | ɲ e <s> ₄₄ </s> |
+| BAI-867 | Jinxing | warm | jẽ₄₄ | j ẽ <s> ₄₄ </s> |
+| BAI-868 | Tuolo | warm | jen₄₂ | j e n <s> ₄₂ </s> |
+| BAI-869 | Enqi | warm | ɲi₅₅ | ɲ i <s> ₅₅ </s> |
+| BAI-870 | Ega | warm | ɲi₄₄ | ɲ i <s> ₄₄ </s> |
+| BAI-871 | Gongxing | water | ɕy₂₂ | ɕ y <s> ₂₂ </s> |
+| BAI-872 | Jinman | water | ɕyj₂₂ | ɕ y j <s> ₂₂ </s> |
+| BAI-873 | Mazhelong | water | ɕyj₃₃ | ɕ y j <s> ₃₃ </s> |
+| BAI-874 | Dashi | water | ɕuj₃₃ | ɕ u j <s> ₃₃ </s> |
+| BAI-875 | Zhoucheng | water | ɕyj₃₃ | ɕ y j <s> ₃₃ </s> |
+| BAI-876 | Jinxing | water | ɕyj₃₃ | ɕ y j <s> ₃₃ </s> |
+| BAI-877 | Tuolo | water | ɕyj₃₃ | ɕ y j <s> ₃₃ </s> |
+| BAI-878 | Enqi | water | ɕyj₂₂ | ɕ y j <s> ₂₂ </s> |
+| BAI-879 | Ega | water | ɕyj₂₂ | ɕ y j <s> ₂₂ </s> |
+| BAI-880 | Gongxing | we | ʁaŋ₂₄ | ʁ a ŋ <s> ₂₄ </s> |
+| BAI-881 | Jinman | we | ɲa₂₁t͡ʂɚ₂₂ | ɲ a <s> ₂₁ </s> t͡ʂ ɚ <s> ₂₂ </s> |
+| BAI-882 | Mazhelong | we | ŋa₅₅xo₃₃ | ŋ a <s> ₅₅ </s> x o <s> ₃₃ </s> |
+| BAI-883 | Dashi | we | ɲã₅₅ | ɲ ã <s> ₅₅ </s> |
+| BAI-884 | Zhoucheng | we | ɲa₅₅ | ɲ a <s> ₅₅ </s> |
+| BAI-885 | Jinxing | we | jɑ̃₅₅ | j ɑ̃ <s> ₅₅ </s> |
+| BAI-886 | Tuolo | we | a₅₅ŋɔ₂₁ | a <s> ₅₅ </s> ŋ ɔ <s> ₂₁ </s> |
+| BAI-887 | Enqi | we | a₅₅ʁo₂₁ | a <s> ₅₅ </s> ʁ o <s> ₂₁ </s> |
+| BAI-888 | Ega | we | ɲo₂₁ɣo₂₂ | ɲ o <s> ₂₁ </s> ɣ o <s> ₂₂ </s> |
+| BAI-889 | Gongxing | we | ŋa₄₂xõ₂₂ | ŋ a <s> ₄₂ </s> x õ <s> ₂₂ </s> |
+| BAI-890 | Jinman | we | mi₅₅ | m i <s> ₅₅ </s> |
+| BAI-891 | Jinxing | we | ŋɑ₅₅ | ŋ ɑ <s> ₅₅ </s> |
+| BAI-892 | Tuolo | we | we₅₅ | w e <s> ₅₅ </s> |
+| BAI-893 | Enqi | we | wi₂₄ʦɿ₂₁ | w i <s> ₂₄ </s> ʦ ɿ <s> ₂₁ </s> |
+| BAI-894 | Ega | we | ŋwi₅₅ | ŋ w i <s> ₅₅ </s> |
+| BAI-895 | Gongxing | what | a₅₅qʰa₅₅ | a <s> ₅₅ </s> qʰ a <s> ₅₅ </s> |
+| BAI-896 | Jinman | what | a₅₅xã₄₂ | a <s> ₅₅ </s> x ã <s> ₄₂ </s> |
+| BAI-897 | Mazhelong | what | a₅₅se₅₅ | a <s> ₅₅ </s> s e <s> ₅₅ </s> |
+| BAI-898 | Dashi | what | ɚ₅₅xɚ₄₂ | ɚ <s> ₅₅ </s> x ɚ <s> ₄₂ </s> |
+| BAI-899 | Zhoucheng | what | xa₃₁le₃₁ | x a <s> ₃₁ </s> l e <s> ₃₁ </s> |
+| BAI-900 | Jinxing | what | ɑ₅₅xan₃₁ | ɑ <s> ₅₅ </s> x a n <s> ₃₁ </s> |
+| BAI-901 | Tuolo | what | a₅₅haŋ₂₁ | a <s> ₅₅ </s> h a ŋ <s> ₂₁ </s> |
+| BAI-902 | Enqi | what | a₅₅χa₅₅ | a <s> ₅₅ </s> χ a <s> ₅₅ </s> |
+| BAI-903 | Ega | what | a₅₅xa₄₂ | a <s> ₅₅ </s> x a <s> ₄₂ </s> |
+| BAI-904 | Gongxing | white | bæ₂₁ | b æ <s> ₂₁ </s> |
+| BAI-905 | Jinman | white | pa₄₂ | p a <s> ₄₂ </s> |
+| BAI-906 | Mazhelong | white | pʰɚ₄₂ | pʰ ɚ <s> ₄₂ </s> |
+| BAI-907 | Dashi | white | pɚ₄₂ | p ɚ <s> ₄₂ </s> |
+| BAI-908 | Zhoucheng | white | pɛ₄₂ | p ɛ <s> ₄₂ </s> |
+| BAI-909 | Jinxing | white | pa₄₂ | p a <s> ₄₂ </s> |
+| BAI-910 | Tuolo | white | ba₄₂ | b a <s> ₄₂ </s> |
+| BAI-911 | Enqi | white | pa₂₁ | p a <s> ₂₁ </s> |
+| BAI-912 | Ega | white | pa₄₂ | p a <s> ₄₂ </s> |
+| BAI-913 | Gongxing | who | a₂₂ma₅₅bu₂₂ɲǝn₂₄ | a <s> ₂₂ </s> m a <s> ₅₅ </s> b u <s> ₂₂ </s> ɲ ǝ n <s> ₂₄ </s> |
+| BAI-914 | Jinman | who | a₅₅ma₅₅ | a <s> ₅₅ </s> m a <s> ₅₅ </s> |
+| BAI-915 | Mazhelong | who | a₅₅to₃₃ | a <s> ₅₅ </s> t o <s> ₃₃ </s> |
+| BAI-916 | Dashi | who | a₅₅ma₃₃tjɯ₃₁ | a <s> ₅₅ </s> m a <s> ₃₃ </s> t j ɯ <s> ₃₁ </s> |
+| BAI-917 | Zhoucheng | who | a₅₅ɲi₂₁ | a <s> ₅₅ </s> ɲ i <s> ₂₁ </s> |
+| BAI-918 | Jinxing | who | ɑ₃₁tow₃₁ | ɑ <s> ₃₁ </s> t o w <s> ₃₁ </s> |
+| BAI-919 | Tuolo | who | a₂₁do₃₅ | a <s> ₂₁ </s> d o <s> ₃₅ </s> |
+| BAI-920 | Enqi | who | a₄₃to₂₁ | a <s> ₄₃ </s> t o <s> ₂₁ </s> |
+| BAI-921 | Ega | who | a₅₅to₂₁ | a <s> ₅₅ </s> t o <s> ₂₁ </s> |
+| BAI-922 | Jinxing | who | ɑ₅₅nɑ̃₄₄jen₂₁ | ɑ <s> ₅₅ </s> n ɑ̃ <s> ₄₄ </s> j e n <s> ₂₁ </s> |
+| BAI-923 | Jinman | woman | ɲu₂₂ɲi₂₁ʦi₂₂ | ɲ u <s> ₂₂ </s> ɲ i <s> ₂₁ </s> ʦ i <s> ₂₂ </s> |
+| BAI-924 | Mazhelong | woman | ɲõ₃₃ɲĩ₂₁ | ɲ õ <s> ₃₃ </s> ɲ ĩ <s> ₂₁ </s> |
+| BAI-925 | Dashi | woman | jũ₃₃lã₄₂ | j ũ <s> ₃₃ </s> l ã <s> ₄₂ </s> |
+| BAI-926 | Zhoucheng | woman | ɲɤ₃₃ | ɲ ɤ <s> ₃₃ </s> |
+| BAI-927 | Jinxing | woman | jɤ̃₃₃jen₂₁jen₂₁ | j ɤ̃ <s> ₃₃ </s> j e n <s> ₂₁ </s> j e n <s> ₂₁ </s> |
+| BAI-928 | Tuolo | woman | jen₃₅hoŋ₅₅mo₃₃ | j e n <s> ₃₅ </s> h o ŋ <s> ₅₅ </s> m o <s> ₃₃ </s> |
+| BAI-929 | Ega | woman | ɲyj₂₂ʦi₂₂ | ɲ y j <s> ₂₂ </s> ʦ i <s> ₂₂ </s> |
+| BAI-930 | Gongxing | yellow | ʁaŋ₁₂ | ʁ a ŋ <s> ₁₂ </s> |
+| BAI-931 | Jinman | yellow | õ₂₁ | õ <s> ₂₁ </s> |
+| BAI-932 | Mazhelong | yellow | ɣoŋ₂₁ | ɣ o ŋ <s> ₂₁ </s> |
+| BAI-933 | Dashi | yellow | wɤ̃₂₁ | w ɤ̃ <s> ₂₁ </s> |
+| BAI-934 | Zhoucheng | yellow | ŋɤ₂₁ | ŋ ɤ <s> ₂₁ </s> |
+| BAI-935 | Jinxing | yellow | ɤ̃₂₁ | ɤ̃ <s> ₂₁ </s> |
+| BAI-936 | Tuolo | yellow | ŋoŋ₃₅ | ŋ o ŋ <s> ₃₅ </s> |
+| BAI-937 | Enqi | yellow | ʁo₂₁ | ʁ o <s> ₂₁ </s> |
+| BAI-938 | Ega | yellow | ŋõ₂₁ | ŋ õ <s> ₂₁ </s> |
+| BAI-939 | Gongxing | far | tɥen₂₂ | t ɥ e n <s> ₂₂ </s> |
+| BAI-940 | Jinman | far | tyj₂₂ | t y j <s> ₂₂ </s> |
+| BAI-941 | Mazhelong | far | ʦwen₃₃ | ʦ w e n <s> ₃₃ </s> |
+| BAI-942 | Dashi | far | twen₃₃ | t w e n <s> ₃₃ </s> |
+| BAI-943 | Zhoucheng | far | twe₃₃ | t w e <s> ₃₃ </s> |
+| BAI-944 | Jinxing | far | twen₃₃ | t w e n <s> ₃₃ </s> |
+| BAI-945 | Tuolo | far | twe₃₃ | t w e <s> ₃₃ </s> |
+| BAI-946 | Enqi | far | tɥɛ₂₂ | t ɥ ɛ <s> ₂₂ </s> |
+| BAI-947 | Ega | far | ti₂₂ | t i <s> ₂₂ </s> |
+| BAI-948 | Gongxing | heavy | ʣoŋ₂₂ | ʣ o ŋ <s> ₂₂ </s> |
+| BAI-949 | Jinman | heavy | ʥõ₂₂ | ʥ õ <s> ₂₂ </s> |
+| BAI-950 | Mazhelong | heavy | ʦõ₂₁ | ʦ õ <s> ₂₁ </s> |
+| BAI-951 | Dashi | heavy | t͡ʂõ₃₃ | t͡ʂ õ <s> ₃₃ </s> |
+| BAI-952 | Zhoucheng | heavy | ʦɤ₃₃ | ʦ ɤ <s> ₃₃ </s> |
+| BAI-953 | Jinxing | heavy | ʦɤ̃₃₃ | ʦ ɤ̃ <s> ₃₃ </s> |
+| BAI-954 | Tuolo | heavy | ʐɤŋ₃₃ | ʐ ɤ ŋ <s> ₃₃ </s> |
+| BAI-955 | Enqi | heavy | d͡ʐo₂₂ | d͡ʐ o <s> ₂₂ </s> |
+| BAI-956 | Ega | heavy | ʥo₂₂ | ʥ o <s> ₂₂ </s> |
+| BAI-957 | Gongxing | near | ʥen₂₂ | ʥ e n <s> ₂₂ </s> |
+| BAI-958 | Jinman | near | ʦʰo₅₅ | ʦʰ o <s> ₅₅ </s> |
+| BAI-959 | Mazhelong | near | ʨen₃₃ | ʨ e n <s> ₃₃ </s> |
+| BAI-960 | Dashi | near | ʨen₃₃ | ʨ e n <s> ₃₃ </s> |
+| BAI-961 | Zhoucheng | near | ʨe₃₃ | ʨ e <s> ₃₃ </s> |
+| BAI-962 | Jinxing | near | ʨen₃₃ | ʨ e n <s> ₃₃ </s> |
+| BAI-963 | Tuolo | near | jen₃₃ | j e n <s> ₃₃ </s> |
+| BAI-964 | Enqi | near | ʨi₂₂ | ʨ i <s> ₂₂ </s> |
+| BAI-965 | Ega | near | ʦʰo₅₅ | ʦʰ o <s> ₅₅ </s> |
+| BAI-966 | Gongxing | salt | ʨwen₅₅ | ʨ w e n <s> ₅₅ </s> |
+| BAI-967 | Jinman | salt | ʦwẽ₅₅ | ʦ w ẽ <s> ₅₅ </s> |
+| BAI-968 | Mazhelong | salt | ʦʰoŋ₂₁ | ʦʰ o ŋ <s> ₂₁ </s> |
+| BAI-969 | Dashi | salt | pjẽ₃₅ | p j ẽ <s> ₃₅ </s> |
+| BAI-970 | Zhoucheng | salt | pi₃₅ | p i <s> ₃₅ </s> |
+| BAI-971 | Jinxing | salt | pjen₅₅ | p j e n <s> ₅₅ </s> |
+| BAI-972 | Tuolo | salt | ʨwen₅₅ | ʨ w e n <s> ₅₅ </s> |
+| BAI-973 | Enqi | salt | ʦwɛ₂₄ | ʦ w ɛ <s> ₂₄ </s> |
+| BAI-974 | Ega | salt | ʦwɛ₅₅ | ʦ w ɛ <s> ₅₅ </s> |
+| BAI-975 | Gongxing | short | ʦʰwa₂₄ | ʦʰ w a <s> ₂₄ </s> |
+| BAI-976 | Jinman | short | ʨʰi₅₅ | ʨʰ i <s> ₅₅ </s> |
+| BAI-977 | Mazhelong | short | ʦʰǝɯ₅₅ | ʦʰ <s> ǝɯ </s> <s> ₅₅ </s> |
+| BAI-978 | Dashi | short | ʦʰɯ₅₅ | ʦʰ ɯ <s> ₅₅ </s> |
+| BAI-979 | Zhoucheng | short | ʦʰɯ₅₅ | ʦʰ ɯ <s> ₅₅ </s> |
+| BAI-980 | Jinxing | short | ʦʰɯ₅₅ | ʦʰ ɯ <s> ₅₅ </s> |
+| BAI-981 | Tuolo | short | ʦʰɤ₄₂ | ʦʰ ɤ <s> ₄₂ </s> |
+| BAI-982 | Enqi | short | ʦʰo₅₅ | ʦʰ o <s> ₅₅ </s> |
+| BAI-983 | Ega | short | ʨʰi₅₅ | ʨʰ i <s> ₅₅ </s> |
+| BAI-984 | Gongxing | snake | t͡ʂʰi₂₂ | t͡ʂʰ i <s> ₂₂ </s> |
+| BAI-985 | Jinman | snake | ʨʰɚ̃₂₂ | ʨʰ <s> ɚ̃ </s> <s> ₂₂ </s> |
+| BAI-986 | Mazhelong | snake | ʨʰiw₃₃ | ʨʰ i w <s> ₃₃ </s> |
+| BAI-987 | Dashi | snake | kʰo₃₃ | kʰ o <s> ₃₃ </s> |
+| BAI-988 | Zhoucheng | snake | kʰɤ₃₃ | kʰ ɤ <s> ₃₃ </s> |
+| BAI-989 | Jinxing | snake | kʰɤ₃₃ | kʰ ɤ <s> ₃₃ </s> |
+| BAI-990 | Tuolo | snake | t͡ʂʰɚ̃₃₃ | t͡ʂʰ <s> ɚ̃ </s> <s> ₃₃ </s> |
+| BAI-991 | Enqi | snake | ʦʰɿ₂₂ | ʦʰ ɿ <s> ₂₂ </s> |
+| BAI-992 | Ega | snake | ʦʰɛ₂₂ | ʦʰ ɛ <s> ₂₂ </s> |
+| BAI-993 | Gongxing | thin | bwa₂₁ | b w a <s> ₂₁ </s> |
+| BAI-994 | Jinman | thin | po₄₂ | p o <s> ₄₂ </s> |
+| BAI-995 | Mazhelong | thin | pʰo₄₂ | pʰ o <s> ₄₂ </s> |
+| BAI-996 | Dashi | thin | pow₄₂ | p o w <s> ₄₂ </s> |
+| BAI-997 | Zhoucheng | thin | pow₄₂ | p o w <s> ₄₂ </s> |
+| BAI-998 | Jinxing | thin | pow₄₂ | p o w <s> ₄₂ </s> |
+| BAI-999 | Tuolo | thin | bɯ₄₂ | b ɯ <s> ₄₂ </s> |
+| BAI-1000 | Enqi | thin | pɯ₂₁ | p ɯ <s> ₂₁ </s> |
+| BAI-1001 | Ega | thin | pu₄₂ | p u <s> ₄₂ </s> |
+| BAI-1002 | Gongxing | wind | ʨwen₅₅ | ʨ w e n <s> ₅₅ </s> |
+| BAI-1003 | Jinman | wind | ʨyj₅₅ | ʨ y j <s> ₅₅ </s> |
+| BAI-1004 | Mazhelong | wind | pjen₅₅ | p j e n <s> ₅₅ </s> |
+| BAI-1005 | Dashi | wind | pjɛ̃₃₅ | p j ɛ̃ <s> ₃₅ </s> |
+| BAI-1006 | Zhoucheng | wind | pi₃₅ | p i <s> ₃₅ </s> |
+| BAI-1007 | Jinxing | wind | pi₅₅ | p i <s> ₅₅ </s> |
+| BAI-1008 | Tuolo | wind | ʨwen₅₅ | ʨ w e n <s> ₅₅ </s> |
+| BAI-1009 | Enqi | wind | ʦwɛ₂₄ | ʦ w ɛ <s> ₂₄ </s> |
+| BAI-1010 | Ega | wind | ʨyj₅₅ | ʨ y j <s> ₅₅ </s> |
+| BAI-1011 | Gongxing | worm | ʣwa₁₂ | ʣ w a <s> ₁₂ </s> |
+| BAI-1012 | Jinman | worm | ʨu₂₁ | ʨ u <s> ₂₁ </s> |
+| BAI-1013 | Mazhelong | worm | ʣõ₂₁ | ʣ õ <s> ₂₁ </s> |
+| BAI-1014 | Dashi | worm | t͡ʂo₂₁ | t͡ʂ o <s> ₂₁ </s> |
+| BAI-1015 | Zhoucheng | worm | ʦɤ₂₁ | ʦ ɤ <s> ₂₁ </s> |
+| BAI-1016 | Jinxing | worm | ʦɤ₂₁ | ʦ ɤ <s> ₂₁ </s> |
+| BAI-1017 | Tuolo | worm | ʐɤ₃₅ | ʐ ɤ <s> ₃₅ </s> |
+| BAI-1018 | Enqi | worm | ʨo₂₁ | ʨ o <s> ₂₁ </s> |
+| BAI-1019 | Ega | worm | ʨu₂₁ | ʨ u <s> ₂₁ </s> |
+| BAI-1020 | Gongxing | year | swa₂₄ | s w a <s> ₂₄ </s> |
+| BAI-1021 | Jinman | year | swa₅₅ | s w a <s> ₅₅ </s> |
+| BAI-1022 | Mazhelong | year | swa₄₄ | s w a <s> ₄₄ </s> |
+| BAI-1023 | Dashi | year | sʰwa₄₄ | sʰ w a <s> ₄₄ </s> |
+| BAI-1024 | Zhoucheng | year | swa₄₄ | s w a <s> ₄₄ </s> |
+| BAI-1025 | Jinxing | year | swɑ₄₄ | s w ɑ <s> ₄₄ </s> |
+| BAI-1026 | Tuolo | year | swɔ₄₂ | s w ɔ <s> ₄₂ </s> |
+| BAI-1027 | Enqi | year | swa₅₅ | s w a <s> ₅₅ </s> |
+| BAI-1028 | Ega | year | swa₄₄ | s w a <s> ₄₄ </s> |
+| GER-27 | Dutch | belly | bœyk | b <s> œy </s> k |
+| GER-36 | Icelandic | big | stouːr | s t <s> ouː </s> r |
+| GER-66 | Icelandic | blood | plouːθ | p l <s> ouː </s> θ |
+| GER-73 | Icelandic | bone | peiːn | p <s> eiː </s> n |
+| GER-123 | Icelandic | die (V) | teiːja | t <s> eiː </s> j a |
+| GER-137 | Icelandic | drink (V) | trɛʰka | t r <s> ɛʰ </s> k a |
+| GER-148 | English | ear | ɪər | <s> ɪə </s> r |
+| GER-149 | Danish | ear | øːʌ | <s> øːʌ </s> |
+| GER-151 | Icelandic | ear | eiːra | <s> eiː </s> r a |
+| GER-179 | Icelandic | eye | øyːɣa | <s> øyː </s> ɣ a |
+| GER-196 | German | fire | fɔyər | f <s> ɔyə </s> r |
+| GER-197 | English | fire | faɪər | f <s> aɪə </s> r |
+| GER-215 | Icelandic | fly (V) | fljuːa | f l j <s> uːa </s> |
+| GER-222 | Icelandic | foot | fouːtʏr | f <s> ouː </s> t ʏ r |
+| GER-243 | Icelandic | good | kouːðʏr | k <s> ouː </s> ð ʏ r |
+| GER-254 | English | hair | hɛər | h <s> ɛə </s> r |
+| GER-257 | Icelandic | hair | hauːr | h <s> auː </s> r |
+| GER-269 | Danish | head | hoːəð | h <s> oːə </s> ð |
+| GER-275 | English | hear (V) | hɪər | h <s> ɪə </s> r |
+| GER-276 | Danish | hear (V) | høːʌ | h <s> øːʌ </s> |
+| GER-278 | Icelandic | hear (V) | heiːra | h <s> eiː </s> r a |
+| GER-314 | Icelandic | knee | kʰniɛː | kʰ n <s> iɛː </s> |
+| GER-337 | Icelandic | leaf | løyːv | l <s> øyː </s> v |
+| GER-365 | Dutch | louse | lœys | l <s> œy </s> s |
+| GER-398 | Icelandic | moon | mauːnɪ | m <s> auː </s> n ɪ |
+| GER-429 | German | new | nɔy | n <s> ɔy </s> |
+| GER-440 | Icelandic | night | nouʰt | n <s> ouʰ </s> t |
+| GER-454 | Icelandic | not | ɛʰcɪ | <s> ɛʰ </s> c ɪ |
+| GER-482 | Icelandic | red | røyːðʏr | r <s> øyː </s> ð ʏ r |
+| GER-495 | Icelandic | root | rouːt | r <s> ouː </s> t |
+| GER-501 | Icelandic | round | kʰriŋlouʰtʏr | kʰ r i ŋ l <s> ouʰ </s> t ʏ r |
+| GER-513 | Icelandic | say (V) | seiːja | s <s> eiː </s> j a |
+| GER-516 | German | see (V) | zeːən | z <s> eːə </s> n |
+| GER-520 | Icelandic | see (V) | sjauː | s j <s> auː </s> |
+| GER-527 | Icelandic | seed | fraiː | f r <s> aiː </s> |
+| GER-546 | Dutch | skin | hœyt | h <s> œy </s> t |
+| GER-561 | English | small | lɪtḷ | l ɪ t <s> ḷ </s> |
+| GER-564 | Icelandic | small | smauːr | s m <s> auː </s> r |
+| GER-569 | Icelandic | smoke | reiːkʏr | r <s> eiː </s> k ʏ r |
+| GER-572 | German | stand (V) | ʃteːən | ʃ t <s> eːə </s> n |
+| GER-597 | Icelandic | sun | souːl | s <s> ouː </s> l |
+| GER-614 | Icelandic | tail | skɔʰt | s k <s> ɔʰ </s> t |
+| GER-623 | Icelandic | that | sauː | s <s> auː </s> |
+| GER-668 | German | walk (V) | ɡeːən | ɡ <s> eːə </s> n |
+| GER-686 | Icelandic | water | vaʰtn̥ | v <s> aʰ </s> t n̥ |
+| GER-750 | German | near | naːə | n <s> aːə </s> |
+| GER-751 | English | near | nɪər | n <s> ɪə </s> r |
+| GER-754 | Icelandic | near | nauː | n <s> auː </s> |
+| GER-770 | Icelandic | short | stʏʰtʏr | s t <s> ʏʰ </s> t ʏ r |
+| GER-809 | English | year | jɪər | j <s> ɪə </s> r |
+| GER-812 | Icelandic | year | auːr | <s> auː </s> r |
+| IDS-378 | English | the uncle | ʌŋkḷ | ʌ ŋ k <s> ḷ </s> |
+| IDS-463 | English | the animal | ænɪmḷ | æ n ɪ m <s> ḷ </s> |
+| IDS-472 | English | the stable or stall | steɪbḷ | s t e ɪ b <s> ḷ </s> |
+| IDS-477 | English | the cattle | kætḷ | k æ t <s> ḷ </s> |
+| IDS-578 | English | the eagle | iːɡḷ | iː ɡ <s> ḷ </s> |
+| IDS-916 | English | the ankle | æŋkḷ | æ ŋ k <s> ḷ </s> |
+| IDS-942 | English | the navel | neɪvḷ | n e ɪ v <s> ḷ </s> |
+| IDS-1264 | English | the kettle | kɛtḷ | k ɛ t <s> ḷ </s> |
+| IDS-1450 | English | the spindle | spɪndḷ | s p ɪ n d <s> ḷ </s> |
+| IDS-1458 | English | the needle(1) | niːdḷ | n iː d <s> ḷ </s> |
+| IDS-1649 | English | the candle | kændḷ | k æ n d <s> ḷ </s> |
+| IDS-1737 | English | the shovel | ʃʌvḷ | ʃ ʌ v <s> ḷ </s> |
+| IDS-1870 | English | the nettle | nɛtḷ | n ɛ t <s> ḷ </s> |
+| IDS-2104 | English | the chisel | ʧɪzḷ | ʧ ɪ z <s> ḷ </s> |
+| IDS-2354 | English | the paddle | pædḷ | p æ d <s> ḷ </s> |
+| IDS-2626 | French | the top | sɔmmɛ | s ɔ <s> mm </s> ɛ |
+| IDS-2655 | English | the middle | mɪdḷ | m ɪ d <s> ḷ </s> |
+| IDS-2707 | English | small | lɪtḷ | l ɪ t <s> ḷ </s> |
+| IEL-44 | Czech | animal | zviːr̝ɛ | z v iː <s> r̝ </s> ɛ |
+| IEL-45 | Danish | animal | d̥yːʌ | d̥ <s> yːʌ </s> |
+| IEL-49 | German | animal | tiːɐ̯ | t <s> iːɐ̯ </s> |
+| IEL-50 | Greek_Mod | animal | zo̞o̞ | z <s> o̞o̞ </s> |
+| IEL-54 | Russian | animal | ʒɨvotnoe | ʒ ɨ v o t n <s> oe </s> |
+| IEL-82 | Oriya | ashes | bʱɔsmoɔ | bʱ ɔ s m <s> oɔ </s> |
+| IEL-83 | Oriya | ashes | paːũsɔ | p <s> aːũ </s> s ɔ |
+| IEL-106 | Czech | at | pr̝ɪ | p <s> r̝ </s> ɪ |
+| IEL-145 | Marathi | bad | wa͜iːʈ | w <s> a͜iː </s> ʈ |
+| IEL-175 | Oriya | bark | čheli | <s> č </s> h e l i |
+| IEL-194 | Greek_Mod | because | ðio̞ti | ð <s> io̞ </s> t i |
+| IEL-195 | Czech | belly | br̝ɪxo | b <s> r̝ </s> ɪ x o |
+| IEL-200 | Dutch_List | belly | bœyk | b <s> œy </s> k |
+| IEL-220 | Danish | big | sd̥ʰoɐ̯ | s d̥ʰ <s> oɐ̯ </s> |
+| IEL-263 | Czech | bite | koʊ̯sat | k <s> oʊ̯ </s> s a t |
+| IEL-305 | Armenian_Mod | blood | ɑɾɪ̯un | ɑ ɾ <s> ɪ̯u </s> n |
+| IEL-326 | Czech | blow | foʊ̯kat | f <s> oʊ̯ </s> k a t |
+| IEL-327 | German | blow | veːən | v <s> eːə </s> n |
+| IEL-337 | Dutch_List | blow | wayən | w <s> ayə </s> n |
+| IEL-392 | Greek_Mod | breathe | anapne̞o̞ | a n a p n <s> e̞o̞ </s> |
+| IEL-404 | Armenian_Mod | burn | ɑɪ̯ɾvɛl | <s> ɑɪ̯ </s> ɾ v ɛ l |
+| IEL-405 | Czech | burn | hor̝ɛt | h o <s> r̝ </s> ɛ t |
+| IEL-413 | Greek_Mod | burn | ce̞o̞ | c <s> e̞o̞ </s> |
+| IEL-450 | Portuguese_ST | child | kɾiɐ̃sɐ | k ɾ <s> iɐ̃ </s> s ɐ |
+| IEL-459 | French | cloud | nyaʒ | n <s> ya </s> ʒ |
+| IEL-482 | Greek_Mod | cold | krio̞s | k r <s> io̞ </s> s |
+| IEL-486 | Portuguese_ST | cold | fɾiu | f ɾ <s> iu </s> |
+| IEL-488 | Spanish | cold | fɾio | f ɾ <s> io </s> |
+| IEL-495 | Czech | come | pr̝ɪjiːt | p <s> r̝ </s> ɪ j iː t |
+| IEL-511 | Bihari | come | aeəb | <s> aeə </s> b |
+| IEL-535 | Czech | cut | r̝ɛzat | <s> r̝ </s> ɛ z a t |
+| IEL-540 | Danish | cut | sg̥ʰɛːʌ | s g̥ʰ <s> ɛːʌ </s> |
+| IEL-569 | Portuguese_ST | day | diɐ | d <s> iɐ </s> |
+| IEL-624 | Dutch_List | dirty | vœyl | v <s> œy </s> l |
+| IEL-655 | Portuguese_ST | dog | kɐ̃uː | k <s> ɐ̃uː </s> |
+| IEL-706 | Danish | dull | slø̞w | s l <s> ø̞ </s> w |
+| IEL-727 | Portuguese_ST | dust | puejɾɐ | p <s> ue </s> j ɾ ɐ |
+| IEL-730 | Danish | dust | sd̥ʰø̞w | s d̥ʰ <s> ø̞ </s> w |
+| IEL-747 | Swedish | ear | œ̞ːra | <s> œ̞ː </s> r a |
+| IEL-749 | Danish | ear | ø̞ːʌ | <s> ø̞ːʌ </s> |
+| IEL-751 | English | ear | ɪə | <s> ɪə </s> |
+| IEL-753 | German | ear | oːɐ̯ | <s> oːɐ̯ </s> |
+| IEL-766 | Breton_ST | earth | duːaʁ | d <s> uːa </s> ʁ |
+| IEL-768 | Danish | earth | joɐ̯ | j <s> oɐ̯ </s> |
+| IEL-772 | German | earth | eːɐ̯də | <s> eːɐ̯ </s> d ə |
+| IEL-780 | Oriya | earth | bʱũĩ | bʱ <s> ũĩ </s> |
+| IEL-804 | Bihari | eat | kʰaeəb | kʰ <s> aeə </s> b |
+| IEL-844 | Bihari | eye | aĩkʰ | <s> aĩ </s> kʰ |
+| IEL-860 | Portuguese_ST | fall | kɐiɾ | k <s> ɐi </s> ɾ |
+| IEL-862 | Spanish | fall | kaeɾ | k <s> ae </s> ɾ |
+| IEL-874 | Danish | far | fjɛɐ̯n | f j <s> ɛɐ̯ </s> n |
+| IEL-908 | Oriya | fat | čɔrbi | <s> č </s> ɔ r b i |
+| IEL-913 | Armenian_Mod | father | hɑɪ̯ɾ | h <s> ɑɪ̯ </s> ɾ |
+| IEL-937 | Danish | fear | fʁœ̝g̥d̥ʰə | f ʁ <s> œ̝ </s> g̥ d̥ʰ ə |
+| IEL-939 | English | fear | fɪə | f <s> ɪə </s> |
+| IEL-948 | Oriya | fear | bʱɔyɔ#kɔriba | bʱ <s> ɔyɔ </s> # k ɔ r i b a |
+| IEL-958 | Danish | feather | fjeɐ̯ | f j <s> eɐ̯ </s> |
+| IEL-968 | Breton_ST | feather | pluɛn | p l <s> uɛ </s> n |
+| IEL-969 | Bihari | feather | paĩkʰ | p <s> aĩ </s> kʰ |
+| IEL-989 | Portuguese_ST | few | poouku | p <s> oou </s> k u |
+| IEL-1008 | Oriya | fight | ǰuddʱɔ#kɔriba | ǰ u <s> dːʱ </s> ɔ # k ɔ r i b a |
+| IEL-1015 | Spanish | fight | peleaɾ | p e l <s> ea </s> ɾ |
+| IEL-1045 | English | fire | faɪə | f <s> aɪə </s> |
+| IEL-1047 | German | fire | fɔyɐ | f <s> ɔyɐ </s> |
+| IEL-1053 | Oriya | fire | nĩã | n <s> ĩã </s> |
+| IEL-1070 | Portuguese_ST | fish | pɐiʃɨ | p <s> ɐi </s> ʃ ɨ |
+| IEL-1102 | Greek_Mod | float | ple̞o̞ | p l <s> e̞o̞ </s> |
+| IEL-1110 | Bihari | float | cʰətəlaeəb | cʰ ə t ə l <s> aeə </s> b |
+| IEL-1114 | Czech | float | ploʊ̯t | p l <s> oʊ̯ </s> t |
+| IEL-1127 | Greek_Mod | flow | re̞o̞ | r <s> e̞o̞ </s> |
+| IEL-1149 | English | flower | flaʊə | f l <s> aʊə </s> |
+| IEL-1188 | Portuguese_ST | fog | nɨvuejɾu | n ɨ v <s> ue </s> j ɾ u |
+| IEL-1195 | Bihari | fog | dʱũin | dʱ <s> ũi </s> n |
+| IEL-1220 | Bihari | foot | pyaer | p <s> yae </s> r |
+| IEL-1222 | Urdu | foot | pɑuː | p <s> ɑuː </s> |
+| IEL-1225 | Czech | four | tʂtɪr̝ɪ | t ʂ t ɪ <s> r̝ </s> ɪ |
+| IEL-1226 | German | four | fiːɐ̯ | f <s> iːɐ̯ </s> |
+| IEL-1231 | Danish | four | fiːʌ | f <s> iːʌ </s> |
+| IEL-1244 | Czech | freeze | zamr̩znoʊ̯t | z a m r̩ z n <s> oʊ̯ </s> t |
+| IEL-1302 | Breton_ST | give | rɛĩ | r <s> ɛĩ </s> |
+| IEL-1335 | Bihari | good | barhĩyã | b a r h <s> ĩyã </s> |
+| IEL-1365 | Danish | green | g̥ʁɶ̝n | g̥ ʁ <s> ɶ̝ </s> n |
+| IEL-1375 | Bihari | green | həriyər | h ə r <s> iyə </s> r |
+| IEL-1380 | Czech | guts | vɲɪtr̝noscɪ | v ɲ ɪ t <s> r̝ </s> n o s c ɪ |
+| IEL-1404 | German | hair | haːɐ̯ | h <s> aːɐ̯ </s> |
+| IEL-1411 | English | hair | hɛə | h <s> ɛə </s> |
+| IEL-1437 | Portuguese_ST | hand | mɐ̃u | m <s> ɐ̃u </s> |
+| IEL-1444 | Urdu | he | woʰ | w <s> oʰ </s> |
+| IEL-1447 | German | he | eːɐ̯ | <s> eːɐ̯ </s> |
+| IEL-1470 | Danish | head | hoːəð | h <s> oːə </s> ð |
+| IEL-1488 | Danish | hear | hoːʌ | h <s> oːʌ </s> |
+| IEL-1490 | English | hear | hɪə | h <s> ɪə </s> |
+| IEL-1493 | Greek_Mod | hear | akuo̞ | a k <s> uo̞ </s> |
+| IEL-1511 | Danish | heart | jɛɐ̯d̥ʰə | j <s> ɛɐ̯ </s> d̥ʰ ə |
+| IEL-1523 | Oriya | heart | hrudɔyɔ | h r u d <s> ɔyɔ </s> |
+| IEL-1527 | German | heavy | ʃveːɐ̯ | ʃ v <s> eːɐ̯ </s> |
+| IEL-1548 | German | here | hiːɐ̯ | h <s> iːɐ̯ </s> |
+| IEL-1551 | Danish | here | hɛɐ̯ | h <s> ɛɐ̯ </s> |
+| IEL-1553 | English | here | hɪə | h <s> ɪə </s> |
+| IEL-1561 | Czech | hit | ʊdɛr̝ɪt | ʊ d ɛ <s> r̝ </s> ɪ t |
+| IEL-1565 | Breton_ST | hit | skɛĩ | s k <s> ɛĩ </s> |
+| IEL-1573 | Spanish | hit | ɡolpeaɾ | ɡ o l p <s> ea </s> ɾ |
+| IEL-1611 | Danish | horn | hoɐ̯n | h <s> oɐ̯ </s> n |
+| IEL-1620 | Armenian_Mod | horn | jɛʁʤɪ̯uɾ | j ɛ ʁ ʤ <s> ɪ̯u </s> ɾ |
+| IEL-1651 | Breton_ST | hunt | ʃaseal | ʃ a s <s> ea </s> l |
+| IEL-1697 | Italian | I | io | <s> io </s> |
+| IEL-1714 | Armenian_Mod | ice | sɑruɪ̯ʦʰ | s ɑ r <s> uɪ̯ </s> ʦʰ |
+| IEL-1876 | Catalan | laugh | riuwɾə | r <s> iu </s> w ɾ ə |
+| IEL-1952 | Bihari | leg | pyaer | p <s> yae </s> r |
+| IEL-1970 | Oriya | lie | kɔreiu | k ɔ r <s> eiu </s> |
+| IEL-1996 | Oriya | live | jiɔnta | j <s> iɔ </s> n t a |
+| IEL-2002 | Armenian_Mod | liver | lɪ̯ɑrtʰ | l <s> ɪ̯ɑ </s> r tʰ |
+| IEL-2025 | Czech | long | dloʊ̯ɦiː | d l <s> oʊ̯ </s> ɦ iː |
+| IEL-2059 | Portuguese_ST | louse | pioʎu | p <s> io </s> ʎ u |
+| IEL-2119 | Greek_Mod | meat | kre̞as | k r <s> e̞a </s> s |
+| IEL-2120 | Marathi | meat | mãũs | m <s> ãũ </s> s |
+| IEL-2126 | Danish | meat | kø̞ð | k <s> ø̞ </s> ð |
+| IEL-2128 | Bihari | meat | mã̄s | m <s> ã̄ </s> s |
+| IEL-2145 | Armenian_Mod | mother | maɪ̯ɾ | m <s> aɪ̯ </s> ɾ |
+| IEL-2152 | Danish | mother | moɐ̯ | m <s> oɐ̯ </s> |
+| IEL-2157 | Marathi | mother | aiː | <s> aiː </s> |
+| IEL-2159 | Portuguese_ST | mother | mɐ̃i | m <s> ɐ̃i </s> |
+| IEL-2172 | Danish | mountain | b̥jɛɐ̯w | b̥ j <s> ɛɐ̯ </s> w |
+| IEL-2186 | Urdu | mouth | mʊ̃ʰ | m <s> ʊ̃ʰ </s> |
+| IEL-2248 | Portuguese_ST | narrow | ɨʃtɾɐitu | ɨ ʃ t ɾ <s> ɐi </s> t u |
+| IEL-2252 | German | near | naːə | n <s> aːə </s> |
+| IEL-2256 | Danish | near | nɛɐ̯ | n <s> ɛɐ̯ </s> |
+| IEL-2258 | English | near | nɪə | n <s> ɪə </s> |
+| IEL-2297 | German | new | nɔy | n <s> ɔy </s> |
+| IEL-2371 | Portuguese_ST | not | nɐ̃uː | n <s> ɐ̃uː </s> |
+| IEL-2388 | Greek_Mod | old | pale̞o̞s | p a l <s> e̞o̞ </s> s |
+| IEL-2433 | Portuguese_ST | other | ooutɾu | <s> oou </s> t ɾ u |
+| IEL-2438 | Oriya | other | ɔnyanyɔ | ɔ n <s> ya </s> n <s> yɔ </s> |
+| IEL-2440 | Armenian_Mod | other | ɑɪ̯l | <s> ɑɪ̯ </s> l |
+| IEL-2449 | Danish | person | b̥ʰæɐ̯son | b̥ʰ <s> æɐ̯ </s> s o n |
+| IEL-2455 | Bihari | person | byekti | b <s> ye </s> k t i |
+| IEL-2458 | Oriya | person | byɔkti | b <s> yɔ </s> k t i |
+| IEL-2485 | Czech | pull | taːɦnoʊ̯t | t aː ɦ n <s> oʊ̯ </s> t |
+| IEL-2487 | German | pull | t͜siːən | t͜s <s> iːə </s> n |
+| IEL-2521 | Dutch_List | push | sχœyvən | s χ <s> œy </s> v ə n |
+| IEL-2542 | Marathi | rain | pauːs | p <s> auː </s> s |
+| IEL-2629 | Czech | river | r̝ɛka | <s> r̝ </s> ɛ k a |
+| IEL-2642 | Portuguese_ST | river | ʀiu | ʀ <s> iu </s> |
+| IEL-2644 | Spanish | river | rio | r <s> io </s> |
+| IEL-2677 | Czech | root | kor̝ɛn | k o <s> r̝ </s> ɛ n |
+| IEL-2690 | Portuguese_ST | root | ɾɐiʃ | ɾ <s> ɐi </s> ʃ |
+| IEL-2695 | Oriya | root | siɔ | s <s> iɔ </s> |
+| IEL-2734 | Oriya | rotten | pɔča | p ɔ <s> č </s> a |
+| IEL-2755 | Czech | round | okroʊ̯ɦliː | o k r <s> oʊ̯ </s> ɦ l iː |
+| IEL-2757 | Czech | rub | tr̝iːt | t <s> r̝ </s> iː t |
+| IEL-2773 | Bihari | rub | tel#ləgaeəb | t e l # l ə g <s> aeə </s> b |
+| IEL-2822 | Czech | say | r̝iːkat | <s> r̝ </s> iː k a t |
+| IEL-2858 | Bihari | scratch | culculaeəb | c u l c u l <s> aeə </s> b |
+| IEL-2867 | Czech | sea | mor̝ɛ | m o <s> r̝ </s> ɛ |
+| IEL-2887 | German | sea | meːɐ̯ | m <s> eːɐ̯ </s> |
+| IEL-2888 | German | sea | oːt͜seaːn | oː t͜s <s> eaː </s> n |
+| IEL-2894 | German | see | zeːən | z <s> eːə </s> n |
+| IEL-2927 | Bihari | seed | biya | b <s> iya </s> |
+| IEL-2933 | German | sew | nɛːən | n <s> ɛːə </s> n |
+| IEL-3013 | Bihari | sing | gaeəb | g <s> aeə </s> b |
+| IEL-3049 | Dutch_List | skin | hœyt | h <s> œy </s> t |
+| IEL-3054 | Oriya | skin | čhalɔ | <s> č </s> h a l ɔ |
+| IEL-3112 | Breton_ST | small | biːãn | b <s> iːã </s> n |
+| IEL-3133 | Dutch_List | smell | rœykən | r <s> œy </s> k ə n |
+| IEL-3142 | Bihari | smell | gəndʱ#aeəb | g ə n dʱ # <s> aeə </s> b |
+| IEL-3165 | Bihari | smoke | dʱũa | dʱ <s> ũa </s> |
+| IEL-3166 | Oriya | smoke | dʱũã | dʱ <s> ũã </s> |
+| IEL-3191 | Marathi | smooth | mə͜uː | m <s> ə͜uː </s> |
+| IEL-3200 | Breton_ST | snake | naɛr | n <s> aɛ </s> r |
+| IEL-3214 | Armenian_Mod | snow | ʣɪ̯un | ʣ <s> ɪ̯u </s> n |
+| IEL-3246 | Bihari | some | kayo | k <s> ayo </s> |
+| IEL-3254 | German | spit | ʃpeiən | ʃ p <s> eiə </s> n |
+| IEL-3285 | Oriya | split | čiriba | <s> č </s> i r i b a |
+| IEL-3318 | German | stab | ɛɐ̯ʃtɛçn̩ | <s> ɛɐ̯ </s> ʃ t ɛ ç n̩ |
+| IEL-3332 | Czech | stab | piːxnoʊ̯t | p iː x n <s> oʊ̯ </s> t |
+| IEL-3339 | German | stand | ʃteːən | ʃ t <s> eːə </s> n |
+| IEL-3351 | Bihari | stand | ʈʰarh#haeəb | ʈʰ a r h # h <s> aeə </s> b |
+| IEL-3364 | Danish | star | sd̥ʰjæɐ̯nə | s d̥ʰ j <s> æɐ̯ </s> n ə |
+| IEL-3393 | Armenian_Mod | stick | pʰɑɪ̯t | pʰ <s> ɑɪ̯ </s> t |
+| IEL-3395 | Portuguese_ST | stick | bɐʃtɐ̃uː | b ɐ ʃ t <s> ɐ̃uː </s> |
+| IEL-3413 | Urdu | stone | pət̪ʰːəɾ | p ə <s> t̪ʰː </s> ə ɾ |
+| IEL-3416 | Oriya | stone | pɔtʰɔrɔo | p ɔ tʰ ɔ r <s> ɔo </s> |
+| IEL-3422 | Czech | straight | pr̝iːmiː | p <s> r̝ </s> iː m iː |
+| IEL-3426 | Danish | straight | liːə | l <s> iːə </s> |
+| IEL-3449 | Danish | suck | suːə | s <s> uːə </s> |
+| IEL-3450 | Dutch_List | suck | zœyɣən | z <s> œy </s> ɣ ə n |
+| IEL-3460 | Oriya | suck | čusiba | <s> č </s> u s i b a |
+| IEL-3482 | Oriya | sun | surjyɔ | s u r j <s> yɔ </s> |
+| IEL-3486 | Czech | swell | opʊxnoʊ̯t | o p ʊ x n <s> oʊ̯ </s> t |
+| IEL-3546 | Urdu | that | woʰ | w <s> oʰ </s> |
+| IEL-3547 | Armenian_Mod | that | ɑɪ̯n | <s> ɑɪ̯ </s> n |
+| IEL-3565 | Armenian_Mod | there | ɑɪ̯ntɛʁ | <s> ɑɪ̯ </s> n t ɛ ʁ |
+| IEL-3575 | Danish | there | dɛɐ̯ | d <s> ɛɐ̯ </s> |
+| IEL-3576 | English | there | ðɛə | ð <s> ɛə </s> |
+| IEL-3581 | Portuguese_ST | there | ɐi | <s> ɐi </s> |
+| IEL-3583 | Urdu | they | woʰ | w <s> oʰ </s> |
+| IEL-3673 | Urdu | this | jeʰ | j <s> eʰ </s> |
+| IEL-3674 | Armenian_Mod | this | ɑɪ̯s | <s> ɑɪ̯ </s> s |
+| IEL-3710 | Urdu | three | t̝in | <s> t̝ </s> i n |
+| IEL-3714 | Czech | three | tr̝ɪ | t <s> r̝ </s> ɪ |
+| IEL-3790 | Portuguese_ST | tongue | lĩguɐ | l ĩ g <s> uɐ </s> |
+| IEL-3793 | Bihari | tongue | jiu | j <s> iu </s> |
+| IEL-3839 | Breton_ST | turn | trɛĩ | t r <s> ɛĩ </s> |
+| IEL-3863 | Italian | two | due | d <s> ue </s> |
+| IEL-3868 | Greek_Mod | two | ðio̞ | ð <s> io̞ </s> |
+| IEL-3894 | Bihari | vomit | kəyə#kərəb | k <s> əyə </s> # k ə r ə b |
+| IEL-3906 | German | walk | geːən | g <s> eːə </s> n |
+| IEL-3923 | Bihari | walk | jaeəb | j <s> aeə </s> b |
+| IEL-3927 | Armenian_Mod | walk | kʰɑɪ̯lɛl | kʰ <s> ɑɪ̯ </s> l ɛ l |
+| IEL-3982 | Marathi | water | oaɳiː | <s> oa </s> ɳ iː |
+| IEL-3995 | German | we | viːɐ̯ | v <s> iːɐ̯ </s> |
+| IEL-4048 | Oriya | what | kɔɔɳɔ | k <s> ɔɔ </s> ɳ ɔ |
+| IEL-4064 | Portuguese_ST | when | kuɐ̃ðu | k <s> uɐ̃ </s> ð u |
+| IEL-4067 | Bihari | when | kəhiya | k ə h <s> iya </s> |
+| IEL-4078 | English | where | wɛə | w <s> ɛə </s> |
+| IEL-4087 | Oriya | where | kẽũʈʰiki | k <s> ẽũ </s> ʈʰ i k i |
+| IEL-4115 | German | who | veːɐ̯ | v <s> eːɐ̯ </s> |
+| IEL-4131 | Armenian_Mod | wide | lɑɪ̯n | l <s> ɑɪ̯ </s> n |
+| IEL-4203 | Czech | wing | kr̝ɪːdlo | k <s> r̝ </s> ɪː d l o |
+| IEL-4219 | Bihari | wing | paĩkʰ | p <s> aĩ </s> kʰ |
+| IEL-4230 | Danish | wipe | d̥ʰɶɐ̯ʌ | d̥ʰ <s> ɶɐ̯ʌ </s> |
+| IEL-4241 | Oriya | wipe | počhi | p o <s> č </s> h i |
+| IEL-4277 | Marathi | woman | ba͜iː | b <s> a͜iː </s> |
+| IEL-4318 | Danish | worm | oɐ̯m | <s> oɐ̯ </s> m |
+| IEL-4340 | German | year | jaːɐ̯ | j <s> aːɐ̯ </s> |
+| IEL-4348 | English | year | jɪə | j <s> ɪə </s> |
+| IEL-4371 | Bihari | yellow | piyər | p <s> iyə </s> r |
+| IEL-4378 | German | you | iːɐ̯ | <s> iːɐ̯ </s> |
+| JAP-10 | Kagoshima | I | oiː | <s> oiː </s> |
+| JAP-19 | Oki | thou | omae | o m <s> ae </s> |
+| JAP-20 | Kagoshima | thou | waiː | w <s> aiː </s> |
+| JAP-40 | Kagoshima | this | koiː | k <s> oiː </s> |
+| JAP-50 | Kagoshima | that | aiː | <s> aiː </s> |
+| JAP-60 | Kagoshima | who | daiː | d <s> aiː </s> |
+| JAP-70 | Kagoshima | what | naiː | n <s> aiː </s> |
+| JAP-89 | Oki | all | ɴːna | <s> ɴː </s> n a |
+| JAP-112 | Tōkyō | two | hutaʦːu | h u t a <s> ʦː </s> u |
+| JAP-132 | Tōkyō | small | ʨiʨːai | ʨ i <s> ʨː </s> ai |
+| JAP-176 | Shuri | person | ʦːu | <s> ʦː </s> u |
+| JAP-189 | Oki | fish | eo | <s> eo </s> |
+| JAP-190 | Kagoshima | fish | iːo | <s> iːo </s> |
+| JAP-200 | Kagoshima | bird | toiː | t <s> oiː </s> |
+| JAP-565 | Shuri | see | ɴːzuɴ | <s> ɴː </s> z u ɴ |
+| JAP-585 | Shuri | know | siʦːoːɴ | s i <s> ʦː </s> oː ɴ |
+| JAP-588 | Oki | know | siʨːoru | s i <s> ʨː </s> o r u |
+| JAP-599 | Kagoshima | sleep | neimuʨːoi | n ei m u <s> ʨː </s> oi |
+| JAP-645 | Shuri | walk | ʔaʦːuɴ | ʔ a <s> ʦː </s> u ɴ |
+| JAP-679 | Kagoshima | sit | suwaiːʨo | s u w <s> aiː </s> ʨ o |
+| JAP-682 | Amami | stand | θaʨːuri | θ a <s> ʨː </s> u r i |
+| JAP-685 | Shuri | stand | taʦːoːn | t a <s> ʦː </s> oː n |
+| JAP-688 | Oki | stand | taʨːoru | t a <s> ʨː </s> o r u |
+| JAP-689 | Kagoshima | stand | taʨːo | t a <s> ʨː </s> o |
+| JAP-708 | Oki | say | eo | <s> eo </s> |
+| JAP-709 | Kagoshima | say | juiu | j <s> uiu </s> |
+| JAP-831 | Tōkyō | burn | moeru | m <s> oe </s> r u |
+| JAP-833 | Kyōto | burn | moeru | m <s> oe </s> r u |
+| JAP-836 | Kōchi | burn | moeru | m <s> oe </s> r u |
+| JAP-837 | Sado | burn | moeru | m <s> oe </s> r u |
+| JAP-838 | Oki | burn | moeru | m <s> oe </s> r u |
+| JAP-962 | Amami | good | iʨːari | i <s> ʨː </s> a r i |
+| JAP-989 | Kagoshima | dry | kaeta | k <s> ae </s> t a |
+| JAP-991 | Tōkyō | name | namae | n a m <s> ae </s> |
+| JAP-1008 | Oki | ye | omaera | o m <s> ae </s> r a |
+| JAP-1015 | Shuri | he | ʔanuʦːu | ʔ a n u <s> ʦː </s> u |
+| JAP-1019 | Kagoshima | he | aiː | <s> aiː </s> |
+| JAP-1028 | Oki | they | aera | <s> ae </s> r a |
+| JAP-1029 | Kagoshima | they | aiːdoɴ | <s> aiː </s> d o ɴ |
+| JAP-1091 | Tōkyō | three | miʦːu | m i <s> ʦː </s> u |
+| JAP-1093 | Kyōto | three | miʦːu | m i <s> ʦː </s> u |
+| JAP-1094 | Hachijō | three | miʦːu | m i <s> ʦː </s> u |
+| JAP-1097 | Sado | three | miʦːu | m i <s> ʦː </s> u |
+| JAP-1098 | Oki | three | miʦːu | m i <s> ʦː </s> u |
+| JAP-1101 | Tōkyō | four | joʦːu | j o <s> ʦː </s> u |
+| JAP-1103 | Kyōto | four | joʦːu | j o <s> ʦː </s> u |
+| JAP-1104 | Hachijō | four | joʦːu | j o <s> ʦː </s> u |
+| JAP-1107 | Sado | four | joʦːu | j o <s> ʦː </s> u |
+| JAP-1108 | Oki | four | joʦːu | j o <s> ʦː </s> u |
+| JAP-1149 | Kagoshima | day | hiːi | h <s> iːi </s> |
+| JAP-1159 | Kagoshima | fog | kiːi | k <s> iːi </s> |
+| JAP-1198 | Kagoshima | lake | mizuiuɴ | m i z <s> uiu </s> ɴ |
+| JAP-1312 | Hachijō | navel | heʦːogo | h e <s> ʦː </s> o g o |
+| JAP-1430 | Kyōto | father | otoʨːaɴ | o t o <s> ʨː </s> a ɴ |
+| JAP-1435 | Oki | father | teʦːaɴ | t e <s> ʦː </s> a ɴ |
+| JAP-1436 | Kagoshima | father | otoʦːaɴ | o t o <s> ʦː </s> a ɴ |
+| JAP-1473 | Kagoshima | ice | koːi | k <s> oːi </s> |
+| JAP-1542 | Tōkyō | far | toːi | t <s> oːi </s> |
+| JAP-1547 | Kōchi | far | toːi | t <s> oːi </s> |
+| JAP-1550 | Kagoshima | far | toie | t <s> oie </s> |
+| JAP-1611 | Miyako | sharp | ʧːi | <s> ʧː </s> i |
+| JAP-1646 | Shuri | bad | kuʦːoːru | k u <s> ʦː </s> oː r u |
+| JAP-1673 | Amami | correct (right) | iʨːari | i <s> ʨː </s> a r i |
+| JAP-1680 | Kagoshima | correct (right) | naiːʨo | n <s> aiː </s> ʨ o |
+| JAP-1774 | Hachijō | stick (stab) | ʦuʨːasu | ʦ u <s> ʨː </s> a s u |
+| JAP-1830 | Tōkyō | think | kaɴŋaeru | k a ɴ ŋ <s> ae </s> r u |
+| JAP-1832 | Kyōto | think | kaɴŋaeru | k a ɴ ŋ <s> ae </s> r u |
+| JAP-1835 | Kōchi | think | kaɴgaeru | k a ɴ g <s> ae </s> r u |
+| JAP-1836 | Sado | think | kaɴgaeru | k a ɴ g <s> ae </s> r u |
+| JAP-1837 | Oki | think | kaɴŋaeru | k a ɴ ŋ <s> ae </s> r u |
+| JAP-1851 | Kyōto | smell | nioŋu | n <s> io </s> ŋ u |
+| JAP-1877 | Kagoshima | suck | suiu | s <s> uiu </s> |
+| JAP-1918 | Tōkyō | down | sitae | s i t <s> ae </s> |
+| JAP-1920 | Kyōto | down | sitae | s i t <s> ae </s> |
+| JAP-1928 | Tōkyō | up | ueː | <s> ueː </s> |
+| JAP-1930 | Kyōto | up | ueː | <s> ueː </s> |
+| JAP-1933 | Kōchi | up | ue | <s> ue </s> |
+| JAP-1934 | Sado | up | ue | <s> ue </s> |
+| JAP-1936 | Kagoshima | up | ueː | <s> ueː </s> |
+| JAP-1966 | Kagoshima | alive (live) | ikiːʨːo | i k iː <s> ʨː </s> o |
+| KSL-6 | Navajo | all | ʔayɬʦo | ʔ <s> ay </s> ɬ ʦ o |
+| KSL-41 | Navajo | back | nayɣah | n <s> ay </s> ɣ a h |
+| KSL-48 | Navajo | bad | jayʔayʃõõ | j <s> ay </s> ʔ <s> ay </s> ʃ õ õ |
+| KSL-55 | Navajo | bark | kayʃtˀoːʒ | k <s> ay </s> ʃ tˀ oː ʒ |
+| KSL-62 | Navajo | because | haːlay | h aː l <s> ay </s> |
+| KSL-76 | Navajo | big | ʔayniɬʦo | ʔ <s> ay </s> n i ɬ ʦ o |
+| KSL-90 | Navajo | bite | ʔahayɬhaːʃ | ʔ a h <s> ay </s> ɬ h aː ʃ |
+| KSL-132 | Navajo | breathe | ńdiʣih | <s> ń </s> d i ʣ i h |
+| KSL-188 | Navajo | cut | ʔahaygeːʃ | ʔ a h <s> ay </s> g eː ʃ |
+| KSL-363 | Navajo | flower | ʧˀilaytah | ʧˀ i l <s> ay </s> t a h |
+| KSL-377 | Navajo | fog | ayhi | <s> ay </s> h i |
+| KSL-433 | Navajo | good | jayʔaytˀeːh | j <s> ay </s> ʔ <s> ay </s> tˀ eː h |
+| KSL-524 | Navajo | hit | ńdiːɬʦˀin | <s> ń </s> d iː ɬ ʦˀ i n |
+| KSL-713 | Navajo | mother | may | m <s> ay </s> |
+| KSL-741 | Navajo | narrow | ʔayɬʦˀoːzi | ʔ <s> ay </s> ɬ ʦˀ oː z i |
+| KSL-748 | Navajo | near | ʔayhayni | ʔ <s> ay </s> h <s> ay </s> n i |
+| KSL-797 | Navajo | old | sayni | s <s> ay </s> n i |
+| KSL-804 | Navajo | one | ɬayʔiː | ɬ <s> ay </s> ʔ iː |
+| KSL-860 | Navajo | right | niʃnay | n i ʃ n <s> ay </s> |
+| KSL-902 | Navajo | salt | ʔayʃĩːh | ʔ <s> ay </s> ʃ ĩː h |
+| KSL-951 | Navajo | sew | nayiɬkad | n <s> ay </s> i ɬ k a d |
+| KSL-965 | Navajo | short | jayʒi | j <s> ay </s> ʒ i |
+| KSL-979 | Navajo | sit | siday | s i d <s> ay </s> |
+| KSL-986 | Navajo | skin | kaygi | k <s> ay </s> g i |
+| KSL-993 | Navajo | sky | yay | y <s> ay </s> |
+| KSL-1007 | Navajo | small | jayʒi | j <s> ay </s> ʒ i |
+| KSL-1059 | English | split | splɪit | s p l <s> ɪi </s> t |
+| KSL-1063 | Navajo | split | ʔaɬtayniːgeːʃ | ʔ a ɬ t <s> ay </s> n iː g eː ʃ |
+| KSL-1077 | Navajo | stab | biɣayʔniɬgeːd | b i ɣ <s> ay </s> ʔ n i ɬ g eː d |
+| KSL-1126 | Navajo | sun | ʃay | ʃ <s> ay </s> |
+| KSL-1182 | Navajo | thin | ʔayɬtˀã́ʔi | ʔ <s> ay </s> ɬ tˀ ã́ ʔ i |
+| KSL-1266 | Navajo | vomit | naykwi | n <s> ay </s> kw i |
+| KSL-1301 | Navajo | what | haʔaytˀiːʃ | h a ʔ <s> ay </s> tˀ iː ʃ |
+| KSL-1315 | Navajo | who | hayi | h <s> ay </s> i |
+| KSL-1350 | Navajo | wipe | naynitˀod | n <s> ay </s> n i tˀ o d |
+| KSL-1364 | Navajo | woman | ʔasʣayni | ʔ a s ʣ <s> ay </s> n i |
+| OUG-146 | Pelymka Mansi | blood | wyɨr | w <s> yɨ </s> r |
+| OUG-182 | Middle Lozva Mansi | breast | maɨl | m <s> aɨ </s> l |
+| OUG-183 | Lower Lozva Mansi | breast | maɨl | m <s> aɨ </s> l |
+| OUG-207 | Tavda Mansi | burn (V) | tæitæl | t <s> æi </s> t æ l |
+| OUG-312 | Middle Lozva Mansi | dog | oɔmp | <s> oɔ </s> m p |
+| OUG-314 | Pelymka Mansi | dog | oɔmp | <s> oɔ </s> m p |
+| OUG-315 | Konda Mansi | dog | oɔmp | <s> oɔ </s> m p |
+| OUG-404 | North Mansi | eat (V) | teːɨɣ | t <s> eːɨ </s> ɣ |
+| OUG-407 | Pelymka Mansi | eat (V) | teːi | t <s> eːi </s> |
+| OUG-408 | Konda Mansi | eat (V) | təɨɣ | t <s> əɨ </s> ɣ |
+| OUG-503 | Middle Lozva Mansi | fire | toɔt | t <s> oɔ </s> t |
+| OUG-505 | Pelymka Mansi | fire | oɔrəsʲ | <s> oɔ </s> r ə sʲ |
+| OUG-547 | Pelymka Mansi | fly (V) | təɨli | t <s> əɨ </s> l i |
+| OUG-548 | Konda Mansi | fly (V) | təɨli | t <s> əɨ </s> l i |
+| OUG-563 | Tavda Mansi | foot | laəl | l <s> aə </s> l |
+| OUG-577 | Middle Lozva Mansi | full | taɨl | t <s> aɨ </s> l |
+| OUG-578 | Lower Lozva Mansi | full | taɨl | t <s> aɨ </s> l |
+| OUG-600 | Konda Mansi | give (V) | məɨɣ | m <s> əɨ </s> ɣ |
+| OUG-635 | Middle Lozva Mansi | green | ɲoɔrpum | ɲ <s> oɔ </s> r p u m |
+| OUG-637 | Konda Mansi | green | ɲoɔrpom | ɲ <s> oɔ </s> r p o m |
+| OUG-670 | Middle Lozva Mansi | hand | koɔt | k <s> oɔ </s> t |
+| OUG-672 | Pelymka Mansi | hand | koɔt | k <s> oɔ </s> t |
+| OUG-673 | Konda Mansi | hand | koæt | k <s> oæ </s> t |
+| OUG-969 | Middle Lozva Mansi | many | ʃoɔw | ʃ <s> oɔ </s> w |
+| OUG-990 | Tavda Mansi | meat | ɲəːul | ɲ <s> əːu </s> l |
+| OUG-1007 | Middle Lozva Mansi | moon | joɔŋqəp | j <s> oɔ </s> ŋ q ə p |
+| OUG-1166 | Konda Mansi | not | oɔt | <s> oɔ </s> t |
+| OUG-1237 | Pelymka Mansi | red | wyɨr | w <s> yɨ </s> r |
+| OUG-1272 | Middle Lozva Mansi | root | toɔr | t <s> oɔ </s> r |
+| OUG-1275 | Konda Mansi | root | toɔr | t <s> oɔ </s> r |
+| OUG-1344 | Middle Lozva Mansi | say | loɔɣi | l <s> oɔ </s> ɣ i |
+| OUG-1345 | Lower Lozva Mansi | say | lɔːi | l <s> ɔːi </s> |
+| OUG-1364 | Konda Mansi | seed | toɔjəm | t <s> oɔ </s> j ə m |
+| OUG-1561 | North Mansi | tail | leːɨɣ | l <s> eːɨ </s> ɣ |
+| OUG-1614 | Lower Lozva Mansi | thou | næi | n <s> æi </s> |
+| OUG-1879 | Konda Mansi | heavy | toɔrwitʲiŋ | t <s> oɔ </s> r w i tʲ i ŋ |
+| OUG-2036 | Middle Lozva Mansi | year | toɔl | t <s> oɔ </s> l |
+| OUG-2039 | Konda Mansi | year | toɔl | t <s> oɔ </s> l |
+| PAN-556 | Mailu | to breathe | mau#ːuriuri | m a u <s> #ː </s> u r i u r i |
+| PAN-2263 | Nias | mosquito | di#ːmbõhõ | d i <s> #ː </s> m b õ h õ |
+| PAN-2779 | Nias | thunder | rita#ːmbanua | r i t a <s> #ː </s> m b a n u a |
+| PAN-3562 | Nias | when? | he#ːmega | h e <s> #ː </s> m e g a |
+| PAN-3777 | Mailu | where? | abo#ːde | a b o <s> #ː </s> d e |
+| PAN-4068 | Mailu | how? | abo#ːua | a b o <s> #ː </s> u a |
+| PAN-4070 | Nias | how? | he#ːwisa | h e <s> #ː </s> w i s a |
+| PIE-51 | Greek | bark | flios | f l <s> io </s> s |
+| PIE-60 | Italian | bark | korteʧʧa | k o r t e <s> ʧː </s> a |
+| PIE-63 | Dutch | belly | bœyk | b <s> œy </s> k |
+| PIE-101 | Icelandic | big | stouːr | s t <s> ouː </s> r |
+| PIE-124 | Italian | bird | uʧːɛllo | u <s> ʧː </s> ɛ lː o |
+| PIE-125 | Hindi | bird | ʧɪɽɪyaː | ʧ ɪ ɽ <s> ɪyaː </s> |
+| PIE-175 | Armenian | blood | ɑɾɪun | ɑ ɾ <s> ɪu </s> n |
+| PIE-182 | Icelandic | blood | plouːθ | p l <s> ouː </s> θ |
+| PIE-200 | Icelandic | bone | peiːn | p <s> eiː </s> n |
+| PIE-235 | Greek | burn (V) | ceo | c <s> eo </s> |
+| PIE-244 | Italian | burn (V) | bruʧːare | b r u <s> ʧː </s> a r e |
+| PIE-343 | Icelandic | die (V) | teiːja | t <s> eiː </s> j a |
+| PIE-365 | Portuguese | dog | kɐ̃uː | k <s> ɐ̃uː </s> |
+| PIE-382 | Icelandic | drink (V) | trɛʰka | t r <s> ɛʰ </s> k a |
+| PIE-409 | English | ear | ɪər | <s> ɪə </s> r |
+| PIE-412 | Danish | ear | øːʌ | <s> øːʌ </s> |
+| PIE-422 | Icelandic | ear | eiːra | <s> eiː </s> r a |
+| PIE-498 | Icelandic | eye | øyːɣa | <s> øyː </s> ɣ a |
+| PIE-545 | English | fire | faɪər | f <s> aɪə </s> r |
+| PIE-546 | German | fire | fɔyər | f <s> ɔyə </s> r |
+| PIE-597 | Icelandic | fly (V) | fljuːa | f l j <s> uːa </s> |
+| PIE-616 | Icelandic | foot | fouːtʏr | f <s> ouː </s> t ʏ r |
+| PIE-673 | Icelandic | good | kouːðʏr | k <s> ouː </s> ð ʏ r |
+| PIE-698 | English | hair | hɛər | h <s> ɛə </s> r |
+| PIE-711 | Icelandic | hair | hauːr | h <s> auː </s> r |
+| PIE-739 | Danish | head | hoːəð | h <s> oːə </s> ð |
+| PIE-755 | English | hear (V) | hɪər | h <s> ɪə </s> r |
+| PIE-758 | Danish | hear (V) | høːʌ | h <s> øːʌ </s> |
+| PIE-768 | Icelandic | hear (V) | heiːra | h <s> eiː </s> r a |
+| PIE-826 | Italian | I | io | <s> io </s> |
+| PIE-845 | Italian | kill (V) | uʧːidere | u <s> ʧː </s> i d e r e |
+| PIE-864 | Icelandic | knee | kʰniɛː | kʰ n <s> iɛː </s> |
+| PIE-867 | Portuguese | knee | ʒuɐʎu | ʒ <s> uɐ </s> ʎ u |
+| PIE-921 | Icelandic | leaf | løyːv | l <s> øyː </s> v |
+| PIE-948 | Armenian | liver | lɪɑrtʰ | l <s> ɪɑ </s> r tʰ |
+| PIE-978 | Dutch | louse | lœys | l <s> œy </s> s |
+| PIE-1043 | Greek | meat | kreas | k r <s> ea </s> s |
+| PIE-1074 | Portuguese | moon | luɐ | l <s> uɐ </s> |
+| PIE-1075 | Icelandic | moon | mauːnɪ | m <s> auː </s> n ɪ |
+| PIE-1158 | German | new | nɔy | n <s> ɔy </s> |
+| PIE-1162 | Greek | new | neos | n <s> eo </s> s |
+| PIE-1189 | Icelandic | night | nouʰt | n <s> ouʰ </s> t |
+| PIE-1226 | Icelandic | not | ɛʰcɪ | <s> ɛʰ </s> c ɪ |
+| PIE-1284 | Italian | rain (V) | pjɔʤːa | p j ɔ <s> ʤː </s> a |
+| PIE-1300 | Icelandic | red | røyːðʏr | r <s> øyː </s> ð ʏ r |
+| PIE-1324 | Portuguese | road | viɐ | v <s> iɐ </s> |
+| PIE-1339 | Icelandic | root | rouːt | r <s> ouː </s> t |
+| PIE-1358 | Icelandic | round | kʰriŋlouʰtʏr | kʰ r i ŋ l <s> ouʰ </s> t ʏ r |
+| PIE-1396 | Icelandic | say (V) | seiːja | s <s> eiː </s> j a |
+| PIE-1404 | German | see (V) | zeːən | z <s> eːə </s> n |
+| PIE-1410 | Romanian | see (V) | vedea | v e d <s> ea </s> |
+| PIE-1416 | Icelandic | see (V) | sjauː | s j <s> auː </s> |
+| PIE-1435 | Icelandic | seed | fraiː | f r <s> aiː </s> |
+| PIE-1449 | Romanian | sit (V) | ʃedea | ʃ e d <s> ea </s> |
+| PIE-1478 | Dutch | skin | hœyt | h <s> œy </s> t |
+| PIE-1521 | English | small | lɪtḷ | l ɪ t <s> ḷ </s> |
+| PIE-1523 | Icelandic | small | smauːr | s m <s> auː </s> r |
+| PIE-1538 | Icelandic | smoke | reiːkʏr | r <s> eiː </s> k ʏ r |
+| PIE-1540 | Hindi | smoke | dʱʊãː | dʱ <s> ʊãː </s> |
+| PIE-1545 | German | stand (V) | ʃteːən | ʃ t <s> eːə </s> n |
+| PIE-1567 | Romanian | star | stea | s t <s> ea </s> |
+| PIE-1611 | Icelandic | sun | souːl | s <s> ouː </s> l |
+| PIE-1654 | Icelandic | tail | skɔʰt | s k <s> ɔʰ </s> t |
+| PIE-1664 | Armenian | that | ɑɪ̯n | <s> ɑɪ̯ </s> n |
+| PIE-1676 | Icelandic | that | sauː | s <s> auː </s> |
+| PIE-1790 | Italian | two | due | d <s> ue </s> |
+| PIE-1796 | German | walk (V) | ɡeːən | ɡ <s> eːə </s> n |
+| PIE-1848 | Icelandic | water | vaʰtn̥ | v <s> aʰ </s> t n̥ |
+| PIE-1914 | Greek | who | opios | o p <s> io </s> s |
+| PIE-2007 | English | near | nɪər | n <s> ɪə </s> r |
+| PIE-2008 | German | near | naːə | n <s> aːə </s> |
+| PIE-2020 | Icelandic | near | nauː | n <s> auː </s> |
+| PIE-2059 | Icelandic | short | stʏʰtʏr | s t <s> ʏʰ </s> t ʏ r |
+| PIE-2156 | English | year | jɪər | j <s> ɪə </s> r |
+| PIE-2169 | Icelandic | year | auːr | <s> auː </s> r |
+| ROM-19 | Italian | bark | korteʧʧa | k o r t e <s> ʧː </s> a |
+| ROM-36 | Italian | bird | uʧːɛllo | u <s> ʧː </s> ɛ lː o |
+| ROM-73 | Italian | burn (V) | bruʧːare | b r u <s> ʧː </s> a r e |
+| ROM-102 | Portuguese | dog | kɐ̃uː | k <s> ɐ̃uː </s> |
+| ROM-229 | Italian | i | io | <s> io </s> |
+| ROM-234 | Italian | kill (V) | uʧːidere | u <s> ʧː </s> i d e r e |
+| ROM-237 | Portuguese | knee | ʒuɐʎu | ʒ <s> uɐ </s> ʎ u |
+| ROM-291 | Portuguese | moon | luɐ | l <s> uɐ </s> |
+| ROM-348 | Italian | rain (V) | pjɔʤːa | p j ɔ <s> ʤː </s> a |
+| ROM-359 | Portuguese | road | viɐ | v <s> iɐ </s> |
+| ROM-384 | Romanian | see (V) | vedea | v e d <s> ea </s> |
+| ROM-395 | Romanian | sit (V) | ʃedea | ʃ e d <s> ea </s> |
+| ROM-423 | Romanian | star | stea | s t <s> ea </s> |
+| ROM-481 | Italian | two | due | d <s> ue </s> |
+| SIN-1552 | Guixian | he | a²¹ɔ³²¹ | a ²¹ ɔ <s> ³²¹ </s> |
 
 (1576 rows)
 

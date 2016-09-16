@@ -11,10 +11,10 @@ Available online at https://dx.doi.org/10.1590/1981-81222015000200004
 
 - **Varieties:** 23
 - **Concepts:** 100
-- **Lexemes:** 4,424
+- **Lexemes:** 2,212
 - **Synonymy:** 1.04
 - **Cognacy:** 1,807 cognates in 307 cognate sets
 - **Invalid lexemes:** 0
-- **Tokens:** 20,054
+- **Tokens:** 10,027
 - **Segments:** 120 (12 LingPy errors, 46 CLPA errors, 25 CLPA modified)
 - **Inventory size (avg):** 37.17
