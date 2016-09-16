@@ -1,6 +1,15 @@
+# Lexibank
+
+Lexibank is a public database and repository for lexical data from the languages of the world. The database will be used to refine cognate judgments, infer language relationships, construct language phylogenies, test hypotheses about deep language history, investigate factors that affect the mode and tempo of language evolution, model sound change, and facilitate quantitative comparisons with other types of linguistic data. 
+
+The initial focus of Lexibank will be on compiling basic or core vocabulary, but ultimately the database will be expanded to include a full range of lexicon from all the world’s languages. For more information on Lexibank and how to use or submit data please see the project website
+
+Please contact us for more information.
+
 # lexibank-data
 
-lexibank-data is a repository intended to bring together (wordlist-like) data and tools in the field of Historical Linguistics.
+lexibank-data is the main data repository for the lexibank project. The lexibank webapp is [here](https://github.com/glottobank/lexibank).
+
 It aims at providing unified access to data published in various places and ways via
 - a unified dataset manipulation workflow,
 - a common data format based on [CLDF](cldf.md),

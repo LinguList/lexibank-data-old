@@ -12,7 +12,7 @@ requires = [
     'nameparser',
     'purl',
     'pyglottolog',
-    'pyconcepticon',
+    'pyconcepticon>=0.3.1',
     'lingpy',
     'pyclpa>=0.3.1',
     'tabulate',

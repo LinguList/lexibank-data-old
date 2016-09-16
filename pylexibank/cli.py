@@ -16,9 +16,11 @@ import os
 import sys
 from time import time
 from textwrap import wrap
+from collections import defaultdict, Counter
 
 from clldutils.clilib import ArgumentParser, ParserError
 from clldutils.path import Path
+from clldutils.dsv import UnicodeWriter
 from clldutils import jsonlib
 from clldutils import licenses
 from pyglottolog.api import Glottolog
@@ -119,6 +121,8 @@ def with_dataset(args, func):
     else:
         for d in sorted(
                 data_path(repos=args.lexibank_repos).iterdir(), key=lambda d: d.name):
+            #if d.name == 'abvd':
+            #    continue
             if d.is_dir() and d.name != '_template' \
                     and d.joinpath('metadata.json').exists():
                 s = time()
@@ -128,6 +132,7 @@ def with_dataset(args, func):
                 except NotImplementedError:
                     print('--not implemented--')
                 print('... done %s [%.1f secs]' % (d.name, time() - s))
+                #break
 
 
 def report(args):
@@ -137,6 +142,106 @@ def report(args):
         ds.report(**kw)
 
     with_dataset(args, _report)
+
+
+#  - need set of all concepts per variety.
+#  - loop over concept lists
+#  - if concept ids is subset of variety, count that language.
+def coverage(args):
+    from pyconcepticon.api import Concepticon
+
+    varieties = defaultdict(set)
+
+    def _word_length(ds, **kw):
+        ds.coverage(varieties)
+
+    with_dataset(args, _word_length)
+
+    print('varieties', len(varieties))
+
+    c = Concepticon(args.concepticon_repos)
+    res = Counter()
+
+    for cl in c.conceptlists():
+        try:
+            concepts = set(int(cc['CONCEPTICON_ID']) for cc in c.conceptlist(cl['ID']) if cc['CONCEPTICON_ID'])
+        except:
+            continue
+        for varid, meanings in varieties.items():
+            if concepts.issubset(meanings):
+                res.update([cl['ID']])
+
+    t = MarkdownTable('concept list', 'variety count')
+    for p in res.most_common():
+        t.append(list(p))
+    print(t.render(fmt='simple', condensed=False))
+
+"""
+(u'Brinton-1891-21', 409)
+(u'Wilson-1969-35', 399)
+(u'Yakhontov-1991-35', 373)
+(u'Gabelentz-1861-24', 368)
+(u'Meillet-1921-16', 311)
+(u'McMahon-2005-23', 292)
+(u'Galucio-2015-28', 153)
+(u'Kassian-2015-50', 130)
+(u'Grollemund-2015-100', 129)
+(u'McMahon-2005-30', 115)
+(u'Luqman-2010-65', 112)
+(u'Pagel-2013-23', 111)
+(u'Lee-2011-211', 105)
+(u'Blust-2008-210', 105)
+(u'Wichmann-2010-40', 99)
+(u'Holman-2008-40', 99)
+(u'Ardila-2007-40', 89)
+(u'Starostin-2010-50', 41)
+(u'Heggarty-2005-30a', 37)
+(u'List-2016-57', 23)
+"""
+
+
+def word_length(args):
+    from pyconcepticon.api import Concepticon
+
+    c = Concepticon(args.concepticon_repos)
+    res = defaultdict(lambda: defaultdict(list))
+
+    def _word_length(ds, **kw):
+        ds.word_length(res)
+
+    with_dataset(args, _word_length)
+    concepts = {r['ID']: r for r in c.conceptsets()}
+    languoids = {l.id: l for l in Glottolog(args.glottolog_repos).languoids()}
+
+    with UnicodeWriter('wordlength.csv') as writer:
+        writer.writerow([
+            'Concepticon_ID',
+            'Gloss',
+            'Semanticfield',
+            'Category',
+            'Glottocode',
+            'Variety',
+            'Family',
+            'Form',
+            'Length'])
+        for pid, langs in res.items():
+            if len(langs) >= 500:
+                for (lang, variety), forms in langs.items():
+                    if lang in languoids:
+                        lengths = [len(f.split()) for f in forms]
+                        lang = languoids[lang]
+                        family = lang.lineage[0][0] if lang.lineage else ''
+                        c = concepts[pid]
+                        writer.writerow([
+                            pid,
+                            c['GLOSS'],
+                            c['SEMANTICFIELD'],
+                            c['ONTOLOGICAL_CATEGORY'],
+                            lang.id,
+                            variety,
+                            family,
+                            forms[0],
+                            sum(lengths)/len(lengths)])
 
 
 def cldf(args):
@@ -317,7 +422,7 @@ def check(args):
 
 
 def main():
-    parser = ArgumentParser('pylexibank', readme, download, cldf, ls, report)
+    parser = ArgumentParser('pylexibank', readme, download, cldf, ls, report, word_length, coverage)
     parser.add_argument(
         '--lexibank-repos',
         help="path to lexibank data repository",
