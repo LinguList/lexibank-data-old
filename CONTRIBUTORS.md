@@ -9,6 +9,7 @@ Wang Feng | bcd | data in digital form (spreadsheet) | | 2013
 Kitchen, Andrew | kitchensemitic | data in digital form (spreadsheet) | | 2015
 Cysouw, Michael and Prokić, Jelana and Bouda, Peter | [huberandreed](datasets/huberandreed/README.md) | digitization of data | ERC starting grant 240816 (‘Quantitative modelling of historical-comparative linguistics’) | 2016
 Joshua Birchall | chapacuran | | 2016-09-2016 
+Sujaritlak Deepadung | palaung | data in digital form (spreadsheet) | | 2016-09-19 
 ... | ... | ... | ... | ...
 
 
