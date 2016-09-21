@@ -11,6 +11,7 @@ Cysouw, Michael and Prokić, Jelana and Bouda, Peter | [huberandreed](datasets/h
 Joshua Birchall | chapacuran | | 2016-09-2016 
 Sujaritlak Deepadung | palaung | data in digital form (spreadsheet) | | 2016-09-19 
 Søren Wichmann | mixezoquean | data in digital form (spreadsheet) | | 2016-09-21
+Sattherthwaite-Phillips, Damian | satterthwaitephillips | data in digital form (spreadsheet) | | 2015
 ... | ... | ... | ... | ...
 
 
