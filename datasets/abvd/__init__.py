@@ -8,7 +8,7 @@ from pylexibank.providers import abvd
 from pylexibank.dataset import Unmapped
 from tqdm import tqdm
 
-from author_notes_map import MAP
+from .author_notes_map import MAP
 
 SECTION = 'austronesian'
 TRANSCRIPTION_REPORT_CFG = dict(column='Segments', segmentized=True)
