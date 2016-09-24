@@ -30,6 +30,7 @@ def cldf(dataset, concepticon, **kw):
     visited_sources = []
     cognates = []
     idx = 1
+    cogidx = 1
     with UnicodeReader(dataset.raw.joinpath('Wordlist.txt'), delimiter='\t') as reader1,\
             UnicodeReader(dataset.raw.joinpath('Cognates.txt'), delimiter='\t') as reader2, \
             CldfDataset((
@@ -52,11 +53,16 @@ def cldf(dataset, concepticon, **kw):
                 concept = re.split(' [-—–]', row1[0])[0]
                 cid = concept_map[concept]
                 for (abb, word, cog) in zip(header, row1[1:], row2[1:]):
-                    if word.strip():
+                    if word.strip() and word.strip() != '?':
                         segments = lp.sequence.sound_classes.clean_string(word,
                                 splitters='~')[0]
                         gcid, name, source = abb2lang[abb]
-                        cogid = slug(concept)+'-'+cog
+                        if cog.strip().lower() != 'na':
+                            cogid = slug(concept)+'-'+cog
+                        else:
+                            cogid = str(cogidx)
+                            cogidx += 1
+                        
                         
                         if source not in visited_sources:
                             ds.sources.add(getEvoBibAsSource(source))
