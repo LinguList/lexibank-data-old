@@ -7,7 +7,7 @@ from pycldf.sources import Source
 
 from pylexibank.dataset import CldfDataset, Unmapped
 
-from util import get_all, BASE_URL
+from .util import get_all, BASE_URL
 
 
 def download(dataset):
