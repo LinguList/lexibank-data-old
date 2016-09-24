@@ -1,4 +1,4 @@
-# Lexicostatistical Dataset of Mixe-Zoquean
+# Lexicostatistical Dataset of Palaung Dialects
 
 Cite the source dataset as
 
