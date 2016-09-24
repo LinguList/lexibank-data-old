@@ -71,6 +71,7 @@ def cldf(dataset, concepticon, **kw):
                 'Cognacy'
                 ), dataset) as ds:
         ds.sources.add(getEvoBibAsSource('Deepadung2015'))
+        ds.metadata['coordinates'] = coords
         data = list(reader)
         header = data[2][2:]
         for i, row in enumerate(data[5:]):
