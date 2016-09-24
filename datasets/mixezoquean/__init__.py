@@ -53,9 +53,8 @@ def cldf(dataset, concepticon, **kw):
                 cid = concept_map[concept]
                 for (abb, word, cog) in zip(header, row1[1:], row2[1:]):
                     if word.strip():
-                        print(abb, concept, repr(word))
                         segments = lp.sequence.sound_classes.clean_string(word,
-                                splitters='~')
+                                splitters='~')[0]
                         gcid, name, source = abb2lang[abb]
                         cogid = slug(concept)+'-'+cog
                         
@@ -66,9 +65,8 @@ def cldf(dataset, concepticon, **kw):
                         ds.add_row([
                             idx, gcid, name, '', cid, concept, word, source, segments,
                             cogid])
-                        cognates += [['{0}-{1}'.format(PROVIDER, idx), ds.name,
+                        cognates += [[idx, ds.name,
                             word, cogid, '', 'expert', PROVIDER, '', '', '']]
                         idx += 1
-
-        dataset.cognates.extend(iter_alignments(ds, cognates,
-            method='progressive', prefix=PROVIDER + '-'))
+    dataset.cognates.extend(iter_alignments(ds, cognates,
+        method='progressive', ))
