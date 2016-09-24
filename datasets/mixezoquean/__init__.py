@@ -12,9 +12,28 @@ from pylexibank.util import download_and_unpack_zipfiles
 import lingpy as lp
 
 PROVIDER = 'Cysouw2006a'
-
 TRANSCRIPTION_REPORT_CFG = {'column': 'Segments', 'segmentized': True}
-
+CONVERSION = {
+        "š" : "ʃ",
+        "-" : "+",
+        "č" : "tʃ",
+        "ïï" : "ɨː",
+        "ï" : "ɨ",
+        "ii" : "iː",
+        "pp" : "pː",
+        "tsts" : "tsː",
+        "ææ" : "æː",
+        "υυ" : "ʋː",
+        "υ" : "ʋ",
+        "kk" : "kː",
+        "hs" : "h s",
+        "Y" : "j",
+        "y" : "j",
+        "ε" : "ɛ",
+        "ʔs" : "ʔ s"
+        
+        }
+PREPARSE = [("-", "+")]
 
 def download(dataset, **kw):
     pass
@@ -55,7 +74,8 @@ def cldf(dataset, concepticon, **kw):
                 for (abb, word, cog) in zip(header, row1[1:], row2[1:]):
                     if word.strip() and word.strip() != '?':
                         segments = lp.sequence.sound_classes.clean_string(word,
-                                splitters='~')[0]
+                                splitters='~,', rules=CONVERSION,
+                                preparse=PREPARSE, semi_diacritics="ʃs")[0]
                         gcid, name, source = abb2lang[abb]
                         if cog.strip().lower() != 'na':
                             cogid = slug(concept)+'-'+cog
