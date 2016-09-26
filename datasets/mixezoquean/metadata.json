@@ -1,0 +1,12 @@
+{
+    "@context": [
+        "http://www.w3.org/ns/csvw",
+        {
+            "@language": "en"
+        }
+    ],
+    "dc:title": "Lexicostatistical Dataset of Mixe-Zoquean",
+    "dc:bibliographicCitation": "Cysouw, Michael and Søren Wichmann and David Kamholz. 2006. A critique of the separation base method for genealogical subgrouping, with data from Mixe-Zoquean. Journal of Quantitative Linguistics 13. 225-26.",
+    "dc:license": "https://creativecommons.org/licenses/by-nc/4.0/",
+    "dc:conformsTo": "http://concepticon.clld.org/contributions/Cysouw-2006-110"
+}

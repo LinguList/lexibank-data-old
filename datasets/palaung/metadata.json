@@ -1,0 +1,12 @@
+{
+    "@context": [
+        "http://www.w3.org/ns/csvw",
+        {
+            "@language": "en"
+        }
+    ],
+    "dc:title": "Lexicostatistical Dataset of Palaung Dialects",
+    "dc:bibliographicCitation": "Deepadung, S.; Buakaw, S. & Rattanapitak, A. A lexical comparison of the Palaung dialects spoken in China, Myanmar, and Thailand Mon-Khmer Studies, 2015, 44, 19-38",
+    "dc:license": "https://creativecommons.org/licenses/by-nc/4.0/",
+    "dc:conformsTo": "http://concepticon.clld.org/contributions/Deepadung-2015-100"
+}
