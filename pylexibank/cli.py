@@ -330,7 +330,17 @@ def _readme(ds, **kw):
         lines.extend([
             'See also %s' % ds.md.get('dc:related'),
             ''])
-
+    
+    # add NOTES.md
+    if ds.dir.joinpath('NOTES.md').exists():
+        lines.extend([
+            '## Notes',
+            ''
+        ])
+        lines.extend(ds.dir.joinpath('NOTES.md').read_text().split("\n"))
+        lines.extend(['', ''])  # some blank lines
+    
+    
     report_by_cldfds = {}
     trlines = []
     rows = []
