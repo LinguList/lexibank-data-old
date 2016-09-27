@@ -40,3 +40,5 @@ Can be run once `report` has completed. Create a dataset's landing page,
 1. Datasets curated outside of `lexibank`: Such datasets are simply pulled into `lexibank` by running their `download` command. It is the maintainers responsibility that the processing chain stays intact when data is updated.
 2. Datasets curated in `raw` format in `lexibank`: Such datasets may have an established curation workflow tied to their original data format.
 3. Datasets curated in `lexibank` CLDF format: These datasets implement "NOOP" `download` and `cldf` commands.
+
+Any dataset specific comments (e.g. regarding language or concepticon mappings, of transcription decisions) should go into a file called `NOTES.md` in the dataset directory. This should be in markdown format, preferably as a set of bulletpoints (as it will be incorporated into the main `README.md` file.
