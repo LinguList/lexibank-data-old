@@ -1,0 +1,11 @@
+{
+    "@context": [
+        "http://www.w3.org/ns/csvw",
+        {
+            "@language": "en"
+        }
+    ],
+    "dc:title": "Basic words in language evolution",
+    "dc:bibliographicCitation": "Wang, F. and Wang, W. 2004. Basic words and language evolution. Language and Linguistics 5.3: 643-662.",
+    "dc:conformsTo": "http://concepticon.clld.org/contributions/Wang-2004-100a"
+}
