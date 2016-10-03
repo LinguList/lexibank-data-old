@@ -4,7 +4,7 @@ Lexibank is a public database and repository for lexical data from the languages
 
 The initial focus of Lexibank will be on compiling basic or core vocabulary, but ultimately the database will be expanded to include a full range of lexicon from all the world’s languages. For more information on Lexibank and how to use or submit data please see the project website
 
-Please contact us for more information.
+For more details please see [our public information slides](https://github.com/glottobank/lexibank-data/blob/master/docs/lexibank.pdf) or contact us.
 
 # lexibank-data
 
