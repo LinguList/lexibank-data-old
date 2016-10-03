@@ -87,7 +87,9 @@ class Dataset(object):
         lpath = self.dir.joinpath('languages.csv')
         if lpath.exists():
             for item in reader(lpath, dicts=True):
-                assert not item['GLOTTOCODE'] or GC_PATTERN.match(item['GLOTTOCODE'])
+                if item['GLOTTOCODE'] and not GC_PATTERN.match(item['GLOTTOCODE']):
+                    raise ValueError("Wrong glottocode for item {0}".format(
+                        item['GLOTTOCODE']))
                 self.languages.append(item)
         self.conceptlist = None
         url = self.md.get('dc:conformsTo')

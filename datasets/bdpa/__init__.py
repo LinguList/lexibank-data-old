@@ -23,8 +23,45 @@ languages = {
     "West Frisian (Grou)": "west2354"
 }
 TRANSCRIPTION_REPORT_CFG = dict(column='Segments', segmentized=True)
-
-
+CONVERSION = {
+        "ɔɪ" : "ɔɪ",
+        "ʊi" : "ʊɪ",
+        "ɒɪ" : "ɒɪ",
+        "ɔa" : "ɔ a",
+        "ɬ̥" : "ł̥",
+        "ʊu" : "ʊu",
+        "oɐ" : "o ɐ",
+        "æi" : "æi",
+        "æɪ" : "æɪ",
+        "ɒʊ" : "ɒʊ",
+        "ɔʏ" : "ɔʏ",
+        "ɔʰ" : "ɔʰ",
+        "ɛɐ" : "ɛ ɐ",
+        "ɛə" : "ɛ ə",
+        "ɪiə" : "ɪ j ə",
+        "ae" : "a e",
+        "aɑ" : "aɑ",
+        "kːʰ" : "kːʰ",
+        "õə̃" : "õ ə̃",
+        "øu" : "øu",
+        "œʏ" : "œʏ",
+        "ɒu" : "ɒu",
+        "ʏy" : "ʏy",
+        "aø" : "a ø",
+        "ea" : "e a",
+        "eɐ" : "e ɐ",
+        "iu" : "i u",
+        "iœ" : "i œ",
+        "iɐ" : "i ɐ",
+        "iɔ" : "i ɔ",
+        "iɪ" : "i ɪ",
+        "iʌ" : "i ʌ",
+        "oɔ" : "o ɔ",
+        "pːʰ" : "pʰː",
+        "yɔ" : "y ɔ",
+        "æø" : "æ ø",
+        "æʏ" : "æ ʏ"
+        }
 def download(dataset, **kw):
     download_and_unpack_zipfiles(
         URL,

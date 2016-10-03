@@ -10,6 +10,30 @@ import lingpy as lp
 
 
 TRANSCRIPTION_REPORT_CFG = dict(column='Segments', segmentized=True)
+PREPARSE = [("'", "ʼ"), ("j", "d͡ʒ"), ("y", "j"), ("-", "+"), ("'", "ˈ"), ('?', "ʔ"), 
+    ('//', '/'),('', ''), ('7', 's'), ('', '')]
+CONVERSION = {
+        "nn" : "nː",
+        "9" : "ʕ",
+        "7" : "ʔ",
+        "c" : "tʃ",
+        "ii" : "iː",
+        "bb" : "bː",
+        "oo" : "oː",
+        "dd" : "dː",
+        "ss" : "sː",
+        "kk" : "kː",
+        "ww" : "wː",
+        "uu" : "uː",
+        "tt" : "tː",
+        "ɔɔ" : "ɔː",
+        "éé" : "eː",
+        "gg" : "gː",
+        "pp" : "pː",
+        "ɛɛ" : "ɛː", "" : "ɔ",
+        "ʃʃ" : "ʃː", "ff" : "fː", "ll" : "lː", "rr" : "rː", "jj": "jː", 
+        "mm" :"mː", "zz" : "zː", 
+        }
 
 
 def download(dataset):
@@ -79,10 +103,9 @@ def cldf(dataset, concepticon, **kw):
             for i, col in enumerate(row[1:]):
                 lang = langs[i]
                 if col != '---':
-                    cleaned_string = clean_string(col, merge_vowels=True,
-                            preparse=[("'", "ˈ"), ('?', "ʔ"), ('//', '/'),
-                            ('', ''), ('7', 's'),
-                            ('', '')])[0]
+                    cleaned_string = clean_string(col, merge_vowels=False,
+                            preparse=PREPARSE, rules=CONVERSION,
+                            semi_diacritics='')[0]
                     ds.add_row([
                         'Kitchen2012-'+str(idx),
                         language_map[lang],
