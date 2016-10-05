@@ -14,6 +14,7 @@ from pycldf.dataset import Dataset as CldfDatasetBase
 from pycldf.dataset import MD_SUFFIX
 from pycldf.metadata import Metadata as CldfMetadataBase
 from tqdm import tqdm
+import bagit
 
 import pylexibank
 from pylexibank.util import with_sys_path, data_path, MarkdownTable
@@ -74,7 +75,7 @@ class Dataset(object):
         self.id = path.name
         self.log = logging.getLogger(pylexibank.__name__)
         self.dir = path
-        self.raw = self.dir.joinpath('raw')
+        self.raw = self.dir.joinpath('raw', 'data')
         if not self.raw.exists():
             self.raw.mkdir()
         self.cldf_dir = self.dir.joinpath('cldf')
@@ -156,10 +157,17 @@ class Dataset(object):
             getattr(self.commands, name)(self, *args, **kw)
 
     def cldf(self, **kw):
-        concepticon = Concepticon(kw.pop('concepticon_repos'))
-        if self.conceptlist:
-            self.conceptlist = concepticon.conceptlists[self.conceptlist]
-        self._run_command('cldf', concepticon, **kw)
+        try:
+            bag = bagit.Bag(self.raw.parent.as_posix())
+            if bag.is_valid():
+                concepticon = Concepticon(kw.pop('concepticon_repos'))
+                if self.conceptlist:
+                    self.conceptlist = concepticon.conceptlists[self.conceptlist]
+                self._run_command('cldf', concepticon, **kw)
+            else:
+                raise bagit.BagError('invalid raw data')
+        except bagit.BagError:
+            self.log.error('invalid raw data for dataset %s' % self.id)
 
     def word_length(self, res):
         for cldfds in self.iter_cldf_datasets():
