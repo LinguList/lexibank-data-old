@@ -32,9 +32,7 @@ def iterforms(s):
 
 def cldf(dataset, concepticon, **kw):
     concepticon = {
-        c['ENGLISH']: c['CONCEPTICON_ID']
-        for c in concepticon.conceptlist(dataset.conceptlist)}
-
+        c.english: c.concepticon_id for c in dataset.conceptlist.concepts.values()}
     language_map = {l['NAME']: l['GLOTTOCODE'] or None for l in dataset.languages}
 
     with UnicodeReader(dataset.raw.joinpath(FILENAME.replace('xls', 'Sheet1.csv'))) as r:
