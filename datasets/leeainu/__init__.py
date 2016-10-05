@@ -62,9 +62,9 @@ def read_csv(dataset):
 
 def cldf(dataset, concepticon, **kw):
     language_map = {l['NAME']: l['GLOTTOCODE'] or None for l in dataset.languages}
-    concept_map = {c['ENGLISH']: c['CONCEPTICON_ID']
-                   for c in concepticon.conceptlist(dataset.conceptlist)}
-    concept_map['year'] = '1226' # dunno why this is missing, it's 200 words...
+    concept_map = {
+        c.english: c.concepticon_id for c in dataset.conceptlist.concepts.values()}
+    concept_map['year'] = '1226'  # dunno why this is missing, it's 200 words...
     wordlists = list(read_csv(dataset))
     cogsets = defaultdict(lambda: defaultdict(list))
     for wl in wordlists:

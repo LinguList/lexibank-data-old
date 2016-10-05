@@ -26,8 +26,7 @@ def download(dataset):
 
 def cldf(dataset, concepticon, **kw):
     concepticon = {
-        c['ENGLISH']: c['CONCEPTICON_ID'] for c in
-        concepticon.conceptlist(dataset.conceptlist)}
+        c.english: c.concepticon_id for c in dataset.conceptlist.concepts.values()}
     concepticon['you (sing.)'] = concepticon['you (sing.) (thou)']
     concepticon['you (pl.)'] = concepticon['you (pl.) (ye)']
     concepticon['to itch/itchy'] = concepticon['to itch/to be itchy']

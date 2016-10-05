@@ -24,8 +24,8 @@ def download(dataset, **kw):
 def cldf(dataset, concepticon, **kw):
     wl = lp.Wordlist(dataset.dir.joinpath('raw', DSET).as_posix())
     gcode = {x['NAME']: x['GLOTTOCODE'] for x in dataset.languages}
-    ccode = {x['ENGLISH']: x['CONCEPTICON_ID'] for x in
-             concepticon.conceptlist(dataset.conceptlist)}
+    ccode = {x.english: x.concepticon_id for x in
+             dataset.conceptlist.concepts.values()}
     src = getEvoBibAsSource(SOURCE)
     src2 = getEvoBibAsSource('List2015d')
 

@@ -20,8 +20,8 @@ def download(dataset, **kw):
 
 def cldf(dataset, concepticon, **kw):
     concept_map = {
-        c['URL'].split('v=')[1]: c['CONCEPTICON_ID']
-        for c in concepticon.conceptlist(dataset.conceptlist)}
+        c.attributes['url'].split('v=')[1]: c.concepticon_id
+        for c in dataset.conceptlist.concepts.values()}
 
     l_map = {int(l['ID']): l['GLOTTOCODE'] for l in dataset.languages if l['GLOTTOCODE']}
     gl_map = dataset.glottocode_by_iso

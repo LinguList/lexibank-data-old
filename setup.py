@@ -12,11 +12,12 @@ requires = [
     'nameparser',
     'purl',
     'pyglottolog',
-    'pyconcepticon>=0.3.1',
+    'pyconcepticon>=0.4',
     'lingpy',
     'pyclpa>=0.3.1',
     'tabulate',
     'tqdm',
+    'bagit>=1.5.4',
 ]
 
 setup(

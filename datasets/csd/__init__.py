@@ -11,7 +11,7 @@ def download(dataset):
 
 
 def cldf(dataset, concepticon, **kw):
-    concept_map = {cs['GLOSS']: cs['ID'] for cs in concepticon.conceptsets()}
+    concept_map = {cs.gloss: cs.id for cs in concepticon.conceptsets.values()}
     for concept in dataset.concepts:
         concept_map[concept['GLOSS']] = concept['CONCEPTICON_ID']
     language_map = {l['ID']: l['GLOTTOCODE'] or None for l in dataset.languages}
