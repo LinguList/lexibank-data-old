@@ -28,9 +28,8 @@ def read_csv(dataset, name, offset):
 
 def cldf(dataset, concepticon, **kw):
     language_map = {l['NAME']: l['GLOTTOCODE'] or None for l in dataset.languages}
-    concept_map = {c['ENGLISH']: c['CONCEPTICON_ID']
-                   for c in concepticon.conceptlist(dataset.conceptlist)}
-
+    concept_map = {
+        c.english: c.concepticon_id for c in dataset.conceptlist.concepts.values()}
     wordsh, words = read_csv(dataset, 'supplementary.Sheet1.csv', 0)
     cognatesh, cognates = read_csv(dataset, 'Japonic_recovered.Sheet1.csv', 1)
 

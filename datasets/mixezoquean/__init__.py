@@ -2,49 +2,47 @@
 from __future__ import unicode_literals, print_function
 import re
 
-from pylexibank.dataset import CldfDataset, TranscriptionReport
+from pylexibank.dataset import CldfDataset
 from clldutils.misc import slug
-from clldutils.path import Path
 from clldutils.dsv import UnicodeReader
 
 from pylexibank.lingpy_util import getEvoBibAsSource, iter_alignments
-from pylexibank.util import download_and_unpack_zipfiles
 import lingpy as lp
 
 PROVIDER = 'Cysouw2006a'
 TRANSCRIPTION_REPORT_CFG = {'column': 'Segments', 'segmentized': True}
 CONVERSION = {
-        "š" : "ʃ",
-        "-" : "+",
-        "č" : "tʃ",
-        "ïï" : "ɨː",
-        "ï" : "ɨ",
-        "ii" : "iː",
-        "pp" : "pː",
-        "tsts" : "tsː",
-        "ææ" : "æː",
-        "υυ" : "ʋː",
-        "υ" : "ʋ",
-        "kk" : "kː",
-        "hs" : "h s",
-        "Y" : "j",
-        "y" : "j",
-        "ε" : "ɛ",
-        "ʔs" : "ʔ s"
-        
-        }
+        "š": "ʃ",
+        "-": "+",
+        "č": "tʃ",
+        "ïï": "ɨː",
+        "ï": "ɨ",
+        "ii": "iː",
+        "pp": "pː",
+        "tsts": "tsː",
+        "ææ": "æː",
+        "υυ": "ʋː",
+        "υ": "ʋ",
+        "kk": "kː",
+        "hs": "h s",
+        "Y": "j",
+        "y": "j",
+        "ε": "ɛ",
+        "ʔs": "ʔ s"
+}
 PREPARSE = [("-", "+")]
+
 
 def download(dataset, **kw):
     pass
 
+
 def cldf(dataset, concepticon, **kw):
-    
     abb2lang = dict([(l['ABBREVIATION'], (l['GLOTTOCODE'], l['NAME'],
         l['SOURCE'])) for l in
         dataset.languages])
-    concept_map = {c['ENGLISH']: c['CONCEPTICON_ID']
-                   for c in concepticon.conceptlist(dataset.conceptlist)}    
+    concept_map = {
+        c.english: c.concepticon_id for c in dataset.conceptlist.concepts.values()}
 
     visited_sources = []
     cognates = []

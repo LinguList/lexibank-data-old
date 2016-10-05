@@ -28,7 +28,7 @@ def cldf(dataset, concepticon, **kw):
             unmapped.languages.add((wl.language.id, wl.language.name, wl.language.iso))
         wordlists.append(wl)
 
-    concept_map = {cs['GLOSS'].lower(): cs['ID'] for cs in concepticon.conceptsets()}
+    concept_map = {cs.gloss.lower(): cs.id for cs in concepticon.conceptsets.values()}
     concept_map.update({c['GLOSS']: c['CONCEPTICON_ID'] or None for c in dataset.concepts})
 
     for wl in wordlists:

@@ -14,8 +14,8 @@ def download(dataset, **kw):
 
 def cldf(dataset, concepticon, **kw):
     concept_map = {
-        c['URL'].split('v=')[1]: c['CONCEPTICON_ID']
-        for c in concepticon.conceptlist(dataset.conceptlist)}
+        c.attributes['url'].split('v=')[1]: c.concepticon_id
+        for c in dataset.conceptlist.concepts.values()}
     for c in dataset.concepts:
         concept_map[c['ID']] = c['CONCEPTICON_ID'] or None
 

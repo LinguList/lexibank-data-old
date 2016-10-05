@@ -33,9 +33,9 @@ def cldf(dataset, concepticon, **kw):
         lids[name] = rest.pop(0)
 
     concepts = {
-        c['SPANISH'] + '_' + c['ENGLISH']:
-        (c['CONCEPTICON_ID'], c['ENGLISH'], c['SPANISH'])
-        for c in concepticon.conceptlist(dataset.conceptlist)}
+        c.attributes['spanish'] + '_' + c.english:
+        (c.concepticon_id, c.english, c.attributes['spanish'])
+        for c in dataset.conceptlist.concepts.values()}
 
     src = getSourceFromBibTex(SOURCE)
     citekey = list(src.entries.keys())[0]

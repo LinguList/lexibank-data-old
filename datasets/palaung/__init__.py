@@ -1,10 +1,8 @@
 # coding=utf-8
 from __future__ import unicode_literals, print_function
-import re
 
-from pylexibank.dataset import CldfDataset, TranscriptionReport
+from pylexibank.dataset import CldfDataset
 from clldutils.misc import slug
-from clldutils.path import Path
 from clldutils.dsv import UnicodeReader
 
 from pylexibank.lingpy_util import getEvoBibAsSource, iter_alignments
@@ -14,30 +12,31 @@ import lingpy as lp
 PROVIDER = 'Deepadung2015'
 TRANSCRIPTION_REPORT_CFG = {'column': 'Segments', 'segmentized': True}
 CONVERSION = {
-        "ә" : "ə",
-        "ă" : "ă",
-        "әː" : "əː",
-        "j̊" : "j̊",
-        "hh" : "h + h",
-        "+s" : "+ s",
-        "ә:" : "əː",
-        "kk" : "kː",
-        "nn" : "nː",
-        "pp" : "pː",
-        "ᶊ" : "ʂ",
-        "Ɂ" : "ʔ",
-        "?" : "ʔ"
+        "ә": "ə",
+        "ă": "ă",
+        "әː": "əː",
+        "j̊": "j̊",
+        "hh": "h + h",
+        "+s": "+ s",
+        "ә:": "əː",
+        "kk": "kː",
+        "nn": "nː",
+        "pp": "pː",
+        "ᶊ": "ʂ",
+        "Ɂ": "ʔ",
+        "?": "ʔ"
         }
 PREPARSE = [(" ", "+")]
-CORRECT = {"sәp," : "sәp"}
+CORRECT = {"sәp,": "sәp"}
+
 
 def download(dataset, **kw):
     xls2csv(dataset.raw.joinpath('100item-phylo.xlsx'))
 
+
 def cldf(dataset, concepticon, **kw):
-    
-    concept_map = {c['ENGLISH']: c['CONCEPTICON_ID']
-                   for c in concepticon.conceptlist(dataset.conceptlist)}
+    concept_map = {
+        c.english: c.concepticon_id for c in dataset.conceptlist.concepts.values()}
     glotto_map = {c['NAME']: c['GLOTTOCODE'] for c in dataset.languages}
 
     # retrieve coordinates

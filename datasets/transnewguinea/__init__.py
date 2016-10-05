@@ -48,8 +48,8 @@ def cldf(dataset, concepticon, **kw):
         'Swadesh-1950-215',
         'Swadesh-1955-215'
     ]:
-        for d in concepticon.conceptlist(conceptlist):
-            swadesh2concepticon.setdefault(d['ENGLISH'], d['CONCEPTICON_ID'])
+        for d in concepticon.conceptlists[conceptlist].concepts.values():
+            swadesh2concepticon.setdefault(d.english, d.concepticon_id)
 
     concept_map = {}
     for concept in swadesh_concepts.values():

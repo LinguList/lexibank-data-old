@@ -92,8 +92,8 @@ def parse(dataset):
 
 def cldf(dataset, concepticon, **kw):
     concepticon = {
-        c['NUMBER']: c['CONCEPTICON_ID']
-        for c in concepticon.conceptlist(dataset.conceptlist)}
+        c.number: c.concepticon_id
+        for c in dataset.conceptlist.concepts.values()}
     varieties, meanings, allforms, rels = parse(dataset)
 
     with CldfDataset((

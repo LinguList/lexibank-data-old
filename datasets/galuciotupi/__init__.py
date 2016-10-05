@@ -84,8 +84,8 @@ LANGUAGE_ID_FIXES = {
 
 def cldf(dataset, concepticon, **kw):
     concepticon = {
-        c['ENGLISH']: c['CONCEPTICON_ID']
-        for c in concepticon.conceptlist(dataset.conceptlist)}
+        x.english: x.concepticon_id for x in
+        dataset.conceptlist.concepts.values()}
     lmap = {l['ID']: l['GLOTTOCODE'] or None for l in dataset.languages}
     lmap_name = {l['ID']: l['NAME'] or None for l in dataset.languages}
 

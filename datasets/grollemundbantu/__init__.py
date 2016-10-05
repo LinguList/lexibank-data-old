@@ -66,8 +66,7 @@ def read_csv(dataset, type_):
 def cldf(dataset, concepticon, **kw):
     language_map = {l['NAME']: l['GLOTTOCODE'] or None for l in dataset.languages}
     concept_map = {
-        c['ENGLISH']: c['CONCEPTICON_ID']
-        for c in concepticon.conceptlist(dataset.conceptlist)}
+        x.english: x.concepticon_id for x in dataset.conceptlist.concepts.values()}
 
     data = OrderedDict()
 

@@ -156,7 +156,10 @@ class Dataset(object):
             getattr(self.commands, name)(self, *args, **kw)
 
     def cldf(self, **kw):
-        self._run_command('cldf', Concepticon(kw.pop('concepticon_repos')), **kw)
+        concepticon = Concepticon(kw.pop('concepticon_repos'))
+        if self.conceptlist:
+            self.conceptlist = concepticon.conceptlists[self.conceptlist]
+        self._run_command('cldf', concepticon, **kw)
 
     def word_length(self, res):
         for cldfds in self.iter_cldf_datasets():

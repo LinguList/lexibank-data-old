@@ -86,8 +86,8 @@ def valid_Value(row):
 
 def cldf(dataset, concepticon, **kw):
     concept_map = {
-        re.sub('^(\*|\$)', '', c['ENGLISH']): c['CONCEPTICON_ID']
-        for c in concepticon.conceptlist(dataset.conceptlist)}
+        re.sub('^(\*|\$)', '', c.english): c.concepticon_id
+        for c in dataset.conceptlist.concepts.values()}
     for c in dataset.concepts:
         concept_map[(c['ID'], c['GLOSS'])] = c['CONCEPTICON_ID'] or None
     language_map = {l['ID']: l['GLOTTOCODE'] or None for l in dataset.languages}

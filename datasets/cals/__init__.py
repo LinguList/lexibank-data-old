@@ -77,8 +77,8 @@ def read_csv(fname, data):
 
 def cldf(dataset, concepticon, **kw):
     gcode = {x['ID']: x['GLOTTOCODE'] for x in dataset.languages}
-    ccode = {x['ENGLISH']: x['CONCEPTICON_ID'] for x in
-             concepticon.conceptlist(dataset.conceptlist)}
+    ccode = {x.english: x.concepticon_id for x in
+             dataset.conceptlist.concepts.values()}
     data = defaultdict(dict)
     for fname in dataset.raw.glob('*.csv'):
         read_csv(fname, data)
