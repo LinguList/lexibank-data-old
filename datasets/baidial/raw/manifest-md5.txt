@@ -1,0 +1,1 @@
+db8607c6312857d86a4fbf6eb86f999a  data/Bai-Dialect-Survey.tsv
