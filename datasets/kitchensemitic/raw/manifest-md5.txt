@@ -1,0 +1,4 @@
+c2e8ec07263207feffd3efe1e57167c2  data/Semitic.Codings.Multistate.Sheet1.csv
+4c8770c3d674b86440a8dce7237451b4  data/Semitic.Codings.Multistate.xlsx
+c0096d237588a2ed6ec810fa1516ae65  data/Semitic.Wordlists.ActualWordlists.csv
+36f3a67212add9ed27bd9f26fbe2a56c  data/Semitic.Wordlists.xls

@@ -1,0 +1,1 @@
+026d9b6768dfb35eb5a4e041babf4964  data/galucio-tupi.txt

@@ -1,0 +1,2 @@
+84c83608bb6327fdb1bd4414af4af310  data/Cognates.txt
+ee5734a41d20c8348d0341c6e73e96cd  data/Wordlist.txt

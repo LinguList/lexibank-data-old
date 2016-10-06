@@ -1,0 +1,2 @@
+3af2f205e09a7034bdc23f3a2e7f19b4  data/AinuHattoriChiri.Sheet1.csv
+dd7afe132398c482b72a6510eda119a2  data/AinuHattoriChiri.xlsx
