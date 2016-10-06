@@ -1,0 +1,5 @@
+e32d470dc44834ae1d3f163f86a42ef7  data/chanmis.tsv
+c9d55294ae756e2911497da6fb59427b  data/numeral_010316.META.csv
+d9f1255f5c41ccc71ab7e4e472253ae0  data/numeral_010316.NUMERAL.csv
+17f861c400d85b7735e2fe2dff811d00  data/numeral_010316.SYSTEM.csv
+d9d644f6cc08d2b3ec5860689a695737  data/numeral_010316.xlsx
