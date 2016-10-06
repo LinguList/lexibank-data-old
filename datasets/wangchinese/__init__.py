@@ -1,16 +1,11 @@
 # coding=utf-8
 from __future__ import unicode_literals, print_function
 
-from six import text_type
 from clldutils.misc import slug
-from clldutils.path import Path
 from clldutils.dsv import UnicodeReader
-import lingpy as lp
 
 from pylexibank.dataset import CldfDataset
 from pylexibank.lingpy_util import getEvoBibAsSource
-from pylexibank.util import download_and_unpack_zipfiles
-
 
 
 SOURCE = 'Wang2004'
@@ -19,14 +14,13 @@ SOURCE = 'Wang2004'
 def download(dataset, **kw):
     pass
 
+
 def cldf(dataset, concepticon, **kw):
-    
     with UnicodeReader(dataset.raw.joinpath('Wang2004.csv'), delimiter='\t') as reader:
         lines = list(reader)
     lmap = dict([(x['ABBREVIATION'], (x['GLOTTOCODE'], x['ISO'], x['NAME'])) for x in
         dataset.languages])
-    cmap = dict([(x['ENGLISH'], x['CONCEPTICON_ID']) for x in
-        concepticon.conceptlist(dataset.conceptlist)])
+    cmap = {c.english: c.concepticon_id for c in dataset.conceptlist.concepts.values()}
 
     with CldfDataset((
         'ID',

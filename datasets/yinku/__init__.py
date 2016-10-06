@@ -37,7 +37,7 @@ def cldf(dataset, concepticon, **kw):
     :param kw: All arguments passed on the command line.
     """
 
-    wl = lp.Wordlist(dataset.dir.joinpath('raw', DSET).as_posix())
+    wl = lp.Wordlist(dataset.raw.joinpath(DSET).as_posix())
 
     # get language identifiers
     lids, cids, coords = {}, {}, {}
