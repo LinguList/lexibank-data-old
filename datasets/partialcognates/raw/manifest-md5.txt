@@ -1,0 +1,3 @@
+3f186fcab92b2feea6dba204a5eb6895  data/Bai-110-9.tsv
+d8283906972c11725791e61817976acb  data/Chinese-180-18.tsv
+92ea861436217a39a5037e857d6cf68a  data/Tujia-109-5.tsv

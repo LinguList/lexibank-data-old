@@ -1,0 +1,2 @@
+9d0a27e9eef17f77283b669027296dd4  data/BDS-cognates.tsv
+db8607c6312857d86a4fbf6eb86f999a  data/Bai-Dialect-Survey.tsv

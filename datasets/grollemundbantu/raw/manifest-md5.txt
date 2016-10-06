@@ -1,0 +1,3 @@
+7ea83cd59f597f682f4edefe12312623  data/Grollemund-et-al_Bantu-database_2015.Data.csv
+970ed639f19d46a5a44ade72d7296e45  data/Grollemund-et-al_Bantu-database_2015.Information.csv
+a89fa0e6e543edcbd97e327db93e4b8e  data/Grollemund-et-al_Bantu-database_2015.Multistate.csv

@@ -23,7 +23,7 @@ def download(dataset, **kw):
 
 def cldf(dataset, concepticon, **kw):
     for dset, srckey in zip(DSETS, SOURCES):
-        wl = lp.Wordlist(dataset.dir.joinpath('raw', dset).as_posix())
+        wl = lp.Wordlist(dataset.raw.joinpath(dset).as_posix())
         src = getEvoBibAsSource(srckey)
 
         with CldfDataset((

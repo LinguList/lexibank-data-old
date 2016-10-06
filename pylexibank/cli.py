@@ -23,10 +23,11 @@ from clldutils.path import Path
 from clldutils.dsv import UnicodeWriter
 from clldutils import jsonlib
 from clldutils import licenses
+from clldutils.markup import Table
 from pyglottolog.api import Glottolog
 
 import pylexibank
-from pylexibank.util import data_path, MarkdownTable
+from pylexibank.util import data_path
 from pylexibank.dataset import Dataset, synonymy_index, TranscriptionReport
 
 
@@ -87,7 +88,7 @@ def ls(args):
     - macroareas
     """
     # FIXME: how to smartly choose columns?
-    table = MarkdownTable('ID', 'Title')
+    table = Table('ID', 'Title')
     cols = [col for col in args.args if col in ['license', 'lexemes', 'macroareas']]
     tl = 40
     if args.args:
@@ -112,7 +113,7 @@ def ls(args):
                         row.append(', '.join(sorted(mas)))
 
             table.append(row)
-    print(table.render(fmt='simple', sortkey=lambda r: r[0], condensed=False))
+    print(table.render(tablefmt='simple', sortkey=lambda r: r[0], condensed=False))
 
 
 def with_dataset(args, func):
@@ -162,19 +163,19 @@ def coverage(args):
     c = Concepticon(args.concepticon_repos)
     res = Counter()
 
-    for cl in c.conceptlists():
+    for cl in c.conceptlists.values():
         try:
-            concepts = set(int(cc['CONCEPTICON_ID']) for cc in c.conceptlist(cl['ID']) if cc['CONCEPTICON_ID'])
+            concepts = set(int(cc.concepticon_id) for cc in cl.concepts.values() if cc.concepticon_id)
         except:
             continue
         for varid, meanings in varieties.items():
             if concepts.issubset(meanings):
                 res.update([cl['ID']])
 
-    t = MarkdownTable('concept list', 'variety count')
+    t = Table('concept list', 'variety count')
     for p in res.most_common():
         t.append(list(p))
-    print(t.render(fmt='simple', condensed=False))
+    print(t.render(tablefmt='simple', condensed=False))
 
 """
 (u'Brinton-1891-21', 409)
@@ -210,7 +211,7 @@ def word_length(args):
         ds.word_length(res)
 
     with_dataset(args, _word_length)
-    concepts = {r['ID']: r for r in c.conceptsets()}
+    concepts = c.conceptsets
     languoids = {l.id: l for l in Glottolog(args.glottolog_repos).languoids()}
 
     with UnicodeWriter('wordlength.csv') as writer:

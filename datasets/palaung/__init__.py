@@ -12,20 +12,20 @@ import lingpy as lp
 PROVIDER = 'Deepadung2015'
 TRANSCRIPTION_REPORT_CFG = {'column': 'Segments', 'segmentized': True}
 CONVERSION = {
-        "ә": "ə",
-        "ă": "ă",
-        "әː": "əː",
-        "j̊": "j̊",
-        "hh": "h + h",
-        "+s": "+ s",
-        "ә:": "əː",
-        "kk": "kː",
-        "nn": "nː",
-        "pp": "pː",
-        "ᶊ": "ʂ",
-        "Ɂ": "ʔ",
-        "?": "ʔ"
-        }
+    "ә": "ə",
+    "ă": "ă",
+    "әː": "əː",
+    "j̊": "j̊",
+    "hh": "h + h",
+    "+s": "+ s",
+    "ә:": "əː",
+    "kk": "kː",
+    "nn": "nː",
+    "pp": "pː",
+    "ᶊ": "ʂ",
+    "Ɂ": "ʔ",
+    "?": "ʔ"
+}
 PREPARSE = [(" ", "+")]
 CORRECT = {"sәp,": "sәp"}
 
@@ -43,18 +43,18 @@ def cldf(dataset, concepticon, **kw):
     coords = {}
     langs = []
     # language map, as the names are not identical
-    language_map = {"Namhsan": "Nam Hsan", "Pangkham": "Pang Kham", 
-            "Xiang Zhai Tang  (Xiang Cai Tang)": "Xiang Zhai Tang"}
+    language_map = {
+        "Namhsan": "Nam Hsan",
+        "Pangkham": "Pang Kham",
+        "Xiang Zhai Tang  (Xiang Cai Tang)": "Xiang Zhai Tang"}
     with UnicodeReader(dataset.raw.joinpath('100item-phylo.Sheet2.csv')) as reader:
-        for i, row in enumerate(reader):
+        for i, (num, lat, lon, village, country) in enumerate(reader):
             if i >= 2:
-                num, lat, lon, village, country = row
                 coords[language_map.get(village, village)] = (lat, lon)
-                langs += [language_map.get(village, village)]
+                langs.append(language_map.get(village, village))
 
     cognates = []
     idx = 1
-    cogidx = 1
     with UnicodeReader(dataset.raw.joinpath('100item-phylo.Sheet1.csv'),
             delimiter=',') as reader,\
             CldfDataset((
@@ -75,7 +75,6 @@ def cldf(dataset, concepticon, **kw):
         header = data[2][2:]
         for i, row in enumerate(data[5:]):
             row = [c.strip() for c in row]
-            number = row[1]
             concept = row[1]
             cid = concept_map[concept]
             for j in range(0, len(header), 2):
@@ -88,15 +87,26 @@ def cldf(dataset, concepticon, **kw):
                     certainty = 1
                 word = CORRECT.get(row[2:][j], row[2:][j])
                 if word.strip() and ''.join(set(word.strip())) != '-':
-                    segments = lp.sequence.sound_classes.clean_string(word,
-                            splitters=',', rules=CONVERSION,
-                            preparse=PREPARSE, semi_diacritics="")[0]
+                    segments = lp.sequence.sound_classes.clean_string(
+                        word,
+                        splitters=',',
+                        rules=CONVERSION,
+                        preparse=PREPARSE,
+                        semi_diacritics="")[0]
                     cogid = slug(concept)+'-'+cog
                     ds.add_row([
                         idx, gcid, lang, '', cid, concept, word, PROVIDER, segments,
                         cogid])
-                    cognates += [[idx, ds.name,
-                        word, cogid, str(certainty), 'expert', PROVIDER, '', '', '']]
+                    cognates.append([
+                        idx,
+                        ds.name,
+                        word,
+                        cogid,
+                        str(certainty),
+                        'expert',
+                        PROVIDER,
+                        '',
+                        '',
+                        ''])
                     idx += 1
-    dataset.cognates.extend(iter_alignments(ds, cognates,
-        method='progressive', ))
+    dataset.cognates.extend(iter_alignments(ds, cognates, method='progressive', ))

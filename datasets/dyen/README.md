@@ -1,8 +1,8 @@
-# LABEL
+# COMPARATIVE INDOEUROPEAN DATABASE COLLECTED BY ISIDORE DYEN
 
 Cite the source dataset as
 
-> CITATION
+> Isidore Dyen, Joseph Kruskal, and Paul Black
 
 ## Statistics
 ![Glottolog: 0%](https://img.shields.io/badge/Glottolog-0%25-red.svg "Glottolog: 0%") ![Concepticon: 100%](https://img.shields.io/badge/Concepticon-100%25-brightgreen.svg "Concepticon: 100%") ![Source: 0%](https://img.shields.io/badge/Source-0%25-red.svg "Source: 0%") ![LingPy: 96%](https://img.shields.io/badge/LingPy-96%25-green.svg "LingPy: 96%") ![CLPA: 42%](https://img.shields.io/badge/CLPA-42%25-red.svg "CLPA: 42%")

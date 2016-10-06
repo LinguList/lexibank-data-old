@@ -1,0 +1,12 @@
+b243e3dc44e43913fede7a6276f32edc  data/BAI.csv
+9315ea0021217af30389134346f4d8a4  data/GER.csv
+74ec16c6b02ba8f2711c20e634e7ad43  data/IDS.csv
+6fbe6b39b04a3ea62fa5fc7a5fb8c06e  data/IEL.csv
+5f4f4f7ff37f17e52ad0c95daa3e1f06  data/JAP.csv
+4c7f30d582d40e120efffc22925bb15c  data/KSL.csv
+68df9bf56fe31de9b4e95d06bf11de82  data/OUG.csv
+803346741f917bae2a8bce853520c819  data/PAN.csv
+e9ef69f25326b156dfc2bfcd4ed87a31  data/PIE.csv
+509c50b9bfd496f00c6dade6155f9e21  data/ROM.csv
+c81b9ad7ee84b570b6fa84f9ab17b2a8  data/SIN.csv
+e42a78b8d37732fb5f292dd79cbad708  data/SLV.csv

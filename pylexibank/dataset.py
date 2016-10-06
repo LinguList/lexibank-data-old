@@ -8,15 +8,19 @@ from collections import defaultdict, Counter
 from clldutils import jsonlib
 from clldutils.dsv import reader
 from clldutils.misc import UnicodeMixin, cached_property
+from clldutils.path import git_describe
+from clldutils.markup import Table
+from clldutils.clilib import confirm
 from pyconcepticon.api import Concepticon
 from pycldf import csv
 from pycldf.dataset import Dataset as CldfDatasetBase
 from pycldf.dataset import MD_SUFFIX
 from pycldf.metadata import Metadata as CldfMetadataBase
 from tqdm import tqdm
+import bagit
 
 import pylexibank
-from pylexibank.util import with_sys_path, data_path, MarkdownTable
+from pylexibank.util import with_sys_path, data_path
 from pylexibank.lingpy_util import test_sequences
 
 logging.basicConfig(level=logging.INFO)
@@ -74,7 +78,7 @@ class Dataset(object):
         self.id = path.name
         self.log = logging.getLogger(pylexibank.__name__)
         self.dir = path
-        self.raw = self.dir.joinpath('raw')
+        self.raw = self.dir.joinpath('raw', 'data')
         if not self.raw.exists():
             self.raw.mkdir()
         self.cldf_dir = self.dir.joinpath('cldf')
@@ -100,7 +104,10 @@ class Dataset(object):
         if cpath.exists():
             self.concepts = list(reader(cpath, dicts=True))
         self.cognates = Cognates()
+
+        # the following attributes are only set when a dataset's cldf method is run:
         self.glottolog_languoids = {}
+        self.glottolog_version, self.concepticon_version = None, None
 
     @classmethod
     def from_name(cls, name):
@@ -156,10 +163,22 @@ class Dataset(object):
             getattr(self.commands, name)(self, *args, **kw)
 
     def cldf(self, **kw):
-        concepticon = Concepticon(kw.pop('concepticon_repos'))
-        if self.conceptlist:
-            self.conceptlist = concepticon.conceptlists[self.conceptlist]
-        self._run_command('cldf', concepticon, **kw)
+        self.glottolog_version = git_describe(kw['glottolog_repos'])
+        self.concepticon_version = git_describe(kw['concepticon_repos'])
+        try:
+            bag = bagit.Bag(self.raw.parent.as_posix())
+            if not bag.is_valid():
+                if confirm('The downloaded data has changed. Update checksums?'):
+                    bag.save(manifests=True)
+                    assert bag.is_valid()
+                else:
+                    raise bagit.BagError('invalid raw data')
+            concepticon = Concepticon(kw['concepticon_repos'])
+            if self.conceptlist:
+                self.conceptlist = concepticon.conceptlists[self.conceptlist]
+            self._run_command('cldf', concepticon, **kw)
+        except bagit.BagError:
+            self.log.error('invalid raw data for dataset %s' % self.id)
 
     def word_length(self, res):
         for cldfds in self.iter_cldf_datasets():
@@ -310,7 +329,7 @@ class TranscriptionReport(UnicodeMixin):
         if not cfg.get('segmentized'):
             return
 
-        segments = MarkdownTable('Segment', 'Occurrence', 'LingPy', 'CLPA')
+        segments = Table('Segment', 'Occurrence', 'LingPy', 'CLPA')
         for a, b in sorted(stats['segment_types'].items(), key=lambda x: (-x[1], x[0])):
             c, d = '✓', '✓'
             if a in stats['clpa_errors_types']:
@@ -319,7 +338,7 @@ class TranscriptionReport(UnicodeMixin):
                     if a not in stats['clpa_errors_types'] else '?'
             segments.append([a, b, c, d])
 
-        words = MarkdownTable('ID', 'LANGUAGE', 'CONCEPT', 'VALUE', 'SEGMENTS')
+        words = Table('ID', 'LANGUAGE', 'CONCEPT', 'VALUE', 'SEGMENTS')
         with tqdm(total=len(bad_words), desc='bad-lexemes', leave=False) as pbar:
             for i, row in enumerate(bad_words):
                 analyzed = []
@@ -345,7 +364,7 @@ class TranscriptionReport(UnicodeMixin):
 {0}
 ## Words
 
-{1}""".format(segments.render(), words.render())
+{1}""".format(segments.render(verbose=True), words.render(verbose=True))
 
     def __unicode__(self):
         md = """## Transcription Report
@@ -427,6 +446,13 @@ class CldfDataset(CldfDatasetBase):
             self.table['notes'].append(stats)
         else:
             self.table['notes'] = [stats]
+        self.table['notes'].append({
+            'dc:title': 'environment',
+            'properties': {
+                'concepticon_version': self.dataset.concepticon_version,
+                'glottolog_version': self.dataset.glottolog_version,
+            }
+        })
         super(CldfDataset, self).write(**kw)
 
 

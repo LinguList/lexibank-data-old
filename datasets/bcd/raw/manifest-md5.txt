@@ -1,0 +1,4 @@
+49f40841292112b6a0e94ddb238778e7  data/200swadeshwords-full(eng.)050823.xls
+02adc658bc0439533f6aee1891a87238  data/200swadeshwords-full(formated)3.xls
+1d80520a0fcd8c277254c47478d2249f  data/chinese.tsv
+c5b2fc8cf55ae09ba39d73a319576ef4  data/old_chinese.csv
