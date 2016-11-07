@@ -49,7 +49,7 @@ def cldf(dataset, concepticon, **kw):
         "Xiang Zhai Tang  (Xiang Cai Tang)": "Xiang Zhai Tang"}
     with UnicodeReader(dataset.raw.joinpath('100item-phylo.Sheet2.csv')) as reader:
         for i, (num, lat, lon, village, country) in enumerate(reader):
-            if i >= 2:
+            if i >= 1:
                 coords[language_map.get(village, village)] = (lat, lon)
                 langs.append(language_map.get(village, village))
 
