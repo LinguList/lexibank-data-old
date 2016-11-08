@@ -8,7 +8,7 @@ from collections import defaultdict, Counter
 from clldutils import jsonlib
 from clldutils.dsv import reader
 from clldutils.misc import UnicodeMixin, cached_property
-from clldutils.path import git_describe
+from clldutils.path import git_describe, Path
 from clldutils.markup import Table
 from clldutils.clilib import confirm
 from pyconcepticon.api import Concepticon
@@ -75,6 +75,7 @@ class Dataset(object):
         """
         A dataset is initialzed passing its directory path.
         """
+        path = Path(path)
         self.id = path.name
         self.log = logging.getLogger(pylexibank.__name__)
         self.dir = path
