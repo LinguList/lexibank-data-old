@@ -1,4 +1,9 @@
-# Data curation in `lexibank`
+# Data curation for `lexibank`
+
+Data in the `lexibank-data` repository is curated using functionality of a python package
+[`pylexibank`](pylexibank), which is distributed with the repository. Thus, to work with
+`lexibank-data`, you need to [install this package](pylexibank/README.md).
+
 
 ## The `lexibank` processing workflow
 
@@ -42,3 +47,12 @@ Can be run once `report` has completed. Create a dataset's landing page,
 3. Datasets curated in `lexibank` CLDF format: These datasets implement "NOOP" `download` and `cldf` commands.
 
 Any dataset specific comments (e.g. regarding language or concepticon mappings, of transcription decisions) should go into a file called `NOTES.md` in the dataset directory. This should be in markdown format, preferably as a set of bulletpoints (as it will be incorporated into the main `README.md` file.
+
+
+## The `lexibank` command line interface
+
+TODO
+
+## The `lexibank` API
+
+TODO
