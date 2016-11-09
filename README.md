@@ -1,14 +1,16 @@
-# Lexibank
+# `lexibank`
 
-Lexibank is a public database and repository for lexical data from the languages of the world. The database will be used to refine cognate judgments, infer language relationships, construct language phylogenies, test hypotheses about deep language history, investigate factors that affect the mode and tempo of language evolution, model sound change, and facilitate quantitative comparisons with other types of linguistic data. 
+`lexibank` is a public database and repository for lexical data from the languages of the world. The database will be used to refine cognate judgments, infer language relationships, construct language phylogenies, test hypotheses about language history, investigate factors that affect the mode and tempo of language evolution, model sound change, and facilitate quantitative comparisons with other types of linguistic data. 
 
-The initial focus of Lexibank will be on compiling basic or core vocabulary, but ultimately the database will be expanded to include a full range of lexicon from all the world’s languages. For more information on Lexibank and how to use or submit data please see the project website
+The initial focus of `lexibank` will be on compiling basic or core vocabulary, but ultimately the database will be expanded to include a full range of lexicon from all the world’s languages. For more information on `lexibank` and how to use or submit data please see the project website
 
 For more details please see [our public information slides](https://github.com/glottobank/lexibank-data/blob/master/docs/lexibank.pdf) or contact us.
 
-# lexibank-data
+# `lexibank-data`
 
-lexibank-data is the main data repository for the lexibank project. The lexibank webapp is [here](https://github.com/glottobank/lexibank).
+`lexibank-data` is the main data repository for the `lexibank` project. It is used to 
+[curate the data](workflow.md) served by
+the `lexibank` webapp ([source code](https://github.com/glottobank/lexibank)).
 
 It aims at providing unified access to data published in various places and ways via
 - a unified dataset manipulation workflow,
