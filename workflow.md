@@ -9,7 +9,7 @@ Data in the `lexibank-data` repository is curated using functionality of a pytho
 
 Processing of datasets (individually or all at once) in `lexibank` is slit
 into multiple steps, making up a workflow. Individual steps are implemented
-and can be executed as subcommands of the `lexibank` command line interface
+and can be executed as subcommands of the [`lexibank` command line interface](#cli)
 using a syntax like
 ```bash
 $ lexibank <subcommand> <dataset-ID-or-path>
@@ -49,9 +49,41 @@ Can be run once `report` has completed. Create a dataset's landing page,
 Any dataset specific comments (e.g. regarding language or concepticon mappings, of transcription decisions) should go into a file called `NOTES.md` in the dataset directory. This should be in markdown format, preferably as a set of bulletpoints (as it will be incorporated into the main `README.md` file.
 
 
-## The `lexibank` command line interface
+## <a name="cli"> </a>The `lexibank` command line interface
 
-TODO
+Upon [installation of `pylexibank`](pylexibank/README.md), a command `lexibank` is installed,
+which can be invoked from the command line:
+```
+$ lexibank --help
+usage: lexibank [-h] [--verbosity VERBOSITY] [--lexibank-repos LEXIBANK_REPOS]
+                [--glottolog-repos GLOTTOLOG_REPOS]
+                [--concepticon-repos CONCEPTICON_REPOS]
+                command ...
+
+Main command line interface of the pylexibank package.
+
+positional arguments:
+  command               readme|download|cldf|ls|report|word_length|coverage
+  args
+
+optional arguments:
+  -h, --help            show this help message and exit
+  --verbosity VERBOSITY
+                        increase output verbosity
+  --lexibank-repos LEXIBANK_REPOS
+                        path to lexibank data repository
+  --glottolog-repos GLOTTOLOG_REPOS
+                        path to glottolog data repository
+  --concepticon-repos CONCEPTICON_REPOS
+                        path to concepticon data repository
+
+Use 'lexibank help <cmd>' to get help about individual commands.
+```
+
+If you don't want to specify the `--glottolog-repos` or `--concepticon-repos` options
+for your system all the time, you may create an alias or `DOSKEY` providing access to
+the `lexibank` command with prefilled options.
+
 
 ## The `lexibank` API
 
