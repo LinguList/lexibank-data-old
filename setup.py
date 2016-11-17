@@ -8,7 +8,7 @@ requires = [
     'python-docx',
     'beautifulsoup4>=4.4.1',
     'requests',
-    'clldutils>=1.4.2',
+    'clldutils>=1.5.3',
     'nameparser',
     'purl',
     'pyglottolog',

@@ -7,8 +7,9 @@ import re
 from six.moves.urllib.request import urlretrieve
 from clldutils.dsv import UnicodeReader
 from clldutils.misc import slug
+from clldutils.path import TemporaryDirectory
 
-from pylexibank.util import split_by_year, get_reference, xls2csv, with_temp_dir
+from pylexibank.util import split_by_year, get_reference, xls2csv
 from pylexibank.dataset import CldfDataset, Unmapped
 from pylexibank.lingpy_util import clean_string
 
@@ -27,7 +28,7 @@ def clean_string_with_validation(string):
 
 
 def download(dataset):
-    with with_temp_dir() as tmpdir:
+    with TemporaryDirectory() as tmpdir:
         urlretrieve(
             'http://www.evolution.reading.ac.uk/Files/%s.zip' % NAME,
             tmpdir.joinpath('gbd.zip').as_posix())

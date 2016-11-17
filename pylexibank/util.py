@@ -1,17 +1,13 @@
 # coding=utf8
 from __future__ import unicode_literals
-import sys
 import logging
 import re
-from contextlib import contextmanager
-from tempfile import mkdtemp
 import zipfile
-from tabulate import tabulate
 
 from six.moves.urllib.request import urlretrieve
 import xlrd
 from clldutils.dsv import reader, UnicodeWriter
-from clldutils.path import Path, as_posix, rmtree, copy
+from clldutils.path import Path, as_posix, copy, TemporaryDirectory
 from clldutils.misc import slug
 from pycldf.sources import Source, Reference
 
@@ -20,24 +16,6 @@ import pylexibank
 logging.basicConfig(level=logging.INFO)
 REPOS_PATH = Path(pylexibank.__file__).parent.parent
 YEAR_PATTERN = re.compile('\s+\(?(?P<year>[1-9][0-9]{3}(-[0-9]+)?)(\)|\.)')
-
-
-class MarkdownTable(list):
-    def __init__(self, *cols):
-        self.columns = list(cols)
-        list.__init__(self)
-
-    @staticmethod
-    def tr(row):
-        return '|'.join(['%s' % c for c in row])
-
-    def render(self, fmt='pipe', sortkey=None, condensed=True):
-        res = tabulate(sorted(self, key=sortkey) if sortkey else self, self.columns, fmt)
-        if condensed:
-            res = re.sub('[ ]+', ' ', res)
-        if fmt == 'pipe':
-            res += '\n\n(%s rows)\n\n' % len(self)
-        return res
 
 
 def clean_form(form):
@@ -85,13 +63,6 @@ def split(s, sep=',;', exclude_contexts=None):
 
     if token.strip():
         yield token.strip(), context.strip() or None
-
-
-@contextmanager
-def with_temp_dir():
-    tmpdir = Path(mkdtemp())
-    yield tmpdir
-    rmtree(tmpdir)
 
 
 def xls2csv(fname, outdir=None):
@@ -144,18 +115,9 @@ def data_path(*comps, **kw):
     return kw.get('repos', REPOS_PATH).joinpath('datasets', *comps)
 
 
-@contextmanager
-def with_sys_path(d):
-    p = d.as_posix()
-    sys.path.append(p)
-    yield
-    if sys.path[-1] == p:
-        sys.path.pop()
-
-
 def download_and_unpack_zipfiles(url, dataset, *paths):
     """Download zipfiles and immediately unpack the content"""
-    with with_temp_dir() as tmpdir:
+    with TemporaryDirectory() as tmpdir:
         urlretrieve(url, tmpdir.joinpath('ds.zip').as_posix())
         with zipfile.ZipFile(tmpdir.joinpath('ds.zip').as_posix()) as zipf:
             for path in paths:
