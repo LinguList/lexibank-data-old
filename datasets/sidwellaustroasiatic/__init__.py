@@ -5,9 +5,10 @@ from itertools import groupby
 from six.moves.urllib.request import urlretrieve
 from clldutils.dsv import UnicodeReader
 from clldutils.misc import slug
+from clldutils.path import TemporaryDirectory
 from pycldf.sources import Source
 
-from pylexibank.util import xls2csv, with_temp_dir
+from pylexibank.util import xls2csv
 from pylexibank.dataset import CldfDataset, Unmapped
 from pylexibank.lingpy_util import (clean_string, iter_alignments,
         wordlist2cognates, getEvoBibAsSource)
@@ -19,7 +20,7 @@ SOURCE = 'Sidwell2015'
 
 
 def download(dataset):
-    with with_temp_dir() as tmpdir:
+    with TemporaryDirectory() as tmpdir:
         urlretrieve(URL, tmpdir.joinpath('ds.xlsm').as_posix())
         xls2csv(tmpdir.joinpath('ds.xlsm'), outdir=dataset.raw)
 
