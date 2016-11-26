@@ -2,13 +2,12 @@
 from __future__ import unicode_literals, print_function, division
 import logging
 import re
-from importlib import import_module
 from collections import defaultdict, Counter
 
 from clldutils import jsonlib
 from clldutils.dsv import reader
 from clldutils.misc import UnicodeMixin, cached_property
-from clldutils.path import git_describe
+from clldutils.path import git_describe, Path, import_module
 from clldutils.markup import Table
 from clldutils.clilib import confirm
 from pyconcepticon.api import Concepticon
@@ -20,7 +19,7 @@ from tqdm import tqdm
 import bagit
 
 import pylexibank
-from pylexibank.util import with_sys_path, data_path
+from pylexibank.util import data_path
 from pylexibank.lingpy_util import test_sequences
 
 logging.basicConfig(level=logging.INFO)
@@ -75,6 +74,7 @@ class Dataset(object):
         """
         A dataset is initialzed passing its directory path.
         """
+        path = Path(path)
         self.id = path.name
         self.log = logging.getLogger(pylexibank.__name__)
         self.dir = path
@@ -84,8 +84,7 @@ class Dataset(object):
         self.cldf_dir = self.dir.joinpath('cldf')
         if not self.cldf_dir.exists():
             self.cldf_dir.mkdir()
-        with with_sys_path(self.dir.parent):
-            self.commands = import_module(self.id)
+        self.commands = import_module(self.dir)
         self.md = jsonlib.load(self.dir.joinpath('metadata.json'))
         self.languages = []
         lpath = self.dir.joinpath('languages.csv')

@@ -249,8 +249,14 @@ def cldf(args):
     """
     Create CLDF datasets from the raw data for a dataset.
 
-    lexibank cldf [DATASET_ID]
+    lexibank --glottolog-repos PATH --concepticon-repos PATH cldf [DATASET_ID]
     """
+    if not args.glottolog_repos or not Path(args.glottolog_repos).exists():
+        raise ParserError('Invalid glottolog repository path given')
+
+    if not args.concepticon_repos or not Path(args.concepticon_repos).exists():
+        raise ParserError('Invalid concepticon repository path given')
+
     # FIXME: get dict of all glottolog langs right here, and attach to datasets!
     languoids = {l.id: l for l in Glottolog(args.glottolog_repos).languoids()}
 
@@ -441,9 +447,9 @@ def main():
     parser.add_argument(
         '--glottolog-repos',
         help="path to glottolog data repository",
-        default=HOME.joinpath('venvs', 'glottolog3', 'glottolog'))
+        default=None)
     parser.add_argument(
         '--concepticon-repos',
         help="path to concepticon data repository",
-        default=HOME.joinpath('venvs', 'concepticon', 'concepticon-data'))
+        default=None)
     sys.exit(parser.main())

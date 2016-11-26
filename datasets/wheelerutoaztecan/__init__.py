@@ -4,8 +4,9 @@ from __future__ import unicode_literals, print_function, division
 from six.moves.urllib.request import urlretrieve
 from clldutils.dsv import UnicodeReader
 from clldutils.misc import slug
+from clldutils.path import TemporaryDirectory
 
-from pylexibank.util import with_temp_dir, xls2csv
+from pylexibank.util import xls2csv
 from pylexibank.dataset import CldfDataset
 
 from pylexibank.lingpy_util import (
@@ -20,7 +21,7 @@ TRANSCRIPTION_REPORT_CFG = {'column': 'Segments', 'segmentized': True}
 
 
 def download(dataset):
-    with with_temp_dir() as tmpdir:
+    with TemporaryDirectory() as tmpdir:
         urlretrieve(URL, tmpdir.joinpath(FILENAME).as_posix())
         xls2csv(tmpdir.joinpath(FILENAME), outdir=dataset.raw)
 
