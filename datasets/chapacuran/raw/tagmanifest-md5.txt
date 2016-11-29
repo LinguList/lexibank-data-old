@@ -1,0 +1,3 @@
+1aa647e44fede7e9efb3b2336aec2af0 bag-info.txt
+6272d42c4baf924666aecbea75f50f32 manifest-md5.txt
+9e5ad981e0d29adc278f6a294b8c2aca bagit.txt

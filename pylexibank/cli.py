@@ -28,6 +28,7 @@ from pyglottolog.api import Glottolog
 
 import pylexibank
 from pylexibank.util import data_path
+from pylexibank.cache import load, dump
 from pylexibank.dataset import Dataset, synonymy_index, TranscriptionReport
 
 
@@ -258,7 +259,11 @@ def cldf(args):
         raise ParserError('Invalid concepticon repository path given')
 
     # FIXME: get dict of all glottolog langs right here, and attach to datasets!
-    languoids = {l.id: l for l in Glottolog(args.glottolog_repos).languoids()}
+    try:
+        languoids = load('glottolog')
+    except ValueError:
+        languoids = {l.id: l for l in Glottolog(args.glottolog_repos).languoids()}
+        dump(languoids, 'glottolog')
 
     def _cldf(ds, **kw):
         ds.glottolog_languoids = languoids

@@ -1,0 +1,3 @@
+f8e3b4d3557906044c7a02a5f7335bfb  data/Chapacuran_Supplementary_Materials.rtf
+a321160f07dc99a32a361dea74874218  data/chapacuran.ods
+2ee681aef22d1ba1f2563e7b2c6bf9c7  data/chapacuran.xlsx
